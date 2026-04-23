@@ -1,0 +1,18 @@
+{
+    "name": "collectdb-validator",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "validate:data": "tsx scripts/validate-data.ts"
+    },
+    "dependencies": {
+        "yaml": "^2.8.1",
+        "zod": "^3.25.76"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.29",
+        "tsx": "^4.19.4",
+        "typescript": "^5.8.3"
+    }
+}

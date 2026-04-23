@@ -1,0 +1,3871 @@
+items:
+  alakazam-1:
+    name: Alakazam
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '65'
+      hp: '80'
+      types:
+        - Psychic
+      evolveFrom: Kadabra
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Pokemon Power
+          name: Damage Swap
+          effect: >-
+            As often as you like during your turn (before your attack), you may
+            move 1 damage counter from 1 of your Pokémon to another as long as
+            you don't Knock Out that Pokémon. This power can't be used if
+            Alakazam is Asleep, Confused, or Paralyzed.
+      attacks:
+        - name: Confuse Ray
+          cost:
+            - Psychic
+            - Psychic
+            - Psychic
+          damage: '30'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '3'
+    editions:
+      1st-edition: 55317d0b-58cf-47be-b285-069693771ba0
+      shadowless: 70f53de7-aea6-4207-9ce3-2d5cf8ba58bd
+      unlimited: 34c54168-da87-464c-a08f-c6311badb35f
+      1999-2000: cd1c4905-ee62-4bb4-b237-aa570c7fbd6b
+  blastoise-2:
+    name: Blastoise
+    variants:
+      stage-error:
+        name: Stage Error
+        edition: unlimited
+        description: The stage text is missing.
+        rarityScore: 6
+        id: fc3c1eab-ee5a-4126-a34d-2db5000cdd3a
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '9'
+      hp: '100'
+      types:
+        - Water
+      evolveFrom: Wartortle
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Pokemon Power
+          name: Rain Dance
+          effect: >-
+            As often as you like during your turn (before your attack), you may
+            attach 1 Water Energy Card to 1 of your Water Pokémon. (This doesn't
+            use up your 1 Energy card attachment for the turn.) This power can't
+            be used if Blastoise is Asleep, Confused, or Paralyzed.
+      attacks:
+        - name: Hydro Pump
+          cost:
+            - Water
+            - Water
+            - Water
+          damage: 40+
+          effect: >-
+            Does 40 damage plus 10 more damage for each attached Water Energy
+            attached to Blastoise but not used to pay for this attack's Energy
+            cost. Extra Water Energy after the 2nd doesn't count.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 62f39c2b-c375-4a77-b03e-2817bc92461e
+      shadowless: ae48a8b1-2ad6-461f-a109-f6583510435b
+      unlimited: 05ad1126-fdd8-440e-b886-a611e1365c0e
+      1999-2000: a38e624a-1e2a-4729-97f3-3824798e2af5
+  chansey-3:
+    name: Chansey
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '113'
+      hp: '120'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scrunch
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all damage done to Chansey during
+            your opponent's next turn. (Any other effects of attacks still
+            happen.)
+        - name: Double-edge
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '80'
+          effect: Chansey does 80 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 47d4eaba-c182-453e-87ce-c0ebda99bfa1
+      shadowless: 172837f2-f234-4551-93fa-3568c3a01400
+      unlimited: 7cd5f651-e0f8-4090-a870-fc369de1faeb
+      1999-2000: c1bcfcae-145b-4cd7-a3f3-8ae9fc974608
+  charizard-4:
+    name: Charizard
+    variants:
+      jumbo-corocoro:
+        name: CoroCoro (Jumbo)
+        edition: unlimited
+        description: >-
+          This is a Japan-printed English Jumbo card.
+
+          A larger size print of the Unlimited Charizard card that was
+          distributed in the Japanese CoroCoro magazine in April 2000.
+        id: 31fc9cbf-0a1c-4b68-aa76-5959c1d71114
+      black-dot-error:
+        name: Black Dot Error
+        edition: unlimited
+        description: The card has a black dot on the Nintendo copyright text.
+        id: c061e5fd-06b6-48ba-9819-8604a6c1fa70
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '6'
+      hp: '120'
+      types:
+        - Fire
+      evolveFrom: Charmeleon
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Pokemon Power
+          name: Energy Burn
+          effect: >-
+            As often as you like during your turn (before your attack), you may
+            turn all Energy attached to Charizard into Fire Energy for the rest
+            of the turn. This power can't be used if Charizard is Asleep,
+            Confused, or Paralyzed.
+      attacks:
+        - name: Fire Spin
+          cost:
+            - Fire
+            - Fire
+            - Fire
+            - Fire
+          damage: '100'
+          effect: >-
+            Discard 2 Energy cards attached to Charizard in order to use this
+            attack.
+      weaknesses:
+        - type: Water
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: '3'
+    editions:
+      1st-edition: 6a37195a-b765-488f-abd1-2220cf85b3f2
+      shadowless: cd318d59-7689-478e-bbc5-4100383e999c
+      unlimited: fb353631-57e6-44ce-b6c7-ed49906542b3
+      1999-2000: 1c0e570b-7de5-4106-9cb8-2fd33f29a0ac
+  clefairy-5:
+    name: Clefairy
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '35'
+      hp: '40'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sing
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
+        - name: Metronome
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of Defending Pokémon's attacks. Metronome copies that
+            attack except for its Energy costs and anything else required in
+            order to use that attack, such as discarding energy cards. (No
+            matter what type the defender is, Clefairy's type is still
+            Colorless.)
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 9cc8907c-24db-40ee-b550-7b252618608c
+      shadowless: be04032e-25e8-4521-85de-89ae908aa55d
+      unlimited: 1eb4efb8-e416-412c-a051-b66ef5c0fb3a
+      1999-2000: ad449bfa-633e-45c8-afb9-d9d4ef52b7d8
+  gyarados-6:
+    name: Gyarados
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '100'
+      types:
+        - Water
+      evolveFrom: Magikarp
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Dragon Rage
+          cost:
+            - Water
+            - Water
+            - Water
+          damage: '50'
+        - name: Bubblebeam
+          cost:
+            - Water
+            - Water
+            - Water
+            - Water
+          damage: '40'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 67655d53-03a6-4cc9-b57b-153b1a086a78
+      shadowless: 489462b1-aeb0-48cf-bc4a-d8f94ee4dc32
+      unlimited: ab8e047f-5e55-4d35-9e3c-ba81692236cd
+      1999-2000: f7385534-ad4b-4259-b497-30454aa9b6d7
+  hitmonchan-7:
+    name: Hitmonchan
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '107'
+      hp: '70'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Jab
+          cost:
+            - Fighting
+          damage: '20'
+        - name: Special Punch
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 646ffe73-0283-4ff2-8f9d-850280ede644
+      shadowless: 39832e14-d43b-4eed-a2c1-36e3410636d6
+      unlimited: 640fa22a-8323-4588-b9ef-a1393fb1ce59
+      1999-2000: 7793b947-0128-4333-9d31-054f7ee01b6c
+  machamp-8:
+    name: Machamp
+    editions:
+      shadowless: be4c4f34-5018-4f37-a76d-fc440e029599
+      unlimited: d0121a28-31b9-4309-a544-40274c77e9a3
+      1999-2000: 3f11ea74-d25e-4dec-a798-194f2d557116
+    description: >
+      There is no differentiation between 1st Edition and Shadowless editions.
+      The Unlimited and 1999-2000 editions also include a 1st stamp.
+    integrations:
+      priceCharting:
+        unlimited: machamp-1st-edition-8
+        shadowless: machamp-shadowless-8
+        1999-2000: machamp-1999-2000-8
+    variants:
+      gold-border:
+        name: Gold Border
+        edition: unlimited
+        rarityScore: 6
+        description: Gold border test or error print.
+        id: 1cbd5944-dcb4-4586-be6c-87373bf71cdb
+      2-player-cdrom:
+        name: Cosmos Holo (2-Player CD-ROM)
+        edition: unlimited
+        rarityScore: 5
+        description: >-
+          Cosmos Holo version distributed in the 2-Player CD-ROM product.
+
+          Authenticators may include "2000 P.M. 2-Player CD-ROM" and "Cosmos
+          Holofoil" as the variant.
+        id: a287d267-530e-4f95-ac89-32350ed15f05
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '68'
+      hp: '100'
+      types:
+        - Fighting
+      evolveFrom: Machoke
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Pokemon Power
+          name: Strikes Back
+          effect: >-
+            Whenever your opponent's attack damages Machamp (even if Machamp is
+            Knoced Out), this power does 10 damage to attacking Pokémon. (Don't
+            apply Weakness and Resistance.) This power can't be used if Machamp
+            is already Asleep, Confused, or Paralyzed when your opponent
+            attacks.
+      attacks:
+        - name: Seismic Toss
+          cost:
+            - Fighting
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '60'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+  magneton-9:
+    name: Magneton
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '82'
+      hp: '60'
+      types:
+        - Lightning
+      evolveFrom: Magnemite
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Thunder Wave
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '30'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Selfdestruct
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '80'
+          effect: >-
+            Does 20 damage to each Pokémon on each player's Bench. (Don't apply
+            Weakness and Resistance for Benched Pokémon.) Magneton does 80
+            damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: ca893c75-a151-4855-a428-e32eeef95c6d
+      shadowless: 8b2dbf28-e78f-4a36-b88a-fca07524d723
+      unlimited: 8c91a566-b342-43ba-bb42-fbef94541274
+      1999-2000: cc98bda8-c635-438b-b60f-27de1a51699b
+  mewtwo-10:
+    name: Mewtwo
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '150'
+      hp: '60'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Psychic
+          cost:
+            - Psychic
+            - Colorless
+          damage: 10+
+          effect: >-
+            Does 10 damage plus 10 more damage for each Energy card attached to
+            the Defending Pokémon.
+        - name: Barrier
+          cost:
+            - Psychic
+            - Psychic
+          damage: undefined
+          effect: >-
+            Discard 1 Energy card attached to Mewtwo in order to use this
+            attack. During your opponent's next turn, prevent all effects of
+            attacks, including damage, done to Mewtwo.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 54ce5a73-bdaa-4b87-9c7e-304d9f71a4f8
+      shadowless: 814428cd-4bed-45d5-80ff-c85cecd91032
+      unlimited: ca301219-52f7-4411-8525-b7de754bf67f
+      1999-2000: 0c1f909b-2dc0-448a-9a74-ff6f4e02a99d
+  nidoking-11:
+    name: Nidoking
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '34'
+      hp: '90'
+      types:
+        - Grass
+      evolveFrom: Nidorino
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Thrash
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: 30+
+          effect: >-
+            Flip a coin. If heads, this attack does 30 damage plus 10 more
+            damage; if tails, this attack does 30 damage and Nidoking does 10
+            damage to itself.
+        - name: Toxic
+          cost:
+            - Grass
+            - Grass
+            - Grass
+          damage: '20'
+          effect: >-
+            The Defending Pokémon is now Poisoned. It now takes 20 Poison damage
+            instead of 10 after each player's turn (even if it was already
+            Poisoned).
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: ef5ab821-95d3-4a8a-a5e6-14fca457af1f
+      shadowless: f374675c-8e5e-40aa-9eab-541ca29e2693
+      unlimited: d5140105-62e5-49de-a8a1-afc849ff176f
+      1999-2000: cad2b053-bf36-4389-b2dc-b2b4879ccba4
+  ninetales-12:
+    name: Ninetales
+    variants:
+      black-flame:
+        name: Black Flame
+        edition: unlimited
+        description: >-
+          Alternative art showing a black flame on the right.
+
+          Due to their similarity with the art on the 1st Edition and Shadowless
+          Ninetales cards, which were of course printed first, it is likely that
+          these Ninetales with the “Black Flames” are from an early Unlimited
+          print run.
+        id: cb455f8a-5583-4dcf-9f75-c15532a076a1
+      no-damage:
+        name: No Damage
+        edition: shadowless
+        description: The damage value is missing.
+        rarityScore: 6
+        id: a5cc8ec8-4832-476e-9a11-20cab9866d72
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '38'
+      hp: '80'
+      types:
+        - Fire
+      evolveFrom: Vulpix
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Lure
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            If your opponent has any Benched Pokémon, choose 1 of them and
+            switch it with the Defending Pokémon.
+        - name: Fire Blast
+          cost:
+            - Fire
+            - Fire
+            - Fire
+            - Fire
+          damage: '80'
+          effect: >-
+            Discard 1 Energy card attached to Ninetales in order to use this
+            attack.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 8bed7ced-bc0b-4b85-8387-484ae2030076
+      shadowless: c3124550-47d9-4d09-bac7-21ac86beb799
+      unlimited: 99596e52-86cb-46b0-88f9-b33eff5bc9de
+      1999-2000: 2010b793-605d-4f19-8dcf-de0508792507
+  poliwrath-13:
+    name: Poliwrath
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '62'
+      hp: '90'
+      types:
+        - Water
+      evolveFrom: Poliwhirl
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Water Gun
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: 30+
+          effect: >-
+            Does 30 damage plus 10 more damage for each Water Energy attached to
+            Poliwrath but not used to pay for this attack's Energy cost. Extra
+            Water Energy after the 2nd doesn't count.
+        - name: Whirlpool
+          cost:
+            - Water
+            - Water
+            - Colorless
+            - Colorless
+          damage: '40'
+          effect: >-
+            If the Defending Pokémon has any Energy cards attached to it, choose
+            1 and discard it.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 18613ba4-19cb-4c6c-9945-177f19627fa0
+      shadowless: 8459dae3-3705-4314-9c0b-e02f3ae3c251
+      unlimited: d9ce1e6a-33fc-4358-96ff-17fb6413af03
+      1999-2000: d593ccf1-ebab-4ab2-a950-97eff1b185d6
+  raichu-14:
+    name: Raichu
+    variants:
+      prerelease-test-print:
+        name: Prerelease Test Print
+        rarityScore: 11
+        description: >-
+          There are multiple sources mentioning this version of Base set Raichu
+          was used to test the Prerelease stamp before it was used in production
+          on the Clefable card in the Jungle set.
+
+          > They allegedly destroyed nearly every copy of the Raichu promo, >
+          leaving only a few dozen left that were said to be handed out to
+          employees of Wizards of the Coast.
+        id: 9de97fd5-c706-46b7-a692-5440d1d02f09
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '26'
+      hp: '80'
+      types:
+        - Lightning
+      evolveFrom: Pikachu
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Agility
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, during your opponent's next turn, prevent all
+            effects of attacks, including damage, done to Raichu.
+        - name: Thunder
+          cost:
+            - Lightning
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '60'
+          effect: Flip a coin. If tails, Raichu does 30 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: c4cade8e-8f71-402f-832f-9ffb9c6e9d13
+      shadowless: b7afcc14-dd61-434e-8dfd-b679dbafd7ef
+      unlimited: 045d66f6-d6d2-40b1-a58b-fce8e5344515
+      1999-2000: 4919208d-c96c-464a-a362-77876c2a4f64
+  venusaur-15:
+    name: Venusaur
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '3'
+      hp: '100'
+      types:
+        - Grass
+      evolveFrom: Ivysaur
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Pokemon Power
+          name: Energy Trans
+          effect: >-
+            As often as you like during your turn (before your attack), you may
+            take 1 Grass Energy card attached to 1 of your Pokémon and attach it
+            to a different one. This power can't be used if Venusaur is Asleep,
+            Confused, or Paralyzed.
+      attacks:
+        - name: Solarbeam
+          cost:
+            - Grass
+            - Grass
+            - Grass
+            - Grass
+          damage: '60'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: ab7330cb-8be2-47de-9646-e1f9a216a323
+      shadowless: 1ce2d46b-ab5c-4bbe-8fd2-a1b585950321
+      unlimited: 705d0492-914e-44f0-a020-3711b0da85ff
+      1999-2000: d7b09c78-d511-4153-bed8-a0a3a2209f88
+  zapdos-16:
+    name: Zapdos
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '145'
+      hp: '90'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Thunder
+          cost:
+            - Lightning
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '60'
+          effect: Flip a coin. If tails, Zapdos does 30 damage to itself.
+        - name: Thunderbolt
+          cost:
+            - Lightning
+            - Lightning
+            - Lightning
+            - Lightning
+          damage: '100'
+          effect: >-
+            Discard all Energy cards attached to Zapdos in order to use this
+            attack.
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 4c78fb44-5ffa-4893-b7a3-1f29ee7f235c
+      shadowless: 7af3e96c-4459-4268-889d-db106ca469be
+      unlimited: da554cc0-2492-4205-8bd3-a886f45c9858
+      1999-2000: beb394f9-5f92-4d82-baa9-e008e2a1bbe7
+  beedrill-17:
+    name: Beedrill
+    variants:
+      defending-error:
+        name: D.efending Error
+        rarityScore: 6
+        links:
+          'zandergb: Typo Beedrill': "https://zandergb.tumblr.com/post/183709235827/edit-\
+            knowledge-of-this-error-is-a-bit-more"
+        description: >-
+          The word "defending" has a typo '.'.
+
+          Since there is an actual space along with the dot between the D and e
+          in Defending, this is not a printing process error. This is a
+          typesetting error, and one that seemingly got noticed and corrected
+          very quickly.
+
+          Some analysis from (zandergb) conclues there are specific Overgrowth
+          Deck boxes that may be the source of the error.
+        id: 45827e84-08e8-4fbc-a6e1-2603c1697ece
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '15'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Kakuna
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Twineedle
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 30x
+          effect: Flip 2 coins. This attack does 30 damage times the number of heads.
+        - name: Poison Sting
+          cost:
+            - Grass
+            - Grass
+            - Grass
+          damage: '40'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: f089eed2-05aa-4f0f-9f3c-da0bc138ad87
+      shadowless: 5c798fd4-bed1-49b6-b1e1-90e5a15ff507
+      unlimited: af28d6ff-ee97-4f3b-92f6-902884dae667
+      1999-2000: 29c8d68d-da3f-4bb4-beab-412880c0cf4a
+  dragonair-18:
+    name: Dragonair
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '148'
+      hp: '80'
+      types:
+        - Colorless
+      evolveFrom: Dratini
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Slam
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 30x
+          effect: Flip 2 coins. This attack does 30 damage times the number of heads.
+        - name: Hyper Beam
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            If the Defending Pokémon has any Energy cards attached to it, choose
+            1 of them and discard it.
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 21b01a14-14b7-4129-b74b-e9dd28695bdb
+      shadowless: 3ef1cfa7-2e0b-4907-bd97-75e4a63b0d61
+      unlimited: 2ef6220e-28ca-49e6-ade9-2c7df6de9c65
+      1999-2000: d7ae6df3-199c-4d17-bb4a-fb38734c66dc
+  dugtrio-19:
+    name: Dugtrio
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '51'
+      hp: '70'
+      types:
+        - Fighting
+      evolveFrom: Diglett
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Slash
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '40'
+        - name: Earthquake
+          cost:
+            - Fighting
+            - Fighting
+            - Fighting
+            - Fighting
+          damage: '70'
+          effect: >-
+            Does 10 damage to each of your own Benched Pokémon. (Don't apply
+            Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Lightning
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 2ae877ae-58e0-4f43-9aba-5737fb9d879d
+      shadowless: c187fd31-5843-40f2-a31b-36a816293c33
+      unlimited: 18683b7f-3574-455c-b709-b0878979def0
+      1999-2000: e9d5a820-42a3-4321-8f79-f437af0d5b5b
+  electabuzz-20:
+    name: Electabuzz
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '125'
+      hp: '70'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Thundershock
+          cost:
+            - Lightning
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Thunderpunch
+          cost:
+            - Lightning
+            - Colorless
+          damage: 30+
+          effect: >-
+            Flip a coin. If heads, this attack does 30 damage plus 10 more
+            damage; if tails, this attack does 30 damage and Electabuzz does 10
+            damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 578e5bfe-bfcb-4855-b697-8e0c0d910c01
+      shadowless: c3f79144-fa54-43e1-9bc9-c8272773af97
+      unlimited: cba21817-e5aa-433f-b984-5c8ff853880c
+      1999-2000: b967a2ec-10ae-4510-a814-4c0a79bf7f55
+  electrode-21:
+    name: Electrode
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '101'
+      hp: '80'
+      types:
+        - Lightning
+      evolveFrom: Voltorb
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Pokemon Power
+          name: Buzzap
+          effect: >-
+            At any time during your turn (before your attack) you may Knock Out
+            Electrode and attach it to 1 of your other Pokémon. If you do, chose
+            a type of Energy. Electrode is now an Energy card (instead of a
+            Pokémon) that provides 2 energy of that type. This power can't be
+            used if Electrode is Asleep, Confused, or Paralyzed.
+      attacks:
+        - name: Electric Shock
+          cost:
+            - Lightning
+            - Lightning
+            - Lightning
+          damage: '50'
+          effect: Flip a coin. If tails, Electrode does 10 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 792a489a-56f3-4759-a7a0-62d0378b51bd
+      shadowless: c7d7cd2b-6520-4b70-82d0-e7a34035795d
+      unlimited: 55761dc1-d6f5-4c34-9fac-e2489c06f5c3
+      1999-2000: 9e49e814-2a89-4289-b7ab-01e7eef6ea29
+  pidgeotto-22:
+    name: Pidgeotto
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '17'
+      hp: '60'
+      types:
+        - Colorless
+      evolveFrom: Pidgey
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Whirlwind
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            If your opponent has any Benched Pokémon, he or she chooses 1 of
+            them and switches it with the Defending Pokémon. (Do the damage
+            before switching the Pokémon.)
+        - name: Mirror Move
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            If Pidgeotto was attacked last turn, do the final result of that
+            attack on Pidgeotto to the Defending Pokémon.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: ac72c16b-0f30-4348-a71b-7ad4c02a38d4
+      shadowless: a31376f3-a714-4957-bce5-6f1579407ca6
+      unlimited: 113db2ce-1820-40ab-9838-29ff45d5495a
+      1999-2000: 70fd1c42-97c2-40f2-9adf-83f2b84d3e52
+  arcanine-23:
+    name: Arcanine
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '59'
+      hp: '100'
+      types:
+        - Fire
+      evolveFrom: Growlithe
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Flamethrower
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: '50'
+          effect: >-
+            Discard 1 Energy card attached to Arcanine in order to use this
+            attack.
+        - name: Take Down
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '80'
+          effect: Arcanine does 30 damage to itself.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: e3a5b3c9-d611-453c-85ac-19286791ce0c
+      shadowless: 54e84006-1303-40f7-889d-ae07a3aa800b
+      unlimited: d8490cb2-1451-463d-8b4d-908cfcff630a
+      1999-2000: c953659e-ee94-4813-af59-f74d349f0050
+  charmeleon-24:
+    name: Charmeleon
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '5'
+      hp: '80'
+      types:
+        - Fire
+      evolveFrom: Charmander
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Slash
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '30'
+        - name: Flamethrower
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: '50'
+          effect: >-
+            Discard 1 Energy card attached to Charmeleon in order to use this
+            attack.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: c31e39fe-fc2e-4508-9e8b-edcb8c8e64a0
+      shadowless: 96449ae8-5d10-489c-b875-fd60485fc8f9
+      unlimited: 927ae156-18c0-4486-9d72-f26b6e71fa01
+      1999-2000: eb689d65-1e75-4320-822c-2ea89241a127
+  dewgong-25:
+    name: Dewgong
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '87'
+      hp: '80'
+      types:
+        - Water
+      evolveFrom: Seel
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Aurora Beam
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: '50'
+        - name: Ice Beam
+          cost:
+            - Water
+            - Water
+            - Colorless
+            - Colorless
+          damage: '30'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 104f89ee-5146-4877-b1f0-5fea43f8e97f
+      shadowless: a0c9bb54-5cdb-40f8-9857-5d7cec3fc787
+      unlimited: 1be695eb-9aaf-4238-bc12-10360a852e6e
+      1999-2000: 875aa228-7487-4dd8-85f8-2fa569912bc2
+  dratini-26:
+    name: Dratini
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '147'
+      hp: '40'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Pound
+          cost:
+            - Colorless
+          damage: '10'
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 4f458369-3648-4cdc-bc95-7e415c4b9559
+      shadowless: f70f2e00-f458-4a40-a6be-8a3c13f777c1
+      unlimited: 7685198a-f6bb-44c5-a23f-aa1aeab1514f
+      1999-2000: a8133ba3-59f3-46dd-905b-b4b02599987c
+  farfetchd-27:
+    name: Farfetch'd
+    integrations:
+      priceCharting: farfetch'd
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '83'
+      hp: '50'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Leek Slap
+          cost:
+            - Colorless
+          damage: '30'
+          effect: >-
+            Flip a coin. If tails, this attack does nothing. Either way, you
+            can't use this attack again as long as Farfetch'd stays in play
+            (even putting Farfetch'd on the Bench won't let you use it again.)
+        - name: Pot Smash
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '30'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 359e25c2-d0b4-4512-9093-df9dc7280dc8
+      shadowless: d8c483a4-e909-49a3-8f60-4bdb6c82cf1f
+      unlimited: 5900e639-326d-4ab8-bf57-6ebc8f719ce6
+      1999-2000: eabc32f4-8d39-4f5f-81d3-09963f6831bd
+  growlithe-28:
+    name: Growlithe
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '58'
+      hp: '60'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Flare
+          cost:
+            - Fire
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 15c5bd9f-fc10-4626-900a-428323fa38d5
+      shadowless: 5685032b-f75b-43e3-a831-88802d103557
+      unlimited: 03e1e01e-53b8-4686-8e9e-6b514e31f999
+      1999-2000: 48e49d0b-2309-4142-972d-3720dade5da0
+  haunter-29:
+    name: Haunter
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '93'
+      hp: '60'
+      types:
+        - Psychic
+      evolveFrom: Gastly
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Hypnosis
+          cost:
+            - Psychic
+          damage: undefined
+          effect: The Defending Pokémon is now Asleep.
+        - name: Dream Eater
+          cost:
+            - Psychic
+            - Psychic
+          damage: '50'
+          effect: You can't this attack unless the Defending Pokémon is Asleep.
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 489877ad-9de7-4b63-90e1-68083fb88af1
+      shadowless: 4d7ec3e9-d41f-47c9-8706-a04aa0c3a8c2
+      unlimited: 74ec694d-dba4-4f17-a60c-ecf40d27176e
+      1999-2000: f0a27cb2-aadd-458a-a74f-f67c457df149
+  ivysaur-30:
+    name: Ivysaur
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '2'
+      hp: '60'
+      types:
+        - Grass
+      evolveFrom: Barboach
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Vine Whip
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '30'
+        - name: Poisonpowder
+          cost:
+            - Grass
+            - Grass
+            - Grass
+          damage: '20'
+          effect: The Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: aedadf25-4383-441c-8037-307cb2577216
+      shadowless: 5041f0a8-9090-4a1b-952c-69eb2d21bb11
+      unlimited: 1ab50894-6aea-4ecb-9f1a-80f080dca43f
+      1999-2000: d977f939-5b15-41b3-b716-21a3929c87e3
+  jynx-31:
+    name: Jynx
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '124'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Doubleslap
+          cost:
+            - Psychic
+          damage: 10x
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+        - name: Meditate
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: 20+
+          effect: >-
+            Does 20 damage plus 10 more damage for each damage counter on the
+            Defending Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 692a7b0c-58bd-47a8-9d78-c58fd5f24400
+      shadowless: b4a58879-c6a5-4a1f-94d9-706616b50fb0
+      unlimited: 8bb66d99-f14b-4dc0-8b42-5291802bde0c
+      1999-2000: 9b5f8d25-20bf-437b-a388-88a43c133b97
+  kadabra-32:
+    name: Kadabra
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '64'
+      hp: '60'
+      types:
+        - Psychic
+      evolveFrom: Abra
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Recover
+          cost:
+            - Psychic
+            - Psychic
+          damage: undefined
+          effect: >-
+            Discard 1 Energy card attached to Kadabra in order use this attack.
+            Remove all damage counters from Kadabra.
+        - name: Super Psy
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: f264b19e-63dd-4e70-ac19-173fa6f4c038
+      shadowless: 31b20bbf-ce5d-4798-9b69-d572bb4fc537
+      unlimited: e149b934-bfca-4306-8e3d-c60a8541087a
+      1999-2000: 53c7f53f-813d-4cfe-b5dd-57ab03811774
+  kakuna-33:
+    name: Kakuna
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '14'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Weedle
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Stiffen
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all damage done to Kakuna during your
+            opponent's next turn. (Any other effects of attacks still happen.)
+        - name: Poisonpowder
+          cost:
+            - Grass
+            - Grass
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: e74b33c4-1c4d-4cc2-b60e-ea4e846fe63d
+      shadowless: 90f0b278-2a0a-4c49-994a-8cbba650b59b
+      unlimited: 90e2ff36-15ab-4232-9e32-ac3624f282b5
+      1999-2000: fddc8cf8-b57b-4c12-90b7-b7d8b44dc5fe
+  machoke-34:
+    name: Machoke
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '67'
+      hp: '80'
+      types:
+        - Fighting
+      evolveFrom: Machop
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Karate Chop
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: 50-
+          effect: Does 50 damage minus 10 for each damage counter on Machoke.
+        - name: Submission
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: Machoke does 20 damage to itself.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 22e03af4-741f-43fc-9ed6-d01c6f889421
+      shadowless: 508b0979-301c-4c78-b1de-e3357dc13bc1
+      unlimited: ac242b37-69c5-4ac5-be62-7082de3193da
+      1999-2000: d15c38f0-9a31-4f49-981f-f269ef0591f3
+  magikarp-35:
+    name: Magikarp
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '129'
+      hp: '30'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tackle
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Flail
+          cost:
+            - Water
+          damage: 10x
+          effect: Does 10 damage times number of damage counters on Magikarp.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: cf0feee2-35fc-4db2-b355-6d7f4d365ed8
+      shadowless: 5536da7b-6b9a-462b-b048-8a30f70ab249
+      unlimited: 8b5d9f90-4a31-4b68-bfb5-7174d8c625f3
+      1999-2000: 1b782e97-b015-4629-9eef-96c505eb6c14
+  magmar-36:
+    name: Magmar
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '126'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Fire Punch
+          cost:
+            - Fire
+            - Fire
+          damage: '30'
+        - name: Flamethrower
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: '50'
+          effect: >-
+            Discard 1 Energy card attached to Magmar in order to use this attack.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 5faea91a-84d9-4af3-92c7-739781ae562e
+      shadowless: b0d12e76-5836-4f0f-af82-5f894507bb43
+      unlimited: 95b54c20-8f2a-479f-aaee-4d817f8a86ba
+      1999-2000: bb4757a7-9415-4dd9-9533-2989fc82b951
+  nidorino-37:
+    name: Nidorino
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '33'
+      hp: '60'
+      types:
+        - Grass
+      evolveFrom: Nidoran♂
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Double Kick
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: 30x
+          effect: Flip 2 coins. This attack does 30 damage times the number of heads.
+        - name: Horn Drill
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: d126b85e-3439-4f0d-b188-c61afc6672cd
+      shadowless: d913c5d9-e75e-41e9-9aef-0374a4959fae
+      unlimited: 69d55112-8e40-4fb9-b628-59d69291b3ec
+      1999-2000: 0a09b6f1-aa5a-4e38-94e9-c4de5b2006c0
+  poliwhirl-38:
+    name: Poliwhirl
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '61'
+      hp: '60'
+      types:
+        - Water
+      evolveFrom: Poliwag
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Amnesia
+          cost:
+            - Water
+            - Water
+          damage: undefined
+          effect: >-
+            Choose 1 of defenders attacks. Defender cannot use that attack next
+            turn.
+        - name: Doubleslap
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: 30x
+          effect: Flip 2 coins. This attack does 30 damage times number of heads.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: a425f0c0-47f6-491a-b9b0-bdd70a953497
+      shadowless: 18a7112f-edd1-4c77-8457-73c5d5051e17
+      unlimited: 41ad5d01-7e3d-46bd-8c6f-a61c76fd77b5
+      1999-2000: 5331d6b3-1977-4889-8efb-9f8a678c7095
+  porygon-39:
+    name: Porygon
+    details:
+      illustrator: Tomoaki Imakuni
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '137'
+      hp: '30'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Conversion 1
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            If the Defending Pokémon has a Weakness, you may change it to a type
+            of your choice other than Colorless.
+        - name: Conversion 2
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Change Porygon's Resistance to a type of your choice other than
+            Colorless.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 307d3904-3582-464b-8b38-e1f7866352b6
+      shadowless: ebfc0c9c-4691-4b46-b3bb-5f72f983f240
+      unlimited: 27eef80c-5358-4b4d-bc63-bfaceb7e2df5
+      1999-2000: 4a0e3500-7902-4b98-9abc-27bf7deb7d89
+  raticate-40:
+    name: Raticate
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '20'
+      hp: '60'
+      types:
+        - Colorless
+      evolveFrom: Poochyena
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Bite
+          cost:
+            - Colorless
+          damage: '20'
+        - name: Super Fang
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '?'
+          effect: >-
+            Does damage to the Defending Pokémon equal to half the Defending
+            Pokémon's remaining HP (rounded up to the nearest 10).
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 412c7400-9b5d-4274-b9b1-38871ff363bc
+      shadowless: 72a5dcac-3aa3-41b2-bcea-bc34adc4aa4f
+      unlimited: 81ea4273-bad1-4a30-bf76-674574e496d4
+      1999-2000: 1a54425f-d432-4f47-9d45-09a812341441
+  seel-41:
+    name: Seel
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '86'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Headbutt
+          cost:
+            - Water
+          damage: '10'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 01eb16ae-3549-439d-ac99-9dca74d5c8de
+      shadowless: e864212e-79cb-4c1d-9ec6-ed9c47f29514
+      unlimited: c07d4e25-ff1b-401a-8a5d-ed1d50c5b46a
+      1999-2000: 27c5d1d3-58eb-40d8-9534-bb99635ec955
+  wartortle-42:
+    name: Wartortle
+    variants:
+      evolution-box-error:
+        name: Evolution Box Error
+        description: >-
+          The evolution box incorrectly shows Wartortle evolving from Wartortle.
+
+          Note that all Base set First Edition and Unlimited Portuguese prints
+          have this error. Only the English version is rare.
+        rarityScore: 6
+        id: a0daa652-5c5a-40db-96e9-c7e47e8987d9
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '8'
+      hp: '70'
+      types:
+        - Water
+      evolveFrom: Squirtle
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Withdraw
+          cost:
+            - Water
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all damage done to Wartortle during
+            your opponent's next turn. (Any other effects of attacks still
+            happen.)
+        - name: Bite
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 76c1ca18-f2e1-4a45-9589-6534b69d5cb7
+      shadowless: 7ac06df5-6f0d-44b0-a0a1-d94d67d3ff5e
+      unlimited: 4738d11a-f08c-49f2-9abb-0326a9128f70
+      1999-2000: 64b638d2-3f6a-496f-8a45-82626829ce5d
+  abra-43:
+    name: Abra
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '63'
+      hp: '30'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Psyshock
+          cost:
+            - Colorless
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: d87990b8-1cb7-42fc-95ae-1669d61c3437
+      shadowless: 02c0fa8e-8ce0-49d5-9d73-3b18cdf1d553
+      unlimited: 09de1d9f-aeed-4ac3-897b-71f866efadc0
+      1999-2000: 1d34e559-6188-4fa8-9e1e-ff24679f0154
+  bulbasaur-44:
+    name: Bulbasaur
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '1'
+      hp: '40'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Leech Seed
+          cost:
+            - Grass
+            - Grass
+          damage: '20'
+          effect: >-
+            Unless all damage from this attack is prevented, you may remove 1
+            damage counter from Bulbasaur.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: cdcd6dfd-3916-4e62-86f3-fd487d215e5d
+      shadowless: 93d22da5-7764-4d62-bef3-67e7748ca617
+      unlimited: e2a971ec-3eff-492a-985a-0abd39a305b6
+      1999-2000: ed23c2a1-9246-493b-8d40-bbb7587ab3e0
+  caterpie-45:
+    name: Caterpie
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '10'
+      hp: '40'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: String Shot
+          cost:
+            - Grass
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: d7bf425f-cfb1-4074-9035-ca889f3b4928
+      shadowless: 23e0c21d-8854-432c-9420-c08547d6fbf1
+      unlimited: 094b55ad-b9a6-4bc4-b7ff-85d455bc0b53
+      1999-2000: ae3c2db0-81c7-4960-8af8-8818a6887fab
+  charmander-46:
+    name: Charmander
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '4'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scratch
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Ember
+          cost:
+            - Fire
+            - Colorless
+          damage: '30'
+          effect: >-
+            Discard 1 Energy card attached to Charmander in order to use this
+            attack.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 5344fb47-f8ec-4525-b5a4-31f194b9c6cf
+      shadowless: 9dce0eab-9584-4ff0-b554-2a3171067dff
+      unlimited: 16fc4520-3115-4ce4-950b-fde750d45717
+      1999-2000: 0a5e5d0a-d02c-4be1-a938-38603679f646
+  diglett-47:
+    name: Diglett
+    variants:
+      fight-symbol-error:
+        name: Fight Symbol Error
+        edition: unlimited
+        description: >-
+          The fight symbol is incorrectly rotated.
+
+          These are found rarely within the Base set 2-Player Starter decks.
+        id: c7ab3426-73f7-49b7-93a0-9ae22f50e31a
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '50'
+      hp: '30'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dig
+          cost:
+            - Fighting
+          damage: '10'
+        - name: Mud Slap
+          cost:
+            - Fighting
+            - Fighting
+          damage: '30'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Lightning
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 30c14990-b8f9-48d3-a9ef-849a3919b0b1
+      shadowless: 8167dede-2c18-4a29-88b7-846120fb8b02
+      unlimited: 350c56fa-8994-4f76-9951-220cba0fee76
+      1999-2000: c3eaa740-d3f7-418c-9f4a-c8e936bd7dc5
+  doduo-48:
+    name: Doduo
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '84'
+      hp: '50'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Fury Attack
+          cost:
+            - Colorless
+          damage: 10x
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 232dc74d-b79c-412c-a0d5-0926643b071f
+      shadowless: e5830a77-04ec-43af-a023-ec7df7433891
+      unlimited: 60e3455d-2102-4afe-bd35-2becce25b5d3
+      1999-2000: 5fdc93cc-edd9-4b87-aa59-40fff970f0c7
+  drowzee-49:
+    name: Drowzee
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '96'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Pound
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Confuse Ray
+          cost:
+            - Psychic
+            - Psychic
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: bedfdb33-1086-4af0-af76-087f38adfa2a
+      shadowless: 70765279-12b0-465b-b151-d00bed2ed6bc
+      unlimited: a5315840-b64d-4108-bda1-be9bde436285
+      1999-2000: 034aae03-5307-434d-88e8-12aa985480e8
+  gastly-50:
+    name: Gastly
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '92'
+      hp: '30'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sleeping Gas
+          cost:
+            - Psychic
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
+        - name: Destiny Bond
+          cost:
+            - Psychic
+            - Colorless
+          damage: undefined
+          effect: >-
+            Discard 1 Energy card attached to Gastly in order to use this
+            attack. If a Pokémon Knocks Out Gastly during your opponent's next
+            turn, Knock Out that Pokémon.
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 715b9977-2944-4181-8084-83c2d80605e7
+      shadowless: ec7392d9-6646-4fdd-8548-3c324c3885ad
+      unlimited: 682ff5c9-4334-4d55-8d83-df3e1ee65b41
+      1999-2000: fe739198-f817-4d98-9261-eb10a7fefb52
+  koffing-51:
+    name: Koffing
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '109'
+      hp: '50'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Foul Gas
+          cost:
+            - Grass
+            - Grass
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Poisoned; if
+            tails, it is now Confused.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 3c29b95e-e7ba-40fc-9bfe-cab762d180fa
+      shadowless: 32577e82-28e4-4ad5-852d-f620167babaf
+      unlimited: b9486b3f-ab85-44de-acc9-1de595bb2ab2
+      1999-2000: 06eeabd7-4704-4bc2-9335-fa3fadb15ac4
+  machop-52:
+    name: Machop
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '66'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Low Kick
+          cost:
+            - Fighting
+          damage: '20'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 4c88eb5c-7e56-4474-8d7c-ca0336b99752
+      shadowless: d80866c3-ffdf-44a0-a6ed-7304a2b37ff3
+      unlimited: 06e7d37b-b3d4-4d56-9478-0cd9ac3c517c
+      1999-2000: cb2616f8-2289-4978-b977-4d06fc8168fe
+  magnemite-53:
+    name: Magnemite
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '81'
+      hp: '40'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Thunder Wave
+          cost:
+            - Lightning
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Selfdestruct
+          cost:
+            - Lightning
+            - Colorless
+          damage: '40'
+          effect: >-
+            Does 10 damage to each Pokémon on each player's Bench. (Don't apply
+            Weakness and Resistance for Benched Pokémon.) Magnemite does 40
+            damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: bbeb2aef-c7b0-4b38-b063-79f275940649
+      shadowless: d28830f8-3362-4f09-b9cd-85a5ddee4254
+      unlimited: ff6e8cdc-070e-4d21-afb2-e7ed783dfc4c
+      1999-2000: e9243a1c-e9eb-47c1-a360-cd0b71ccad65
+  metapod-54:
+    name: Metapod
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '11'
+      hp: '70'
+      types:
+        - Grass
+      evolveFrom: Caterpie
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Stiffen
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all damage done to Metapod during
+            your opponent's next turn. (Any other effects of attacks still
+            happen.)
+        - name: Stun Spore
+          cost:
+            - Grass
+            - Grass
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 4b86b155-ea7c-43de-ace2-3c071b145936
+      shadowless: 47cfd5b4-784e-4a0d-aa7f-4cd698530cfa
+      unlimited: a0834b97-9682-4784-9909-d2cb52dab3da
+      1999-2000: 7f184a4d-2367-4514-8268-d04eb3efd953
+  nidoran-male-55:
+    name: Nidoran♂
+    integrations:
+      priceCharting: nidoran
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '32'
+      hp: '40'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Horn Hazard
+          cost:
+            - Grass
+          damage: '30'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 336538e3-e839-4b69-889a-b65ec4e4d1b7
+      shadowless: 17834dc8-8a26-4329-bbae-88ee1be1f2b4
+      unlimited: 9710d783-e879-4132-a567-68d6a8070b0e
+      1999-2000: 67f78777-749b-4b36-b862-41dafb66ae35
+  onix-56:
+    name: Onix
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '95'
+      hp: '90'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Rock Throw
+          cost:
+            - Fighting
+          damage: '10'
+        - name: Harden
+          cost:
+            - Fighting
+            - Fighting
+          damage: undefined
+          effect: >-
+            During opponent's next turn, whenever 30 or less damage is done to
+            Onix (after applying Weakness and Resistance), prevent that damage.
+            (Any other effects of attacks still happen.)
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 9997ce1c-a517-49c2-ac64-fc3c6272bbb8
+      shadowless: 6eb3c627-0080-441b-986b-0dc5baaecd38
+      unlimited: c9f51d94-032d-45c7-bb63-2f46e2b71a26
+      1999-2000: aa695359-c0af-46e2-b967-031c1e0eca3c
+  pidgey-57:
+    name: Pidgey
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '16'
+      hp: '40'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Whirlwind
+          cost:
+            - Colorless
+            - Colorless
+          damage: '10'
+          effect: >-
+            If your opponent has any Benched Pokémon, he or she chooses 1 of
+            them and switches it with the Defending Pokémon. (Do the damage
+            before switching the Pokémon.)
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 7ab54637-f7a3-4793-9830-03b87625449b
+      shadowless: e53953dc-d5f4-4b2a-a4dd-46dc74eacd75
+      unlimited: b08bc750-11b8-4bf3-afea-b9cddc75f58c
+      1999-2000: cb7d5896-1d49-4f6c-9ae0-cfe1d943ee90
+  pikachu-58:
+    name: Pikachu
+    variants:
+      shadowless-red-cheeks:
+        name: Red Cheeks (Shadowless)
+        edition: shadowless
+        description: Pikachu with red cheeks
+        id: 2a3cfdb3-e71d-42ab-b229-3de02250e951
+      1st-edition-red-cheeks:
+        name: Red Cheeks (1st Edition)
+        edition: 1st-edition
+        description: >-
+          Pikachu with "Red Cheeks".
+
+          The "Red Cheeks" variant of Pikachu was released in the first (1st)
+          and Shadowless versions.
+
+          This version was an intentional release and intentionally less common
+          than the yellow cheeks normal variation.
+        id: 4d77350c-f7d2-42b1-8293-bf0e0db4c9bd
+      e3-red-cheeks:
+        name: E3-stamp (Red Cheeks)
+        description: >-
+          Pikachu with E3 stamp with "Red Cheeks".
+
+          The E3 Pikachu promotional cards were given away at the E3 (Electronic
+          Entertainment Expo) events in Los Angeles in May 1999. It is unclear
+          if the Red Cheeks E3 variant was included as a limited run
+          intentionally, or if the change-over from red to yellow in the normal
+          shadowless set affected the E3 promo prints unintentionally.
+        rarityScore: 7
+        id: eae67021-09d2-4abf-b6c2-40e5559f37e6
+      poketour-1999:
+        name: Pokémon Tour 1999
+        description: >-
+          Pikachu with Pokémon Tour 1999 stamp.
+
+          This card was given out in the swag bag as part of the TCG promotional
+          event in Sydney.
+        rarityScore: 6
+        id: ad06df44-fe75-4f0a-913f-c6ff6b8d47d7
+      e3:
+        name: E3-stamp
+        description: >-
+          Pikachu with E3 stamp.
+
+          The "Yellow Cheeks" E3 stamp was distributed via Nintendo Power as is
+          much more common compared to the "Red Cheeks" variant.
+        id: 1130413b-a3d0-45e9-bb36-d11519f7080e
+      1st-edition-ghost-stamp:
+        name: Ghost Stamp
+        edition: 1st-edition
+        description: Pikachu with ghost stamp.
+        id: a5a46197-f5e9-4642-a8e4-03accc9f29fe
+      jumbo:
+        name: Jumbo
+        description: Jumbo version provided in Top Deck Magazine (February 2000).
+        id: b0ec67dd-bad9-4fd6-9e92-326909b6f4a0
+      best-song:
+        name: Best Song Promo
+        edition: shadowless
+        links:
+          'Bulbapedia (Best Song)': "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon\
+            _Song_Best_Collection"
+        description: >-
+          Base Set Pikachu with "yellow cheeks" from the shadowless edition,
+          printed with Japanese card stock, with a glossy back and lighter
+          yellow ink. Hard to distinguish from to the Wizard of the Coast prints
+          unless viewed up close.
+
+          This variant is often incorrectly unmarked by authenticators.
+        id: 54d4e7db-1318-4bff-9d7f-58a1b0c77b98
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '40'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Gnaw
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Thunder Jolt
+          cost:
+            - Lightning
+            - Colorless
+          damage: '30'
+          effect: Flip a coin. If tails, Pikachu does 10 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: f537ce8c-73df-49e2-b329-16b253bccb0d
+      shadowless: 792f9b02-7d26-43f2-af71-6ad4441e46bb
+      unlimited: 59e02639-8cb2-4b5a-8ac0-209c1c856314
+      1999-2000: 4fbb67f9-41ca-4a78-b57b-73c1de2b3820
+  poliwag-59:
+    name: Poliwag
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '60'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Water Gun
+          cost:
+            - Water
+          damage: 10+
+          effect: >-
+            Does 10 damage plus 10 damage for each Energy attached to Poliwag
+            but not used to pay for this attack's Energy cost. Extra Energy
+            after the end don't count.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 2534fa9b-4de8-44d7-ac93-750a7f21e96e
+      shadowless: 1dccc0b1-8f0b-41c4-b127-e577d9729142
+      unlimited: 3f1a3148-d0e6-4acf-a317-811b218518ad
+      1999-2000: dbc5d859-fd25-43f1-9c60-95d847a0db65
+  ponyta-60:
+    name: Ponyta
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '77'
+      hp: '40'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Smash Kick
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+        - name: Flame Tail
+          cost:
+            - Fire
+            - Fire
+          damage: '30'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 4ec5d59c-a5a0-4551-8562-05fcb21ed0dc
+      shadowless: 07eb8b16-d402-4af0-a014-d5b8af8e0972
+      unlimited: 8baec4ee-0eae-4e7a-8ce4-a6379924c550
+      1999-2000: 2fcf8163-2b35-4b14-bfc1-8096ccc1d9e1
+  rattata-61:
+    name: Rattata
+    variants:
+      1st-edition-gray-stamp:
+        name: Gray Stamp
+        edition: 1st-edition
+        description: Rattata with gray 1st edition stamp.
+        id: c5a920e7-8948-4134-8ebc-40f5f42ef80e
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '19'
+      hp: '30'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bite
+          cost:
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 676d1186-6c91-415d-aba7-0145477d820c
+      shadowless: 6441e53e-355c-46b0-a27c-9696fec29355
+      unlimited: ba055863-952a-431e-8a98-d72848cf81c6
+      1999-2000: b71e8bfc-49a3-4e59-b657-f53b8da9db97
+  sandshrew-62:
+    name: Sandshrew
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '27'
+      hp: '40'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sand-attack
+          cost:
+            - Fighting
+          damage: '10'
+          effect: >-
+            If the Defending Pokémon tries to attack during your opponent's next
+            turn, your opponent flips a coin. If tails, that attack does
+            nothing.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Lightning
+          value: '-30'
+      retreat: undefined
+    editions:
+      1st-edition: 3e0be822-d736-4baf-bfa8-70d5797edf2a
+      shadowless: 1026aceb-913f-4aa3-8bc5-1be1e5e0799a
+      unlimited: 7fe96a49-282c-4a1c-9dad-d0e8bd58c242
+      1999-2000: a354426e-996b-467f-b164-d5e991500d67
+  squirtle-63:
+    name: Squirtle
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '7'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bubble
+          cost:
+            - Water
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Withdraw
+          cost:
+            - Water
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all damage done to Squirtle during
+            your opponent's next turn. (Any other effects of attacks still
+            happen.)
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 783a4301-56da-4e20-befd-e99039b4a3a7
+      shadowless: 6732bf4f-3431-4151-af49-ad02fab41da0
+      unlimited: f4bef6db-50c5-49dc-abb3-8f7f697aec1a
+      1999-2000: 91d596d3-37e4-4385-9918-2ef53213f702
+  starmie-64:
+    name: Starmie
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '121'
+      hp: '60'
+      types:
+        - Water
+      evolveFrom: Staryu
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Recover
+          cost:
+            - Water
+            - Water
+          damage: undefined
+          effect: >-
+            Discard 1 Energy card to Starmie in order to use this attack. Remove
+            all damage counters from Starmie.
+        - name: Star Freeze
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: ca072619-0e41-4fab-b319-431ad0cb131f
+      shadowless: dc081fb8-dc15-401e-a708-8f59a6cde5cb
+      unlimited: dfde3f38-9b52-4ebe-8ab9-38a7a08c839d
+      1999-2000: 4685e0f1-fff4-4dc1-9517-b9e2534544b2
+  staryu-65:
+    name: Staryu
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '120'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Slap
+          cost:
+            - Water
+          damage: '20'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 3cc29aea-52c9-4c41-bcfc-9da812c38f70
+      shadowless: 523860db-8e7f-49cf-b19a-e98386f82ce1
+      unlimited: d118ce75-a1b1-4676-8419-02ac683b5691
+      1999-2000: 11570de3-70e8-455a-81fb-83d1ec34f6f6
+  tangela-66:
+    name: Tangela
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '114'
+      hp: '50'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bind
+          cost:
+            - Grass
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Poisonpowder
+          cost:
+            - Grass
+            - Grass
+            - Grass
+          damage: '20'
+          effect: The Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: d1b8b23b-1749-4b3b-9b53-9bdc9ca634ad
+      shadowless: 82ed72ef-6847-4a04-9b44-9f1cbc95d716
+      unlimited: 823787a0-1009-4943-a2d3-14de9e621a38
+      1999-2000: 86a0204d-fdef-4ef0-bbe5-6bde828432ab
+  voltorb-67:
+    name: Voltorb
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '100'
+      hp: '40'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tackle
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: 739f53e3-1a6c-4471-a9de-90fc85514a29
+      shadowless: bacc603a-d6ba-49d7-9dae-a3988e0775b1
+      unlimited: a5caa00b-4b10-470b-9b30-12851f665807
+      1999-2000: 3eb0110e-f2d0-4301-9a16-f51401bbee93
+  vulpix-68:
+    name: Vulpix
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '37'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Confuse Ray
+          cost:
+            - Fire
+            - Fire
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: a216021b-02cc-43d1-a107-3845bc32b4fd
+      shadowless: 5ff58788-478d-4ff1-b1e0-5d2e39390fc4
+      unlimited: 44268679-49d6-4055-b867-3fae3e8a2a46
+      1999-2000: 0752a14d-17be-4226-abe5-4a29e9962c43
+  weedle-69:
+    name: Weedle
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '13'
+      hp: '40'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Poison Sting
+          cost:
+            - Grass
+          damage: '10'
+          effect: Flip a coin. If heads, Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      1st-edition: d8dcf587-a543-4c7f-9473-e0bf354f5660
+      shadowless: a51700a5-47f9-41bc-a003-bef1c878b222
+      unlimited: 5c996268-9c44-4a1e-ab1a-44d1b8f4cd75
+      1999-2000: da61e5d5-66dc-4315-8336-81c4497bab32
+  clefairy-doll-70:
+    name: Clefairy Doll
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Trainer
+      hp: '10'
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 7e03d25f-bf8b-461d-b681-077dba82a7c0
+      shadowless: 4ad7ea85-7741-4f3e-bb5d-0f485a4e2036
+      unlimited: 09967c1f-4930-4bb0-83df-134ffe28de00
+      1999-2000: e2523fbd-eaf7-497e-93e3-a676931b130e
+  computer-search-71:
+    name: Computer Search
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 3607c9e6-1ca2-4152-b81e-283adb20285c
+      shadowless: 863d68c5-88f1-4508-8c70-fa7da22eec05
+      unlimited: 8db8ae0a-ae02-47aa-b13b-87a513269abc
+      1999-2000: 4a0783bf-dd43-458c-aa9e-2e14d55aface
+  devolution-spray-72:
+    name: Devolution Spray
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 08878e55-65eb-40f4-9ef6-47458356cb7e
+      shadowless: bb5e05a8-8d8e-488a-8f9d-aecc9a2282c8
+      unlimited: 583252ab-be21-4631-92a5-2c6b73f9e600
+      1999-2000: 6de38b8e-302a-4788-b256-64835302a22e
+  impostor-professor-oak-73:
+    name: Impostor Professor Oak
+    integrations:
+      priceCharting: imposter-professor-oak
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: e83d5127-5498-47b9-980e-802d1612d9be
+      shadowless: 96cbda81-ba6e-488c-a093-1dd41f04f194
+      unlimited: 36b23cc8-cde3-4bf7-bd39-8d6339f291f5
+      1999-2000: 31ee0a2c-ec0d-4eac-9186-8abd2aa88730
+  item-finder-74:
+    name: Item Finder
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 6f150971-56dc-461d-ae45-c68264535697
+      shadowless: 36267723-5649-45a4-9533-e8f2da7c17d1
+      unlimited: a2b85aa7-97ff-4175-aec6-b364547134ce
+      1999-2000: 52af199b-a0f2-4195-9db8-f124585e0ffa
+  lass-75:
+    name: Lass
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: fed99526-718a-4766-83db-e21877f91aa0
+      shadowless: 6fa51d4f-22db-401a-8bd8-8d0c328247b4
+      unlimited: ec07bbc5-e501-42ba-b53b-4427732b65c6
+      1999-2000: 829a9856-22a6-431e-ac2b-9a52ca754c97
+  pokemon-breeder-76:
+    name: Pokémon Breeder
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 99a5265f-9bc3-4a76-a45c-fd3e0adfc80d
+      shadowless: 833f1b6f-2329-4506-ab4e-dae95e5256ad
+      unlimited: 6e3debce-fe66-4e84-b29e-4beef3633070
+      1999-2000: 0aca1008-7acf-4752-9fb9-e1b2cc90e6de
+  pokemon-trader-77:
+    name: Pokémon Trader
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 1ab9bc12-9454-4bcb-80b8-3942f1bd2771
+      shadowless: 922e6530-d2b1-4475-89e5-f675a2f53ce7
+      unlimited: 043c05d4-6feb-49f5-882c-5153b1b2c34a
+      1999-2000: ab12a216-d5fc-4856-a8c8-fc40ded00231
+  scoop-up-78:
+    name: Scoop Up
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 69a7f0cb-da56-4d34-897a-0cccc7f3742e
+      shadowless: 949ba99b-470e-4c14-aaee-78bc597de872
+      unlimited: 4666cabc-034b-4cd1-beef-0b8707312141
+      1999-2000: 93f0ebee-be7e-4e3e-9c09-b1900dc9979b
+  super-energy-removal-79:
+    name: Super Energy Removal
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 947e94fb-9af9-4698-8f20-bf1ea72f210c
+      shadowless: 3c38a4fb-cb7b-41c9-a0fa-58a2a3555c00
+      unlimited: 695bded7-93de-4446-93e3-637f4fbebca8
+      1999-2000: 1324724e-b625-43fe-ab9a-3e2fb8a17112
+  defender-80:
+    name: Defender
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: a94a0a0b-7192-4cd3-810a-a1737d95ffda
+      shadowless: 1978bc43-3273-4156-97f2-c78727bb1d3a
+      unlimited: d7929c7b-7bf1-4e1d-91e1-c021261f860b
+      1999-2000: 1ca1dd3d-8f21-4282-a72c-5f42c4eb0fa0
+  energy-retrieval-81:
+    name: Energy Retrieval
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 074fd832-ded4-4ad1-a46c-dc27630090a6
+      shadowless: d9879169-4cdb-4d25-860e-347ec14bbedd
+      unlimited: 96576542-e87b-4387-bb19-4e8cf27e6c14
+      1999-2000: 338fb020-46ca-4baf-ae37-32945d702ebe
+  full-heal-82:
+    name: Full Heal
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: f05eeb59-88e2-4494-85af-737773198c3d
+      shadowless: beed19f9-7242-4106-ae4c-2e3e5e878340
+      unlimited: 5a6d7a73-3590-484f-a417-ae88bf0bb087
+      1999-2000: 0fcad100-05ae-4405-baac-c7b0e2f68e22
+  maintenance-83:
+    name: Maintenance
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: aa8724d7-1b51-4515-8a0d-a3a8e4f2efe9
+      shadowless: c41d31f5-74da-4c39-9f2f-6b7785f0cd5e
+      unlimited: 98d45be9-601c-4979-8e39-12b4d9e3aec8
+      1999-2000: e15c36dd-c5be-4ec3-91b6-400e2f402878
+  pluspower-84:
+    name: PlusPower
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 85c427f9-561b-4a44-9406-a765b62c313d
+      shadowless: 0a26b450-44b1-4fe5-85c6-fe32cd5c35b7
+      unlimited: 02d90798-9890-49ab-be78-887305cf18a4
+      1999-2000: 2596c526-be73-4c5c-8edb-0e747ad3c670
+  pokemon-center-85:
+    name: Pokémon Center
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 0a33171f-4471-4f76-9c79-39a015eb43a7
+      shadowless: 44fea3db-4e49-4b1d-b5f1-88993e9aa9f7
+      unlimited: 7dcbe7b9-5854-4036-bd2d-9da09004c495
+      1999-2000: 870a558a-76b1-474e-80b5-17167b066000
+  pokemon-flute-86:
+    name: Pokémon Flute
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 28b54424-2859-4816-ac6c-ff8d6ac4fb7d
+      shadowless: 13c24b85-0761-4211-9034-a66710590998
+      unlimited: 78fd4eef-8361-41b1-9cdd-a7184062915b
+      1999-2000: 527aebc0-e530-48fc-a015-51dbb7358052
+  pokedex-87:
+    name: Pokédex
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: e27d11db-d0b6-472d-beeb-367f285aec8f
+      shadowless: 12cc5e77-dc33-46d2-8ec3-02e7d9df2e11
+      unlimited: 4969e68c-6588-4bcb-ae2a-faeaffb97327
+      1999-2000: a5f6c8ac-65c1-4e96-8cd5-dcb4d3011358
+  professor-oak-88:
+    name: Professor Oak
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: abc8977d-5668-489b-b1ff-d8fbf21d9bcc
+      shadowless: ad10fe61-03d0-4962-9159-43bd48159992
+      unlimited: 22e60c05-5934-4d37-87f5-3b4dd2477455
+      1999-2000: 8f59d48b-36b4-482f-91bc-059922413124
+  revive-89:
+    name: Revive
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 803553f5-e670-4cbd-b509-611159969d30
+      shadowless: 10a5a89f-7345-4df4-ae05-c4f287677a19
+      unlimited: 482c375e-e28f-4dc4-b609-9983b089b015
+      1999-2000: d60e76a9-6e4c-4049-81ed-8199bb4803d7
+  super-potion-90:
+    name: Super Potion
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 965f7033-6c39-454b-8bf8-b90f98b5cdc0
+      shadowless: 9da5f30c-84a4-4fa3-a77d-84531a448efc
+      unlimited: ca29213e-ac55-424f-88ad-73bef4ef9139
+      1999-2000: e3f238e1-f5b9-4d85-a5f9-7c71c027081d
+  bill-91:
+    name: Bill
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 779f27f7-410d-4801-acf2-9c85a4206407
+      shadowless: df92ce2e-ba23-494e-a218-7d2d64e3dbbe
+      unlimited: aa905cba-e931-47bc-a541-289b6ab8406e
+      1999-2000: 1653bbd0-d6d4-4b28-a366-3d4c44cae116
+  energy-removal-92:
+    name: Energy Removal
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: ef2b12d1-5d7c-4ef7-82c6-fdfc65615f3c
+      shadowless: 72e98cce-fec9-4a22-b429-7d5b0fda0ff9
+      unlimited: 8aff9ffa-7c43-4be6-a25f-8c5a6a660f83
+      1999-2000: e3fab351-f615-498c-8e46-b4713ef4905b
+  gust-of-wind-93:
+    name: Gust of Wind
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 73d1bdb7-a4bb-4b72-a34d-23e052d5e6da
+      shadowless: dc1196d5-843b-4301-bf24-8c7b1b38aa8b
+      unlimited: 5676dde7-9116-4e7e-aad9-acbc5c08d418
+      1999-2000: 7b4351c5-c225-429f-8752-a7996437efc3
+  potion-94:
+    name: Potion
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 172f2f50-35a3-4715-a99d-3764cdd798cb
+      shadowless: 643a8962-cef1-428d-a408-3a22c642394f
+      unlimited: e07fec68-a879-497e-b55a-e0532404c139
+      1999-2000: 9b6bd320-eb70-41dd-988b-9c7175b44090
+  switch-95:
+    name: Switch
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+    editions:
+      1st-edition: 106956f6-b7ca-49da-8608-944d799a223b
+      shadowless: 9ceba477-04e3-4a50-9d07-99e378b354f2
+      unlimited: 838fc72d-e0ed-492d-b22b-605b80e0d243
+      1999-2000: 1a622948-1a6b-4b38-8521-a32f616988d3
+  double-colorless-energy-96:
+    name: Double Colorless Energy
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      energyType: Special
+    editions:
+      1st-edition: 687b4065-86bc-4ed7-883d-f6ef9781ac5b
+      shadowless: 3845f043-b04b-45dc-8b72-6a948ab1f301
+      unlimited: 2974efc2-1114-4308-9e34-5904048ca715
+      1999-2000: bebe3eb3-905b-4638-b3bd-128cb7a69c9b
+  fighting-energy-97:
+    name: Fighting Energy
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      stage: Basic
+      retreat: undefined
+      energyType: Normal
+    editions:
+      1st-edition: 6504e4d7-5e14-4dfd-9966-950aa5c6ca34
+      shadowless: b3e05617-b531-4ffa-94d2-613121b79458
+      unlimited: 90bdd278-7fda-4d94-acf8-cce99dd1cc4c
+      1999-2000: 3306c1d5-295f-4d91-b0ab-d0ade4d2c9ba
+  fire-energy-98:
+    name: Fire Energy
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      stage: Basic
+      retreat: undefined
+      energyType: Normal
+    editions:
+      1st-edition: 3d67ba66-1bed-4016-b557-f59033a87c31
+      shadowless: 2f3012b3-4aee-4ff6-bc6d-94688a5612f8
+      unlimited: 5597919a-4c7a-494a-83c2-51df21bfef17
+      1999-2000: 2c9f5d63-f5c6-4373-a3c7-94fa6dacc81a
+  grass-energy-99:
+    name: Grass Energy
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      stage: Basic
+      retreat: undefined
+      energyType: Normal
+    editions:
+      1st-edition: 84da1872-a82f-4372-81eb-7f880eccc749
+      shadowless: 1650e0b8-685d-4ae0-87cd-140382104960
+      unlimited: ab3b55c3-5c67-4a22-95cf-dc878413d8a9
+      1999-2000: 5332a890-66ed-4e6a-8972-ca29f3aaba43
+  lightning-energy-100:
+    name: Lightning Energy
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      stage: Basic
+      retreat: undefined
+      energyType: Normal
+    editions:
+      1st-edition: f48c20f7-02d9-4a88-91a1-bca5feff02b9
+      shadowless: 19315ce6-be1c-42e2-893b-fcc22c488b64
+      unlimited: 54ffa62f-1a12-4a0f-93f7-962b6c4ddb2a
+      1999-2000: b2bea4d9-25f0-47d9-8cf4-8fd87c7d37b1
+  psychic-energy-101:
+    name: Psychic Energy
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      stage: Basic
+      retreat: undefined
+      energyType: Normal
+    editions:
+      1st-edition: 58b2a7bc-a7fb-420f-8948-630dc5a778ec
+      shadowless: fd7160ec-6808-425f-953a-74415d118b9e
+      unlimited: c34087c3-c8f0-44df-bcc0-2761b5ccda57
+      1999-2000: fbb31a8f-3727-4006-ab08-d6809ce290d3
+  water-energy-102:
+    name: Water Energy
+    variants:
+      misaligned-title:
+        name: Misaligned Title
+        edition: unlimited
+        rarityScore: 3
+        description: There is missing spacing above the "Energy" title, making it look
+          misaligned.
+        id: 8e48712b-bd28-493b-a3dd-aafa64d1c419
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      stage: Basic
+      retreat: undefined
+      energyType: Normal
+    editions:
+      1st-edition: c48501d6-69b9-407a-8a30-65f1b13e19dd
+      shadowless: 22a6e17e-1cd4-4e18-8bc6-915f6dee6cdb
+      unlimited: 9173b525-30b9-4fc4-a887-d10c74162914
+      1999-2000: 69b99d8a-4274-48d0-91b9-294d9b321044
+products:
+  booster-pack-blastoise:
+    name: Booster Pack [Blastoise]
+    integrations:
+      priceCharting: booster-pack
+    variants:
+      triangle-error:
+        name: Black Triangle
+        edition: unlimited
+        rarityScore: 7
+        description: >-
+          There is a black triangle printed to cover up the 1st edition mark,
+          contains unlimited edition cards.
+        id: a72ab432-3b3e-4b9b-820f-3b26ebcda184
+      thick-font-1st-edition-error:
+        name: 1st Stamp Error (Thick Font)
+        edition: unlimited
+        rarityScore: 7
+        description: >-
+          The font is thicker and the pack has a 1st edition stamp but contains
+          unlimited edition cards.
+        id: 980d20d7-0d90-4288-8cb7-e93a2fbde113
+      thick-font:
+        name: Thick Font
+        edition: unlimited
+        integrations:
+          priceCharting:
+            thick-font: booster-pack
+        rarityScore: 7
+        description: The font is thicker and it correctly has no 1st edition stamp.
+        id: 4ecf2f4a-f4ec-4bce-986d-5c716ccfa6d6
+      hanger-crimp:
+        name: Hanger Crimp
+        edition: unlimited
+        integrations:
+          priceCharting:
+            hanger-crimp: booster-pack
+        rarityScore: 7
+        description: >-
+          The pack has a larger top crimp suitable for hanging displays, they
+          are slightly more rare than normal crimps.
+        id: 1fcdff6c-81af-4a64-911e-396ed5fef0bf
+      long-crimp-shadowless:
+        name: Long Crimp (1999)
+        edition: shadowless
+        integrations:
+          priceCharting:
+            long-crimp-shadowless: booster-pack-shadowless
+        id: e8451f3d-508d-4715-b183-8e879e5fd9ac
+    editions:
+      1st-edition: ac9a6efc-c7c7-4c05-80d5-6bd474919dee
+      shadowless: ae72067e-3165-479a-8c26-ebf6370d6e7d
+      unlimited: 2269d119-433b-4f2a-bede-f3ddc2665f50
+      1999-2000: 44b03cd0-105a-4fef-9f83-b88b0b4ce70c
+  booster-pack-charizard:
+    name: Booster Pack [Charizard]
+    integrations:
+      priceCharting: booster-pack
+    variants:
+      triangle-error:
+        name: Black Triangle
+        edition: unlimited
+        rarityScore: 7
+        description: There is a black triangle printed to cover up the 1st edition mark.
+        id: 6ba4ccf6-0337-4f3f-b4f9-a898608f599f
+      thick-font-1st-edition-error:
+        name: 1st Stamp Error (Thick Font)
+        edition: unlimited
+        rarityScore: 7
+        description: >-
+          The font is thicker and the pack has a 1st edition stamp but contains
+          unlimited edition cards.
+        id: e5e7e736-521a-4c37-8821-c566bb8f99a5
+      thick-font:
+        name: Thick Font
+        edition: unlimited
+        integrations:
+          priceCharting:
+            thick-font: booster-pack
+        description: The font is thicker and it correctly has no 1st edition stamp.
+        id: 5ebc55e6-1e8c-4b39-bbfa-da56abaf0a13
+      long-crimp:
+        name: Long Crimp
+        integrations:
+          priceCharting:
+            long-crimp: booster-pack
+        rarityScore: 7
+        description: >-
+          The pack has a larger top crimp suitable for hanging displays, they
+          are slightly more rare than normal crimps.
+        id: 833717ea-c872-49f0-8963-840ec9671ba2
+      hanger-crimp:
+        name: Hanger Crimp
+        edition: unlimited
+        integrations:
+          priceCharting:
+            hanger-crimp: booster-pack
+        rarityScore: 7
+        description: >-
+          The pack has a larger top crimp suitable for hanging displays, they
+          are slightly more rare than normal crimps.
+        id: 405424c8-13c8-4b90-8097-98f9b1302cf5
+    editions:
+      1st-edition: c1e2d95f-104b-44a3-8e96-9f660dbdcce4
+      shadowless: 76d7812b-7794-4fbf-a52f-5b29db1fd456
+      unlimited: 9455bfe5-0d76-49f2-a922-d1b6c5ca1580
+      1999-2000: bcfb2c8c-7750-4597-b435-6b736056d17e
+  booster-pack-venusaur:
+    name: Booster Pack [Venusaur]
+    integrations:
+      priceCharting: booster-pack
+    variants:
+      triangle-error:
+        name: Black Triangle
+        edition: unlimited
+        rarityScore: 7
+        description: There is a black triangle printed to cover up the 1st edition mark.
+        id: bc983b39-6021-4919-ae62-89e4cbfa46f9
+      thick-font-1st-edition-error:
+        name: 1st Stamp Error (Thick Font)
+        edition: unlimited
+        rarityScore: 7
+        description: >-
+          The font is thicker and the pack has a 1st edition stamp but contains
+          unlimited edition cards.
+        id: 9fbf2df7-d7ce-4935-ad52-9983dcce9937
+      thick-font:
+        name: Thick Font
+        edition: unlimited
+        integrations:
+          priceCharting:
+            thick-font: booster-pack
+        rarityScore: 7
+        description: The font is thicker and it correctly has no 1st edition stamp.
+        id: 14fbf327-4432-4151-8687-db68b1b3f259
+      long-crimp:
+        name: Long Crimp (1999)
+        edition: shadowless
+        integrations:
+          priceCharting:
+            long-crimp: booster-pack
+        rarityScore: 7
+        description: >-
+          The pack has a larger top crimp suitable for hanging displays, they
+          are slightly more rare than normal crimps.
+        id: 0073ba8b-1447-4f5e-beb3-e25504437110
+      hanger-crimp:
+        name: Hanger Crimp
+        edition: unlimited
+        integrations:
+          priceCharting:
+            hanger-crimp: booster-pack
+        rarityScore: 7
+        description: >-
+          The pack has a larger top crimp suitable for hanging displays, they
+          are slightly more rare than normal crimps.
+        id: e96da59e-e3a2-45e6-8179-651d449c6516
+    editions:
+      1st-edition: 93328b83-a90a-4cd0-9cc1-6bfeb4fb2882
+      shadowless: 365ef478-9020-4b31-b38a-139b6351cb22
+      unlimited: 5d7fffe0-09be-4230-b03e-0da1c329d604
+      1999-2000: b7429858-82da-47e3-baac-97893f0661d9
+  blister-pack-blastoise:
+    name: Blister Pack [Blastoise]
+    integrations:
+      priceCharting: blister-pack
+    editions:
+      1st-edition: b8c002bb-5a8b-4d18-85e6-ec009312fec6
+      shadowless: 3b213827-f18c-4cb1-852d-416906a472d8
+      unlimited: bc355143-7960-43be-a9cf-afb9ed6d92d2
+      # 1999-2000: 2333cf47-da37-4794-92f2-8c7125d8e3bf
+  blister-pack-charizard:
+    name: Blister Pack [Charizard]
+    integrations:
+      priceCharting: blister-pack
+    editions:
+      1st-edition: ead5eebc-2b67-4faa-92fa-650d04fcfe29
+      shadowless: c1f46fa1-914a-4c68-a583-f26d5f36ed82
+      unlimited: 881d92f4-f915-4f90-a555-304c66c02fcb
+      # 1999-2000: 9127e7d9-6bd3-4960-b2f1-d0744332602a
+  blister-pack-venusaur:
+    name: Blister Pack [Venusaur]
+    integrations:
+      priceCharting: blister-pack
+    editions:
+      1st-edition: 01c832c8-8af8-4577-863d-3adf9f09e3b9
+      shadowless: 61fd808a-c29c-4491-8438-c70a56efed25
+      unlimited: c9cc045b-c264-4c70-b177-47160094651b
+      # 1999-2000: c8d943bb-c93e-4912-8fe1-a71864d0c97f
+  booster-box:
+    name: Booster Box
+    rarityScore: 9
+    integrations:
+      priceCharting: booster-box
+    editions:
+      1st-edition: c33494e1-02e2-4306-8538-a054411ce692
+      shadowless: 7704882c-5e84-4553-8162-a8e27e8ca276
+      unlimited: 04deb63c-2c6c-4125-8a58-b1da2a6b56b3
+      1999-2000: 8770bffc-865a-4041-99ab-674768e3afd6
+  2-player-starter-set:
+    name: 2-Player Starter Set
+    editions:
+      shadowless: fb5b2bea-0623-41d0-9fb2-2bfd21283ce7
+      unlimited: a8d5a018-b593-4f76-a1d9-7c19d0f5b654
+  starter-gift-box:
+    name: Starter Gift Box
+    editions:
+      unlimited: 5e63c178-18f6-4c1e-983c-ee853a35ebac
+  demo-game-booster:
+    name: Demo Game Booster
+    rarityScore: 6
+    links:
+      'Bulbapedia': 'https://bulbapedia.bulbagarden.net/wiki/Demo_Game_(TCG)'
+    description: Distributed prior to the official release. None of the cards are
+      exclusive to this deck, nor do they have any defining characteristics that
+      set them apart from regular Shadowless cards.
+    editions:
+      shadowless: 4138be3d-9f92-4ae6-a7f4-d682fdb38618
+  trainer-deck-a-box:
+    name: Trainer Deck A [Brock's Deck]
+    links:
+      'Bulbapedia': 'https://bulbapedia.bulbagarden.net/wiki/Trainer_Deck_A_(TCG)'
+    rarityScore: 8
+    editions:
+      unlimited: 13555608-4048-41fd-973f-724e7a97da82
+  trainer-deck-b-box:
+    name: Trainer Deck B [Misty's Deck]
+    links:
+      'Bulbapedia': 'https://bulbapedia.bulbagarden.net/wiki/Trainer_Deck_B_(TCG)'
+    rarityScore: 8
+    editions:
+      unlimited: 6e1f6f22-5c9f-416e-9a59-691608d39a18
+  theme-deck-overgrowth:
+    name: Overgrowth [Theme Deck]
+    editions:
+      unlimited: f46fef02-00d0-476e-bfff-8abfe4937be3
+    integrations:
+      priceCharting: overgrowth
+  theme-deck-blackout:
+    name: Blackout [Theme Deck]
+    editions:
+      unlimited: bb1881aa-4ffb-4fd3-b838-d55950e6f56f
+    integrations:
+      priceCharting: blackout
+  theme-deck-brushfire:
+    name: Brushfire [Theme Deck]
+    editions:
+      unlimited: 5b09bb02-37e3-4089-874a-f95bd9e5a8dc
+    integrations:
+      priceCharting: brushfire
+  theme-deck-zap:
+    name: Zap [Theme Deck]
+    editions:
+      unlimited: b708ed61-5534-471d-91e8-b550861f2811
+    integrations:
+      priceCharting: zap
+additional:
+  trainer-deck-a:
+    name: Trainer Deck A
+    description: A very limited distribution pre-constructed deck given to Pokemon
+      League gaming stores to help new players learn the game. The back of cards
+      feature a red "Trainer Deck A".
+    rarityScore: 6
+    items:
+      machamp-8:
+        name: Machamp
+        photos:
+          - front
+          - back
+        variantOf: machamp-8:unlimited
+        id: 91ec706a-3b86-4a2d-9b12-196bcf1481ac
+      machoke-34:
+        name: Machoke
+        variantOf: machoke-34:unlimited
+        id: eccd82bb-ef8e-42e8-9b07-98c7ac878b92
+      raticate-40:
+        name: Raticate
+        variantOf: raticate-40:unlimited
+        id: cc9b9902-f1ca-4f1b-b605-a63ee492504e
+      machop-52:
+        name: Machop
+        variantOf: machop-52:unlimited
+        id: fb9469a0-d512-45de-b80d-29582fb93045
+      onix-56:
+        name: Onix
+        variantOf: onix-56:unlimited
+        id: aef7f867-b8ab-47da-b7eb-387f13a2e5a6
+      rattata-61:
+        name: Rattata
+        variantOf: rattata-61:unlimited
+        id: e2068bc5-b4ad-4148-b426-e84f78169885
+      sandshrew-62:
+        name: Sandshrew
+        variantOf: sandshrew-62:unlimited
+        id: 1381a967-57fd-43a2-a782-b14da27c3000
+      defender-80:
+        name: Defender
+        variantOf: defender-80:unlimited
+        id: 14d4c387-ae58-40f5-8921-cf105a432631
+      super-potion-90:
+        name: Super Potion
+        variantOf: super-potion-90:unlimited
+        id: ad8cf303-1a6a-4f26-af4d-f257d814f370
+      potion-94:
+        name: Potion
+        variantOf: potion-94:unlimited
+        id: 56b7b44d-9b45-40e9-9936-8f1b46debdf0
+      switch-95:
+        name: Switch
+        variantOf: switch-95:unlimited
+        id: bddfbdf8-a829-4fde-9093-04d49d147c47
+      fighting-energy-97:
+        name: Fighting Energy
+        variantOf: fighting-energy-97:unlimited
+        id: 11595c1f-44f1-46d8-890d-0862e43bab8d
+  trainer-deck-b:
+    name: Trainer Deck B
+    description: A very limited distribution pre-constructed deck given to Pokemon
+      League gaming stores to help new players learn the game. The back of cards
+      feature a red "Trainer Deck B".
+    rarityScore: 6
+    items:
+      blastoise-2:
+        name: Blastoise
+        variantOf: blastoise-2:unlimited
+        id: 69cd0444-ee0c-4584-a959-ff921263fcb8
+      pidgeotto-22:
+        name: Pidgeotto
+        variantOf: pidgeotto-22:unlimited
+        id: 29d0e438-c3c7-480d-8b4a-50d2e712d5d1
+      seel-41:
+        name: Seel
+        variantOf: seel-41:unlimited
+        id: d49a2f27-ee72-4258-841e-2d078ebf8274
+      wartortle-42:
+        name: Wartortle
+        variantOf: wartortle-42:unlimited
+        id: 529cb4eb-7dc4-4567-bf59-74961c174240
+      pidgey-57:
+        name: Pidgey
+        variantOf: pidgey-57:unlimited
+        id: 74ea631c-abf2-4157-9c0b-a08ef541bba3
+      squirtle-63:
+        name: Squirtle
+        variantOf: squirtle-63:unlimited
+        id: fdc206a8-26c9-436d-9917-7c189615c730
+      starmie-64:
+        name: Starmie
+        variantOf: starmie-64:unlimited
+        id: 78b6bf1e-30ec-410b-b16f-6ed4765659e4
+      staryu-65:
+        name: Staryu
+        variantOf: staryu-65:unlimited
+        id: 7a043bd2-fd93-4e14-8c3b-26f6a75ae75e
+      computer-search-71:
+        name: Computer Search
+        variantOf: computer-search-71:unlimited
+        id: b5ebfe1f-725a-4b02-af99-df71345131f3
+      pokemon-trader-77:
+        name: Pokémon Trader
+        variantOf: pokemon-trader-77:unlimited
+        id: 66827317-6f56-4beb-b33e-b6d0d62fd885
+      energy-removal-92:
+        name: Energy Removal
+        variantOf: energy-removal-92:unlimited
+        id: 571b4c28-aed5-45cc-ac7d-3977d83216a5
+      switch-95:
+        name: Switch
+        variantOf: switch-95:unlimited
+        id: 7999431c-76df-4d45-9676-f9f4f7406dc7
+      water-energy-102:
+        name: Water Energy
+        variantOf: water-energy-102:unlimited
+        id: 4da853ff-a6a4-495f-8365-8148860c3343
+  test-print:
+    name: Test Prints
+    integrations:
+      priceCharting: 0
+    links:
+      'CGC Certifies Cosmos Holos Blog': https://www.cgccards.com/news/article/12072/
+    items:
+      alakazam-disco-1:
+        name: Alakazam
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: alakazam-1:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 82176ad1-d33b-4316-85ba-b1cab3d4206a
+      alakazam-cosmos-1:
+        name: Alakazam
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: alakazam-1:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: baf6868c-b441-44f0-9337-997eb1444c22
+      blastoise-disco-2:
+        name: Blastoise
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: blastoise-2:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 89b1faac-badc-47e3-b677-88efd7ae0d81
+      blastoise-cosmos-2:
+        name: Blastoise
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: blastoise-2:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 2125eabd-99ca-499c-8895-21e74a75ea19
+      chansey-disco-3:
+        name: Chansey
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: chansey-3:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 2f9c4ce6-1c9d-448f-a9f2-f1f11c7c2d3d
+      chansey-cosmos-3:
+        name: Chansey
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: chansey-3:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 9c9dc61a-a515-43d7-a968-2cb98573bd85
+      charizard-disco-4:
+        name: Charizard
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: charizard-4:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: d2d5a270-d3b4-4beb-99c6-24d6290ee25b
+      charizard-cosmos-4:
+        name: Charizard
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: charizard-4:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 746199ec-7d1a-4170-92f8-e1e34d8f7aa1
+      clefairy-disco-5:
+        name: Clefairy
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: clefairy-5:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: ab82a310-9bed-4522-b246-bb9b67d81d7d
+      clefairy-cosmos-5:
+        name: Clefairy
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: clefairy-5:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 6af303f2-15ed-4e11-bda1-528805d06a46
+      gyarados-disco-6:
+        name: Gyarados
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: gyarados-6:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 36709b98-322f-44bf-8739-a6ae250416a2
+      gyarados-cosmos-6:
+        name: Gyarados
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: gyarados-6:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 452a71e1-1605-4027-9d91-868b65436184
+      hitmonchan-disco-7:
+        name: Hitmonchan
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: hitmonchan-7:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 1fa62dc0-7009-416c-8a0b-b915161d3797
+      hitmonchan-cosmos-7:
+        name: Hitmonchan
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: hitmonchan-7:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 6ab6a640-7db9-45dd-b596-dbbc0c0878ed
+      magneton-disco-9:
+        name: Magneton
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: magneton-9:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: cca91166-011a-4d8f-b168-26cc55fb577d
+      magneton-cosmos-9:
+        name: Magneton
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: magneton-9:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 13e739a6-ea4c-4b25-a5f0-987f467b78d2
+      mewtwo-disco-10:
+        name: Mewtwo
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: mewtwo-10:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 43e185bb-5d85-4d1f-9a81-898366c9d665
+      mewtwo-cosmos-10:
+        name: Mewtwo
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: mewtwo-10:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 2d42dd47-7edc-449c-8025-2497a3b8f7ba
+      nidoking-disco-11:
+        name: Nidoking
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: nidoking-11:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 8b8cb0e4-908d-41d8-a65f-6af17f2f9680
+      nidoking-cosmos-11:
+        name: Nidoking
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: nidoking-11:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: b10e6852-e09e-4704-ae44-51ac008d2e32
+      ninetales-disco-12:
+        name: Ninetales
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: ninetales-12:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: c55d42c3-77d2-47ff-a149-954fabd9b92b
+      ninetales-cosmos-12:
+        name: Ninetales
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: ninetales-12:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 6c8fb48a-c467-4e20-8a96-e2cba149948d
+      poliwrath-disco-13:
+        name: Poliwrath
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: poliwrath-13:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: c2e3693b-0592-4846-8db5-477e15b39eaa
+      poliwrath-cosmos-13:
+        name: Poliwrath
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: poliwrath-13:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 77a09af4-181f-4679-9d47-59610e4c9519
+      raichu-disco-14:
+        name: Raichu
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: raichu-14:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 1d327388-3ad6-4522-a459-8e6d2d96ee22
+      raichu-cosmos-14:
+        name: Raichu
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: raichu-14:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 5a0fc7bb-07de-4afb-8b55-a20249a55f69
+      venusaur-disco-15:
+        name: Venusaur
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: venusaur-15:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 6acf6916-970b-4408-8e74-20811c26c81a
+      venusaur-cosmos-15:
+        name: Venusaur
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: venusaur-15:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: 1838a28c-3622-4dae-9a29-cb056ccb20bb
+      zapdos-disco-16:
+        name: Zapdos
+        rarityScore: 10
+        releaseDate: '1999-01-09'
+        variantOf: zapdos-16:1st-edition
+        variant:
+          name: 'Disco Holo'
+          description: Early test prints of the holo cards. Likely given only to WotC
+            employees and unintentionally circulated via uncut sheets.
+        id: 6f3069e3-4fde-41a5-8492-84e9828cb38f
+      zapdos-cosmos-16:
+        name: Zapdos
+        rarityScore: 10
+        releaseDate: '1999-11-18'
+        variantOf: zapdos-16:unlimited
+        variant:
+          name: Cosmos Holo
+          description: Likely early prototyping for Base Set 2. Not intended for
+            distribution, unintentionally circulated via uncut sheets.
+        id: b1b60267-5a7b-4ef5-b872-2d3687b0b56e

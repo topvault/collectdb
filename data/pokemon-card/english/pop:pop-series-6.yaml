@@ -1,0 +1,706 @@
+items:
+  bastiodon-1:
+    name: Bastiodon
+    details:
+      illustrator: Kazuyuki Kano
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '411'
+      hp: '130'
+      types:
+        - Metal
+      evolveFrom: Shieldon
+      description: >-
+        Any frontal attack is repulsed. It is a docile Pokémon that feeds on
+        grass and berries.
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Poke-BODY
+          name: Protective Wall
+          effect: >-
+            Prevent all damage done to your Benched Pokémon by your opponent’s
+            attacks.
+      attacks:
+        - name: Anger Revenge
+          cost:
+            - Metal
+            - Metal
+            - Colorless
+          damage: '60'
+          effect: >-
+            If Bastiodon was damaged by an attack during your opponent’s last
+            turn, this attack does 40 damage to 1 of your opponent’s Benched
+            Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fire
+          value: '+40'
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: c591fae6-16c0-467b-adaf-3a072fd36ed8
+    integrations:
+      pokeData: '43646'
+      tcgPlayer: '83735'
+  lucario-2:
+    name: Lucario
+    details:
+      illustrator: Kouki Saitou
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '448'
+      hp: '90'
+      types:
+        - Fighting
+      evolveFrom: Riolu
+      description: >-
+        It has the ability to sense the auras of all things. It understands
+        human speech.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Feint
+          cost:
+            - Colorless
+          damage: '30'
+          effect: This attack’s damage isn’t affected by Resistance.
+        - name: Aura Sphere
+          cost:
+            - Fighting
+            - Fighting
+          damage: '40'
+          effect: >-
+            Does 20 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply
+            Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Psychic
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: 6b4c2b44-22ab-4fb6-aa68-f347c04bf5b6
+    integrations:
+      pokeData: '43640'
+      tcgPlayer: '86874'
+  manaphy-3:
+    name: Manaphy
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 97fd3697-636b-4e99-a8ef-f91329db541f
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '490'
+      hp: '70'
+      types:
+        - Water
+      description: >-
+        Born on a cold seafloor, it will swim great distances to return to its
+        birthplace.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Call for Family
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a Basic Pokémon and put it onto your Bench.
+            Shuffle your deck afterward.
+        - name: Aqua Ring
+          cost:
+            - Water
+            - Water
+          damage: '30'
+          effect: Switch Manaphy with 1 of your Benched Pokémon.
+      weaknesses:
+        - type: Lightning
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: c45455e5-304f-47e7-8582-a261477ffc2c
+    integrations:
+      pokeData: '43650'
+      tcgPlayer: '87144'
+  pachirisu-4:
+    name: Pachirisu
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '417'
+      hp: '70'
+      types:
+        - Lightning
+      description: >-
+        It makes fur balls that crackle with static electricity. It stores them
+        with berries in tree holes.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Minor Errand-Running
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a basic Energy card, show it to your opponent,
+            and put it into your hand. Shuffle your deck afterward.
+        - name: Thunder Jolt
+          cost:
+            - Lightning
+          damage: '20'
+          effect: Flip a coin. If tails, Pachirisu does 10 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: '+20'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: d173636d-79c3-4ba0-aea8-0361f0e9b323
+    integrations:
+      pokeData: '43641'
+      tcgPlayer: '87898'
+  rampardos-5:
+    name: Rampardos
+    details:
+      illustrator: Kazuyuki Kano
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '409'
+      hp: '120'
+      types:
+        - Fighting
+      evolveFrom: Cherrim
+      description: >-
+        Its powerful head butt has enough power to shatter even the most durable
+        things upon impact.
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Assurance
+          cost:
+            - Fighting
+            - Colorless
+          damage: '30'
+          effect: >-
+            As long as the Defending Pokémon’s remaining HP is 60 or less, this
+            attack’s base damage is 60 instead of 30.
+        - name: Hasty Headbutt
+          cost:
+            - Fighting
+            - Fighting
+            - Fighting
+          damage: '100'
+          effect: >-
+            Rampardos does 20 damage to itself. This attack’s damage isn’t
+            affected by Weakness, Resistance, Poké-Powers, Poké-Bodies, or any
+            other effects on the Defending Pokémon.
+      weaknesses:
+        - type: Grass
+          value: '+30'
+      retreat: '1'
+    editions:
+      unlimited: d9502196-4144-4aae-96e3-6a6a90dcb763
+    integrations:
+      pokeData: '43643'
+      tcgPlayer: '88570'
+  drifloon-6:
+    name: Drifloon
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '425'
+      hp: '60'
+      types:
+        - Psychic
+      description: >-
+        A Pokémon formed by the spirits of people and Pokémon. It loves damp,
+        humid seasons.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Blowing Wind
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, put 1 of your Benched Pokémon and all cards
+            attached to it on top of your deck. Shuffle your deck afterward.
+        - name: Ominous Wind
+          cost:
+            - Psychic
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Confused and
+            can’t retreat during your opponent’s next turn.
+      weaknesses:
+        - type: Darkness
+          value: '+10'
+      resistances:
+        - type: Colorless
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 8a7e59e9-4513-49a6-a210-716fa0b99a20
+    integrations:
+      pokeData: '43639'
+      tcgPlayer: '84954'
+  gible-7:
+    name: Gible
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: b91fbc75-ce68-41d8-a583-14a64a27bd62
+    details:
+      illustrator: Kouki Saitou
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '443'
+      hp: '50'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Surprise Attack
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Colorless
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 6d101bf7-77e7-4010-91f2-7fac11af39ac
+    integrations:
+      pokeData: '43649'
+      tcgPlayer: '85699'
+  riolu-8:
+    name: Riolu
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: dd387bbd-4400-400e-972b-4217102b3575
+    details:
+      illustrator: Kouki Saitou
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '447'
+      hp: '60'
+      types:
+        - Fighting
+      description: >-
+        The aura that emanates from its body intensifies to alert others if it
+        is afraid or sad.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Wild Kick
+          cost:
+            - Fighting
+          damage: '30'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Psychic
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 3bb84edf-b135-4a33-8a19-5d7f73c8da5e
+    integrations:
+      pokeData: '43653'
+      tcgPlayer: '88752'
+  pikachu-9:
+    name: Pikachu
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: e6af1f56-0b38-416f-9778-40abf2a40ea7
+      pokemon-day:
+        name: Pokemon Day
+        description: Pokemon Day.
+        id: a52ee8a0-8249-4b01-aabf-4622334a5265
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Spark
+          cost:
+            - Lightning
+            - Colorless
+          damage: '10'
+          effect: >-
+            Does 10 damage to 2 of your opponent’s Benched Pokémon. (Don’t apply
+            Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: '+10'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 57ae58d2-0f0c-4316-8dde-f4918a3cd7eb
+    integrations:
+      pokeData: '43642'
+      tcgPlayer: '88087'
+  staravia-10:
+    name: Staravia
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '397'
+      hp: '70'
+      types:
+        - Colorless
+      evolveFrom: Starly
+      description: >-
+        It flies around forests and fields in search of bug Pokémon. It stays
+        within a huge flock.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Whirlwind
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            Your opponent switches the Defending Pokémon with 1 of his or her
+            Benched Pokémon.
+        - name: Clutch
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            The Defending Pokémon can’t retreat during your opponent’s next turn.
+      weaknesses:
+        - type: Lightning
+          value: '+20'
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '0'
+    editions:
+      unlimited: 24d3f701-51fc-4d89-908c-c66b083496f9
+    integrations:
+      pokeData: '43644'
+      tcgPlayer: '89514'
+  bidoof-11:
+    name: Bidoof
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '399'
+      hp: '50'
+      types:
+        - Colorless
+      description: >-
+        With nerves of steel, nothing can perturb it. It is more agile and
+        active than it appears.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Amnesia
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of the Defending Pokémon’s attacks. That Pokémon can’t use
+            that attack during your opponent’s next turn.
+        - name: Scavenge
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your discard pile for a Trainer card, show it to your
+            opponent, and put it into your hand.
+      weaknesses:
+        - type: Fighting
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: b7577d27-5261-4b09-9e5a-24c7c1a67d12
+    integrations:
+      pokeData: '43637'
+      tcgPlayer: '83826'
+  buneary-12:
+    name: Buneary
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '427'
+      hp: '50'
+      types:
+        - Colorless
+      description: >-
+        It slams foes by sharply uncoiling is rolled ears. It stings enough to
+        make a grown-up cry in pain.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Splash
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Jump Kick
+          cost:
+            - Colorless
+            - Colorless
+          damage: '10'
+          effect: >-
+            Does 10 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply
+            Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 08a7f246-2525-4ad5-bd47-e8d3984764d6
+    integrations:
+      pokeData: '43647'
+      tcgPlayer: '84038'
+  cherubi-13:
+    name: Cherubi
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '420'
+      hp: '50'
+      types:
+        - Grass
+      description: >-
+        The small ball holds the nutrients needed for evolution. Apparently, it
+        is very sweet and tasty.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sleep Powder
+          cost:
+            - Grass
+          damage: undefined
+          effect: The Defending Pokémon is now Asleep.
+        - name: Leech Seed
+          cost:
+            - Grass
+            - Colorless
+          damage: '20'
+          effect: >-
+            If this attack does any damage to the Defending Pokémon (after
+            applying Weakness and Resistance), remove 1 damage counter from
+            Cherubi.
+      weaknesses:
+        - type: Fire
+          value: '+10'
+      resistances:
+        - type: Water
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 7f3d7062-c9dc-4ca8-b533-7bfddae7eb71
+    integrations:
+      pokeData: '43638'
+      tcgPlayer: '84260'
+  chimchar-14:
+    name: Chimchar
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 3874c6ce-d39b-4816-a524-3ad3faad47ab
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '390'
+      hp: '50'
+      types:
+        - Fire
+      description: >-
+        It agilely scales cliffs to live atop craggy mountains. Its fire is put
+        out when it sleeps.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scratch
+          damage: '10'
+        - name: Ember
+          cost:
+            - Fire
+            - Colorless
+          damage: '30'
+          effect: Flip a coin. If tails, discard a Fire Energy attached to Chimchar.
+      weaknesses:
+        - type: Water
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: e026c707-e93d-48de-b644-fbaba593ce6b
+    integrations:
+      pokeData: '43648'
+      tcgPlayer: '84283'
+  piplup-15:
+    name: Piplup
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: de62e591-f321-4257-bca5-5f835f42c59c
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '393'
+      hp: '60'
+      types:
+        - Water
+      description: >-
+        Because it is very proud, it hates accepting food from people. Its thick
+        down guards it from cold.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Peck
+          damage: '10'
+        - name: Water Splash
+          cost:
+            - Water
+            - Colorless
+          damage: 20+
+          effect: >-
+            Flip a coin. If heads, this attack does 20 damage plus 10 more
+            damage.
+      weaknesses:
+        - type: Lightning
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 005b1d7f-31b2-4832-b9ac-7ae18ed0523f
+    integrations:
+      pokeData: '43652'
+      tcgPlayer: '88143'
+  starly-16:
+    name: Starly
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '396'
+      hp: '50'
+      types:
+        - Colorless
+      description: >-
+        They flock in great numbers. Though small, they flap their wings with
+        great power.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Gust
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Quick Attack
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 20 more
+            damage.
+      weaknesses:
+        - type: Lightning
+          value: '+10'
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 7adfc773-c344-4a64-9600-fc24aa0462f7
+    integrations:
+      pokeData: '43654'
+      tcgPlayer: '89521'
+  turtwig-17:
+    name: Turtwig
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 846352f5-9549-4e4d-8d28-b1659eb64382
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '387'
+      hp: '60'
+      types:
+        - Grass
+      description: >-
+        Made from soil, the shell on its back hardens when it drinks water. It
+        lives along lakes.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tackle
+          damage: '10'
+        - name: Razor Leaf
+          cost:
+            - Grass
+          damage: '20'
+      weaknesses:
+        - type: Fire
+          value: '+10'
+      resistances:
+        - type: Water
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: e95264ce-735d-4f74-9590-d9854374722b
+    integrations:
+      pokeData: '43645'
+      tcgPlayer: '90072'
+products:
+  booster-pack:
+    name: Booster Pack
+    editions:
+      unlimited: 8856e708-2198-4c11-97f2-f007b950aa6e

@@ -1,0 +1,792 @@
+items:
+  dratini-1:
+    name: Dratini
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '147'
+      hp: '40'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Wrap
+          cost:
+            - Grass
+            - Lightning
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: d39e9aa1-3dff-4b9f-8f93-12dcdb53dc38
+    integrations:
+      pokeData: '43077'
+      tcgPlayer: '84937'
+  dratini-2:
+    name: Dratini
+    details:
+      illustrator: Naoki Saito
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '147'
+      hp: '40'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Hypnotic Gaze
+          cost:
+            - Grass
+          damage: undefined
+          effect: The Defending Pokémon is now Asleep.
+        - name: Tail Whap
+          cost:
+            - Lightning
+          damage: '10'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: e9447cc1-853d-4109-bed4-3f25394de698
+    integrations:
+      pokeData: '43089'
+      tcgPlayer: '84938'
+  dragonair-3:
+    name: Dragonair
+    details:
+      illustrator: Hajime Kusajima
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '148'
+      hp: '70'
+      types:
+        - Dragon
+      evolveFrom: Dratini
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Tail Whap
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+        - name: Dragon Pulse
+          cost:
+            - Grass
+            - Lightning
+            - Colorless
+          damage: '70'
+          effect: Discard the top card of your deck.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 2038cdfd-7bab-4312-8893-8dba5e0b65ee
+    integrations:
+      pokeData: '43087'
+      tcgPlayer: '84902'
+  dragonair-4:
+    name: Dragonair
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '148'
+      hp: '70'
+      types:
+        - Dragon
+      evolveFrom: Dratini
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Healing Melody
+          cost:
+            - Grass
+          damage: undefined
+          effect: Heal 10 damage from each of your Pokémon.
+        - name: Slam
+          cost:
+            - Lightning
+            - Colorless
+          damage: '30'
+          effect: Flip 2 coins. This attack does 30 damage times the number of heads.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 351315b1-894e-4e91-ad44-b55c8337a3a5
+    integrations:
+      pokeData: '43076'
+      tcgPlayer: '84903'
+  dragonite-5:
+    name: Dragonite
+    variants:
+      cosmos-holo:
+        name: Cosmos Holo
+        description: XY Two Pack Blisters and XY Knock Out Collection exclusive.
+        id: cd414c3c-0639-4522-a918-362b5c33b300
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '149'
+      hp: '150'
+      types:
+        - Dragon
+      evolveFrom: Dragonair
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Hyper Beam
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            Flip a coin. If heads, discard an Energy attached to the Defending
+            Pokémon.
+        - name: Hurricane Tail
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: Flip 4 coins. This attack does 60 damage times the number of heads.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 2c51cc30-5368-453d-9d27-7fa857c52c0f
+    integrations:
+      pokeData: '43088'
+      tcgPlayer: '84915'
+  bagon-6:
+    name: Bagon
+    variants:
+      regional-championships:
+        name: Regional Championships
+        description: Autumn Regional Championships 2013-2014 promo.
+        id: 3c3208f1-23e1-41e0-b0a1-f13d63c676b0
+      regional-championships-staff:
+        name: Regional Championships (Staff)
+        description: Autumn Regional Championships 2013-2014 staff promo.
+        id: 247817f8-d474-471f-8b46-83be5cf2757f
+    details:
+      illustrator: Kouki Saitou
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '371'
+      hp: '50'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Headbutt
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Dragon Claw
+          cost:
+            - Fire
+            - Water
+          damage: '20'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: ded2b61c-4fe4-4689-a2ff-5b8f9d9ccc3a
+    integrations:
+      pokeData: '43086'
+      tcgPlayer: '83701'
+  shelgon-7:
+    name: Shelgon
+    variants:
+      regional-championships:
+        name: Regional Championships
+        description: Winter Regional Championships 2013-2014 promo.
+        integrations:
+          priceCharting:
+            regional-championships: shelgon-regional-championship-7
+        id: 5b16e77a-54d0-4244-82b5-2c81870ac258
+      regional-championships-staff:
+        name: Regional Championships (Staff)
+        description: Winter Regional Championships 2013-2014 staff promo.
+        integrations:
+          priceCharting:
+            regional-championships-staff: shelgon-regional-championship-staff-7
+        id: 77e8467d-d807-4479-90a3-20ed68e39f5a
+    details:
+      illustrator: Akira Komayama
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '372'
+      hp: '80'
+      types:
+        - Dragon
+      evolveFrom: Bagon
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Knock Away
+          cost:
+            - Colorless
+          damage: '10'
+          effect: Flip a coin. If heads, this attack does 20 more damage.
+        - name: Rollout
+          cost:
+            - Fire
+            - Water
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 12780731-a02d-4ae5-b1c9-f52aee0cc330
+    integrations:
+      pokeData: '43095'
+      tcgPlayer: '89130'
+  salamence-8:
+    name: Salamence
+    variants:
+      cosmos-holo:
+        name: Cosmos Holo
+        description: XY Two Pack Blisters exclusive.
+        id: 4bcbc7e0-5ea5-4ca6-b85e-ef4203c176f7
+      regional-championships:
+        name: Regional Championships
+        description: Spring North American Regional Championships 2013-2014 promo.
+        integrations:
+          priceCharting:
+            regional-championships: salamence-regional-championship-8
+        id: 84a26130-cb3c-4f65-a9b9-6fb49d118b8b
+      regional-championships-staff:
+        name: Regional Championships (Staff)
+        description: Spring North American Regional Championships 2013-2014 "STAFF" promo.
+        id: dc85ab74-c280-4c8f-b2f8-13f0836ade91
+    details:
+      illustrator: BERUBURI
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '373'
+      hp: '140'
+      types:
+        - Dragon
+      evolveFrom: Shelgon
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Ability
+          name: Scornful Storm
+          effect: >-
+            Once during your turn (before your attack), you may have your
+            opponent discard cards from his or her hand until he or she has 4
+            cards left in his or her hand.
+      attacks:
+        - name: Shred
+          cost:
+            - Fire
+            - Water
+            - Colorless
+            - Colorless
+          damage: '90'
+          effect: >-
+            This attack's damage isn't affected by any effects on the Defending
+            Pokémon.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: f2c110b3-a483-4f66-b790-b6fd731fa53a
+    integrations:
+      pokeData: '43083'
+      tcgPlayer: '88900'
+  latias-9:
+    name: Latias
+    variants:
+      stamped:
+        name: Stamped
+        description: Dragon Vault blisters stamped exclusive.
+        id: dd9a69f1-c0a4-4b35-a73a-56095cbc8163
+    details:
+      illustrator: Hideaki Hakozaki
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '380'
+      hp: '100'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Energy Assist
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Attach a basic Energy card from your discard pile to 1 of your
+            Benched Pokémon.
+        - name: Sky Heal
+          cost:
+            - Fire
+            - Psychic
+          damage: '40'
+          effect: If Latios is on your Bench, heal 20 damage from this Pokémon.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: b0ef8438-08f5-4460-8a63-d07595b488f4
+    integrations:
+      pokeData: '43093'
+      tcgPlayer: '86654'
+  latios-10:
+    name: Latios
+    variants:
+      stamped:
+        name: Stamped
+        description: Dragon Vault blisters stamped exclusive.
+        id: 09269656-006c-4eb0-b223-d03853b66451
+    details:
+      illustrator: Ryo Ueda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '381'
+      hp: '100'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sky Blade
+          cost:
+            - Water
+            - Colorless
+          damage: '20'
+          effect: If Latias is on your Bench, this attack does 20 more damage.
+        - name: Speed Wing
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '60'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: a0c38ba4-10db-490f-89d1-82b809d08582
+    integrations:
+      pokeData: '43082'
+      tcgPlayer: '86668'
+  rayquaza-11:
+    name: Rayquaza
+    variants:
+      stamped:
+        name: Stamped
+        description: Dragon Vault blisters stamped exclusive.
+        id: fc599633-3a29-40bf-b1a5-12d5192acc9a
+    details:
+      illustrator: 5ban Graphics
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '384'
+      hp: '120'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dragon Pulse
+          cost:
+            - Lightning
+          damage: '40'
+          effect: Discard the top 2 cards of your deck.
+        - name: Shred
+          cost:
+            - Fire
+            - Lightning
+            - Colorless
+          damage: '90'
+          effect: >-
+            This attack's damage isn't affected by any effects on the Defending
+            Pokémon.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 7646490d-c3b9-40fb-a5ba-db79edfc3d4b
+    integrations:
+      pokeData: '43094'
+      tcgPlayer: '88631'
+  axew-12:
+    name: Axew
+    details:
+      illustrator: Mizue
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '610'
+      hp: '40'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Signs of Evolution
+          cost:
+            - Fighting
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, search your deck for Fraxure, reveal it, and
+            put it into your hand. Shuffle your deck afterward.
+        - name: Scratch
+          cost:
+            - Metal
+          damage: '10'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: dea609c0-51d9-440b-9870-c3dd30120956
+    integrations:
+      pokeData: '43085'
+      tcgPlayer: '83670'
+  axew-13:
+    name: Axew
+    details:
+      illustrator: TOKIYA
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '610'
+      hp: '50'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Lunge
+          cost:
+            - Fighting
+            - Metal
+          damage: '30'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 2845fb03-3e13-4922-aa93-d6140e057aa6
+    integrations:
+      pokeData: '43074'
+      tcgPlayer: '83671'
+  fraxure-14:
+    name: Fraxure
+    details:
+      illustrator: Shin Nagasawa
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '611'
+      hp: '70'
+      types:
+        - Dragon
+      evolveFrom: Axew
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Grit
+          effect: >-
+            If this Pokémon is affected by a Special Condition, each of its
+            attacks does 40 more damage (before applying Weakness and
+            Resistance).
+      attacks:
+        - name: Dragon Claw
+          cost:
+            - Fighting
+            - Metal
+            - Colorless
+          damage: '60'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: f45892c3-e8f6-40a7-9c19-1d51cc1225f2
+    integrations:
+      pokeData: '43091'
+      tcgPlayer: '85559'
+  fraxure-15:
+    name: Fraxure
+    details:
+      illustrator: match
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '611'
+      hp: '80'
+      types:
+        - Dragon
+      evolveFrom: Axew
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Scratch
+          cost:
+            - Metal
+            - Colorless
+          damage: '20'
+        - name: Sharp Fang
+          cost:
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: a5889c04-1442-4d8e-ab8e-2479dfc0652c
+    integrations:
+      pokeData: '43080'
+      tcgPlayer: '85560'
+  haxorus-16:
+    name: Haxorus
+    variants:
+      stamped:
+        name: Stamped
+        description: Dragon Vault blisters stamped exclusive.
+        id: f1de1b97-058c-45f8-9969-f2da8d57c2dd
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '612'
+      hp: '140'
+      types:
+        - Dragon
+      evolveFrom: Fraxure
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Axe Slugger
+          cost:
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: >-
+            If the Defending Pokémon is a Colorless Pokémon, this attack does 60
+            more damage.
+        - name: Dragon Pulse
+          cost:
+            - Fighting
+            - Metal
+            - Colorless
+            - Colorless
+          damage: '100'
+          effect: Discard the top card of your deck.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: cecad33c-e533-4559-a73e-a33cc1d80c28
+    integrations:
+      pokeData: '43092'
+      tcgPlayer: '86034'
+  druddigon-17:
+    name: Druddigon
+    variants:
+      stamped:
+        name: Stamped
+        description: Dragon Vault blisters stamped exclusive.
+        id: fda9fbd9-2e3e-4186-b850-c8d18491be6d
+    details:
+      illustrator: kawayoo
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '621'
+      hp: '110'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tight Jaw
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Dragon Tail
+          cost:
+            - Fire
+            - Water
+            - Colorless
+          damage: '80'
+          effect: Flip 2 coins. This attack does 80 damage times the number of heads.
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: ca313aec-2fb7-4fab-8adc-87eea79120d7
+    integrations:
+      pokeData: '43078'
+      tcgPlayer: '84979'
+  exp-share-18:
+    name: Exp. Share
+    details:
+      illustrator: Ryo Ueda
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Tool
+    editions:
+      unlimited: 6824d3d2-4b5d-467d-81a3-6f0927e03bd9
+    integrations:
+      pokeData: '43090'
+      tcgPlayer: '85366'
+  first-ticket-19:
+    name: First Ticket
+    details:
+      illustrator: 5ban Graphics
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: cb9bf4dd-ba3c-47f9-a6c9-796b1f260adf
+    integrations:
+      pokeData: '43079'
+      tcgPlayer: '85470'
+  super-rod-20:
+    name: Super Rod
+    details:
+      illustrator: 5ban Graphics
+      rarity: Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: 0ae91e49-6c84-41d2-9d6a-a369b1e74c9a
+    integrations:
+      pokeData: '43084'
+      tcgPlayer: '89632'
+  kyurem-21:
+    name: Kyurem
+    details:
+      illustrator: Ryo Ueda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '646'
+      hp: '130'
+      types:
+        - Dragon
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dragon Claw
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '60'
+        - name: Blizzard
+          cost:
+            - Water
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '90'
+          effect: >-
+            Does 10 damage to each of your opponent's Benched Pokémon. (Don't
+            apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Dragon
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d48eb27b-f1a6-483f-8af3-90a8a3001f95
+    integrations:
+      pokeData: '43081'
+      tcgPlayer: '86563'
+products:
+  booster-pack-dragonite:
+    name: Booster Pack [Dragonite]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: a2c704bb-9b84-4c16-891b-d48851fec291
+  booster-pack-salamence:
+    name: Booster Pack [Salamence]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 3d7f9b15-9632-4084-8769-ee39c504de66
+  booster-pack-rayquaza:
+    name: Booster Pack [Rayquaza]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 7569adba-41c5-495c-ae8c-61fd7357f0a1
+  booster-pack-haxorus:
+    name: Booster Pack [Haxorus]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 8b129962-e05d-416e-be80-2821068203a8
+  booster-pack-druddigon:
+    name: Booster Pack [Druddigon]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 4204c422-26d4-4582-98d3-7f33a71875f4
+  booster-box:
+    name: Booster Box
+    integrations:
+      priceCharting: booster-box
+    editions:
+      unlimited: 88126186-c18b-43f6-bc39-6ff0e15d1e9b

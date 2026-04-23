@@ -1,0 +1,622 @@
+items:
+  mew-1:
+    name: Mew
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '151'
+      hp: '30'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Rainbow Wave
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Choose a type of Energy other than Colorless attached to Mew. This
+            attack does 20 damage to each of your opponent's Pokémon of that
+            type (including Benched Pokémon). Don't apply Weakness and
+            Resistance.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 726c8cb5-3b96-40e5-81b3-0c308f177dde
+  pidgeot-2:
+    name: Pidgeot
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '18'
+      hp: '70'
+      types:
+        - Colorless
+      evolveFrom: Pidgeotto
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Supersonic Flight
+          cost:
+            - Colorless
+            - Colorless
+          damage: '40'
+          effect: Flip a coin. If tails, this attack does nothing.
+        - name: Slicing Wind
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 843eb753-4f0c-4f74-aedd-af825e41313b
+  onix-3:
+    name: Onix
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '95'
+      hp: '90'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Slam
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: Flip 2 coins. This attack does 20 damage times the number of heads.
+        - name: Body Slam
+          cost:
+            - Fighting
+            - Fighting
+            - Fighting
+            - Fighting
+          damage: '40'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 6e047e5c-d83d-4890-8836-5e2ab45ca723
+  togepi-4:
+    name: Togepi
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '175'
+      hp: '40'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bawl
+          cost:
+            - Colorless
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 445e9874-71a8-4077-8bc2-0409b11e73f9
+  ivysaur-5:
+    name: Ivysaur
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '2'
+      hp: '60'
+      types:
+        - Grass
+      evolveFrom: Bulbasaur
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Strange Scent
+          cost:
+            - Grass
+          damage: undefined
+          effect: >-
+            Each player flips a coin. Each player who gets heads chooses a total
+            of 3 damage counters from among his or her Pokémon and removes them.
+            (If the player's Pokémon have fewer total damage counters than that,
+            he or she removes all of them.)
+        - name: Razor Leaf
+          cost:
+            - Grass
+            - Grass
+          damage: '30'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: e1bbf27f-286c-4de4-8aa3-48ae7bfe43af
+  raticate-6:
+    name: Raticate
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '20'
+      hp: '60'
+      types:
+        - Colorless
+      evolveFrom: Rattata
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Sharp Teeth
+          cost:
+            - Colorless
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 30 more
+            damage; if tails, this attack does 10 damage.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: ed3de8a0-dd34-4819-9d2c-e6b301d14761
+  ledyba-7:
+    name: Ledyba
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '165'
+      hp: '40'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Gnaw
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Agility
+          cost:
+            - Grass
+            - Grass
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, during your opponent's next turn, prevent all
+            effects of attacks, including damage, done to Ledyba.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 1b1470c5-3600-40a4-9f86-21a792770820
+  jigglypuff-8:
+    name: Jigglypuff
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '39'
+      hp: '50'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tempting Eyes
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Benched Pokémon and switch it with the
+            Defending Pokémon.
+        - name: Sing
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 8dd310b0-0d1a-48be-959c-1ca7bec7e0b3
+  butterfree-9:
+    name: Butterfree
+    details:
+      illustrator: Keiko Fukuyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '12'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Metapod
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Fly
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '30'
+          effect: >-
+            Flip a coin. If heads, during your opponent's next turn, prevent all
+            effects of attacks, including damage, done to Butterfree. If tails,
+            this attack does nothing (not even damage).
+        - name: Rainbow Powder
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If
+            tails, the Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 76e165b8-50d8-4fdb-8389-1a80334549f8
+  tentacruel-10:
+    name: Tentacruel
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '73'
+      hp: '60'
+      types:
+        - Water
+      evolveFrom: Tentacool
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Tentacle Grip
+          cost:
+            - Water
+          damage: undefined
+          effect: >-
+            Flip a number of coins equal to the number of Water Energy cards
+            attached to Tentacruel. For each heads, draw 2 cards.
+        - name: Poison Sting
+          cost:
+            - Water
+            - Water
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Tentacle Grip
+          cost:
+            - Water
+          damage: undefined
+          effect: >-
+            Flip a number of coins equal to the number of Water Energy cards
+            attached to Tentacruel. For each heads, draw 2 cards.
+        - name: Poison Sting
+          cost:
+            - Water
+            - Water
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: df57795f-3aec-4576-8c78-d519f60e95a5
+  marill-11:
+    name: Marill
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '183'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c3ccd616-8cfe-468c-8c97-881bc6c76cc2
+  lapras-12:
+    name: Lapras
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '131'
+      hp: '70'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Gentle Song
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            If Lapras has any damage counters on it, remove 2 of them from it (1
+            if it only has 1). If the Defending Pokémon has any damage counters
+            on it, remove 2 of them from it (1 if it only has 1). The Defending
+            Pokémon is now Asleep.
+        - name: Ice Beam
+          cost:
+            - Water
+            - Water
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 66c0e3fa-d209-4460-8313-5e8ea7130f3b
+  exeggutor-13:
+    name: Exeggutor
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '103'
+      hp: '70'
+      types:
+        - Grass
+      evolveFrom: Exeggcute
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Sharpshooter
+          cost:
+            - Grass
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Pokémon. Flip a number of coins equal to
+            the number of Grass Energy attached to Exeggutor. This attack does
+            10 damage times the number of heads to that Pokémon. Don't apply
+            Weakness and Resistance.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: b96b7cfc-d52d-4ccb-aeb7-f4cdf97680cd
+  slowking-14:
+    name: Slowking
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '199'
+      hp: '70'
+      types:
+        - Psychic
+      evolveFrom: Slowpoke
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Revelation
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, search your deck for a Trainer card, show it
+            to your opponent, and put it into your hand. Shuffle your deck
+            afterward.
+        - name: Psychic
+          cost:
+            - Psychic
+            - Colorless
+          damage: '10'
+          effect: >-
+            Does 10 damage plus 10 more damage for each Energy card attached to
+            the Defending Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c048ab19-b71c-43bf-a4d0-a815bde95a6c
+  wartortle-15:
+    name: Wartortle
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '8'
+      hp: '60'
+      types:
+        - Water
+      evolveFrom: Squirtle
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Water Gun
+          cost:
+            - Water
+            - Water
+          damage: '20'
+          effect: >-
+            Does 20 damage plus 10 more damage for each Water Energy attached to
+            Wartortle but not used to pay for this attack's Energy cost. You
+            can't add more than 20 damage in this way.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: a020a781-4fa9-47a3-83cc-8f9ee9c0c7d3
+  lickitung-16:
+    name: Lickitung
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '108'
+      hp: '70'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Lick Wounds
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, choose 1 Pokémon (yours or your opponent's)
+            with damage counters on it and remove 2 damage counters from it (1
+            if it only has 1).
+        - name: Tongue Stretch
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, choose 1 of your opponent's Pokémon. This
+            attack does 20 damage to that Pokémon. Don't apply Weakness and
+            Resistance.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: b9290bac-0fc0-43bb-a39b-4915e504b962
+  vileplume-17:
+    name: Vileplume
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '45'
+      hp: '70'
+      types:
+        - Grass
+      evolveFrom: Gloom
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Paradise Pollen
+          cost:
+            - Grass
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, remove 2 damage counters from Vileplume (1 if
+            it only has 1). Then, if you have any Benched Pokémon with damage
+            counters on them, choose 1 of them and remove 2 damage counters from
+            it (1 if it only has 1).
+        - name: Horrid Pollen
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+          damage: '30'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If
+            tails, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: af31c6ea-2aa9-4114-9d3d-8694b0328dcc
+  primeape-18:
+    name: Primeape
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '57'
+      hp: '60'
+      types:
+        - Fighting
+      evolveFrom: Mankey
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Low Kick
+          cost:
+            - Fighting
+          damage: '20'
+        - name: Rampage
+          cost:
+            - Fighting
+            - Fighting
+          damage: '20'
+          effect: >-
+            Does 20 damage plus 10 more damage for each damage counter on
+            Primeape. Flip a coin. If tails, Primeape is now Confused (after
+            doing damage).
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: b558dd91-88b4-4440-8015-3dce0a66b59c
+products:
+  collection-box:
+    name: Southern Islands Collection Box
+    editions:
+      unlimited: 54ecb58a-cd74-4d3b-a38d-02e557647411

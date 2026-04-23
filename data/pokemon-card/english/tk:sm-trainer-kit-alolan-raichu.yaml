@@ -1,0 +1,451 @@
+items:
+  lightning-energy-1:
+    name: Lightning Energy
+    editions:
+      unlimited: be533ff6-f267-45d0-979e-f6e86098a899
+  lightning-energy-2:
+    name: Lightning Energy
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      energyType: Normal
+    editions:
+      unlimited: 18767964-3248-48e4-96de-7616c12e3091
+  lightning-energy-3:
+    name: Lightning Energy
+    editions:
+      unlimited: 3ac2468a-f759-4e6b-9e2b-0d2234b88dd2
+  stufful-4:
+    name: Stufful
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '759'
+      hp: '70'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: c9283789-b341-4341-b0cb-6ab5a0c432c3
+  lightning-energy-5:
+    name: Lightning Energy
+    integrations:
+      priceCharting:
+        unlimited: lighting-energy-5
+    editions:
+      unlimited: f66e3a38-fa2d-42c0-b58a-2bb99866726f
+  golbat-6:
+    name: Golbat
+    details:
+      illustrator: ''
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '42'
+      hp: '80'
+      types:
+        - Psychic
+      evolveFrom: Zubat
+      level: undefined
+      stage: Stage1
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '0'
+    editions:
+      unlimited: 83200517-1a28-4d59-9fcf-b4765361740b
+  lightning-energy-7:
+    name: Lightning Energy
+    editions:
+      unlimited: 65edf520-f7b4-4305-87a4-c3b9e086812b
+  lightning-energy-8:
+    name: Lightning Energy
+    editions:
+      unlimited: 3541473d-763c-4c51-be86-1fbe27330356
+  lightning-energy-9:
+    name: Lightning Energy
+    editions:
+      unlimited: 9e236ac1-3ddd-4f7f-b293-16b8a891e37a
+  lightning-energy-10:
+    name: Lightning Energy
+    editions:
+      unlimited: bb41b040-7016-44ed-8b2f-30ba4ec4e53c
+  zubat-11:
+    name: Zubat
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '41'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 49a08b17-b18e-4b1b-8833-bd50024e10d8
+  lightning-energy-12:
+    name: Lightning Energy
+    editions:
+      unlimited: b8705c82-c6b8-4605-81ff-d0e2338f1e09
+  spearow-13:
+    name: Spearow
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '21'
+      hp: '60'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: d4a79701-3009-47c1-ac4a-c66a84b6cb5b
+  pikachu-14:
+    name: Pikachu
+    details:
+      illustrator: kodama
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '60'
+      types:
+        - Lightning
+      description: >-
+        A plan was recently announced to gather many Pikachu and make an
+        electric power plant.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tail Whap
+          damage: '10'
+        - name: Spark
+          damage: '20'
+          effect: >-
+            This attack does 10 damage to 1 of your opponent’s Benched Pokémon.
+            (Don’t apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: f0c7a3b6-a586-4b17-80c8-975da3af9340
+  potion-15:
+    name: Potion
+    details:
+      illustrator: ''
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: Heal 30 damage from 1 of your Pokémon.
+      trainerType: Item
+    editions:
+      unlimited: 9c3c419b-c7f3-4597-8d08-e170058fba2b
+  grubbin-16:
+    name: Grubbin
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '736'
+      hp: '70'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: f2ddd90a-b441-4b02-b161-be8a3355b7cc
+  alolan-raichu-17:
+    name: Alolan Raichu
+    details:
+      illustrator: 5ban Graphics
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '26'
+      hp: '110'
+      types:
+        - Lightning
+      evolveFrom: Pikachu
+      description: >-
+        It only evolves to this form in the Alola region. According to
+        researchers, its diet is one of the causes of this change.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Quick Attack
+          damage: 10+
+          effect: Flip a coin. If heads, this attack does 30 more damage.
+        - name: Electric Surfer
+          damage: '70'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 161f805b-6f47-4c22-bade-fac9f620443d
+  bewear-18:
+    name: Bewear
+    details:
+      illustrator: ''
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '760'
+      hp: '130'
+      types:
+        - Colorless
+      evolveFrom: Stufful
+      level: undefined
+      stage: Stage1
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 3cf0386c-e3b9-4cda-910e-b97df4e89af4
+  hau-19:
+    name: Hau
+    integrations:
+      priceCharting:
+        unlimited: hau-23r
+    details:
+      illustrator: ''
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: Draw 3 cards.
+      trainerType: Supporter
+    editions:
+      unlimited: f7f8ad63-0a2c-4a0a-beca-ef8364714d6e
+  psychic-energy-20:
+    name: Psychic Energy
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      energyType: Normal
+    editions:
+      unlimited: e9330ff4-b5ec-4c77-8817-8111a6dfbb15
+  great-ball-21:
+    name: Great Ball
+    integrations:
+      priceCharting:
+        unlimited: great-ball-21r
+    details:
+      illustrator: ''
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Look at the top 7 cards of your deck. You may reveal a Pokémon you find
+        there and put it into your hand. Shuffle the other cards back into your
+        deck.
+      trainerType: Item
+    editions:
+      unlimited: d01e5aa7-584a-4d7a-99ed-2e2c20a28263
+  drowzee-22:
+    name: Drowzee
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '96'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 8d7007a6-2a51-4b7b-9838-d9e961aec7f0
+  hau-23:
+    name: Hau
+    integrations:
+      priceCharting:
+        unlimited: hau-23r
+    details:
+      illustrator: ''
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: Draw 3 cards.
+      trainerType: Supporter
+    editions:
+      unlimited: 80c8d21c-1858-4a93-8495-33c5c0fdceb0
+  psychic-energy-24:
+    name: Psychic Energy
+    editions:
+      unlimited: e55491cd-6147-429d-af4a-b02c2502e041
+  great-ball-25:
+    name: Great Ball
+    integrations:
+      priceCharting:
+        unlimited: great-ball-25r
+    details:
+      illustrator: ''
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Look at the top 7 cards of your deck. You may reveal a Pokémon you find
+        there and put it into your hand. Shuffle the other cards back into your
+        deck.
+      trainerType: Item
+    editions:
+      unlimited: 351d2de6-f265-4cc8-8902-f05d106d0a88
+  togedemaru-26:
+    name: Togedemaru
+    details:
+      illustrator: ''
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '777'
+      hp: '70'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: e851746b-8619-4577-848b-d7771111cfab
+  psychic-energy-27:
+    name: Psychic Energy
+    editions:
+      unlimited: 0468bc9e-d918-4a85-a1db-d076f4d5f348
+  psychic-energy-28:
+    name: Psychic Energy
+    editions:
+      unlimited: e993f85c-20bd-4652-befb-e2cfe061e407
+  pikachu-29:
+    name: Pikachu
+    details:
+      illustrator: kodama
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '60'
+      types:
+        - Lightning
+      description: >-
+        A plan was recently announced to gather many Pikachu and make an
+        electric power plant.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tail Whap
+          damage: '10'
+        - name: Spark
+          damage: '20'
+          effect: >-
+            This attack does 10 damage to 1 of your opponent’s Benched Pokémon.
+            (Don’t apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 9dd53708-0543-4324-87b9-f5d079d0af8d
+  alolan-raichu-30:
+    name: Alolan Raichu
+    details:
+      illustrator: 5ban Graphics
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '26'
+      hp: '110'
+      types:
+        - Lightning
+      evolveFrom: Pikachu
+      description: >-
+        It only evolves to this form in the Alola region. According to
+        researchers, its diet is one of the causes of this change.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Quick Attack
+          damage: 10+
+          effect: Flip a coin. If heads, this attack does 30 more damage.
+        - name: Electric Surfer
+          damage: '70'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 9e01af34-808f-4e05-8264-2717f418731b

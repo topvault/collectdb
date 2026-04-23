@@ -1,0 +1,4311 @@
+items:
+  chikorita-1:
+    name: Chikorita
+    details:
+      illustrator: Akira Komayama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '152'
+      hp: '60'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tackle
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Blot
+          cost:
+            - Grass
+            - Colorless
+          damage: '10'
+          effect: Heal 10 damage from this Pokémon.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    variants:
+      pokemon-league:
+        name: Pokemon League
+        description: Reverse Holo Pokémon League Promo
+        id: 364e76b8-798f-4c5e-9d3c-098fca6dfd54
+    editions:
+      unlimited: f2678f45-785b-4819-bf2d-5918719b0370
+      reverse-holo: 454408c1-2d42-4d48-95bd-8cc7de72f91f
+    integrations:
+      pokeData: '15078'
+      tcgPlayer: '111504'
+  bayleef-2:
+    name: Bayleef
+    details:
+      illustrator: Mizue
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '153'
+      hp: '90'
+      types:
+        - Grass
+      evolveFrom: Chikorita
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Body Slam
+          cost:
+            - Colorless
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Paralyzed.
+        - name: Vine Whip
+          cost:
+            - Grass
+            - Colorless
+          damage: '30'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '2'
+    variants:
+      pokemon-league:
+        name: Pokemon League
+        description: Reverse Holo Pokémon League Promo
+        id: f55cc3f0-3b66-4b26-ae53-03fca1fe113e
+    editions:
+      unlimited: e809fce5-1107-4f84-bd02-c6dcbacd30ad
+      reverse-holo: 0b9b3085-cd57-4b22-aa6c-6169600833cf
+    integrations:
+      pokeData: '15074'
+      tcgPlayer: '111505'
+  meganium-3:
+    name: Meganium
+    details:
+      illustrator: kawayoo
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '154'
+      hp: '150'
+      types:
+        - Grass
+      evolveFrom: Bayleef
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Ability
+          name: Overgrow
+          effect: >-
+            If this Pokémon's remaining HP is 50 or less, its attacks do 70 more
+            damage to your opponent's Active Pokémon (before applying Weakness
+            and Resistance).
+      attacks:
+        - name: Green Force
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+          damage: '50'
+          effect: >-
+            Heal from this Pokémon the same amount of damage you did to your
+            opponent's Active Pokémon.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '3'
+    variants:
+      pokemon-league:
+        name: Pokemon League
+        description: Reverse Holo Pokémon League Promo
+        id: a997366f-e707-446f-80ec-9f6d5408190f
+      cosmos-holo:
+        name: Cosmos Holo
+        description: Cosmos Holo Sun & Moon Two Pack Blister exclusive
+        id: d8b99c58-1077-4c40-bcb9-95dbfa2d3a5d
+    editions:
+      unlimited: 191b4a4e-71aa-407c-afe4-6de87cdf3b87
+      reverse-holo: 86ecdf72-8f38-4c2e-8400-ca8d31d52fbd
+    integrations:
+      pokeData: '3888'
+      tcgPlayer: '111506'
+  seedot-4:
+    name: Seedot
+    details:
+      illustrator: Kanako Eo
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '273'
+      hp: '50'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Ram
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 498d7fe6-1032-4a5d-b3ed-b0a39fc25489
+      reverse-holo: 973393ef-0485-413c-9023-d98eaebbae44
+    integrations:
+      pokeData: '15142'
+      tcgPlayer: '111507'
+  kricketot-5:
+    name: Kricketot
+    details:
+      illustrator: Sumiyoshi Kizuki
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '401'
+      hp: '60'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bug Hunch
+          cost:
+            - Grass
+          damage: undefined
+          effect: >-
+            Search your deck for up to 3 Grass Pokémon, reveal them, and put
+            them into your hand. Shuffle your deck afterward.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: b9969b35-64e9-4ded-9b8d-a22cc8b56f8d
+      reverse-holo: d6e035d9-cf71-4088-b900-febff3f4f8d4
+    integrations:
+      pokeData: '15020'
+      tcgPlayer: '111508'
+  kricketune-6:
+    name: Kricketune
+    details:
+      illustrator: Suwama Chiaki
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '402'
+      hp: '90'
+      types:
+        - Grass
+      evolveFrom: Kricketot
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Screech
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            During your next turn, any damage done to the Defending Pokémon by
+            attacks is increased by 60 (after applying Weakness and Resistance).
+        - name: Slash
+          cost:
+            - Grass
+          damage: '40'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 702411b9-9c1d-4495-bc76-eb8d78f63916
+      reverse-holo: a6a7152f-1bdf-4b82-821c-5705b0eda85b
+    integrations:
+      pokeData: '15114'
+      tcgPlayer: '111509'
+  petilil-7:
+    name: Petilil
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '548'
+      hp: '50'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Aromatherapy
+          cost:
+            - Grass
+          damage: undefined
+          effect: Heal 10 damage from each of your Pokémon.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: f44a0c82-6008-43ee-a590-b9551e71da08
+      reverse-holo: 8cee4c45-4759-444d-bbeb-4afb5f22f2c3
+    integrations:
+      pokeData: '15130'
+      tcgPlayer: '111510'
+  lilligant-8:
+    name: Lilligant
+    details:
+      illustrator: Shin Nagasawa
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '549'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Petilil
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Boo-Hoo
+          cost:
+            - Grass
+          damage: '20'
+          effect: >-
+            If your opponent attaches an Energy card from his or her hand to the
+            Defending Pokémon during his or her next turn, that Pokémon will be
+            Asleep.
+        - name: Leaf Slice
+          cost:
+            - Colorless
+            - Colorless
+          damage: 30×
+          effect: Flip 2 coins. This attack does 30 damage times the number of heads.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: c25c18aa-ac75-4aef-a66e-e4716b4e6a32
+      reverse-holo: 14c8e584-21e4-47f6-8be9-a8dd6dcb4878
+    integrations:
+      pokeData: '15116'
+      tcgPlayer: '111511'
+  durant-9:
+    name: Durant
+    details:
+      illustrator: Kouki Saitou
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '632'
+      hp: '70'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Mountain Munch
+          cost:
+            - Grass
+          damage: '10'
+          effect: Discard the top card of your opponent's deck.
+        - name: Scrape Down
+          cost:
+            - Grass
+            - Colorless
+          damage: undefined
+          effect: >-
+            If this Pokémon has any damage counters on it, discard the top 4
+            cards of your opponent's deck.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 4086b743-93d5-499c-a818-464d30019f66
+      reverse-holo: 488e9b76-c361-4d99-812c-5c243fe91df8
+    integrations:
+      pokeData: '15090'
+      tcgPlayer: '111512'
+  growlithe-10:
+    name: Growlithe
+    details:
+      illustrator: match
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '58'
+      hp: '70'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bite
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: d8d00799-b104-4a49-badd-e5e1e7e17506
+      reverse-holo: a2821586-2740-4bbe-8716-ca8d6b33999f
+    integrations:
+      pokeData: '15014'
+      tcgPlayer: '111513'
+  arcanine-11:
+    name: Arcanine
+    details:
+      illustrator: match
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '59'
+      hp: '110'
+      types:
+        - Fire
+      evolveFrom: Growlithe
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Flop
+          cost:
+            - Colorless
+          damage: '30'
+        - name: Flamethrower
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: '90'
+          effect: Discard an Energy attached to this Pokémon.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 631ee8c6-340e-4cd6-982f-c6566ced527e
+      reverse-holo: cb6311bb-4e62-4921-b848-8b698f8636fc
+    integrations:
+      pokeData: '15072'
+      tcgPlayer: '111514'
+  numel-12:
+    name: Numel
+    details:
+      illustrator: MAHOU
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '322'
+      hp: '80'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tackle
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Combustion
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 08e0c732-94a0-432b-9759-33bb5418f91f
+      reverse-holo: 85ad7083-0c6c-48bf-977b-1012d44d8e9e
+    integrations:
+      pokeData: '15126'
+      tcgPlayer: '111515'
+  camerupt-13:
+    name: Camerupt
+    details:
+      illustrator: Shigenori Negishi
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '323'
+      hp: '130'
+      types:
+        - Fire
+      evolveFrom: Numel
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Ram
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+        - name: Eruption
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: 80+
+          effect: >-
+            Each player discards the top card of his or her deck. This attack
+            does 60 more damage for each Energy card discarded in this way.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '4'
+    editions:
+      unlimited: a0f8cb5f-4daa-435f-a596-61e631d6c699
+      reverse-holo: be7df906-dfb7-469b-9e9d-b43fb58aeb1f
+    integrations:
+      pokeData: '14984'
+      tcgPlayer: '111516'
+  emboar-ex-14:
+    name: Emboar EX
+    editions:
+      unlimited: 7460ec70-6653-4a69-96c7-7eaa212c7a04
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '500'
+      hp: '180'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Spiral Punch
+          cost:
+            - Fire
+            - Colorless
+          damage: 20+
+          effect: >-
+            Flip a coin until you get tails. This attack does 20 more damage for
+            each heads.
+        - name: Strong Flare
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '150'
+          effect: Discard 2 Energy attached to this Pokémon.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '3'
+    integrations:
+      pokeData: '3884'
+      tcgPlayer: '111517'
+  heatmor-15:
+    name: Heatmor
+    details:
+      illustrator: match
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '631'
+      hp: '100'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Reinforced Flame
+          cost:
+            - Fire
+          damage: 20+
+          effect: >-
+            If this Pokémon has a Pokémon Tool card attached to it, this attack
+            does 20 more damage.
+        - name: Heat Blast
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '70'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: a16e993e-c1f1-4ce8-b1d1-d14f8e320934
+      reverse-holo: 7841e96e-52f2-45a1-acdd-55f705e87572
+    integrations:
+      pokeData: '15110'
+      tcgPlayer: '111518'
+  psyduck-16:
+    name: Psyduck
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '54'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Stampede
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 59c7aa7f-a3d9-406f-ab01-4768250d1b8d
+      reverse-holo: cf0100e7-9f3c-4533-82dd-20e3475e2de2
+    integrations:
+      pokeData: '15136'
+      tcgPlayer: '111519'
+  golduck-17:
+    name: Golduck
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '55'
+      hp: '100'
+      types:
+        - Water
+      evolveFrom: Psyduck
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Derail
+          cost:
+            - Water
+          damage: '20'
+          effect: Discard a Special Energy attached to your opponent's Active Pokémon.
+        - name: Hydro Splash
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: '70'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 038ba5dc-693c-4f40-bc2f-89731a060c65
+      reverse-holo: d81c41f7-19e4-4f3d-8e6f-6c0721c72bc5
+    integrations:
+      pokeData: '15106'
+      tcgPlayer: '111520'
+  golduck-break-18:
+    name: Golduck BREAK
+    editions:
+      unlimited: 33925443-afc1-46a0-803b-532bf04a3027
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '55'
+      hp: '140'
+      types:
+        - Water
+      evolveFrom: Golduck
+      level: undefined
+      stage: BREAK
+      abilities:
+        - type: Ability
+          name: Hyper Transfer
+          effect: >-
+            As often as you like during your turn (before your attack), you may
+            move a basic Energy from 1 of your Pokémon to another of your
+            Pokémon.
+      retreat: '0'
+    integrations:
+      pokeData: '3887'
+      tcgPlayer: '111521'
+  slowpoke-19:
+    name: Slowpoke
+    details:
+      illustrator: Akira Komayama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '79'
+      hp: '70'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Headbutt
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Tail Lure
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a Pokémon, reveal it, and put it into your
+            hand. Shuffle your deck afterward.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 5dd442ca-6c42-4b8b-b5a2-85e5f2e47e82
+      reverse-holo: 7b1a0355-d65a-4054-9b19-c637bc763a0a
+    integrations:
+      pokeData: '15154'
+      tcgPlayer: '111522'
+  slowbro-20:
+    name: Slowbro
+    details:
+      illustrator: kirisAki
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '80'
+      hp: '100'
+      types:
+        - Water
+      evolveFrom: Slowpoke
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Careless Head
+          cost:
+            - Water
+          damage: 10+
+          effect: Flip a coin. If heads, this attack does 50 more damage.
+        - name: Walk-Off Homer
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            If you use this attack when you have only 1 Prize card left, you win
+            this game.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 8cd87a9a-46e9-4764-adca-62ae32e4066a
+      reverse-holo: e8e2c127-9879-4904-a676-d176705e7d04
+    integrations:
+      pokeData: '15152'
+      tcgPlayer: '111523'
+  slowking-21:
+    name: Slowking
+    details:
+      illustrator: Aya Kusube
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '199'
+      hp: '100'
+      types:
+        - Water
+      evolveFrom: Slowpoke
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Royal Flash
+          effect: >-
+            Once during your turn (before your attack), you may flip a coin. If
+            heads, move an Energy from your opponent's Active Pokémon to 1 of
+            his or her Benched Pokémon.
+      attacks:
+        - name: Psych Up
+          cost:
+            - Water
+            - Colorless
+          damage: '40'
+          effect: >-
+            During your next turn, this Pokémon's Psych Up attack does 40 more
+            damage (before applying Weakness and Resistance).
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '2'
+    variants:
+      non-holo:
+        name: Non Holo
+        description: Non Holo Wave Slasher Theme Deck exclusive
+        id: 2742df3b-8879-4f81-8dee-5d83c395f52c
+      cosmos-holo:
+        name: Cosmos Holo
+        description: Cosmos Holo Legacy Evolution Pin Collection exclusive
+        id: 4aeab093-a7b6-4ff6-9b5f-1e655344e589
+    editions:
+      unlimited: 2d6f8844-9832-4ab6-a11e-77a4022e5f35
+      reverse-holo: 8353f4a5-f1f7-497d-925d-406038855e4a
+    integrations:
+      pokeData: '15058'
+      tcgPlayer: '111524'
+  shellder-22:
+    name: Shellder
+    details:
+      illustrator: Mizue
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '90'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Razor Shell
+          cost:
+            - Water
+          damage: 10+
+          effect: Flip a coin. If heads, this attack does 10 more damage.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: acd40525-5d4e-4af5-8efe-168b34a3a623
+      reverse-holo: 0dd448ae-f332-4c21-be47-2f7ec344591b
+    integrations:
+      pokeData: '15144'
+      tcgPlayer: '111525'
+  shellder-23:
+    name: Shellder
+    details:
+      illustrator: Kouki Saitou
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '90'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Clamp
+          cost:
+            - Water
+            - Colorless
+          damage: '30'
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Paralyzed. If tails, this attack does nothing.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 84f6a38b-e7c6-4487-bd24-285077e67186
+      reverse-holo: 0ee189f4-77a3-43d7-95cb-1a2e5d6e000d
+    integrations:
+      pokeData: '15052'
+      tcgPlayer: '111526'
+  cloyster-24:
+    name: Cloyster
+    details:
+      illustrator: Saya Tsuruta
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '91'
+      hp: '100'
+      types:
+        - Water
+      evolveFrom: Shellder
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Sudden Grip
+          cost:
+            - Water
+          damage: '10'
+          effect: >-
+            If this Pokémon evolved from Shellder during this turn, your
+            opponent's Active Pokémon is now Paralyzed.
+        - name: Surf
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: '70'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 7b7cd1ca-8d52-4f6e-875c-4af04899f6a2
+      reverse-holo: 0836349e-6cd1-49a5-82ad-d0083a3a3e89
+    integrations:
+      pokeData: '14988'
+      tcgPlayer: '111527'
+  staryu-25:
+    name: Staryu
+    details:
+      illustrator: Hiroki Asanuma
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '120'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Smack
+          cost:
+            - Water
+          damage: '20'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '0'
+    editions:
+      unlimited: 1981ff4f-9fd0-4ddb-836b-4342ec788553
+      reverse-holo: cff1cb05-ce9d-4cba-b95b-9704eb3127db
+    integrations:
+      pokeData: '15158'
+      tcgPlayer: '111528'
+  gyarados-ex-26:
+    name: Gyarados EX
+    editions:
+      unlimited: 1a8b27b2-86dd-48d2-a8cc-e5be2dc603cb
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '180'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Stormy Seas
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin until you get tails. For each heads, search your deck
+            for a Water Energy card and attach it to this Pokémon. Shuffle your
+            deck afterward.
+        - name: Splash Burn
+          cost:
+            - Water
+            - Water
+            - Colorless
+            - Colorless
+          damage: '130'
+          effect: >-
+            This attack does 10 damage to each of your Benched Pokémon. (Don't
+            apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: '4'
+    integrations:
+      pokeData: '3876'
+      tcgPlayer: '111529'
+  m-gyarados-ex-27:
+    name: Mega Gyarados EX
+    editions:
+      unlimited: 602481d8-3d2b-4ff1-8060-e24e95cb3632
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '240'
+      types:
+        - Water
+      evolveFrom: Gyarados-EX
+      level: undefined
+      stage: MEGA
+      suffix: EX
+      attacks:
+        - name: Blast Geyser
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 120+
+          effect: >-
+            You may do 20 more damage for each Water Energy attached to this
+            Pokémon. If you do, discard the top 2 cards of your deck.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: '2'
+    integrations:
+      pokeData: '3868'
+      tcgPlayer: '111532'
+  lapras-28:
+    name: Lapras
+    details:
+      illustrator: kirisAki
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '131'
+      hp: '120'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Errand-Running
+          cost:
+            - Water
+          damage: undefined
+          effect: >-
+            Search your deck for a Trainer card, reveal it, and put it into your
+            hand. Shuffle your deck afterward.
+        - name: Water Splash
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: 80+
+          effect: Flip a coin. If heads, this attack does 20 more damage.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 7e2cb9dc-2cb1-48fc-8d74-e6232419e6e9
+      reverse-holo: 6b4aef00-11dc-4bfb-bdb5-6ea6326b56bc
+    integrations:
+      pokeData: '15022'
+      tcgPlayer: '111534'
+  corsola-29:
+    name: Corsola
+    details:
+      illustrator: Kanako Eo
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '222'
+      hp: '80'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Spike Cannon
+          cost:
+            - Colorless
+            - Colorless
+          damage: 30×
+          effect: Flip 2 coins. This attack does 30 damage times the number of heads.
+        - name: Power Gem
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 0e975d9d-b7d6-4f94-8009-ee4e46ddf43f
+      reverse-holo: 829d9724-1487-4d19-8382-bbf5d037fb9c
+    integrations:
+      pokeData: '15082'
+      tcgPlayer: '111535'
+  suicune-30:
+    name: Suicune
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '245'
+      hp: '120'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Ability
+          name: Wind Charm
+          effect: >-
+            As long as this Pokémon is your Active Pokémon, prevent all effects
+            of your opponent's attacks, except damage, done to each of your
+            Pokémon. (Existing effects are not removed.)
+      attacks:
+        - name: Aurora Beam
+          cost:
+            - Water
+            - Water
+            - Water
+          damage: '110'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    variants:
+      cosmos-holo:
+        name: Cosmos Holo
+        description: Cosmos Holo Guardians Rising Blisters exclusive
+        id: ae7c8a33-1041-42e1-9bbd-305df1402c33
+    editions:
+      unlimited: 57d70205-c168-4035-9931-7e84d1cc08f1
+      reverse-holo: 5168b983-7bd6-458e-96b4-bd36d81360b6
+    integrations:
+      pokeData: '3890'
+      tcgPlayer: '111536'
+  palkia-ex-31:
+    name: Palkia EX
+    editions:
+      unlimited: b7979821-6e05-45df-816e-04bf7540e675
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '484'
+      hp: '180'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Aqua Turbo
+          cost:
+            - Water
+            - Water
+          damage: '40'
+          effect: >-
+            Search your deck for 2 Water Energy cards and attach them to 1 of
+            your Benched Pokémon. Shuffle your deck afterward.
+        - name: Pearl Hurricane
+          cost:
+            - Water
+            - Water
+            - Water
+            - Water
+          damage: '120'
+          effect: >-
+            This attack does 30 damage to 1 of your opponent's Benched Pokémon.
+            (Don't apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '2'
+    integrations:
+      pokeData: '3879'
+      tcgPlayer: '111537'
+  manaphy-ex-32:
+    name: Manaphy EX
+    editions:
+      unlimited: 267faff9-930a-4a03-a9fc-36f89188928b
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '490'
+      hp: '120'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      suffix: EX
+      abilities:
+        - type: Ability
+          name: Aqua Tube
+          effect: >-
+            Each of your Pokémon that has any Water Energy attached to it has no
+            Retreat Cost.
+      attacks:
+        - name: Mineral Pump
+          cost:
+            - Water
+            - Water
+          damage: '60'
+          effect: Heal 30 damage from each of your Benched Pokémon.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    integrations:
+      pokeData: '3882'
+      tcgPlayer: '111538'
+  tympole-33:
+    name: Tympole
+    details:
+      illustrator: Miki Tanaka
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '535'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Get Loud
+          cost:
+            - Water
+          damage: '10'
+        - name: Round
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10×
+          effect: >-
+            This attack does 10 damage times the number of your Pokémon that
+            have the Round attack.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 4a1eed96-7722-4848-944e-8b38ca9b5b1e
+      reverse-holo: 1030d1dc-62d8-442c-a449-12d7fd840c07
+    integrations:
+      pokeData: '15068'
+      tcgPlayer: '111540'
+  palpitoad-34:
+    name: Palpitoad
+    details:
+      illustrator: Ayaka Yoshida
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '536'
+      hp: '90'
+      types:
+        - Water
+      evolveFrom: Tympole
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Frog Hop
+          cost:
+            - Water
+            - Water
+          damage: 20+
+          effect: Flip a coin. If heads, this attack does 20 more damage.
+        - name: Mud Shot
+          cost:
+            - Water
+            - Water
+            - Water
+          damage: '60'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 0d72a76c-b690-4ceb-85d9-42a25b51d3b0
+      reverse-holo: f71d175f-7b22-4c7e-9107-45190d41cf5b
+    integrations:
+      pokeData: '15032'
+      tcgPlayer: '111541'
+  seismitoad-35:
+    name: Seismitoad
+    details:
+      illustrator: Kanako Eo
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '537'
+      hp: '150'
+      types:
+        - Water
+      evolveFrom: Palpitoad
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Siphon Off
+          cost:
+            - Water
+          damage: undefined
+          effect: Attach 3 Energy cards from your discard pile to this Pokémon.
+        - name: Shaky Fall
+          cost:
+            - Water
+            - Water
+            - Water
+            - Water
+          damage: '90'
+          effect: >-
+            Your opponent's Active Pokémon is now Confused. That Pokémon can't
+            retreat during your opponent's next turn.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 942a4c73-8bf1-4617-a514-5b56ea6d3091
+      reverse-holo: add24a17-e09f-4533-b6a3-ac9cfaf5be03
+    integrations:
+      pokeData: '15050'
+      tcgPlayer: '111542'
+  ducklett-36:
+    name: Ducklett
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '580'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Lunge
+          cost:
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 700d743d-c3a9-4f6a-9523-80f238ba767b
+      reverse-holo: 37f1b205-8804-470f-9fac-0babd4bde864
+    integrations:
+      pokeData: '15088'
+      tcgPlayer: '111543'
+  swanna-37:
+    name: Swanna
+    details:
+      illustrator: sui
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '581'
+      hp: '80'
+      types:
+        - Water
+      evolveFrom: Ducklett
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Wing Attack
+          cost:
+            - Colorless
+          damage: '20'
+        - name: Brave Bird
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '80'
+          effect: This Pokémon does 20 damage to itself.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '0'
+    editions:
+      unlimited: 0b86b94b-4ae5-413b-ac44-ff34da244eee
+      reverse-holo: 8f563428-cd67-457c-a26a-dc3772daa6c0
+    integrations:
+      pokeData: '15066'
+      tcgPlayer: '111544'
+  froakie-38:
+    name: Froakie
+    details:
+      illustrator: Sanosuke Sakuma
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '656'
+      hp: '60'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bubble
+          cost:
+            - Water
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Paralyzed.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 7242707e-08c8-4f23-9a81-fa1a20e2e677
+      reverse-holo: 373c00fb-e0ff-4c64-ae47-fed984756fb0
+    integrations:
+      pokeData: '15098'
+      tcgPlayer: '111545'
+  frogadier-39:
+    name: Frogadier
+    details:
+      illustrator: Shin Nagasawa
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '657'
+      hp: '70'
+      types:
+        - Water
+      evolveFrom: Froakie
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Water Duplicates
+          cost:
+            - Water
+          damage: undefined
+          effect: >-
+            Search your deck for up to 3 Frogadier and put them onto your Bench.
+            Shuffle your deck afterward.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: c1f68650-653e-4d19-8380-11df29c7f48c
+      reverse-holo: 4e61ddc8-8b23-48f5-a127-ea9e6c0406a7
+    integrations:
+      pokeData: '15004'
+      tcgPlayer: '111546'
+  greninja-40:
+    name: Greninja
+    details:
+      illustrator: Naoki Saito
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '658'
+      hp: '130'
+      types:
+        - Water
+      evolveFrom: Frogadier
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Shadow Stitching
+          cost:
+            - Colorless
+          damage: '40'
+          effect: >-
+            Until the end of your opponent's next turn, each Pokémon your
+            opponent has in play, in his or her hand, and in his or her discard
+            pile has no Abilities. (This includes cards that come into play on
+            that turn.)
+        - name: Moonlight Slash
+          cost:
+            - Water
+          damage: 60+
+          effect: >-
+            You may return a Water Energy from this Pokémon to your hand. If you
+            do, this attack does 20 more damage.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '0'
+    variants:
+      cracked-ice:
+        name: Cracked Ice Holo
+        description: Cracked Ice Holo Wave Slasher Theme Deck exclusive
+        id: a265e394-54dd-4bac-995d-81c217c08168
+      league-challenge-1st:
+        name: League Challenge 1st
+        description: 1st Place Reverse Holo Pokémon League League Challenge promo
+        id: bd9345f1-d780-48d5-8c96-2c5d2bdb9af3
+      league-challenge-2nd:
+        name: League Challenge 2nd
+        description: 2nd Place Reverse Holo Pokémon League League Challenge promo
+        id: 6ea20d87-f314-459e-9dea-76cfc43e20a6
+      league-challenge-3rd:
+        name: League Challenge 3rd
+        description: 3rd Place Reverse Holo Pokémon League League Challenge promo
+        id: f8b2c933-fee7-4091-93c4-504129bdbb08
+      league-challenge-4th:
+        name: League Challenge 4th
+        description: 4th Place Reverse Holo Pokémon League League Challenge promo
+        id: 98139922-a014-4efa-8bbb-0b049f535cce
+    editions:
+      unlimited: 6d279adb-bbcc-4283-a7f8-c1b536654322
+      reverse-holo: 1f073d53-d6ea-4f50-a0c1-654b8defea74
+    integrations:
+      pokeData: '15012'
+      tcgPlayer: '111547'
+  greninja-break-41:
+    name: Greninja BREAK
+    editions:
+      unlimited: 2675ab57-0c4b-4b82-902e-9d2af8267999
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '658'
+      hp: '170'
+      types:
+        - Water
+      evolveFrom: Greninja
+      level: undefined
+      stage: BREAK
+      abilities:
+        - type: Ability
+          name: Giant Water Shuriken
+          effect: >-
+            Once during your turn (before your attack), if this Pokémon is your
+            Active Pokémon, you may discard a Water Energy card from your hand.
+            If you do, put 6 damage counters on 1 of your opponent's Pokémon.
+      retreat: '0'
+    integrations:
+      pokeData: '3874'
+      tcgPlayer: '111548'
+  electabuzz-42:
+    name: Electabuzz
+    details:
+      illustrator: Shin Nagasawa
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '125'
+      hp: '70'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Knuckle Punch
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 6091bdd6-beb8-4ec8-92c1-24bcf90359c6
+      reverse-holo: f7445df8-1d7a-42d5-9e3b-ab76c8e426e6
+    integrations:
+      pokeData: '14998'
+      tcgPlayer: '111549'
+  electivire-43:
+    name: Electivire
+    details:
+      illustrator: Shin Nagasawa
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '466'
+      hp: '110'
+      types:
+        - Lightning
+      evolveFrom: Electabuzz
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Knuckle Punch
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+        - name: Electroslug
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '90'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 04c4745b-2915-4222-a7fa-52bfa25ff58f
+      reverse-holo: 084040bf-a3b5-424c-b16c-ce65f3f3ff94
+    integrations:
+      pokeData: '15092'
+      tcgPlayer: '111550'
+  shinx-44:
+    name: Shinx
+    details:
+      illustrator: Saya Tsuruta
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '403'
+      hp: '60'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Roar
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Your opponent switches his or her Active Pokémon with 1 of his or
+            her Benched Pokémon.
+        - name: Flop
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: e664036e-307b-4aea-96b7-793370c85262
+      reverse-holo: 4704445a-b018-493b-8120-0eab02ff381c
+    integrations:
+      pokeData: '15054'
+      tcgPlayer: '111551'
+  luxio-45:
+    name: Luxio
+    details:
+      illustrator: Sanosuke Sakuma
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '404'
+      hp: '80'
+      types:
+        - Lightning
+      evolveFrom: Shinx
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Bite
+          cost:
+            - Colorless
+          damage: '20'
+        - name: Thunder Fang
+          cost:
+            - Lightning
+            - Colorless
+          damage: '30'
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: b65b4367-73f3-4ee3-9a93-828139f40dbf
+      reverse-holo: ced4b974-e245-4de9-a8f0-ef74a87759b6
+    integrations:
+      pokeData: '15024'
+      tcgPlayer: '111552'
+  luxray-46:
+    name: Luxray
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '405'
+      hp: '140'
+      types:
+        - Lightning
+      evolveFrom: Luxio
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Bite
+          cost:
+            - Colorless
+            - Colorless
+          damage: '50'
+        - name: Snarl
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '100'
+          effect: >-
+            During your opponent's next turn, any damage done by attacks from
+            the Defending Pokémon is reduced by 20 (before applying Weakness and
+            Resistance).
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    variants:
+      cracked-ice:
+        name: Cracked Ice Holo
+        description: Cracked Ice Holo Electric Eye Theme Deck exclusive
+        id: b2481335-bb2d-412c-ab3a-368d501e8174
+    editions:
+      unlimited: d9d3a591-11b1-4e49-91aa-979597b8bbbd
+      reverse-holo: 2f1971d2-3d79-4657-9389-7a02bc71bdfa
+    integrations:
+      pokeData: '15118'
+      tcgPlayer: '111553'
+  luxray-break-47:
+    name: Luxray BREAK
+    editions:
+      unlimited: f1fa391b-a9f5-4d8a-a874-00fc678eadb0
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '405'
+      hp: '170'
+      types:
+        - Lightning
+      evolveFrom: Luxray
+      level: undefined
+      stage: BREAK
+      attacks:
+        - name: Wild Fury
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: 130+
+          effect: >-
+            Flip a coin until you get tails. This attack does 40 more damage for
+            each heads.
+      retreat: '0'
+    integrations:
+      pokeData: '3881'
+      tcgPlayer: '111554'
+  blitzle-48:
+    name: Blitzle
+    details:
+      illustrator: Aya Kusube
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '522'
+      hp: '60'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Reckless Charge
+          cost:
+            - Colorless
+          damage: '20'
+          effect: This Pokémon does 10 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 0e3f342e-d475-4552-ba27-29aa2ddf1a14
+      reverse-holo: 2b3eb094-ed45-4578-8a79-59a459998c7f
+    integrations:
+      pokeData: '14982'
+      tcgPlayer: '111555'
+  zebstrika-49:
+    name: Zebstrika
+    details:
+      illustrator: Hajime Kusajima
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '523'
+      hp: '100'
+      types:
+        - Lightning
+      evolveFrom: Blitzle
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Zap Zone
+          effect: >-
+            Damage from the attacks of your Lightning Pokémon isn't affected by
+            any effects on your opponent's Active Pokémon.
+      attacks:
+        - name: Crashing Bolt
+          cost:
+            - Colorless
+            - Colorless
+          damage: 50+
+          effect: >-
+            If your opponent's Active Pokémon has Fighting Resistance, this
+            attack does 60 more damage.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: e0cf2f93-faaf-498c-b7c7-7497ee860077
+      reverse-holo: 6a3f6826-941b-43eb-9f81-a680d66e6290
+    integrations:
+      pokeData: '15167'
+      tcgPlayer: '111556'
+  drowzee-50:
+    name: Drowzee
+    details:
+      illustrator: Shigenori Negishi
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '96'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Mumble
+          cost:
+            - Psychic
+          damage: '10'
+        - name: Focused Wish
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: Flip a coin. If heads, this attack does 20 more damage.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 185e1398-d865-4df9-a613-a650d02bc5e7
+      reverse-holo: 98e93717-883a-422c-bad2-bb9942ebb440
+    integrations:
+      pokeData: '14994'
+      tcgPlayer: '111592'
+  hypno-51:
+    name: Hypno
+    details:
+      illustrator: Tomokazu Komiya
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '97'
+      hp: '90'
+      types:
+        - Psychic
+      evolveFrom: Drowzee
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Goodnight, Babies
+          effect: >-
+            Once during your turn (before your attack), you may leave both
+            Active Pokémon Asleep.
+      attacks:
+        - name: Zen Headbutt
+          cost:
+            - Psychic
+            - Psychic
+          damage: '50'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 503dfa3d-aad8-4541-ba5b-23e8f30e1d76
+      reverse-holo: 8b6fb6ba-b75e-4a42-99ab-2d1dcca95022
+    integrations:
+      pokeData: '15112'
+      tcgPlayer: '111593'
+  espeon-ex-52:
+    name: Espeon EX
+    editions:
+      unlimited: baa12dac-fab1-47f8-bab1-5a552feaaeaf
+    details:
+      illustrator: Ayaka Yoshida
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '196'
+      hp: '170'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Miraculous Shine
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Devolve each of your opponent's evolved Pokémon and put the highest
+            Stage Evolution card on it into your opponent's hand.
+        - name: Psyshock
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '70'
+          effect: >-
+            This attack's damage isn't affected by any effects on your
+            opponent's Active Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '1'
+    integrations:
+      pokeData: '3872'
+      tcgPlayer: '111557'
+  skorupi-53:
+    name: Skorupi
+    details:
+      illustrator: Kyoko Umemoto
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '451'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Pin Missile
+          cost:
+            - Psychic
+            - Colorless
+          damage: 10×
+          effect: Flip 4 coins. This attack does 10 damage times the number of heads.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 10255c53-4403-4b74-a887-ad8d2c63d974
+      reverse-holo: d1efe4e3-2a95-42b9-8338-49cfc951c548
+    integrations:
+      pokeData: '15056'
+      tcgPlayer: '111594'
+  drapion-54:
+    name: Drapion
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '452'
+      hp: '130'
+      types:
+        - Psychic
+      evolveFrom: Skorupi
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Poison Claws
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: '70'
+          effect: Your opponent's Active Pokémon is now Poisoned.
+        - name: Heavy Impact
+          cost:
+            - Psychic
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: '130'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '4'
+    editions:
+      unlimited: acdab642-8828-40f3-a3ae-54d74af409dd
+      reverse-holo: 2aa1f90c-411f-4a72-b7c4-7caf6e4d1917
+    integrations:
+      pokeData: '15086'
+      tcgPlayer: '111595'
+  sigilyph-55:
+    name: Sigilyph
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '561'
+      hp: '90'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Reflective Shield
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            During your opponent's next turn, if this Pokémon is damaged by an
+            attack (even if this Pokémon is Knocked Out), put 5 damage counters
+            on the Attacking Pokémon.
+        - name: Psy Report
+          cost:
+            - Psychic
+            - Psychic
+          damage: '30'
+          effect: Your opponent reveals his or her hand.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: a39d9ebf-107b-46d2-b696-805da5729e24
+      reverse-holo: 8a72c30a-22aa-4cbe-a834-227b060e9935
+    integrations:
+      pokeData: '15148'
+      tcgPlayer: '111596'
+  trubbish-56:
+    name: Trubbish
+    details:
+      illustrator: OOYAMA
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '568'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Acid Spray
+          cost:
+            - Psychic
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, discard an Energy attached to your opponent's
+            Active Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: f48d24c7-6a3f-409d-ae31-a519d6f7164f
+      reverse-holo: ceb57d26-41a6-4947-9873-64c04c502784
+    integrations:
+      pokeData: '15165'
+      tcgPlayer: '111597'
+  garbodor-57:
+    name: Garbodor
+    details:
+      illustrator: Kouki Saitou
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '569'
+      hp: '100'
+      types:
+        - Psychic
+      evolveFrom: Trubbish
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Garbotoxin
+          effect: >-
+            If this Pokémon has a Pokémon Tool card attached to it, each Pokémon
+            in play, in each player's hand, and in each player's discard pile
+            has no Abilities (except for Garbotoxin).
+      attacks:
+        - name: Offensive Bomb
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: Your opponent's Active Pokémon is now Confused and Poisoned.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: f03a4311-a31c-4038-b64b-afa7925581dd
+      reverse-holo: 82a673bf-60d3-4718-aacd-421124c90758
+    integrations:
+      pokeData: '15102'
+      tcgPlayer: '111598'
+  espurr-58:
+    name: Espurr
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '677'
+      hp: '60'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scratch
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 1842f9e5-f202-46c4-966f-c15349eaa424
+      reverse-holo: 8ac4df32-e792-4f0b-bbe9-1a1c278c2369
+    integrations:
+      pokeData: '15094'
+      tcgPlayer: '111599'
+  meowstic-59:
+    name: Meowstic
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '678'
+      hp: '90'
+      types:
+        - Psychic
+      evolveFrom: Espurr
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Energy Present
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Attach up to 2 Energy cards from your hand to 1 of your Benched
+            Pokémon.
+        - name: Psyshot
+          cost:
+            - Psychic
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: cadab89b-17b9-48cd-845f-1a4ecb2ccce9
+      reverse-holo: ace8b679-1479-44ca-acdc-a6cfb56ca4cc
+    integrations:
+      pokeData: '15124'
+      tcgPlayer: '111600'
+  honedge-60:
+    name: Honedge
+    details:
+      illustrator: kawayoo
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '679'
+      hp: '60'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Stab
+          cost:
+            - Psychic
+          damage: undefined
+          effect: Put 1 damage counter on your opponent's Active Pokémon.
+      weaknesses:
+        - type: Darkness
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: 64ce48bd-c684-4817-9e16-6399f78bf657
+      reverse-holo: 796d4198-3d54-4eca-bf94-39cda0d067b5
+    integrations:
+      pokeData: '15018'
+      tcgPlayer: '111601'
+  doublade-61:
+    name: Doublade
+    details:
+      illustrator: Hajime Kusajima
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '680'
+      hp: '80'
+      types:
+        - Psychic
+      evolveFrom: Honedge
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Stab Deeply
+          cost:
+            - Psychic
+            - Colorless
+          damage: undefined
+          effect: Put 3 damage counters on your opponent's Active Pokémon.
+      weaknesses:
+        - type: Darkness
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: dd2cbc72-a919-4655-9b4a-4881de3a3588
+      reverse-holo: 81749ca2-8de1-4494-91d4-187da5eee4fe
+    integrations:
+      pokeData: '15084'
+      tcgPlayer: '111602'
+  aegislash-62:
+    name: Aegislash
+    details:
+      illustrator: Hitoshi Ariga
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '681'
+      hp: '140'
+      types:
+        - Psychic
+      evolveFrom: Doublade
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Painful Sword
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Double the number of damage counters on each of your opponent's
+            Pokémon.
+        - name: Megaton Slash
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '100'
+          effect: >-
+            This attack does 10 damage to 2 of your opponent's Benched Pokémon.
+            (Don't apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Darkness
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: d8378c28-dbe4-4168-8156-68cc3f201704
+      reverse-holo: 34b2fd47-1c27-4dd0-b0f5-fabc36537afd
+    integrations:
+      pokeData: '15070'
+      tcgPlayer: '111603'
+  skrelp-63:
+    name: Skrelp
+    details:
+      illustrator: Yukiko Baba
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '690'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Hide
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all effects of attacks, including
+            damage, done to this Pokémon during your opponent's next turn.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 44e22611-69b5-4c24-804a-a899ffec49ca
+      reverse-holo: e8c7f6ab-01e6-4ba1-8779-3f2ec101079a
+    integrations:
+      pokeData: '15150'
+      tcgPlayer: '111604'
+  phantump-64:
+    name: Phantump
+    details:
+      illustrator: Sumiyoshi Kizuki
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '708'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Ascension
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a card that evolves from this Pokémon and put
+            it onto this Pokémon. (This counts as evolving this Pokémon.)
+            Shuffle your deck afterward.
+      weaknesses:
+        - type: Darkness
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: 27fc685b-4718-4689-9d4e-f0f25f0c03d5
+      reverse-holo: e9fc3ed9-f40a-4a7f-9616-a6b135c5bfaa
+    integrations:
+      pokeData: '15036'
+      tcgPlayer: '111605'
+  trevenant-65:
+    name: Trevenant
+    details:
+      illustrator: Midori Harada
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '709'
+      hp: '110'
+      types:
+        - Psychic
+      evolveFrom: Phantump
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Nervous Seed
+          effect: >-
+            As long as this Pokémon is your Active Pokémon, your opponent's
+            Basic Pokémon's attacks cost Colorless more.
+      attacks:
+        - name: Energy Press
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: 70+
+          effect: >-
+            This attack does 10 more damage for each Energy attached to your
+            opponent's Active Pokémon.
+      weaknesses:
+        - type: Darkness
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: d33ae4be-53ea-4b3c-8cf1-3dc49b9dfc4c
+      reverse-holo: 41850f84-b6ad-4c9c-8e0d-53087d7d2a9d
+    integrations:
+      pokeData: '15163'
+      tcgPlayer: '111559'
+  trevenant-break-66:
+    name: Trevenant BREAK
+    editions:
+      unlimited: 74915019-d638-437a-a76c-55efd0552776
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '709'
+      hp: '160'
+      types:
+        - Psychic
+      evolveFrom: Trevenant
+      level: undefined
+      stage: BREAK
+      attacks:
+        - name: Silent Fear
+          cost:
+            - Psychic
+            - Colorless
+          damage: undefined
+          effect: Put 3 damage counters on each of your opponent's Pokémon.
+      retreat: '0'
+    integrations:
+      pokeData: '3886'
+      tcgPlayer: '111560'
+  sudowoodo-67:
+    name: Sudowoodo
+    details:
+      illustrator: Hitoshi Ariga
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '185'
+      hp: '90'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Watch and Learn
+          cost:
+            - Fighting
+            - Colorless
+          damage: undefined
+          effect: >-
+            If your opponent's Pokémon used an attack during his or her last
+            turn, use it as this attack.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: e6afac52-29ea-48b7-85b2-143547b6f45d
+      reverse-holo: f88960b0-e874-4516-ab9a-b24e56bee5b4
+    integrations:
+      pokeData: '15064'
+      tcgPlayer: '111606'
+  gible-68:
+    name: Gible
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '443'
+      hp: '60'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Never Enough
+          cost:
+            - Fighting
+          damage: undefined
+          effect: Discard a card from your hand. If you do, draw 2 cards.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 5ad3b079-bffb-433b-a0fd-498121aa1c17
+      reverse-holo: 5c997713-f118-41ab-89e9-50d95a5cbcae
+    integrations:
+      pokeData: '15104'
+      tcgPlayer: '111607'
+  gabite-69:
+    name: Gabite
+    details:
+      illustrator: Midori Harada
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '444'
+      hp: '80'
+      types:
+        - Fighting
+      evolveFrom: Gible
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Sand Tomb
+          cost:
+            - Fighting
+          damage: '20'
+          effect: >-
+            The Defending Pokémon can't retreat during your opponent's next turn.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 70bfe73d-bc22-471b-aa4d-b3721587c568
+      reverse-holo: adebdfa6-9b57-4285-b5c7-973f827c43ed
+    integrations:
+      pokeData: '15006'
+      tcgPlayer: '111608'
+  garchomp-70:
+    name: Garchomp
+    details:
+      illustrator: TOKIYA
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '445'
+      hp: '130'
+      types:
+        - Fighting
+      evolveFrom: Gabite
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Turbo Assault
+          cost:
+            - Fighting
+          damage: '60'
+          effect: Attach an Energy card from your discard pile to 1 of your Pokémon.
+        - name: Bite Off
+          cost:
+            - Fighting
+            - Fighting
+          damage: 80+
+          effect: >-
+            If your opponent's Active Pokémon is a Pokémon-EX, this attack does
+            80 more damage.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '0'
+    editions:
+      unlimited: fa294331-6518-4435-91f5-89821a6f0948
+      reverse-holo: 233eade6-97dc-4ce2-8b5c-e7883e51b38b
+    integrations:
+      pokeData: '15008'
+      tcgPlayer: '111613'
+  pancham-71:
+    name: Pancham
+    details:
+      illustrator: MAHOU
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '674'
+      hp: '60'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Light Punch
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Confront
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 337ff6a0-cb04-4520-b662-dbb6747f0a1e
+      reverse-holo: 08c9ecfd-af93-4c92-8fb1-4defb59e62f3
+    integrations:
+      pokeData: '15128'
+      tcgPlayer: '111609'
+  nuzleaf-72:
+    name: Nuzleaf
+    details:
+      illustrator: Yuka Morii
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '274'
+      hp: '80'
+      types:
+        - Darkness
+      evolveFrom: Seedot
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Corkscrew Punch
+          cost:
+            - Darkness
+          damage: '20'
+        - name: Razor Wind
+          cost:
+            - Colorless
+            - Colorless
+          damage: '40'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 82fd64e3-8591-425c-a2f2-76e4102c4e71
+      reverse-holo: e39264ed-5246-4381-846a-1ba35aa13e78
+    integrations:
+      pokeData: '15030'
+      tcgPlayer: '111610'
+  shiftry-73:
+    name: Shiftry
+    details:
+      illustrator: TOKIYA
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '275'
+      hp: '140'
+      types:
+        - Darkness
+      evolveFrom: Nuzleaf
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Roll Up
+          cost:
+            - Darkness
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip 3 coins. If any of them are heads, your opponent reveals his or
+            her hand. Then, for each heads, discard a card from your opponent's
+            hand.
+        - name: Otherworldly Return
+          cost:
+            - Darkness
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: Put a Trainer card from your discard pile into your hand.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 7997ca3a-90c1-4f49-ab41-69a12971d5cd
+      reverse-holo: e19233a3-2c61-49c3-aacd-9d3d3b28b5cb
+    integrations:
+      pokeData: '15146'
+      tcgPlayer: '111611'
+  darkrai-ex-74:
+    name: Darkrai EX
+    editions:
+      unlimited: 0e2a7c0e-7ea0-49e4-862e-645db5eb738f
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '491'
+      hp: '180'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Dark Pulse
+          cost:
+            - Colorless
+            - Colorless
+          damage: 20+
+          effect: >-
+            This attack does 20 more damage for each Darkness Energy attached to
+            all of your Pokémon.
+        - name: Dark Head
+          cost:
+            - Darkness
+            - Colorless
+            - Colorless
+          damage: 80+
+          effect: >-
+            If your opponent's Active Pokémon is Asleep, this attack does 80
+            more damage.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3880'
+      tcgPlayer: '111561'
+  pangoro-75:
+    name: Pangoro
+    details:
+      illustrator: Naoki Saito
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '675'
+      hp: '120'
+      types:
+        - Darkness
+      evolveFrom: Pancham
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Parting Shot
+          cost:
+            - Darkness
+          damage: '10'
+          effect: >-
+            Switch this Pokémon with 1 of your Benched Pokémon. During your
+            opponent's next turn, any damage done by attacks from the Defending
+            Pokémon is reduced by 60 (before applying Weakness and Resistance).
+        - name: Buster Swing
+          cost:
+            - Darkness
+            - Darkness
+            - Darkness
+          damage: '90'
+          effect: This attack's damage isn't affected by Resistance.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: 8a4bc319-a93f-4b6a-9ff5-3734e228ea4e
+      reverse-holo: cb93b63f-81a1-4786-a5fd-b1e2851177f3
+    integrations:
+      pokeData: '15034'
+      tcgPlayer: '111614'
+  scizor-ex-76:
+    name: Scizor EX
+    editions:
+      unlimited: 2ed612c3-b012-4d2e-b567-a0cd878e83e5
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '212'
+      hp: '170'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Steel Wing
+          cost:
+            - Metal
+          damage: '20'
+          effect: >-
+            During your opponent's next turn, any damage done to this Pokémon by
+            attacks is reduced by 20 (after applying Weakness and Resistance).
+        - name: Gale Thrust
+          cost:
+            - Metal
+            - Metal
+          damage: 50+
+          effect: >-
+            If this Pokémon was on the Bench and became your Active Pokémon this
+            turn, this attack does 60 more damage.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3885'
+      tcgPlayer: '111563'
+  m-scizor-ex-77:
+    name: Mega Scizor EX
+    editions:
+      unlimited: 1b42f2a0-1aaa-444d-8907-1e77bb83487e
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '212'
+      hp: '220'
+      types:
+        - Metal
+      evolveFrom: Scizor-EX
+      level: undefined
+      stage: MEGA
+      suffix: EX
+      attacks:
+        - name: Iron Crusher
+          cost:
+            - Metal
+            - Metal
+          damage: '120'
+          effect: >-
+            You may discard a Special Energy attached to your opponent's Active
+            Pokémon or a Stadium card in play.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3873'
+      tcgPlayer: '111565'
+  mawile-78:
+    name: Mawile
+    details:
+      illustrator: Kouki Saitou
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '303'
+      hp: '80'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tight Jaw
+          cost:
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Paralyzed.
+        - name: Cavernous Chomp
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: fe077649-de56-4b8c-9559-6753653ab4ae
+      reverse-holo: 75feaa2b-0af1-4f52-a516-d7fcdcd80fd9
+    integrations:
+      pokeData: '15120'
+      tcgPlayer: '111615'
+  ferroseed-79:
+    name: Ferroseed
+    details:
+      illustrator: Satoshi Shirai
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '597'
+      hp: '60'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Harden
+          cost:
+            - Metal
+            - Colorless
+          damage: undefined
+          effect: >-
+            During your opponent's next turn, if this Pokémon would be damaged
+            by an attack, prevent that attack's damage done to this Pokémon if
+            that damage is 60 or less.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: 483ad3a1-a794-4310-9cd8-081d6a99c3d2
+      reverse-holo: aed369f6-d10a-4e08-bf86-535cfca482b5
+    integrations:
+      pokeData: '15000'
+      tcgPlayer: '111612'
+  ferrothorn-80:
+    name: Ferrothorn
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '598'
+      hp: '100'
+      types:
+        - Metal
+      evolveFrom: Ferroseed
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Metal Claw
+          cost:
+            - Metal
+            - Colorless
+          damage: '40'
+        - name: Spike Lash
+          cost:
+            - Metal
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            This attack does 10 damage to each of your opponent's Pokémon for
+            each Colorless in that Pokémon's Retreat Cost. (Don't apply Weakness
+            and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: 968fc88a-bd86-4459-8ca7-6c01e9be94bd
+      reverse-holo: 53b599bf-2d47-444f-bb85-b493f68aaccc
+    integrations:
+      pokeData: '15096'
+      tcgPlayer: '111616'
+  clefairy-81:
+    name: Clefairy
+    details:
+      illustrator: Tomokazu Komiya
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '35'
+      hp: '60'
+      types:
+        - Fairy
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sing
+          cost:
+            - Fairy
+          damage: undefined
+          effect: Your opponent's Active Pokémon is now Asleep.
+        - name: Double Slap
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10×
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 52e00d4d-589f-4d28-bbe4-eae0a15e0409
+      reverse-holo: 2e67c069-fccf-4f4a-b176-e92e47380297
+    integrations:
+      pokeData: '15080'
+      tcgPlayer: '111617'
+  clefable-82:
+    name: Clefable
+    details:
+      illustrator: Sanosuke Sakuma
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '36'
+      hp: '100'
+      types:
+        - Fairy
+      evolveFrom: Clefairy
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Moon Barrier
+          cost:
+            - Fairy
+          damage: '30'
+          effect: >-
+            During your opponent's next turn, prevent all effects of attacks,
+            including damage, done to this Pokémon by Dragon Pokémon.
+        - name: Tumbling Attack
+          cost:
+            - Fairy
+            - Colorless
+            - Colorless
+          damage: 50+
+          effect: Flip a coin. If heads, this attack does 30 more damage.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 1c924a4a-21a7-4f00-9816-e6e89c077d7c
+      reverse-holo: a4d1ffd4-2aaf-4669-9cb5-5a8f3d00d787
+    integrations:
+      pokeData: '14986'
+      tcgPlayer: '111618'
+  togekiss-ex-83:
+    name: Togekiss EX
+    editions:
+      unlimited: cf7bd9f5-0a5f-47c6-acf0-ab198fc1b40a
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '468'
+      hp: '170'
+      types:
+        - Fairy
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Mighty Wind
+          cost:
+            - Fairy
+          damage: '20'
+          effect: >-
+            You may attach an Energy card from your hand to 1 of your Benched
+            Pokémon.
+        - name: Hurricane Wing
+          cost:
+            - Fairy
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 50×
+          effect: Flip 4 coins. This attack does 50 damage times the number of heads.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '1'
+    integrations:
+      pokeData: '3883'
+      tcgPlayer: '111566'
+  spritzee-84:
+    name: Spritzee
+    details:
+      illustrator: kirisAki
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '682'
+      hp: '50'
+      types:
+        - Fairy
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Beat
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: da586504-564f-4f9a-a3c4-a205d8569848
+      reverse-holo: a70406db-3cf3-45dd-ab85-a7bb50eabf9f
+    integrations:
+      pokeData: '15156'
+      tcgPlayer: '111619'
+  aromatisse-85:
+    name: Aromatisse
+    details:
+      illustrator: kirisAki
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '683'
+      hp: '90'
+      types:
+        - Fairy
+      evolveFrom: Spritzee
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Dizzying Cologne
+          cost:
+            - Colorless
+          damage: 20+
+          effect: >-
+            If your opponent's Active Pokémon is a Pokémon-EX, this attack does
+            40 more damage.
+        - name: Fairy Wind
+          cost:
+            - Fairy
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 2cc8b8f0-3532-49c8-b9a3-5e6c0e2254a8
+      reverse-holo: 98d47636-b65e-438c-ac86-8e1550c1dba3
+    integrations:
+      pokeData: '14980'
+      tcgPlayer: '111620'
+  dragalge-86:
+    name: Dragalge
+    details:
+      illustrator: Shin Nagasawa
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '691'
+      hp: '110'
+      types:
+        - Dragon
+      evolveFrom: Skrelp
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Severe Poison
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Your opponent's Active Pokémon is now Poisoned. Put 4 damage
+            counters instead of 1 on that Pokémon between turns.
+        - name: Dragon Pulse
+          cost:
+            - Water
+            - Psychic
+          damage: '60'
+          effect: Discard the top card of your deck.
+      weaknesses:
+        - type: Fairy
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 2059c7c9-6b89-4d11-b5c4-00c3bd0e3606
+      reverse-holo: c3276822-db80-4709-92d6-9b353c5be38e
+    integrations:
+      pokeData: '14992'
+      tcgPlayer: '111621'
+  rattata-87:
+    name: Rattata
+    details:
+      illustrator: match
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '19'
+      hp: '30'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dangerous Suspicion
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Draw a card. Switch this Pokémon with 1 of your Benched Pokémon.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 4a57da29-d6f6-4811-b3f8-5af4369945c6
+      reverse-holo: 13c77c07-09c4-479d-ae46-43086b428722
+    integrations:
+      pokeData: '15046'
+      tcgPlayer: '111622'
+  raticate-88:
+    name: Raticate
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '20'
+      hp: '70'
+      types:
+        - Colorless
+      evolveFrom: Rattata
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Antibodies
+          effect: >-
+            This Pokémon can't be affected by any Special Conditions. (Remove
+            any Special Conditions affecting this Pokémon.)
+      attacks:
+        - name: Dirty Shock
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Your opponent's Active Pokémon is now Poisoned. Discard all Pokémon
+            Tool cards attached to that Pokémon.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '0'
+    editions:
+      unlimited: 9af9aa4e-350d-4e16-886e-9875ff8b2143
+      reverse-holo: d3456ba6-42dd-4084-882e-5fa0754aadc0
+    integrations:
+      pokeData: '15044'
+      tcgPlayer: '111623'
+  raticate-break-89:
+    name: Raticate BREAK
+    editions:
+      unlimited: 6a37da02-ebb5-4f8e-9aff-578b5f6ca012
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '20'
+      hp: '110'
+      types:
+        - Colorless
+      evolveFrom: Raticate
+      level: undefined
+      stage: BREAK
+      attacks:
+        - name: Super Fang
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Put damage counters on your opponent's Active Pokémon until its
+            remaining HP is 10.
+      retreat: '0'
+    integrations:
+      pokeData: '3889'
+      tcgPlayer: '111567'
+  dunsparce-90:
+    name: Dunsparce
+    details:
+      illustrator: Akira Komayama
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '206'
+      hp: '60'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Call for Family
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a Basic Pokémon and put it onto your Bench.
+            Shuffle your deck afterward.
+        - name: Ram
+          cost:
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: cea37520-d031-4db7-b79d-4b8aab7b47cc
+      reverse-holo: c536aa75-6739-4428-a749-29a12f5c8341
+    integrations:
+      pokeData: '14996'
+      tcgPlayer: '111624'
+  stantler-91:
+    name: Stantler
+    details:
+      illustrator: sui
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '234'
+      hp: '90'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Mystifying Horns
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Confused.
+        - name: Big Charge
+          cost:
+            - Colorless
+            - Colorless
+          damage: 30+
+          effect: >-
+            If you have any Mega Evolution Pokémon on your Bench, this attack
+            does 50 more damage.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 049ba5bb-1e94-4bca-9f18-63ba617d380d
+      reverse-holo: 72c003cb-23f9-470c-ae26-098d010503bb
+    integrations:
+      pokeData: '15062'
+      tcgPlayer: '111625'
+  ho-oh-ex-92:
+    name: Ho-Oh EX
+    editions:
+      unlimited: 45aa60c1-0bb4-465a-8855-e7f1e81e415f
+    details:
+      illustrator: Eske Yoshinob
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '250'
+      hp: '180'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      suffix: EX
+      abilities:
+        - type: Ability
+          name: Purifying Fire
+          effect: >-
+            Once during your turn (before your attack), if this Pokémon has any
+            basic Fire Energy attached to it, you may heal 50 damage from it.
+      attacks:
+        - name: Elemental Feather
+          cost:
+            - Grass
+            - Water
+            - Lightning
+          damage: '130'
+          effect: >-
+            This attack does 30 damage to 1 of your opponent's Benched Pokémon.
+            (Don't apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Water
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3877'
+      tcgPlayer: '111568'
+  glameow-93:
+    name: Glameow
+    details:
+      illustrator: Saya Tsuruta
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '431'
+      hp: '60'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Act Cute
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Your opponent puts a card from his or her hand on the bottom of his
+            or her deck.
+        - name: Scratch
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: fb4355de-6de6-4476-97c2-67b2595024fd
+      reverse-holo: 1e1ba045-0d9b-4d73-843b-8fa61a760450
+    integrations:
+      pokeData: '15010'
+      tcgPlayer: '111626'
+  purugly-94:
+    name: Purugly
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '432'
+      hp: '100'
+      types:
+        - Colorless
+      evolveFrom: Glameow
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Slash
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+        - name: Nyan Press
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 40+
+          effect: >-
+            Flip a coin. If heads, this attack does 40 more damage. If tails,
+            your opponent's Active Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: c63559c1-75da-4f29-99ee-d254e9b50cd6
+      reverse-holo: 841e2bb7-a32e-416f-8eef-239f997ba5ec
+    integrations:
+      pokeData: '15042'
+      tcgPlayer: '111627'
+  furfrou-95:
+    name: Furfrou
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '676'
+      hp: '80'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Collect
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Draw a card.
+        - name: Tight Jaw
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+          effect: >-
+            Flip a coin. If heads, your opponent's Active Pokémon is now
+            Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 4735dc3f-12cf-4ed0-8c88-b42ed45a2635
+      reverse-holo: d28d2fa5-f640-491a-a281-66999b4544b9
+    integrations:
+      pokeData: '15100'
+      tcgPlayer: '111628'
+  all-night-party-96:
+    name: All-Night Party
+    details:
+      illustrator: Hitoshi Ariga
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Once during each player's turn, if that player's Active Pokémon is
+        Asleep, he or she may remove that Special Condition and heal 30 damage
+        from that Pokémon.
+      trainerType: Stadium
+    editions:
+      unlimited: 432bf0e8-20ef-422b-8cd6-461f0ecdc57f
+      reverse-holo: bcf601ce-3f12-439f-a847-05b4d8c27244
+    integrations:
+      pokeData: '14978'
+      tcgPlayer: '111569'
+  bursting-balloon-97:
+    name: Bursting Balloon
+    details:
+      illustrator: Toyste Beach
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        If this card is attached to 1 of your Pokémon, discard it at the end of
+        your opponent's turn.
+
+
+        If the Pokémon this card is attached to is your Active Pokémon and is
+        damaged by an opponent's attack (even if that Pokémon is Knocked Out),
+        put 6 damage counters on the Attacking Pokémon.
+      trainerType: Tool
+    editions:
+      unlimited: 0cb6f340-57d1-4075-8add-6e654661b9ab
+      reverse-holo: 46b35eab-cf94-4236-9cc4-b07e108b17ba
+    integrations:
+      pokeData: '15076'
+      tcgPlayer: '111629'
+  delinquent-98:
+    name: Delinquent
+    details:
+      illustrator: Yusuke Ohmura
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Discard any Stadium card in play. If you do, your opponent discards 3
+        cards from his or her hand.
+      trainerType: Supporter
+    variants:
+      yellow-a-alt-non-holo:
+        name: Alternate Art (Non holo)
+        description: >-
+          Non Holo Yellow A Alternate art Battle Arena Deck—Mega Charizard X
+          exclusive
+        id: 3cb0b504-cbc4-41d8-870a-37ee92e5ae7f
+      yellow-a-alt-holo:
+        name: Alternate Art (Holo)
+        description: Holo Yellow A Alternate art Battle Arena Deck—Mega Blastoise exclusive
+        id: 980f91a4-a061-477c-a0b3-d0bb093b26a0
+      yellow-a-alt:
+        name: Alternate Art
+        description: Yellow A Alternate art Premium Trainer's XY Collection exclusive
+        integrations:
+          priceCharting:
+            yellow-a-alt: delinquent-98a
+        id: fdec0f27-65dc-4c21-9bb2-ddd9e6025bd8
+    editions:
+      unlimited: 056bc458-8e00-422d-a7fe-44b8e3d21de1
+      reverse-holo: 8820eb34-e3c3-4606-bb9f-a72f2143751b
+    integrations:
+      pokeData: '14990'
+      tcgPlayer: '111630'
+  fighting-fury-belt-99:
+    name: Fighting Fury Belt
+    details:
+      illustrator: Toyste Beach
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        The Basic Pokémon this card is attached to gets +40 HP and its attacks
+        do 10 more damage to your opponent's Active Pokémon (before applying
+        Weakness and Resistance).
+      trainerType: Tool
+    editions:
+      unlimited: f387d614-32ee-4602-9f06-526b50c61f56
+      reverse-holo: a31ddc9d-73a2-4b97-b040-1c30d13603d6
+    integrations:
+      pokeData: '15002'
+      tcgPlayer: '111570'
+  great-ball-100:
+    name: Great Ball
+    details:
+      illustrator: Toyste Beach
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Look at the top 7 cards of your deck. You may reveal a Pokémon you find
+        there and put it into your hand. Shuffle the other cards back into your
+        deck.
+      trainerType: Item
+    editions:
+      unlimited: 66a2bee2-d1de-4d4d-bbf2-2d74a7ea5b08
+      reverse-holo: 7989c356-d306-4848-8358-9d5f04c6c468
+    integrations:
+      pokeData: '15108'
+      tcgPlayer: '111631'
+  gyarados-spirit-link-101:
+    name: Gyarados Spirit Link
+    details:
+      illustrator: 5ban Graphics
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Your turn does not end if the Pokémon this card is attached to becomes M
+        Gyarados-EX.
+      trainerType: Tool
+    editions:
+      unlimited: f0e1dc1b-54a0-4a2b-93e3-336b3f11e09c
+      reverse-holo: a15a7789-6fa2-421f-9655-fef043994a63
+    integrations:
+      pokeData: '15016'
+      tcgPlayer: '111632'
+  max-elixir-102:
+    name: Max Elixir
+    details:
+      illustrator: Toyste Beach
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Look at the top 6 cards of your deck and attach a basic Energy card you
+        find there to a Basic Pokémon on your Bench. Shuffle the other cards
+        back into your deck.
+      trainerType: Item
+    editions:
+      unlimited: c70b9032-cca5-4866-a2ad-48d546026510
+      reverse-holo: 21ec0f97-90fb-4330-ad41-cddda5c8870c
+    integrations:
+      pokeData: '3878'
+      tcgPlayer: '111633'
+  max-potion-103:
+    name: Max Potion
+    details:
+      illustrator: Toyste Beach
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Heal all damage from 1 of your Pokémon. If you do, discard all Energy
+        attached to that Pokémon.
+      trainerType: Item
+    editions:
+      unlimited: 231881f6-ab58-4054-b113-a38b9523c474
+      reverse-holo: fc101abe-fd3e-46b4-a049-2631ea187637
+    integrations:
+      pokeData: '15122'
+      tcgPlayer: '111634'
+  mistys-determination-104:
+    name: Misty's Determination
+    integrations:
+      priceCharting: misty's-determination
+      pokeData: '15028'
+      tcgPlayer: '111571'
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Discard a card from your hand. If you do, look at the top 8 cards of
+        your deck and put 1 of them into your hand. Shuffle the other cards back
+        into your deck.
+      trainerType: Supporter
+    variants:
+      regional-championships:
+        name: Regional Championships
+        description: Reverse Regional Championships 2015-2016 promo
+        id: 632a6407-71b3-4f55-84f9-e44112855c62
+      regional-championships-staff:
+        name: Regional Championships (Staff)
+        description: Staff Reverse Regional Championships 2015-2016 promo
+        id: e74c6179-676f-4225-990e-98a00e3960e3
+    editions:
+      unlimited: d70c3658-e8b4-4348-b0d4-a19679765902
+      reverse-holo: 205e2943-e8f7-423b-8cb5-c5bea39eac2d
+  pokemon-catcher-105:
+    name: Pokémon Catcher
+    details:
+      illustrator: 5ban Graphics
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Flip a coin. If heads, switch 1 of your opponent's Benched Pokémon with
+        his or her Active Pokémon.
+      trainerType: Item
+    editions:
+      unlimited: 5cd9b7e9-1a08-403e-9af7-764f853cf7bd
+      reverse-holo: 23e73c4c-cca0-495b-a948-04443e544f75
+    integrations:
+      pokeData: '15132'
+      tcgPlayer: '111635'
+  potion-106:
+    name: Potion
+    details:
+      illustrator: 5ban Graphics
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: Heal 30 damage from 1 of your Pokémon.
+      trainerType: Item
+    editions:
+      unlimited: 16e2c61e-d697-43c8-b0e3-49fee3a429a5
+      reverse-holo: 83e3dee1-0508-4454-8ed6-149815c067c6
+    integrations:
+      pokeData: '15038'
+      tcgPlayer: '111636'
+  professor-sycamore-107:
+    name: Professor Sycamore
+    details:
+      illustrator: Yusuke Ohmura
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: Discard your hand and draw 7 cards.
+      trainerType: Supporter
+    variants:
+      yellow-a-alt-holo:
+        name: Alternate Art (Holo)
+        description: >-
+          Holo Yellow A Alternate art Battle Arena Decks: Black Kyurem vs. White
+          Kyurem exclusive
+        id: 4fbdf4a6-4f1c-4fce-90ed-f87b73a953d0
+      yellow-a-alt-non-holo:
+        name: Alternate Art (Non holo)
+        description: >-
+          Non Holo Yellow A Alternate art Battle Arena Decks: Black Kyurem vs.
+          White Kyurem exclusive
+        id: 145fb70e-4e99-4b7e-bc58-46abb88fabf2
+    editions:
+      unlimited: 0a3c1cf3-7d9c-4618-8d9c-ab9c18e41e60
+      reverse-holo: e0e7ae05-9dbb-45ad-9c03-831d93a47ca0
+    integrations:
+      pokeData: '15134'
+      tcgPlayer: '111637'
+  psychics-third-eye-108:
+    name: Psychic's Third Eye
+    integrations:
+      priceCharting: psychic's-third-eye
+      pokeData: '15040'
+      tcgPlayer: '111638'
+    details:
+      illustrator: Yusuke Ohmura
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Your opponent reveals his or her hand.
+
+
+        Discard as many cards as you like from your hand. Then, draw that many
+        cards.
+      trainerType: Supporter
+    editions:
+      unlimited: 41ec2565-07fb-4fe7-b0b3-d0d213d8a609
+      reverse-holo: b6ac70c9-9e08-4062-b58f-266705f15de7
+  puzzle-of-time-109:
+    name: Puzzle of Time
+    details:
+      illustrator: Toyste Beach
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        You may play 2 Puzzle of Time cards at once.
+
+
+        • If you played 1 card, look at the top 3 cards of your deck and put
+        them back in any order.
+
+        • If you played 2 cards, put 2 cards from your discard pile into your
+        hand.
+      trainerType: Item
+    editions:
+      unlimited: 1627a1f1-ceb3-4c2d-84e6-22adb93f0bdd
+      reverse-holo: 92e6ee8d-c24a-4f8b-b816-e16b2b870205
+    integrations:
+      pokeData: '15138'
+      tcgPlayer: '111572'
+  reverse-valley-110:
+    name: Reverse Valley
+    details:
+      illustrator: 5ban Graphics
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Choose which way this card faces before you play it. The attacks of this
+        ↓ player's Darkness Pokémon do 10 more damage to your opponent's Active
+        Pokémon (before applying Weakness and Resistance). Any damage done to
+        this ↓ player's Metal Pokémon by an opponent's attack is reduced by 10
+        (after applying Weakness and Resistance).
+      trainerType: Stadium
+    variants:
+      states-championships:
+        name: States Championships
+        description: >-
+          Reverse State•Province•Territory Championships Championships 2015-2016
+          promo
+        id: 1c40bc67-d17f-4469-80c6-3599b0fa2198
+      states-championships-staff:
+        name: States Championships (Staff)
+        description: >-
+          Staff Reverse State•Province•Territory Championships Championships
+          2015-2016 promo
+        id: 34695fcd-7968-4384-92ea-a20b96e70c3e
+    editions:
+      unlimited: 132f872a-14e2-49b2-8397-d16b626b1bc2
+      reverse-holo: b2f0037e-7966-4306-b00f-81a950a61c60
+    integrations:
+      pokeData: '15140'
+  scizor-spirit-link-111:
+    name: Scizor Spirit Link
+    details:
+      illustrator: 5ban Graphics
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Your turn does not end if the Pokémon this card is attached to becomes M
+        Scizor-EX.
+      trainerType: Tool
+    editions:
+      unlimited: 430619bf-8efa-4f68-b315-75f54ed0cd5c
+      reverse-holo: 36cdcd55-5eb5-4427-8398-7af4dbd73b6c
+    integrations:
+      pokeData: '15048'
+      tcgPlayer: '111639'
+  tierno-112:
+    name: Tierno
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: Draw 3 cards.
+      trainerType: Supporter
+    editions:
+      unlimited: d1837b9b-3376-4cba-bbc3-73103af4c8fd
+      reverse-holo: c71b535b-2b21-4137-b8e8-c41a4421202a
+    integrations:
+      pokeData: '15161'
+      tcgPlayer: '111640'
+  splash-energy-113:
+    name: Splash Energy
+    details:
+      illustrator: 5ban Graphics
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        This card can only be attached to Water Pokémon. This card provides
+        Water Energy only while this card is attached to a Water Pokémon.
+
+
+        If the Water Pokémon this card is attached to is Knocked Out by damage
+        from an opponent's attack, put that Pokémon into your hand. (Discard all
+        cards attached to it.)
+
+
+        (If this card is attached to anything other than a Water Pokémon,
+        discard this card.)
+      energyType: Special
+    editions:
+      unlimited: 4eb392d3-e34e-44cd-8095-ebc3786e652e
+      reverse-holo: c502b0f6-7438-4645-bb0b-20c85feda94e
+    integrations:
+      pokeData: '15060'
+      tcgPlayer: '111574'
+  gyarados-ex-114:
+    name: Gyarados EX
+    editions:
+      unlimited: 8dcdef7a-7d77-4ad7-881a-5cb805f941a3
+    details:
+      illustrator: Ryo Ueda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '180'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Stormy Seas
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin until you get tails. For each heads, search your deck
+            for a Water Energy card and attach it to this Pokémon. Shuffle your
+            deck afterward.
+        - name: Splash Burn
+          cost:
+            - Water
+            - Water
+            - Colorless
+            - Colorless
+          damage: '130'
+          effect: >-
+            This attack does 10 damage to each of your Benched Pokémon. (Don't
+            apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: '4'
+    integrations:
+      pokeData: '3866'
+      tcgPlayer: '111530'
+  m-gyarados-ex-115:
+    name: Mega Gyarados EX
+    editions:
+      unlimited: 61253418-a7cb-4d78-ba8b-dd9c8bcba9dd
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '240'
+      types:
+        - Water
+      evolveFrom: Gyarados-EX
+      level: undefined
+      stage: MEGA
+      suffix: EX
+      attacks:
+        - name: Blast Geyser
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 120+
+          effect: >-
+            You may do 20 more damage for each Water Energy attached to this
+            Pokémon. If you do, discard the top 2 cards of your deck.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: '2'
+    integrations:
+      pokeData: '3864'
+      tcgPlayer: '111533'
+  manaphy-ex-116:
+    name: Manaphy EX
+    editions:
+      unlimited: a68199a7-2ff7-4a3e-be00-b277423b8a2b
+    details:
+      illustrator: Ryo Ueda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '490'
+      hp: '120'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      suffix: EX
+      abilities:
+        - type: Ability
+          name: Aqua Tube
+          effect: >-
+            Each of your Pokémon that has any Water Energy attached to it has no
+            Retreat Cost.
+      attacks:
+        - name: Mineral Pump
+          cost:
+            - Water
+            - Water
+          damage: '60'
+          effect: Heal 30 damage from each of your Benched Pokémon.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    integrations:
+      pokeData: '3875'
+      tcgPlayer: '111539'
+  espeon-ex-117:
+    name: Espeon EX
+    editions:
+      unlimited: 0caf07d3-70a6-46a1-8c52-a3633f5ce073
+    details:
+      illustrator: Ryo Ueda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '196'
+      hp: '170'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Miraculous Shine
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Devolve each of your opponent's evolved Pokémon and put the highest
+            Stage Evolution card on it into your opponent's hand.
+        - name: Psyshock
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '70'
+          effect: >-
+            This attack's damage isn't affected by any effects on your
+            opponent's Active Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '1'
+    integrations:
+      pokeData: '3865'
+      tcgPlayer: '111558'
+  darkrai-ex-118:
+    name: Darkrai EX
+    editions:
+      unlimited: 00c399de-b8ea-49fd-ab64-d04759b69791
+    details:
+      illustrator: Ryo Ueda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '491'
+      hp: '180'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Dark Pulse
+          cost:
+            - Colorless
+            - Colorless
+          damage: 20+
+          effect: >-
+            This attack does 20 more damage for each Darkness Energy attached to
+            all of your Pokémon.
+        - name: Dark Head
+          cost:
+            - Darkness
+            - Colorless
+            - Colorless
+          damage: 80+
+          effect: >-
+            If your opponent's Active Pokémon is Asleep, this attack does 80
+            more damage.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3869'
+      tcgPlayer: '111562'
+  scizor-ex-119:
+    name: Scizor EX
+    editions:
+      unlimited: 160204fa-aac1-4655-bcb9-696fb2299e8c
+    details:
+      illustrator: Ryo Ueda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '212'
+      hp: '170'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Steel Wing
+          cost:
+            - Metal
+          damage: '20'
+          effect: >-
+            During your opponent's next turn, any damage done to this Pokémon by
+            attacks is reduced by 20 (after applying Weakness and Resistance).
+        - name: Gale Thrust
+          cost:
+            - Metal
+            - Metal
+          damage: 50+
+          effect: >-
+            If this Pokémon was on the Bench and became your Active Pokémon this
+            turn, this attack does 60 more damage.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3871'
+      tcgPlayer: '111564'
+  m-scizor-ex-120:
+    name: Mega Scizor EX
+    editions:
+      unlimited: 142c6b8a-666d-42cb-ac1e-ff374bb2b54c
+    details:
+      illustrator: 5ban Graphics
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '212'
+      hp: '220'
+      types:
+        - Metal
+      evolveFrom: Scizor-EX
+      level: undefined
+      stage: MEGA
+      suffix: EX
+      attacks:
+        - name: Iron Crusher
+          cost:
+            - Metal
+            - Metal
+          damage: '120'
+          effect: >-
+            You may discard a Special Energy attached to your opponent's Active
+            Pokémon or a Stadium card in play.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3870'
+      tcgPlayer: '111642'
+  ho-oh-ex-121:
+    name: Ho-Oh EX
+    editions:
+      unlimited: 13cb0e42-49c0-454e-92dc-df7470801667
+    details:
+      illustrator: Ryo Ueda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '250'
+      hp: '180'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      suffix: EX
+      abilities:
+        - type: Ability
+          name: Purifying Fire
+          effect: >-
+            Once during your turn (before your attack), if this Pokémon has any
+            basic Fire Energy attached to it, you may heal 50 damage from it.
+      attacks:
+        - name: Elemental Feather
+          cost:
+            - Grass
+            - Water
+            - Lightning
+          damage: '130'
+          effect: >-
+            This attack does 30 damage to 1 of your opponent's Benched Pokémon.
+            (Don't apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Water
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '2'
+    integrations:
+      pokeData: '3867'
+      tcgPlayer: '111643'
+  skyla-122:
+    name: Skyla
+    editions:
+      unlimited: 0cac0f66-45e9-4975-852d-13fd96dfd79e
+    details:
+      illustrator: Megumi Mizutani
+      rarity: Ultra Rare
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Search your deck for a Trainer card, reveal it, and put it into your
+        hand. Shuffle your deck afterward.
+      trainerType: Supporter
+    integrations:
+      pokeData: '3862'
+      tcgPlayer: '111641'
+  gyarados-ex-123:
+    name: Gyarados EX
+    editions:
+      unlimited: f26b4152-0ede-4b58-9227-3f1656b6c733
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Secret Rare
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '180'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      suffix: EX
+      attacks:
+        - name: Stormy Seas
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin until you get tails. For each heads, search your deck
+            for a Water Energy card and attach it to this Pokémon. Shuffle your
+            deck afterward.
+        - name: Splash Burn
+          cost:
+            - Water
+            - Water
+            - Colorless
+            - Colorless
+          damage: '130'
+          effect: >-
+            This attack does 10 damage to each of your Benched Pokémon. (Don't
+            apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: '4'
+    integrations:
+      pokeData: '3863'
+      tcgPlayer: '111531'
+products:
+  booster-pack-mega-gyarados:
+    name: Booster Pack [Mega Gyarados]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 76c54a12-0fd4-40a6-9dd6-784adf7327fc
+  booster-pack-mega-scizor:
+    name: Booster Pack [Mega Scizor]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: a53dd1f9-13ed-414b-988f-1e242c3f2353
+  booster-pack-luxray-break:
+    name: Booster Pack [Luxray BREAK]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 5b8ac6ef-8131-4dd8-bc06-63660e57f64a
+  booster-pack-greninja-break:
+    name: Booster Pack [Greninja BREAK]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: e918c7fc-b60e-4ab9-90f9-c33397a39885
+  booster-box:
+    name: Booster Box
+    integrations:
+      priceCharting: booster-box
+    editions:
+      unlimited: f235886a-b156-4611-8c4e-916d7be8c256

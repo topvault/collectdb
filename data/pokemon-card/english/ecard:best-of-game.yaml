@@ -1,0 +1,336 @@
+items:
+  electabuzz-1:
+    name: Electabuzz
+    variants:
+      winner:
+        name: Winner
+        description: Winner stamp.
+        id: 1eee7bee-f873-4f53-ad00-acf85c6679a5
+      winner-jumbo:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { winner-jumbo: electabuzz-jumbo-1 } }
+        id: 4c46225a-ba4e-4f7f-9efe-e5fc94e7abd2
+    details:
+      illustrator: Ken Sugimori
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '125'
+      hp: undefined
+      description: >-
+        Normally found near power plants, it can wander away and cause major
+        blackouts in cities.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Thundershock
+          cost:
+            - Lightning
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Thunderpunch
+          cost:
+            - Lightning
+            - Colorless
+          damage: 30+
+          effect: >-
+            Flip a coin. If heads, this attack does 30 damage plus 10 more
+            damage; if tails, the attack does 30 damage and Electabuzz does 10
+            damage to itself.
+      retreat: undefined
+    editions:
+      unlimited: cc902c1c-8d86-45c9-b4d1-9b162773b63c
+  hitmonchan-2:
+    name: Hitmonchan
+    variants:
+      winner:
+        name: Winner
+        description: Winner stamp.
+        id: d5f70e65-e445-4c61-89ba-f5271f201032
+      jumbo-winner:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { jumbo-winner: hitmonchan-jumbo-2 } }
+        id: 82b28198-1732-4444-9f11-97cff7fbe364
+    details:
+      illustrator: Ken Sugimori
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '107'
+      hp: undefined
+      description: >-
+        While seeming to do nothing, it fires punches in lightning-fast volleys
+        that are impossible to see.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Jab
+          cost:
+            - Fighting
+          damage: '20'
+        - name: Special Punch
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '40'
+      retreat: undefined
+    editions:
+      unlimited: c11b3c6e-4df0-4e78-984d-05292a6e9c7f
+  professor-elm-3:
+    name: Professor Elm
+    details:
+      illustrator: Ken Sugimori
+      rarity: None
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Shuffle your hand into your deck. Then, draw 7 cards. You can’t play any
+        more Trainer cards this turn.
+    editions:
+      unlimited: 620ad350-8b3f-47f4-afd4-690e8700f092
+  rockets-scizor-4:
+    name: Rocket’s Scizor
+    integrations:
+      priceCharting: rocket's-scizor
+    variants:
+      winner:
+        name: Winner
+        description: Winner stamp.
+        integrations:
+          priceCharting:
+            winner: rocket's-scizor-winner-4
+        id: 7c2c549a-05b4-4bf6-8324-4d523fb14799
+      jumbo-winner:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { jumbo-winner: rocket's-scizor-jumbo-4 } }
+        id: 0ec90845-f4ce-4015-9abe-99a8d8776cbb
+    details:
+      illustrator: K. Hoshiba
+      rarity: None
+      category: Pokemon
+      hp: undefined
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Focus
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            During your next turn, Rocket’s Scizor’s Agility attack’s damage is
+            doubled.
+        - name: Agility
+          cost:
+            - Metal
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, during your opponent’s next turn, prevent all
+            effects of attacks, including damage, done to Rocket’s Scizor.
+      retreat: undefined
+    editions:
+      unlimited: 07e314f5-a316-4809-a5a6-e9bdfb6f599e
+  rockets-sneasel-5:
+    name: Rocket’s Sneasel
+    integrations:
+      priceCharting: rocket's-sneasel
+    variants:
+      winner:
+        name: Winner
+        description: Winner stamp.
+        integrations:
+          priceCharting:
+            winner: rocket's-sneasel-winner-5
+        id: e2d00ed4-74c1-4c97-8c76-a89acb3030e3
+      jumbo-winner:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { jumbo-winner: rocket's-sneasel-jumbo-5 } }
+        id: 5896f3dc-acbe-49b7-9147-45d3060ce640
+    details:
+      illustrator: Katsura Tabata
+      rarity: None
+      category: Pokemon
+      hp: undefined
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Entrap
+          cost:
+            - Darkness
+          damage: undefined
+          effect: >-
+            The Defending Pokémon can’t retreat during your opponent’s next turn.
+        - name: Continuous Scratch
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10×
+          effect: Flip 4 coins. This attack does 10 damage times the number of heads.
+      retreat: undefined
+    editions:
+      unlimited: 9b87f752-52ef-4e6c-becd-c2df6436e293
+  dark-ivysaur-6:
+    name: Dark Ivysaur
+    variants:
+      winner:
+        name: Winner
+        description: Winner stamp.
+        id: 3fbacdee-5806-45e8-872a-67243b88ac75
+      winner-jumbo:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { winner-jumbo: dark-ivysaur-jumbo-6 } }
+        id: 40b16f96-c29a-40a7-a0db-434d59d057cc
+    details:
+      illustrator: Shin-ichi Yoshida
+      rarity: None
+      category: Pokemon
+      hp: undefined
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-BODY
+          name: Vine Pull
+          effect: >-
+            Once during your turn when Dark Ivysaur retreats, choose 1 of your
+            opponent’s Benched Pokémon and switch it with his or her Active
+            Pokémon.
+      attacks:
+        - name: Fury Strikes
+          cost:
+            - Grass
+            - Grass
+          damage: undefined
+          effect: >-
+            Your opponent puts 3 markers onto his or her Pokémon (divided as he
+            or she chooses). (More than 1 marker can be put on the same
+            Pokémon.) Then, this attack does 10 damage to each Pokémon for each
+            marker on it. Don’t apply Weakness and Resistance. Remove the
+            markers at the end of the turn.
+      retreat: undefined
+    editions:
+      unlimited: d21de88f-cdad-4883-b2d1-bf23de2c6720
+  dark-venusaur-7:
+    name: Dark Venusaur
+    variants:
+      winner:
+        name: Winner
+        description: Winner stamp.
+        id: b327603d-d07c-45fb-8c2e-437cfd6c5590
+      winner-jumbo:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { winner-jumbo: dark-venusaur-jumbo-7 } }
+        id: babf9005-53bd-4ace-9ded-57a2966ea293
+    details:
+      illustrator: Shin-ichi Yoshida
+      rarity: None
+      category: Pokemon
+      hp: undefined
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Horrid Pollen
+          cost:
+            - Grass
+            - Grass
+            - Grass
+          damage: '30'
+          effect: >-
+            Flip 2 coins. If 1 is heads, the Defending Pokémon is now Asleep and
+            Poisoned. If both are heads, the Defending Pokémon is now Confused
+            and Poisoned. If both are tails, the Defending Pokémon is now
+            Paralyzed and Poisoned.
+      retreat: undefined
+    editions:
+      unlimited: 7088456c-e8a3-4b0e-ab57-9fd4d2e1539e
+  rockets-mewtwo-8:
+    name: Rocket's Mewtwo
+    integrations:
+      priceCharting:
+        unlimited: rocket's-mewtwo-winner-8
+    variants:
+      winner-jumbo:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { winner-jumbo: rocket's-mewtwo-jumbo-8 } }
+        id: bb641406-a086-45d7-a5b0-3492e1486322
+    details:
+      illustrator: Shin-ichi Yoshida
+      rarity: None
+      category: Pokemon
+      hp: undefined
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Juxtapose
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, switch the number of damage counters on
+            Rocket’s Mewtwo with the number of damage counters on the Defending
+            Pokémon (even if it would Knock Out either Pokémon). (It’s okay if 1
+            of the Pokémon has no damage counters on it.)
+        - name: Hypnoblast
+          cost:
+            - Psychic
+            - Psychic
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
+        - name: Psyburn
+          cost:
+            - Psychic
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: '60'
+      retreat: undefined
+    editions:
+      unlimited: 0e967aca-0150-42db-a63c-366cb226d10c
+  rockets-hitmonchan-9:
+    name: Rocket's Hitmonchan
+    integrations:
+      priceCharting:
+        unlimited: rocket's-hitmonchan-winner-9
+    variants:
+      winner-jumbo:
+        name: Winner (Jumbo)
+        description: Jumbo card with Winner stamp.
+        integrations: { priceCharting: { winner-jumbo: rocket's-hitmonchan-jumbo-9 } }
+        id: 9fcf3298-7f81-481d-9249-690268ebe3cb
+    details:
+      illustrator: Ken Sugimori
+      rarity: None
+      category: Pokemon
+      hp: undefined
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Crosscounter
+          cost:
+            - Fighting
+          damage: undefined
+          effect: >-
+            If an attack does damage to Rocket’s Hitmonchan during your
+            opponent’s next turn (even if Rocket’s Hitmonchan is Knocked Out),
+            flip a coin. If heads, Rocket’s Hitmonchan attacks your opponent’s
+            Active Pokémon for double that amount of damage. (If Rocket’s
+            Hitmonchan takes 20 damage, it does 40 damage to that Pokémon.)
+        - name: Magnum Punch
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '50'
+      retreat: undefined
+    editions:
+      unlimited: c6e97f28-a904-45ec-8226-d644f4b644a6

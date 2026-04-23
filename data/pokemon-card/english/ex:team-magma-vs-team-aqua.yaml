@@ -1,0 +1,3380 @@
+items:
+  cacturne-1:
+    name: Team Aqua's Cacturne
+    details:
+      illustrator: K. Utsunomiya
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '332'
+      hp: '80'
+      types:
+        - Grass
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Dark Bind
+          cost:
+            - Darkness
+          damage: '10'
+          effect: >-
+            You may discard a Darkness Energy card attached to Team Aqua's
+            Cacturne. If you do, the Defending Pokémon is now Paralyzed."
+        - name: Poison Barb
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '40'
+          effect: The Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 5f148771-280a-4d63-a6a5-d976feab9c5b
+      reverse-holo: f7d093fd-dafc-400c-a120-c357a8d2f0be
+    integrations:
+      pokeData: '7917'
+      tcgPlayer: '89775'
+  crawdaunt-2:
+    name: Team Aqua's Crawdaunt
+    details:
+      illustrator: Nakaoka
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '342'
+      hp: '80'
+      types:
+        - Water
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Aqua Reverse
+          cost:
+            - Darkness
+            - Colorless
+          damage: '20'
+          effect: >-
+            Before doing damage, you may choose 1 of your opponent's Benched
+            Pokémon that has Team Magma in its name and switch it with 1 of the
+            Defending Pokémon. Your opponent chooses which Defending Pokémon to
+            switch.
+        - name: Deep Impact
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: '40'
+          effect: >-
+            If the Defending Pokémon already has any damage counters on it, the
+            Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 9a21aa83-a6ad-4ba3-9b61-5c7db8cf8c79
+      reverse-holo: 8a185fdc-3d5f-499d-9df6-41795a56ddb4
+    integrations:
+      pokeData: '7925'
+      tcgPlayer: '89783'
+  kyogre-3:
+    name: Team Aqua's Kyogre
+    variants:
+      non-holo:
+        name: Non-Holo
+        description: Non-Holo.
+        integrations:
+          priceCharting:
+            non-holo: kyogre-3
+        id: a3db8ccf-7cff-49d7-854d-47e1811977ca
+    integrations:
+      priceCharting:
+        unlimited: kyogre-holo-3
+        reverse-holo: kyogre-reverse-holo-3
+      pokeData: '7915'
+      tcgPlayer: '89788'
+    details:
+      illustrator: K. Hoshiba
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '382'
+      hp: '100'
+      types:
+        - Water
+        - Darkness
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Power Saver
+          effect: >-
+            As long as the number of Pokémon in play (both yours and your
+            opponent's) that has Team Aqua in its name is 3 or less, Team Aqua's
+            Kyogre can't attack.
+      attacks:
+        - name: Aqua Trip
+          cost:
+            - Water
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Confused. If
+            tails, the Defending Pokémon is now Asleep.
+        - name: Aqua Smash
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: 50+
+          effect: >-
+            If the Defending Pokémon is affected by a Special Condition, this
+            attack does 50 damage plus 20 more damage.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 5478b4e8-ab24-4dce-a048-2503817b8422
+      reverse-holo: dfb75413-44b3-4acb-bcd9-5373d97b80da
+  manectric-4:
+    name: Team Aqua's Manectric
+    details:
+      illustrator: K. Utsunomiya
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '310'
+      hp: '70'
+      types:
+        - Lightning
+        - Darkness
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-POWER
+          name: Power Shift
+          effect: >-
+            Once during your turn (before your attack), you may move any number
+            of basic Energy cards attached to 1 of your Pokémon with Team Aqua
+            in its name to another of your Pokémon. This power can't be used if
+            Team Aqua's Manectric is affected by a Special Condition.
+      attacks:
+        - name: Thunderspark
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            Does 10 damage to each Benched Pokémon (yours and your opponent's)
+            that has Energy cards attached to it. (Don't apply Weakness and
+            Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 1a4873cd-919d-4df8-97dd-3ae4680b81e6
+      reverse-holo: 91e2f45b-2ef2-476c-8fbe-1551f8376297
+    integrations:
+      pokeData: '7918'
+      tcgPlayer: '89790'
+  sharpedo-5:
+    name: Team Aqua's Sharpedo
+    details:
+      illustrator: Katsura Tabata
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '319'
+      hp: '70'
+      types:
+        - Water
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Rage
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: >-
+            Does 10 damage plus 10 more damage for each damage counter on Team
+            Aqua's Sharpedo.
+        - name: Aqua Slash
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: '60'
+          effect: Team Aqua's Sharpedo can't attack during your next turn.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d77e45fb-ad10-4e8c-a53a-9f817ea807f1
+      reverse-holo: 1e56be31-1719-47b4-b341-ff3a2d912862
+    integrations:
+      pokeData: '7920'
+      tcgPlayer: '89799'
+  walrein-6:
+    name: Team Aqua's Walrein
+    details:
+      illustrator: Ken Ikuji
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '365'
+      hp: '120'
+      types:
+        - Water
+        - Darkness
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Power Blow
+          cost:
+            - Water
+          damage: 10+
+          effect: >-
+            Does 10 damage plus 10 more damage for each Energy attached to Team
+            Aqua's Walrein.
+        - name: Hydro Reverse
+          cost:
+            - Water
+            - Water
+            - Colorless
+            - Colorless
+          damage: 50+
+          effect: >-
+            You may return any number of basic Water Energy cards attached to
+            all of your Pokémon to your hand. If you do, this attack does 50
+            damage plus 10 more damage for each Energy you returned.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+        - type: Metal
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 56825bd7-ec6f-408a-a837-cb8fdca1e346
+      reverse-holo: 6fd6c2f8-f193-4b8d-96c8-832e3e42fbc6
+    integrations:
+      pokeData: '7930'
+      tcgPlayer: '89803'
+  aggron-7:
+    name: Team Magma's Aggron
+    details:
+      illustrator: Hiromichi Sugiyama
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '306'
+      hp: '120'
+      types:
+        - Fighting
+        - Darkness
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Crush
+          cost:
+            - Fighting
+          damage: 30x
+          effect: >-
+            Flip a coin for each Energy attached to Team Magma's Aggron. This
+            attack does 30 damage times the number of heads.
+        - name: Land Stream
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: 50+
+          effect: >-
+            You may discard any number of basic Energy cards attached to Team
+            Magma's Aggron. If you do, this attack does 50 damage plus 20 more
+            damage for each basic Energy card you discarded.
+      weaknesses:
+        - type: Grass
+          value: ×2
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 60b3e906-8ec8-405e-a6d6-cfad5a743341
+      reverse-holo: 568522cf-b499-40e7-94df-3fe720a4f9aa
+    integrations:
+      pokeData: '7923'
+      tcgPlayer: '89818'
+  claydol-8:
+    name: Team Magma's Claydol
+    details:
+      illustrator: Zu-Ka
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '344'
+      hp: '80'
+      types:
+        - Psychic
+        - Darkness
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-POWER
+          name: Magma Switch
+          effect: >-
+            Once during your turn (before your attack), you may move an Energy
+            card attached to your Pokémon with Team Magma in its name to another
+            of your Pokémon. This power can't be used if Team Magma's Claydol is
+            affected by a Special Condition.
+      attacks:
+        - name: Dark Hand
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: 40+
+          effect: >-
+            If you have more cards in your hand than your opponent, this attack
+            does 40 damage plus 20 more damage.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 0ad18518-d7b3-434d-999b-6c5f792c9b26
+      reverse-holo: 0d99ef64-4738-40f2-827e-df18128309ba
+    integrations:
+      pokeData: '7921'
+      tcgPlayer: '89825'
+  groudon-9:
+    name: Team Magma's Groudon
+    variants:
+      non-holo:
+        name: Non-holo
+        description: Non-holo Team Magma Theme Deck exclusive.
+        id: 45ce2cc1-52a0-4136-a1a1-ad9999bc5cbc
+    details:
+      illustrator: Kazuo Yazawa
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '383'
+      hp: '100'
+      types:
+        - Fighting
+        - Darkness
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Power Saver
+          effect: >-
+            As long as the number of Pokémon in play (both yours and your
+            opponent's) that has Team Magma in its name is 3 or less, Team
+            Magma's Groudon can't attack.
+      attacks:
+        - name: Linear Attack
+          cost:
+            - Fighting
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Pokémon. This attack does 20 damage to
+            that Pokémon. (Don't apply Weakness and Resistance for Benched
+            Pokémon.)
+        - name: Pulverize
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: 50+
+          effect: >-
+            If the Defending Pokémon already has at least 2 damage counters on
+            it, this attack does 50 damage plus 20 more damage.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 42170249-8055-436b-83ca-c776d63ffa37
+      reverse-holo: f86c4c5f-924a-4c6e-86be-1c93f88c1ff0
+    integrations:
+      pokeData: '7916'
+      tcgPlayer: '89827'
+  houndoom-10:
+    name: Team Magma's Houndoom
+    details:
+      illustrator: Ken Ikuji
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '229'
+      hp: '70'
+      types:
+        - Fire
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Roasting Heat
+          cost:
+            - Fire
+            - Colorless
+          damage: 30+
+          effect: >-
+            If the Defending Pokémon is Burned, this attack does 30 damage plus
+            20 more damage.
+        - name: Magma Spurt
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: 30x
+          effect: >-
+            Discard the top 5 cards from your deck. This attack does 30 damage
+            times the number of Fire and Fighting basic Energy cards discarded
+            in this way.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 5db54a33-251f-45dd-ba2c-91b3d5cd215b
+      reverse-holo: 1583ceaa-5a1b-4179-8687-245f62545a22
+    integrations:
+      pokeData: '7912'
+      tcgPlayer: '89828'
+  rhydon-11:
+    name: Team Magma's Rhydon
+    details:
+      illustrator: T. Honda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '112'
+      hp: '90'
+      types:
+        - Fighting
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Magma Jab
+          cost:
+            - Darkness
+            - Colorless
+          damage: '20'
+          effect: This attack's damage is not affected by Resistance.
+        - name: Shoot Down
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '50'
+          effect: >-
+            If the Defending Pokémon has Team Aqua in its name, the Defending
+            Pokémon is now Confused.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c66fa831-1d37-49e7-ac94-2d12eaee31bc
+      reverse-holo: 81e0b7c3-67c1-4610-866b-b06058d2627b
+    integrations:
+      pokeData: '7919'
+      tcgPlayer: '89840'
+  torkoal-12:
+    name: Team Magma's Torkoal
+    details:
+      illustrator: K. Hoshiba
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '324'
+      hp: '80'
+      types:
+        - Fire
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Magma Burn
+          cost:
+            - Fire
+          damage: '10'
+          effect: >-
+            Discard the top card from your opponent's deck, and flip a coin. If
+            tails, discard a Fire Energy attached to Team Magma's Torkoal.
+        - name: Hot Air
+          cost:
+            - Fire
+            - Colorless
+          damage: '30'
+          effect: >-
+            Discard a Fire Energy attached to Team Magma's Torkoal, and your
+            opponent switches the Defending Pokémon with 1 of his or her Benched
+            Pokémon, if any.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 530527fa-072e-47b0-a4fd-189181d832fc
+      reverse-holo: 0bb97853-0de3-4232-a0ec-2c26b55f67fb
+    integrations:
+      pokeData: '7924'
+      tcgPlayer: '89845'
+  raichu-13:
+    name: Raichu
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '26'
+      hp: '80'
+      types:
+        - Lightning
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Spark
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+          effect: >-
+            Does 10 damage to 2 of your opponent's Benched Pokémon (1 if there
+            is only 1). (Don't apply Weakness and Resistance for Benched
+            Pokémon.)
+        - name: Kerzap
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: 40+
+          effect: >-
+            Flip a coin. If heads, this attack does 40 damage plus 40 more
+            damage to the Defending Pokémon and discard all Lightning Energy
+            cards attached to Raichu.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c3e95ad6-4de5-4c4b-94c0-56898c6359d2
+      reverse-holo: a1336beb-ccd6-4ceb-a025-ea5693ccbb0d
+    integrations:
+      pokeData: '7928'
+      tcgPlayer: '88506'
+  crawdaunt-14:
+    name: Team Aqua's Crawdaunt
+    details:
+      illustrator: Nakaoka
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '342'
+      hp: '80'
+      types:
+        - Water
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Poison Reaction
+          cost:
+            - Water
+            - Colorless
+          damage: 20+
+          effect: >-
+            If the Defending Pokémon is Poisoned, this attack does 20 damage
+            plus 20 more damage.
+        - name: Double Claw
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: 30+
+          effect: >-
+            Flip 2 coins. This attack does 30 damage plus 20 more damage for
+            each heads.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: ed2cd48c-379e-4858-ba02-0d371ff4b501
+      reverse-holo: 5ada9b2b-4a71-4bfa-a5fd-006b69e0d06d
+    integrations:
+      pokeData: '7953'
+      tcgPlayer: '89784'
+  mightyena-15:
+    name: Team Aqua's Mightyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '262'
+      hp: '70'
+      types:
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Bite
+          cost:
+            - Darkness
+            - Colorless
+          damage: '20'
+        - name: Mystic Fang
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            If the Defending Pokémon is Pokémon-ex, the Defending Pokémon is now
+            Confused.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 9faac70a-4986-4d4f-977e-f2f27a038929
+      reverse-holo: f3d5be3c-02aa-4628-8922-e7050f0ad9d6
+    integrations:
+      pokeData: '39402'
+      tcgPlayer: '89792'
+  sealeo-16:
+    name: Team Aqua's Sealeo
+    details:
+      illustrator: T. Honda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '364'
+      hp: '70'
+      types:
+        - Water
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Aqua Trance
+          cost:
+            - Water
+          damage: '20'
+          effect: >-
+            At the end of your opponent's next turn, the Defending Pokémon is
+            now Asleep.
+        - name: Super Hypnoblast
+          cost:
+            - Water
+            - Colorless
+          damage: 30+
+          effect: >-
+            If the Defending Pokémon is Asleep, this attack does 30 damage plus
+            20 more damage.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 0064a744-4b06-46c1-afdc-00c83fd3b83d
+      reverse-holo: be1ca12b-aae9-4e7d-b273-86c56b5550ea
+    integrations:
+      pokeData: '7956'
+      tcgPlayer: '89796'
+  seviper-17:
+    name: Team Aqua's Seviper
+    details:
+      illustrator: Jungo Suzuki
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '336'
+      hp: '80'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Call for Family
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a Grass Basic Pokémon or Basic Pokémon with
+            Team Aqua in its name and put it onto your Bench. Shuffle your deck
+            afterward.
+        - name: Thick Poison
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Confused and
+            Poisoned. If tails, the Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: bd029e34-00ac-4fd3-a075-7f8a103c6e09
+      reverse-holo: 65862948-0bc9-4c2b-9b64-d526e8987f4c
+    integrations:
+      pokeData: '7951'
+      tcgPlayer: '89798'
+  sharpedo-18:
+    name: Team Aqua's Sharpedo
+    details:
+      illustrator: Katsura Tabata
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '319'
+      hp: '70'
+      types:
+        - Water
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Slow-Acting Poison
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            At the end of your opponent's next turn, the Defending Pokémon is
+            now Poisoned.
+        - name: Aqua Smash
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: 50+
+          effect: >-
+            If the Defending Pokémon is affected by a Special Condition, this
+            attack does 50 damage plus 20 more damage.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: ba48e771-f309-453a-897a-20aae857da12
+      reverse-holo: a8f06148-60fd-4a05-a1ad-0794a4cc204d
+    integrations:
+      pokeData: '7938'
+      tcgPlayer: '89800'
+  camerupt-19:
+    name: Team Magma's Camerupt
+    details:
+      illustrator: Katsura Tabata
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '323'
+      hp: '80'
+      types:
+        - Fire
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-POWER
+          name: Overheat
+          effect: >-
+            Once during your turn (before your attack), you may search your
+            discard pile for a basic Energy card and attach it to Team Magma's
+            Camerupt. Put 2 damage counters on Team Mamga's Camerupt. This power
+            can't be used if Team Magma's Camerupt is affected by a Special
+            Condition.
+      attacks:
+        - name: Flame Ball
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            You may move a Fire Energy card attached to Team Magma's Camerupt to
+            1 of your Benched Pokémon.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: adf51935-bd54-4cec-9c75-c48afba6cc5c
+      reverse-holo: e50f7ecb-ecf0-451f-843a-363a05badd86
+    integrations:
+      pokeData: '7941'
+      tcgPlayer: '89824'
+  lairon-20:
+    name: Team Magma's Lairon
+    details:
+      illustrator: Hiromichi Sugiyama
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '305'
+      hp: '80'
+      types:
+        - Fighting
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Body Slam
+          cost:
+            - Colorless
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Tackle
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 1ced44f8-46b1-4d73-96c0-d714ec4d2310
+      reverse-holo: 9be1a020-8326-4492-a00e-f83289ecb412
+    integrations:
+      pokeData: '7937'
+      tcgPlayer: '89833'
+  mightyena-21:
+    name: Team Magma's Mightyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '262'
+      hp: '70'
+      types:
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Overrun
+          cost:
+            - Fighting
+          damage: '10'
+          effect: >-
+            Choose 1 of your opponent's Benched Pokémon. This attack does 10
+            damage to that Pokémon. (Don't apply Weakness and Resistance for
+            Benched Pokémon.)
+        - name: Bite Off
+          cost:
+            - Darkness
+            - Colorless
+            - Colorless
+          damage: 40+
+          effect: >-
+            If the Defending Pokémon is Pokémon-ex, this attack does 40 damage
+            plus 40 more damage.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 43064956-8188-4481-bd50-f49847fdc5c3
+      reverse-holo: 4ed12a05-26dd-4d2d-8542-0e962a5b3485
+    integrations:
+      pokeData: '7946'
+      tcgPlayer: '89835'
+  rhydon-22:
+    name: Team Magma's Rhydon
+    details:
+      illustrator: T. Honda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '112'
+      hp: '80'
+      types:
+        - Fighting
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Second Strike
+          cost:
+            - Colorless
+            - Colorless
+          damage: 20+
+          effect: >-
+            If the Defending Pokémon already has at least 2 damage counters on
+            it, this attack does 20 damage plus 20 more damage.
+        - name: Land Crush
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '60'
+          effect: >-
+            Flip a coin. If tails, discard an Energy card attached to Team
+            Magma's Rhydon.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: b5f00e42-9288-4307-8af8-6adb97a9736c
+      reverse-holo: c468014d-0584-4e52-84f1-a52fe72549ef
+    integrations:
+      pokeData: '7945'
+      tcgPlayer: '89841'
+  zangoose-23:
+    name: Team Magma's Zangoose
+    details:
+      illustrator: Zu-Ka
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '335'
+      hp: '70'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Call for Family
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for a Colorless Basic Pokémon or Basic Pokémon with
+            Team Magma in its name and put it onto your Bench. Shuffle your deck
+            afterward.
+        - name: Team Play
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: 10x
+          effect: >-
+            Does 10 damage times the number of Pokémon in play with Team Magma
+            in its name.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 069d9f76-62e2-4bc8-8a6e-9d9af98de7e0
+      reverse-holo: 7d777acb-1de1-4aa1-8cd1-5ac54f96a517
+    integrations:
+      pokeData: '7929'
+      tcgPlayer: '89846'
+  cacnea-24:
+    name: Team Aqua's Cacnea
+    variants:
+      prerelease:
+        name: Prerelease
+        description: Prerelease.
+        id: 28672dbb-4753-4eae-af5a-6e50c31c0dfa
+    details:
+      illustrator: K. Utsunomiya
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '331'
+      hp: '50'
+      types:
+        - Grass
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Paralyzing Gaze
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Pin Missile
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10x
+          effect: Flip 4 coins. This attack does 10 damage times the number of heads.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 1fcd6faa-cad1-4372-82d7-8364bde0ca4b
+      reverse-holo: 6edadf59-b67a-4742-be09-632b90c149eb
+    integrations:
+      pokeData: '39389'
+      tcgPlayer: '89774'
+  carvanha-25:
+    name: Team Aqua's Carvanha
+    details:
+      illustrator: Mt. TBT
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '318'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Dark Lift
+          effect: >-
+            If Team Aqua's Carvanha has any Darkness Energy attached to it, the
+            Retreat Cost for Team Aqua's Carvanha is 0."
+      attacks:
+        - name: Slow-Acting Poison
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            At the end of your opponent's next turn, the Defending Pokémon is
+            now Poisoned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c1f3d276-d7b3-4d77-9b06-41ac355e5061
+      reverse-holo: a29439fe-4df9-4c24-a0d8-a4858b6db1d4
+    integrations:
+      pokeData: '7948'
+      tcgPlayer: '89776'
+  corphish-26:
+    name: Team Aqua's Corphish
+    details:
+      illustrator: Jungo Suzuki
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '341'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Double Pinchers
+          cost:
+            - Colorless
+          damage: 10x
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+        - name: Dark Poison
+          cost:
+            - Darkness
+            - Colorless
+          damage: '20'
+          effect: >-
+            Discard a basic Energy card attached to Team Aqua's Corphish or this
+            attack does nothing. The Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 5b6eebc7-92b5-4e38-9ba6-2dee62b184ab
+      reverse-holo: 59c59f5a-8448-4971-84d7-432cd4068f53
+    integrations:
+      pokeData: '39394'
+      tcgPlayer: '89780'
+  electrike-27:
+    name: Team Aqua's Electrike
+    details:
+      illustrator: M. Akiyama
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '309'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Random Spark
+          cost:
+            - Lightning
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Pokémon. This attack does 10 damage to
+            that Pokémon. (Don't apply Weakness and Resistance for Benched
+            Pokémon.)
+        - name: Plasma
+          cost:
+            - Colorless
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, search your discard pile for a Lightning
+            Energy card and attach it to Team Aqua's Electrike.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 6967d8e5-e076-42db-8e77-43cac5011dcf
+      reverse-holo: 161db32b-d6b0-4b27-bf7d-d650c3d46f5c
+    integrations:
+      pokeData: '39464'
+      tcgPlayer: '89785'
+  lanturn-28:
+    name: Team Aqua's Lanturn
+    details:
+      illustrator: Jungo Suzuki
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '171'
+      hp: '80'
+      types:
+        - Lightning
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-POWER
+          name: Auxiliary Light
+          effect: >-
+            Once during your turn (before your attack), you may attach a basic
+            Energy card from your hand to Team Aqua's Lanturn. Put 2 damage
+            counters on Team Aqua's Lanturn. This power can't be used if Team
+            Aqua's Lanturn is affected by a Special Condition.
+      attacks:
+        - name: Lightning Ball
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 14fc1023-0fa6-4b83-834f-92b089a5ba23
+      reverse-holo: 4098232d-5596-42c9-9ef8-178f9dcb1250
+    integrations:
+      pokeData: '39468'
+      tcgPlayer: '89789'
+  manectric-29:
+    name: Team Aqua's Manectric
+    details:
+      illustrator: K. Utsunomiya
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '310'
+      hp: '80'
+      types:
+        - Lightning
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Aqua Beam
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+          effect: >-
+            If the Defending Pokémon has Team Magma's in its name, the Defending
+            Pokémon is now Confused.
+        - name: Chaos Crush
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            If the Defending Pokémon is Confused, discard an Energy card
+            attached to the Defending Pokémon.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 32d5154f-d757-4ebc-b1f1-0fd5e0cf83c3
+      reverse-holo: 55a52521-335d-4fb1-adcb-86158cef4711
+    integrations:
+      pokeData: '7939'
+      tcgPlayer: '89791'
+  mightyena-30:
+    name: Team Aqua's Mightyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '262'
+      hp: '80'
+      types:
+        - Darkness
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Aqua Call
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for Pokémon that has Team Aqua in its name, show up
+            to 3 of them to your opponent, and put them into your hand. Shuffle
+            your deck afterward.
+        - name: Wave Splash
+          cost:
+            - Water
+            - Colorless
+          damage: '30'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: ab22f4ad-a26f-41f6-b988-3ade75f4cc9e
+      reverse-holo: 8dea819a-f902-449f-84ba-7a8c8c89fb0a
+    integrations:
+      pokeData: '39471'
+      tcgPlayer: '89793'
+  sealeo-31:
+    name: Team Aqua's Sealeo
+    details:
+      illustrator: T. Honda
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '364'
+      hp: '80'
+      types:
+        - Water
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Aurora Beam
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+        - name: Knock Over
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: '40'
+          effect: You may discard any Stadium card in play.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 0ec84dce-deed-4038-aaf9-7c22588eec78
+      reverse-holo: 899eff59-10d1-40c4-b101-624e3e22d0b6
+    integrations:
+      pokeData: '39475'
+      tcgPlayer: '89797'
+  baltoy-32:
+    name: Team Magma's Baltoy
+    details:
+      illustrator: Atsuko Ujiie
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '343'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Psymist
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip 2 coins. For each heads, choose 1 of your opponent's Pokémon
+            and put 1 damage counter on that Pokémon.
+        - name: Pain Amplifier
+          cost:
+            - Psychic
+            - Colorless
+          damage: undefined
+          effect: >-
+            Put 1 damage counter on each of your opponent's Pokémon that already
+            has damage counters on it.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 955246fd-ea28-4013-a306-df05a0c354e8
+      reverse-holo: f8d53e63-3573-49fe-ab04-fdce57691b41
+    integrations:
+      pokeData: '39488'
+      tcgPlayer: '89821'
+  claydol-33:
+    name: Team Magma's Claydol
+    details:
+      illustrator: Zu-Ka
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '344'
+      hp: '80'
+      types:
+        - Fighting
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Clay Curse
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Put 2 damage counters on your opponent's Pokémon in any way you like.
+        - name: Clay Pulse
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '50'
+          effect: >-
+            Does 10 damage to each of your opponent's Benched Pokémon that has
+            any damage counters on it. (Don't apply Weakness and Resistance for
+            Benched Pokémon.)
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: e630e1b8-f389-438f-b2e8-5b2c8ee8c0bb
+      reverse-holo: 2c13536e-aa78-44e4-8e6e-89b4917d6104
+    integrations:
+      pokeData: '39492'
+      tcgPlayer: '89826'
+  houndoom-34:
+    name: Team Magma's Houndoom
+    details:
+      illustrator: Ken Ikuji
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '229'
+      hp: '70'
+      types:
+        - Fire
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Target Scorch
+          cost:
+            - Fire
+            - Colorless
+          damage: '30'
+          effect: >-
+            If the Defending Pokémon has Team Aqua in its name, the Defending
+            Pokémon is now Burned.
+        - name: Damage Burn
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: 40+
+          effect: >-
+            If the Defending Pokémon already has any damage counters on it, this
+            attack does 40 damage plus 20 more damage.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d7212e73-de38-42ad-8562-202ee63497b4
+      reverse-holo: ab5bf1bf-48f7-4243-9377-42201383666d
+    integrations:
+      pokeData: '7950'
+      tcgPlayer: '89829'
+  houndour-35:
+    name: Team Magma's Houndour
+    details:
+      illustrator: Atsuko Ujiie
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '228'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Singe
+          cost:
+            - Fire
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Burned.
+        - name: Dark Shock
+          cost:
+            - Darkness
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 7bdcc3c6-bf0f-4fa7-a8d2-67d6e1fb97ec
+      reverse-holo: c333c52c-f0a9-4e4f-afad-2dd65b40922a
+    integrations:
+      pokeData: '7954'
+      tcgPlayer: '89830'
+  lairon-36:
+    name: Team Magma's Lairon
+    details:
+      illustrator: Hiromichi Sugiyama
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '305'
+      hp: '70'
+      types:
+        - Fighting
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Gnaw
+          cost:
+            - Colorless
+          damage: '20'
+        - name: Land Sonic
+          cost:
+            - Fighting
+            - Fighting
+            - Colorless
+          damage: '40'
+          effect: >-
+            If the Defending Pokémon already has any damage counters on it, the
+            Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: ea1f2204-364c-4fe0-bb09-d2bc948d65d0
+      reverse-holo: 9ce4ab26-ea8f-4468-aa63-7561d951875a
+    integrations:
+      pokeData: '39427'
+      tcgPlayer: '89834'
+  mightyena-37:
+    name: Team Magma's Mightyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '262'
+      hp: '80'
+      types:
+        - Darkness
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-POWER
+          name: Call for Help
+          effect: >-
+            Once during your turn (before your attack), if Team Magma's
+            Mightyena is your Active Pokémon, you may search your deck for a
+            Pokémon with Team Magma in its name, show it to your opponent, and
+            put it into your hand. Shuffle your deck afterward. This power can't
+            be used if Team Magma's Mightyena is affected by a Special
+            Condition.
+      attacks:
+        - name: Lunge
+          cost:
+            - Fighting
+            - Colorless
+          damage: '50'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: c768ba50-6a1c-45f3-b5e4-b31ee077cf83
+      reverse-holo: 008655a6-3ad0-434d-b608-38db332db6ad
+    integrations:
+      pokeData: '7942'
+      tcgPlayer: '89836'
+  rhyhorn-38:
+    name: Team Magma's Rhyhorn
+    details:
+      illustrator: Mt. TBT
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '111'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Double Damage
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Does 10 damage to each Defending Pokémon.
+        - name: Horn Rush
+          cost:
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: f9acf17b-1220-46ae-bdd3-c197500d117b
+      reverse-holo: 309fc88e-5df0-4b49-a7c4-2a40e5e9986e
+    integrations:
+      pokeData: '7940'
+      tcgPlayer: '89842'
+  bulbasaur-39:
+    name: Bulbasaur
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '1'
+      hp: '50'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Growth
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Attach a Grass Energy card from your hand to Bulbasaur.
+        - name: Razor Leaf
+          cost:
+            - Grass
+          damage: '10'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 14fef0d3-16cd-4098-b33f-6e43a6a4758c
+      reverse-holo: d776c1d1-2a7c-4b5d-a714-b06620dbd8f9
+    integrations:
+      pokeData: '7927'
+      tcgPlayer: '84028'
+  cubone-40:
+    name: Cubone
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '104'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bone Attack
+          cost:
+            - Fighting
+          damage: '20'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 40d22146-48ec-4c1d-85b7-0644940f0578
+      reverse-holo: 7ab52b67-82a9-4260-bc16-095d7d71cab3
+    integrations:
+      pokeData: '7933'
+      tcgPlayer: '84530'
+  jigglypuff-41:
+    name: Jigglypuff
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '39'
+      hp: '50'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Doubleslap
+          cost:
+            - Colorless
+          damage: 10x
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+        - name: Rest
+          cost:
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Remove all Special Conditions and 3 damage counters from Jigglypuff
+            (all if there are less than 3). Jigglypuff is now Asleep.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 4343e17f-f0bf-43fd-bbec-2728531831b7
+      reverse-holo: e011b338-d58a-4333-93f6-b1090625a978
+    integrations:
+      pokeData: '7947'
+      tcgPlayer: '86314'
+  meowth-42:
+    name: Meowth
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '52'
+      hp: '50'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Plunder
+          cost:
+            - Colorless
+          damage: '10'
+          effect: >-
+            Before doing damage, discard all Trainer cards attached to the
+            Defending Pokémon (before they affect the damage).
+        - name: Scratch
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d107fa50-d0a3-49f3-be3c-fdfab2a0469b
+      reverse-holo: 0b26d47f-ace9-40c3-beec-ad5ed74e9c0e
+    integrations:
+      pokeData: '39444'
+      tcgPlayer: '87316'
+  pikachu-43:
+    name: Pikachu
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Agility
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all effects of an attack, including
+            damage, done to Pikachu during your opponent's next turn.
+        - name: Thundershock
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c00ce158-7540-44a9-9ab8-7d69da83b232
+      reverse-holo: 10848510-2b4a-46d2-9a09-67db516174be
+    integrations:
+      pokeData: '7931'
+      tcgPlayer: '88077'
+  psyduck-44:
+    name: Psyduck
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '54'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bubble
+          cost:
+            - Water
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Confuse Ray
+          cost:
+            - Psychic
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: e6cc79c0-db80-45f4-962b-ee021f58327a
+      reverse-holo: 8207f222-f673-47fa-a2c5-15e27e8ddd15
+    integrations:
+      pokeData: '7935'
+      tcgPlayer: '88436'
+  slowpoke-45:
+    name: Slowpoke
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '79'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Amnesia
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use
+            that attack during your opponent's next turn.
+        - name: Tail Strike
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 10 more
+            damage.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 083df873-433d-42fb-8aa8-a038d796388f
+      reverse-holo: 3871fdc0-8193-4385-8967-07cb5248065a
+    integrations:
+      pokeData: '7936'
+      tcgPlayer: '89326'
+  squirtle-46:
+    name: Squirtle
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '7'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Shell Retreat
+          effect: >-
+            As long as Squirtle has any Energy cards attached to it, damage done
+            to Squirtle by an opponent's attack is reduced by 10 (after applying
+            Weakness and Resistance).
+      attacks:
+        - name: Tackle
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d7e58256-03b5-4c02-be13-4aebb03acd8a
+      reverse-holo: f613b912-8b0b-4936-ae36-ed8ab5c20fb2
+    integrations:
+      pokeData: '7926'
+      tcgPlayer: '89488'
+  carvanha-47:
+    name: Team Aqua's Carvanha
+    details:
+      illustrator: Yosuke Da Silva
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '318'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Confuse Ray
+          cost:
+            - Colorless
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+        - name: Poison Fang
+          cost:
+            - Water
+            - Colorless
+          damage: '10'
+          effect: The Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 7c43f1af-b368-452d-8749-12ce89b0090a
+      reverse-holo: d5010f0b-15a0-42f9-a9f2-01c18f5bc13c
+    integrations:
+      pokeData: '39457'
+      tcgPlayer: '89777'
+  carvanha-48:
+    name: Team Aqua's Carvanha
+    details:
+      illustrator: Hiromichi Sugiyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '318'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Wave Splash
+          cost:
+            - Water
+          damage: '10'
+        - name: Razor Fin
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d4b099da-5bd9-4f9e-9c0b-c09d5eeed528
+      reverse-holo: c3353239-7957-46cb-b7ef-483547e064f0
+    integrations:
+      pokeData: '39392'
+      tcgPlayer: '89778'
+  chinchou-49:
+    name: Team Aqua's Chinchou
+    details:
+      illustrator: Kazuo Yazawa
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '170'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Confuse Ray
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+        - name: Wave Splash
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: e4d21992-d023-4316-a79a-0ad2e846e078
+      reverse-holo: a9ef8a35-94c2-4de3-9926-3e92323c70c2
+    integrations:
+      pokeData: '39459'
+      tcgPlayer: '89779'
+  corphish-50:
+    name: Team Aqua's Corphish
+    details:
+      illustrator: Jungo Suzuki
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '341'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Toxic Grip
+          cost:
+            - Colorless
+          damage: undefined
+          effect: The Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 3325b70d-c8d2-42a8-a0fe-b7811d6d6dcd
+      reverse-holo: 12e85d5c-5fe3-4917-b4c4-23884ee716d9
+    integrations:
+      pokeData: '39461'
+      tcgPlayer: '89781'
+  corphish-51:
+    name: Team Aqua's Corphish
+    details:
+      illustrator: Jungo Suzuki
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '341'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Slash
+          cost:
+            - Water
+          damage: '10'
+        - name: Slow-Acting Poison
+          cost:
+            - Colorless
+            - Colorless
+          damage: '10'
+          effect: >-
+            At the end of your opponent's next turn, the Defending Pokémon is
+            now Poisoned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 568545b2-94f6-4c77-80b8-e64501f09111
+      reverse-holo: 0a14a619-15e5-4847-9e66-73bfdf776a08
+    integrations:
+      pokeData: '7949'
+      tcgPlayer: '89782'
+  electrike-52:
+    name: Team Aqua's Electrike
+    details:
+      illustrator: M. Akiyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '309'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scratch
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Thundershock
+          cost:
+            - Lightning
+            - Colorless
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 52f8632c-08e8-4dfc-8086-99c0374f8eb6
+      reverse-holo: 569b3847-07f6-48eb-9de8-16d1752b2753
+    integrations:
+      pokeData: '39398'
+      tcgPlayer: '89786'
+  electrike-53:
+    name: Team Aqua's Electrike
+    details:
+      illustrator: M. Akiyama
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '309'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Self Charge
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Attach an Energy card from your hand to Team Aqua's Electrike.
+        - name: Tackle
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: d681af48-823d-4779-853a-fa1575067699
+      reverse-holo: ac66ddf1-0a63-45d4-8a0f-b9389934c2fe
+    integrations:
+      pokeData: '39466'
+      tcgPlayer: '89787'
+  poochyena-54:
+    name: Team Aqua's Poochyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '261'
+      hp: '40'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Double Scratch
+          cost:
+            - Colorless
+          damage: 10x
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+        - name: Tail Slap
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 8fe2e61a-adc3-432b-8975-f676bec87261
+      reverse-holo: f51e8943-3f38-4535-87eb-bd342dd762ee
+    integrations:
+      pokeData: '39404'
+      tcgPlayer: '89794'
+  poochyena-55:
+    name: Team Aqua's Poochyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '261'
+      hp: '50'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Roar
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Your opponent switches the Defending Pokémon with 1 of his or her
+            Benched Pokémon, if any.
+        - name: Aqua Crush
+          cost:
+            - Water
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, discard an Energy card attached to the
+            Defending Pokémon.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: 39dfa5c2-1c93-4391-8089-5fbff0126ca7
+      reverse-holo: cfcdff08-a36c-49cf-b542-21f80bda65eb
+    integrations:
+      pokeData: '39473'
+      tcgPlayer: '89795'
+  spheal-56:
+    name: Team Aqua's Spheal
+    details:
+      illustrator: Nakaoka
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '363'
+      hp: '40'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Powder Snow
+          cost:
+            - Water
+          damage: '10'
+          effect: The Defending Pokémon is now Asleep.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: c2cef1f4-0d60-4c48-9451-b3ce0d3e8c51
+      reverse-holo: 86e0a1a3-884e-4e71-a508-223bc5eb6417
+    integrations:
+      pokeData: '39478'
+      tcgPlayer: '89801'
+  spheal-57:
+    name: Team Aqua's Spheal
+    details:
+      illustrator: Nakaoka
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '363'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Rollout
+          cost:
+            - Water
+          damage: '10'
+        - name: Aqua Trance
+          cost:
+            - Water
+            - Colorless
+          damage: '20'
+          effect: >-
+            At the end of your opponent's next turn, the Defending Pokémon is
+            now Asleep.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 8139561e-779e-49bd-a8bd-846647cc874b
+      reverse-holo: 66b33bca-92df-43f8-bedf-222edbda2ff6
+    integrations:
+      pokeData: '39409'
+      tcgPlayer: '89802'
+  aron-58:
+    name: Team Magma's Aron
+    details:
+      illustrator: Katsura Tabata
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '304'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Mud Slap
+          cost:
+            - Fighting
+          damage: '10'
+        - name: Tackle
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d324c242-a734-46f6-a5e4-1b7e80880ff0
+      reverse-holo: 8c579137-bacb-4e49-b160-2abf0cf87b00
+    integrations:
+      pokeData: '39486'
+      tcgPlayer: '89819'
+  aron-59:
+    name: Team Magma's Aron
+    details:
+      illustrator: Katsura Tabata
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '304'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dig Under
+          cost:
+            - Fighting
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Pokémon. This attack does 10 damage to
+            that Pokémon. This attack's damage isn't affected by Weakness or
+            Resistance.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 68d4faa2-76b2-42f1-a567-5ea428a11ed2
+      reverse-holo: 317f21b6-5fb9-4024-8eaa-ead56cdf9e54
+    integrations:
+      pokeData: '39418'
+      tcgPlayer: '89820'
+  baltoy-60:
+    name: Team Magma's Baltoy
+    details:
+      illustrator: Atsuko Ujiie
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '343'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Peck
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Double Spin
+          cost:
+            - Fighting
+            - Colorless
+          damage: 20x
+          effect: Flip 2 coins. This attack does 20 damage times the number of heads.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 0da90cd2-0882-4f88-b257-2f074db9bb86
+      reverse-holo: 40b7181e-2c61-42a4-aca0-76c7d81cf9df
+    integrations:
+      pokeData: '39420'
+      tcgPlayer: '89822'
+  baltoy-61:
+    name: Team Magma's Baltoy
+    details:
+      illustrator: Atsuko Ujiie
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '343'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Night Attack
+          cost:
+            - Fighting
+          damage: undefined
+          effect: Put 1 damage counter on 1 of your opponent's Pokémon.
+        - name: Spinning Attack
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: b049479e-58b4-47b3-a8d2-a5038a71dedc
+      reverse-holo: 7d91906c-df82-4aff-910f-e787057014ff
+    integrations:
+      pokeData: '39490'
+      tcgPlayer: '89823'
+  houndour-62:
+    name: Team Magma's Houndour
+    details:
+      illustrator: Atsuko Ujiie
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '228'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Combustion
+          cost:
+            - Fire
+          damage: '10'
+        - name: Super Singe
+          cost:
+            - Fire
+            - Colorless
+          damage: '10'
+          effect: The Defending Pokémon is now Burned.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 4c72418f-3e02-4c20-8e75-57cb58c5489b
+      reverse-holo: ee81ddde-c099-4841-955e-a32718cde783
+    integrations:
+      pokeData: '39496'
+      tcgPlayer: '89831'
+  houndour-63:
+    name: Team Magma's Houndour
+    details:
+      illustrator: Atsuko Ujiie
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '228'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Kick Away
+          cost:
+            - Colorless
+          damage: '10'
+          effect: >-
+            Your opponent switches the Defending Pokémon with 1 of his or her
+            Benched Pokémon, if any.
+        - name: Steady Firebreathing
+          cost:
+            - Fire
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 7d59f13d-ff5c-4000-9f4d-f93c99a37e7b
+      reverse-holo: 570f8115-a000-4816-8496-e20082cd36d2
+    integrations:
+      pokeData: '7955'
+      tcgPlayer: '89832'
+  numel-64:
+    name: Team Magma's Numel
+    details:
+      illustrator: Katsura Tabata
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '322'
+      hp: '50'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Collect
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Draw a card.
+        - name: Combustion
+          cost:
+            - Fire
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d73e0710-1ab7-4daf-b476-e34256760826
+      reverse-holo: bfda8830-ad67-4919-9af7-460f2b0c6d24
+    integrations:
+      pokeData: '39500'
+      tcgPlayer: '89837'
+  poochyena-65:
+    name: Team Magma's Poochyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '261'
+      hp: '40'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Snarl
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage to the Defending
+            Pokémon. If tails, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: a33070ac-c1be-462b-970b-d6dba70b3662
+      reverse-holo: ebd409e6-7287-49b3-8d5f-761c0b1744e0
+    integrations:
+      pokeData: '39430'
+      tcgPlayer: '89838'
+  poochyena-66:
+    name: Team Magma's Poochyena
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '261'
+      hp: '50'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Darkness Call
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Your opponent switches the Defending Pokémon with 1 of his or her
+            Benched Pokémon, if any.
+        - name: Sharp Fang
+          cost:
+            - Fighting
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: undefined
+    editions:
+      unlimited: e8ec9a37-715d-4584-9e07-5ae9e4224aeb
+      reverse-holo: e07010bb-c3aa-4fb0-93b8-cc3e2c12a187
+    integrations:
+      pokeData: '39502'
+      tcgPlayer: '89839'
+  rhyhorn-67:
+    name: Team Magma's Rhyhorn
+    details:
+      illustrator: Yosuke Da Silva
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '111'
+      hp: '50'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Double Stab
+          cost:
+            - Fighting
+          damage: 10x
+          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
+        - name: Second Strike
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: >-
+            If the Defending Pokémon already has at least 2 damage counters on
+            it, this attack does 10 damage plus 20 more damage.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: d76cad6f-716f-47cb-a8f2-eb59ac796c61
+      reverse-holo: 3507d5ad-efdf-4c9a-9ee5-084e5eba9ae0
+    integrations:
+      pokeData: '39505'
+      tcgPlayer: '89843'
+  rhyhorn-68:
+    name: Team Magma's Rhyhorn
+    details:
+      illustrator: Yosuke Da Silva
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '111'
+      hp: '60'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Ram
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Knock Over
+          cost:
+            - Fighting
+            - Colorless
+          damage: '10'
+          effect: You may discard any Stadium card in play.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: b000f6f6-eb94-4f51-92d4-6634a6582082
+      reverse-holo: 522676ac-c7ac-4a5a-9dc8-8e18651d5e20
+    integrations:
+      pokeData: '39434'
+      tcgPlayer: '89844'
+  schemer-69:
+    name: Team Aqua Schemer
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Supporter
+    editions:
+      unlimited: 5060f828-23b2-4400-b172-36d7304c0e3b
+      reverse-holo: 0e907bc1-4603-44ad-9d79-cca684e46710
+    integrations:
+      pokeData: '39387'
+      tcgPlayer: '89772'
+  schemer-70:
+    name: Team Magma Schemer
+    details:
+      illustrator: Ken Sugimori
+      rarity: Common
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Supporter
+    editions:
+      unlimited: 417114b3-3890-4cf1-8013-1e1d6baf15c8
+      reverse-holo: 1b9880e7-66a0-4589-93ea-987e6a0a462a
+    integrations:
+      pokeData: '39415'
+      tcgPlayer: '89816'
+  archie-71:
+    name: Archie
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Supporter
+    editions:
+      unlimited: e226eea5-226d-45f8-8375-f6db187f9c0f
+      reverse-holo: 1c53a3e5-d045-4577-bb09-5b927e4baf74
+    integrations:
+      pokeData: '7943'
+      tcgPlayer: '83612'
+  dual-ball-72:
+    name: Dual Ball
+    details:
+      illustrator: Big Mama" Tagawa"
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: 096a137b-0196-4bf9-ab0c-ac7045af4979
+      reverse-holo: 96c3a6de-52a2-4395-9518-3e86fd9e7e3a
+    integrations:
+      pokeData: '39440'
+      tcgPlayer: '84985'
+  maxie-73:
+    name: Maxie
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Supporter
+    editions:
+      unlimited: 77af038b-6612-4a64-b20d-3738fed8068d
+      reverse-holo: 536a2f49-491e-4ef4-b1e7-06c8bdb466de
+    integrations:
+      pokeData: '7934'
+      tcgPlayer: '87270'
+  strength-charm-74:
+    name: Strength Charm
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Tool
+    editions:
+      unlimited: 52c2cea4-e353-4169-8879-7aba4d4850d8
+      reverse-holo: b8672fe9-ff2c-4bfe-adc9-86f64c70db29
+    integrations:
+      pokeData: '39448'
+      tcgPlayer: '89578'
+  ball-75:
+    name: Team Aqua Ball
+    details:
+      illustrator: Ryo Ueda
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: 8ba08687-bec1-460d-af33-2b3da4a667e6
+      reverse-holo: 0ebe6914-c5a4-438e-a748-341494d4dab9
+    integrations:
+      pokeData: '39383'
+      tcgPlayer: '89768'
+  belt-76:
+    name: Team Aqua Belt
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Tool
+    editions:
+      unlimited: 9cef0e1e-3f5b-4228-bc09-f10b98b0ef4e
+      reverse-holo: 7d9db2e0-4c99-4a23-be34-cc8874ff48af
+    integrations:
+      pokeData: '39450'
+      tcgPlayer: '89769'
+  conspirator-77:
+    name: Team Aqua Conspirator
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Supporter
+    editions:
+      unlimited: 5348f90c-74b6-4299-8625-b14fe66b8ace
+      reverse-holo: 9cec017b-4e6a-4407-97cf-0f1e932a7bbc
+    integrations:
+      pokeData: '39385'
+      tcgPlayer: '89770'
+  hideout-78:
+    name: Team Aqua Hideout
+    details:
+      illustrator: Hiromichi Sugiyama
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Stadium
+    editions:
+      unlimited: 9a2b49ac-4df9-4c4b-af19-3d09299b9e84
+      reverse-holo: 623cb324-07ac-48fb-b462-e0effe2fd629
+    integrations:
+      pokeData: '39452'
+      tcgPlayer: '89771'
+  technical-machine-01-79:
+    name: Team Aqua's Technical Machine 01
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      attacks:
+        - cost:
+            - Colorless
+          damage: '10'
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: 4049bed0-3353-4264-8742-3a50d2593a32
+      reverse-holo: 9a1e1a76-03e1-402a-be2d-3f5876545ecb
+    integrations:
+      pokeData: '39454'
+      tcgPlayer: '89773'
+  ball-80:
+    name: Team Magma Ball
+    details:
+      illustrator: Ryo Ueda
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: 9e7bcf19-d019-4c86-a3a6-29f982884306
+      reverse-holo: bf82da6d-f9d0-4b02-8f7e-973e96d3d1da
+    integrations:
+      pokeData: '39411'
+      tcgPlayer: '89812'
+  belt-81:
+    name: Team Magma Belt
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Tool
+    editions:
+      unlimited: 98f058d8-a79a-453a-83a8-18eb0fb1743a
+      reverse-holo: 73a9b522-bcc6-4741-896f-36494eaf79f3
+    integrations:
+      pokeData: '39481'
+      tcgPlayer: '89813'
+  conspirator-82:
+    name: Team Magma Conspirator
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Supporter
+    editions:
+      unlimited: c3ee620c-072b-4283-adc2-92bbbbb7e9dd
+      reverse-holo: dce3c662-cf56-4e4f-adad-6172209ca023
+    integrations:
+      pokeData: '39413'
+      tcgPlayer: '89814'
+  hideout-83:
+    name: Team Magma Hideout
+    details:
+      illustrator: Ken Ikuji
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Stadium
+    editions:
+      unlimited: a5a30091-3d39-41f5-ac3a-fa2a506e5d0e
+      reverse-holo: 4e7e31b6-b994-49ed-8904-f8f0dc436b16
+    integrations:
+      pokeData: '39483'
+      tcgPlayer: '89815'
+  technical-machine-01-84:
+    name: Team Magma's Technical Machine 01
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      attacks:
+        - cost:
+            - Colorless
+          damage: '10'
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: a503d4ef-fb30-40f7-8457-c78df3209639
+      reverse-holo: f8bee180-c80b-4214-ace2-23b33658d200
+    integrations:
+      pokeData: '7952'
+      tcgPlayer: '89817'
+  warp-point-85:
+    name: Warp Point
+    details:
+      illustrator: Keiji Kinebuchi
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      trainerType: Item
+    editions:
+      unlimited: 09a47271-e133-441e-a9b6-0e67b8b926b5
+      reverse-holo: 82c7a60b-fe85-4820-9e2f-d246f31ffe29
+    integrations:
+      pokeData: '39508'
+      tcgPlayer: '90478'
+  aqua-energy-86:
+    name: Aqua Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      energyType: Special
+    editions:
+      unlimited: b0d9161a-8203-428a-9044-83f008a00d49
+      reverse-holo: 35b9d30d-b920-4f33-899e-0abd207d3b03
+    integrations:
+      pokeData: '7944'
+      tcgPlayer: '83565'
+  magma-energy-87:
+    name: Magma Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      energyType: Special
+    editions:
+      unlimited: 4cf8fae9-7a77-463b-9be5-d8030dcacdf8
+      reverse-holo: 52a80996-349b-46c3-b0b3-b74136a658d1
+    integrations:
+      pokeData: '7932'
+      tcgPlayer: '87039'
+  double-rainbow-energy-88:
+    name: Double Rainbow Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Rare
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      energyType: Special
+    editions:
+      unlimited: 20116edd-f19d-4e74-b9d5-1e4e3e0257a5
+      reverse-holo: adae0ade-5681-40e6-86cd-6000501b2884
+    integrations:
+      pokeData: '7922'
+      tcgPlayer: '84895'
+  blaziken-ex-89:
+    name: Blaziken ex
+    editions:
+      unlimited: 5e4c3ee4-8728-497b-8005-a73294355765
+    details:
+      illustrator: Hikaru Koike
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '257'
+      hp: '150'
+      types:
+        - Fire
+      level: undefined
+      suffix: EX
+      attacks:
+        - name: Blaze Kick
+          cost:
+            - Fire
+            - Colorless
+          damage: 30+
+          effect: >-
+            Flip a coin. If heads, this attack does 30 damage plus 20 more
+            damage. If tails, this attack does 30 damage and the Defending
+            Pokémon is now Burned.
+        - name: Volcanic Ash
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Discard 2 Fire Energy attached to Blaziken ex and then choose 1 of
+            your opponent's Pokémon. This attack does 100 damage to that
+            Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Water
+          value: ×2
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7906'
+      tcgPlayer: '83912'
+  cradily-ex-90:
+    name: Cradily ex
+    editions:
+      unlimited: 9cdc62a7-c549-447b-baba-70d488f6d40c
+    details:
+      illustrator: Ryo Ueda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '346'
+      hp: '150'
+      types:
+        - Grass
+      level: undefined
+      suffix: EX
+      abilities:
+        - type: Poke-BODY
+          name: Primal Vibes
+          effect: >-
+            As long as Cradily ex is your Active Pokémon, your opponent can't
+            play a Pokémon from his or her hand to evolve his or her Active
+            Pokémon.
+      attacks:
+        - name: Eerie Light
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+          effect: The Defending Pokémon is now Confused.
+        - name: Acidic Poison
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: The Defending Pokémon is now Poisoned and Burned.
+      weaknesses:
+        - type: Water
+          value: ×2
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7914'
+      tcgPlayer: '84457'
+  entei-ex-91:
+    name: Entei ex
+    editions:
+      unlimited: 14686c22-4193-480b-aa2e-6e67707b6628
+    details:
+      illustrator: Ryo Ueda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '244'
+      hp: '100'
+      types:
+        - Fire
+      level: undefined
+      suffix: EX
+      attacks:
+        - name: Searing Flame
+          cost:
+            - Fire
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Burned.
+        - name: Bright Flame
+          cost:
+            - Fire
+            - Fire
+            - Colorless
+          damage: '90'
+          effect: Discard 2 Energy attached to Entei ex.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7908'
+      tcgPlayer: '85278'
+  raikou-ex-92:
+    name: Raikou ex
+    editions:
+      unlimited: c10c9f06-ea56-4e26-89b7-040790ce645f
+    details:
+      illustrator: Ryo Ueda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '243'
+      hp: '100'
+      types:
+        - Lightning
+      level: undefined
+      suffix: EX
+      attacks:
+        - name: Dazzle Blast
+          cost:
+            - Lightning
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+        - name: Lightning Tackle
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '70'
+          effect: Flip a coin. If tails, Raikou ex does 20 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7909'
+      tcgPlayer: '88540'
+  sceptile-ex-93:
+    name: Sceptile ex
+    editions:
+      unlimited: 0e4335c2-4afa-46b1-9eb4-b5014eca4b9b
+    details:
+      illustrator: Hikaru Koike
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '254'
+      hp: '150'
+      types:
+        - Grass
+      level: undefined
+      suffix: EX
+      attacks:
+        - name: Green Heal
+          cost:
+            - Grass
+          damage: undefined
+          effect: >-
+            Remove 4 damage counters from each of your Pokémon that has Grass
+            Energy attached. If that Pokémon has less than 4 damage counters,
+            remove all of them.
+        - name: Poison Ring
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '40'
+          effect: >-
+            The Defending Pokémon is now Poisoned. The Defending Pokémon can't
+            retreat until the end of your opponent's next turn.
+        - name: Slashing Strike
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '100'
+          effect: Sceptile ex can't use Slashing Strike during your next turn.
+      weaknesses:
+        - type: Grass
+          value: ×2
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Water
+          value: '-30'
+      retreat: undefined
+    integrations:
+      pokeData: '7910'
+      tcgPlayer: '88954'
+  suicune-ex-94:
+    name: Suicune ex
+    editions:
+      unlimited: bb584486-fd82-4921-8de1-ae832ff8cb40
+    details:
+      illustrator: Ryo Ueda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '245'
+      hp: '100'
+      types:
+        - Water
+      level: undefined
+      suffix: EX
+      attacks:
+        - name: Energy Flip
+          cost:
+            - Water
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Benched Pokémon. This attack does 10
+            damage to that Pokémon. You may move an Energy card attached to that
+            Pokémon to another of your opponent's Pokémon. (Don't apply Weakness
+            and Resistance for Benched Pokémon.)
+        - name: Reverse Stream
+          cost:
+            - Water
+            - Water
+            - Colorless
+          damage: 50+
+          effect: >-
+            You may return all basic Energy cards attached to Suicune ex to your
+            hand. If you do, this attack does 50 damage plus 10 more damage for
+            each basic Energy card you returned.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7905'
+      tcgPlayer: '89611'
+  swampert-ex-95:
+    name: Swampert ex
+    editions:
+      unlimited: cb3043ac-7071-4b97-937e-325c36e7eac8
+    details:
+      illustrator: Hikaru Koike
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '260'
+      hp: '150'
+      types:
+        - Fighting
+      level: undefined
+      suffix: EX
+      attacks:
+        - name: Hyper Pump
+          cost:
+            - Colorless
+          damage: 20+
+          effect: >-
+            Does 20 damage plus 20 more damage for each basic Energy attached to
+            Swampert ex but not used to pay for this attack's Energy cost. You
+            can't add more than 80 damage in this way.
+        - name: Crushing Wave
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: 20+
+          effect: >-
+            Choose 1 of your opponent's Pokémon. This attack does 40 damage to
+            that Pokémon. After doing damage, flip a coin. If heads, your
+            opponent discards an Energy card, if any, attached to that Pokémon.
+            (Don't apply Weakness and Resistance to Benched Pokémon.)
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7913'
+      tcgPlayer: '89682'
+  absol-96:
+    name: Absol
+    editions:
+      unlimited: 22980ea1-1796-4b15-94b4-41aaa546acc4
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '359'
+      hp: '70'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Quick Attack
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 10 more
+            damage.
+        - name: Feint Attack
+          cost:
+            - Darkness
+            - Darkness
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent's Pokémon. This attack does 30 damage to
+            that Pokémon. This attack's damage isn't affected by Weakness,
+            Resistance, Poké-Powers, Poké-Bodies or any other effects on that
+            Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7907'
+      tcgPlayer: '83450'
+  jirachi-97:
+    name: Jirachi
+    editions:
+      unlimited: 4a59e362-16a6-48cf-a13b-d05628eeb9da
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '385'
+      hp: '50'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Hypnoblast
+          cost:
+            - Psychic
+          damage: '10'
+          effect: The Defending Pokémon is now Asleep.
+        - name: Swift
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            This attack's damage isn't affected by Weakness, Resistance,
+            Poké-Powers, Poké-Bodies or any other effects on the Defending
+            Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    integrations:
+      pokeData: '7911'
+      tcgPlayer: '86324'
+products:
+  booster-pack-houndoom:
+    name: Booster Pack [Houndoom]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: ba76c6c2-7ad7-44c4-a580-dda2ac45119e
+  booster-pack-aggron:
+    name: Booster Pack [Aggron]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 1001f89a-fdcf-427c-a696-c8d2d0469b0c
+  booster-pack-sharpedo:
+    name: Booster Pack [Sharpedo]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 73e4c0e9-f7bf-44e2-abda-105344c29b14
+  booster-pack-walrein:
+    name: Booster Pack [Walrein]
+    integrations:
+      priceCharting: booster-pack
+    editions:
+      unlimited: 9a3e4bbd-9dc8-4323-9fd4-04e509d523ab
+  booster-box:
+    name: Booster Box
+    integrations:
+      priceCharting: booster-box
+    editions:
+      unlimited: 23ae2509-fe3a-4241-95fa-d62002eb2e71
+  theme-deck-team-magma:
+    name: Theme Deck [Team Magma]
+    integrations:
+      priceCharting: theme-deck-team-magma
+    editions:
+      unlimited: 8afb881f-0ec2-4740-8444-9969a63e9233
+  theme-deck-team-aqua:
+    name: Theme Deck [Team Aqua]
+    integrations:
+      priceCharting: theme-deck-team-aqua
+    editions:
+      unlimited: 52c2893a-9798-4b9d-b4c0-aa0260e9cba6

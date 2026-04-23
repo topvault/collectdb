@@ -1,0 +1,43 @@
+generation1:
+  name: Generation 1
+  series:
+    series1:
+      name: Series1
+      releaseDate: '1999-01-09'
+
+    seriesWithAuthenticators:
+      name: SeriesWithAuthenticators
+      releaseDate: '1999-01-09'
+      editions:
+        - 1st-edition
+        - unlimited
+      authenticators:
+        psa:
+          1st-edition: ['1ST EDITION', '1999 GAME']
+          unlimited:
+            - ['UNLIMITED', '1999 GAME']
+            - ['1999 GAME']
+
+    seriesWithAuthenticatorsMissingEdition:
+      name: SeriesWithAuthenticators
+      releaseDate: '1999-01-09'
+      editions:
+        - 1st-edition
+        - unlimited
+      authenticators:
+        psa:
+          # PSA is missing 1st-edition. This is a bug.
+          unlimited:
+            - ['UNLIMITED', '1999 GAME']
+            - ['1999 GAME']
+        cgc:
+          1st-edition: ['1999 GAME']
+          unlimited: ['1999 GAME']
+
+    seriesWithAuthenticatorsWithoutEdition:
+      name: SeriesWithAuthenticators
+      releaseDate: '1999-01-09'
+      authenticators:
+        psa: ['1ST EDITION', '1999 GAME']
+        cgc:
+          - ['1999 GAME']

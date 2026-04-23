@@ -1,0 +1,694 @@
+items:
+  heatran-1:
+    name: Heatran
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: b6bbcb9b-7c10-4ad4-814d-d0feda64ff33
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '485'
+      hp: '100'
+      types:
+        - Fire
+      description: >-
+        It dwells in volcanic caves. It digs in with its cross-shaped feet to
+        crawl on ceilings and walls.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Body Slam
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Fire Spin
+          cost:
+            - Fire
+            - Fire
+            - Fire
+            - Colorless
+          damage: '90'
+          effect: >-
+            Discard 2 basic Energy cards attached to Heatran. (If you can’t
+            discard cards, this attack does nothing.)
+      weaknesses:
+        - type: Water
+          value: '+30'
+      retreat: '3'
+    editions:
+      unlimited: b4d77dd3-4795-4ade-be84-12bf458363b0
+    integrations:
+      pokeData: '43675'
+      tcgPlayer: '86049'
+  lucario-2:
+    name: Lucario
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: dfe528ba-01e7-42d7-9ccf-3a2206fd3f2f
+    details:
+      illustrator: Kent Kanetsuna
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '448'
+      hp: '90'
+      types:
+        - Fighting
+      evolveFrom: Riolu
+      description: >-
+        By catching the aura emanating from others, it can read their thoughts
+        and movements.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Blocking Punch
+          cost:
+            - Metal
+            - Colorless
+          damage: '40'
+          effect: >-
+            During your opponent’s next turn, any damage done to Lucario by
+            attacks is reduced by 20 (after applying Weakness and Resistance).
+        - name: Striking Kick
+          cost:
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: >-
+            This attack’s damage isn’t affected by Resistance, Poké-Powers,
+            Poké-Bodies, or any other effects on the Defending Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: 7df33bb1-cb81-4b5a-960a-a3392c2868ec
+    integrations:
+      pokeData: '43684'
+      tcgPlayer: '86877'
+  luxray-3:
+    name: Luxray
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 5aa1961b-3652-47bb-88fd-55b1c5129c22
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '405'
+      hp: '120'
+      types:
+        - Lightning
+      evolveFrom: Luxio
+      description: >-
+        When its eyes gleam gold, it can spot hiding prey–even those taking
+        shelter behind a wall.
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Poke-BODY
+          name: Intimidating Fang
+          effect: >-
+            As long as Luxray is your Active Pokémon, any damage done by an
+            opponent’s attack is reduced by 10 (before applying Weakness and
+            Resistance).
+      attacks:
+        - name: Thunder
+          cost:
+            - Lightning
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '120'
+          effect: Flip a coin. If tails, Luxray does 40 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: '+30'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: a21fc608-113e-4acb-94d0-afbd6c146878
+    integrations:
+      pokeData: '43685'
+      tcgPlayer: '86948'
+  probopass-4:
+    name: Probopass
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 8992fdcd-2f93-481c-a488-91cd19a9fbb5
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '476'
+      hp: '90'
+      types:
+        - Metal
+      evolveFrom: Nosepass
+      description: >-
+        It exudes strong magnetium from all cover. It controls three small units
+        called Mini-Noses.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Rock Slide
+          cost:
+            - Fighting
+            - Colorless
+          damage: '20'
+          effect: >-
+            Does 10 damage to 2 of your opponent’s Benched Pokémon. (Don’t apply
+            Weakness and Resistance for Benched Pokémon.)
+        - name: Triple Nose
+          cost:
+            - Metal
+            - Colorless
+            - Colorless
+          damage: 50+
+          effect: >-
+            Flip 3 coins. This attack does 50 damage plus 20 more damage for
+            each heads.
+      weaknesses:
+        - type: Fire
+          value: '+30'
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: 82def5ba-e64a-4014-a67e-ca327ea24f57
+    integrations:
+      pokeData: '43678'
+      tcgPlayer: '88376'
+  yanmega-5:
+    name: Yanmega
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: f0d28a48-aba2-40dc-bb98-ec392c0b5728
+    details:
+      illustrator: Ken Sugimori
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '469'
+      hp: '90'
+      types:
+        - Grass
+      evolveFrom: Yanma
+      description: >-
+        By churning its wings, it creates shock waves that inflict critical
+        internal injuries to foes.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Supersonic
+          cost:
+            - Grass
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+        - name: Air Slash
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '70'
+          effect: Flip a coin. If tails, discard an Energy attached to Yanmega.
+      weaknesses:
+        - type: Lightning
+          value: '+20'
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '0'
+    editions:
+      unlimited: 55709dee-4919-4d1b-8d47-fc39d92bae22
+    integrations:
+      pokeData: '43689'
+      tcgPlayer: '90691'
+  cherrim-6:
+    name: Cherrim
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 261414a0-85dd-4bfb-9acf-559ca45371d6
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '421'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Cherubi
+      description: >-
+        It blooms during times of strong sunlight. It tries to make up for
+        everything it endured as a bud.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Worry Seed
+          cost:
+            - Grass
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+        - name: Magical Leaf
+          cost:
+            - Grass
+            - Grass
+          damage: 20+
+          effect: >-
+            Flip a coin. If heads, this attack does 20 damage plus 20 more
+            damage and remove 3 damage counters from Cherrim.
+      weaknesses:
+        - type: Fire
+          value: '+20'
+      resistances:
+        - type: Water
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: 7d14ffbb-deab-4509-9286-8c28a8ac0513
+    integrations:
+      pokeData: '43673'
+      tcgPlayer: '84253'
+  carnivine-7:
+    name: Carnivine
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: ee2a38f4-1bfe-4bee-b12c-87e7e773d40b
+    details:
+      illustrator: Kouki Saitou
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '455'
+      hp: '70'
+      types:
+        - Grass
+      description: >-
+        It attracts prey with its sweet-smelling saliva, then chomps down. It
+        takes a whole day to eat prey.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Swallow Up
+          cost:
+            - Grass
+            - Colorless
+          damage: '30'
+          effect: >-
+            Before doing damage, count the remaining HP of the Defending Pokémon
+            and Carnivine. If the Defending Pokémon has fewer remaining HP than
+            Carnivine’s, this attack does 60 damage instead.
+        - name: Wring Out
+          cost:
+            - Grass
+            - Grass
+          damage: '20'
+          effect: >-
+            Flip a coin. If heads, the Defending Pokémon is now Paralyzed and
+            discard an Energy card attached to the Defending Pokémon.
+      weaknesses:
+        - type: Fire
+          value: '+20'
+      resistances:
+        - type: Water
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: ebb88d56-1d26-4766-b8a2-fb83b2f671d1
+    integrations:
+      pokeData: '43681'
+      tcgPlayer: '84100'
+  luxio-8:
+    name: Luxio
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: ad612853-b52e-40ae-ac67-15662ba57811
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '404'
+      hp: '80'
+      types:
+        - Lightning
+      evolveFrom: Shinx
+      description: >-
+        Its claws loose electricity with enough amperage to cause fainting. They
+        live in small groups.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Fasten Claws
+          cost:
+            - Colorless
+          damage: 10+
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 30 more
+            damage.
+        - name: Thunder Fang
+          cost:
+            - Lightning
+            - Lightning
+          damage: '30'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Fighting
+          value: '+20'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '0'
+    editions:
+      unlimited: 31766f37-9c8f-48c6-8757-574616f1ac0f
+    integrations:
+      pokeData: '43676'
+      tcgPlayer: '86941'
+  night-maintenance-9:
+    name: Night Maintenance
+    details:
+      illustrator: Ryo Ueda
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Search your discard pile for up to 3 in any combination of Pokémon and
+        basic Energy cards. Show them to your opponent and shuffle them into
+        your deck.
+      trainerType: Item
+    editions:
+      unlimited: 7a36fbb1-094c-4387-b898-8cfe2b88ff9b
+    integrations:
+      pokeData: '43677'
+      tcgPlayer: '87752'
+  rare-candy-10:
+    name: Rare Candy
+    details:
+      illustrator: Ryo Ueda
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Choose 1 of your Basic Pokémon in play. If you have a Stage 1 or Stage 2
+        card that evolves from that Pokémon in your hand, put that card on the
+        Basic Pokémon. (This counts as evolving that Pokémon.)
+      trainerType: Item
+    editions:
+      unlimited: 71e95f4f-7ddd-4b58-be11-58b74aa34165
+    integrations:
+      pokeData: '43687'
+      tcgPlayer: '88594'
+  roseannes-research-11:
+    name: Roseanne’s Research
+    integrations:
+      priceCharting: roseanne's-research
+      pokeData: '43688'
+      tcgPlayer: '88816'
+    details:
+      illustrator: Kanako Eo
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Search your deck for up to 2 in any combination of Basic Pokémon and
+        basic Energy cards, show them to your opponent, and put them into your
+        hand. Shuffle your deck afterward.
+      trainerType: Supporter
+    editions:
+      unlimited: 5f4cd825-19b3-44cd-99a0-11ec519022fe
+  chimchar-12:
+    name: Chimchar
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 378bf1ad-49d7-467a-852d-54c556b94ade
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '390'
+      hp: '50'
+      types:
+        - Fire
+      description: >-
+        It agilely scales sheer cliffs to live atop craggy mountains. Its fire
+        is put out when it sleeps.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scratch
+          damage: '10'
+        - name: Ember
+          cost:
+            - Fire
+            - Colorless
+          damage: '30'
+          effect: Flip a coin. If tails, discard a Fire Energy attached to Chimchar.
+      weaknesses:
+        - type: Water
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 52429353-68df-4c7e-9a85-ada5bc579f74
+    integrations:
+      pokeData: '43682'
+      tcgPlayer: '84287'
+  croagunk-13:
+    name: Croagunk
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 2952a6fc-7f10-4339-bbd3-1aa830ed0ea2
+    details:
+      illustrator: Kouki Saitou
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '453'
+      hp: '60'
+      types:
+        - Psychic
+      description: >-
+        Its cheeks hold poison sacs. It tries to catch foes off guard to jab
+        them with toxic fingers.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Ghastly Sound
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, your opponent can’t play any Supporter cards
+            from his or her hand during his or her next turn.
+        - name: Finger Poke
+          cost:
+            - Psychic
+            - Psychic
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+      weaknesses:
+        - type: Psychic
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 2ef526cf-246f-439b-8281-632a9f182209
+    integrations:
+      pokeData: '43674'
+      tcgPlayer: '84475'
+  happiny-14:
+    name: Happiny
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 754d2225-c5c8-4fee-9e88-3a4f8a86204f
+    details:
+      illustrator: Yuka Morii
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '440'
+      hp: '60'
+      types:
+        - Colorless
+      description: >-
+        It loves round white things. It carries an egg-shaped rock in imitation
+        of CHANSEY.
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-POWER
+          name: Baby Evolution
+          effect: >-
+            Once during your turn (before your attack), you may put Chansey from
+            your hand onto Happiny (this counts as evolving Happiny) and remove
+            all damage counters from Happiny.
+      attacks:
+        - name: Lively
+          damage: undefined
+          effect: Remove 2 damage counters from 1 of your Pokémon.
+      weaknesses:
+        - type: Fighting
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 0f11b6d3-3014-445d-a68a-23994986038c
+    integrations:
+      pokeData: '43683'
+      tcgPlayer: '86007'
+  piplup-15:
+    name: Piplup
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '393'
+      hp: '60'
+      types:
+        - Water
+      description: >-
+        Because it is very proud, it hates accepting food from people. Its thick
+        down guards it from cold.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Peck
+          damage: '10'
+        - name: Water Splash
+          cost:
+            - Water
+            - Colorless
+          damage: 20+
+          effect: >-
+            Flip a coin. If heads, this attack does 20 damage plus 10 more
+            damage.
+      weaknesses:
+        - type: Lightning
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 112c8bf5-3308-4cf3-80d8-c1fbee6c08ef
+    integrations:
+      pokeData: '43686'
+      tcgPlayer: '88148'
+  riolu-16:
+    name: Riolu
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 6c4518c2-94e1-407f-8387-731289f1a6d5
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '447'
+      hp: '50'
+      types:
+        - Fighting
+      description: >-
+        Its body is lithe yet powerful. It can crest three mountains and cross
+        two canyons in one night.
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Inner Focus
+          effect: Riolu can’t be Paralyzed.
+      attacks:
+        - name: Quick Attack
+          cost:
+            - Fighting
+          damage: 10+
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 10 more
+            damage.
+      weaknesses:
+        - type: Psychic
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: b7d6cd27-091f-4d41-acc9-1849f408254f
+    integrations:
+      pokeData: '43679'
+      tcgPlayer: '88755'
+  turtwig-17:
+    name: Turtwig
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '387'
+      hp: '60'
+      types:
+        - Grass
+      description: >-
+        Made from soil, the shell on its back hardens when it drinks water. It
+        lives along lakes.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Tackle
+          damage: '10'
+        - name: Razor Leaf
+          cost:
+            - Grass
+          damage: '20'
+      weaknesses:
+        - type: Fire
+          value: '+10'
+      resistances:
+        - type: Water
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: 697a0776-4149-40f8-9954-e8dd6e8a5369
+    integrations:
+      pokeData: '43680'
+      tcgPlayer: '90076'
+products:
+  booster-pack:
+    name: Booster Pack
+    editions:
+      unlimited: 9da5365a-e215-4c9b-92e3-42316102f089

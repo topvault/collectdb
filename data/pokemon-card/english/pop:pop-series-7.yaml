@@ -1,0 +1,734 @@
+items:
+  ampharos-1:
+    name: Ampharos
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 5e32b886-52fb-4dbb-bbb2-3bb90edcc71e
+    details:
+      illustrator: Kouki Saitou
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '181'
+      hp: '130'
+      types:
+        - Lightning
+      evolveFrom: Flaaffy
+      description: >-
+        The tip of its tail shines brightly. In the olden days, people sent
+        signals using the tail’s light.
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Poke-BODY
+          name: Jamming
+          effect: >-
+            After your opponent plays a Supporter card from his or her hand, put
+            1 damage counter on each of your opponent’s Pokémon. You can’t use
+            more than 1 Jamming Poké-Body each turn.
+      attacks:
+        - name: Cluster Bolt
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '70'
+          effect: >-
+            You may discard all Lightning Energy attached to Ampharos. If you
+            do, this attack does 20 damage to each of your opponent’s Benched
+            Pokémon that has any Energy cards attached to it. (Don’t apply
+            Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+          value: '+30'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '3'
+    editions:
+      unlimited: db93f449-8f6f-49f6-9c73-4d6e0bde0b93
+    integrations:
+      pokeData: '43664'
+      tcgPlayer: '83542'
+  gallade-2:
+    name: Gallade
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 28fe230e-d7bc-4298-b11e-6d8926ab55f5
+    details:
+      illustrator: Daisuke Ito
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '475'
+      hp: '130'
+      types:
+        - Fighting
+      evolveFrom: Kirlia
+      description: >-
+        A master of courtesy and swordsmanship, it fights using extending swords
+        on it elbows.
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Sonic Blade
+          cost:
+            - Fighting
+            - Colorless
+          damage: undefined
+          effect: >-
+            Put damage counters on the Defending Pokémon until it is 50 HP away
+            from being Knocked Out. If you do, your opponent switches the
+            Defending Pokémon with 1 of his or her Benched Pokémon.
+        - name: Psychic Cut
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: 60+
+          effect: >-
+            You may choose as many of your face-down Prize cards as you like and
+            put them face up. If you do, this attack does 60 damage plus 20 more
+            damage for each Prize card you chose. (These cards remain face up
+            for the rest of the game.)
+      weaknesses:
+        - type: Psychic
+          value: '+30'
+      retreat: '2'
+    editions:
+      unlimited: a8d8b458-437f-44ef-805b-d45ca72e9b89
+    integrations:
+      pokeData: '43667'
+      tcgPlayer: '85605'
+  latias-3:
+    name: Latias
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 0d226126-b1eb-4715-909b-ba2bf86b142d
+    details:
+      illustrator: Daisuke Ito
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '380'
+      hp: '80'
+      types:
+        - Colorless
+      description: >-
+        Its body is covered with a down that can refract light in such a way
+        that it becomes invisble.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Miraculous Light
+          cost:
+            - Colorless
+          damage: '10'
+          effect: Remove 2 damage counters and all Special Conditions from Latias.
+        - name: Mist Ball
+          cost:
+            - Fire
+            - Water
+            - Colorless
+          damage: '80'
+          effect: Discard a Fire Energy and a Water Energy attached to Latias.
+      weaknesses:
+        - type: Colorless
+          value: '+20'
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: af8ecace-1030-4a13-ac16-841c4312348c
+    integrations:
+      pokeData: '43668'
+      tcgPlayer: '86652'
+  latios-4:
+    name: Latios
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 8edf3824-c8c8-4398-bc43-7aa5f851ab6d
+    details:
+      illustrator: Daisuke Ito
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '381'
+      hp: '90'
+      types:
+        - Colorless
+      description: >-
+        A highly intelligent Pokémon. By folding back its wings in flight, it
+        can overtake jet planes.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Energy Draw
+          cost:
+            - Colorless
+          damage: '10'
+          effect: >-
+            Flip a coin. If heads, search your deck for a basic Energy card and
+            attach it to Latios. Shuffle your deck afterward.
+        - name: Luster Purge
+          cost:
+            - Grass
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '120'
+          effect: Discard 3 Energy attached to Latios.
+      weaknesses:
+        - type: Colorless
+          value: '+20'
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: f0213fec-1375-45d6-9eb8-368a31b2bc43
+    integrations:
+      pokeData: '43660'
+      tcgPlayer: '86666'
+  mothim-5:
+    name: Mothim
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 83454db1-fd0e-40ae-a709-58b7d3a6b89c
+    details:
+      illustrator: Kazuyuki Kano
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '414'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Burmy
+      description: It loves the honey of flowers and steals honey collected by COMBEE.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Silver Wind
+          damage: undefined
+          effect: >-
+            During your next turn, if an attack does damage to the Defending
+            Pokémon (after applying Weakness and Resistance), that attack does
+            40 more damage.
+        - name: Raging Scales
+          cost:
+            - Grass
+            - Colorless
+          damage: 30+
+          effect: >-
+            If Mothim has any damage counters on it, this attack does 30 damage
+            plus 40 more damage.
+      weaknesses:
+        - type: Fire
+          value: '+20'
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: '0'
+    editions:
+      unlimited: ed133259-7911-425a-89ab-0b358bc40dab
+    integrations:
+      pokeData: '43661'
+      tcgPlayer: '87581'
+  delibird-6:
+    name: Delibird
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '225'
+      hp: '70'
+      types:
+        - Water
+      description: >-
+        It carries food rolled up in its tail. It has the habit of sharing food
+        with people lost in mountains.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Present
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, search your deck for any 1 card and put it
+            into your hand. Shuffle your deck afterward.
+        - name: Ice Ball
+          cost:
+            - Water
+          damage: '20'
+      weaknesses:
+        - type: Metal
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: c8357c7b-2829-463f-895f-d18879f07c40
+    integrations:
+      pokeData: '43666'
+      tcgPlayer: '84749'
+  flaaffy-7:
+    name: Flaaffy
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '180'
+      hp: '80'
+      types:
+        - Lightning
+      evolveFrom: Mareep
+      description: >-
+        If its coat becomes fully charged with electricity, its tail lights up.
+        It fire hair that zaps on impact.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Attract Current
+          cost:
+            - Colorless
+          damage: '10'
+          effect: >-
+            Search your deck for a Lightning Energy card and attach it to 1 of
+            your Pokémon. Shuffle your deck afterward.
+        - name: Electromagnetic Kick
+          cost:
+            - Lightning
+            - Lightning
+            - Colorless
+          damage: '60'
+          effect: Flip a coin. If tails, Flaaffy does 10 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: '+20'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 33b0d586-dce1-4201-81ce-b81742343757
+    integrations:
+      pokeData: '43658'
+      tcgPlayer: '85480'
+  kirlia-8:
+    name: Kirlia
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: eaaf473f-bb46-4aa6-a824-59207bbdd93a
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '281'
+      hp: '80'
+      types:
+        - Psychic
+      evolveFrom: Ralts
+      description: >-
+        It is highly perceptive of its Trainer’s feelings. It dances when it is
+        feeling happy.
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Psychic Research
+          cost:
+            - Psychic
+          damage: undefined
+          effect: >-
+            Search your discard pile for a Supporter card and use the effect of
+            that card as the effect of this attack. (The Supporter card remains
+            in your discard pile.)
+        - name: Telekinesis
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent’s Pokémon. This attack does 40 damage to
+            that Pokémon. This attack’s damage isn’t affected by Weakness or
+            Resistance.
+      weaknesses:
+        - type: Psychic
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: 3302cbeb-4aed-4194-998f-928ea2bd12a1
+    integrations:
+      pokeData: '43659'
+      tcgPlayer: '86467'
+  stantler-9:
+    name: Stantler
+    details:
+      illustrator: Kouki Saitou
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '234'
+      hp: '70'
+      types:
+        - Colorless
+      description: >-
+        Staring at its antlers creates an odd sensation as if one were being
+        drawn into their centers.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Lead
+          damage: undefined
+          effect: >-
+            Search your deck for a Supporter card, show it to your opponent, and
+            put it into your hand. Shuffle your deck afterward.
+        - name: Frighten Horn
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            If the Defending Pokémon isn’t an Evolved Pokémon, that Pokémon is
+            now Confused.
+      weaknesses:
+        - type: Fighting
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: e3dd06ca-8707-4f1f-bbeb-6a18ecbef45c
+    integrations:
+      pokeData: '43663'
+      tcgPlayer: '89505'
+  wormadam-sandy-cloak-10:
+    name: Wormadam Sandy Cloak
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '413'
+      hp: '80'
+      types:
+        - Fighting
+      evolveFrom: Burmy
+      description: >-
+        When BURMY evolved, it cloak became a part of this Pokémon’s body. The
+        cloak is never shed.
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-BODY
+          name: Sandy Cloak
+          effect: >-
+            Prevent all effects of attacks, excluding damage, done to Wormadam
+            Sandy Cloak.
+      attacks:
+        - name: Push Over
+          cost:
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: 40+
+          effect: >-
+            Does 40 damage plus 10 more damage for each Fighting Energy attached
+            to Wormadam Sandy Cloak.
+      weaknesses:
+        - type: Fire
+          value: '+20'
+      resistances:
+        - type: Lightning
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: e5f4be23-6f4f-4ee8-b255-4b4e723918ed
+    integrations:
+      pokeData: '43672'
+      tcgPlayer: '90643'
+  burmy-plant-cloak-11:
+    name: Burmy Plant Cloak
+    details:
+      illustrator: Kouki Saitou
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '412'
+      hp: '40'
+      types:
+        - Grass
+      description: >-
+        To shelter itself from cold, wintry winds, it covers itself with a cloak
+        made of twigs and leaves.
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-POWER
+          name: Wear Cloak
+          effect: >-
+            Once during your turn (before your attack), if Burmy Plant Cloak is
+            your Active Pokémon, you may search your discard pile for a basic
+            Grass Energy card and attach it to Burmy Plant Cloak.
+      attacks:
+        - name: Plant Cloak Tackle
+          cost:
+            - Colorless
+          damage: 10+
+          effect: >-
+            If Burmy Plant Cloak has any Grass Energy attached to it, this
+            attack does 10 damage plus 10 more damage.
+      weaknesses:
+        - type: Fire
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 11ce87f9-94aa-4190-a409-39a1b5024b34
+    integrations:
+      pokeData: '43656'
+      tcgPlayer: '84050'
+  burmy-sandy-cloak-12:
+    name: Burmy Sandy Cloak
+    details:
+      illustrator: Midori Harada
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '412'
+      hp: '40'
+      types:
+        - Grass
+      description: >-
+        To shelter itself from cold, wintry winds, it covers itself with a cloak
+        made of twigs and leaves.
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-POWER
+          name: Wear Cloak
+          effect: >-
+            Once during your turn (before your attack), if Burmy Sandy Cloak is
+            your Active Pokémon, you may search your discard pile for a basic
+            Fighting Energy card and attach it to Burmy Sandy Cloak.
+      attacks:
+        - name: Sandy Cloak Tackle
+          cost:
+            - Colorless
+          damage: 10+
+          effect: >-
+            If Burmy Sandy Cloak has any Fighting Energy attached to it, this
+            attack does 10 damage plus 10 more damage.
+      weaknesses:
+        - type: Fire
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: 6187f40d-0b0e-441f-aef8-d62e55fbbe5b
+    integrations:
+      pokeData: '43665'
+      tcgPlayer: '84053'
+  corsola-13:
+    name: Corsola
+    details:
+      illustrator: Midori Harada
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '222'
+      hp: '70'
+      types:
+        - Water
+      description: >-
+        Many live in the clean seas of the south. They apparently can’t live in
+        polluted waters.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Rally
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Search your deck for up to 3 different types of Basic Pokémon and
+            put them onto your Bench. Shuffle your deck afterward.
+        - name: Hook
+          cost:
+            - Water
+            - Colorless
+          damage: '30'
+      weaknesses:
+        - type: Grass
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: 4d64eff9-650c-40d6-a72a-2311e2b800f5
+    integrations:
+      pokeData: '43657'
+      tcgPlayer: '84442'
+  mareep-14:
+    name: Mareep
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '179'
+      hp: '50'
+      types:
+        - Lightning
+      description: >-
+        Its fluffy coat swells to double when static electricity builds up.
+        Touching it can be shocking.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Thundershock
+          cost:
+            - Lightning
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Static Shock
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: '+10'
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 3ca7ded2-9ebf-4265-ab76-5a64aff91664
+    integrations:
+      pokeData: '43669'
+      tcgPlayer: '87202'
+  ralts-15:
+    name: Ralts
+    details:
+      illustrator: Sumiyoshi Kizuki
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '280'
+      hp: '60'
+      types:
+        - Psychic
+      description: >-
+        It uses the horns on its head to sense human emotions. It is said to
+        appear in front of cheerful people.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Smack
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Confuse Ray
+          cost:
+            - Psychic
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Psychic
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: eb832390-24c1-4c31-8bf2-efa1eef958a1
+    integrations:
+      pokeData: '43670'
+      tcgPlayer: '88562'
+  sentret-16:
+    name: Sentret
+    details:
+      illustrator: Midori Harada
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '161'
+      hp: '60'
+      types:
+        - Colorless
+      description: >-
+        It has a very nervous nature. It stands up high on its tail so it can
+        scan wide areas.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Grope
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Look at the top 2 cards of your deck, choose 1 of them, and put it
+            into your hand. Put the other card on the bottom of your deck.
+        - name: Scratch
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Fighting
+          value: '+10'
+      retreat: '1'
+    editions:
+      unlimited: d914204d-36dc-44f1-911f-b484eaf48c79
+    integrations:
+      pokeData: '43662'
+      tcgPlayer: '89067'
+  spinda-17:
+    name: Spinda
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '327'
+      hp: '70'
+      types:
+        - Colorless
+      description: >-
+        No two SPINDA have the same pattern of spots. Its tottering step fouls
+        the aim of foes.
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dish Out
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Draw a card from the top and the bottom of your deck.
+        - name: Synchro Punch
+          cost:
+            - Colorless
+          damage: 10+
+          effect: >-
+            If any basic Energy card attached to Spinda is the same type as any
+            Energy attached to the Defending Pokémon, this attack does 10 damage
+            plus 30 more damage.
+      weaknesses:
+        - type: Fighting
+          value: '+20'
+      retreat: '1'
+    editions:
+      unlimited: 45e4c85f-b6ad-4a7a-b802-5d410b8f075b
+    integrations:
+      pokeData: '43671'
+      tcgPlayer: '89462'
+products:
+  booster-pack:
+    name: Booster Pack
+    editions:
+      unlimited: 87f30882-2869-44e7-930b-b597704a4899

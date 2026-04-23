@@ -1,0 +1,605 @@
+items:
+  chimecho-1:
+    name: Chimecho δ
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '358'
+      hp: '60'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Wrap
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+        - name: Sonicboom
+          cost:
+            - Metal
+            - Colorless
+          damage: '30'
+          effect: This attack’s damage isn’t affected by Weakness or Resistance.
+      weaknesses:
+        - type: Psychic
+      retreat: '1'
+    editions:
+      unlimited: d01f75c6-6998-404d-9c6e-cc159f0116f7
+    integrations:
+      pokeData: '43611'
+      tcgPlayer: '84298'
+  deoxys-2:
+    name: Deoxys δ
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 2b225e10-21cc-454c-a6ca-da04761b9f80
+    details:
+      illustrator: Kouki Saitou
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '386'
+      hp: '70'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-POWER
+          name: Form Change
+          effect: >-
+            Once during your turn (before your attack), you may search your deck
+            for another Deoxys and switch it with Deoxys. (Any cards attached to
+            Deoxys, damage counters, Special Conditions, and effects on it are
+            now on the new Pokémon.) If you do, put Deoxys on top of your deck.
+            Shuffle your deck afterward. You can’t use more than 1 Form Change
+            Poké-Power each turn.
+      attacks:
+        - name: Crystal Laser
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            During your next turn, Deoxys’s attacks do 40 more damage to the
+            Defending Pokémon (before applying Weakness and Resistance).
+      weaknesses:
+        - type: Psychic
+      retreat: '1'
+    editions:
+      unlimited: a4146a46-2e5d-43cb-8798-e7e16f3003ba
+    integrations:
+      pokeData: '43612'
+      tcgPlayer: '84765'
+  flygon-3:
+    name: Flygon
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 5d98b222-3178-4be1-9488-5ae5f4b205ba
+    details:
+      illustrator: Hisao Nakamura
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '330'
+      hp: '120'
+      types:
+        - Fighting
+      evolveFrom: Vibrava
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Poke-BODY
+          name: Levitate
+          effect: >-
+            As long as Flygon has any Energy attached to it, the Retreat Cost
+            for Flygon is 0.
+      attacks:
+        - name: Bite
+          cost:
+            - Fighting
+            - Colorless
+          damage: '30'
+        - name: Sand Pit
+          cost:
+            - Fighting
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '70'
+          effect: >-
+            The Defending Pokémon can’t retreat during your opponent’s next turn.
+      weaknesses:
+        - type: Water
+      retreat: '2'
+    editions:
+      unlimited: f78d788a-1f60-44a5-9ea1-6f8d09cb642a
+    integrations:
+      pokeData: '43613'
+      tcgPlayer: '85524'
+  mew-4:
+    name: Mew
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 057571d7-94a8-46ac-be38-13d0814c49a0
+    details:
+      illustrator: Nakaoka
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '151'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Reactive Barrier
+          effect: >-
+            As long as Mew has any React Energy cards attached to it, prevent
+            all effects, excluding damage, done to Mew by attacks from your
+            opponent’s Pokémon.
+      attacks:
+        - name: Psyshock
+          cost:
+            - Psychic
+            - Colorless
+          damage: '20'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+      weaknesses:
+        - type: Psychic
+      retreat: '1'
+    editions:
+      unlimited: ae08afb9-661b-406d-a8fa-fc242c850fa3
+    integrations:
+      pokeData: '43606'
+      tcgPlayer: '87401'
+  sceptile-5:
+    name: Sceptile
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '254'
+      hp: '100'
+      types:
+        - Grass
+      evolveFrom: Grovyle
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Poke-POWER
+          name: Energy Trans
+          effect: >-
+            As often as you like during your turn (before your attack), move a
+            Grass Energy card attached to 1 of your Pokémon to another of your
+            Pokémon. This power can’t be used if Sceptile is affected by a
+            Special Condition.
+      attacks:
+        - name: Tail Rap
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: 50×
+          effect: Flip 2 coins. This attack does 50 damage times the number of heads.
+      weaknesses:
+        - type: Fire
+      resistances:
+        - type: Water
+          value: '-30'
+      retreat: '3'
+    editions:
+      unlimited: 35003541-1ccf-4151-befd-cb7b6aadf443
+    integrations:
+      pokeData: '43617'
+      tcgPlayer: '88948'
+  combusken-6:
+    name: Combusken
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 994928ac-7620-49a3-aa7e-bb6314ba39fb
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '256'
+      hp: '70'
+      types:
+        - Fire
+      evolveFrom: Torchic
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Smokescreen
+          cost:
+            - Fire
+          damage: '10'
+          effect: >-
+            If the Defending Pokémon tries to attack during your opponent’s next
+            turn, your opponent flips a coin. If tails, that attack does
+            nothing.
+        - name: Sky Uppercut
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '40'
+          effect: This attack’s damage isn’t affected by Resistance.
+      weaknesses:
+        - type: Water
+      retreat: '1'
+    editions:
+      unlimited: 4cd094b8-16bd-479b-a309-28b0fa4c9116
+    integrations:
+      pokeData: '43603'
+      tcgPlayer: '84409'
+  grovyle-7:
+    name: Grovyle
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '253'
+      hp: '70'
+      types:
+        - Grass
+      evolveFrom: Treecko
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Quick Attack
+          cost:
+            - Colorless
+          damage: 10+
+          effect: >-
+            Flip a coin. If heads, this attack does 10 damage plus 10 more
+            damage.
+        - name: Blot
+          cost:
+            - Grass
+            - Colorless
+          damage: '20'
+          effect: Remove 2 damage counters from Grovyle.
+      weaknesses:
+        - type: Fire
+      resistances:
+        - type: Water
+          value: '-30'
+      retreat: '1'
+    editions:
+      unlimited: 5028a42c-188d-4408-b9d7-c64fbedb76db
+    integrations:
+      pokeData: '43605'
+      tcgPlayer: '85940'
+  heal-energy-8:
+    name: Heal Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Heal Energy provides Colorless Energy. When you attach this card from
+        your hand to 1 of your Pokémon, remove 1 damage counter and all Special
+        Conditions from that Pokémon. If Heal Energy is attached to Pokémon-ex,
+        Heal Energy has no effect other than providing Energy.
+      energyType: Special
+    editions:
+      unlimited: 246d75b4-8d44-4fab-9e7f-53d5d9eb8760
+    integrations:
+      pokeData: '43614'
+      tcgPlayer: '86038'
+  pokemon-fan-club-9:
+    name: Pokémon Fan Club
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Search your deck for up to 2 Basic Pokémon and put them onto your Bench.
+        Shuffle your deck afterward.
+      trainerType: Supporter
+    editions:
+      unlimited: 216c9d98-25cb-4dfd-aad3-fe1f5415203a
+    integrations:
+      pokeData: '43608'
+      tcgPlayer: '88226'
+  scramble-energy-10:
+    name: Scramble Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Scramble Energy can be attached only to an Evolved Pokémon (excluding
+        Pokémon-ex). Scramble Energy provides Colorless Energy. While in play,
+        if you have more Prize cards left than your opponent, Scramble Energy
+        provides every type of Energy but provides only 3 in any combination at
+        a time. If the Pokémon Scramble Energy is attached to isn’t an Evolved
+        Pokémon (or evolves into Pokémon-ex), discard Scramble Energy.
+      energyType: Special
+    editions:
+      unlimited: d48450bd-540e-4faa-baa3-94273c40d9f3
+    integrations:
+      pokeData: '43609'
+      tcgPlayer: '88988'
+  mudkip-11:
+    name: Mudkip
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 5452a39b-31cd-4c82-894f-28c512a0bbd7
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '258'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Super Hypno Wave
+          cost:
+            - Water
+            - Colorless
+          damage: '20'
+          effect: The Defending Pokémon is now Asleep.
+      weaknesses:
+        - type: Grass
+      retreat: '1'
+    editions:
+      unlimited: 29db1cf9-df5b-4b60-9bfa-57a7ea3da56c
+    integrations:
+      pokeData: '43615'
+      tcgPlayer: '87613'
+  pidgey-12:
+    name: Pidgey
+    details:
+      illustrator: Hisao Nakamura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '16'
+      hp: '40'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Quick Attack
+          cost:
+            - Colorless
+            - Colorless
+          damage: 20+
+          effect: >-
+            Flip a coin. If heads, this attack does 20 damage plus 10 more
+            damage.
+      weaknesses:
+        - type: Lightning
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: '1'
+    editions:
+      unlimited: 2bfa63de-abe1-45af-8db7-211759885d8c
+    integrations:
+      pokeData: '43607'
+      tcgPlayer: '88049'
+  pikachu-13:
+    name: Pikachu
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: aeedebbd-264b-4119-aa0b-1140a0c94170
+    details:
+      illustrator: Kouki Saitou
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Spark
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+          effect: >-
+            Does 10 damage to 1 of your opponent’s Benched Pokémon. (Don’t apply
+            Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Fighting
+      retreat: '1'
+    editions:
+      unlimited: 3ec4e341-c915-4c0f-a407-60da2af99532
+    integrations:
+      pokeData: '43616'
+      tcgPlayer: '88083'
+  squirtle-14:
+    name: Squirtle
+    details:
+      illustrator: Atsuko Nishida
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '7'
+      hp: '50'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-BODY
+          name: Shell Retreat
+          effect: >-
+            As long as Squirtle has any Energy cards attached to it, damage done
+            to Squirtle by an opponent’s attack is reduced by 10 (after applying
+            Weakness and Resistance).
+      attacks:
+        - name: Tackle
+          cost:
+            - Colorless
+          damage: '10'
+      weaknesses:
+        - type: Lightning
+      retreat: '1'
+    editions:
+      unlimited: 3f108068-471f-4134-89d3-bb20b1bd5649
+    integrations:
+      pokeData: '43618'
+      tcgPlayer: '89493'
+  treecko-15:
+    name: Treecko δ
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '252'
+      hp: '40'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Pound
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Shining Claws
+          cost:
+            - Psychic
+          damage: '10'
+          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
+      weaknesses:
+        - type: Fire
+      resistances:
+        - type: Water
+          value: '-30'
+      retreat: '1'
+    editions:
+      unlimited: c8a9ddcf-8b76-4e24-8b70-29b4872f0b4e
+    integrations:
+      pokeData: '43610'
+      tcgPlayer: '90045'
+  wobbuffet-16:
+    name: Wobbuffet
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 65deb111-790e-4046-8aac-d6284724352d
+    details:
+      illustrator: Kagemaru Himeno
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '202'
+      hp: '80'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Nap
+          cost:
+            - Colorless
+          damage: undefined
+          effect: Remove 2 damage counters from Wobbuffet.
+        - name: Expand
+          cost:
+            - Psychic
+            - Colorless
+          damage: '20'
+          effect: >-
+            During your opponent’s next turn, any damage done to Wobbuffet is
+            reduced by 20 (after applying Weakness and Resistance).
+      weaknesses:
+        - type: Psychic
+      retreat: '2'
+    editions:
+      unlimited: d45aa8ea-c9e5-45dc-a892-e475571d54f7
+    integrations:
+      pokeData: '43619'
+      tcgPlayer: '90618'
+  deoxys-ex-17:
+    name: Deoxys ex
+    details:
+      illustrator: Hiromichi Sugiyama
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '386'
+      hp: '110'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      suffix: EX
+      abilities:
+        - type: Poke-POWER
+          name: Form Change
+          effect: >-
+            Once during your turn (before your attack), you may search your deck
+            for another Deoxys ex and switch it with Deoxys ex. (Any cards
+            attached to Deoxys ex, damage counters, Special Conditions, and
+            effects on it are now on the new Pokémon.) If you do, put Deoxys ex
+            on top of your deck. Shuffle your deck afterward. You can’t use more
+            than 1 Form Change Poké-Power each turn.
+      attacks:
+        - name: Fastwave
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            This attack’s damage isn’t affected by Resistance, Poké-Powers,
+            Poké-Bodies, or any other effects on the Defending Pokémon.
+      weaknesses:
+        - type: Psychic
+      retreat: '1'
+    editions:
+      unlimited: 1ea38600-9fb1-4ac5-9dd7-551d8e7cf0a1
+    integrations:
+      pokeData: '43604'
+      tcgPlayer: '84774'
+products:
+  booster-pack:
+    name: Booster Pack
+    editions:
+      unlimited: 795297d0-fe19-4a19-9491-b3fb6f9cc146

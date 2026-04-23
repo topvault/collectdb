@@ -1,0 +1,611 @@
+items:
+  bulbasaur-1:
+    name: Bulbasaur
+    details:
+      illustrator: MPC Film
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '1'
+      hp: '60'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Find a Friend
+          cost:
+            - Grass
+          damage: undefined
+          effect: >-
+            Search your deck for a Grass Pokémon, reveal it, and put it into
+            your hand. Then, shuffle your deck.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 61c5ef52-cfca-4fce-a5be-c1f70fe7d98a
+    integrations:
+      pokeData: '1386'
+      tcgPlayer: '186001'
+  ludicolo-2:
+    name: Ludicolo
+    details:
+      illustrator: Framestore
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '272'
+      hp: '140'
+      types:
+        - Grass
+      evolveFrom: Lombre
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Ability
+          name: Table Service
+          effect: >-
+            Once during your turn (before your attack), you may heal 30 damage
+            from 1 of your Pokémon.
+      attacks:
+        - name: Punch and Run
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '70'
+          effect: Switch this Pokémon with 1 of your Benched Pokémon.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 062cf667-97cd-4e31-8a9a-ff2891624349
+    integrations:
+      pokeData: '1385'
+      tcgPlayer: '186003'
+  morelull-3:
+    name: Morelull
+    details:
+      illustrator: MPC Film
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '755'
+      hp: '50'
+      types:
+        - Grass
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Sleep Spore
+          cost:
+            - Grass
+          damage: '10'
+          effect: Your opponent’s Active Pokémon is now Asleep.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 090aa61d-3338-4043-8694-d610fb0577c9
+    integrations:
+      pokeData: '1392'
+      tcgPlayer: '186004'
+  charmander-4:
+    name: Charmander
+    details:
+      illustrator: MPC Film
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '4'
+      hp: '60'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Reckless Charge
+          cost:
+            - Colorless
+          damage: '20'
+          effect: This Pokémon does 10 damage to itself.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: efb260d8-0647-4825-a6a6-7f939243c61b
+    integrations:
+      pokeData: '1387'
+      tcgPlayer: '186005'
+  charizard-5:
+    name: Charizard
+    details:
+      illustrator: Framestore
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '6'
+      hp: '180'
+      types:
+        - Fire
+      evolveFrom: Charmeleon
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Slash
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '70'
+        - name: Wild Tackle
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '180'
+          effect: This Pokémon does 50 damage to itself.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 270ccd9a-7de2-4f96-8ac9-b4a1b2ad928c
+    integrations:
+      pokeData: '1376'
+      tcgPlayer: '186007'
+  arcanine-6:
+    name: Arcanine
+    details:
+      illustrator: MPC Film
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '59'
+      hp: '120'
+      types:
+        - Fire
+      evolveFrom: Growlithe
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Ability
+          name: Security Guard
+          effect: >-
+            As long as this Pokémon is your Active Pokémon, all of your Pokémon
+            take 30 less damage from your opponent’s attacks (after applying
+            Weakness and Resistance).
+      attacks:
+        - name: Sharp Fang
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '90'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 0a8ca840-7346-43b0-b3a4-c4af9748736d
+    integrations:
+      pokeData: '1382'
+      tcgPlayer: '186009'
+  psyduck-7:
+    name: Psyduck
+    details:
+      illustrator: Framestore
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '54'
+      hp: '80'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Panic
+          cost:
+            - Water
+          damage: '10'
+          effect: This Pokémon is now Confused.
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 0a30e4ec-1085-421b-b5de-a4dc8b96dc8b
+    integrations:
+      pokeData: '1393'
+      tcgPlayer: '186010'
+  magikarp-8:
+    name: Magikarp
+    details:
+      illustrator: Framestore
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '129'
+      hp: '30'
+      types:
+        - Water
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Hold Still
+          cost:
+            - Water
+          damage: undefined
+          effect: Heal 10 damage from this Pokémon.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 1f5d32ba-a83d-4af6-93d6-457cbb767610
+    integrations:
+      pokeData: '1390'
+      tcgPlayer: '186012'
+  greninja-9:
+    name: Greninja
+    details:
+      illustrator: MPC Film
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '658'
+      hp: '140'
+      types:
+        - Water
+      evolveFrom: Frogadier
+      level: undefined
+      stage: Stage2
+      abilities:
+        - type: Ability
+          name: Evasion Jutsu
+          effect: >-
+            If any damage is done to this Pokémon by attacks, flip a coin. If
+            heads, prevent that damage.
+      attacks:
+        - name: Furious Shurikens
+          cost:
+            - Water
+            - Water
+          damage: undefined
+          effect: >-
+            This attack does 50 damage to 2 of your opponent’s Pokémon. (Don’t
+            apply Weakness and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Grass
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: b018af1e-79c2-41d5-ab2d-1efc0f8ad86a
+    integrations:
+      pokeData: '1379'
+      tcgPlayer: '186013'
+  detective-pikachu-10:
+    name: Detective Pikachu
+    details:
+      illustrator: MPC Film
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '90'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scout
+          cost:
+            - Lightning
+          damage: undefined
+          effect: Your opponent reveals their hand.
+        - name: Surprise Attack
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '80'
+          effect: Flip a coin. If tails, this attack does nothing.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: 33f41182-77cf-474a-bb86-4ec760b9a6b2
+    integrations:
+      pokeData: '1380'
+      tcgPlayer: '186015'
+  mr-mime-11:
+    name: Mr. Mime
+    details:
+      illustrator: MPC Film
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '122'
+      hp: '80'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Ability
+          name: Pantomime
+          effect: >-
+            When you play this Pokémon from your hand onto your Bench during
+            your turn, you may switch 1 of your face-down Prize cards with the
+            top card of your deck.
+      attacks:
+        - name: Juggling
+          cost:
+            - Psychic
+            - Colorless
+          damage: 20×
+          effect: Flip 4 coins. This attack does 20 damage for each heads.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: 88efd8cb-8855-4ee1-9b88-a4bd4d0de52e
+    integrations:
+      pokeData: '1381'
+      tcgPlayer: '186019'
+  mewtwo-12:
+    name: Mewtwo
+    details:
+      illustrator: MPC Film
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '150'
+      hp: '130'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Psyjack
+          cost:
+            - Psychic
+            - Colorless
+          damage: '30'
+          effect: >-
+            Choose 1 of your opponent’s Active Pokémon’s attacks. That Pokémon
+            can’t use that attack during your opponent’s next turn.
+        - name: Break Burn
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: '130'
+          effect: Discard 2 Psychic Energy from this Pokémon.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: 2143791e-a1a1-4353-9c53-560fe20d0b1d
+    integrations:
+      pokeData: '1377'
+      tcgPlayer: '186020'
+  machamp-13:
+    name: Machamp
+    details:
+      illustrator: MPC Film
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '68'
+      hp: '160'
+      types:
+        - Fighting
+      evolveFrom: Machoke
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Directing Traffic
+          cost:
+            - Fighting
+          damage: undefined
+          effect: Look at the top 5 cards of your deck and put them back in any order.
+        - name: Cross Chop
+          cost:
+            - Fighting
+            - Fighting
+          damage: 80+
+          effect: Flip a coin. If heads, this attack does 60 more damage.
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: '2'
+    editions:
+      unlimited: e06907d7-c035-430a-94aa-a612f61537ad
+    integrations:
+      pokeData: '1383'
+      tcgPlayer: '186021'
+  jigglypuff-14:
+    name: Jigglypuff
+    details:
+      illustrator: Framestore
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '39'
+      hp: '60'
+      types:
+        - Fairy
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Healing Melody
+          cost:
+            - Fairy
+          damage: undefined
+          effect: Heal 10 damage from each of your Pokémon.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: 597fdd80-2669-45ff-906d-9773ec9839c6
+    integrations:
+      pokeData: '1388'
+      tcgPlayer: '186022'
+  snubbull-15:
+    name: Snubbull
+    details:
+      illustrator: Framestore
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '209'
+      hp: '70'
+      types:
+        - Fairy
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Play Rough
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: Flip a coin. If heads, this attack does 30 more damage.
+      weaknesses:
+        - type: Metal
+          value: ×2
+      resistances:
+        - type: Darkness
+          value: '-20'
+      retreat: '2'
+    editions:
+      unlimited: f08bb78a-a172-4ec3-b025-fc6f7bc8457d
+    integrations:
+      pokeData: '1389'
+      tcgPlayer: '186023'
+  lickitung-16:
+    name: Lickitung
+    details:
+      illustrator: MPC Film
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '108'
+      hp: '100'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Continuous Lick
+          cost:
+            - Colorless
+            - Colorless
+          damage: 20×
+          effect: >-
+            Flip a coin until you get tails. This attack does 20 damage for each
+            heads.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '3'
+    editions:
+      unlimited: 11589d32-5461-47ed-8706-801694b9f670
+    integrations:
+      pokeData: '1391'
+      tcgPlayer: '186024'
+  ditto-17:
+    name: Ditto
+    details:
+      illustrator: MPC Film
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '132'
+      hp: '60'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Copy Anything
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent’s Pokémon’s attacks and use it as this
+            attack. If this Pokémon doesn’t have the necessary Energy to use
+            that attack, this attack does nothing.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '1'
+    editions:
+      unlimited: bc70f8f5-f3e2-4c03-9a96-52a6233a6b03
+    integrations:
+      pokeData: '1378'
+      tcgPlayer: '186025'
+  slaking-18:
+    name: Slaking
+    details:
+      illustrator: Framestore
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '289'
+      hp: '180'
+      types:
+        - Colorless
+      evolveFrom: Vigoroth
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Pitch
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '150'
+          effect: >-
+            Your opponent switches their Active Pokémon with 1 of their Benched
+            Pokémon.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: '4'
+    editions:
+      unlimited: e60ff730-8252-4dfc-a21a-a61ef15647b2
+    integrations:
+      pokeData: '1384'
+      tcgPlayer: '186026'
+products:
+  booster-pack:
+    name: Booster Pack
+    editions:
+      unlimited: 9469cdc0-789b-4b2f-8bc5-cc1536cca9db
+  booster-pack-promo:
+    name: Booster Pack [Promo]
+    description: 2-card promo pack.
+    integrations:
+      priceCharting: booster-pack-2-card
+    editions:
+      unlimited: 5125412b-4dae-46bb-8636-3dc81d9f9c52

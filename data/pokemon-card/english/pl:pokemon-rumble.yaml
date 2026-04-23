@@ -1,0 +1,522 @@
+items:
+  venusaur-1:
+    name: Venusaur
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '3'
+      hp: '140'
+      types:
+        - Grass
+      evolveFrom: Ivysaur
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Giga Drain
+          cost:
+            - Grass
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            Remove from Venusaur the number of damage counters equal to the
+            damage you did to the Defending Pokémon.
+      weaknesses:
+        - type: Fire
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 1ae3423c-f93a-4119-bd8f-213c2451e52e
+    integrations:
+      pokeData: '71315'
+      tcgPlayer: '90320'
+  cherrim-2:
+    name: Cherrim
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '421'
+      hp: '80'
+      types:
+        - Grass
+      evolveFrom: Cherubi
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Solarbeam
+          cost:
+            - Grass
+            - Colorless
+            - Colorless
+          damage: '60'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Water
+          value: '-20'
+      retreat: undefined
+    editions:
+      unlimited: bd43c049-6b41-47de-8e5f-1ae4a5014a92
+    integrations:
+      pokeData: '71316'
+      tcgPlayer: '84256'
+  ninetales-3:
+    name: Ninetales
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '38'
+      hp: '90'
+      types:
+        - Fire
+      evolveFrom: Vulpix
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Flame Tail
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+          damage: '60'
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 6e93061c-b963-46d7-b284-aea75373c889
+    integrations:
+      pokeData: '71317'
+      tcgPlayer: '87775'
+  heatran-4:
+    name: Heatran
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '485'
+      hp: '110'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Heat Boiler
+          cost:
+            - Fire
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: >-
+            If the Defending Pokémon is a Water Pokémon, this attack does 60
+            damage plus 40 more damage.
+      weaknesses:
+        - type: Water
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 69b7b012-f3a3-4f8a-a7ee-3993f6619e94
+    integrations:
+      pokeData: '71318'
+      tcgPlayer: '86051'
+  starmie-5:
+    name: Starmie
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '121'
+      hp: '80'
+      types:
+        - Water
+      evolveFrom: Staryu
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Spiral Drain
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: Remove 1 damage counter from Starmie.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: f6bd7d12-3970-4df4-a90f-c03d9de9f4df
+    integrations:
+      pokeData: '71319'
+      tcgPlayer: '89537'
+  gyarados-6:
+    name: Gyarados
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '130'
+      hp: '130'
+      types:
+        - Water
+      evolveFrom: Magikarp
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Thrash Tackle
+          cost:
+            - Water
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '80'
+          effect: Gyarados does 20 damage to itself.
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: undefined
+    editions:
+      unlimited: 97f08569-54db-469a-a0e8-64e05072638a
+    integrations:
+      pokeData: '71320'
+      tcgPlayer: '85996'
+  pikachu-7:
+    name: Pikachu
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '60'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Volt Tackle
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '60'
+          effect: Pikachu does 10 damage to itself.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Metal
+          value: '-20'
+      retreat: '1'
+    editions:
+      unlimited: d04429b6-53b0-4abf-bd0d-faa96cd6fa8c
+    integrations:
+      pokeData: '71321'
+      tcgPlayer: '88096'
+  zapdos-8:
+    name: Zapdos
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '145'
+      hp: '100'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Drill Peck
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '70'
+      weaknesses:
+        - type: Lightning
+          value: ×2
+      resistances:
+        - type: Fighting
+          value: '-20'
+      retreat: undefined
+    editions:
+      unlimited: 989c8dd1-16a9-4de3-974f-ffa53db5ae92
+    integrations:
+      pokeData: '71322'
+      tcgPlayer: '90720'
+  mewtwo-9:
+    name: Mewtwo
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '150'
+      hp: '100'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Super Psy Bolt
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: '70'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 18295ef4-389e-43b5-8748-382b3776eebc
+    integrations:
+      pokeData: '71323'
+      tcgPlayer: '87423'
+  mew-10:
+    name: Mew
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '151'
+      hp: '60'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Cut
+          cost:
+            - Colorless
+            - Colorless
+          damage: '30'
+        - name: Will-o'-the-Wisp
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '60'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 1ed00f07-e6e9-4d9e-9671-833f73cdbd0c
+    integrations:
+      pokeData: '71324'
+      tcgPlayer: '87404'
+  diglett-11:
+    name: Diglett
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '50'
+      hp: '30'
+      types:
+        - Fighting
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Dig
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Grass
+          value: ×2
+      resistances:
+        - type: Lightning
+          value: '-20'
+      retreat: undefined
+    editions:
+      unlimited: 4064b7e6-43c0-47a0-b373-89f160a5d4df
+    integrations:
+      pokeData: '71325'
+      tcgPlayer: '84825'
+  lucario-12:
+    name: Lucario
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '448'
+      hp: '90'
+      types:
+        - Fighting
+      evolveFrom: Riolu
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Metal Claw
+          cost:
+            - Fighting
+            - Colorless
+            - Colorless
+          damage: '40'
+        - name: Pulse Blast
+          cost:
+            - Fighting
+            - Metal
+            - Colorless
+            - Colorless
+          damage: '80'
+      weaknesses:
+        - type: Psychic
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 8714f854-ccca-4b4a-b7de-85c252336a4a
+    integrations:
+      pokeData: '71326'
+      tcgPlayer: '86879'
+  skuntank-13:
+    name: Skuntank
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '435'
+      hp: '90'
+      types:
+        - Darkness
+      evolveFrom: Stunky
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Rage
+          cost:
+            - Darkness
+            - Colorless
+            - Colorless
+          damage: '20'
+          effect: >-
+            Does 20 damage plus 10 more damage for each damage counter on
+            Skuntank.
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: undefined
+    editions:
+      unlimited: 884d06a1-3ef7-4f37-beaf-3fd7e486a168
+    integrations:
+      pokeData: '71327'
+      tcgPlayer: '89281'
+  bastiodon-14:
+    name: Bastiodon
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '411'
+      hp: '120'
+      types:
+        - Metal
+      evolveFrom: Shieldon
+      level: undefined
+      stage: Stage2
+      attacks:
+        - name: Strength
+          cost:
+            - Metal
+            - Colorless
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Fire
+          value: ×2
+      resistances:
+        - type: Psychic
+          value: '-20'
+      retreat: undefined
+    editions:
+      unlimited: 8d3e5463-c5a8-4d20-b253-dd3224c83b2f
+    integrations:
+      pokeData: '71328'
+      tcgPlayer: '83737'
+  rattata-15:
+    name: Rattata
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '19'
+      hp: '30'
+      types:
+        - Colorless
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Bite
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 2f732bb9-c7a6-406f-8d34-548987573fd1
+    integrations:
+      pokeData: '71329'
+      tcgPlayer: '88620'
+  bibarel-16:
+    name: Bibarel
+    details:
+      illustrator: ''
+      rarity: None
+      category: Pokemon
+      dexId:
+        - '400'
+      hp: '90'
+      types:
+        - Colorless
+      evolveFrom: Bidoof
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Rollout
+          cost:
+            - Colorless
+            - Colorless
+            - Colorless
+            - Colorless
+          damage: '50'
+      weaknesses:
+        - type: Fighting
+          value: ×2
+      retreat: undefined
+    editions:
+      unlimited: 91aefaf2-5d81-4f89-946a-5dcbff592fad
+    integrations:
+      pokeData: '71330'
+      tcgPlayer: '83820'

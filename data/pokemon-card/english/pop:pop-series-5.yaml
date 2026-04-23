@@ -1,0 +1,577 @@
+items:
+  ho-oh-1:
+    name: Ho-Oh
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 8cbdc92f-1913-4632-9dd2-57aacecddf7d
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '250'
+      hp: '80'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Fire Wing
+          cost:
+            - Fire
+            - Colorless
+          damage: '20'
+        - name: Fire Blast
+          cost:
+            - Fire
+            - Fire
+            - Fire
+            - Colorless
+          damage: '60'
+          effect: Discard a Fire Energy attached to Ho-Oh.
+      weaknesses:
+        - type: Water
+      retreat: '2'
+    editions:
+      unlimited: 829ec5b8-f76d-4ba5-b1aa-060f7771fb59
+    integrations:
+      pokeData: '43623'
+      tcgPlayer: '86123'
+  lugia-2:
+    name: Lugia
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 14b9fb20-2cb0-43c8-9f75-5e4ca6b0da1d
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '249'
+      hp: '80'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Super Psy Bolt
+          cost:
+            - Psychic
+            - Colorless
+          damage: '20'
+        - name: Aerowing
+          cost:
+            - Psychic
+            - Colorless
+            - Colorless
+          damage: '30'
+          effect: >-
+            Before doing damage, you may flip a coin. If tails, this attack does
+            nothing. If heads, this attack does 60 damage instead.
+      weaknesses:
+        - type: Psychic
+      retreat: '2'
+    editions:
+      unlimited: ce356b02-ed65-4879-a790-96fd56db0c82
+    integrations:
+      pokeData: '43632'
+      tcgPlayer: '86907'
+  mew-3:
+    name: Mew δ
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: baaaf59d-473c-4818-8849-5d949207a5cb
+      holo-error:
+        name: Holo Upside Down Back Error
+        description: Holo Upside Down Back Error.
+        integrations:
+          priceCharting:
+            holo-error: mew-error-3
+        id: 878e31d6-c3a4-4033-9db7-92480e0a5989
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Rare
+      category: Pokemon
+      dexId:
+        - '151'
+      hp: '60'
+      types:
+        - Fire
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Copy
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Choose 1 of the Defending Pokémon’s attacks. Copy copies that
+            attack. This attack does nothing if Mew doesn’t have the Energy
+            necessary to use that attack. (You must still do anything else
+            required for that attack.) Mew performs that attack.
+        - name: Extra Draw
+          cost:
+            - Fire
+          damage: undefined
+          effect: >-
+            If your opponent has any Pokémon-ex in play, search your deck for up
+            to 2 basic Energy cards and attach them to Mew. Shuffle your deck
+            afterward.
+      weaknesses:
+        - type: Psychic
+      retreat: '1'
+    editions:
+      unlimited: 794f47c1-13e2-4225-af27-647ab388a144
+    integrations:
+      pokeData: '43633'
+      tcgPlayer: '87407'
+  double-rainbow-energy-4:
+    name: Double Rainbow Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Rare
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Double Rainbow Energy can be attached only to an Evolved Pokémon
+        (excluding Pokémon-ex). While in play, Double Rainbow Energy provides
+        every type of Energy but provides 2 Energy at a time. (Has no effect
+        other than providing Energy.) Damage done to your opponent’s Pokémon by
+        the Pokémon Double Rainbow Energy is attached to is reduced by 10
+        (before applying Weakness and Resistance). When the Pokémon Double
+        Rainbow Energy is attached to is no longer an Evolved Pokémon, discard
+        Double Rainbow Energy.
+      energyType: Special
+    editions:
+      unlimited: 921c7081-091d-4d7a-8bad-2cb404ea10f3
+    integrations:
+      pokeData: '43622'
+      tcgPlayer: '84894'
+  charmeleon-5:
+    name: Charmeleon δ
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Uncommon
+      category: Pokemon
+      dexId:
+        - '5'
+      hp: '70'
+      types:
+        - Lightning
+      evolveFrom: Charmander
+      level: undefined
+      stage: Stage1
+      attacks:
+        - name: Slash
+          cost:
+            - Colorless
+            - Colorless
+          damage: '20'
+        - name: Thunder Jolt
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: Flip a coin. If tails, Charmeleon does 10 damage to itself.
+      weaknesses:
+        - type: Water
+      retreat: '1'
+    editions:
+      unlimited: 4cdc9ebf-3c32-45bf-9b9e-6d7fc57428b1
+    integrations:
+      pokeData: '43621'
+      tcgPlayer: '84237'
+  bills-maintenance-6:
+    name: Bill’s Maintenance
+    integrations:
+      priceCharting: bill's-maintenance
+      pokeData: '43628'
+      tcgPlayer: '83840'
+    details:
+      illustrator: Ken Sugimori
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        If you have any cards in your hand, shuffle 1 of them into your deck,
+        then draw 3 cards.
+      trainerType: Supporter
+    editions:
+      unlimited: 4f625267-68ed-4cbf-9c21-30ce1c138a43
+  rare-candy-7:
+    name: Rare Candy
+    details:
+      illustrator: Ryo Ueda
+      rarity: Uncommon
+      category: Trainer
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Choose 1 of your Basic Pokémon in play. If you have a Stage 1 or Stage 2
+        card that evolves from that Pokémon in your hand, put that card on the
+        Basic Pokémon. (This counts as evolving that Pokémon.)
+      trainerType: Item
+    editions:
+      unlimited: 2285f747-d051-47fe-819c-37ee209ed10d
+    integrations:
+      pokeData: '43635'
+      tcgPlayer: '88592'
+  boost-energy-8:
+    name: Boost Energy
+    details:
+      illustrator: Shin-ichi Yoshikawa
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        Boost Energy can be attached only to an Evolved Pokémon. Discard Boost
+        Energy at the end of the turn it was attached. Boost Energy provides
+        ColorlessColorlessColorless Energy. The Pokémon Boost Energy is attached
+        to can’t retreat. If the Pokémon Boost Energy is attached to isn’t an
+        Evolved Pokémon, discard Boost Energy.
+      energyType: Special
+    editions:
+      unlimited: 4563e18d-0457-4450-9ac8-a3089277bff6
+    integrations:
+      pokeData: '43620'
+      tcgPlayer: '83941'
+  rainbow-energy-9:
+    name: δ Rainbow Energy
+    details:
+      illustrator: Takumi Akabane
+      rarity: Uncommon
+      category: Energy
+      hp: undefined
+      level: undefined
+      retreat: undefined
+      effect: >-
+        δ Rainbow Energy provides Colorless Energy. While attached to a Pokémon
+        that has δ on its card, δ Rainbow Energy provides every type of Energy
+        but provides only 1 Energy at a time. (Has no effect other than
+        providing Energy.)
+      energyType: Special
+    editions:
+      unlimited: 4e4cc7f5-c8a6-4b7f-b104-036d98fc09ca
+    integrations:
+      pokeData: '43630'
+      tcgPlayer: '84756'
+  charmander-10:
+    name: Charmander δ
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '4'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Scratch
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Bite
+          cost:
+            - Lightning
+            - Colorless
+          damage: '20'
+      weaknesses:
+        - type: Water
+      retreat: '1'
+    editions:
+      unlimited: 996ade28-3014-417e-8518-2cd7e46096d9
+    integrations:
+      pokeData: '43629'
+      tcgPlayer: '84221'
+  meowth-11:
+    name: Meowth δ
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '52'
+      hp: '40'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Feint Attack
+          cost:
+            - Darkness
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent’s Pokémon. This attack does 10 damage to
+            that Pokémon. This attack’s damage isn’t affected by Weakness,
+            Resistance, Poké-Powers, Poké-Bodies, or any other effects on that
+            Pokémon.
+      weaknesses:
+        - type: Fighting
+      retreat: '1'
+    editions:
+      unlimited: 8d0b6d3f-0569-4b15-b456-99f1edc3ec96
+    integrations:
+      pokeData: '43624'
+      tcgPlayer: '87330'
+  pikachu-12:
+    name: Pikachu
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 26e07fb9-a4fa-458c-adef-18f63139773a
+    details:
+      illustrator: Naoyo Kimura
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '50'
+      types:
+        - Lightning
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Lightning Ball
+          cost:
+            - Lightning
+          damage: '10'
+        - name: Thunderbolt
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: Discard all Energy cards attached to Pikachu.
+      weaknesses:
+        - type: Fighting
+      retreat: '1'
+    editions:
+      unlimited: 4ebd24bb-e216-4791-bb7d-9f94e24a801f
+    integrations:
+      pokeData: '43634'
+      tcgPlayer: '88085'
+  pikachu-13:
+    name: Pikachu δ
+    details:
+      illustrator: Ryo Ueda
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '25'
+      hp: '40'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Electric Punch
+          cost:
+            - Colorless
+          damage: '10'
+        - name: Heavy Metal
+          cost:
+            - Colorless
+            - Colorless
+          damage: 10+
+          effect: >-
+            Flip a coin for each Metal Energy attached to Pikachu. This attack
+            does 10 damage plus 20 more damage for each heads.
+      weaknesses:
+        - type: Fighting
+      retreat: '1'
+    editions:
+      unlimited: 52e16851-6e08-4eaf-b1e3-11ecb8ff45a6
+    integrations:
+      pokeData: '43626'
+      tcgPlayer: '88110'
+  pelipper-14:
+    name: Pelipper δ
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: 8ca62e67-26db-41a9-b28c-51165fdca1a5
+    details:
+      illustrator: Mitsuhiro Arita
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '279'
+      hp: '70'
+      types:
+        - Lightning
+      evolveFrom: Wingull
+      level: undefined
+      stage: Stage1
+      abilities:
+        - type: Poke-BODY
+          name: Mist
+          effect: >-
+            Any damage done to Pelipper by attacks from Stage 2 Evolved Pokémon
+            (both yours and your opponent’s) is reduced by 30 (after applying
+            Weakness and Resistance).
+      attacks:
+        - name: Lightning Wing
+          cost:
+            - Lightning
+            - Colorless
+            - Colorless
+          damage: '50'
+          effect: >-
+            Does 10 damage to 1 of your Benched Pokémon. (Don’t apply Weakness
+            and Resistance for Benched Pokémon.)
+      weaknesses:
+        - type: Lightning
+      resistances:
+        - type: Fighting
+          value: '-30'
+      retreat: '0'
+    editions:
+      unlimited: 055cb4fe-e6ee-46ab-994f-3e7f541141b1
+    integrations:
+      pokeData: '43625'
+      tcgPlayer: '87981'
+  zangoose-15:
+    name: Zangoose δ
+    variants:
+      holo:
+        name: Holo
+        description: Holo.
+        id: f938df7a-8c42-4007-8ac9-200d96391ce3
+    details:
+      illustrator: Kouki Saitou
+      rarity: Common
+      category: Pokemon
+      dexId:
+        - '335'
+      hp: '70'
+      types:
+        - Metal
+      level: undefined
+      stage: Basic
+      attacks:
+        - name: Detect
+          cost:
+            - Colorless
+          damage: undefined
+          effect: >-
+            Flip a coin. If heads, prevent all effects of an attack, including
+            damage, done to Zangoose during your opponent’s next turn.
+        - name: Metal Claw
+          cost:
+            - Metal
+            - Colorless
+            - Colorless
+          damage: '40'
+      weaknesses:
+        - type: Fighting
+      retreat: '1'
+    editions:
+      unlimited: 10dec16b-3d98-41f8-a97f-974fb709275e
+    integrations:
+      pokeData: '43636'
+      tcgPlayer: '90709'
+  espeon-gold-star-16:
+    name: Espeon ★
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '196'
+      hp: '70'
+      types:
+        - Psychic
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-POWER
+          name: Purple Ray
+          effect: >-
+            Once during your turn, when you put Espeon Star from your hand onto
+            your Bench, you may use this power. Each Active Pokémon (both yours
+            and your opponent’s) is now Confused.
+      attacks:
+        - name: Psychic Boom
+          cost:
+            - Psychic
+            - Psychic
+            - Colorless
+          damage: 30+
+          effect: >-
+            Does 30 damage plus 10 more damage for each Energy attached to the
+            Defending Pokémon.
+      weaknesses:
+        - type: Psychic
+      retreat: '1'
+    editions:
+      unlimited: 0d7e354d-b7d7-4031-a645-a9b10be69003
+    integrations:
+      pokeData: '43631'
+      tcgPlayer: '85329'
+  umbreon-gold-star-17:
+    name: Umbreon ★
+    details:
+      illustrator: Masakazu Fukuda
+      rarity: Ultra Rare
+      category: Pokemon
+      dexId:
+        - '197'
+      hp: '70'
+      types:
+        - Darkness
+      level: undefined
+      stage: Basic
+      abilities:
+        - type: Poke-POWER
+          name: Dark Ray
+          effect: >-
+            Once during your turn, when you put Umbreon Star from your hand onto
+            your Bench, you may choose 1 card from your opponent’s hand without
+            looking and discard it.
+      attacks:
+        - name: Feint Attack
+          cost:
+            - Darkness
+            - Darkness
+          damage: undefined
+          effect: >-
+            Choose 1 of your opponent’s Pokémon. This attack does 30 damage to
+            that Pokémon. This attack’s damage isn’t affected by Weakness,
+            Resistance, Poké-Powers, Poké-Bodies, or any other effects on that
+            Pokémon.
+      weaknesses:
+        - type: Fighting
+      resistances:
+        - type: Psychic
+          value: '-30'
+      retreat: '1'
+    editions:
+      unlimited: ac96e2f9-b6f5-4c87-ae74-c386ec154a1c
+    integrations:
+      pokeData: '43627'
+      tcgPlayer: '90153'
+products:
+  booster-pack:
+    name: Booster Pack
+    editions:
+      unlimited: 80a76264-a1d3-461c-8c40-ff5a7a542ec8
