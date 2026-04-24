@@ -17,9 +17,14 @@ import type {
 } from '../schema/Schema.js';
 
 const argv = await yargs(hideBin(process.argv))
-    .command('* <seriesFile> [seriesId]', '')
-    .positional('seriesFile', {
-        describe: 'Path to the _series.yaml file',
+    .command('* <collectibleType> <region> [seriesId]', '')
+    .positional('collectibleType', {
+        describe: 'Collectible type directory under data, for example pokemon-card',
+        type: 'string',
+        demandOption: true,
+    })
+    .positional('region', {
+        describe: 'Region directory under the collectible type, for example english',
         type: 'string',
         demandOption: true,
     })
@@ -103,11 +108,15 @@ interface ReadYamlFileResult {
     idsAdded: number;
 }
 
+function getSeriesFilePath(collectibleType: string, region: string): string {
+    return path.resolve('data', collectibleType, region, '_series.yaml');
+}
+
 function addVariantIds(
     yamlDoc: Document,
     nodePath: (string | number)[],
     variants: Record<string, SnagVariant>,
-    seriesName: string,
+    seriesRef: string,
     locationPrefix: string,
     checkOnly: boolean
 ): { updated: boolean; idsObserved: number; idsAdded: number } {
@@ -116,7 +125,7 @@ function addVariantIds(
     let idsAdded = 0;
 
     for (const variantKey of Object.keys(variants)) {
-        const location = `${seriesName} ${locationPrefix}.variants.${variantKey}.id`;
+        const location = `${seriesRef} ${locationPrefix}.variants.${variantKey}.id`;
         const variant = variants[variantKey];
 
         if (variant.id) {
@@ -142,6 +151,7 @@ function processEditionEntries(
     yamlDoc: Document,
     entries: Record<string, SnagItem>,
     sectionKey: 'items' | 'products',
+    seriesRef: string,
     series: SeriesDescriptor,
     editions: string[],
     checkOnly: boolean
@@ -149,7 +159,7 @@ function processEditionEntries(
     let updated = false;
     let idsObserved = 0;
     let idsAdded = 0;
-    const editionsSeen = new Set<string>();
+    const validEditions = new Set(editions);
 
     for (const entryKey of Object.keys(entries)) {
         const entry = entries[entryKey];
@@ -172,8 +182,12 @@ function processEditionEntries(
         let updatedEditions = false;
 
         for (const editionKey of Object.keys(normalizedEditions)) {
-            editionsSeen.add(editionKey);
-            const location = `${series.name} ${locationPrefix}.editions.${editionKey}`;
+            if (!validEditions.has(editionKey)) {
+                console.log(`Edition ${editionKey} in ${seriesRef} ${locationPrefix} is not defined in series.`, Object.keys(normalizedEditions), editions);
+                process.exit(1);
+            }
+
+            const location = `${seriesRef} ${locationPrefix}.editions.${editionKey}`;
             const existingId = normalizedEditions[editionKey];
 
             if (existingId) {
@@ -199,19 +213,10 @@ function processEditionEntries(
             continue;
         }
 
-        const variantResult = addVariantIds(yamlDoc, [sectionKey, entryKey], entry.variants, series.name, locationPrefix, checkOnly);
+        const variantResult = addVariantIds(yamlDoc, [sectionKey, entryKey], entry.variants, seriesRef, locationPrefix, checkOnly);
         updated = variantResult.updated || updated;
         idsObserved += variantResult.idsObserved;
         idsAdded += variantResult.idsAdded;
-    }
-
-    if (editionsSeen.size < Object.keys(series.editions ?? {}).length) {
-        console.log(
-            `Editions in ${series.name} do not match editions in series.`,
-            Array.from(editionsSeen),
-            Object.keys(series.editions ?? {})
-        );
-        process.exit(1);
     }
 
     return { updated, idsObserved, idsAdded };
@@ -220,6 +225,7 @@ function processEditionEntries(
 function processAdditionalEntries(
     yamlDoc: Document,
     groups: NonNullable<SnagYamlData['additional']>,
+    seriesRef: string,
     series: SeriesDescriptor,
     checkOnly: boolean
 ): { updated: boolean; idsObserved: number; idsAdded: number } {
@@ -236,7 +242,7 @@ function processAdditionalEntries(
             }
 
             const locationPrefix = `additional.${groupKey}.items.${itemKey}`;
-            const itemLocation = `${series.name} ${locationPrefix}.id`;
+            const itemLocation = `${seriesRef} ${locationPrefix}.id`;
 
             if (!item.id) {
                 item.id = snagId(itemLocation, checkOnly);
@@ -260,7 +266,7 @@ function processAdditionalEntries(
                 yamlDoc,
                 ['additional', groupKey, 'items', itemKey],
                 item.variants,
-                series.name,
+                seriesRef,
                 locationPrefix,
                 checkOnly
             );
@@ -273,7 +279,7 @@ function processAdditionalEntries(
     return { updated, idsObserved, idsAdded };
 }
 
-function addIds(yamlDoc: Document, series: SeriesDescriptor, checkOnly: boolean): AddIdsResult {
+function addIds(yamlDoc: Document, seriesRef: string, series: SeriesDescriptor, checkOnly: boolean): AddIdsResult {
     let updated = false;
     let idsObserved = 0;
     let idsAdded = 0;
@@ -282,21 +288,21 @@ function addIds(yamlDoc: Document, series: SeriesDescriptor, checkOnly: boolean)
     const editions = series.editions ? Object.keys(series.editions) : ['unlimited'];
 
     if (yamlData.items) {
-        const itemResult = processEditionEntries(yamlDoc, yamlData.items, 'items', series, editions, checkOnly);
+        const itemResult = processEditionEntries(yamlDoc, yamlData.items, 'items', seriesRef, series, editions, checkOnly);
         updated = itemResult.updated || updated;
         idsObserved += itemResult.idsObserved;
         idsAdded += itemResult.idsAdded;
     }
 
     if (yamlData.products) {
-        const productResult = processEditionEntries(yamlDoc, yamlData.products, 'products', series, editions, checkOnly);
+        const productResult = processEditionEntries(yamlDoc, yamlData.products, 'products', seriesRef, series, editions, checkOnly);
         updated = productResult.updated || updated;
         idsObserved += productResult.idsObserved;
         idsAdded += productResult.idsAdded;
     }
 
     if (yamlData.additional) {
-        const additionalResult = processAdditionalEntries(yamlDoc, yamlData.additional, series, checkOnly);
+        const additionalResult = processAdditionalEntries(yamlDoc, yamlData.additional, seriesRef, series, checkOnly);
         updated = additionalResult.updated || updated;
         idsObserved += additionalResult.idsObserved;
         idsAdded += additionalResult.idsAdded;
@@ -315,7 +321,7 @@ function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boo
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const yamlDoc = parseDocument(fileContent);
-    const result = addIds(yamlDoc, series, checkOnly);
+    const result = addIds(yamlDoc, leaf, series, checkOnly);
     if (result.updated) {
         fs.writeFileSync(filePath, String(yamlDoc), 'utf8');
         console.log(`Updated ${leaf}: added ${result.idsAdded} IDs.`);
@@ -328,7 +334,7 @@ function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boo
     };
 }
 
-function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolean): ReadYamlFileResult {
+function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolean, singleSeriesId?: string): ReadYamlFileResult {
     const totals: ReadYamlFileResult = {
         seriesObserved: 0,
         idsObserved: 0,
@@ -356,6 +362,10 @@ function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolea
             continue;
         }
 
+        if (singleSeriesId && path.basename(fullPath, '.yaml') !== singleSeriesId) {
+            continue;
+        }
+
         const result = readYamlFile(fullPath, getSeries, checkOnly);
         totals.seriesObserved += result.seriesObserved;
         totals.idsObserved += result.idsObserved;
@@ -366,7 +376,13 @@ function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolea
 }
 
 async function main(): Promise<void> {
-    const { check: checkOnly, seriesFile, seriesId: singleSeriesId } = argv;
+    const { check: checkOnly, collectibleType, region, seriesId: singleSeriesId } = argv;
+    const seriesFile = getSeriesFilePath(collectibleType, region);
+
+    if (!fs.existsSync(seriesFile)) {
+        throw new Error(`Cannot find series catalog: ${seriesFile}`);
+    }
+
     const seriesData = fs.readFileSync(seriesFile, 'utf8');
     const seriesDoc = parseDocument(seriesData);
     const seriesYaml = seriesDoc.toJS() as GenerationMap;
@@ -390,7 +406,7 @@ async function main(): Promise<void> {
     };
 
     const fileDir = path.dirname(seriesFile);
-    const totals = recurseDir(fileDir, getSeries, checkOnly);
+    const totals = recurseDir(fileDir, getSeries, checkOnly, singleSeriesId);
     console.log(`Checked ${totals.seriesObserved} series and ${totals.idsObserved} IDs.`);
 }
 

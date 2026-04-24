@@ -16,9 +16,14 @@ import type {
 } from '../schema/Schema.js';
 
 const argv = await yargs(hideBin(process.argv))
-    .command('* <seriesFile>', '')
-    .positional('seriesFile', {
-        describe: 'Path to a series YAML file in the directory to process',
+    .command('* <collectibleType> <region>', '')
+    .positional('collectibleType', {
+        describe: 'Collectible type directory under data, for example pokemon-card',
+        type: 'string',
+        demandOption: true,
+    })
+    .positional('region', {
+        describe: 'Region directory under the collectible type, for example english',
         type: 'string',
         demandOption: true,
     })
@@ -29,7 +34,7 @@ const argv = await yargs(hideBin(process.argv))
     })
     .parse();
 
-const { check: checkOnly, seriesFile } = argv;
+const { check: checkOnly, collectibleType, region } = argv;
 
 type ReferenceInput = string | ReferenceOf;
 type DiscreteItemInput = Omit<DiscreteItem, 'variantOf'> & { variantOf?: ReferenceInput };
@@ -345,6 +350,10 @@ interface ReadSeriesFilesResult {
     filesNeedingUpdate: number;
 }
 
+function getSeriesFilePath(collectibleTypeValue: string, regionValue: string): string {
+    return path.resolve('data', collectibleTypeValue, regionValue, '_series.yaml');
+}
+
 function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): ReadSeriesFilesResult {
     const entries = fs.readdirSync(dirPath);
     let filesChecked = 0;
@@ -390,6 +399,11 @@ function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): ReadSeriesFil
 }
 
 async function main(): Promise<void> {
+    const seriesFile = getSeriesFilePath(collectibleType, region);
+    if (!fs.existsSync(seriesFile)) {
+        throw new Error(`Cannot find series catalog: ${seriesFile}`);
+    }
+
     const fileDir = path.dirname(seriesFile);
     const stats = fs.statSync(fileDir);
     if (!stats.isDirectory()) {

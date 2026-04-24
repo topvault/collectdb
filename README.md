@@ -32,7 +32,7 @@ The project is designed so that the schema is the contract. Data shape is not de
 
 ## Repository Layout
 
-The repository is organized around collectible type and language.
+The repository is organized around collectible type and a second directory level that represents language or region, depending on the dataset.
 
 ```text
 data/
@@ -201,13 +201,13 @@ collectdb also includes data-specific maintenance scripts for ID assignment and 
 To assign missing opaque IDs for items, products, additional items, and variants:
 
 ```sh
-npm run snag -- data/pokemon-card/english/_series.yaml
+npm run snag -- pokemon-card english
 ```
 
 To normalize `referenceOf` and `variantOf` objects from shorthand IDs or partial objects:
 
 ```sh
-npm run reference-of -- data/pokemon-card/english/_series.yaml
+npm run reference-of -- pokemon-card english
 ```
 
 ## Design Principles
