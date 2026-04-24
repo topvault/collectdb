@@ -1514,6 +1514,10 @@ items:
     integrations:
       pokeData: '13460'
       tcgPlayer: '124053'
+    variants:
+      fixed-energy:
+        name: Fixed Lightning Energy
+        description: Errata'd card, ability text reads "if attached to any Pokémon"
   electabuzz-41:
     name: Electabuzz
     details:
@@ -1688,7 +1692,8 @@ items:
             - Colorless
           damage: '40'
           effect: >-
-            The Defending Pokémon can't retreat during your opponent's next turn.
+            The Defending Pokémon can't retreat during your opponent's next
+            turn.
         - name: Tail Swing
           cost:
             - Psychic
