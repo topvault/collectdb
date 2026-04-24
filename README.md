@@ -194,6 +194,22 @@ The validator walks the data tree, parses YAML, and checks:
 - `_series.yaml` files against the generation map schema
 - series files against the series items schema
 
+## Maintenance Scripts
+
+collectdb also includes data-specific maintenance scripts for ID assignment and reference normalization.
+
+To assign missing opaque IDs for items, products, additional items, and variants:
+
+```sh
+npm run snag -- data/pokemon-card/english/_series.yaml
+```
+
+To normalize `referenceOf` and `variantOf` objects from shorthand IDs or partial objects:
+
+```sh
+npm run reference-of -- data/pokemon-card/english/_series.yaml
+```
+
 ## Design Principles
 
 - schema-first: the schema defines the contract

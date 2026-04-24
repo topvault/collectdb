@@ -205,6 +205,12 @@ export const SeriesItemsSchema = z
 
 export type SeriesItems = z.infer<typeof SeriesItemsSchema>;
 export type Generation = z.infer<typeof GenerationSchema>;
+export type SeriesDescriptor = z.infer<typeof SeriesSchema>;
+export type Variant = z.infer<typeof VariantSchema>;
+export type DiscreteItem = z.infer<typeof DiscreteItemSchema>;
+export type ReferenceItem = z.infer<typeof ReferenceItemSchema>;
+export type AdditionalItem = z.infer<typeof AdditionalItemSchema>;
+export type AdditionalGroup = z.infer<typeof AdditionalGroupSchema>;
 
 // The whole _series.yaml file.
 export const GenerationMapSchema = z.record(GenerationKey, GenerationSchema);
