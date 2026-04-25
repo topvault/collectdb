@@ -9,24 +9,6 @@ items:
       illustrator: Akira Komayama
       rarity: Common
       category: Pokemon
-      dexId:
-        - '322'
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ember
-          cost:
-            - Fire
-            - Colorless
-          damage: '30'
-          effect: Discard an Energy attached to this Pokémon.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: ac083774-f43d-4e2b-a18a-372e44179994
       reverse-holo: 151c046e-9c3a-4229-b5dc-fbfb45d9bd27
@@ -40,32 +22,6 @@ items:
       illustrator: Shin Nagasawa
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '323'
-      hp: '110'
-      types:
-        - Fire
-      evolveFrom: Team Magma's Numel
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Burning Draft
-          effect: >-
-            Once during your turn (before your attack), you may attach a
-            Fighting or Fire Energy card from your discard pile to this Pokémon.
-      attacks:
-        - name: Flame Ball
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '60'
-          effect: Move a basic Energy from this Pokémon to 1 of your Benched Pokémon.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: ee8242b7-5a7e-4770-a7d5-c07303da37f5
       reverse-holo: 8ea6712f-6e31-434d-babd-1897e137de7c
@@ -79,22 +35,6 @@ items:
       illustrator: Sanosuke Sakuma
       rarity: Common
       category: Pokemon
-      dexId:
-        - '363'
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Water Gun
-          cost:
-            - Water
-          damage: '10'
-      weaknesses:
-        - type: Metal
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 479cfa25-91aa-44d4-8ca7-a929b6af2afb
       reverse-holo: b812441a-9c6c-407d-a240-5c1b38603da2
@@ -108,36 +48,6 @@ items:
       illustrator: Naoki Saito
       rarity: Common
       category: Pokemon
-      dexId:
-        - '364'
-      hp: '90'
-      types:
-        - Water
-      evolveFrom: Team Aqua's Spheal
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Splatter
-          cost:
-            - Water
-            - Colorless
-          damage: undefined
-          effect: >-
-            This attack does 20 damage to 1 of your opponent's Pokémon. (Don't
-            apply Weakness and Resistance for Benched Pokémon.)
-        - name: Hail Storm
-          cost:
-            - Water
-            - Colorless
-            - Colorless
-          damage: 60＋
-          effect: >-
-            If your opponent's Active Pokémon is a Team Magma Pokémon, this
-            attack does 60 more damage.
-      weaknesses:
-        - type: Metal
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: 54f86d9f-619c-4acb-9ae1-e5de009dc109
       reverse-holo: bfcd3a78-dee4-4ae7-9f75-d671a0a183d8
@@ -151,37 +61,6 @@ items:
       illustrator: Hitoshi Ariga
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '365'
-      hp: '140'
-      types:
-        - Water
-      evolveFrom: Team Aqua's Sealeo
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Power Blow
-          cost:
-            - Colorless
-          damage: 30×
-          effect: >-
-            This attack does 30 damage times the amount of Energy attached to
-            this Pokémon.
-        - name: Dual Blizzard
-          cost:
-            - Water
-            - Water
-            - Water
-            - Colorless
-          damage: undefined
-          effect: >-
-            Discard 2 Water Energy attached to this Pokémon. This attack does 80
-            damage to 2 of your opponent's Pokémon. (Don't apply Weakness and
-            Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Metal
-          value: ×2
-      retreat: '4'
     editions:
       unlimited: 6bd48de0-a6c9-42ee-ad04-ddaa4e53b5a6
       reverse-holo: d359e680-ef36-49e7-9ce3-79dd54749b78
@@ -197,34 +76,6 @@ items:
       illustrator: nagimiso
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '382'
-      hp: '190'
-      types:
-        - Water
-      level: undefined
-      suffix: EX
-      abilities:
-        - type: Ability
-          name: Power Saver
-          effect: >-
-            If there are 4 or fewer Team Aqua Pokémon in play, this Pokémon
-            can't attack.
-      attacks:
-        - name: Aqua Impact
-          cost:
-            - Water
-            - Water
-            - Water
-            - Colorless
-          damage: 80＋
-          effect: >-
-            This attack does 20 more damage for each Colorless in your
-            opponent's Active Pokémon's Retreat Cost.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '4'
   team-aquas-grimer-7:
     name: Team Aqua's Grimer
     integrations:
@@ -235,28 +86,6 @@ items:
       illustrator: kawayoo
       rarity: Common
       category: Pokemon
-      dexId:
-        - '88'
-      hp: '70'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pound
-          cost:
-            - Psychic
-          damage: '10'
-        - name: Mud-Slap
-          cost:
-            - Psychic
-            - Colorless
-            - Colorless
-          damage: '30'
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: f90b82ff-15de-476d-b9f0-d952de81aa22
       reverse-holo: dc8ca3e0-1431-414e-9973-a57aac803912
@@ -270,34 +99,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '89'
-      hp: '110'
-      types:
-        - Psychic
-      evolveFrom: Team Aqua's Grimer
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Sludge Festival
-          effect: >-
-            The Retreat Cost of each Pokémon in play (except for Team Aqua
-            Pokémon) is Colorless more.
-      attacks:
-        - name: Pester
-          cost:
-            - Psychic
-            - Colorless
-            - Colorless
-          damage: 60＋
-          effect: >-
-            If your opponent's Active Pokémon is affected by a Special
-            Condition, this attack does 60 more damage.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: 6da39bc9-ddbc-4019-83cd-9b49312d71dd
       reverse-holo: 1adde1f5-f06e-46d1-befb-7b760267329f
@@ -311,33 +112,6 @@ items:
       illustrator: Naoki Saito
       rarity: Common
       category: Pokemon
-      dexId:
-        - '336'
-      hp: '90'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Venomous Fang
-          cost:
-            - Psychic
-          damage: '10'
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Poisoned.
-        - name: Venom Tail
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            If your opponent's Active Pokémon is affected by a Special
-            Condition, discard an Energy attached to that Pokémon.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 4bb2be04-e22a-404f-aa65-3bed7ce72544
       reverse-holo: 791f520a-f6d1-4ee1-a951-fa54fccdd634
@@ -351,26 +125,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '343'
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Telekinesis
-          cost:
-            - Psychic
-            - Colorless
-          damage: undefined
-          effect: >-
-            This attack does 20 damage to 1 of your opponent's Pokémon. This
-            attack's damage isn't affected by Weakness or Resistance.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 1835fa9e-f9d4-4370-88ab-273ecdb6244c
       reverse-holo: 2a5d427a-2a2b-40b2-8312-44217c45759b
@@ -384,31 +138,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '344'
-      hp: '90'
-      types:
-        - Psychic
-      evolveFrom: Team Magma's Baltoy
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Magma Switch
-          effect: >-
-            Once during your turn (before your attack), you may move a basic
-            Energy from 1 of your Pokémon to 1 of your Team Magma Pokémon.
-      attacks:
-        - name: Power Beam
-          cost:
-            - Psychic
-            - Colorless
-            - Colorless
-          damage: '70'
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: b4416faf-3468-4008-b76c-db4e629c75ec
       reverse-holo: d239b52d-548c-48a9-bbcf-a95605ba0e98
@@ -422,22 +151,6 @@ items:
       illustrator: Akira Komayama
       rarity: Common
       category: Pokemon
-      dexId:
-        - '304'
-      hp: '60'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Gnaw
-          cost:
-            - Fighting
-          damage: '10'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 817bdf71-86e5-41be-97c9-2b83ac3519e6
       reverse-holo: 2cffe722-fd14-46bc-8580-e040d6766de4
@@ -451,31 +164,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '305'
-      hp: '90'
-      types:
-        - Fighting
-      evolveFrom: Team Magma's Aron
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Gnaw
-          cost:
-            - Fighting
-            - Colorless
-          damage: '30'
-        - name: Take Down
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '60'
-          effect: This Pokémon does 10 damage to itself.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: c25a8eec-7f74-4efc-bfeb-709a624fffb0
       reverse-holo: 42ef88b7-cecf-4e3f-993a-34c2f6c1ba4d
@@ -489,39 +177,6 @@ items:
       illustrator: TOKIYA
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '306'
-      hp: '140'
-      types:
-        - Fighting
-      evolveFrom: Team Magma's Lairon
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Rock Stomp
-          cost:
-            - Fighting
-            - Colorless
-          damage: 40×
-          effect: >-
-            Discard as many Fighting Energy attached to your Pokémon as you
-            like. This attack does 40 damage times the amount of Fighting Energy
-            you discarded.
-        - name: Boulder Storm
-          cost:
-            - Fighting
-            - Fighting
-            - Fighting
-            - Colorless
-          damage: '120'
-          effect: >-
-            This attack does 20 damage to each of your opponent's Benched
-            Pokémon that has any damage counters on it. (Don't apply Weakness
-            and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '4'
     editions:
       unlimited: e228319e-2ab9-496d-8976-a82755dd84c9
       reverse-holo: e7056f29-3e28-44d3-9ed7-40ee9fafc11d
@@ -537,34 +192,6 @@ items:
       illustrator: nagimiso
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '383'
-      hp: '190'
-      types:
-        - Fighting
-      level: undefined
-      suffix: EX
-      abilities:
-        - type: Ability
-          name: Power Saver
-          effect: >-
-            If there are 4 or fewer Team Magma Pokémon in play, this Pokémon
-            can't attack.
-      attacks:
-        - name: Magma Quake
-          cost:
-            - Fighting
-            - Fighting
-            - Fighting
-            - Colorless
-          damage: 80＋
-          effect: >-
-            If your opponent's Active Pokémon already has any damage counters on
-            it, this attack does 80 more damage.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '4'
   team-aquas-poochyena-16:
     name: Team Aqua's Poochyena
     integrations:
@@ -575,33 +202,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '261'
-      hp: '60'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Roar
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent switches his or her Active Pokémon with 1 of his or
-            her Benched Pokémon.
-        - name: Bite
-          cost:
-            - Water
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 05bb5a5f-674c-44a5-b29f-ccadec8baf53
       reverse-holo: 9d44ff00-4698-4590-9731-7766de45a374
@@ -615,31 +215,6 @@ items:
       illustrator: TOKIYA
       rarity: Common
       category: Pokemon
-      dexId:
-        - '261'
-      hp: '60'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Infiltrate
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Your opponent reveals his or her hand.
-        - name: Bite
-          cost:
-            - Fighting
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 2eeed558-6938-4432-a4a5-e241a8066650
       reverse-holo: 2543c9cd-a931-4a12-a240-f69ff303e5b3
@@ -653,39 +228,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '262'
-      hp: '100'
-      types:
-        - Darkness
-      evolveFrom: Team Aqua's Poochyena
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Teampact
-          cost:
-            - Water
-            - Colorless
-          damage: 30×
-          effect: >-
-            Flip a coin for each Team Aqua Pokémon you have in play. This attack
-            does 30 damage times the number of heads.
-        - name: Crunch
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '80'
-          effect: >-
-            Flip a coin. If heads, discard an Energy attached to your opponent's
-            Active Pokémon.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 3e5c9654-89f1-4aa6-8c99-31aff2ee0606
       reverse-holo: 28a8c87a-c365-4b60-81bf-ebe4f255ad5b
@@ -699,36 +241,6 @@ items:
       illustrator: Hitoshi Ariga
       rarity: Common
       category: Pokemon
-      dexId:
-        - '262'
-      hp: '100'
-      types:
-        - Darkness
-      evolveFrom: Team Magma's Poochyena
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Bite
-          cost:
-            - Fighting
-            - Colorless
-          damage: '30'
-        - name: Hostile Fang
-          cost:
-            - Fighting
-            - Fighting
-            - Colorless
-          damage: 80＋
-          effect: >-
-            If your opponent's Active Pokémon is a Team Aqua Pokémon, this
-            attack does 40 more damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 5b5675de-86c6-4514-bd99-8644ba8ece80
       reverse-holo: 60afe955-2ca9-42e5-83b0-39e72e439586
@@ -742,23 +254,6 @@ items:
       illustrator: Sanosuke Sakuma
       rarity: Common
       category: Pokemon
-      dexId:
-        - '318'
-      hp: '50'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Fin Smack
-          cost:
-            - Darkness
-          damage: 10×
-          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: f7dac21d-485d-4a5b-bec0-0dcb37d52cad
       reverse-holo: 9632f6b6-5d8d-48cd-a8f8-dea5164b8940
@@ -772,32 +267,6 @@ items:
       illustrator: kawayoo
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '319'
-      hp: '90'
-      types:
-        - Darkness
-      evolveFrom: Team Aqua's Carvanha
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Aqua Search
-          effect: >-
-            Once during your turn (before your attack), you may search your deck
-            for a Team Aqua Pokémon, reveal it, and put it into your hand.
-            Shuffle your deck afterward.
-      attacks:
-        - name: Sharp Fang
-          cost:
-            - Darkness
-            - Colorless
-            - Colorless
-          damage: '70'
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: '0'
     editions:
       unlimited: 4c746c4f-2e8e-4bce-bad6-e9d292514038
       reverse-holo: ede95571-a8ca-438a-9022-1d7783d76c20
@@ -811,34 +280,6 @@ items:
       illustrator: Shin Nagasawa
       rarity: Common
       category: Pokemon
-      dexId:
-        - '335'
-      hp: '90'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Call for Family
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Basic Team Magma Pokémon and put them
-            onto your Bench. Shuffle your deck afterward.
-        - name: Team Play
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 20×
-          effect: >-
-            This attack does 20 damage times the number of Team Magma Pokémon on
-            your Bench.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 5a125c71-525f-40ca-96a8-dbf9146501b7
       reverse-holo: eeddb1cd-ff12-4926-9458-61a8bc105769
@@ -848,19 +289,6 @@ items:
       illustrator: Toyste Beach
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      attacks:
-        - name: Aqua Diffuser
-          cost:
-            - Water
-          damage: undefined
-          effect: Your opponent's Active Pokémon is now Confused and Poisoned.
-      retreat: undefined
-      effect: >-
-        The Team Aqua Pokémon this card is attached to can also use the attack
-        on this card. (You still need the necessary Energy to use this attack.)
-      trainerType: Tool
     editions:
       unlimited: 954e72b6-ed83-429a-8161-554e6e4fa761
       reverse-holo: 4d96f46f-1786-4fc8-ad58-50a56680fb83
@@ -873,21 +301,6 @@ items:
       illustrator: Toyste Beach
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      attacks:
-        - name: Magma Pointer
-          cost:
-            - Fighting
-          damage: undefined
-          effect: >-
-            This attack does 20 damage to 1 of your opponent's Pokémon. (Don't
-            apply Weakness and Resistance for Benched Pokémon.)
-      retreat: undefined
-      effect: >-
-        The Team Magma Pokémon this card is attached to can also use the attack
-        on this card. (You still need the necessary Energy to use this attack.)
-      trainerType: Tool
     editions:
       unlimited: 948569a6-91fa-48e8-b551-2ef66b39b4a6
       reverse-holo: f146f32c-d6fb-48ce-a6d0-58d3a3aa46d2
@@ -900,13 +313,6 @@ items:
       illustrator: GAME FREAK inc.
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Attach a basic Energy card from your discard pile to your Active Team
-        Aqua Pokémon.
-      trainerType: Supporter
     editions:
       unlimited: d89d8481-e5fd-4700-804a-adc193a3773a
       reverse-holo: e8b0a075-1928-4970-902b-67277e482670
@@ -919,14 +325,6 @@ items:
       illustrator: GAME FREAK inc.
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Discard a card from your hand. (If you can't discard a card, you can't
-        play this card.) Draw 3 cards. If you discarded a Team Aqua Pokémon,
-        draw 1 more card.
-      trainerType: Supporter
     editions:
       unlimited: 0ea3c678-85e4-4e4d-91e2-35e562a0c0a3
       reverse-holo: f79c620f-a2fc-401c-ad9e-29b3fa68e100
@@ -943,14 +341,6 @@ items:
       illustrator: Toyste Beach
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Search your deck for a Basic Team Aqua Pokémon and a basic Water Energy
-        card, reveal them, and put them into your hand. Shuffle your deck
-        afterward.
-      trainerType: Item
     editions:
       unlimited: 262f0275-087b-4157-b29a-59af28a50723
       reverse-holo: 31fae205-c812-4abd-8923-d21cfc73ec07
@@ -964,13 +354,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        The Retreat Cost of each Pokémon in play (except for Team Aqua Pokémon)
-        is Colorless more.
-      trainerType: Stadium
     editions:
       unlimited: 98fb2b0f-d76c-4838-be5a-b2ea2c4b9e38
       reverse-holo: f7772996-c4b6-406e-af1e-290cec41bc93
@@ -980,11 +363,6 @@ items:
       illustrator: GAME FREAK inc.
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: Put up to 3 Team Magma Pokémon from your discard pile into your hand.
-      trainerType: Supporter
     editions:
       unlimited: 15d16693-0901-44ee-9042-2e7653e578ff
       reverse-holo: 1134ae7b-6fa4-4ad2-8c1f-5fb9e13ca1c9
@@ -997,14 +375,6 @@ items:
       illustrator: GAME FREAK inc.
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Discard a card from your hand. (If you can't discard a card, you can't
-        play this card.) Draw 3 cards. If you discarded a Team Magma Pokémon,
-        draw 1 more card.
-      trainerType: Supporter
     editions:
       unlimited: 4559f40e-60d1-420c-b107-7a206036be13
       reverse-holo: 19c031fd-996f-436a-8ce0-35851f14c5b7
@@ -1021,14 +391,6 @@ items:
       illustrator: Toyste Beach
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Search your deck for a Basic Team Magma Pokémon and a basic Fighting
-        Energy card, reveal them, and put them into your hand. Shuffle your deck
-        afterward.
-      trainerType: Item
     editions:
       unlimited: 87051442-adbe-4ef6-9185-43b412060533
       reverse-holo: 4daa4bd4-2502-4a50-8e97-962829353b9a
@@ -1042,14 +404,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Whenever any player puts a Basic Pokémon (except for Team Magma Pokémon)
-        from his or her hand onto his or her Bench, put 2 damage counters on
-        that Pokémon.
-      trainerType: Stadium
     editions:
       unlimited: df391766-22bd-453c-a8c7-569d321cd03f
       reverse-holo: c1dea361-67c8-4040-955e-16ea4897f7b2
@@ -1059,21 +413,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Uncommon
       category: Energy
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        This card can only be attached to Team Aqua Pokémon. Discard this card
-        at the end of the turn you attached it.
-
-
-        This card provides WaterWater Energy only while it is attached to a Team
-        Aqua Pokémon.
-
-
-        (If this card is attached to anything other than a Team Aqua Pokémon,
-        discard this card.)
-      energyType: Special
     editions:
       unlimited: 8070a97c-e225-4fac-a5eb-95904942d3dd
       reverse-holo: e113a1ab-7564-4cc8-8dfd-0d3d1e78f432
@@ -1086,21 +425,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Uncommon
       category: Energy
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        This card can only be attached to Team Magma Pokémon. Discard this card
-        at the end of the turn you attached it.
-
-
-        This card provides FightingFighting Energy only while it is attached to
-        a Team Magma Pokémon.
-
-
-        (If this card is attached to anything other than a Team Magma Pokémon,
-        discard this card.)
-      energyType: Special
     editions:
       unlimited: fb4089c9-3487-45cf-8776-c657d6d4dd09
       reverse-holo: 0142f3ea-aa73-4dd1-91b1-364173c242f1

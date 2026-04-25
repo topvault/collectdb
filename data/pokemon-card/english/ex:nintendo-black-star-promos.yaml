@@ -23,29 +23,6 @@ items:
       illustrator: Hiromichi Sugiyama
       rarity: Common
       category: Pokemon
-      dexId:
-        - '382'
-      hp: '120'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Major Flood
-          cost:
-            - Water
-            - Water
-            - Water
-            - Water
-          damage: '60'
-          effect: >-
-            Discard a Water Energy card attached to Kyogre ex. Does 10 damage to
-            each Benched Pokémon (both yours and your opponent's). (Don't apply
-            Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 3fbe2b31-3200-4893-acc8-9b5437a1e96a
     integrations:
@@ -74,29 +51,6 @@ items:
       illustrator: Kazuo Yazawa
       rarity: Common
       category: Pokemon
-      dexId:
-        - '383'
-      hp: '120'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Major Earthquake
-          cost:
-            - Fighting
-            - Fighting
-            - Fighting
-            - Fighting
-          damage: '80'
-          effect: >-
-            Discard a Fighting Energy card attached to Groudon ex. Does 10
-            damage to your Benched Pokémon. (Don't apply Weakness and Resistance
-            for Benched Pokémon.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 72ac65c1-542d-4d35-8b70-e24d945469e1
     integrations:
@@ -110,30 +64,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '252'
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tail Slap
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Razor Leaf
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Water
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: e5bb70d8-5820-4f22-91ca-516f905d47e9
     integrations:
@@ -145,38 +75,6 @@ items:
       illustrator: Midori Harada
       rarity: Common
       category: Pokemon
-      dexId:
-        - '253'
-      hp: '70'
-      types:
-        - Grass
-      evolveFrom: Treecko
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Poison Breath
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: The Defending Pokémon is now Poisoned.
-        - name: Swift
-          cost:
-            - Grass
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            This attack's damage isn't affected by Weakness, Resistance,
-            Poké-Powers, Poké-Bodies, or any other effects on the Defending
-            Pokémon.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Water
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: 62f80797-0bb7-4bb7-8450-0e2834fa04f1
     variants:
@@ -201,28 +99,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '258'
-      hp: '50'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pound
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Fury Swipes
-          cost:
-            - Colorless
-            - Colorless
-          damage: '10'
-          effect: Flip 3 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: a670cdab-af30-44aa-8ba9-51435bbeac9d
     variant:
@@ -239,30 +115,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '255'
-      hp: '40'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Peck
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Fireworks
-          cost:
-            - Fire
-            - Colorless
-          damage: '30'
-          effect: >-
-            Flip a coin. If tails, discard a Fire Energy card attached to
-            Torchic.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 3660e721-cc71-428f-a4c3-98033172273f
     variantOf:
@@ -285,30 +137,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '252'
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tail Slap
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Razor Leaf
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Water
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: d9ce43b1-38a4-4bf9-8fa5-31382f625150
     variant:
@@ -325,30 +153,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '255'
-      hp: '40'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Peck
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Fireworks
-          cost:
-            - Fire
-            - Colorless
-          damage: '30'
-          effect: >-
-            Flip a coin. If tails, discard a Fire Energy card attached to
-            Torchic.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 80d9e709-ef91-4172-a311-acaa2f2e0157
     integrations:
@@ -360,18 +164,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Trainer
-      dexId:
-        - '256'
-      hp: '70'
-      types:
-        - Fire
-      evolveFrom: Torchic
-      level: undefined
-      stage: Stage1
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 73fe9759-40c1-4529-a06d-1c2aa1ecebe3
     variants:
@@ -396,28 +188,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '258'
-      hp: '50'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pound
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Fury Swipes
-          cost:
-            - Colorless
-            - Colorless
-          damage: '10'
-          effect: Flip 3 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 1fa6eac3-65ce-4f16-b848-9608ea16475a
     integrations:
@@ -429,30 +199,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '259'
-      hp: '70'
-      types:
-        - Water
-      evolveFrom: Mudkip
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Bubble
-          cost:
-            - Water
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-        - name: Slash
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '40'
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 5dc4593d-3a70-43b3-8295-344a17f4b15d
     variants:
@@ -477,31 +223,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '25'
-      hp: '50'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Agility
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, prevent all effects of an attack, including
-            damage, done to Pikachu during your opponent's next turn.
-        - name: Thundershock
-          cost:
-            - Lightning
-            - Colorless
-          damage: '20'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: e9ddb59a-ae3f-4bf4-96f0-a1002c681a84
     integrations:
@@ -514,30 +235,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '52'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Plunder
-          cost:
-            - Colorless
-          damage: '10'
-          effect: >-
-            Before doing damage, discard all Trainer cards attached to the
-            Defending Pokémon (before they affect the damage).
-        - name: Scratch
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: f4729c46-8947-4197-a1b3-d703579cc40e
     integrations:
@@ -549,28 +246,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Common
       category: Pokemon
-      dexId:
-        - '380'
-      hp: '70'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Super Psy
-          cost:
-            - Psychic
-          damage: '10'
-        - name: Searing Flame
-          cost:
-            - Fire
-            - Water
-          damage: '20'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Burned.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 126f672d-51c6-489a-b744-993e6908a047
     integrations:
@@ -582,29 +257,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Common
       category: Pokemon
-      dexId:
-        - '381'
-      hp: '80'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Super Psy
-          cost:
-            - Psychic
-          damage: '10'
-        - name: Freeze Dry
-          cost:
-            - Water
-            - Psychic
-            - Lightning
-          damage: '30'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: ae47664a-5587-45fc-82cd-72c943b800bf
     integrations:
@@ -618,30 +270,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '252'
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pound
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Sporadic Sponging
-          cost:
-            - Grass
-          damage: '10'
-          effect: Flip a coin. If heads, remove 1 damage counter from Treecko.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Water
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: 35776be9-7b09-4439-87e9-0ec0289b8c9b
     variants:
@@ -661,24 +289,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '255'
-      hp: '50'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ember
-          cost:
-            - Fire
-            - Colorless
-          damage: '30'
-          effect: Discard a Fire Energy card attached to Torchic.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: d5717020-4b4f-48e5-a69c-db273ed2f7f5
     variants:
@@ -701,30 +311,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '258'
-      hp: '50'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Surf
-          cost:
-            - Water
-          damage: '10'
-        - name: Whirlpool
-          cost:
-            - Water
-            - Colorless
-          damage: '10'
-          effect: >-
-            Flip a coin. If heads, discard an Energy card attached to the
-            Defending Pokémon.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 3434caeb-3346-42ef-9877-eb05d329a447
     variants:
@@ -744,27 +330,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '293'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Supersonic
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
-        - name: Pound
-          cost:
-            - Colorless
-          damage: '10'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: c4e2a098-dbd3-4c42-9a03-8e03efdb2ca4
     variants:
@@ -787,30 +352,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '272'
-      hp: '90'
-      types:
-        - Water
-      evolveFrom: Lombre
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Poke-BODY
-          name: Rain Dish
-          effect: At any time between turns, remove 1 damage counter from Ludicolo.
-      attacks:
-        - name: Fury Swipes
-          cost:
-            - Water
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: Flip 3 coins. This attack does 30 damage times the number of heads.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: e5bc0a27-21df-4a42-b5d5-edfc1b78f03c
     integrations:
@@ -822,30 +363,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '385'
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: The Third Eye
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Discard an Energy card attached to Jirachi and draw 3 cards.
-        - name: Psywave
-          cost:
-            - Psychic
-          damage: '10'
-          effect: >-
-            Does 10 damage times the amount of Energy attached to the Defending
-            Pokémon.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 7c5afe88-7bfa-481f-957c-2b409e3f020a
     integrations:
@@ -865,35 +382,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '374'
-      hp: '50'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-POWER
-          name: Magnetic Call
-          effect: >-
-            Once during your turn (before your attack), you may flip a coin. If
-            heads, search your deck for a Metal Basic Pokémon and put it onto
-            your Bench. Shuffle your deck afterward. This power can't be used if
-            Beldum is affected by a Special Condition.
-      attacks:
-        - name: Metal Charge
-          cost:
-            - Metal
-            - Colorless
-          damage: '30'
-          effect: Put 1 damage counter on Beldum.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Grass
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: 251b1150-50d0-4274-8bf8-07314168ed88
     integrations:
@@ -907,34 +395,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '375'
-      hp: '80'
-      types:
-        - Metal
-      evolveFrom: Beldum
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Metal Load
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your discard pile for a Metal Energy card and attach it to
-            Metang.
-        - name: Metal Claw
-          cost:
-            - Metal
-            - Colorless
-          damage: '30'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Grass
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: 5812e343-c5be-48fa-bbe2-092f2445cc42
     variant:
@@ -959,34 +419,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '358'
-      hp: '70'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Resonate
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent switches each Defending Pokémon with his or her
-            Benched Pokémon. If your opponent has only 1 Benched Pokémon, you
-            choose the Defending Pokémon to switch.
-        - name: Healing Sound
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Remove 3 damage counters from each of your Active Pokémon. Each
-            Defending Pokémon is now Asleep.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 07d8bd69-e078-490f-a953-9de859982391
     integrations:
@@ -1008,42 +440,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '330'
-      hp: '120'
-      types:
-        - Colorless
-      evolveFrom: Vibrava
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Sand Pit
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: >-
-            The Defending Pokémon can't retreat until the end of your opponent's
-            next turn.
-        - name: Dragonbreath
-          cost:
-            - Grass
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '80'
-          effect: >-
-            Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If
-            tails, this attack does nothing.
-      weaknesses:
-        - type: Colorless
-          value: ×2
-      resistances:
-        - type: Lightning
-          value: '-30'
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: 8efca077-5a3f-4ff2-8045-57c4bae6fb73
     integrations:
@@ -1059,9 +455,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Common
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
     editions:
       unlimited: 4651f034-c795-45f2-ad99-3c3d48fa42ba
     variants:
@@ -1106,10 +499,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      trainerType: Item
     editions:
       unlimited: 6ac3ba53-3ed8-457b-9b69-a0e543516acf
     variants:
@@ -1156,10 +545,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Common
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      trainerType: Stadium
     editions:
       unlimited: 5a5108da-bdf4-41a9-bf2e-708ede2da977
     integrations:
@@ -1171,24 +556,6 @@ items:
       illustrator: Hajime Kusajima
       rarity: Common
       category: Pokemon
-      dexId:
-        - '251'
-      hp: '50'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Leaf Slice
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-          effect: Flip 2 coins. This attack does 20 damage times the number of heads.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: b63ec073-fa28-4f98-a691-7f8a1fcee89c
     integrations:
@@ -1200,36 +567,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '245'
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-POWER
-          name: Pure Body
-          effect: >-
-            Whenever you attach a Water Energy card from your hand to Suicune,
-            discard an Energy card attached to Suicune. (You can't attach a
-            Water Energy card from your hand if Suicune has no Energy cards
-            attached.)
-      attacks:
-        - name: Hypno Wave
-          cost:
-            - Water
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            Flip a coin. If heads, this attack does 30 damage plus 20 more
-            damage. If tails, this attack does 30 damage and the Defending
-            Pokémon is now Asleep.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 1ff0d70b-273a-4915-a33d-312efc84fca5
     integrations:
@@ -1243,38 +580,6 @@ items:
       illustrator: Ken Ikuji
       rarity: Common
       category: Pokemon
-      dexId:
-        - '146'
-      hp: '100'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-BODY
-          name: Synchronized Lift
-          effect: >-
-            As long as you have Articuno ex and Zapdos ex in play, the Retreat
-            Cost for Moltres ex is 0.
-      attacks:
-        - name: Flame Gift
-          cost:
-            - Colorless
-          damage: '10'
-          effect: >-
-            You may move a Fire Energy card attached to Moltres ex to 1 of your
-            Pokémon.
-        - name: Scorching Wing
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-          damage: '90'
-          effect: Discard all Fire Energy attached to Moltres ex.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 387fc16f-e1f1-491b-91f3-10b6d2a71534
     integrations:
@@ -1288,38 +593,6 @@ items:
       illustrator: Nakaoka
       rarity: Common
       category: Pokemon
-      dexId:
-        - '144'
-      hp: '100'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-BODY
-          name: Synchronized Lift
-          effect: >-
-            As long as you have Zapdos ex and Moltres ex in play, the Retreat
-            Cost for Articuno ex is 0.
-      attacks:
-        - name: Ice Gift
-          cost:
-            - Colorless
-          damage: '10'
-          effect: >-
-            You may move a Water Energy card attached to Articuno ex to 1 of
-            your Pokémon.
-        - name: Freezing Wing
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '50'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
-      weaknesses:
-        - type: Metal
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: c6aee4c4-6c11-496e-b311-4d2c6f88c1ae
     integrations:
@@ -1331,40 +604,6 @@ items:
       illustrator: K. Hoshiba
       rarity: Common
       category: Pokemon
-      dexId:
-        - '145'
-      hp: '100'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-BODY
-          name: Synchronized Lift
-          effect: >-
-            As long as you have Articuno ex and Moltres ex in play, the Retreat
-            Cost for Zapdos ex is 0.
-      attacks:
-        - name: Thunder Gift
-          cost:
-            - Colorless
-          damage: '10'
-          effect: >-
-            You may move a Lightning Energy card attached to Zapdos ex to 1 of
-            your Pokémon.
-        - name: Lightning Wing
-          cost:
-            - Lightning
-            - Lightning
-            - Colorless
-          damage: '60'
-          effect: >-
-            Does 10 damage to 1 of your Benched Pokémon. (Don't apply Weakness
-            and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 8bf5c383-6cce-43cf-b3e4-8352fd764397
     integrations:
@@ -1378,40 +617,6 @@ items:
       illustrator: Hajime Kusajima
       rarity: Common
       category: Pokemon
-      dexId:
-        - '157'
-      hp: '110'
-      types:
-        - Fire
-      evolveFrom: Quilava
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Poke-BODY
-          name: Burning Aura
-          effect: >-
-            As long as Typhlosion is your Active Pokémon, put 1 damage counter
-            on each Active Pokémon (both yours and your opponent's) between
-            turns.
-      attacks:
-        - name: Flickering Flames
-          cost:
-            - Fire
-          damage: '20'
-          effect: The Defending Pokémon is now Asleep.
-        - name: Rage
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '50'
-          effect: >-
-            Does 50 damage plus 10 more damage for each damage counter on
-            Typhlosion.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: bb013ae0-7342-403c-af7c-2c8afb4effb4
     integrations:
@@ -1423,31 +628,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '25'
-      hp: '40'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Thunder Wave
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-        - name: Iron Tail
-          cost:
-            - Metal
-            - Colorless
-          damage: '20'
-          effect: >-
-            Flip a coin until you get tails. This attack does 20 damage times
-            the number of heads.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 9136d049-d833-4289-b30f-514663a1dff0
     variants:
@@ -1466,10 +646,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      trainerType: Item
     editions:
       unlimited: 9901c99a-b334-4412-a9d2-0e8124bca2d4
     variants:
@@ -1519,42 +695,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '382'
-      hp: '100'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-BODY
-          name: Frenzy
-          effect: >-
-            As long as your opponent has Groudon, Groudon ex, Rayquaza, or
-            Rayquaza ex in play, Kyogre ex's attacks do 40 more damage to the
-            Defending Pokémon (before applying Weakness and Resistance).
-      attacks:
-        - name: Aqua Supply
-          cost:
-            - Water
-            - Colorless
-          damage: '30'
-          effect: >-
-            You may attach a basic Energy card from your hand to 1 of your
-            Pokémon.
-        - name: Tsunami
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '40'
-          effect: >-
-            Does 10 damage to each of your opponent's Benched Pokémon. (Don't
-            apply Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 30532dc6-7d9a-4cfa-87ad-d14289599087
     integrations:
@@ -1566,42 +706,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '383'
-      hp: '100'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-BODY
-          name: Frenzy
-          effect: >-
-            As long as your opponent has Kyogre, Kyogre ex, Rayquaza, or
-            Rayquaza ex in play, Groudon ex's attacks do 40 more damage to the
-            Defending Pokémon (before applying Weakness and Resistance).
-      attacks:
-        - name: Mix-Up
-          cost:
-            - Fighting
-            - Colorless
-          damage: '30'
-          effect: >-
-            Flip a coin. If heads, your opponent discards the top card from his
-            or her deck.
-        - name: Earthquake
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '60'
-          effect: >-
-            Does 10 damage to each of your Benched Pokémon. (Don't apply
-            Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: 59e985c1-611c-47c2-89cd-d9036b6d7358
     integrations:
@@ -1613,45 +717,6 @@ items:
       illustrator: Ryo Ueda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '384'
-      hp: '100'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-BODY
-          name: Frenzy
-          effect: >-
-            As long as your opponent has Kyogre, Kyogre ex, Groudon, or Groudon
-            ex in play, Rayquaza ex's attacks do 40 more damage to the Defending
-            Pokémon (before applying Weakness and Resistance).
-      attacks:
-        - name: Dragon Bind
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-        - name: Twister
-          cost:
-            - Fire
-            - Lightning
-            - Colorless
-          damage: '50'
-          effect: >-
-            Flip 2 coins. If both are tails, this attack does nothing. For each
-            heads, discard an Energy attached to the Defending Pokémon.
-      weaknesses:
-        - type: Colorless
-          value: ×2
-      resistances:
-        - type: Water
-          value: '-30'
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       unlimited: f3fb700e-7562-4b1e-8be9-a8ca3ab351cc
     integrations:
@@ -1663,33 +728,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '151'
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Psywave
-          cost:
-            - Colorless
-          damage: '10'
-          effect: >-
-            Does 10 damage times the amount of Energy attached to the Defending
-            Pokémon.
-        - name: Devolution Beam
-          cost:
-            - Psychic
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, choose 1 of either player's Evolved Pokémon,
-            remove the highest Stage Evolution card from that Pokémon, and put
-            it into that player's hand.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       unlimited: d597cff0-0bf8-4238-bb13-31ff0e9f066e
     integrations:

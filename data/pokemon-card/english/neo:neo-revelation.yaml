@@ -5,38 +5,6 @@ items:
       illustrator: Toshinao Aoki
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '181'
-      hp: '90'
-      types:
-        - Lightning
-      evolveFrom: Flaaffy
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Attract Current
-          cost:
-            - Lightning
-          damage: '20'
-          effect: >-
-            Flip 3 coins. For each heads, you may search your deck for a L
-            Energy card and attach it to 1 of your L Pokémon. Shuffle your deck
-            afterward.
-        - name: Gigavolt
-          cost:
-            - Lightning
-            - Lightning
-            - Lightning
-            - Colorless
-          damage: 40+
-          effect: >-
-            Flip a coin. If heads, this attack does 40 damage plus 20 more
-            damage. If tails, this attack does 40 damage and the Defending
-            Pokémon is now Paralyzed.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: e6457748-2496-45b8-8804-61c773052102
       unlimited: 017fbd62-6193-451e-856c-bc3603b7cda4
@@ -46,38 +14,6 @@ items:
       illustrator: Yuka Morii
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '242'
-      hp: '120'
-      types:
-        - Colorless
-      evolveFrom: Chansey
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-          name: Softboiled
-          effect: >-
-            When you play Blissey from your hand, you may flip a coin. If heads,
-            remove 8 damage counters from Blissey. If tails, remove 4 damage
-            counters from Blissey. Either way, if Blissey has fewer damage
-            counters than that, remove all of them.
-      attacks:
-        - name: Body Slam
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 0e47c3a7-af10-4f6d-b77e-042cc60f6e84
       unlimited: 7e5f2bac-ecd7-4c91-a3eb-312cf64b3554
@@ -87,33 +23,6 @@ items:
       illustrator: Hironobu Yoshida
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '251'
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Time Travel
-          effect: >-
-            If an opponent's attack would Knock Out Celebi, flip a coin. If
-            heads, Celebi is not Knocked Out and you shuffle it and all cards
-            attached to it into your deck. This power doesn't work if Celebi is
-            already Asleep, Confused, or Paralyzed.
-      attacks:
-        - name: Psychic Damage
-          cost:
-            - Psychic
-          damage: undefined
-          effect: >-
-            Flip 3 coins. For each heads, put 1 damage counter on the Defending
-            Pokémon.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 0b6b5595-10ae-41fa-b68c-70be91529698
       unlimited: 7b48697e-240c-4c31-87ab-0533d4616dfb
@@ -123,38 +32,6 @@ items:
       illustrator: Shin-ichi Yoshida
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '169'
-      hp: '90'
-      types:
-        - Grass
-      evolveFrom: Golbat
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Triggered Poison
-          cost:
-            - Grass
-          damage: '20'
-          effect: >-
-            If your opponent attaches an Energy card to the Defending Pokémon
-            during his or her next turn, that Pokémon becomes Poisoned.
-        - name: Cross Attack
-          cost:
-            - Grass
-            - Grass
-            - Colorless
-          damage: 20x
-          effect: >-
-            Flip 4 coins. This attack does 20 damage times the number of heads.
-            If you get 2 or more heads, the Defending Pokémon is now Confused.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 32f63ad6-3fc3-45c8-bc2c-c84577a5a0f6
       unlimited: ed2aaa63-19f3-4731-8d20-bdc5bd04baf8
@@ -164,33 +41,6 @@ items:
       illustrator: Tomokazu Komiya
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '225'
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Present
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Flip 3 coins. If exactly 1 is heads, this attack does 40 damage. If
-            exactly 2 are heads, remove 3 damage counters from the Defending
-            Pokémon. If the Defending Pokémon has fewer damage counters than
-            that, remove all of them. If all 3 are heads, this attack does 60
-            damage. If all 3 are tails, remove all damage counters from the
-            Defending Pokémon.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: fce95a0a-363a-47b6-9f36-04c0e5fb4387
       unlimited: ab04894d-7c99-4757-ab75-57b91c1889ec
@@ -200,35 +50,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '244'
-      hp: '80'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Howl
-          effect: >-
-            When you play Entei from your hand, you may discard the top 5 cards
-            from your deck. (if you have fewer cards in your deck than that,
-            discard all of them.) If any of those are Fire Energy cards, attach
-            them to any of your Fire Pokémon of your choice. Using this power
-            ends your turn.
-      attacks:
-        - name: Searing Flames
-          cost:
-            - Fire
-            - Fire
-            - Fire
-          damage: '60'
-          effect: >-
-            Discard 2 Energy cards attached to Entei or this attack does nothing.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 29afe409-3dc2-475c-9b98-06c1a109261c
       unlimited: 48bd9eec-40bb-43da-87eb-8c5079e1ef06
@@ -238,45 +59,6 @@ items:
       illustrator: Kimiya Masago
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '250'
-      hp: '90'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Stoke
-          cost:
-            - Fire
-          damage: undefined
-          effect: You may search your deck for a Energy card and attach it to Ho-oh
-        - name: Sacred Fire
-          cost:
-            - Fire
-            - Fire
-            - Fire
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, choose 1 of your opponent's Pokémon. This
-            attack does 40 damage to that Pokémon. Don't apply Weakness and
-            Resistance.
-        - name: Dive Bomb
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Fire
-            - Fire
-          damage: '90'
-          effect: Flip a coin. If tails, this attack does nothing.
-      weaknesses:
-        - type: Water
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 9389e3a7-9102-45d5-bd9b-b4d2d88930c8
       unlimited: 16eae2e7-afa0-4e88-aed3-34dbebd147d6
@@ -286,37 +68,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '229'
-      hp: '70'
-      types:
-        - Darkness
-      evolveFrom: Houndour
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Dark Flame
-          cost:
-            - Fire
-          damage: '20'
-          effect: >-
-            Discard 1 Energy card attached to Houndoom or this attack does
-            nothing. If there are any Energy cards in your discard pile, attach
-            1 of them to Houndoom.
-        - name: Black Fang
-          cost:
-            - Darkness
-            - Colorless
-            - Colorless
-          damage: 30+
-          effect: >-
-            Flip a number of coins equal to the number of Energy attached to
-            Houndoom. This attack does 30 damage plus 10 more damage for each
-            heads.
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 9223deb0-5e88-4a76-8405-4159703ba97d
       unlimited: 6ce97e8b-dfab-41b7-a16c-d149936f24b2
@@ -326,35 +77,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '189'
-      hp: '70'
-      types:
-        - Grass
-      evolveFrom: Skiploom
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Evolutionary Spore
-          cost:
-            - Grass
-          damage: undefined
-          effect: >-
-            Choose any number of your Hoppips and Skiplooms. Then, for each
-            Pokémon you chose in this way, you may search your deck for a card
-            that evolves from that Pokémon and attach it to that Pokémon. (This
-            counts as evolving those Pokémon.) Shuffle your deck afterward.
-        - name: Solarbeam
-          cost:
-            - Grass
-          damage: '30'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 8c500dbc-065c-4226-a685-0acb5af8a195
       unlimited: b6e3fd5f-e8c1-461a-9e0a-a3581be7f47d
@@ -364,40 +86,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '82'
-      hp: '80'
-      types:
-        - Metal
-      evolveFrom: Magnemite
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-          name: Electromagnetic Power
-          effect: >-
-            As often as you like during your turn (before your attack), you may
-            take 1 Energy card attached to 1 of your Magnemites, Magnetons, or
-            Dark Magnetons and attach it to a different 1 of your Magnemites,
-            Magnetons, or Dark Magnetons. This power can't be used if Magneton
-            is Asleep, Confused, or Paralyzed.
-      attacks:
-        - name: Plasma
-          cost:
-            - Lightning
-            - Lightning
-            - Colorless
-          damage: '30'
-          effect: >-
-            If there are any Energy cards in your discard pile, attach 1 of them
-            to Magneton.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Grass
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: dd9cdbcb-6915-41b0-978a-5b5bb3959ce0
       unlimited: a4a5e4f7-d408-491a-8ae7-961517ad3d45
@@ -407,32 +95,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '200'
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Night Eyes
-          cost:
-            - Psychic
-          damage: undefined
-          effect: The Defending Pokémon is now Asleep.
-        - name: Perish Song
-          cost:
-            - Psychic
-            - Psychic
-            - Psychic
-          damage: undefined
-          effect: >-
-            If the Defending Pokémon is Asleep, and was attacked with Night Eyes
-            during your last turn, it is Knocked Out.
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: eea36ac8-bc43-4287-9a5e-6aebf5a06f27
       unlimited: e4462471-bce8-44c2-be94-9a2e557e4c30
@@ -442,41 +104,6 @@ items:
       illustrator: Keiji Kinebuchi
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '233'
-      hp: '70'
-      types:
-        - Colorless
-      evolveFrom: Porygon
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-          name: Energy Converter
-          effect: >-
-            Once during your turn (before your attack), you may choose 1 Basic
-            Energy card attached to 1 of your Pokémon and choose an Energy type.
-            Treat that Energy card as that type until the end is your turn. This
-            power can't be used if Porygon2 is Asleep, Confused, or Paralyzed.
-            If Porygon2 becomes Asleep, Confused, or Paralyzed, the Energy card
-            goes back to its original type.
-      attacks:
-        - name: Delta Beam
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: >-
-            Flip a coin. If heads, choose whether the Defending Pokémon becomes
-            Asleep, Confused, or Paralyzed.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 83bd8cc2-6c59-470e-936f-6b453b941304
       unlimited: 79f66477-25ca-4bfe-8e4c-22f277f9406e
@@ -486,33 +113,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '243'
-      hp: '80'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Lightning Burst
-          effect: >-
-            Whenever you attach a Lightning Energy card from your hand to
-            Raikou, if your opponent has any Benched Pokémon, he or she chooses
-            1 of them and switches it with the Defending Pokémon. This power
-            stops working while Raikou is Asleep, Confused, or Paralyzed.
-      attacks:
-        - name: Lightning Tackle
-          cost:
-            - Lightning
-            - Lightning
-            - Lightning
-          damage: '50'
-          effect: Flip a coin. If tails, Raikou does 20 damage to itself.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 1bbf5362-8d80-4e90-a993-9970ae4693f4
       unlimited: bec42a46-57df-4ca4-a507-065d4b10ad46
@@ -522,34 +122,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '245'
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Crystal Body
-          effect: >-
-            Prevent all effects of your opponent's attacks, other than damage,
-            done to Suicune. This power stops working while Suicune is Asleep,
-            Confused, or Paralyzed.
-      attacks:
-        - name: Aurora Wave
-          cost:
-            - Water
-            - Water
-            - Water
-          damage: '30'
-          effect: >-
-            Flip 2 coins. If both are heads, the Defending Pokémon is now
-            Paralyzed. If only 1 is heads, the Defending Pokémon is now Asleep.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 6a51cfc0-ab8e-409a-9ff2-025cea22ef41
       unlimited: 7bb16170-ea55-4258-a2f0-7492439354ad
@@ -559,40 +131,6 @@ items:
       illustrator: Shin-ichi Yoshida
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '142'
-      hp: '60'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-          name: Prehistoric Memory
-          effect: >-
-            Whenever an Evolved Pokémon attacks (even if it's your opponent's),
-            it can use any attack from its Basic card or any Evolution card
-            attached to it. It still has to pay for that attack's Energy cost.
-            This power stops working while Aerodactyl is Asleep, Confused, or
-            Paralyzed.
-      attacks:
-        - name: Fly
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            Flip a coin. If heads, during your opponent's next turn, prevent all
-            effects of attacks, including damage, done to Aerodactyl. If tails,
-            this attack does nothing (not even damage).
-      weaknesses:
-        - type: Grass
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 4b866dcf-bf53-4a2e-8eb7-52582f9b49fb
       unlimited: 629b040d-9240-4800-bfea-14e609ba45af
@@ -602,29 +140,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '251'
-      hp: '50'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Psychic Leaf
-          cost:
-            - Grass
-            - Grass
-          damage: 10+
-          effect: >-
-            Flip a coin for each Energy attached to the Defending Pokémon. This
-            attack does 10 damage plus 10 more damage for each heads. Remove a
-            number of damage counters from Celebi equal to the damage done to
-            the Defending Pokémon (after applying Weakness and Resistance). If
-            Celebi has fewer damage counters than that, remove all of them.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 2dd9f045-91a6-485f-b7d1-34bb9b14f8fb
       unlimited: 12203856-387b-47c3-82a0-246538c09ad3
@@ -634,36 +149,6 @@ items:
       illustrator: Naoyo Kimura
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '244'
-      hp: '60'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Legendary Body
-          effect: >-
-            As long as Entei is your Active Pokémon, Entei and Energy cards
-            attached to it aren't affected by effects from Trainer cards other
-            than Trainer cards other than Stadium cards. As long as this power
-            is active, discard all Trainer cards attached to Entei. (This power
-            works even if Entei is Asleep, Confused, or Paralyzed.)
-      attacks:
-        - name: Mega Flame
-          cost:
-            - Fire
-            - Fire
-            - Fire
-          damage: '50'
-          effect: >-
-            Flip 2 coins. For each tails, discard 1 Energy card from Entei, if
-            it has any.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 71fbfbd9-3f42-45eb-9296-d18a6dfac463
       unlimited: 2f44deb0-b5af-4bed-9833-51e867931ed8
@@ -673,31 +158,6 @@ items:
       illustrator: Aya Kusube
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '250'
-      hp: '90'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rainbow Burn
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 30+
-          effect: >-
-            This attack does 30 damage plus 10 more for each type of Basic
-            Energy card if any, attached to Ho-oh
-      weaknesses:
-        - type: Water
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: f81abf74-f081-42d0-a076-9155e9967315
       unlimited: 8db08a34-11e0-41f8-a0b4-0809b66e8fee
@@ -707,34 +167,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '230'
-      hp: '90'
-      types:
-        - Water
-      evolveFrom: Seadra
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Genetic Memory
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Use any attack from Kingdra's Basic Pokémon card or Evolution card.
-            (Kingdra doesn't have to pay for that attack's Energy cost.)
-        - name: Twister
-          cost:
-            - Water
-            - Water
-            - Colorless
-            - Colorless
-          damage: '50'
-          effect: >-
-            Flip 2 coins. For each heads, choose an Energy card attached to the
-            Defending Pokémon, if any, and discard it. If both are tails, this
-            attack does nothing (not even damage).
-      retreat: undefined
     editions:
       1st-edition: 71167196-717d-4751-b0f4-563e97edad37
       unlimited: b5ce9097-0fc9-4eb4-9b41-15ad24ad327d
@@ -744,31 +176,6 @@ items:
       illustrator: Aya Kusube
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '249'
-      hp: '90'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Aerowing
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '40'
-          effect: >-
-            You may flip a coin. If heads, this attack does 80 damage. If tails,
-            this attack does nothing.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: f0e3ff1f-c5af-46fd-9d1b-1e29a0caa217
       unlimited: 140a7210-c5a1-4313-a4b0-298868dc7d70
@@ -778,34 +185,6 @@ items:
       illustrator: Masako Yamashita
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '26'
-      hp: '80'
-      types:
-        - Lightning
-      evolveFrom: Pikachu
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Thundershock
-          cost:
-            - Lightning
-            - Colorless
-          damage: '20'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-        - name: Lightning Strike
-          cost:
-            - Lightning
-            - Lightning
-            - Lightning
-          damage: '40'
-          effect: >-
-            You may discard all Energy cards attached to Raichu. If you do, this
-            attack does 80 damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 80493061-4ea6-435f-ac7c-e74c3abf63f3
       unlimited: e6f42c63-e24e-47b2-b394-771c69cc5c90
@@ -815,37 +194,6 @@ items:
       illustrator: Naoyo Kimura
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '243'
-      hp: '60'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Legendary Body
-          effect: >-
-            As long as Raikou is your Active Pokémon, Raikou and Energy cards
-            attached to it aren't affected by effects from Trainer cards other
-            than Trainer cards other than Stadium cards. As long as this power
-            is active, discard all Trainer cards attached to Raikou. (This power
-            works even if Raikou is Asleep, Confused, or Paralyzed.)
-      attacks:
-        - name: Lightning Spark
-          cost:
-            - Lightning
-            - Lightning
-            - Lightning
-          damage: '30'
-          effect: >-
-            If your opponent has any Benched Pokémon, flip a coin. If heads,
-            choose 1 of them and this attack does 20 damage to it. (Don't apply
-            Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 02d47fc9-865b-4e42-ae84-2cdacf3e0ec6
       unlimited: b797fa88-d3eb-4efb-a0a5-e34ab3394bd2
@@ -855,35 +203,6 @@ items:
       illustrator: Aya Kusube
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '227'
-      hp: '60'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Fury Attack
-          cost:
-            - Colorless
-          damage: 10x
-          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
-        - name: Agility
-          cost:
-            - Metal
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: >-
-            Flip a coin. If heads, during your opponent's next turn, prevent all
-            effects of attacks, including damage, done to Skarmory.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Grass
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: d53223dc-f4d4-4eee-93d8-f427a106fb7e
       unlimited: d15398f5-ed02-4aff-a72a-863c192e5f2d
@@ -893,33 +212,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '215'
-      hp: '60'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Swipe
-          cost:
-            - Darkness
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, discard all Trainer cards attached to your
-            opponent's Pokémon.
-        - name: Quick Attack
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage plus 20 more
-            damage.
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 238247ae-9a87-4fdc-b21a-1e3d86a995a7
       unlimited: e4cb9390-6c66-4dc2-a569-59cccbe55e60
@@ -929,34 +221,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '121'
-      hp: '70'
-      types:
-        - Psychic
-      evolveFrom: Staryu
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Confuse Ray
-          cost:
-            - Water
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
-        - name: Core Stream
-          cost:
-            - Psychic
-            - Psychic
-            - Colorless
-          damage: undefined
-          effect: >-
-            Choose an Energy type other than . This attack does 20 damage to
-            each of your opponent's Pokémon with any Energy cards of that type
-            attached to it. Don't apply Weakness and Resistance.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 93a0fd88-1234-4715-a24f-51fb0695142c
       unlimited: c11911d7-f523-45c4-a889-899777b66e8c
@@ -966,31 +230,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '185'
-      hp: '60'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Mimic
-          effect: >-
-            As long as Sudowoodo is your Active Pokémon, it copies all of the
-            Defending Pokémon's attacks, including their costs. This power can't
-            be used if Sudowoodo is Asleep, Confused, or Paralyzed.
-      attacks:
-        - name: Slam
-          cost:
-            - Colorless
-            - Colorless
-          damage: 20x
-          effect: Flip 2 coins. This attack does 20 damage times the number of heads.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: b48b2aa8-b498-43b7-a795-d55013f28a26
       unlimited: e69a1431-a984-4a69-aa45-8605df4ada08
@@ -1000,39 +239,6 @@ items:
       illustrator: Naoyo Kimura
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '245'
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Legendary Body
-          effect: >-
-            As long as Suicune is your Active Pokémon, Suicune and Energy cards
-            attached to it aren't affected by effects from Trainer cards other
-            than Trainer cards other than Stadium cards. As long as this power
-            is active, discard all Trainer cards attached to Suicune. (This
-            power works even if Suicune is Asleep, Confused, or Paralyzed.)
-      attacks:
-        - name: Crystal Wave
-          cost:
-            - Water
-            - Water
-            - Water
-          damage: 30+
-          effect: >-
-            Flip a coin. If heads, this attack does 30 damage plus 10 more
-            damage. If tails, this attack does 30 damage and, if your opponent
-            has any Benched Pokémon, he or she chooses 1 of them and switches it
-            with the Defending Pokémon. (Do the damage before switching the
-            Pokémon.)
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: d133f616-58ca-4432-b2af-abd644768501
       unlimited: d9e13c01-58b6-4ca4-b320-c7db27851451
@@ -1042,33 +248,6 @@ items:
       illustrator: Toshinao Aoki
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '180'
-      hp: '70'
-      types:
-        - Lightning
-      evolveFrom: Mareep
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Electric Punch
-          cost:
-            - Lightning
-          damage: '20'
-        - name: Tail Shock
-          cost:
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage to each of your
-            opponent's Benched Pokémon. (Don't apply Weakness and Resistance for
-            Benched Pokémon.)
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: b5c8c9a0-1966-483a-99e4-c99c0e042fee
       unlimited: fca10745-773f-487a-b210-71087437ca57
@@ -1078,41 +257,6 @@ items:
       illustrator: Masako Yamashita
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '42'
-      hp: '60'
-      types:
-        - Grass
-      evolveFrom: Zubat
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Screech
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Until the end of your next turn, if an attack damages the Defending
-            Pokémon (after applying Weakness and Resistance), that attack does
-            20 more damage to the Defending Pokémon.
-        - name: Poison Bite
-          cost:
-            - Grass
-            - Colorless
-          damage: '10'
-          effect: >-
-            If this attack damages the Defending Pokémon, the Defending Pokémon
-            is now Poisoned and you remove a number of damage counters from
-            Golbat equal to half that damage (rounded up to the nearest 10). If
-            Golbat has fewer damage counters than that, remove all of them.
-            Either way, the Defending Pokémon is now Poisoned.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: c9474db0-7183-49a3-80b5-a06c4634f62f
       unlimited: 0334b30c-615a-4dc3-858f-ab36c4b9a14b
@@ -1122,34 +266,6 @@ items:
       illustrator: Yukiko Baba
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '75'
-      hp: '70'
-      types:
-        - Fighting
-      evolveFrom: Geodude
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Earthquake
-          cost:
-            - Fighting
-            - Colorless
-          damage: '40'
-          effect: >-
-            Does 10 damage to each of your own Benched Pokémon. (Don't apply
-            Weakness and Resistance for Benched Pokémon.)
-        - name: Rock Tumble
-          cost:
-            - Fighting
-            - Fighting
-            - Fighting
-          damage: '50'
-          effect: Don't apply Resistance.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: a330d391-5540-4d93-aacd-0a62d19e3a97
       unlimited: 11a559ec-0ee6-4b69-9b3a-38d3d33684f2
@@ -1159,33 +275,6 @@ items:
       illustrator: Tomokazu Komiya
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '124'
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Freezing Kiss Goodnight
-          cost:
-            - Water
-          damage: undefined
-          effect: The Defending Pokémon is now Asleep.
-        - name: Strange Dance
-          cost:
-            - Psychic
-            - Psychic
-            - Colorless
-          damage: 20+
-          effect: >-
-            Flip a coin. If heads, this attack does 20 damage plus 20 more
-            damage and the Defending Pokémon is now Confused. If tails, this
-            attack does 20 damage.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: aee895c0-fef2-419e-bc77-62b03333d6a5
       unlimited: 4ae0de63-e271-486e-903d-3a42542145b8
@@ -1195,35 +284,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '171'
-      hp: '80'
-      types:
-        - Lightning
-      evolveFrom: Chinchou
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-          name: Submerge
-          effect: >-
-            Once during your turn (before your attack), you may change Lanturn's
-            type to Water until the end of your turn. This power can't be used
-            if Lanturn is Asleep, Confused, or Paralyzed. If Lanturn becomes
-            Asleep, Confused, or Paralyzed after you have used this power, its
-            type changes back to Lightning.
-      attacks:
-        - name: Blinding Light
-          cost:
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 5b423372-4536-493a-8947-80ebaa54b4f0
       unlimited: 49b80bc1-f72d-4d5c-a578-1f5c0f057cd6
@@ -1233,37 +293,6 @@ items:
       illustrator: Shin-ichi Yoshida
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '219'
-      hp: '80'
-      types:
-        - Fire
-      evolveFrom: Slugma
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-          name: Magma Pool
-          effect: >-
-            If Magcargo is your Active Pokémon and moves to the Bench, remove 1
-            Fire Energy card attached to Magcargo, if any, and attach it to the
-            new Active Pokémon. (You can't use an Energy card that you used to
-            pay for the Retreat Cost.)
-      attacks:
-        - name: Lava Flow
-          cost:
-            - Fire
-            - Fire
-            - Fire
-          damage: 40+
-          effect: >-
-            You may discard any number of Energy cards attached to Magcargo when
-            you use this attack. If you do, this attack does 40 damage plus 20
-            more damage for each Energy card you discarded in this way.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: f9949fe9-d8af-4166-b222-e4f0f82b90f2
       unlimited: b1b85379-06c9-4cdc-b286-804ac15f5b4a
@@ -1273,34 +302,6 @@ items:
       illustrator: Tomokazu Komiya
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '224'
-      hp: '80'
-      types:
-        - Water
-      evolveFrom: Remoraid
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Constrict
-          cost:
-            - Water
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-        - name: Octazooka
-          cost:
-            - Water
-            - Water
-            - Water
-          damage: '40'
-          effect: >-
-            Flip a coin. If heads, whenever the Defending Pokémon attacks, your
-            opponent flips a coin. If tails that attack does nothing. (Benching
-            or evolving that Pokémon ends this effect.)
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 5d19b676-378b-4dea-a7a3-58a489a00e9a
       unlimited: 95b91e64-3c20-4816-8dd1-99b1339cef70
@@ -1310,27 +311,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '47'
-      hp: '60'
-      types:
-        - Grass
-      evolveFrom: Paras
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Pokemon Power
-      attacks:
-        - name: Sleep Pinchers
-          cost:
-            - Grass
-            - Grass
-          damage: '30'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 803176a7-4611-469b-8770-d5c5ab30a436
       unlimited: 329dc488-1f22-49c9-a01b-0fe9df26b564
@@ -1340,40 +320,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '221'
-      hp: '90'
-      types:
-        - Fighting
-      evolveFrom: Swinub
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Nap
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Remove 3 damage counters from Piloswine. If it has fewer damage
-            counters than that, remove all of them.
-        - name: High-Speed Charge
-          cost:
-            - Fighting
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '80'
-          effect: >-
-            Piloswine does 30 damage to itself. Piloswine can't use this attack
-            during your next turn.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      resistances:
-        - type: Lightning
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 50a5e372-2ff7-4f53-a2aa-2bce917c2395
       unlimited: 85dc4023-82c1-4bd5-944c-291dcf7bdce9
@@ -1383,34 +329,6 @@ items:
       illustrator: Miki Tanaka
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '119'
-      hp: '70'
-      types:
-        - Water
-      evolveFrom: Goldeen
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Rising Lunge
-          cost:
-            - Water
-          damage: 10+
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage plus 10 more
-            damage. If tails, this attack does 10 damage.
-        - name: Horn Swipe
-          cost:
-            - Water
-            - Water
-          damage: 20+
-          effect: >-
-            Flip 2 coins. If both are heads, this attack does 20 damage plus 40
-            more damage. If 1 or both are tails, this attack does 20 damage.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: b77c2641-80c8-4d80-bef9-d36e79ccae74
       unlimited: 51e51c87-3627-4a61-a851-df364c29e498
@@ -1420,38 +338,6 @@ items:
       illustrator: Yukiko Baba
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '234'
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Terrorize
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            If the Defending Pokémon is a Basic, choose 1 of its attacks. That
-            Pokémon can't use that attack during your opponent's next turn.
-        - name: Overhead Toss
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            If you have any Benched Pokémon, flip a coin. If tails, this attack
-            does 10 damage to 1 of them. (Don't apply Weakness and Resistance
-            for Benched Pokémon.)
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 6f675cc8-c92b-4edb-8907-6f3fa8a60be4
       unlimited: 42c641fa-be48-40d0-bcda-319a4085102b
@@ -1461,30 +347,6 @@ items:
       illustrator: CR CG gangs
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '201'
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: '[Bear]'
-          effect: >-
-            Once during your turn (before your attack), you may move 1 damage
-            counter from 1 of your Pokémon with Unown in its name to Unown .
-            This power can't be used if Unown has 10 HP left. This power can be
-            used even if Unown is Asleep, Confused, or Paralyzed.
-      attacks:
-        - name: Hidden Power
-          cost:
-            - Psychic
-          damage: '10'
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: e582ad79-9207-4e16-aade-e604271fb4e8
       unlimited: 72ca5a25-d5aa-4dbb-b9eb-824521788298
@@ -1494,31 +356,6 @@ items:
       illustrator: CR CG gangs
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '201'
-      hp: '40'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: '[Yield]'
-          effect: >-
-            Once during your turn (before your attack), you may flip a coin. If
-            heads, search your deck for a Psychic Energy card and attach it to 1
-            of your Pokémon with Unown in its name. Shuffle your deck afterward.
-            This power can be used even if Unown is Asleep, Confused, or
-            Paralyzed.
-      attacks:
-        - name: Hidden Power
-          cost:
-            - Psychic
-          damage: '10'
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 1f3efed3-b08e-4441-a63f-55f49c6fcc21
       unlimited: 369eeb56-ccf8-422d-8dd3-5bd4ac530c2f
@@ -1528,33 +365,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Common
       category: Pokemon
-      dexId:
-        - '190'
-      hp: '40'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Grab
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Choose a Trainer card attached to 1 of your opponent's Pokémon. Your
-            opponent shuffles that card into his or her deck.
-        - name: Tail Punch
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 7830fdf7-9d72-4594-9015-aababd7756bd
       unlimited: 25958ead-72c7-47aa-925e-5ad0a28f8a21
@@ -1564,34 +374,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '170'
-      hp: '50'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Positive Ion
-          cost:
-            - Lightning
-          damage: 10+
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage plus 10 more
-            damage. If tails, this attack does 10 damage.
-        - name: Negative Ion
-          cost:
-            - Water
-          damage: '10'
-          effect: >-
-            If the Defending Pokémon attacks Chinchou during your opponent's
-            next turn, any damage done to Chinchou is reduced by 10 (before
-            applying Weakness and Resistance). (Benching either Pokémon ends
-            this effect.)
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 7bfcc87f-12cb-43fb-b593-776e61660c0e
       unlimited: f0d25f48-f12a-4367-b242-41596fff6316
@@ -1603,34 +385,6 @@ items:
       illustrator: Miki Tanaka
       rarity: Common
       category: Pokemon
-      dexId:
-        - '83'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Gust
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Leek Jab
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '40'
-          effect: >-
-            This attack can't be used during your next turn. (Benching
-            Farfetch'd ends this effect.)
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 79885cad-9a52-47e2-9cf5-59f85f11852f
       unlimited: 55e4ccef-094e-447c-acc4-72668bc24922
@@ -1640,22 +394,6 @@ items:
       illustrator: Masako Yamashita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '74'
-      hp: '40'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Knuckle Punch
-          cost:
-            - Fighting
-          damage: '20'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 512b042c-b239-4558-af8c-c17cab7f9261
       unlimited: 08d4e823-7220-451f-b267-d5f9bcfca851
@@ -1665,23 +403,6 @@ items:
       illustrator: Yuka Morii
       rarity: Common
       category: Pokemon
-      dexId:
-        - '118'
-      hp: '40'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Fin Smack
-          cost:
-            - Colorless
-          damage: 10x
-          effect: Flip 2 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 656b979e-ffc5-4d3c-8530-9b16c166dbcd
       unlimited: ae4b6bd7-8a79-4ae9-a157-2ed482b2ff45
@@ -1691,35 +412,6 @@ items:
       illustrator: Hironobu Yoshida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '198'
-      hp: '40'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Call for Family
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for a card named Murkrow and put it onto your
-            Bench. Shuffle your deck afterward. (You can't use this attack if
-            your Bench is full.)
-        - name: Flock Attack
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: >-
-            Flip a number of coins equal to the number of Murkrows on your
-            Bench. This attack does 10 damage plus 10 more damage for each
-            heads.
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: c7a729f2-4d50-4a0b-b029-967d49ea01ff
       unlimited: 5cb8b875-217f-4f70-aa07-80ec1b3f2086
@@ -1729,28 +421,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '46'
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Sleep Spore
-          cost:
-            - Grass
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Asleep.
-        - name: Scratch
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 19cb493c-44c1-468f-8e75-c209aee7b9c3
       unlimited: 96fed418-085b-47cd-980c-3bc1f1180ab9
@@ -1760,37 +430,6 @@ items:
       illustrator: Yuka Morii
       rarity: Common
       category: Pokemon
-      dexId:
-        - '195'
-      hp: '70'
-      types:
-        - Water
-      evolveFrom: Wooper
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Mud Slap
-          cost:
-            - Fighting
-            - Fighting
-          damage: '30'
-        - name: Whirlpool
-          cost:
-            - Water
-            - Water
-            - Colorless
-            - Colorless
-          damage: '40'
-          effect: >-
-            If the Defending Pokémon has any Energy cards attached to it, choose
-            1 of them and discard it.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      resistances:
-        - type: Lightning
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 168f8ee0-e5dc-4dc1-aff2-e7a361e532fb
       unlimited: 99ac3c76-f288-4992-b5a3-41c722e05b1d
@@ -1800,31 +439,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Common
       category: Pokemon
-      dexId:
-        - '211'
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Poison Sting
-          cost:
-            - Water
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Poisoned.
-        - name: Needle Storm
-          cost:
-            - Colorless
-            - Colorless
-          damage: 20x
-          effect: >-
-            Flip a coin until you get tails. This attack does 20 damage times
-            the number of heads you get.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 27f51f30-21db-44e8-8364-d35eb942c8bd
       unlimited: a110e507-218a-4e35-bf8c-9cee0b0bc6f9
@@ -1834,26 +448,6 @@ items:
       illustrator: Miki Tanaka
       rarity: Common
       category: Pokemon
-      dexId:
-        - '223'
-      hp: '40'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Sharpshooting
-          cost:
-            - Water
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, choose 1 of your opponent's Pokémon. This
-            attack does 20 damage to that Pokémon. Don't apply Weakness and
-            Resistance.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: a3d8bce2-126c-460b-85a5-4412aafa876e
       unlimited: 4e847d6c-9d60-4ece-baa1-b22c2c44388d
@@ -1863,35 +457,6 @@ items:
       illustrator: Yuka Morii
       rarity: Common
       category: Pokemon
-      dexId:
-        - '213'
-      hp: '40'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: Hard Shell
-          effect: >-
-            Whenever an attack (including your own) does 40 or less damage to
-            Shuckle (after applying Weakness and Resistance), reduce that damage
-            to 10. (Any other effects of attacks still happen.) This power stops
-            working while Shuckle is Asleep, Confused, or Paralyzed.
-      attacks:
-        - name: Toxic Saliva
-          cost:
-            - Grass
-            - Grass
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, the Defending Pokémon is now Poisoned. It now
-            takes 20 Poison damage after each player's turn (even if it was
-            already Poisoned).
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 3633e856-9d8a-4bbe-a7c8-39fae8bfc648
       unlimited: ac1f6a7d-656f-415b-a4c7-de39813c5e63
@@ -1901,31 +466,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '188'
-      hp: '60'
-      types:
-        - Grass
-      evolveFrom: Hoppip
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Hop
-          cost:
-            - Colorless
-          damage: '20'
-        - name: Mysterious Powder
-          cost:
-            - Grass
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 0cca5b3e-68ba-4883-87b0-b5e9fce923ac
       unlimited: 1daf4126-a61c-4249-bb21-86b432bf48c1
@@ -1935,29 +475,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '218'
-      hp: '50'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Flare
-          cost:
-            - Fire
-          damage: '10'
-        - name: Magma Ring
-          cost:
-            - Fire
-            - Fire
-          damage: '20'
-          effect: >-
-            The Defending Pokémon can't retreat during your opponent's next turn.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: 413ca43b-9958-4654-b6e4-51b867e5f694
       unlimited: 595baf28-b149-493e-be45-40a212541e22
@@ -1967,23 +484,6 @@ items:
       illustrator: Atsuko Nishida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '238'
-      hp: '30'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Psykiss
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, choose a Special Energy card attached to 1 of
-            your opponent's Pokémon. Your opponent shuffles that card into his
-            or her deck.
-      retreat: undefined
     editions:
       1st-edition: a5b7ffb9-f84e-442f-9162-b6b240f666d9
       unlimited: a5b8e883-172e-4db0-9b17-669c9ab455cd
@@ -1993,34 +493,6 @@ items:
       illustrator: Tomokazu Komiya
       rarity: Common
       category: Pokemon
-      dexId:
-        - '209'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Bite
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Raging Headbutt
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage plus 10 damage
-            times the number of damage counters on Snubbull. If tails, this
-            attack does 10 damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: bfd25924-23ee-46f4-8b08-fece72422f69
       unlimited: c047836a-6f20-4e42-b908-d96aa04bf047
@@ -2030,27 +502,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '120'
-      hp: '40'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Bubblebeam
-          cost:
-            - Water
-          damage: '10'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: c5c584ca-7151-4a30-b7ae-c136e5cdaed7
       unlimited: 454ded48-a1fd-43ba-b096-ed9516728d81
@@ -2060,31 +511,6 @@ items:
       illustrator: Miki Tanaka
       rarity: Common
       category: Pokemon
-      dexId:
-        - '220'
-      hp: '40'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Take Down
-          cost:
-            - Fighting
-            - Colorless
-          damage: '30'
-          effect: Swinub does 10 damage to itself.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      resistances:
-        - type: Lightning
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 8bd3e954-08f7-494d-a7de-78c1809fd6ba
       unlimited: d04c6717-7cbb-4ff4-bdbc-a45e5d64a983
@@ -2094,29 +520,6 @@ items:
       illustrator: CR CG gangs
       rarity: Common
       category: Pokemon
-      dexId:
-        - '201'
-      hp: '40'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Pokemon Power
-          name: '[Keep]'
-          effect: >-
-            Your opponent's attacks, Pokémon Powers, and Trainer cards can't
-            discard Energy cards from your Pokémon with Unown in their names.
-            (Any other effects of attacks still happen.)
-      attacks:
-        - name: Hidden Power
-          cost:
-            - Psychic
-          damage: '10'
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: f82ee24e-efcd-4694-ba01-f743cbbdda24
       unlimited: cfa1b757-24c1-4ba9-b6aa-7754d09f67ec
@@ -2126,30 +529,6 @@ items:
       illustrator: Yukiko Baba
       rarity: Common
       category: Pokemon
-      dexId:
-        - '41'
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Bite
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Poison Spray
-          cost:
-            - Grass
-          damage: undefined
-          effect: The Defending Pokémon is now Poisoned.
-      weaknesses:
-        - type: Psychic
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: e1f71659-04ad-4256-b732-6c9f260fe329
       unlimited: 44fd491d-7927-46e1-8e9e-9500f51580f1
@@ -2159,9 +538,6 @@ items:
       illustrator: Keiji Kinebuchi
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
     editions:
       1st-edition: 5d0d1d0b-c135-482a-9a52-46e9b32087ec
       unlimited: 9f2bb72e-eedd-43cd-9dea-241c2baa0c76
@@ -2171,9 +547,6 @@ items:
       illustrator: Keiji Kinebuchi
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
     editions:
       1st-edition: d7575599-c9f5-4a59-8ef4-f32673be5875
       unlimited: 377517b9-9c76-43a2-8e15-7cd11a727017
@@ -2183,9 +556,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
     editions:
       1st-edition: 4730d1b4-9440-4e41-9ff5-f5484e3b36da
       unlimited: 8963086a-aa19-41f5-a1db-8c40183ee186
@@ -2197,9 +567,6 @@ items:
       illustrator: Keiji Kinebuchi
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
     editions:
       1st-edition: acc2bf97-80bf-490a-97b8-1a00a5eb3a6c
       unlimited: 1e3726b9-c1e9-46d4-8a7a-0f8712452912
@@ -2209,9 +576,6 @@ items:
       illustrator: Keiji Kinebuchi
       rarity: Common
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
     editions:
       1st-edition: 7e7b214f-621b-4ded-9312-e7c0e29377a4
       unlimited: e60b420b-8b2f-43c4-8e34-19b9c93f4232
@@ -2221,45 +585,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '130'
-      hp: '100'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Outrage
-          cost:
-            - Water
-            - Fighting
-            - Fighting
-          damage: 30+
-          effect: >-
-            Flip a coin. If heads, this attack does 30 damage plus 10 more
-            damage for each damage counter on Shining Gyarados. If tails, this
-            attack does nothing.
-        - name: Devastate
-          cost:
-            - Water
-            - Water
-            - Fire
-            - Fire
-          damage: '50'
-          effect: >-
-            Discard 2 Energy cards attached to Shining Gyarados or this attack
-            does nothing. This attack does 10 damage to each of your opponent's
-            Benched Pokémon. (Don't apply Weakness and Resistance for Benched
-            Pokémon.) Then, flip a coin. If heads, choose 1 Energy card attached
-            to each of your opponent's Pokémon that has any Energy cards
-            attached to it and discard those Energy cards.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-30'
-      retreat: undefined
     editions:
       1st-edition: 553d8ed1-21ce-4456-9808-e12ddb2c76a5
       unlimited: 372d7b55-a652-4841-892e-8b5fa6a6dbbc
@@ -2269,31 +594,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '129'
-      hp: '30'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Gold Scale
-          cost:
-            - Water
-          damage: undefined
-          effect: Your opponent may draw 2 cards. Either way, you may draw 2 cards.
-        - name: Dragon Bond
-          cost:
-            - Psychic
-          damage: undefined
-          effect: >-
-            Search your deck for a card named Gyarados, Dark Gyarados, or
-            Shining Gyarados. Show it to your opponent and put it into your
-            hand. Shuffle your deck afterward.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: undefined
     editions:
       1st-edition: cf7f7406-1d42-4445-b49f-7d950e3f2c67
       unlimited: daca9831-914e-4353-a00d-e75ef7222837

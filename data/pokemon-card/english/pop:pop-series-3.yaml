@@ -10,37 +10,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '9'
-      hp: '120'
-      types:
-        - Water
-      evolveFrom: Unown
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Smash Turn
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            After your attack, you may switch Blastoise with 1 of your Benched
-            Pokémon.
-        - name: Rocket Tackle
-          cost:
-            - Water
-            - Water
-            - Colorless
-            - Colorless
-          damage: '60'
-          effect: >-
-            Blastoise does 10 damage to itself. Flip a coin. If heads, prevent
-            all damage done to Blastoise by attacks during your opponent’s next
-            turn.
-      weaknesses:
-        - type: Lightning
-      retreat: '2'
     editions:
       unlimited: 69381201-7660-4537-a870-883a7c45b048
     integrations:
@@ -57,35 +26,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '136'
-      hp: '70'
-      types:
-        - Fire
-      evolveFrom: Eevee
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Quick Attack
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage plus 20 more
-            damage.
-        - name: Fire Spin
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-          damage: '70'
-          effect: >-
-            Discard 2 basic Energy cards attached to Flareon or this attack does
-            nothing.
-      weaknesses:
-        - type: Water
-      retreat: '1'
     editions:
       unlimited: 9f7e7941-2357-41cd-9056-fcce96dc346b
     integrations:
@@ -102,34 +42,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '135'
-      hp: '70'
-      types:
-        - Lightning
-      evolveFrom: Eevee
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Thundershock
-          cost:
-            - Lightning
-            - Colorless
-          damage: '20'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
-        - name: Pin Missile
-          cost:
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: 20×
-          effect: Flip 4 coins. This attack does 20 damage times the number of heads.
-      weaknesses:
-        - type: Fighting
-      resistances:
-        - type: Metal
-          value: '-30'
-      retreat: '0'
     editions:
       unlimited: 3d7759ec-e8d2-43aa-86a2-cb6d1585518f
     integrations:
@@ -146,43 +58,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '312'
-      hp: '50'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Cheer Up
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card. If you have Plusle in play, draw 2 cards instead.
-        - name: Negative Ion
-          cost:
-            - Lightning
-            - Colorless
-          damage: '20'
-          effect: >-
-            During your opponent’s next turn, any damage done by attacks from
-            the Defending Pokémon is reduced by 10 (before applying Weakness and
-            Resistance).
-        - name: Power Bolt
-          cost:
-            - Lightning
-            - Lightning
-          damage: undefined
-          effect: >-
-            Choose 1 of your opponent’s Pokémon that has any Poké-Powers. This
-            attack does 30 damage to that Pokémon. (Don’t apply Weakness and
-            Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Fighting
-      resistances:
-        - type: Metal
-          value: '-30'
-      retreat: '1'
     editions:
       unlimited: ce2cf155-c948-4a81-aa67-2039c89d9a20
     integrations:
@@ -199,42 +74,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '311'
-      hp: '50'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Cheer Up
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card. If you have Minun in play, draw 2 cards instead.
-        - name: Positive Ion
-          cost:
-            - Lightning
-            - Colorless
-          damage: 20+
-          effect: >-
-            Flip a coin. If heads, this attack does 20 damage plus 10 more
-            damage.
-        - name: Body Bolt
-          cost:
-            - Lightning
-            - Lightning
-          damage: undefined
-          effect: >-
-            Choose 1 of your opponent’s Pokémon that has any Poké-Bodies. This
-            attack does 30 damage to that Pokémon. (Don’t apply Weakness and
-            Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Fighting
-      resistances:
-        - type: Metal
-          value: '-30'
-      retreat: '1'
     editions:
       unlimited: 0a4c9f57-09e4-433f-a6bb-9c9d71c00720
     integrations:
@@ -251,31 +90,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '134'
-      hp: '70'
-      types:
-        - Water
-      evolveFrom: Diglett
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Bite
-          cost:
-            - Colorless
-          damage: '20'
-        - name: Water Gun
-          cost:
-            - Water
-            - Colorless
-          damage: 30+
-          effect: >-
-            Does 30 damage plus 20 more damage for each Water Energy attached to
-            Vaporeon but not used to pay for this attack’s Energy cost. You
-            can’t add more than 40 damage in this way.
-      weaknesses:
-        - type: Lightning
-      retreat: '1'
     editions:
       unlimited: 1486cd1f-1d69-45a5-b063-1f3a3299612c
     integrations:
@@ -287,28 +101,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '256'
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Scratch
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Flamethrower
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '50'
-          effect: Discard a Fire Energy attached to Combusken.
-      weaknesses:
-        - type: Water
-      retreat: '1'
     editions:
       unlimited: 0a684589-ea45-4e52-beb4-5bc5f87bcd28
     integrations:
@@ -320,29 +112,6 @@ items:
       illustrator: Tomoaki Imakuni
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '232'
-      hp: '80'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Sniff Out
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Put any 1 card from your discard pile into your hand.
-        - name: Fury Attack
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: 30×
-          effect: Flip 3 coins. This attack does 30 damage times the number of heads.
-      weaknesses:
-        - type: Grass
-      retreat: '1'
     editions:
       unlimited: c8141a61-acd0-4e8f-b523-c7c7a2fd51e5
     integrations:
@@ -354,31 +123,6 @@ items:
       illustrator: Midori Harada
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '205'
-      hp: '70'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-        - name: Toxic
-          cost:
-            - Grass
-            - Grass
-            - Colorless
-          damage: '20'
-          effect: >-
-            The Defending Pokémon is now Poisoned. Put 2 damage counters instead
-            of 1 on the Defending Pokémon between turns.
-      weaknesses:
-        - type: Fire
-      retreat: '2'
     editions:
       unlimited: 766ab208-5df1-4b50-8964-ce30332f0e5b
     integrations:
@@ -390,13 +134,6 @@ items:
       illustrator: Ken Ikuji
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Each player pays Colorless less to retreat his or her Fire and Water
-        Pokémon.
-      trainerType: Stadium
     editions:
       unlimited: 4841119e-83a5-4e69-acae-25bc101195ce
     integrations:
@@ -408,13 +145,6 @@ items:
       illustrator: Shin-ichi Yoshikawa
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Each Grass and Lightning Pokémon in play (both yours and your
-        opponent’s) gets +10 HP.
-      trainerType: Stadium
     editions:
       unlimited: 74393ad5-c7a8-481e-abca-7a4d44f02a5e
     integrations:
@@ -426,33 +156,6 @@ items:
       illustrator: Yuka Morii
       rarity: Common
       category: Pokemon
-      dexId:
-        - '132'
-      hp: '60'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Poke-POWER
-          name: Duplicate
-          effect: >-
-            Once during your turn (before your attack), you may search your deck
-            for another Ditto and switch it with Ditto. (Any cards attached to
-            Ditto, damage counters, Special Conditions, and effects on it are
-            now on the new Pokémon.) If you do, put Ditto on top of your deck.
-            Shuffle your deck afterward. You can’t use more than 1 Duplicate
-            Poké-Power each turn.
-      attacks:
-        - name: Psybeam
-          cost:
-            - Psychic
-            - Colorless
-          damage: '20'
-          effect: Flip a coin. If heads, the Defending Pokémon is now Confused.
-      weaknesses:
-        - type: Psychic
-      retreat: '1'
     editions:
       unlimited: a7c17b2c-e0b8-4c0c-8031-986a65e0ca0a
     integrations:
@@ -464,27 +167,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Common
       category: Pokemon
-      dexId:
-        - '133'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Take Down
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: Eevee does 10 damage to itself.
-      weaknesses:
-        - type: Fighting
-      retreat: '1'
     editions:
       unlimited: 2174ec9e-6433-42eb-833e-861496971e99
     integrations:
@@ -496,31 +178,6 @@ items:
       illustrator: Midori Harada
       rarity: Common
       category: Pokemon
-      dexId:
-        - '2'
-      hp: '70'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Gouge
-          cost:
-            - Colorless
-          damage: 10+
-          effect: >-
-            Flip a coin. If heads, this attack does 10 damage plus 10 more
-            damage.
-        - name: Poisonpowder
-          cost:
-            - Grass
-            - Colorless
-            - Colorless
-          damage: '40'
-          effect: The Defending Pokémon is now Poisoned.
-      weaknesses:
-        - type: Psychic
-      retreat: '1'
     editions:
       unlimited: 861128ee-89e0-4a4f-a456-8ffa9a69f401
     integrations:
@@ -532,29 +189,6 @@ items:
       illustrator: Midori Harada
       rarity: Common
       category: Pokemon
-      dexId:
-        - '259'
-      hp: '70'
-      types:
-        - Fighting
-      evolveFrom: Mudkip
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Mud Slap
-          cost:
-            - Fighting
-          damage: '20'
-        - name: Double-edge
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '40'
-          effect: Marshtomp does 10 damage to itself.
-      weaknesses:
-        - type: Grass
-      retreat: '1'
     editions:
       unlimited: 5d7fe1fe-5f94-491a-a9b0-3ff6869e86d8
     integrations:
@@ -566,25 +200,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '172'
-      hp: '60'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Bustle
-          cost:
-            - Lightning
-            - Lightning
-          damage: 20×
-          effect: >-
-            Flip 2 coins. This attack does 20 damage times the number of heads.
-            If either coin is heads, the Defending Pokémon is now Confused.
-      weaknesses:
-        - type: Fighting
-      retreat: '1'
     editions:
       unlimited: 530e26e7-c979-4a62-89a6-e499929aa5f6
     integrations:
@@ -601,34 +216,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '250'
-      hp: '110'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      suffix: EX
-      abilities:
-        - type: Poke-POWER
-          name: Golden Wing
-          effect: >-
-            If Ho-Oh ex would be Knocked Out by damage from an opponent’s
-            attack, you may move up to 2 Energy attached to Ho-Oh ex to your
-            Pokémon in any way you like.
-      attacks:
-        - name: Rainbow Burn
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: >-
-            Does 10 damage plus 20 more damage for each type of basic Energy
-            card attached to Ho-Oh ex.
-      weaknesses:
-        - type: Water
-      retreat: '2'
     editions:
       unlimited: d2747687-585d-4879-8f6f-9c99a6f055d3
     integrations:

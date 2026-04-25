@@ -5,24 +5,6 @@ items:
       illustrator: tetsuya koizumi
       rarity: Common
       category: Pokemon
-      dexId:
-        - '4'
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Fire Fang
-          cost:
-            - Fire
-            - Colorless
-          damage: '20'
-          effect: Your opponent’s Active Pokémon is now Burned.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 25f3f53c-b081-4ff3-832d-9f6604d60e48
       reverse-holo: 46175570-d130-4905-8110-12b0ea0d3f13
@@ -35,34 +17,6 @@ items:
       illustrator: kodama
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '5'
-      hp: '80'
-      types:
-        - Fire
-      evolveFrom: Charmander
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Burning Fighter
-          effect: >-
-            When you play this Pokémon from your hand to evolve 1 of your
-            Pokémon during your turn, you may discard the top 5 cards of your
-            deck. If any of those cards are Fire Energy cards, attach them to
-            this Pokémon.
-      attacks:
-        - name: Flamethrower
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-          damage: '80'
-          effect: Discard an Energy from this Pokémon.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 0f1af6ca-3b1c-4b70-bbdf-166ae91106ab
       reverse-holo: 67c6715c-09ce-4c71-9e75-dd04ab6cf899
@@ -75,32 +29,6 @@ items:
       illustrator: Ryota Murayama
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '6'
-      hp: '160'
-      types:
-        - Fire
-      evolveFrom: Charmeleon
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Resolute Flame
-          effect: >-
-            This Pokémon’s attacks do 30 more damage to your opponent’s Active
-            Pokémon for each of their Pokémon-GX and Pokémon-EX in play.
-      attacks:
-        - name: Fiery Blast
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-          damage: '130'
-          effect: Discard an Energy from this Pokémon.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     variants:
       non-holo:
         name: Non Holo
@@ -118,23 +46,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '255'
-      hp: '60'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Singe
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Flip a coin. If heads, your opponent’s Active Pokémon is now Burned.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: df218cfe-106d-4dc1-9b84-231876af1073
       reverse-holo: 9e15c990-277b-4537-9223-97930590aa86
@@ -147,31 +58,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '256'
-      hp: '80'
-      types:
-        - Fire
-      evolveFrom: Torchic
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Natural Cure
-          effect: >-
-            Whenever you attach an Energy card from your hand to this Pokémon,
-            remove all Special Conditions from it.
-      attacks:
-        - name: Lunge
-          cost:
-            - Colorless
-            - Colorless
-          damage: '60'
-          effect: Flip a coin. If tails, this attack does nothing.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 2abaa95e-284d-4cd5-8fa9-70629eb0e4b8
       reverse-holo: 44572ecd-374c-4ead-856f-3275c7686fc9
@@ -184,35 +70,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '257'
-      hp: '150'
-      types:
-        - Fire
-      evolveFrom: Combusken
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Firestarter
-          effect: >-
-            Once during your turn (before your attack), you may attach a Fire
-            Energy card from your discard pile to 1 of your Benched Pokémon.
-      attacks:
-        - name: Fire Stream
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '90'
-          effect: >-
-            Discard a Fire Energy from this Pokémon. This attack does 20 damage
-            to each of your opponent’s Benched Pokémon. (Don’t apply Weakness
-            and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     variants:
       non-holo:
         name: Non Holo
@@ -232,30 +89,6 @@ items:
       illustrator: Shin Nagasawa
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '494'
-      hp: '90'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Infinity
-          cost:
-            - Fire
-            - Fire
-          damage: 20×
-          effect: >-
-            This attack does 20 damage for each basic Energy card in your
-            discard pile. Then, shuffle those cards into your deck.
-        - cost:
-            - Fire
-            - Fire
-          damage: 20×
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     integrations:
       pokeData: '762'
       tcgPlayer: '175275'
@@ -265,26 +98,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Common
       category: Pokemon
-      dexId:
-        - '554'
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Damage Rush
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: >-
-            Flip a coin until you get tails. This attack does 30 more damage for
-            each heads.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: f0cbcd2b-3f2b-4b9f-8903-8899ced79774
       reverse-holo: 5d7ee1c4-3625-4ace-908f-8e4614b58399
@@ -297,33 +110,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '555'
-      hp: '130'
-      types:
-        - Fire
-      evolveFrom: Darumaka
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Heat Assist
-          cost:
-            - Fire
-          damage: undefined
-          effect: >-
-            Attach up to 3 Fire Energy cards from your hand to your Pokémon in
-            any way you like.
-        - name: Darmani-Hands
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-          damage: 30+
-          effect: Flip 4 coins. This attack does 50 more damage for each heads.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: deef171d-4dc4-44f1-8522-2a2f9978ad39
       reverse-holo: 73cec72f-8dd5-4eb5-b985-4fa265f03765
@@ -336,31 +122,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '631'
-      hp: '110'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Singe
-          cost:
-            - Fire
-          damage: undefined
-          effect: Your opponent’s Active Pokémon is now Burned.
-        - name: Charring Breath
-          cost:
-            - Fire
-            - Fire
-          damage: '120'
-          effect: >-
-            If your opponent’s Active Pokémon isn’t Burned, this attack does
-            nothing.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 1cf2c08a-b2d2-47be-9723-c27fe967831a
       reverse-holo: d97eb113-9c55-47e1-82a7-ea252be7e400
@@ -375,44 +136,6 @@ items:
       illustrator: PLANETA Otani
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '643'
-      hp: '180'
-      types:
-        - Fire
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Flame Charge
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Fire Energy cards and attach them to
-            this Pokémon. Then, shuffle your deck.
-        - name: Scorching Column
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Colorless
-          damage: '110'
-          effect: Your opponent’s Active Pokémon is now Burned.
-        - name: Vermilion GX
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Colorless
-          damage: '180'
-          effect: >-
-            You may attach up to 5 Fire Energy cards from your hand to your
-            Pokémon in any way you like. (You can’t use more than 1 GX attack in
-            a game.)
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '760'
       tcgPlayer: '175347'
@@ -422,23 +145,6 @@ items:
       illustrator: Ryota Murayama
       rarity: Common
       category: Pokemon
-      dexId:
-        - '725'
-      hp: '60'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Fury Swipes
-          cost:
-            - Fire
-          damage: 10×
-          effect: Flip 3 coins. This attack does 10 damage for each heads.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: e599733d-882e-451f-b041-e12b58c389a6
       reverse-holo: d75d47a3-c37d-4021-94dc-87f797afe035
@@ -451,30 +157,6 @@ items:
       illustrator: MAHOU
       rarity: Common
       category: Pokemon
-      dexId:
-        - '757'
-      hp: '60'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Call for Family
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for a Basic Pokémon and put it onto your Bench.
-            Then, shuffle your deck.
-        - name: Dig Claws
-          cost:
-            - Fire
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 2dfa38e2-64b6-4163-9bd0-6dc1ebf4b2fc
       reverse-holo: b775cbec-8c05-4a82-9d51-437f916edc25
@@ -487,32 +169,6 @@ items:
       illustrator: Naoki Saito
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '758'
-      hp: '110'
-      types:
-        - Fire
-      evolveFrom: Salandit
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Ring of Fire
-          cost:
-            - Fire
-          damage: '20'
-          effect: >-
-            Your opponent’s Active Pokémon is now Burned. It can’t retreat
-            during your opponent’s next turn.
-        - name: Flamethrower
-          cost:
-            - Fire
-            - Colorless
-          damage: '80'
-          effect: Discard an Energy from this Pokémon.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 8b00d13b-e725-40ae-b0a8-283bd403cda0
       reverse-holo: 2c764a59-a22d-4de4-a7e4-b200a85e0cdc
@@ -525,25 +181,6 @@ items:
       illustrator: Yukiko Baba
       rarity: Common
       category: Pokemon
-      dexId:
-        - '116'
-      hp: '40'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Splatter
-          cost:
-            - Water
-          damage: undefined
-          effect: >-
-            This attack does 20 damage to 1 of your opponent’s Pokémon. (Don’t
-            apply Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: c3cea468-a51d-4925-a639-7a247a073f7e
       reverse-holo: b8d629e8-3a7e-4eda-8e0d-87c83fc898a3
@@ -556,25 +193,6 @@ items:
       illustrator: Mizue
       rarity: Common
       category: Pokemon
-      dexId:
-        - '116'
-      hp: '50'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Hydro Pump
-          cost:
-            - Colorless
-          damage: 10+
-          effect: >-
-            This attack does 10 more damage times the amount of Water Energy
-            attached to this Pokémon.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: bbf8f66a-c948-4622-a261-2eacd26e00e5
       reverse-holo: 0af9fce2-e90e-4aa5-bbc3-9b45e75bcaaa
@@ -587,26 +205,6 @@ items:
       illustrator: Yumi
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '117'
-      hp: '90'
-      types:
-        - Water
-      evolveFrom: Horsea
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Hydro Pump
-          cost:
-            - Colorless
-          damage: 10+
-          effect: >-
-            This attack does 20 more damage times the amount of Water Energy
-            attached to this Pokémon.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: a28f42b2-2030-425d-8e15-cc20be59fd82
       reverse-holo: 92b14a4c-bcb9-42c5-be9a-a42c819956ef
@@ -621,39 +219,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '230'
-      hp: '230'
-      types:
-        - Water
-      evolveFrom: Seadra
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Hydro Pump
-          cost:
-            - Colorless
-          damage: 10+
-          effect: >-
-            This attack does 50 more damage times the amount of Water Energy
-            attached to this Pokémon.
-        - name: Reverse Thrust
-          cost:
-            - Water
-          damage: '30'
-          effect: Switch this Pokémon with 1 of your Benched Pokémon.
-        - name: Maelstrom GX
-          cost:
-            - Water
-          damage: undefined
-          effect: >-
-            This attack does 40 damage to each of your opponent’s Pokémon.
-            (Don’t apply Weakness and Resistance for Benched Pokémon.) (You
-            can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '766'
       tcgPlayer: '175380'
@@ -663,23 +228,6 @@ items:
       illustrator: Sekio
       rarity: Common
       category: Pokemon
-      dexId:
-        - '129'
-      hp: '30'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Water Splash
-          cost:
-            - Water
-          damage: 10+
-          effect: Flip a coin. If heads, this attack does 10 more damage.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 4e48480b-13f1-4d6d-ad58-9b94eb0e375b
       reverse-holo: 4b21c37f-58e5-45b2-8c21-4071b53c48c9
@@ -692,33 +240,6 @@ items:
       illustrator: kawayoo
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '130'
-      hp: '160'
-      types:
-        - Water
-      evolveFrom: Magikarp
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Commotion
-          effect: >-
-            If this Pokémon is your Active Pokémon and is damaged by an
-            opponent’s attack (even if this Pokémon is Knocked Out), put 2
-            damage counters on each of your Benched Pokémon.
-      attacks:
-        - name: Wild Tail
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '160'
-          effect: You may discard any Stadium card in play.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: '4'
     editions:
       unlimited: 5ba562c4-9815-45df-96b9-c4368155e600
       reverse-holo: 9589350b-3579-4bf4-8f08-fef754cf5446
@@ -731,34 +252,6 @@ items:
       illustrator: Saya Tsuruta
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '131'
-      hp: '120'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Aqua Bullet
-          cost:
-            - Water
-          damage: '20'
-          effect: >-
-            This attack does 20 damage to 1 of your opponent’s Benched Pokémon.
-            (Don’t apply Weakness and Resistance for Benched Pokémon.)
-        - name: Hydro Pump
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 70+
-          effect: >-
-            This attack does 10 more damage times the amount of Water Energy
-            attached to this Pokémon.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: e52a9a4a-0b29-4bf7-b0c1-1c688c33111b
       reverse-holo: e1310f6e-c75c-4875-8d88-c74e0d356ad2
@@ -771,30 +264,6 @@ items:
       illustrator: Hironobu Yoshida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '158'
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Leer
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, your opponent’s Active Pokémon is now
-            Paralyzed.
-        - name: Fury Swipes
-          cost:
-            - Water
-          damage: 10×
-          effect: Flip 3 coins. This attack does 10 damage for each heads.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: cfa62597-8d2c-42ee-8141-adf720410ba4
       reverse-holo: fbcb5802-6fb7-4da9-b330-f28c64b14837
@@ -807,31 +276,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '159'
-      hp: '90'
-      types:
-        - Water
-      evolveFrom: Totodile
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-        - name: Sweep Away
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '90'
-          effect: Discard the top 3 cards of your deck.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 11883541-cc7f-44a7-a14e-96b1d9cf75b3
       reverse-holo: a16073be-971d-4488-92b1-a83e6cf439c4
@@ -844,33 +288,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '160'
-      hp: '160'
-      types:
-        - Water
-      evolveFrom: Croconaw
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Downpour
-          effect: >-
-            As often as you like during your turn (before your attack), you may
-            discard a Water Energy card from your hand.
-      attacks:
-        - name: Riptide
-          cost:
-            - Water
-            - Water
-          damage: 10+
-          effect: >-
-            This attack does 20 more damage for each Water Energy card in your
-            discard pile. Then, shuffle those cards into your deck.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: 7d7909e7-5b0d-4078-a47c-e531a866c308
       reverse-holo: 1d491857-04c9-455e-9511-eec1dae267ce
@@ -883,27 +300,6 @@ items:
       illustrator: Shibuzoh.
       rarity: Common
       category: Pokemon
-      dexId:
-        - '194'
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ram
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Rain Splash
-          cost:
-            - Water
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: e172a419-c15f-4468-bd61-3d73c83dd78d
       reverse-holo: 0bd84c0a-99d0-468d-badf-5dd967b59c2e
@@ -916,35 +312,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '195'
-      hp: '120'
-      types:
-        - Water
-      evolveFrom: Wooper
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Wash Out
-          effect: >-
-            As often as you like during your turn (before your attack), you may
-            move a Water Energy from 1 of your Benched Pokémon to your Active
-            Pokémon.
-      attacks:
-        - name: Hydro Pump
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 60+
-          effect: >-
-            This attack does 20 more damage times the amount of Water Energy
-            attached to this Pokémon.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: ab2265e8-b8c3-46b2-9e93-f16444d7c062
       reverse-holo: 354467d0-6e67-48ea-9a23-1c513ec89982
@@ -957,26 +324,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: Common
       category: Pokemon
-      dexId:
-        - '222'
-      hp: '90'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Bubble Shoot
-          cost:
-            - Water
-          damage: undefined
-          effect: >-
-            This attack does 20 damage times the amount of Water Energy attached
-            to this Pokémon to 1 of your opponent’s Pokémon. (Don’t apply
-            Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: b517eebe-9b60-4c80-9d9e-24dd08cd0dc1
       reverse-holo: ef92c4f7-6a75-4380-b7b4-8623a8d1d747
@@ -989,28 +336,6 @@ items:
       illustrator: Shin Nagasawa
       rarity: Common
       category: Pokemon
-      dexId:
-        - '349'
-      hp: '30'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Submerge
-          effect: >-
-            As long as this Pokémon is on your Bench, prevent all damage done to
-            this Pokémon by attacks (both yours and your opponent’s).
-      attacks:
-        - name: Rain Splash
-          cost:
-            - Water
-          damage: '10'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 0e17217a-0c7b-4c36-aecf-15a87980d779
       reverse-holo: 244bb865-bbb8-4978-8feb-045f4b1b0d2a
@@ -1023,33 +348,6 @@ items:
       illustrator: hatachu
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '350'
-      hp: '120'
-      types:
-        - Water
-      evolveFrom: Feebas
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Aurora Wave
-          cost:
-            - Water
-          damage: '30'
-          effect: Your opponent’s Active Pokémon is now Confused.
-        - name: Aqua Split
-          cost:
-            - Water
-            - Water
-            - Water
-          damage: '40'
-          effect: >-
-            This attack does 40 damage to 2 of your opponent’s Benched Pokémon.
-            (Don’t apply Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 7a4950cf-8a73-4604-b63a-c55bc637e672
       reverse-holo: 7ba395fa-b0f5-4d0a-a7a1-27a2ccc29129
@@ -1062,30 +360,6 @@ items:
       illustrator: kawayoo
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '489'
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Murmurs of the Sea
-          effect: >-
-            Your Water Pokémon can’t be Confused. If those Pokémon are already
-            Confused, remove that Special Condition.
-      attacks:
-        - name: Water Pulse
-          cost:
-            - Water
-            - Water
-          damage: '30'
-          effect: Your opponent’s Active Pokémon is now Asleep.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 7d244d2c-d25e-476f-814b-45337c831951
       reverse-holo: 82ee2ed7-93ef-4c8e-bef8-393c82c8a4e8
@@ -1098,29 +372,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '746'
-      hp: '30'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Meet Up
-          effect: >-
-            Your Wishiwashi-GX in play get +20 HP, and their attacks do 20 more
-            damage to your opponent’s Active Pokémon (before applying Weakness
-            and Resistance).
-      attacks:
-        - name: Water Gun
-          cost:
-            - Water
-          damage: '20'
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 410a8c8a-1f3a-48ac-bb00-00f772aba554
       reverse-holo: 2d167090-260e-4b1f-9305-a8dbc8928336
@@ -1133,25 +384,6 @@ items:
       illustrator: Naoyo Kimura
       rarity: Common
       category: Pokemon
-      dexId:
-        - '328'
-      hp: '60'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Mini Earthquake
-          cost:
-            - Fighting
-          damage: '20'
-          effect: >-
-            This attack does 10 damage to each of your Benched Pokémon. (Don’t
-            apply Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 758b7234-ff0b-4ecd-becf-1a34f7b998b4
       reverse-holo: f49e7383-6bbd-454b-8b69-1ef8ec388368
@@ -1164,37 +396,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '635'
-      hp: '160'
-      types:
-        - Darkness
-      evolveFrom: Zweilous
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Weed Out
-          effect: >-
-            Once during your turn (before your attack), you may choose 3 of your
-            Benched Pokémon. Then, discard your other Benched Pokémon.
-      attacks:
-        - name: Dark Destruction
-          cost:
-            - Darkness
-            - Darkness
-            - Colorless
-          damage: '120'
-          effect: >-
-            You may discard an Energy from this Pokémon. If you do, discard an
-            Energy from your opponent’s Active Pokémon.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '2'
     editions:
       unlimited: 891d808c-be1d-4d4f-a84b-408c7e0daf86
       reverse-holo: 8c80fa94-6db8-466c-9831-f931e2d08493
@@ -1207,25 +408,6 @@ items:
       illustrator: Ayaka Yoshida
       rarity: Common
       category: Pokemon
-      dexId:
-        - '147'
-      hp: '60'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Wrap
-          cost:
-            - Lightning
-          damage: '10'
-          effect: >-
-            Flip a coin. If heads, your opponent’s Active Pokémon is now
-            Paralyzed.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: bad2ab7f-f2dd-4b32-b225-6d6e8d99bf2a
       reverse-holo: b3a6b678-e33b-44f8-975a-4273776ef0ce
@@ -1238,23 +420,6 @@ items:
       illustrator: Anesaki Dynamic
       rarity: Common
       category: Pokemon
-      dexId:
-        - '147'
-      hp: '70'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tail Whap
-          cost:
-            - Water
-            - Colorless
-          damage: '30'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     variants:
       toys-r-us:
         name: Toys "R" Us
@@ -1272,33 +437,6 @@ items:
       illustrator: sui
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '148'
-      hp: '100'
-      types:
-        - Dragon
-      evolveFrom: Dratini
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Dragon Tail
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 60×
-          effect: Flip 2 coins. This attack does 60 damage for each heads.
-        - name: Waterfall
-          cost:
-            - Water
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '80'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: f3e1d46e-92f0-4dbc-b44f-b005ab8a7164
       reverse-holo: efb68e5c-f4da-48ef-812e-766747fc8fb9
@@ -1313,40 +451,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '149'
-      hp: '250'
-      types:
-        - Dragon
-      evolveFrom: Dragonair
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Dragon Claw
-          cost:
-            - Lightning
-          damage: '70'
-        - name: Giga Impact
-          cost:
-            - Water
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '200'
-          effect: This Pokémon can’t attack during your next turn.
-        - name: Dragonporter GX
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Put 3 Dragon Pokémon from your discard pile onto your Bench. (You
-            can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     integrations:
       pokeData: '757'
       tcgPlayer: '175450'
@@ -1356,27 +460,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Common
       category: Pokemon
-      dexId:
-        - '329'
-      hp: '80'
-      types:
-        - Dragon
-      evolveFrom: Trapinch
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Sonic Edge
-          cost:
-            - Fighting
-            - Colorless
-          damage: '50'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 63323446-1cb8-4f83-bd09-f91ea615af05
       reverse-holo: c1cf87e9-26b7-4bf4-bf4f-ef061b44d2af
@@ -1389,34 +472,6 @@ items:
       illustrator: Shigenori Negishi
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '330'
-      hp: '140'
-      types:
-        - Dragon
-      evolveFrom: Vibrava
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Dragon Guard
-          effect: >-
-            Prevent all effects of your opponent’s attacks, except damage, done
-            to your Dragon Pokémon. (Existing effects are not removed.)
-      attacks:
-        - name: Sand Tomb
-          cost:
-            - Fighting
-            - Fighting
-            - Colorless
-          damage: '110'
-          effect: >-
-            The Defending Pokémon can’t retreat during your opponent’s next
-            turn.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 9b4c900a-45cd-4511-9065-2a5f6edb330b
       reverse-holo: a5461957-a13f-4800-9820-fe6f8facb14a
@@ -1429,30 +484,6 @@ items:
       illustrator: Kyoko Umemoto
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '334'
-      hp: '80'
-      types:
-        - Dragon
-      evolveFrom: Swablu
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Fight Song
-          effect: >-
-            Your Dragon Pokémon’s attacks do 20 more damage to your opponent’s
-            Active Pokémon (before applying Weakness and Resistance).
-      attacks:
-        - name: Pierce
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     variants:
       yellow-a-alt:
         name: Alternate Art
@@ -1475,45 +506,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '334'
-      hp: '200'
-      types:
-        - Dragon
-      evolveFrom: Swablu
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Bright Tone
-          cost:
-            - Fairy
-            - Colorless
-          damage: '50'
-          effect: >-
-            During your opponent’s next turn, prevent all damage done to this
-            Pokémon by attacks from Pokémon-GX and Pokémon-EX.
-        - name: Sonic Edge
-          cost:
-            - Water
-            - Fairy
-            - Colorless
-          damage: '110'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-        - name: Euphoria GX
-          cost:
-            - Fairy
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent’s Active Pokémon is now Asleep. Heal all damage from
-            all of your Pokémon. (You can’t use more than 1 GX attack in a
-            game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     integrations:
       pokeData: '765'
       tcgPlayer: '175467'
@@ -1523,29 +515,6 @@ items:
       illustrator: Kouki Saitou
       rarity: Common
       category: Pokemon
-      dexId:
-        - '371'
-      hp: '60'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Risky Kick
-          cost:
-            - Colorless
-          damage: '10'
-          effect: Flip a coin. If tails, this attack does nothing.
-        - name: Dragon Eye
-          cost:
-            - Fire
-            - Water
-          damage: '20'
-          effect: Your opponent’s Active Pokémon is now Asleep.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 310d61d8-635f-4356-9116-7a38617a2787
       reverse-holo: 47100a70-d302-4298-a1ce-5805e55d1450
@@ -1558,30 +527,6 @@ items:
       illustrator: Yuka Morii
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '372'
-      hp: '80'
-      types:
-        - Dragon
-      evolveFrom: Bagon
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Energy Guard
-          effect: >-
-            If this Pokémon has any basic Energy attached to it, it takes 20
-            less damage from attacks (after applying Weakness and Resistance).
-      attacks:
-        - name: Rollout
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: deea0c34-9d1c-465d-954b-7a83a0896451
       reverse-holo: 511ab8ec-5805-444c-9831-bd1c657b90cb
@@ -1596,43 +541,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '373'
-      hp: '250'
-      types:
-        - Dragon
-      evolveFrom: Shelgon
-      level: undefined
-      suffix: GX
-      abilities:
-        - type: Ability
-          name: Dragon Lift
-          effect: >-
-            Your Pokémon in play have no Retreat Cost, except Pokémon-GX and
-            Pokémon-EX.
-      attacks:
-        - name: Bright Flame
-          cost:
-            - Fire
-            - Water
-            - Colorless
-            - Colorless
-          damage: '200'
-          effect: Discard 2 Energy from this Pokémon.
-        - name: Flame Jet GX
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            This attack does 120 damage to 1 of your opponent’s Pokémon. (Don’t
-            apply Weakness and Resistance for Benched Pokémon.) (You can’t use
-            more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '761'
       tcgPlayer: '175472'
@@ -1642,31 +550,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '621'
-      hp: '110'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Rough Skin
-          effect: >-
-            If this Pokémon is your Active Pokémon and is damaged by an
-            opponent’s attack (even if this Pokémon is Knocked Out), put 3
-            damage counters on the Attacking Pokémon.
-      attacks:
-        - name: Dragon Claw
-          cost:
-            - Fire
-            - Water
-            - Colorless
-          damage: '100'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 0c7f3132-2097-4afa-9550-cfd5e74c33ce
       reverse-holo: c595fdff-29a3-421a-bb91-f33244912ddf
@@ -1679,35 +562,6 @@ items:
       illustrator: Hasuno
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '644'
-      hp: '130'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Shred
-          cost:
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '70'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-        - name: Bolt Strike
-          cost:
-            - Lightning
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '150'
-          effect: Flip a coin. If tails, this Pokémon does 50 damage to itself.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: 68928c1f-d891-491c-89a8-b1bef3228efd
       reverse-holo: 7ab0cf88-1860-4879-a4c8-3012b42e63b5
@@ -1720,35 +574,6 @@ items:
       illustrator: TOKIYA
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '646'
-      hp: '130'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Outrage
-          cost:
-            - Colorless
-            - Colorless
-          damage: 20+
-          effect: >-
-            This attack does 10 more damage for each damage counter on this
-            Pokémon.
-        - name: Frost Spear
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '100'
-          effect: >-
-            This attack does 20 damage to 1 of your opponent’s Benched Pokémon.
-            (Don’t apply Weakness and Resistance for Benched Pokémon.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 920a5c0c-7a2e-43a6-b1fd-8c621dd5bce9
       reverse-holo: 6fa646e2-8eae-4d1a-bc22-71a645df4eb3
@@ -1763,44 +588,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '646'
-      hp: '190'
-      types:
-        - Dragon
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Shred
-          cost:
-            - Fire
-          damage: '40'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-        - name: Raging Blade
-          cost:
-            - Fire
-            - Water
-            - Colorless
-          damage: 80+
-          effect: >-
-            If this Pokémon has any damage counters on it, this attack does 80
-            more damage.
-        - name: Dragon Nova GX
-          cost:
-            - Fire
-            - Fire
-            - Water
-            - Colorless
-          damage: '200'
-          effect: >-
-            Your opponent’s Active Pokémon is now Burned and Paralyzed. (You
-            can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     integrations:
       pokeData: '764'
       tcgPlayer: '175478'
@@ -1810,34 +597,6 @@ items:
       illustrator: Misa Tsutsui
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '718'
-      hp: '130'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rumble
-          cost:
-            - Fighting
-          damage: '20'
-          effect: >-
-            The Defending Pokémon can’t retreat during your opponent’s next
-            turn.
-        - name: Raging Blade
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: 60+
-          effect: >-
-            If this Pokémon has any damage counters on it, this attack does 60
-            more damage.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: a1896ed0-1bd8-46e6-99fe-79ad2e63a817
       reverse-holo: 676095da-83eb-4a1d-a3be-39154e766627
@@ -1850,27 +609,6 @@ items:
       illustrator: Sumiyoshi Kizuki
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '776'
-      hp: '110'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Explosive Jet
-          cost:
-            - Fire
-            - Fire
-            - Fire
-          damage: 50×
-          effect: >-
-            Discard any amount of Fire Energy from your Pokémon. This attack
-            does 50 damage for each card you discarded in this way.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: e96b300b-0b79-45ce-89e9-b499cf10a58a
       reverse-holo: 55daeb8c-9942-4ff4-ab0f-cc764a011f23
@@ -1883,31 +621,6 @@ items:
       illustrator: Sanosuke Sakuma
       rarity: Uncommon
       category: Pokemon
-      dexId:
-        - '780'
-      hp: '120'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Dragon Wisdom
-          cost:
-            - Colorless
-          damage: '20'
-          effect: >-
-            Attach a basic Energy card from your discard pile to 1 of your
-            Dragon Pokémon.
-        - name: Hyper Voice
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '80'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 3ac95975-1955-431e-b6db-ce8cefca1eb4
       reverse-holo: 1b29f94f-43d1-423e-aaf7-f00e74e5a643
@@ -1920,30 +633,6 @@ items:
       illustrator: Yusuke Ohmura
       rarity: Common
       category: Pokemon
-      dexId:
-        - '782'
-      hp: '60'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rigidify
-          cost:
-            - Lightning
-          damage: undefined
-          effect: >-
-            During your opponent’s next turn, this Pokémon takes 20 less damage
-            from attacks (after applying Weakness and Resistance).
-        - name: Dragon Claw
-          cost:
-            - Fighting
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: b3388a3c-317e-4c00-a880-12cf34658b11
       reverse-holo: 9069aae5-05ca-42ec-94ce-b8b0481bc68e
@@ -1956,33 +645,6 @@ items:
       illustrator: hatachu
       rarity: Common
       category: Pokemon
-      dexId:
-        - '783'
-      hp: '90'
-      types:
-        - Dragon
-      evolveFrom: Jangmo-o
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Guard Press
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: >-
-            During your opponent’s next turn, this Pokémon takes 30 less damage
-            from attacks (after applying Weakness and Resistance).
-        - name: Dragon Claw
-          cost:
-            - Lightning
-            - Fighting
-            - Colorless
-          damage: '70'
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: ab200555-f01c-4be6-9ee8-8d385740fc79
       reverse-holo: 913b0c36-07f6-49b0-b8e4-017ed626a74f
@@ -1995,36 +657,6 @@ items:
       illustrator: so-taro
       rarity: Rare
       category: Pokemon
-      dexId:
-        - '784'
-      hp: '160'
-      types:
-        - Dragon
-      evolveFrom: Hakamo-o
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Guard Press
-          cost:
-            - Lightning
-            - Colorless
-          damage: '60'
-          effect: >-
-            During your opponent’s next turn, this Pokémon takes 30 less damage
-            from attacks (after applying Weakness and Resistance).
-        - name: Raging Uppercut
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: 90+
-          effect: >-
-            If this Pokémon has 8 or more damage counters on it, this attack
-            does 120 more damage.
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 2efe29bb-33ba-4865-ba40-10fddc2a4d2f
       reverse-holo: 377677e8-349a-426f-961b-f038c6be9024
@@ -2037,35 +669,6 @@ items:
       illustrator: Naoyo Kimura
       rarity: Common
       category: Pokemon
-      dexId:
-        - '115'
-      hp: '120'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Fetch
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Headbutt
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-        - name: One-Two Punch
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 60+
-          effect: Flip a coin. If heads, this attack does 30 more damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 3f4e4347-fa78-4bdc-82d7-0249f047ddbc
       reverse-holo: 4d6cd507-3502-4ec2-9b0f-e0197ea20f35
@@ -2078,31 +681,6 @@ items:
       illustrator: Yukiko Baba
       rarity: Common
       category: Pokemon
-      dexId:
-        - '333'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Collect
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Peck
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: d858973b-a161-412a-84af-08f571b752c1
       reverse-holo: f7d29ad1-d2d7-4299-8127-e399d51cd947
@@ -2115,26 +693,6 @@ items:
       illustrator: Shibuzoh.
       rarity: Common
       category: Pokemon
-      dexId:
-        - '333'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Sing
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Your opponent’s Active Pokémon is now Asleep.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: a314b829-6c52-4f4b-89a8-3cdded885cd4
       reverse-holo: a8bb47e8-4c36-47c2-b1bb-256510903b6a
@@ -2151,14 +709,6 @@ items:
       illustrator: Ken Sugimori
       rarity: Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: |-
-        You can play this card only when it is the last card in your hand.
-
-        Draw 2 cards for each Fire Pokémon you have in play.
-      trainerType: Supporter
     editions:
       unlimited: 8c6bf8e1-bfbc-4d37-8053-4578d0b071e6
       reverse-holo: b3b6b35c-316f-4618-9f66-9367fb7194bd
@@ -2168,14 +718,6 @@ items:
       illustrator: Toyste Beach
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        If the Dragon Pokémon this card is attached to is your Active Pokémon
-        and is damaged by an opponent’s attack (even if that Pokémon is Knocked
-        Out), put 3 damage counters on the Attacking Pokémon.
-      trainerType: Tool
     editions:
       unlimited: b88b663c-08ec-46f5-80e4-0452951d88ff
       reverse-holo: 25dbd5fb-f403-49ed-a064-ddc9ff5035e5
@@ -2188,16 +730,6 @@ items:
       illustrator: Eske Yoshinob
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can play this card only if you discard 2 other cards from your hand.
-
-
-        Search your deck for up to 4 Fire Energy cards, reveal them, and put
-        them into your hand. Then, shuffle your deck.
-      trainerType: Item
     variants:
       yellow-a-alt-holo:
         name: Alternate Art (Holo)
@@ -2219,16 +751,6 @@ items:
       illustrator: kodama
       rarity: Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can play this card only if 1 of your Pokémon was Knocked Out during
-        your opponent’s last turn.
-
-        Search your deck for up to 2 Dragon Pokémon and put them onto your
-        Bench. Then, shuffle your deck.
-      trainerType: Supporter
     integrations:
       pokeData: '768'
       tcgPlayer: '175491'
@@ -2238,13 +760,6 @@ items:
       illustrator: Yoshinobu Saito
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Switch your Active Water Pokémon with 1 of your Benched Pokémon. If you
-        do, heal 30 damage from the Pokémon you moved to your Bench.
-      trainerType: Item
     editions:
       unlimited: 5f1c5920-ab50-43cf-8c0e-62a305ba7885
       reverse-holo: 637ba731-964e-4cc1-92f3-5e2e4acb8a53
@@ -2257,13 +772,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Whenever a player flips a coin for the Special Condition Burned between
-        turns, that Special Condition isn’t removed even if the result is heads.
-      trainerType: Stadium
     editions:
       unlimited: efbf0c43-692a-48c0-9899-cad078e6794d
       reverse-holo: e6cd1ef5-cd33-4cac-8baf-9294b2c1cedd
@@ -2276,17 +784,6 @@ items:
       illustrator: Megumi Mizutani
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can play this card only if 1 of your Pokémon was Knocked Out during
-        your opponent’s last turn.
-
-
-        Attach up to 2 basic Energy cards from your hand to 1 of your Dragon
-        Pokémon.
-      trainerType: Supporter
     editions:
       unlimited: 499c9e97-72f5-40b6-8ddd-5fabeca0aba1
       reverse-holo: 98441f98-6b54-4331-91ad-ab4e2c8677f0
@@ -2301,44 +798,6 @@ items:
       illustrator: PLANETA Igarashi
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '643'
-      hp: '180'
-      types:
-        - Fire
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Flame Charge
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Fire Energy cards and attach them to
-            this Pokémon. Then, shuffle your deck.
-        - name: Scorching Column
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Colorless
-          damage: '110'
-          effect: Your opponent’s Active Pokémon is now Burned.
-        - name: Vermilion GX
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Colorless
-          damage: '180'
-          effect: >-
-            You may attach up to 5 Fire Energy cards from your hand to your
-            Pokémon in any way you like. (You can’t use more than 1 GX attack in
-            a game.)
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '754'
       tcgPlayer: '175495'
@@ -2350,39 +809,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '230'
-      hp: '230'
-      types:
-        - Water
-      evolveFrom: Seadra
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Hydro Pump
-          cost:
-            - Colorless
-          damage: 10+
-          effect: >-
-            This attack does 50 more damage times the amount of Water Energy
-            attached to this Pokémon.
-        - name: Reverse Thrust
-          cost:
-            - Water
-          damage: '30'
-          effect: Switch this Pokémon with 1 of your Benched Pokémon.
-        - name: Maelstrom GX
-          cost:
-            - Water
-          damage: undefined
-          effect: >-
-            This attack does 40 damage to each of your opponent’s Pokémon.
-            (Don’t apply Weakness and Resistance for Benched Pokémon.) (You
-            can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '758'
       tcgPlayer: '175496'
@@ -2394,40 +820,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '149'
-      hp: '250'
-      types:
-        - Dragon
-      evolveFrom: Dragonair
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Dragon Claw
-          cost:
-            - Lightning
-          damage: '70'
-        - name: Giga Impact
-          cost:
-            - Water
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '200'
-          effect: This Pokémon can’t attack during your next turn.
-        - name: Dragonporter GX
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Put 3 Dragon Pokémon from your discard pile onto your Bench. (You
-            can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     integrations:
       pokeData: '749'
       tcgPlayer: '175497'
@@ -2439,45 +831,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
-      dexId:
-        - '334'
-      hp: '200'
-      types:
-        - Dragon
-      evolveFrom: Swablu
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Bright Tone
-          cost:
-            - Fairy
-            - Colorless
-          damage: '50'
-          effect: >-
-            During your opponent’s next turn, prevent all damage done to this
-            Pokémon by attacks from Pokémon-GX and Pokémon-EX.
-        - name: Sonic Edge
-          cost:
-            - Water
-            - Fairy
-            - Colorless
-          damage: '110'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-        - name: Euphoria GX
-          cost:
-            - Fairy
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent’s Active Pokémon is now Asleep. Heal all damage from
-            all of your Pokémon. (You can’t use more than 1 GX attack in a
-            game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     integrations:
       pokeData: '759'
       tcgPlayer: '175498'
@@ -2493,14 +846,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Ultra Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: |-
-        You can play this card only when it is the last card in your hand.
-
-        Draw 2 cards for each Fire Pokémon you have in play.
-      trainerType: Supporter
   zinnia-70:
     name: Zinnia
     editions:
@@ -2509,17 +854,6 @@ items:
       illustrator: Hideki Ishikawa
       rarity: Ultra Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can play this card only if 1 of your Pokémon was Knocked Out during
-        your opponent’s last turn.
-
-
-        Attach up to 2 basic Energy cards from your hand to 1 of your Dragon
-        Pokémon.
-      trainerType: Supporter
     integrations:
       pokeData: '745'
       tcgPlayer: '175500'
@@ -2531,44 +865,6 @@ items:
       illustrator: PLANETA Igarashi
       rarity: Secret Rare
       category: Pokemon
-      dexId:
-        - '643'
-      hp: '180'
-      types:
-        - Fire
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Flame Charge
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Fire Energy cards and attach them to
-            this Pokémon. Then, shuffle your deck.
-        - name: Scorching Column
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Colorless
-          damage: '110'
-          effect: Your opponent’s Active Pokémon is now Burned.
-        - name: Vermilion GX
-          cost:
-            - Fire
-            - Fire
-            - Fire
-            - Colorless
-          damage: '180'
-          effect: >-
-            You may attach up to 5 Fire Energy cards from your hand to your
-            Pokémon in any way you like. (You can’t use more than 1 GX attack in
-            a game.)
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '747'
       tcgPlayer: '175501'
@@ -2580,45 +876,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Secret Rare
       category: Pokemon
-      dexId:
-        - '334'
-      hp: '200'
-      types:
-        - Dragon
-      evolveFrom: Swablu
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Bright Tone
-          cost:
-            - Fairy
-            - Colorless
-          damage: '50'
-          effect: >-
-            During your opponent’s next turn, prevent all damage done to this
-            Pokémon by attacks from Pokémon-GX and Pokémon-EX.
-        - name: Sonic Edge
-          cost:
-            - Water
-            - Fairy
-            - Colorless
-          damage: '110'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-        - name: Euphoria GX
-          cost:
-            - Fairy
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent’s Active Pokémon is now Asleep. Heal all damage from
-            all of your Pokémon. (You can’t use more than 1 GX attack in a
-            game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '1'
     integrations:
       pokeData: '752'
       tcgPlayer: '175502'
@@ -2630,43 +887,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Secret Rare
       category: Pokemon
-      dexId:
-        - '373'
-      hp: '250'
-      types:
-        - Dragon
-      evolveFrom: Shelgon
-      level: undefined
-      suffix: GX
-      abilities:
-        - type: Ability
-          name: Dragon Lift
-          effect: >-
-            Your Pokémon in play have no Retreat Cost, except Pokémon-GX and
-            Pokémon-EX.
-      attacks:
-        - name: Bright Flame
-          cost:
-            - Fire
-            - Water
-            - Colorless
-            - Colorless
-          damage: '200'
-          effect: Discard 2 Energy from this Pokémon.
-        - name: Flame Jet GX
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            This attack does 120 damage to 1 of your opponent’s Pokémon. (Don’t
-            apply Weakness and Resistance for Benched Pokémon.) (You can’t use
-            more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '746'
       tcgPlayer: '175503'
@@ -2678,44 +898,6 @@ items:
       illustrator: 5ban Graphics
       rarity: Secret Rare
       category: Pokemon
-      dexId:
-        - '646'
-      hp: '190'
-      types:
-        - Dragon
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Shred
-          cost:
-            - Fire
-          damage: '40'
-          effect: >-
-            This attack’s damage isn’t affected by any effects on your
-            opponent’s Active Pokémon.
-        - name: Raging Blade
-          cost:
-            - Fire
-            - Water
-            - Colorless
-          damage: 80+
-          effect: >-
-            If this Pokémon has any damage counters on it, this attack does 80
-            more damage.
-        - name: Dragon Nova GX
-          cost:
-            - Fire
-            - Fire
-            - Water
-            - Colorless
-          damage: '200'
-          effect: >-
-            Your opponent’s Active Pokémon is now Burned and Paralyzed. (You
-            can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '3'
     integrations:
       pokeData: '748'
       tcgPlayer: '175504'
@@ -2727,14 +909,6 @@ items:
       illustrator: Toyste Beach
       rarity: Secret Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        If the Dragon Pokémon this card is attached to is your Active Pokémon
-        and is damaged by an opponent’s attack (even if that Pokémon is Knocked
-        Out), put 3 damage counters on the Attacking Pokémon.
-      trainerType: Tool
     integrations:
       pokeData: '753'
       tcgPlayer: '175505'
@@ -2746,16 +920,6 @@ items:
       illustrator: Eske Yoshinob
       rarity: Secret Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can play this card only if you discard 2 other cards from your hand.
-
-
-        Search your deck for up to 4 Fire Energy cards, reveal them, and put
-        them into your hand. Then, shuffle your deck.
-      trainerType: Item
     integrations:
       pokeData: '751'
       tcgPlayer: '175506'
@@ -2767,13 +931,6 @@ items:
       illustrator: Yoshinobu Saito
       rarity: Secret Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Switch your Active Water Pokémon with 1 of your Benched Pokémon. If you
-        do, heal 30 damage from the Pokémon you moved to your Bench.
-      trainerType: Item
     integrations:
       pokeData: '756'
       tcgPlayer: '175507'
@@ -2785,35 +942,6 @@ items:
       illustrator: PLANETA Igarashi
       rarity: Secret Rare
       category: Pokemon
-      dexId:
-        - '800'
-      hp: '190'
-      types:
-        - Dragon
-      level: undefined
-      suffix: GX
-      attacks:
-        - name: Photon Geyser
-          cost:
-            - Psychic
-            - Metal
-          damage: 20+
-          effect: >-
-            Discard all basic Psychic Energy from this Pokémon. This attack does
-            80 more damage for each card you discarded in this way.
-        - name: Sky-Scorching Light GX
-          cost:
-            - Psychic
-            - Metal
-          damage: undefined
-          effect: >-
-            You can use this attack only if the total of both players’ remaining
-            Prize cards is 6 or less. Put 6 damage counters on each of your
-            opponent’s Pokémon. (You can’t use more than 1 GX attack in a game.)
-      weaknesses:
-        - type: Fairy
-          value: ×2
-      retreat: '2'
     integrations:
       pokeData: '744'
       tcgPlayer: '175508'

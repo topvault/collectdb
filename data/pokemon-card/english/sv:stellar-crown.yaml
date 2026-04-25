@@ -5,27 +5,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '340'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Tranquil Flower
-          effect: >-
-            Once during your turn, if this Pokémon is in the Active Spot, you
-            may heal 60 damage from 1 of your Pokémon.
-      attacks:
-        - name: Dangerous Toxwhip
-          cost:
-            - Grass
-            - Grass
-            - Colorless
-          damage: '150'
-          effect: Your opponent's Active Pokémon is now Confused and Poisoned.
-      retreat: '4'
-      regulationMark: G
     editions:
       unlimited: f10b15e7-68d8-42dc-a765-05fdf61a8508
     integrations:
@@ -44,19 +23,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Headbutt Bounce
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 217bff59-5481-4ca1-a5ae-c3e2a989e020
       reverse-holo: 2e13c15b-5d03-4952-8dc5-fffb9115c666
@@ -69,29 +35,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '90'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Glittering Star Pattern
-          effect: >-
-            When you play this Pokémon from your hand to evolve 1 of your
-            Pokémon during your turn, you may switch in 1 of your opponent's
-            Benched Pokémon that has 90 HP or less remaining to the Active Spot.
-      attacks:
-        - name: Swift
-          cost:
-            - Colorless
-            - Colorless
-          damage: '70'
-          effect: >-
-            This attack's damage isn't affected by Weakness or Resistance, or by
-            any effects on your opponent's Active Pokémon.
-      retreat: '0'
-      regulationMark: H
     variants:
       non-holo:
         name: Non Holo
@@ -109,23 +52,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '80'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Collect
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Leaf Step
-          cost:
-            - Grass
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 4708a561-5a83-42b7-8c71-d71265af71b3
       reverse-holo: 80055b43-24fa-40aa-a292-ca0a64dd90da
@@ -138,21 +64,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '100'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Bind Down
-          cost:
-            - Grass
-          damage: '50'
-          effect: >-
-            During your opponent's next turn, the Defending Pokémon can't
-            retreat.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: a42a3b7f-f218-4b82-bbc4-b064595395e6
       reverse-holo: a2dd0d59-0169-4963-94e5-26eb3307333d
@@ -165,28 +76,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '150'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Selective Slime
-          effect: >-
-            Once during your turn, you may flip a coin. If heads, choose Burned,
-            Confused, or Poisoned. Your opponent's Active Pokémon is now
-            affected by that Special Condition.
-      attacks:
-        - name: Miasma Wind
-          cost:
-            - Grass
-          damage: 100×
-          effect: >-
-            This attack does 100 damage for each Special Condition affecting
-            your opponent's Active Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 45df012b-9f56-4aab-abe4-005fba3035b9
       reverse-holo: d13f7c88-d4f8-4787-b94f-75fb383e0aec
@@ -199,28 +88,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '110'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Nosh
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Heal 40 damage from this Pokémon.
-        - name: Loom Over
-          cost:
-            - Grass
-            - Colorless
-            - Colorless
-          damage: 130-
-          effect: >-
-            This attack does 10 less damage for each damage counter on this
-            Pokémon.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: e81f8608-cb5a-4204-95c2-b933a7750c63
       reverse-holo: 7217e195-5ec4-430d-a18a-fdb06c2a62c0
@@ -233,21 +100,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Reaping Dash
-          cost:
-            - Colorless
-          damage: '30'
-          effect: >-
-            Before doing damage, discard all Pokémon Tools and Special Energy
-            from your opponent's Active Pokémon.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 9a0cb7c7-9986-4371-a538-f8ff29eaed73
       reverse-holo: b121203e-2ab7-4f2c-898d-da4e0ee18f48
@@ -260,20 +112,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ambush
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: Flip a coin. If heads, this attack does 30 more damage.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 9735167c-92cb-4505-a343-3e25fccfc7de
       reverse-holo: 6ac75591-5d47-4c31-ad36-60f22f185c2d
@@ -286,19 +124,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Double Spin
-          cost:
-            - Colorless
-          damage: 10×
-          effect: Flip 2 coins. This attack does 10 damage for each heads.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 56c7b0f4-8c85-4748-878a-3102ecfd5413
       reverse-holo: 9b19d3b3-3e51-4919-8d4a-a19534816101
@@ -311,26 +136,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '90'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Breezy Gift
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Put this Pokémon and all attached cards into your deck. If you do,
-            search your deck for up to 3 cards and put them into your hand.
-            Then, shuffle your deck.
-        - name: Leafage
-          cost:
-            - Grass
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 4bd3403c-3a60-4a89-a6e2-19d40276ad51
       reverse-holo: 7e6a26c5-1165-4fa8-9cc3-c86b0c6c8b0e
@@ -343,18 +148,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Spray Fluid
-          cost:
-            - Grass
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 489b7e16-0e62-4da1-93b2-4391118ebba0
       reverse-holo: 7cb6a4bb-2b02-4d3c-9b1c-c6e7eb1e52c6
@@ -367,21 +160,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Coated Attack
-          cost:
-            - Grass
-          damage: '20'
-          effect: >-
-            During your opponent's next turn, prevent all damage done to this
-            Pokémon by attacks from Basic Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 45a4b46a-f67b-43a1-8176-527326e019e0
       reverse-holo: 420f2f1f-b339-4c26-98fc-837397b9c3a1
@@ -394,29 +172,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '330'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Ripening Charge
-          effect: >-
-            Once during your turn, you may attach a Basic Grass Energy card from
-            your hand to 1 of your Pokémon. If you attached Energy to a Pokémon
-            in this way, heal 30 damage from that Pokémon.
-      attacks:
-        - name: Syrup Storm
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30+
-          effect: >-
-            This attack does 30 more damage for each Grass Energy attached to
-            all of your Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: e388a02d-bbaa-4820-bc7e-70d331ac5040
     integrations:
@@ -428,18 +183,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '50'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-          damage: '10'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 4e0dc420-6c45-4e07-ae64-562c22919f18
       reverse-holo: b1f78c0a-f2a4-4fd9-9b02-31ca366ecf99
@@ -452,18 +195,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '110'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Spiral Kick
-          cost:
-            - Colorless
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: e2e5538b-88f4-48ea-94e6-afad7fea0d6c
       reverse-holo: eea759ef-1078-485c-95dd-0b9b58dad727
@@ -476,23 +207,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ram
-          cost:
-            - Grass
-          damage: '10'
-        - name: Gentle Slap
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 278bf45c-e254-45fb-b0ec-2aae2581be04
       reverse-holo: ba1e4da0-dc10-4f24-9fac-669ef4690907
@@ -505,26 +219,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '140'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Mega Drain
-          cost:
-            - Grass
-            - Colorless
-          damage: '30'
-          effect: Heal 30 damage from this Pokémon.
-        - name: Whip Smash
-          cost:
-            - Grass
-            - Colorless
-            - Colorless
-          damage: '90'
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 600d3096-b3b9-4766-9a85-2c30a31f38bc
       reverse-holo: 6bccc2e6-c87e-47a5-bda9-d2385ca32a46
@@ -537,18 +231,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Flop
-          cost:
-            - Fire
-          damage: '10'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: d399fa30-42c3-45b4-9f88-5171ff94f410
       reverse-holo: 6be0292d-ea8c-41a9-92b5-4b0efa1ab191
@@ -561,20 +243,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '120'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Burning Run
-          cost:
-            - Fire
-            - Colorless
-          damage: 60+
-          effect: Flip a coin. If heads, this attack does 60 more damage.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 5dfe03ce-71b6-4e4b-903f-2fea4b54ff0b
       reverse-holo: 4988a688-3933-426e-9227-6b4b398c8b4f
@@ -587,28 +255,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Call for Family
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for a Basic Pokémon and put it onto your Bench.
-            Then, shuffle your deck.
-        - name: Searing Flame
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: Your opponent's Active Pokémon is now Burned.
-      retreat: '1'
-      regulationMark: G
     editions:
       unlimited: 25bed693-1c55-4302-9692-7b36d079ffd7
       reverse-holo: 2efa4043-0836-4082-a311-277184851d4a
@@ -621,20 +267,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Heat Blast
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '90'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: d996e2ed-5b5e-45fa-b9bf-837527ae9163
       reverse-holo: eeac6944-9a6d-4e5b-bbbe-183c02fdee53
@@ -652,19 +284,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ember
-          cost:
-            - Fire
-          damage: '30'
-          effect: Discard an Energy from this Pokémon.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 0a4b9325-d746-430e-a172-7655972ae57c
       reverse-holo: 3fd652be-3c88-4354-9a27-227538d8db78
@@ -677,30 +296,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '120'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Sudden Scorching
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent discards a card from their hand. If this Pokémon
-            evolved from Salandit during this turn, your opponent discards 2
-            more cards.
-        - name: Flamethrower
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '130'
-          effect: Discard an Energy from this Pokémon.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 5ec4e686-2d0e-4ac6-91c7-4cd6772b0eb9
       reverse-holo: 35f50dd2-003a-4b2a-ab84-9a18d0371b40
@@ -713,31 +308,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '130'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ring of Fire
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '50'
-          effect: >-
-            Your opponent's Active Pokémon is now Burned. During your opponent's
-            next turn, that Pokémon can't retreat.
-        - name: Inferno Onrush
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '180'
-          effect: This Pokémon also does 60 damage to itself.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: b7aec98c-a013-4414-b560-8c38f92a7cb7
       reverse-holo: 9f388053-c271-4f0a-802f-3e9479ed9e44
@@ -750,19 +320,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Quick Attack
-          cost:
-            - Colorless
-          damage: 10+
-          effect: Flip a coin. If heads, this attack does 10 more damage.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: ef64c1f0-75a4-4f0c-bc0a-4705a3075474
       reverse-holo: f2e5ae66-b9db-489d-8e46-e5df07ddb25d
@@ -775,24 +332,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Low Sweep
-          cost:
-            - Fire
-          damage: '30'
-        - name: Combustion
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '60'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: a8bec05e-7ab6-4930-8a11-93b87567c42b
       reverse-holo: f5d39bfc-434b-47ea-98f6-623b82df3f78
@@ -805,30 +344,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '320'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Flare Strike
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '280'
-          effect: During your next turn, this Pokémon can't use Flare Strike.
-        - name: Garnet Volley
-          cost:
-            - Fire
-            - Fighting
-            - Darkness
-          damage: undefined
-          effect: >-
-            This attack does 180 damage to 1 of your opponent's Pokémon. (Don't
-            apply Weakness and Resistance for Benched Pokémon.)
-      retreat: '0'
-      regulationMark: H
     editions:
       unlimited: 21aac477-6e3d-419b-aa62-3547a244040a
     integrations:
@@ -840,19 +355,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Flare
-          cost:
-            - Fire
-            - Colorless
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: eceabb76-41a7-4fb2-8082-1600e3696a51
       reverse-holo: f9d4285a-10b3-4bcc-b97d-e47d9ca47936
@@ -865,28 +367,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '330'
-      types:
-        - Water
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Solid Shell
-          effect: >-
-            This Pokémon takes 30 less damage from attacks (after applying
-            Weakness and Resistance).
-      attacks:
-        - name: Twin Cannons
-          cost:
-            - Water
-            - Water
-          damage: 140×
-          effect: >-
-            Discard up to 2 Basic Water Energy cards from your hand. This attack
-            does 140 damage for each card you discarded in this way.
-      retreat: '3'
-      regulationMark: G
     editions:
       unlimited: 88be485a-33be-43ba-ab9e-8c4bace4a08f
     integrations:
@@ -905,24 +385,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Water Gun
-          cost:
-            - Water
-          damage: '20'
-        - name: Surf
-          cost:
-            - Water
-            - Colorless
-            - Colorless
-          damage: '80'
-      retreat: '2'
-      regulationMark: H
     variants:
       seven-eleven-stamp:
         name: 7-Eleven Stamp
@@ -942,29 +404,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '220'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Power Splash
-          cost:
-            - Water
-          damage: 40×
-          effect: This attack does 40 damage for each Energy attached to this Pokémon.
-        - name: Larimar Rain
-          cost:
-            - Water
-            - Psychic
-            - Metal
-          damage: undefined
-          effect: >-
-            Look at the top 20 cards of your deck and attach any number of
-            Energy cards you find there to your Pokémon in any way you like.
-            Shuffle the other cards back into your deck.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 6f431669-25d7-41a4-b8c2-0b30a5ae3197
     integrations:
@@ -976,18 +415,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rollout
-          cost:
-            - Colorless
-          damage: '10'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 11324061-4586-46d0-9fed-de4b2e1b0224
       reverse-holo: ec1c85c7-f863-479a-9c73-5787cafa8afa
@@ -1000,22 +427,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '120'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Bubble Beam
-          cost:
-            - Water
-            - Colorless
-          damage: '60'
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Paralyzed.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 1b256de2-bde4-4111-a4dc-d7215971ffa6
       reverse-holo: da05071e-b587-4766-a9d3-874efd5fc184
@@ -1028,18 +439,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '50'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Sprinkle Water
-          cost:
-            - Water
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: d4fbc767-9698-4701-9f04-d6bd51cfe83f
       reverse-holo: 5943e4ab-f413-4fc9-9924-703ca83ea8fc
@@ -1052,24 +451,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '110'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Return
-          cost:
-            - Colorless
-          damage: '20'
-          effect: You may draw cards until you have 6 cards in your hand.
-        - name: Razor Fin
-          cost:
-            - Water
-            - Colorless
-          damage: '70'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b5d7d7c7-ba1c-40fd-810e-7b50d257e87f
       reverse-holo: 1d68140e-2f62-4bec-a166-f2c745616ecb
@@ -1082,20 +463,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '100'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Splashing Turn
-          cost:
-            - Water
-            - Water
-          damage: '70'
-          effect: Switch this Pokémon with 1 of your Benched Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: f3eb9359-5e91-4621-999d-c341dd4e9deb
       reverse-holo: 574c0c0a-df57-485c-b113-ce8a0fd93a35
@@ -1108,25 +475,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '160'
-      types:
-        - Water
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Primal Knowledge
-          effect: >-
-            Attacks used by your Pokémon do 30 more damage to your opponent's
-            Active Evolution Pokémon (before applying Weakness and Resistance).
-      attacks:
-        - name: Tidal Wave
-          cost:
-            - Water
-            - Water
-          damage: '150'
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 8a2b519e-3dc7-475b-95bd-d6916eb02782
       reverse-holo: e6648fce-cbb1-459d-8d01-e7759bbb78d2
@@ -1139,19 +487,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rain Splash
-          cost:
-            - Water
-            - Colorless
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: c8eac47e-b3f4-40ac-9784-4656e99a77f6
       reverse-holo: 0005b207-d72e-42c0-835d-3d664dd23335
@@ -1164,19 +499,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '90'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Wave Splash
-          cost:
-            - Water
-            - Colorless
-          damage: '40'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: aa21c0fd-265f-4a9e-8302-77f4146a50c7
       reverse-holo: c5a6851f-d8d6-462f-b44a-5eb75b914a5e
@@ -1189,20 +511,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '300'
-      types:
-        - Water
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Shifting Shuriken
-          cost:
-            - Water
-            - Colorless
-          damage: 100+
-          effect: Flip a coin. If heads, this attack does 100 more damage.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: acc134c6-0341-4fef-af61-412f8a36191f
     integrations:
@@ -1219,29 +527,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '160'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Food Prep
-          effect: >-
-            Attacks used by this Pokémon cost Colorless less for each Kofu card
-            in your discard pile.
-      attacks:
-        - name: Haymaker
-          cost:
-            - Water
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '250'
-          effect: During your next turn, this Pokémon can't use Haymaker.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: d088d790-822a-4106-be44-2d91241b1c6e
       reverse-holo: 3ea1557a-cd99-4281-8331-5f2959f67128
@@ -1254,20 +539,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '80'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Headbutt
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '60'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: e5b48e77-aad1-401a-99b7-51e0fba7ea02
       reverse-holo: 927ac840-3164-406e-901e-45cc0da606c3
@@ -1280,29 +551,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '140'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Impervious Shell
-          effect: >-
-            Prevent all damage done to this Pokémon by attacks from your
-            opponent's Pokémon if that damage is 200 or more.
-      attacks:
-        - name: Hard Crunch
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 80+
-          effect: >-
-            If your opponent's Active Pokémon already has any damage counters on
-            it, this attack does 80 more damage.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: db63d200-a889-4ae5-bb3c-6020ed4bbc97
       reverse-holo: f2f1cd4a-594a-41b6-8fd3-39d0ce209c10
@@ -1315,30 +563,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Food Prep
-          effect: >-
-            Attacks used by this Pokémon cost Colorless less for each Kofu card
-            in your discard pile.
-      attacks:
-        - name: Sonic Edge
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '110'
-          effect: >-
-            This attack's damage isn't affected by any effects on your
-            opponent's Active Pokémon.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: be2c9dbd-8330-4dfc-ab54-b5cf8dfce2ba
       reverse-holo: e9ba525e-e6f0-40e9-bcb3-49da72b88243
@@ -1351,24 +575,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Collect
-          cost:
-            - Lightning
-          damage: undefined
-          effect: Draw a card.
-        - name: Magnum Punch
-          cost:
-            - Lightning
-            - Lightning
-          damage: '40'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 8ec408fe-3544-4573-a78e-3b436dfc6295
       reverse-holo: 7f007e2e-60f8-4db6-90ee-3ae5385a0899
@@ -1381,26 +587,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '150'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Electroslug
-          cost:
-            - Lightning
-          damage: '40'
-        - name: Unleash Lightning
-          cost:
-            - Lightning
-            - Lightning
-          damage: '220'
-          effect: >-
-            During your next turn, your Pokémon can't attack. (This includes new
-            Pokémon that come into play.)
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 4273b740-392a-4e1c-8bbc-269e5fc87b88
       reverse-holo: 6f8155ec-aa96-4884-81df-2e3086cda85a
@@ -1413,20 +599,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Double Voltage
-          cost:
-            - Colorless
-            - Colorless
-          damage: 20×
-          effect: Flip 2 coins. This attack does 20 damage for each heads.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: f6c69ee2-ebae-491e-b156-9899c01186e3
       reverse-holo: 25e8c310-30af-4f23-905e-d0032210a870
@@ -1439,29 +611,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '120'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Disorienting Flash
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Your opponent's Active Pokémon is now Confused. Put 8 damage
-            counters instead of 3 on that Pokémon for this Special Condition.
-        - name: Thunderous Bolt
-          cost:
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '140'
-          effect: During your next turn, this Pokémon can't attack.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 9c2dfac3-1efd-4f26-901d-b99d10433086
       reverse-holo: 844752d8-e7d6-49f2-b841-6da8cae55df5
@@ -1474,22 +623,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '30'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Jolting Charge
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Basic Grass Energy cards and up to 2
-            Basic Lightning Energy cards and attach them to your Pokémon in any
-            way you like. Then, shuffle your deck.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: d21c7332-b0e2-47e2-adfc-5bd57dcc2e9a
       reverse-holo: d01c04b8-0b53-4705-8f4d-7cc0e4d37b38
@@ -1502,31 +635,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '260'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Charged Web
-          cost:
-            - Lightning
-            - Colorless
-          damage: 110+
-          effect: >-
-            If your opponent's Active Pokémon is a Pokémon ex or Pokémon V, this
-            attack does 110 more damage.
-        - name: Fulgurite
-          cost:
-            - Grass
-            - Lightning
-            - Fighting
-          damage: '180'
-          effect: >-
-            Discard all Energy from this Pokémon. During your opponent's next
-            turn, they can't play any Item cards from their hand.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 010f404a-445b-4365-aef0-b905eb48c9a5
     integrations:
@@ -1538,21 +646,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '80'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Parallel Placement
-          cost:
-            - Lightning
-          damage: undefined
-          effect: >-
-            Search your deck for up to 3 Charjabug and put them onto your Bench.
-            Then, shuffle your deck.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 5db09b50-1115-4f2e-90d2-9308ca366d33
       reverse-holo: 140ea6aa-d6aa-41c8-b244-8f2d6cf2597c
@@ -1565,26 +658,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '160'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Volt Switch
-          cost:
-            - Lightning
-          damage: '90'
-          effect: Switch this Pokémon with 1 of your Benched Lightning Pokémon.
-        - name: Sparking Strike
-          cost:
-            - Lightning
-            - Lightning
-            - Colorless
-            - Colorless
-          damage: '240'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: fb50ed40-0ee8-490d-8865-2dcf77cc9d74
       reverse-holo: 4ce4c3f2-569f-4399-adf7-0f50607b50f6
@@ -1597,21 +670,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '80'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Electrifying Chance
-          cost:
-            - Lightning
-          damage: '30'
-          effect: >-
-            If you have exactly 1 Prize card remaining, your opponent's Active
-            Pokémon is now Paralyzed.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 01868b4f-d33f-45f5-b47a-8c31b2e19867
       reverse-holo: a9b2bbe2-4c6b-444c-8327-01f655f5be4e
@@ -1624,22 +682,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '120'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Combat Thunder
-          cost:
-            - Lightning
-            - Colorless
-          damage: 20+
-          effect: >-
-            This attack does 20 more damage for each of your opponent's Benched
-            Pokémon.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 53542f16-98b2-43df-b68a-ecb727d8c701
       reverse-holo: 1cdc4cdb-930c-43ef-a069-f118a1dc7bea
@@ -1652,21 +694,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '40'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Targeted Spark
-          cost:
-            - Lightning
-          damage: undefined
-          effect: >-
-            This attack does 20 damage to 1 of your opponent's Pokémon. (Don't
-            apply Weakness and Resistance for Benched Pokémon.)
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b1011069-b0d7-47ce-8670-8a35a1e95366
       reverse-holo: 8d175ab5-70a7-4993-9632-b395ed7bb67a
@@ -1679,24 +706,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '80'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Dangle Tail
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Put a Pokémon from your discard pile into your hand.
-        - name: Tackle
-          cost:
-            - Psychic
-            - Colorless
-          damage: '30'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 1ffddd4c-d2a5-47b0-9190-3b1e7ca460d9
       reverse-holo: 504e359c-a8f5-479d-a3c1-a7d766d99983
@@ -1709,29 +718,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '120'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Seek Inspiration
-          cost:
-            - Psychic
-            - Colorless
-          damage: undefined
-          effect: >-
-            Discard the top card of your deck, and if that card is a Pokémon
-            that doesn't have a Rule Box, choose 1 of its attacks and use it as
-            this attack. (Pokémon ex, Pokémon V, etc. have Rule Boxes.)
-        - name: Super Psy Bolt
-          cost:
-            - Psychic
-            - Psychic
-            - Colorless
-          damage: '120'
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 9380e4b3-85ba-461d-9869-4894db8b875b
       reverse-holo: eba4b0d2-a5c5-464a-9618-9ba3c0a59f09
@@ -1744,20 +730,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Super Psy Bolt
-          cost:
-            - Psychic
-            - Psychic
-            - Colorless
-          damage: '100'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 507516ad-3bbb-4fb9-ae2c-b136b16dabd6
       reverse-holo: bd86853b-f3b9-4daf-b7fd-83ad8dde9672
@@ -1770,21 +742,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Expand
-          cost:
-            - Psychic
-          damage: '10'
-          effect: >-
-            During your opponent's next turn, this Pokémon takes 10 less damage
-            from attacks (after applying Weakness and Resistance).
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 126c454f-741c-4501-af81-c73dd14cac66
       reverse-holo: 36848a75-40ae-430a-9c67-3b188e177d3a
@@ -1797,22 +754,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Everyone Explode Now
-          cost:
-            - Psychic
-          damage: 50×
-          effect: >-
-            This attack does 50 damage for each of your Drifloon and Drifblim in
-            play. This attack also does 30 damage to each of your Drifloon and
-            Drifblim. (Don't apply Weakness and Resistance for Benched Pokémon.)
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: df00466c-44f5-4ece-b54a-9ae51708d0a5
       reverse-holo: 63ed0e66-a866-4a58-89ee-34e4efbb1d39
@@ -1825,20 +766,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ominous Eyes
-          cost:
-            - Psychic
-            - Psychic
-          damage: undefined
-          effect: Put 3 damage counters on 1 of your opponent's Pokémon.
-      retreat: '2'
-      regulationMark: G
     editions:
       unlimited: f23615d4-8a17-4e6c-ad49-f4f50f0b925a
       reverse-holo: 47cbb006-428e-45bd-b761-4f80a3bf3728
@@ -1851,24 +778,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Flower Shower
-          cost:
-            - Psychic
-          damage: undefined
-          effect: Each player draws 3 cards.
-        - name: Play Rough
-          cost:
-            - Psychic
-          damage: 20+
-          effect: Flip a coin. If heads, this attack does 20 more damage.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 7bf6a65a-282e-4821-9212-65f2f5cb7f40
       reverse-holo: 12fe6dc4-5d24-49f2-9b17-297ca93cc425
@@ -1881,18 +790,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Mumble
-          cost:
-            - Psychic
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 09a49ae9-a15b-49cc-a4ad-accb848f5b1f
       reverse-holo: 7d5587f9-3989-4ca7-99a4-8033a346f09f
@@ -1905,27 +802,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '110'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Colorful Confection
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 5 Pokémon that are the same type as any
-            Basic Energy attached to this Pokémon, reveal them, and put them
-            into your hand. Then, shuffle your deck.
-        - name: Magical Shot
-          cost:
-            - Psychic
-            - Colorless
-          damage: '60'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 3d856400-3eea-492b-bb64-66a0223512a6
       reverse-holo: c100af1d-16fa-489c-85f8-3f2af3f60c39
@@ -1938,25 +814,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pleasant Aroma
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for a Basic Pokémon and put it onto your Bench.
-            Then, shuffle your deck.
-        - name: Stampede
-          cost:
-            - Colorless
-          damage: '10'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 72807e7d-875f-4cf7-b704-fd69325190a9
       reverse-holo: 7328ff90-bbae-4d41-b5c7-8321978dbbbc
@@ -1969,28 +826,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '250'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Time to Chow Down
-          effect: >-
-            When you play this Pokémon from your hand to evolve 1 of your
-            Pokémon during your turn, you may heal all damage from each of your
-            Evolution Pokémon. If you healed any damage in this way, discard all
-            Energy from those Pokémon.
-      attacks:
-        - name: Wonder Shine
-          cost:
-            - Colorless
-            - Colorless
-          damage: '130'
-          effect: Your opponent's Active Pokémon is now Confused.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: cd268864-8d6b-4926-8fe0-7ce9b0da2511
     integrations:
@@ -2002,18 +837,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '50'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Peck
-          cost:
-            - Psychic
-          damage: '10'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 32a53fa4-14d1-4c84-afb5-6296701f5673
       reverse-holo: 023a5628-bc3f-4b81-9a92-cea5e471a71a
@@ -2026,18 +849,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '130'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Psychic Flash
-          cost:
-            - Psychic
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 3e58f204-4037-4e71-990d-62905a517fb1
       reverse-holo: 1f6a3b31-6129-44d1-b1f9-0cd23c231818
@@ -2050,25 +861,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '80'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Paw Shake Punch
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-        - name: Bite
-          cost:
-            - Psychic
-            - Colorless
-            - Colorless
-          damage: '50'
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 0712b4cb-cf83-4a1d-a7cc-7a1b5fd75add
       reverse-holo: 0d3b2e12-7419-4bce-97df-bbea81896ec7
@@ -2081,22 +873,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '140'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Adjusted Horn
-          cost:
-            - Psychic
-            - Colorless
-          damage: '170'
-          effect: >-
-            If you don't have the same number of cards in your hand as your
-            opponent, this attack does nothing.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 7b5aab9b-4dd7-4cf7-9b53-ba02ee898ebd
       reverse-holo: 06da2ffb-5502-4bd1-b45d-6a386093294b
@@ -2109,19 +885,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Reckless Charge
-          cost:
-            - Fighting
-          damage: '30'
-          effect: This Pokémon also does 10 damage to itself.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b9e99c52-dd9a-4402-957a-7ca6eda9ccba
       reverse-holo: 8443af78-ac5f-480e-89b5-353c3449bb84
@@ -2134,29 +897,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '120'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Growl
-          cost:
-            - Fighting
-          damage: undefined
-          effect: >-
-            During your opponent's next turn, attacks used by the Defending
-            Pokémon do 40 less damage (before applying Weakness and Resistance).
-        - name: Bone Vengeance
-          cost:
-            - Colorless
-            - Colorless
-          damage: 60+
-          effect: >-
-            If any of your Benched Cubone have any damage counters on them, this
-            attack does 120 more damage.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 973306bd-b995-42a6-afa8-df7341c4e418
       reverse-holo: 21f188f7-f1b1-43f4-b427-0e890fa99673
@@ -2169,19 +909,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '100'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Horn Attack
-          cost:
-            - Fighting
-            - Colorless
-          damage: '50'
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 230dc684-d30c-4838-8960-a096f27a83cf
       reverse-holo: 37a9f6b8-fa25-4555-b491-976b82d08cb3
@@ -2194,23 +921,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '140'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Destructive Horn
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '80'
-          effect: >-
-            Flip a coin. If heads, discard an Energy from your opponent's Active
-            Pokémon.
-      retreat: '4'
-      regulationMark: H
     editions:
       unlimited: 4e8fcbce-4266-4116-860c-042bb68e02eb
       reverse-holo: de9f42ff-e034-4315-9bc3-c8f8e5b782d3
@@ -2223,28 +933,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '200'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Wide Wall
-          effect: >-
-            As long as this Pokémon is in the Active Spot, whenever your
-            opponent plays a Supporter card from their hand, prevent all effects
-            of that card done to all of your Pokémon.
-      attacks:
-        - name: Drill Run
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '180'
-          effect: Discard an Energy from your opponent's Active Pokémon.
-      retreat: '4'
-      regulationMark: H
     editions:
       unlimited: b5059bf5-6888-4b37-8638-331f4eb09e0c
       reverse-holo: 51c99c5c-2a67-4043-a2b8-547257b0e71e
@@ -2262,18 +950,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Beat
-          cost:
-            - Fighting
-          damage: '10'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 0fdb98b2-7c35-43f0-9ca2-d4f42e619e04
       reverse-holo: 55862590-6002-4ad5-b5a7-fcdfd50ebad8
@@ -2286,25 +962,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Calm Mind
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Heal 20 damage from this Pokémon.
-        - name: Chop
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: c070088b-3dcb-41fc-8b4d-503c1e626bd5
       reverse-holo: 59dc917f-4bda-4885-8a2a-e6a49dcd2fb0
@@ -2317,19 +974,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '110'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Double Smash
-          cost:
-            - Fighting
-          damage: 40×
-          effect: Flip 2 coins. This attack does 40 damage for each heads.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: bb4dc072-ca46-4131-a7f2-7ef4c79e9e59
       reverse-holo: 996f05a3-8c0f-439a-a4b7-c6417e711a24
@@ -2342,29 +986,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '260'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Chi-Atsu
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Put damage counters on your opponent's Active Pokémon until its
-            remaining HP is 50.
-        - name: Yoga Kick
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '190'
-          effect: This attack's damage isn't affected by Weakness or Resistance.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b86b04cc-486e-40a6-abca-9071e69bd98c
     integrations:
@@ -2376,19 +997,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Punch
-          cost:
-            - Fighting
-            - Colorless
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 56abaf92-1f9e-4a3d-8a27-6e828ca10812
       reverse-holo: 4c00cd53-4ea3-4eac-8943-067e0c2f8dd4
@@ -2401,25 +1009,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '250'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Low Kick
-          cost:
-            - Fighting
-            - Colorless
-          damage: '50'
-        - name: Aura Knuckle
-          cost:
-            - Fighting
-            - Fighting
-            - Colorless
-          damage: '120'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 85933c42-a4c4-4293-9cd8-d79aefdef9ca
     integrations:
@@ -2431,19 +1020,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Knock Off
-          cost:
-            - Fighting
-          damage: '10'
-          effect: Discard a random card from your opponent's hand.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b3927c6d-4f4c-4f45-8219-4f0d7533fdfa
       reverse-holo: 3565675b-ea53-48ec-bd43-b7b5b2022b38
@@ -2456,21 +1032,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '90'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Gale Roundhouse
-          cost:
-            - Fighting
-          damage: 30+
-          effect: >-
-            If your opponent has 5 or fewer cards in their hand, this attack
-            does 60 more damage.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 5d1e0673-f740-4a3e-bb58-d2f84c3a5a19
       reverse-holo: 6f068cfe-b6b2-46f3-86e1-a18f3c69b747
@@ -2483,26 +1044,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Leer
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Paralyzed.
-        - name: Low Kick
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 0b67a820-eb7d-4eaa-8729-f8daa915a7c2
       reverse-holo: fe7fe312-ebe5-4ece-9669-64e5a7f14621
@@ -2515,26 +1056,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '110'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Diffuse Reflection
-          cost:
-            - Colorless
-          damage: 40×
-          effect: >-
-            This attack does 40 damage for each Special Energy attached to all
-            of your opponent's Pokémon.
-        - name: Power Gem
-          cost:
-            - Fighting
-            - Colorless
-          damage: '60'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 6c939f2a-29b7-445e-8f8b-529ddd0452c3
       reverse-holo: 29ee4056-93ac-4062-af5d-ba374f43d59a
@@ -2547,25 +1068,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Vise Grip
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-        - name: Crabhammer
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '50'
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 1acdf64a-10e8-477a-9c66-d1a64bde8643
       reverse-holo: 69ff3d76-080f-44c8-aca2-5309b70f4186
@@ -2578,29 +1080,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '110'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Form Ranks
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Basic Pokémon and put them onto your
-            Bench. Then, shuffle your deck.
-        - name: All-Out Attack
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30+
-          effect: >-
-            If this Pokémon used Form Ranks during your last turn, this attack
-            does 90 more damage.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 5b4925dd-c0c2-462f-832e-dec293524e8a
       reverse-holo: 00fa539f-efd8-4ea1-9aa0-8dc29189ab6a
@@ -2613,27 +1092,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '340'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Salty Body
-          effect: This Pokémon can't be affected by any Special Conditions.
-      attacks:
-        - name: Block Hammer
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '170'
-          effect: >-
-            During your opponent's next turn, this Pokémon takes 60 less damage
-            from attacks (after applying Weakness and Resistance).
-      retreat: '4'
-      regulationMark: G
     editions:
       unlimited: 961c134c-e673-466e-836e-9a82e517de9e
     integrations:
@@ -2645,22 +1103,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Resolute Fang
-          cost:
-            - Fighting
-            - Fighting
-          damage: 50+
-          effect: >-
-            If your opponent's Active Pokémon is a Pokémon ex, this attack does
-            70 more damage.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: a48d4cc5-9f25-4c78-aa24-9118cef2a92a
       reverse-holo: d0d6f293-6d11-4173-94b0-59c68c520e17
@@ -2673,25 +1115,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Drool
-          cost:
-            - Darkness
-          damage: '10'
-        - name: Super Poison Breath
-          cost:
-            - Darkness
-            - Darkness
-            - Colorless
-          damage: '30'
-          effect: Your opponent's Active Pokémon is now Poisoned.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: a085309d-7eac-4a4e-a32e-bcef24981977
       reverse-holo: b502c1e5-3d21-45aa-b6ad-08cd017bd48e
@@ -2704,28 +1127,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Darkness
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Devouring Mouth
-          cost:
-            - Darkness
-          damage: 10+
-          effect: >-
-            If this Pokémon has more Energy attached than your opponent's Active
-            Pokémon, this attack does 160 more damage.
-        - name: Venomous Hit
-          cost:
-            - Darkness
-            - Darkness
-            - Colorless
-          damage: '100'
-          effect: Your opponent's Active Pokémon is now Poisoned.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: e8b73be2-ffcb-4764-a435-03fe3b2ae5a7
       reverse-holo: bae51c57-584a-49d6-bcf5-f654f5c49e68
@@ -2738,26 +1139,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '140'
-      types:
-        - Darkness
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Pull
-          cost:
-            - Darkness
-          damage: undefined
-          effect: Switch in 1 of your opponent's Benched Pokémon to the Active Spot.
-        - name: Tantrum
-          cost:
-            - Darkness
-            - Darkness
-            - Colorless
-          damage: '160'
-          effect: This Pokémon is now Confused.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: a0027760-c93f-4aab-81ed-697852a52840
       reverse-holo: ee71c789-7a83-47e9-9455-a688a8e0fe85
@@ -2770,24 +1151,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Smack
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Claw Slash
-          cost:
-            - Darkness
-            - Colorless
-            - Colorless
-          damage: '40'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: f49c1d21-0022-4f8c-9f84-ec3ca8e29f19
       reverse-holo: e0408908-ca22-4385-8455-f58c448c5388
@@ -2800,25 +1163,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Darkness
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Gentle Slap
-          cost:
-            - Colorless
-            - Colorless
-          damage: '40'
-        - name: Darkness Fang
-          cost:
-            - Darkness
-            - Colorless
-            - Colorless
-          damage: '70'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: f6f00bac-21d9-4207-9681-4b0dd68a84a2
       reverse-holo: e7dab2dc-6217-4285-a3f9-85211b8deb67
@@ -2831,30 +1175,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '170'
-      types:
-        - Darkness
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Goad 'n' Grab
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Switch out your opponent's Active Pokémon to the Bench. (Your
-            opponent chooses the new Active Pokémon.) If you do, this attack
-            does 160 damage to the new Active Pokémon.
-        - name: Knuckle Sandwich
-          cost:
-            - Darkness
-            - Colorless
-            - Colorless
-          damage: '160'
-          effect: Discard 2 Energy from this Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 89fa2523-cee6-436c-a34d-16d4d07eacb0
       reverse-holo: e9c7defd-2d13-40d2-b048-b233539e0764
@@ -2872,20 +1192,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '100'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Reckless Charge
-          cost:
-            - Darkness
-            - Colorless
-          damage: '70'
-          effect: This Pokémon also does 20 damage to itself.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 19a22230-ddf8-4352-a913-73354b3118d9
       reverse-holo: f3e6377a-c605-46e9-9f27-e141dcf0d857
@@ -2898,26 +1204,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '80'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Swelling Wish
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Attach a Basic Energy card from your discard pile to 1 of your
-            Benched Pokémon.
-        - name: Slap
-          cost:
-            - Metal
-            - Colorless
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 84b23b65-a014-48f0-939d-0ffdcb31e53f
       reverse-holo: 1b273e12-fee1-4bfb-86b8-2f38d7a579b2
@@ -2930,24 +1216,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Allure
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Beam
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: b7084a40-7e26-4183-8734-e06024f15a92
       reverse-holo: 5c821e89-4b80-47cb-96d1-0d77953fc093
@@ -2960,20 +1228,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Iron Tackle
-          cost:
-            - Colorless
-            - Colorless
-          damage: '60'
-          effect: This Pokémon also does 20 damage to itself.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 1a20b638-7a9d-4788-99f4-5a785e584af3
       reverse-holo: 873bae5d-776c-44d6-8520-120f78479e06
@@ -2986,27 +1240,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '140'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Emergency Rotation
-          effect: >-
-            Once during your turn, if this Pokémon is in your hand and your
-            opponent has any Stage 2 Pokémon in play, you may put this Pokémon
-            onto your Bench.
-      attacks:
-        - name: Hyper Ray
-          cost:
-            - Colorless
-            - Colorless
-          damage: '130'
-          effect: Discard all Energy from this Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: a8eb5adf-0b96-498d-ba4a-fb90de91fb6b
       reverse-holo: 8fa9f370-0911-4d4e-857c-6b6557cf54f2
@@ -3024,24 +1257,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Stampede
-          cost:
-            - Metal
-          damage: '10'
-        - name: Beam
-          cost:
-            - Metal
-            - Colorless
-            - Colorless
-          damage: '40'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 97e989dc-f619-4ad7-a627-ba3770c2eb62
       reverse-holo: 5aa8fb36-cda1-46fb-a983-cbe027a4aaef
@@ -3059,26 +1274,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Knickknack Carrying
-          cost:
-            - Metal
-          damage: undefined
-          effect: >-
-            Search your deck for a Pokémon Tool card, reveal it, and put it into
-            your hand. Then, shuffle your deck.
-        - name: Ram
-          cost:
-            - Metal
-            - Colorless
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 7dce2e0f-3afd-4dd6-83e1-a608c05dc934
       reverse-holo: aface221-61d5-4bff-b028-5e16efe752a2
@@ -3091,28 +1286,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '160'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Wrack Down
-          cost:
-            - Colorless
-            - Colorless
-          damage: '50'
-        - name: Reforged Axe
-          cost:
-            - Metal
-            - Colorless
-            - Colorless
-          damage: '250'
-          effect: >-
-            Before doing damage, discard all Pokémon Tools from this Pokémon. If
-            you can't discard any, this attack does nothing.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 59a8969b-94ef-4bf5-a9bf-7d6c171febe7
       reverse-holo: af04a006-be51-4750-a4a6-5d698167f240
@@ -3130,22 +1303,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '280'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Iron Swing
-          cost:
-            - Metal
-            - Metal
-            - Colorless
-            - Colorless
-          damage: 100×
-          effect: Flip 2 coins. This attack does 100 damage for each heads.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: f3758611-a4d9-4477-bf0e-975514dfb4ff
     integrations:
@@ -3162,27 +1319,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '130'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Hammer In
-          cost:
-            - Metal
-          damage: '30'
-        - name: Raging Hammer
-          cost:
-            - Metal
-            - Metal
-            - Colorless
-          damage: 80+
-          effect: >-
-            This attack does 10 more damage for each damage counter on this
-            Pokémon.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 4c759210-a86e-4b99-bec6-f73978d9540e
       reverse-holo: 25b4912a-ebb0-4eea-9bda-57407dfb0642
@@ -3195,27 +1331,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '180'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Metal Bridge
-          effect: >-
-            All of your Pokémon that have Metal Energy attached have no Retreat
-            Cost.
-      attacks:
-        - name: Iron Blaster
-          cost:
-            - Metal
-            - Metal
-            - Colorless
-          damage: '160'
-          effect: During your next turn, this Pokémon can't attack.
-      retreat: '2'
-      regulationMark: H
     variants:
       gamestop-stamp:
         name: Stamp
@@ -3252,19 +1367,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '80'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ram
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 56e66293-454a-4340-b1cc-9f9089cefa48
       reverse-holo: 92d23282-7044-430b-8df6-e7bb111b630e
@@ -3277,20 +1379,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '150'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Outta-Control Dash
-          cost:
-            - Metal
-            - Colorless
-            - Colorless
-          damage: '100'
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: be95d28b-ec5b-4d7c-9ab2-b7c8211147e5
       reverse-holo: 71ffff54-0400-4c14-8a59-c5f1efc25c3c
@@ -3303,31 +1391,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '220'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Pummeling Payback
-          effect: >-
-            If this Pokémon is damaged by an attack from your opponent's Pokémon
-            (even if this Pokémon is Knocked Out), put 2 damage counters on the
-            Attacking Pokémon for each Metal Energy attached to this Pokémon.
-      attacks:
-        - name: Rock Tomb
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '150'
-          effect: >-
-            During your opponent's next turn, the Defending Pokémon can't
-            retreat.
-      retreat: '4'
-      regulationMark: H
     editions:
       unlimited: abbed24d-6951-4358-97b9-14722e485b15
     integrations:
@@ -3339,29 +1402,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '130'
-      types:
-        - Dragon
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Thunderburst Storm
-          cost:
-            - Lightning
-            - Fighting
-          damage: undefined
-          effect: >-
-            This attack does 30 damage to 1 of your opponent's Pokémon for each
-            Energy attached to this Pokémon. (Don't apply Weakness and
-            Resistance for Benched Pokémon.)
-        - name: Dragon Headbutt
-          cost:
-            - Lightning
-            - Fighting
-            - Colorless
-          damage: '130'
-      retreat: '3'
-      regulationMark: H
     variants:
       stellar-crown-stamp:
         name: Stellar Crown Stamp
@@ -3379,23 +1419,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '120'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Destructive Horn
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '70'
-          effect: >-
-            Flip a coin. If heads, discard an Energy from your opponent's Active
-            Pokémon.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 5f83dd8d-b2f7-46d3-8796-2fe7c1be043b
       reverse-holo: 68a7323c-bc98-42d5-85f9-d03828d58934
@@ -3408,26 +1431,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Call for Family
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for a Basic Pokémon and put it onto your Bench.
-            Then, shuffle your deck.
-        - name: Gnaw
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b2d25e0f-8676-46e6-9345-60c27524b78a
       reverse-holo: 738f5728-3327-42a2-97b9-f2d977f16269
@@ -3440,19 +1443,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Triple Stab
-          cost:
-            - Colorless
-          damage: 10×
-          effect: Flip 3 coins. This attack does 10 damage for each heads.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 459d36a2-a8a5-4d8d-975f-fa28c1f2adf3
       reverse-holo: 0cf6d0d6-b186-495c-b54d-cab4288540b3
@@ -3465,27 +1455,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '100'
-      types:
-        - Colorless
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Jewel Seeker
-          effect: >-
-            Once during your turn, when you play this Pokémon from your hand to
-            evolve 1 of your Pokémon, if you have any Tera Pokémon in play, you
-            may search your deck for up to 2 Trainer cards, reveal them, and put
-            them into your hand. Then, shuffle your deck.
-      attacks:
-        - name: Speed Wing
-          cost:
-            - Colorless
-            - Colorless
-          damage: '60'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 5d1a60b2-8229-4ae6-a6c4-11eebde1d50d
       reverse-holo: 0c98cbf6-8dbd-41ee-b9aa-7df58cfc9ba4
@@ -3498,18 +1467,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Hook
-          cost:
-            - Colorless
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 4dd59e96-6c2b-4555-808f-67d3f95cc38a
       reverse-holo: 370e1e2b-b711-4c50-8dc9-5c5b8557fdc0
@@ -3522,22 +1479,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '120'
-      types:
-        - Colorless
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Nyan Roll
-          cost:
-            - Colorless
-            - Colorless
-          damage: '80'
-          effect: >-
-            Flip a coin. If heads, during your opponent's next turn, prevent all
-            damage from and effects of attacks done to this Pokémon.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 3a2a080a-bd95-40d2-9ffe-58f145f151a1
       reverse-holo: f9c79caa-438b-4549-a111-48fdb3680b77
@@ -3550,27 +1491,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Fan Call
-          effect: >-
-            Once during your first turn, you may search your deck for up to 3
-            Colorless Pokémon with 100 HP or less, reveal them, and put them
-            into your hand. Then, shuffle your deck. You can't use more than 1
-            Fan Call Ability during your turn.
-      attacks:
-        - name: Assault Landing
-          cost:
-            - Colorless
-          damage: '70'
-          effect: If there is no Stadium in play, this attack does nothing.
-      retreat: '1'
-      regulationMark: H
     variants:
       premier-ball-league:
         name: Premier Ball League
@@ -3592,29 +1512,6 @@ items:
       illustrator: ''
       rarity: Rare
       category: Pokemon
-      hp: '100'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Curly Wall
-          effect: >-
-            As long as you have at least 1 other Bouffalant in play, all of your
-            Basic Colorless Pokémon take 60 less damage from attacks from your
-            opponent's Pokémon (after applying Weakness and Resistance). The
-            effect of Curly Wall doesn't stack.
-      attacks:
-        - name: Boundless Power
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '130'
-          effect: During your next turn, this Pokémon can't attack.
-      retreat: '2'
-      regulationMark: H
     variants:
       non-holo:
         name: Non Holo
@@ -3632,28 +1529,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '110'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Knuckle Punch
-          cost:
-            - Colorless
-            - Colorless
-          damage: '50'
-        - name: Storm Barrier
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '100'
-          effect: >-
-            During your opponent's next turn, this Pokémon takes 50 less damage
-            from attacks (after applying Weakness and Resistance).
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: eb661743-c9f9-491e-b730-9f34e5886886
       reverse-holo: e7b893b7-5d2e-4dfa-bc01-b38968f475aa
@@ -3666,21 +1541,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Send Back
-          cost:
-            - Colorless
-          damage: '10'
-          effect: >-
-            Switch out your opponent's Active Pokémon to the Bench. (Your
-            opponent chooses the new Active Pokémon.)
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b040cba3-fae6-47e3-846c-1fc2b89d78e9
       reverse-holo: a8d95016-ad03-48da-8a08-e340ddd46305
@@ -3693,19 +1553,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '90'
-      types:
-        - Colorless
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Speed Dive
-          cost:
-            - Colorless
-            - Colorless
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: ae817df5-50f1-4bfb-a0ab-c71d278d753b
       reverse-holo: 3fcaa5b9-6361-4a51-854a-eb79030aba1e
@@ -3718,22 +1565,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '140'
-      types:
-        - Colorless
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Aero Chase
-          cost:
-            - Colorless
-            - Colorless
-          damage: 110+
-          effect: >-
-            If the Retreat Cost of your opponent's Active Pokémon is
-            ColorlessColorless or more, this attack does 110 more damage.
-      retreat: '0'
-      regulationMark: H
     editions:
       unlimited: 654b8c47-c997-4cdf-9ac6-e83618b8bb36
       reverse-holo: e707bec8-5e83-41a3-9b09-35fd0b1676a0
@@ -3746,20 +1577,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '70'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Knock Over
-          cost:
-            - Colorless
-            - Colorless
-          damage: '30'
-          effect: You may discard a Stadium in play.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: a74b743f-77ff-4171-9360-93ba568cb161
       reverse-holo: 3f324d0c-0182-4096-a799-6d4af3ff73e3
@@ -3772,26 +1589,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Pokemon
-      hp: '130'
-      types:
-        - Colorless
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Soft Wool
-          effect: >-
-            This Pokémon takes 30 less damage from attacks (after applying
-            Weakness and Resistance).
-      attacks:
-        - name: Knock Over
-          cost:
-            - Colorless
-            - Colorless
-          damage: '70'
-          effect: You may discard a Stadium in play.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 26b96b11-9aad-4c40-b6e5-c21c70494cc7
       reverse-holo: 36224f02-3e56-45ff-857b-e333639bc5b1
@@ -3804,18 +1601,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rear Kick
-          cost:
-            - Colorless
-          damage: '30'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 141b23b4-729a-4372-817a-a157b765aa96
       reverse-holo: 622816f7-f3f7-4317-80c0-0ab816588a19
@@ -3828,23 +1613,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Pokemon
-      hp: '110'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tail Snap
-          cost:
-            - Colorless
-          damage: '10'
-        - name: Speed Attack
-          cost:
-            - Colorless
-            - Colorless
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: fa9ceefd-fa03-4bb8-a72a-0ba2a9843518
       reverse-holo: fa5bb828-a441-4de1-9f81-bb450cb93517
@@ -3857,31 +1625,6 @@ items:
       illustrator: ''
       rarity: Double rare
       category: Pokemon
-      hp: '230'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Unified Beatdown
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30×
-          effect: >-
-            If you go second, you can't use this attack during your first turn.
-            This attack does 30 damage for each of your Benched Pokémon.
-        - name: Crown Opal
-          cost:
-            - Grass
-            - Water
-            - Lightning
-          damage: '180'
-          effect: >-
-            During your opponent's next turn, prevent all damage done to this
-            Pokémon by attacks from Basic non-Colorless Pokémon.
-      retreat: '2'
-      regulationMark: H
     variants:
       premier-ball-league:
         name: Premier Ball League
@@ -3898,23 +1641,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Trainer
-      hp: '60'
-      level: undefined
-      abilities:
-        - type: Ability
-          name: Protective Cover
-          effect: >-
-            Prevent all effects of attacks used by your opponent's Pokémon done
-            to this Pokémon. (Damage is not an effect.)
-      retreat: undefined
-      effect: >-
-        Play this card as if it were a 60-HP Basic Colorless Pokémon. This card
-        can't be affected by any Special Conditions and can't retreat.
-
-
-        At any time during your turn, you may discard this card from play.
-      trainerType: Item
-      regulationMark: H
     editions:
       unlimited: 8a9ba155-2073-4030-99bc-4267e96988c7
       reverse-holo: 4d5b8db7-f0d6-46fd-83ec-f8f5ff8bde7d
@@ -3927,23 +1653,6 @@ items:
       illustrator: ''
       rarity: Common
       category: Trainer
-      hp: '60'
-      level: undefined
-      abilities:
-        - type: Ability
-          name: Primal Root
-          effect: >-
-            As long as this Pokémon is in the Active Spot, attacks used by your
-            opponent's Basic Pokémon cost Colorless more.
-      retreat: undefined
-      effect: >-
-        Play this card as if it were a 60-HP Basic Colorless Pokémon. This card
-        can't be affected by any Special Conditions and can't retreat.
-
-
-        At any time during your turn, you may discard this card from play.
-      trainerType: Item
-      regulationMark: H
     editions:
       unlimited: 0c3f7df1-c250-4259-b14b-c5083bf358be
       reverse-holo: 92949d6f-0496-421a-a984-faafa9bc083f
@@ -3956,20 +1665,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Each player who has any Tera Pokémon in play can have up to 8 Pokémon on
-        their Bench.
-
-
-        If a player no longer has any Tera Pokémon in play, that player discards
-        Pokémon from their Bench until they have 5. When this card leaves play,
-        both players discard Pokémon from their Bench until they have 5, and the
-        player who played this card discards first.
-      trainerType: Stadium
-      regulationMark: H
     variants:
       present-pack-stamp:
         name: Present Pack Stamp
@@ -3989,18 +1684,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can use this card only if your opponent has exactly 2 Prize cards
-        remaining.
-
-
-        During this turn, if your opponent's Active Pokémon is Knocked Out by
-        damage from an attack used by your Tera Pokémon, take 1 more Prize card.
-      trainerType: Supporter
-      regulationMark: H
     variants:
       regionals:
         name: Regionals (Orange Logo)
@@ -4038,15 +1721,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Search your deck for up to 2 Basic Energy cards of different types,
-        reveal them, and put 1 of them into your hand. Attach the other to 1 of
-        your Pokémon. Then, shuffle your deck.
-      trainerType: Supporter
-      regulationMark: H
     variants:
       present-pack-stamp:
         name: Present Pack Stamp
@@ -4066,16 +1740,6 @@ items:
       illustrator: ''
       rarity: ACE SPEC Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        If the Pokémon this card is attached to is in the Active Spot and is
-        damaged by an attack from your opponent's Pokémon (even if this Pokémon
-        is Knocked Out), put 12 damage counters on the Attacking Pokémon. If you
-        placed any damage counters in this way, discard this card.
-      trainerType: Tool
-      regulationMark: H
     editions:
       unlimited: 2f31a5b0-3685-4c00-a4f7-a93d8e5f26e4
     integrations:
@@ -4087,17 +1751,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can use this card only if you have any Tera Pokémon in play.
-
-
-        Choose up to 2 of your Benched Colorless Pokémon and attach a Basic
-        Energy card from your discard pile to each of them.
-      trainerType: Item
-      regulationMark: H
     variants:
       present-pack-stamp:
         name: Present Pack Stamp
@@ -4125,19 +1778,6 @@ items:
       illustrator: ''
       rarity: ACE SPEC Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Once during each player's turn, that player may search their deck for a
-        Stage 1 Pokémon that evolves from 1 of their Basic Pokémon and put it
-        onto that Pokémon to evolve it. If that Pokémon was evolved in this way,
-        that player may search their deck for a Stage 2 Pokémon that evolves
-        from that Pokémon and put it onto that Pokémon to evolve it. Then, that
-        player shuffles their deck. (Players can't evolve a Basic Pokémon during
-        their first turn or a Basic Pokémon that was put into play this turn.)
-      trainerType: Stadium
-      regulationMark: H
     editions:
       unlimited: 50208000-bed6-45de-83b3-a4976ae4e2f0
     integrations:
@@ -4149,14 +1789,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        As long as the Pokémon this card is attached to is in the Active Spot,
-        the Retreat Cost of both Active Pokémon is Colorless more.
-      trainerType: Tool
-      regulationMark: H
     editions:
       unlimited: ebab5eda-ed8f-49ff-a6a3-568649cd4000
       reverse-holo: c9250bb6-d191-449e-9c87-57d4ab28607f
@@ -4169,16 +1801,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Put 2 cards from your hand on the bottom of your deck in any order. If
-        you put 2 cards on the bottom of your deck in this way, draw 4 cards.
-        (If you can't put 2 cards from your hand on the bottom of your deck, you
-        can't use this card.)
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: 876c7b78-4cf0-40e9-ba70-7a71f2e3eb6a
       reverse-holo: 3c0b8d82-163c-4078-b68a-6d901924be5b
@@ -4191,14 +1813,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Shuffle your hand into your deck. Then, draw 4 cards. If your opponent
-        has 3 or fewer Prize cards remaining, draw 8 cards instead.
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: b96c68cf-1efb-47bb-b582-af907abcc4bd
       reverse-holo: 8e84e8e5-2e8a-455c-b132-0f8635eca447
@@ -4211,15 +1825,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        If the Pokémon this card is attached to is damaged by an attack from
-        your opponent's Fire Pokémon, it takes 60 less damage (after applying
-        Weakness and Resistance), and discard this card.
-      trainerType: Tool
-      regulationMark: H
     editions:
       unlimited: 940cf5e6-9d68-4f2d-aa6a-a9bfc8ac93b6
       reverse-holo: d05fe835-bd28-4889-887e-2286d2d66c1e
@@ -4232,15 +1837,6 @@ items:
       illustrator: ''
       rarity: Uncommon
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        If the Pokémon this card is attached to is damaged by an attack from
-        your opponent's Psychic Pokémon, it takes 60 less damage (after applying
-        Weakness and Resistance), and discard this card.
-      trainerType: Tool
-      regulationMark: H
     editions:
       unlimited: 94569d98-2389-4aff-9dc2-c3c342da062e
       reverse-holo: 98fcad59-878d-4a5c-b577-21cda2cfc9d3
@@ -4253,14 +1849,6 @@ items:
       illustrator: ''
       rarity: ACE SPEC Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        When the Tera Pokémon this card is attached to uses an attack, that
-        attack costs 1 Energy less. (The Energy can be of any type.)
-      trainerType: Tool
-      regulationMark: H
     editions:
       unlimited: 085b3bb3-eece-4383-975d-c52dec561337
     integrations:
@@ -4272,20 +1860,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '70'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Leech Seed
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-          effect: Heal 20 damage from this Pokémon.
-      retreat: '2'
-      regulationMark: G
     editions:
       unlimited: a0625d2e-368f-4a78-b309-2bc3b5f8377c
     integrations:
@@ -4297,29 +1871,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '90'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Glittering Star Pattern
-          effect: >-
-            When you play this Pokémon from your hand to evolve 1 of your
-            Pokémon during your turn, you may switch in 1 of your opponent's
-            Benched Pokémon that has 90 HP or less remaining to the Active Spot.
-      attacks:
-        - name: Swift
-          cost:
-            - Colorless
-            - Colorless
-          damage: '70'
-          effect: >-
-            This attack's damage isn't affected by Weakness or Resistance, or by
-            any effects on your opponent's Active Pokémon.
-      retreat: '0'
-      regulationMark: H
     editions:
       unlimited: 9cff8964-de9b-4592-a36e-8b0711cec8e6
     integrations:
@@ -4331,21 +1882,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '100'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Bind Down
-          cost:
-            - Grass
-          damage: '50'
-          effect: >-
-            During your opponent's next turn, the Defending Pokémon can't
-            retreat.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 1f3f7c0a-7900-4aed-9689-cf76a7b28781
     integrations:
@@ -4357,31 +1893,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '130'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Ring of Fire
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '50'
-          effect: >-
-            Your opponent's Active Pokémon is now Burned. During your opponent's
-            next turn, that Pokémon can't retreat.
-        - name: Inferno Onrush
-          cost:
-            - Fire
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '180'
-          effect: This Pokémon also does 60 damage to itself.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 7fd39b14-118d-4e30-b630-55a0cd9b6ce1
     integrations:
@@ -4393,24 +1904,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '90'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Low Sweep
-          cost:
-            - Fire
-          damage: '30'
-        - name: Combustion
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '60'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: fbfbdd7a-c824-4cfe-8462-1233cde7136b
     integrations:
@@ -4422,26 +1915,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Withdraw
-          cost:
-            - Water
-          damage: undefined
-          effect: >-
-            Flip a coin. If heads, during your opponent's next turn, prevent all
-            damage done to this Pokémon by attacks.
-        - name: Skull Bash
-          cost:
-            - Water
-            - Water
-          damage: '20'
-      retreat: '1'
-      regulationMark: G
     editions:
       unlimited: d0dddbbd-41d8-4d2e-9ced-77818f688de1
     integrations:
@@ -4453,29 +1926,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '160'
-      types:
-        - Water
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Food Prep
-          effect: >-
-            Attacks used by this Pokémon cost Colorless less for each Kofu card
-            in your discard pile.
-      attacks:
-        - name: Haymaker
-          cost:
-            - Water
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '250'
-          effect: During your next turn, this Pokémon can't use Haymaker.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 80a3c6bc-942a-4d8a-8c58-ecac1dbc8b46
     integrations:
@@ -4492,22 +1942,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '30'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Jolting Charge
-          cost:
-            - Colorless
-          damage: undefined
-          effect: >-
-            Search your deck for up to 2 Basic Grass Energy cards and up to 2
-            Basic Lightning Energy cards and attach them to your Pokémon in any
-            way you like. Then, shuffle your deck.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: a5145fe0-8065-4738-a8e0-13fc9419cf25
     integrations:
@@ -4519,22 +1953,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '120'
-      types:
-        - Lightning
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Combat Thunder
-          cost:
-            - Lightning
-            - Colorless
-          damage: 20+
-          effect: >-
-            This attack does 20 more damage for each of your opponent's Benched
-            Pokémon.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 3fd269f9-0867-4110-8988-a50c9e1c620c
     integrations:
@@ -4546,18 +1964,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '60'
-      types:
-        - Psychic
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Mumble
-          cost:
-            - Psychic
-          damage: '20'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: fba610e7-7565-4c5e-b45c-e85325d70c41
     integrations:
@@ -4569,25 +1975,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '70'
-      types:
-        - Fighting
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Calm Mind
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Heal 20 damage from this Pokémon.
-        - name: Chop
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '50'
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 96e7acec-37a1-4ab5-b6ca-0cfdc67ce0cc
     integrations:
@@ -4599,25 +1986,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '70'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Drool
-          cost:
-            - Darkness
-          damage: '10'
-        - name: Super Poison Breath
-          cost:
-            - Darkness
-            - Darkness
-            - Colorless
-          damage: '30'
-          effect: Your opponent's Active Pokémon is now Poisoned.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 2b453e45-19b0-47de-ac0a-1d9b55f80026
     integrations:
@@ -4629,27 +1997,6 @@ items:
       illustrator: ''
       rarity: Illustration rare
       category: Pokemon
-      hp: '180'
-      types:
-        - Metal
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Metal Bridge
-          effect: >-
-            All of your Pokémon that have Metal Energy attached have no Retreat
-            Cost.
-      attacks:
-        - name: Iron Blaster
-          cost:
-            - Metal
-            - Metal
-            - Colorless
-          damage: '160'
-          effect: During your next turn, this Pokémon can't attack.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 226c3a44-77b5-44a3-a370-c14e3324445d
     integrations:
@@ -4661,29 +2008,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '330'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Ripening Charge
-          effect: >-
-            Once during your turn, you may attach a Basic Grass Energy card from
-            your hand to 1 of your Pokémon. If you attached Energy to a Pokémon
-            in this way, heal 30 damage from that Pokémon.
-      attacks:
-        - name: Syrup Storm
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30+
-          effect: >-
-            This attack does 30 more damage for each Grass Energy attached to
-            all of your Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: 186a6de9-b957-44e7-8e6d-5ce98bea4405
     integrations:
@@ -4695,30 +2019,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '320'
-      types:
-        - Fire
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Flare Strike
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '280'
-          effect: During your next turn, this Pokémon can't use Flare Strike.
-        - name: Garnet Volley
-          cost:
-            - Fire
-            - Fighting
-            - Darkness
-          damage: undefined
-          effect: >-
-            This attack does 180 damage to 1 of your opponent's Pokémon. (Don't
-            apply Weakness and Resistance for Benched Pokémon.)
-      retreat: '0'
-      regulationMark: H
     editions:
       unlimited: 00d33a47-0da9-473e-8bd7-96ed8d318f75
     integrations:
@@ -4730,29 +2030,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '220'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Power Splash
-          cost:
-            - Water
-          damage: 40×
-          effect: This attack does 40 damage for each Energy attached to this Pokémon.
-        - name: Larimar Rain
-          cost:
-            - Water
-            - Psychic
-            - Metal
-          damage: undefined
-          effect: >-
-            Look at the top 20 cards of your deck and attach any number of
-            Energy cards you find there to your Pokémon in any way you like.
-            Shuffle the other cards back into your deck.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: a348e1c0-ff42-4db8-bd5b-ebe5764a4bda
     integrations:
@@ -4764,31 +2041,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '260'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Charged Web
-          cost:
-            - Lightning
-            - Colorless
-          damage: 110+
-          effect: >-
-            If your opponent's Active Pokémon is a Pokémon ex or Pokémon V, this
-            attack does 110 more damage.
-        - name: Fulgurite
-          cost:
-            - Grass
-            - Lightning
-            - Fighting
-          damage: '180'
-          effect: >-
-            Discard all Energy from this Pokémon. During your opponent's next
-            turn, they can't play any Item cards from their hand.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b87de170-ff3e-4bb7-8ec9-536c26d08b64
     integrations:
@@ -4800,28 +2052,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '250'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Time to Chow Down
-          effect: >-
-            When you play this Pokémon from your hand to evolve 1 of your
-            Pokémon during your turn, you may heal all damage from each of your
-            Evolution Pokémon. If you healed any damage in this way, discard all
-            Energy from those Pokémon.
-      attacks:
-        - name: Wonder Shine
-          cost:
-            - Colorless
-            - Colorless
-          damage: '130'
-          effect: Your opponent's Active Pokémon is now Confused.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: d661c549-cb50-4cd2-a92b-c23ea3cf6fba
     integrations:
@@ -4833,29 +2063,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '260'
-      types:
-        - Fighting
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Chi-Atsu
-          cost:
-            - Colorless
-            - Colorless
-          damage: undefined
-          effect: >-
-            Put damage counters on your opponent's Active Pokémon until its
-            remaining HP is 50.
-        - name: Yoga Kick
-          cost:
-            - Fighting
-            - Colorless
-            - Colorless
-          damage: '190'
-          effect: This attack's damage isn't affected by Weakness or Resistance.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: b6ef8d7b-b368-4a0e-908c-6a7357058e75
     integrations:
@@ -4867,31 +2074,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Pokemon
-      hp: '220'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      abilities:
-        - type: Ability
-          name: Pummeling Payback
-          effect: >-
-            If this Pokémon is damaged by an attack from your opponent's Pokémon
-            (even if this Pokémon is Knocked Out), put 2 damage counters on the
-            Attacking Pokémon for each Metal Energy attached to this Pokémon.
-      attacks:
-        - name: Rock Tomb
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '150'
-          effect: >-
-            During your opponent's next turn, the Defending Pokémon can't
-            retreat.
-      retreat: '4'
-      regulationMark: H
     editions:
       unlimited: f7024c01-2492-48c4-a9d7-1afaa3796085
     integrations:
@@ -4903,18 +2085,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can use this card only if your opponent has exactly 2 Prize cards
-        remaining.
-
-
-        During this turn, if your opponent's Active Pokémon is Knocked Out by
-        damage from an attack used by your Tera Pokémon, take 1 more Prize card.
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: 20df8c9b-70d9-496f-bf93-5370dbd27b3b
     integrations:
@@ -4926,15 +2096,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Search your deck for up to 2 Basic Energy cards of different types,
-        reveal them, and put 1 of them into your hand. Attach the other to 1 of
-        your Pokémon. Then, shuffle your deck.
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: b7f10bef-60fa-40c8-9281-81dd2eda280e
     integrations:
@@ -4946,16 +2107,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Put 2 cards from your hand on the bottom of your deck in any order. If
-        you put 2 cards on the bottom of your deck in this way, draw 4 cards.
-        (If you can't put 2 cards from your hand on the bottom of your deck, you
-        can't use this card.)
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: 9b40da66-a292-4b8d-9c5e-39aa7f59ad0e
     integrations:
@@ -4967,14 +2118,6 @@ items:
       illustrator: ''
       rarity: Ultra Rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Shuffle your hand into your deck. Then, draw 4 cards. If your opponent
-        has 3 or fewer Prize cards remaining, draw 8 cards instead.
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: 43b8b641-d1cd-4cf3-9a86-b12e2fcf81c7
     integrations:
@@ -4986,29 +2129,6 @@ items:
       illustrator: ''
       rarity: Special illustration rare
       category: Pokemon
-      hp: '330'
-      types:
-        - Grass
-      level: undefined
-      stage: Stage2
-      abilities:
-        - type: Ability
-          name: Ripening Charge
-          effect: >-
-            Once during your turn, you may attach a Basic Grass Energy card from
-            your hand to 1 of your Pokémon. If you attached Energy to a Pokémon
-            in this way, heal 30 damage from that Pokémon.
-      attacks:
-        - name: Syrup Storm
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30+
-          effect: >-
-            This attack does 30 more damage for each Grass Energy attached to
-            all of your Pokémon.
-      retreat: '3'
-      regulationMark: H
     editions:
       unlimited: fc454755-cf83-4233-b536-eadeebfcad28
     integrations:
@@ -5020,31 +2140,6 @@ items:
       illustrator: ''
       rarity: Special illustration rare
       category: Pokemon
-      hp: '260'
-      types:
-        - Lightning
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Charged Web
-          cost:
-            - Lightning
-            - Colorless
-          damage: 110+
-          effect: >-
-            If your opponent's Active Pokémon is a Pokémon ex or Pokémon V, this
-            attack does 110 more damage.
-        - name: Fulgurite
-          cost:
-            - Grass
-            - Lightning
-            - Fighting
-          damage: '180'
-          effect: >-
-            Discard all Energy from this Pokémon. During your opponent's next
-            turn, they can't play any Item cards from their hand.
-      retreat: '1'
-      regulationMark: H
     editions:
       unlimited: 0ecd673a-ce2b-4c95-932f-3cd1c47e9da6
     integrations:
@@ -5056,28 +2151,6 @@ items:
       illustrator: ''
       rarity: Special illustration rare
       category: Pokemon
-      hp: '250'
-      types:
-        - Psychic
-      level: undefined
-      stage: Stage1
-      abilities:
-        - type: Ability
-          name: Time to Chow Down
-          effect: >-
-            When you play this Pokémon from your hand to evolve 1 of your
-            Pokémon during your turn, you may heal all damage from each of your
-            Evolution Pokémon. If you healed any damage in this way, discard all
-            Energy from those Pokémon.
-      attacks:
-        - name: Wonder Shine
-          cost:
-            - Colorless
-            - Colorless
-          damage: '130'
-          effect: Your opponent's Active Pokémon is now Confused.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: c46ccd6e-3e76-46f1-9fa9-616b0919e638
     integrations:
@@ -5089,31 +2162,6 @@ items:
       illustrator: ''
       rarity: Special illustration rare
       category: Pokemon
-      hp: '230'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Unified Beatdown
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30×
-          effect: >-
-            If you go second, you can't use this attack during your first turn.
-            This attack does 30 damage for each of your Benched Pokémon.
-        - name: Crown Opal
-          cost:
-            - Grass
-            - Water
-            - Lightning
-          damage: '180'
-          effect: >-
-            During your opponent's next turn, prevent all damage done to this
-            Pokémon by attacks from Basic non-Colorless Pokémon.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: b8f14c00-4670-4d1e-959d-1a86a80aa404
     integrations:
@@ -5125,18 +2173,6 @@ items:
       illustrator: ''
       rarity: Special illustration rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        You can use this card only if your opponent has exactly 2 Prize cards
-        remaining.
-
-
-        During this turn, if your opponent's Active Pokémon is Knocked Out by
-        damage from an attack used by your Tera Pokémon, take 1 more Prize card.
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: f1725106-b366-47c6-905a-4b90cbe022c2
     integrations:
@@ -5148,14 +2184,6 @@ items:
       illustrator: ''
       rarity: Special illustration rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Shuffle your hand into your deck. Then, draw 4 cards. If your opponent
-        has 3 or fewer Prize cards remaining, draw 8 cards instead.
-      trainerType: Supporter
-      regulationMark: H
     editions:
       unlimited: f7582aa2-2e19-47e5-bbef-f753e5eb32cd
     integrations:
@@ -5167,31 +2195,6 @@ items:
       illustrator: ''
       rarity: Hyper rare
       category: Pokemon
-      hp: '230'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Unified Beatdown
-          cost:
-            - Colorless
-            - Colorless
-          damage: 30×
-          effect: >-
-            If you go second, you can't use this attack during your first turn.
-            This attack does 30 damage for each of your Benched Pokémon.
-        - name: Crown Opal
-          cost:
-            - Grass
-            - Water
-            - Lightning
-          damage: '180'
-          effect: >-
-            During your opponent's next turn, prevent all damage done to this
-            Pokémon by attacks from Basic non-Colorless Pokémon.
-      retreat: '2'
-      regulationMark: H
     editions:
       unlimited: 0cf9c5eb-8263-46a9-9c4c-515fdc83020a
     integrations:
@@ -5203,20 +2206,6 @@ items:
       illustrator: ''
       rarity: Hyper rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Each player who has any Tera Pokémon in play can have up to 8 Pokémon on
-        their Bench.
-
-
-        If a player no longer has any Tera Pokémon in play, that player discards
-        Pokémon from their Bench until they have 5. When this card leaves play,
-        both players discard Pokémon from their Bench until they have 5, and the
-        player who played this card discards first.
-      trainerType: Stadium
-      regulationMark: H
     editions:
       unlimited: 8a1086d1-b548-4751-ac10-419d7ea0dcc0
     integrations:
@@ -5228,12 +2217,6 @@ items:
       illustrator: ''
       rarity: Hyper rare
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: The Basic Pokémon this card is attached to gets +50 HP.
-      trainerType: Tool
-      regulationMark: G
     editions:
       unlimited: d1e72811-9922-4818-95fe-2190a0328996
     integrations:

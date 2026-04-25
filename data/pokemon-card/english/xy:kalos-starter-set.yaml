@@ -5,25 +5,6 @@ items:
       illustrator: Akira Komayama
       rarity: None
       category: Pokemon
-      dexId:
-        - '13'
-      hp: '40'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: String Shot
-          cost:
-            - Grass
-          damage: '10'
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Paralyzed.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: ac7e49fe-f793-4075-be18-dc2bd3364e6a
   pansage-2:
@@ -32,29 +13,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: None
       category: Pokemon
-      dexId:
-        - '511'
-      hp: '70'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Collect
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Fury Swipes
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10×
-          effect: Flip 3 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 87871c98-01ed-4c9c-a0de-c031109c77e2
   chespin-3:
@@ -68,27 +26,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '650'
-      hp: '60'
-      types:
-        - Grass
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Vine Whip
-          cost:
-            - Grass
-          damage: '10'
-        - name: Seed Bomb
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 05998c4b-be29-47c8-a673-b388569c941b
   quilladin-4:
@@ -102,31 +39,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '651'
-      hp: '90'
-      types:
-        - Grass
-      evolveFrom: Chespin
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Leech Seed
-          cost:
-            - Grass
-            - Colorless
-          damage: '20'
-          effect: Heal 10 damage from this Pokémon.
-        - name: Needle Arm
-          cost:
-            - Grass
-            - Colorless
-            - Colorless
-          damage: '50'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: cd76cb11-b718-4928-8bfc-5fa1fbd76478
   chesnaught-5:
@@ -142,33 +54,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '652'
-      hp: '150'
-      types:
-        - Grass
-      evolveFrom: Quilladin
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Needle Arm
-          cost:
-            - Grass
-            - Colorless
-            - Colorless
-          damage: '50'
-        - name: Tumbling Attack
-          cost:
-            - Grass
-            - Grass
-            - Colorless
-            - Colorless
-          damage: 80+
-          effect: Flip a coin. If heads, this attack does 40 more damage.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      retreat: '4'
     editions:
       unlimited: bab6eabb-ecc1-461a-9708-2c9bec376fbd
   slugma-6:
@@ -177,23 +62,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: None
       category: Pokemon
-      dexId:
-        - '218'
-      hp: '80'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Combustion
-          cost:
-            - Fire
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 87941bb5-5e80-4fa0-ba54-0f464c3669aa
   pansear-7:
@@ -202,29 +70,6 @@ items:
       illustrator: Naoyo Kimura
       rarity: None
       category: Pokemon
-      dexId:
-        - '513'
-      hp: '70'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Collect
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Fury Swipes
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10×
-          effect: Flip 3 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 19d69d8a-263e-4ee9-a1b8-f27112826d7f
   fennekin-8:
@@ -238,27 +83,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '653'
-      hp: '60'
-      types:
-        - Fire
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Scratch
-          cost:
-            - Fire
-          damage: '10'
-        - name: Live Coal
-          cost:
-            - Fire
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 781e9a79-68e1-4f2b-b2c4-dbd8a2d44173
   braixen-9:
@@ -272,31 +96,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '654'
-      hp: '80'
-      types:
-        - Fire
-      evolveFrom: Fennekin
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Firebreathing
-          cost:
-            - Fire
-            - Colorless
-          damage: 20+
-          effect: Flip a coin. If heads, this attack does 20 more damage.
-        - name: Flame Tail
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-          damage: '60'
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: d6e33b6e-2f22-4d78-b1e5-7be53538c9ef
   delphox-10:
@@ -312,32 +111,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '655'
-      hp: '140'
-      types:
-        - Fire
-      evolveFrom: Braixen
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Will-O-Wisp
-          cost:
-            - Fire
-            - Colorless
-          damage: '30'
-        - name: Fire Blast
-          cost:
-            - Fire
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '120'
-          effect: Discard an Energy attached to this Pokémon.
-      weaknesses:
-        - type: Water
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: ac59bce9-3d0b-4e7b-86c7-b77457f9947d
   panpour-11:
@@ -346,29 +119,6 @@ items:
       illustrator: Shin Nagasawa
       rarity: None
       category: Pokemon
-      dexId:
-        - '515'
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Collect
-          cost:
-            - Colorless
-          damage: undefined
-          effect: Draw a card.
-        - name: Fury Swipes
-          cost:
-            - Colorless
-            - Colorless
-          damage: 10×
-          effect: Flip 3 coins. This attack does 10 damage times the number of heads.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: e37fe659-f157-433c-a689-d4312af25692
   froakie-12:
@@ -385,27 +135,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '656'
-      hp: '60'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pound
-          cost:
-            - Water
-          damage: '10'
-        - name: Water Drip
-          cost:
-            - Water
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 8c9f600f-2d15-4799-83d4-2558ba628c62
   frogadier-13:
@@ -419,30 +148,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '657'
-      hp: '80'
-      types:
-        - Water
-      evolveFrom: Froakie
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Water Drip
-          cost:
-            - Water
-          damage: '20'
-        - name: Aqua Wave
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: 40+
-          effect: Flip 2 coins. This attack does 20 more damage for each heads.
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 8048687b-efa7-4528-b0b0-66c27b907f24
   greninja-14:
@@ -461,32 +166,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '658'
-      hp: '140'
-      types:
-        - Water
-      evolveFrom: Frogadier
-      level: undefined
-      stage: Stage2
-      attacks:
-        - name: Mat Block
-          cost:
-            - Water
-          damage: '40'
-          effect: >-
-            Flip a coin. If heads, discard an Energy attached to your opponent's
-            Active Pokémon.
-        - name: Aqua Edge
-          cost:
-            - Water
-            - Water
-            - Colorless
-          damage: '80'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 2b4bb3ab-1bdc-4b89-a7e4-493d73470885
   clauncher-15:
@@ -495,23 +174,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '692'
-      hp: '70'
-      types:
-        - Water
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Water Gun
-          cost:
-            - Water
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Grass
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 9420fd6c-b69b-4d8c-9652-6fefeb8a9cae
   poochyena-16:
@@ -520,26 +182,6 @@ items:
       illustrator: Mizue
       rarity: None
       category: Pokemon
-      dexId:
-        - '261'
-      hp: '60'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Bite
-          cost:
-            - Darkness
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: dac2a94d-7006-40ec-acf5-0694c2d1d71b
   mightyena-17:
@@ -548,28 +190,6 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: None
       category: Pokemon
-      dexId:
-        - '262'
-      hp: '90'
-      types:
-        - Darkness
-      evolveFrom: Poochyena
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Hard Bite
-          cost:
-            - Darkness
-            - Colorless
-          damage: 40+
-          effect: Flip a coin. If heads, this attack does 20 more damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: f1eacc19-bb1a-40e6-84a3-7523182a90fb
   inkay-18:
@@ -578,25 +198,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '686'
-      hp: '60'
-      types:
-        - Darkness
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Peck
-          cost:
-            - Darkness
-          damage: '10'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 491ac748-8df4-44cb-b48a-5fb5b9818d8d
   pawniard-19:
@@ -605,30 +206,6 @@ items:
       illustrator: Kouki Saitou
       rarity: None
       category: Pokemon
-      dexId:
-        - '624'
-      hp: '60'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Pierce
-          cost:
-            - Metal
-          damage: '10'
-        - name: Cut
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 4a590db2-785a-4d27-860e-69d2061b5aae
   bisharp-20:
@@ -637,35 +214,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: None
       category: Pokemon
-      dexId:
-        - '625'
-      hp: '90'
-      types:
-        - Metal
-      evolveFrom: Pawniard
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Wicked Jab
-          cost:
-            - Metal
-          damage: '20'
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Paralyzed.
-        - name: Metal Claw
-          cost:
-            - Metal
-            - Colorless
-            - Colorless
-          damage: '70'
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 4f3d47e4-0119-40f2-9de6-1151d1c57a46
   honedge-21:
@@ -674,29 +222,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '679'
-      hp: '60'
-      types:
-        - Metal
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Continuous Slash
-          cost:
-            - Metal
-            - Colorless
-          damage: 30x
-          effect: >-
-            Flip a coin until you get tails. This attack does 30 damage times
-            the number of heads.
-      weaknesses:
-        - type: Fire
-          value: ×2
-      resistances:
-        - type: Psychic
-          value: '-20'
-      retreat: '2'
     editions:
       unlimited: e73a8af6-ed05-4bdf-8985-6556b4cf9c77
   snubbull-22:
@@ -705,26 +230,6 @@ items:
       illustrator: Naoki Saito
       rarity: None
       category: Pokemon
-      dexId:
-        - '209'
-      hp: '70'
-      types:
-        - Fairy
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Headbutt
-          cost:
-            - Fairy
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Metal
-          value: ×2
-      resistances:
-        - type: Darkness
-          value: '-20'
-      retreat: '2'
     editions:
       unlimited: b9754f3e-0583-49a4-a820-6f0844bbc30d
   granbull-23:
@@ -733,34 +238,6 @@ items:
       illustrator: Masakazu Fukuda
       rarity: None
       category: Pokemon
-      dexId:
-        - '210'
-      hp: '100'
-      types:
-        - Fairy
-      evolveFrom: Snubbull
-      level: undefined
-      stage: Stage1
-      attacks:
-        - name: Headbutt
-          cost:
-            - Fairy
-            - Colorless
-          damage: '30'
-        - name: Double Stomp
-          cost:
-            - Fairy
-            - Colorless
-            - Colorless
-          damage: 50+
-          effect: Flip 2 coins. This attack does 20 more damage for each heads.
-      weaknesses:
-        - type: Metal
-          value: ×2
-      resistances:
-        - type: Darkness
-          value: '-20'
-      retreat: '3'
     editions:
       unlimited: ef528f89-9a78-4e89-9f4c-ba2b666a6255
   swirlix-24:
@@ -769,26 +246,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '684'
-      hp: '60'
-      types:
-        - Fairy
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Draining Kiss
-          cost:
-            - Fairy
-          damage: '10'
-          effect: Heal 10 damage from this Pokémon.
-      weaknesses:
-        - type: Metal
-          value: ×2
-      resistances:
-        - type: Darkness
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: f36f0ef0-bb89-4571-89cf-beb5eb7f6f76
   farfetchd-25:
@@ -799,25 +256,6 @@ items:
       illustrator: Kagemaru Himeno
       rarity: None
       category: Pokemon
-      dexId:
-        - '83'
-      hp: '70'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Slash
-          cost:
-            - Colorless
-          damage: '30'
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: c04d3f06-7f01-4db2-9496-76682de8e553
   snorlax-26:
@@ -826,32 +264,6 @@ items:
       illustrator: Naoki Saito
       rarity: None
       category: Pokemon
-      dexId:
-        - '143'
-      hp: '120'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rock Smash
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 10+
-          effect: Flip a coin. If heads, this attack does 30 more damage.
-        - name: Strength
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '70'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '4'
     editions:
       unlimited: a4369bba-a0e5-4c41-bae1-3617b34dfe1f
   miltank-27:
@@ -860,25 +272,6 @@ items:
       illustrator: Akira Komayama
       rarity: None
       category: Pokemon
-      dexId:
-        - '241'
-      hp: '100'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Sitdown Splash
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: 50+
-          effect: Flip a coin. If heads, this attack does 20 more damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '3'
     editions:
       unlimited: 420840dc-3f01-43bd-8dcd-b84e56c37821
   skitty-28:
@@ -887,24 +280,6 @@ items:
       illustrator: Shin Nagasawa
       rarity: None
       category: Pokemon
-      dexId:
-        - '300'
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Jump On
-          cost:
-            - Colorless
-            - Colorless
-          damage: 20+
-          effect: Flip a coin. If heads, this attack does 20 more damage.
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: e2ed4ff7-002c-4dd2-af62-82f119660c30
   bidoof-29:
@@ -913,24 +288,6 @@ items:
       illustrator: Kouki Saitou
       rarity: None
       category: Pokemon
-      dexId:
-        - '399'
-      hp: '70'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Rollout
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '60'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '2'
     editions:
       unlimited: 24fdd3b8-9f96-461e-9d69-00e4a8b1c4df
   bunnelby-30:
@@ -939,23 +296,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '659'
-      hp: '60'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tackle
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: f61ae6da-f4bf-4354-8e4c-78a4170b47b0
   fletchling-31:
@@ -964,26 +304,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '661'
-      hp: '50'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Razor Wind
-          cost:
-            - Colorless
-          damage: '20'
-          effect: Flip a coin. If tails, this attack does nothing.
-      weaknesses:
-        - type: Lightning
-          value: ×2
-      resistances:
-        - type: Fighting
-          value: '-20'
-      retreat: '1'
     editions:
       unlimited: 60ead9d0-2423-482e-9935-f4073daa07ad
   furfrou-32:
@@ -992,32 +312,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '676'
-      hp: '90'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tight Jaw
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Paralyzed.
-        - name: Sharp Fang
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '50'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: f6fbd8d2-de2a-46fc-875e-9ba609081a9e
   furfrou-33:
@@ -1026,32 +320,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Pokemon
-      dexId:
-        - '676'
-      hp: '90'
-      types:
-        - Colorless
-      level: undefined
-      stage: Basic
-      attacks:
-        - name: Tight Jaw
-          cost:
-            - Colorless
-            - Colorless
-          damage: '20'
-          effect: >-
-            Flip a coin. If heads, your opponent's Active Pokémon is now
-            Paralyzed.
-        - name: Sharp Fang
-          cost:
-            - Colorless
-            - Colorless
-            - Colorless
-          damage: '50'
-      weaknesses:
-        - type: Fighting
-          value: ×2
-      retreat: '1'
     editions:
       unlimited: 78202313-5f1a-4a95-9d0d-6b8aa98b3ab1
   crushing-hammer-34:
@@ -1065,13 +333,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Flip a coin. If heads, discard an Energy attached to 1 of your
-        opponent's Pokémon.
-      trainerType: Item
     editions:
       unlimited: 969a5228-9084-4b1a-9e1f-b4307b8db178
   poke-ball-35:
@@ -1080,13 +341,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Flip a coin. If heads, search your deck for a Pokémon, reveal it, and
-        put it into your hand. Shuffle your deck afterward.
-      trainerType: Item
     editions:
       unlimited: 5007337f-8bdd-4734-a9c1-d960d6c0325a
   pokemon-catcher-36:
@@ -1100,13 +354,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: >-
-        Flip a coin. If heads, switch 1 of your opponent's Benched Pokémon with
-        his or her Active Pokémon.
-      trainerType: Item
     editions:
       unlimited: e6007816-8301-4823-99dc-07abb0c2f7e0
   potion-37:
@@ -1115,11 +362,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: Heal 30 damage from 1 of your Pokémon.
-      trainerType: Item
     editions:
       unlimited: 0db299cf-0083-4016-838a-fd53ae95be84
   switch-38:
@@ -1128,11 +370,6 @@ items:
       illustrator: 5ban Graphics
       rarity: None
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: Switch your Active Pokémon with 1 of your Benched Pokémon.
-      trainerType: Item
     editions:
       unlimited: 69b4e853-f951-47c3-80a0-5f5390796263
   tierno-39:
@@ -1146,10 +383,5 @@ items:
       illustrator: Ken Sugimori
       rarity: None
       category: Trainer
-      hp: undefined
-      level: undefined
-      retreat: undefined
-      effect: Draw 3 cards.
-      trainerType: Supporter
     editions:
       unlimited: 42197256-6fbb-426c-96af-cff7cbca352e
