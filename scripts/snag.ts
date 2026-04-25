@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
-import { v4 as uuidv4 } from 'uuid';
+import { validate as validateUuid, v4 as uuidv4 } from 'uuid';
 import type { Document, YAMLMap } from 'yaml';
 import { parseDocument } from 'yaml';
 import yargs from 'yargs';
@@ -15,6 +15,7 @@ import type {
     SeriesDescriptor,
     Variant,
 } from '../schema/Schema.js';
+import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
     .command('* <collectibleType> <region> [seriesId]', '')
@@ -64,6 +65,11 @@ type GetSeriesFunc = (seriesId: string) => SeriesDescriptor | null;
 const observedIds = new Set<string>();
 
 function recordObservedId(id: string, location: string): void {
+    if (!validateUuid(id)) {
+        console.error(`Invalid UUID found for ${id} at ${location}.`);
+        process.exit(1);
+    }
+
     if (observedIds.has(id)) {
         console.error(`ID collision found for ${id} at ${location}.`);
         process.exit(1);
@@ -311,7 +317,7 @@ function addIds(yamlDoc: Document, seriesRef: string, series: SeriesDescriptor, 
     return { updated, idsObserved, idsAdded };
 }
 
-function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boolean): ReadYamlFileResult {
+async function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boolean): Promise<ReadYamlFileResult> {
     const leaf = path.basename(filePath, '.yaml');
     const series = getSeries(leaf);
     if (!series) {
@@ -323,7 +329,7 @@ function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boo
     const yamlDoc = parseDocument(fileContent);
     const result = addIds(yamlDoc, leaf, series, checkOnly);
     if (result.updated) {
-        fs.writeFileSync(filePath, String(yamlDoc), 'utf8');
+        await writeFormattedYaml(filePath, yamlDoc);
         console.log(`Updated ${leaf}: added ${result.idsAdded} IDs.`);
     }
 
@@ -334,7 +340,12 @@ function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boo
     };
 }
 
-function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolean, singleSeriesId?: string): ReadYamlFileResult {
+async function recurseDir(
+    dirPath: string,
+    getSeries: GetSeriesFunc,
+    checkOnly: boolean,
+    singleSeriesId?: string
+): Promise<ReadYamlFileResult> {
     const totals: ReadYamlFileResult = {
         seriesObserved: 0,
         idsObserved: 0,
@@ -351,7 +362,7 @@ function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolea
         const stats = fs.statSync(fullPath);
 
         if (stats.isDirectory()) {
-            const nested = recurseDir(fullPath, getSeries, checkOnly);
+            const nested = await recurseDir(fullPath, getSeries, checkOnly);
             totals.seriesObserved += nested.seriesObserved;
             totals.idsObserved += nested.idsObserved;
             totals.idsAdded += nested.idsAdded;
@@ -366,7 +377,7 @@ function recurseDir(dirPath: string, getSeries: GetSeriesFunc, checkOnly: boolea
             continue;
         }
 
-        const result = readYamlFile(fullPath, getSeries, checkOnly);
+        const result = await readYamlFile(fullPath, getSeries, checkOnly);
         totals.seriesObserved += result.seriesObserved;
         totals.idsObserved += result.idsObserved;
         totals.idsAdded += result.idsAdded;
@@ -406,7 +417,7 @@ async function main(): Promise<void> {
     };
 
     const fileDir = path.dirname(seriesFile);
-    const totals = recurseDir(fileDir, getSeries, checkOnly, singleSeriesId);
+    const totals = await recurseDir(fileDir, getSeries, checkOnly, singleSeriesId);
     console.log(`Checked ${totals.seriesObserved} series and ${totals.idsObserved} IDs.`);
 }
 

@@ -14,6 +14,7 @@ import type {
     ReferenceOf,
     SeriesItems,
 } from '../schema/Schema.js';
+import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
     .command('* <collectibleType> <region>', '')
@@ -354,7 +355,7 @@ function getSeriesFilePath(collectibleTypeValue: string, regionValue: string): s
     return path.resolve('data', collectibleTypeValue, regionValue, '_series.yaml');
 }
 
-function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): ReadSeriesFilesResult {
+async function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): Promise<ReadSeriesFilesResult> {
     const entries = fs.readdirSync(dirPath);
     let filesChecked = 0;
     let filesNeedingUpdate = 0;
@@ -395,7 +396,7 @@ function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): ReadSeriesFil
         filesNeedingUpdate += 1;
         console.log(checkOnlyMode ? 'Would update file:' : 'Updating file:', fullPath, generationKey, seriesKey);
         if (!checkOnlyMode) {
-            fs.writeFileSync(fullPath, String(yamlDoc), 'utf8');
+            await writeFormattedYaml(fullPath, yamlDoc);
         }
     }
 
@@ -414,7 +415,7 @@ async function main(): Promise<void> {
         throw new Error('Cannot find directory of series files');
     }
 
-    const result = readSeriesFiles(fileDir, checkOnly);
+    const result = await readSeriesFiles(fileDir, checkOnly);
     if (checkOnly && result.filesNeedingUpdate > 0) {
         console.error(`${result.filesNeedingUpdate} files would be updated.`);
         process.exitCode = 1;
