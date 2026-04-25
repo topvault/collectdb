@@ -78,10 +78,10 @@ const VariantSchema = VariantDescriptor.extend({
     photos: z.array(z.string()).optional(), // Names of the images, expect a corresponding webp file ("front" is always checked).
     integrations: z
         .object({
-            priceCharting: SingleOrPerEdition.optional(),
-            tcgPlayer: SingleOrPerEdition.optional(),
-            scryfall: SingleOrPerEdition.optional(),
-            pokeData: SingleOrPerEdition.optional(),
+            priceCharting: z.union([z.string(), z.number()]).optional(),
+            tcgPlayer: z.string().optional(),
+            scryfall: z.string().optional(),
+            pokeData: z.string().optional(),
         })
         .strict()
         .optional(),
@@ -127,6 +127,7 @@ const DiscreteItemSchema = z
             .transform(val => val as ItemAuthenticators)
             .optional(), // ItemAuthenticators type
         photos: z.array(z.string()).optional(), // Names of the images, expect a corresponding webp file ("front" is always checked).
+        // Allow integrations to be set per-edition.
         integrations: z
             .object({
                 // The item URI key, otherwise determined by the item key.
@@ -152,13 +153,22 @@ const DiscreteItemSchema = z
 // This allows for type enforcement that a reference item can only contain referenceOf.
 const ItemSchema = DiscreteItemSchema.or(ReferenceItemSchema);
 
-const AdditionalItemSchema = DiscreteItemSchema.omit({ editions: true })
+const AdditionalItemSchema = DiscreteItemSchema.omit({ editions: true, integrations: true })
     .extend({
         id: z.string(),
         // This is the item ID for the base item.
         // If this is defined then the base item's key data will be used as details/defaults.
         variantOf: z.string().or(ReferenceOfSchema).optional(),
-        // Use the editions list to restrict this to 1 or more editions.
+        // Since there are no editions, expect only a value-integration for the item, not per-edition.
+        integrations: z
+            .object({
+                priceCharting: z.union([z.string(), z.number()]).optional(),
+                tcgPlayer: z.string().optional(),
+                scryfall: z.string().optional(),
+                pokeData: z.string().optional(),
+            })
+            .strict()
+            .optional(),
     })
     .strict();
 
