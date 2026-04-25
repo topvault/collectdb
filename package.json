@@ -4,6 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "tsc -p tsconfig.json",
+        "format": "prettier --write \"data/**/*.yaml\"",
+        "format:check": "prettier --cache --check \"data/**/*.yaml\"",
         "validate:data": "tsx scripts/validate-data.ts",
         "snag": "tsx scripts/snag.ts",
         "reference-of": "tsx scripts/reference-of.ts"
@@ -17,6 +19,7 @@
     "devDependencies": {
         "@types/node": "^22.15.29",
         "@types/yargs": "^17.0.35",
+        "prettier": "^3.8.3",
         "tsx": "^4.19.4",
         "typescript": "^5.8.3"
     }

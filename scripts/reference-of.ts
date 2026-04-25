@@ -371,9 +371,13 @@ function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): ReadSeriesFil
 
         const yamlDoc = readYamlFile(fullPath);
         const { generationKey, seriesKey } = getKeys(fullPath);
-        loadedFiles[fullPath] = yamlDoc;
-
         const yamlData = yamlDoc.toJS() as SeriesItemsInput;
+
+        if (!yamlData) {
+            continue;
+        }
+
+        loadedFiles[fullPath] = yamlDoc;
         generations[generationKey] ??= {};
         generations[generationKey][seriesKey] = yamlData;
     }

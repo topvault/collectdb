@@ -194,6 +194,19 @@ The validator walks the data tree, parses YAML, and checks:
 - `_series.yaml` files against the generation map schema
 - series files against the series items schema
 
+## Formatting
+
+The repository includes a root `.editorconfig` so common editors use the same basic whitespace and line-ending rules.
+
+YAML formatting is normalized with Prettier and can be applied or checked with:
+
+```sh
+npm run format
+npm run format:check
+```
+
+The GitHub Actions workflow runs `npm run format:check` on pull requests and pushes to `main`.
+
 ## Maintenance Scripts
 
 collectdb also includes data-specific maintenance scripts for ID assignment and reference normalization.

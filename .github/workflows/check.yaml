@@ -1,0 +1,136 @@
+name: Check
+
+on:
+  pull_request:
+    paths:
+      - '.editorconfig'
+      - '.github/workflows/**'
+      - '.prettierrc.yaml'
+      - 'data/**/*.yaml'
+      - 'package-lock.json'
+      - 'package.json'
+      - 'schema/**/*.ts'
+      - 'scripts/**/*.ts'
+      - 'tsconfig.json'
+  push:
+    branches:
+      - main
+    paths:
+      - '.editorconfig'
+      - '.github/workflows/**'
+      - '.prettierrc.yaml'
+      - 'data/**/*.yaml'
+      - 'package-lock.json'
+      - 'package.json'
+      - 'schema/**/*.ts'
+      - 'scripts/**/*.ts'
+      - 'tsconfig.json'
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check YAML formatting
+        run: npm run format:check
+
+  snag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check generated IDs
+        run: |
+          for collectible_type_path in data/*; do
+            if [ ! -d "$collectible_type_path" ]; then
+              continue
+            fi
+
+            collectible_type="$(basename "$collectible_type_path")"
+
+            for region_path in "$collectible_type_path"/*; do
+              if [ ! -d "$region_path" ]; then
+                continue
+              fi
+
+              region="$(basename "$region_path")"
+              npm run snag -- --check "$collectible_type" "$region"
+            done
+          done
+
+  reference-of:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check reference normalization
+        run: |
+          for collectible_type_path in data/*; do
+            if [ ! -d "$collectible_type_path" ]; then
+              continue
+            fi
+
+            collectible_type="$(basename "$collectible_type_path")"
+
+            for region_path in "$collectible_type_path"/*; do
+              if [ ! -d "$region_path" ]; then
+                continue
+              fi
+
+              region="$(basename "$region_path")"
+              npm run reference-of -- --check "$collectible_type" "$region"
+            done
+          done
+
+  validate-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate data
+        run: npm run validate:data

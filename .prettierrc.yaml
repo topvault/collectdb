@@ -1,0 +1,13 @@
+arrowParens: avoid
+printWidth: 140
+singleQuote: true
+tabWidth: 4
+trailingComma: 'es5'
+semi: true
+overrides:
+  - files:
+      - '*.yaml'
+      - '*.yml'
+    options:
+      tabWidth: 2
+      printWidth: 100
