@@ -31,6 +31,10 @@ const rootArg = process.argv[2] ?? 'data';
 const rootPath = path.resolve(process.cwd(), rootArg);
 const skippedDirectoryNames = new Set(['test-source']);
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+    return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
 function shouldSkipDirectory(directoryPath: string): boolean {
     return directoryPath.split(path.sep).some(segment => skippedDirectoryNames.has(segment));
 }
@@ -150,6 +154,47 @@ function formatYamlError(error: unknown): string {
     return String(error);
 }
 
+function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
+    if (!isRecord(parsed) || !isRecord(parsed.items)) {
+        return [];
+    }
+
+    const failures: string[] = [];
+
+    for (const [itemKey, itemValue] of Object.entries(parsed.items)) {
+        if (!isRecord(itemValue)) {
+            continue;
+        }
+
+        const editions = itemValue.editions;
+        const integrations = itemValue.integrations;
+        if (!isRecord(editions) || !isRecord(integrations)) {
+            continue;
+        }
+
+        const editionKeys = Object.keys(editions);
+        const editionKeySet = new Set(editionKeys);
+
+        for (const [integrationKey, integrationValue] of Object.entries(integrations)) {
+            if (!isRecord(integrationValue)) {
+                continue;
+            }
+
+            const invalidKeys = Object.keys(integrationValue).filter(key => !editionKeySet.has(key));
+            if (invalidKeys.length === 0) {
+                continue;
+            }
+
+            const editionsLabel = editionKeys.length > 0 ? editionKeys.join(', ') : '<none>';
+            failures.push(
+                `items.${itemKey}.integrations.${integrationKey}: contains keys not defined in editions: ${invalidKeys.join(', ')} (editions: ${editionsLabel})`
+            );
+        }
+    }
+
+    return failures;
+}
+
 async function validateFile(target: ValidationTarget): Promise<ValidationResult> {
     const source = await readFile(target.filePath, 'utf8');
     const document = parseDocument(source, {
@@ -196,7 +241,16 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
     const result = target.schema.safeParse(parsed);
 
     if (result.success) {
-        return { failures: [], warnings: [] };
+        const semanticFailures = collectInvalidItemIntegrationEditionKeys(parsed).map(message => ({
+            filePath: target.filePath,
+            message,
+        }));
+
+        if (semanticFailures.length === 0) {
+            return { failures: [], warnings: [] };
+        }
+
+        return { failures: semanticFailures, warnings: [] };
     }
 
     return {
