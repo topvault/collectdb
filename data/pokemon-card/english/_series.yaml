@@ -32,21 +32,6 @@ base:
         tcgPlayer: 'base-set'
       links:
         Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Base_Set_(TCG)
-      authenticators:
-        psa: # For other languages it will say something different.
-          1st-edition: ['1ST EDITION', '1999 POKEMON GAME']
-          shadowless: ['SHADOWLESS', '1999 POKEMON GAME']
-          unlimited: ['1999 POKEMON GAME']
-        cgc:
-          1st-edition:
-            - ['Base set', '1st Edition', 'Pokemon (1999)']
-            - ['Base set', '1st Ed.', 'Pokemon (1999)']
-          shadowless: ['Base set', 'Pokemon (1999)']
-          unlimited: ['Base Set', 'Unlimited', 'Pokemon (1999)']
-        sgc:
-          1st-edition: ['1ST EDITION', '1999 POKEMON BASE']
-          shadowless: ['SHADOWLESS', '1999 POKEMON BASE']
-          unlimited: ['1999 POKEMON BASE']
       releaseDate: '1999-01-09'
     jungle:
       name: Jungle
@@ -61,18 +46,6 @@ base:
         tcgPlayer: 'jungle'
       links:
         Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Jungle_(TCG)
-      authenticators:
-        psa:
-          1st-edition: ['1ST EDITION', '1999 POKEMON JUNGLE']
-          unlimited: ['1999 POKEMON JUNGLE']
-        cgc:
-          1st-edition:
-            - ['Jungle', '1st Edition', 'Pokemon (1999)']
-            - ['Jungle', '1st Ed.', 'Pokemon (1999)']
-          unlimited: ['Jungle', 'Pokemon (1999)']
-        sgc:
-          1st-edition: ['1ST EDITION', '1999 POKEMON JUNGLE']
-          unlimited: ['1999 POKEMON JUNGLE']
       releaseDate: '1999-06-16'
     fossil:
       name: Fossil
@@ -85,20 +58,6 @@ base:
         tcgPlayer: 'fossil'
       links:
         Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Fossil_(TCG)
-      authenticators:
-        psa:
-          1st-edition:
-            - ['1ST EDITION', '1999 POKEMON FOSSIL']
-            - ['1ST ED', '1999 POKEMON FOSSIL']
-          unlimited: ['1999 POKEMON FOSSIL']
-        cgc:
-          1st-edition:
-            - ['Fossil', '1st Edition', 'Pokemon (1999)']
-            - ['Fossil', '1st Ed.', 'Pokemon (1999)']
-          unlimited: ['Fossil', 'Pokemon (1999)']
-        sgc:
-          1st-edition: ['1ST EDITION', '1999 POKEMON FOSSIL']
-          unlimited: ['1999 POKEMON FOSSIL']
       releaseDate: '1999-10-10'
     team-rocket:
       name: Team Rocket
@@ -110,21 +69,6 @@ base:
         tcgPlayer: 'team-rocket'
       links:
         Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Team_Rocket_(TCG)
-      authenticators:
-        psa:
-          1st-edition: ['1ST EDITION', '2000 POKEMON ROCKET']
-          unlimited: ['2000 POKEMON ROCKET']
-        cgc:
-          1st-edition:
-            - ['Team Rocket', '1st Edition', 'Pokemon (2000)']
-            - ['Team Rocket', '1st Ed.', 'Pokemon (2000)']
-          unlimited: ['Team Rocket', 'Pokemon (2000)']
-        ags:
-          1st-edition: ['1ST EDITION', '2000 POKEMON ROCKET']
-          unlimited: ['2000 POKEMON ROCKET']
-        sgc:
-          1st-edition: ['1ST EDITION', '2000 POKEMON TEAM ROCKET']
-          unlimited: ['2000 POKEMON TEAM ROCKET']
       releaseDate: '2000-04-24'
     wizards-black-star-promos:
       name: Promos (Wizards)
@@ -133,23 +77,6 @@ base:
       integrations:
         priceCharting: 'pokemon-promo' # G10740
         tcgPlayer: 'black-star-promos' # ??
-      authenticators:
-        psa:
-          - ['1999 POKEMON GAME', 'LEAGUE PROMO']
-          - ['1999 POKEMON GAME', 'MOVIE PROMO']
-          - ['2000 POKEMON PROMO', 'BLACK STAR']
-          - ['2000 POKEMON BLACK STAR', 'PROMO', 'POKEMON LEAGUE']
-          - ['2001 POKEMON PROMO', 'BLACK STAR']
-          - ['2001 POKEMON BLACK STAR', 'PROMO', 'POKEMON LEAGUE']
-          - ['2002 POKEMON LEAGUE', 'PROMO BLACK STAR']
-        cgc:
-          - ['Black Star Promos', 'Pokemon (1999)']
-          - ['Black Star Promos', 'Pokemon (2000)']
-          - ['Black Star Promos', 'Pokemon (2001)']
-        sgc:
-          - ['1999 POKEMON', 'FIRST MOVIE PROMO']
-          - ['2000 POKEMON PROMO', 'LEAGUE PROMO']
-          - ['2000 POKEMON(WIZARDS)', 'Promo']
       links:
         Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Wizards_Black_Star_Promos_(TCG)
       releaseDate: '1999-07-01'

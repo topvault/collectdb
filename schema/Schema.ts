@@ -64,11 +64,14 @@ const VariantDescriptor = z.object({
     edition: z.string().optional(), // If the variant is limited to a specific edition.
 });
 
+const VariantRemarkSchema = z.enum(['recurring-obstruction']);
+
 const VariantSchema = VariantDescriptor.extend({
     id: z.string(),
     name: z.string(),
     description: z.string().optional(),
     links: z.record(z.string(), z.string()).optional(),
+    remark: VariantRemarkSchema.optional(),
     // Edge case to consider, an edition should not be named "products" or "additional".
     // For "short hand" an edition can be a name of the editionId to name.
     authenticators: z
