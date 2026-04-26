@@ -1,13 +1,15 @@
-import { readdir, readFile } from 'node:fs/promises';
+import { readdir, readFile, stat } from 'node:fs/promises';
+import type { Dirent } from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { ZodError, type ZodTypeAny } from 'zod';
 import { parseDocument } from 'yaml';
 
-import { GenerationMapSchema, SeriesItemsSchema } from '../schema/Schema.js';
+import { CollectibleTypeSchema, GenerationMapSchema, SeriesItemsSchema } from '../schema/Schema.js';
 
 type ValidationTarget = {
     filePath: string;
+    kind: 'collectible-type' | 'generation-map' | 'series-items';
     schema?: ZodTypeAny;
     isOrphan: boolean;
 };
@@ -25,6 +27,11 @@ type ValidationWarning = {
 type ValidationResult = {
     failures: ValidationFailure[];
     warnings: ValidationWarning[];
+};
+
+type ValidationCollection = {
+    targets: ValidationTarget[];
+    failures: ValidationFailure[];
 };
 
 const rootArg = process.argv[2] ?? 'data';
@@ -45,6 +52,19 @@ function hasYamlExtension(fileName: string): boolean {
 
 function getBaseName(fileName: string): string {
     return fileName.replace(/\.(yaml|yml)$/u, '');
+}
+
+function findYamlFileName(entries: Dirent<string>[], baseName: string): string | undefined {
+    return entries.find(entry => entry.isFile() && (entry.name === `${baseName}.yaml` || entry.name === `${baseName}.yml`))?.name;
+}
+
+async function fileExists(filePath: string): Promise<boolean> {
+    try {
+        await stat(filePath);
+        return true;
+    } catch {
+        return false;
+    }
 }
 
 async function collectReferencedSeries(directoryPath: string, fileName: string): Promise<Set<string> | null> {
@@ -84,7 +104,28 @@ async function collectReferencedSeries(directoryPath: string, fileName: string):
     return referencedSeries;
 }
 
-async function collectValidationTargets(directoryPath: string): Promise<ValidationTarget[]> {
+async function isRegionDirectory(directoryPath: string): Promise<boolean> {
+    return (await fileExists(path.join(directoryPath, '_series.yaml'))) || (await fileExists(path.join(directoryPath, '_series.yml')));
+}
+
+async function getRegionDirectoryNames(entries: Dirent<string>[], directoryPath: string): Promise<string[]> {
+    const regionNames: string[] = [];
+
+    for (const entry of entries) {
+        if (!entry.isDirectory() || entry.name.startsWith('.') || entry.name.startsWith('_')) {
+            continue;
+        }
+
+        const entryPath = path.join(directoryPath, entry.name);
+        if (await isRegionDirectory(entryPath)) {
+            regionNames.push(entry.name);
+        }
+    }
+
+    return regionNames.sort((left, right) => left.localeCompare(right));
+}
+
+async function collectRegionValidationTargets(directoryPath: string): Promise<ValidationTarget[]> {
     if (shouldSkipDirectory(directoryPath)) {
         return [];
     }
@@ -106,7 +147,8 @@ async function collectValidationTargets(directoryPath: string): Promise<Validati
                 continue;
             }
 
-            targets.push(...(await collectValidationTargets(entryPath)));
+            const nested = await collectValidationTargets(entryPath);
+            targets.push(...nested.targets);
             continue;
         }
 
@@ -119,7 +161,7 @@ async function collectValidationTargets(directoryPath: string): Promise<Validati
         }
 
         if (entry.name === '_series.yaml' || entry.name === '_series.yml') {
-            targets.push({ filePath: entryPath, schema: GenerationMapSchema, isOrphan: false });
+            targets.push({ filePath: entryPath, kind: 'generation-map', schema: GenerationMapSchema, isOrphan: false });
             continue;
         }
 
@@ -131,12 +173,86 @@ async function collectValidationTargets(directoryPath: string): Promise<Validati
 
         targets.push({
             filePath: entryPath,
+            kind: 'series-items',
             schema: isReferenced ? SeriesItemsSchema : undefined,
             isOrphan: !isReferenced,
         });
     }
 
     return targets;
+}
+
+async function collectCollectibleTypeValidation(directoryPath: string): Promise<ValidationCollection> {
+    const entries = await readdir(directoryPath, { withFileTypes: true });
+    const targets: ValidationTarget[] = [];
+    const failures: ValidationFailure[] = [];
+    const typeFileName = findYamlFileName(entries, '_type');
+
+    if (!typeFileName) {
+        failures.push({
+            filePath: path.join(directoryPath, '_type.yaml'),
+            message: 'Missing collectible type metadata file.',
+        });
+    } else {
+        targets.push({
+            filePath: path.join(directoryPath, typeFileName),
+            kind: 'collectible-type',
+            schema: CollectibleTypeSchema,
+            isOrphan: false,
+        });
+    }
+
+    if (!entries.some(entry => entry.isFile() && entry.name === 'icon.webp')) {
+        failures.push({
+            filePath: path.join(directoryPath, 'icon.webp'),
+            message: 'Missing collectible type icon.',
+        });
+    }
+
+    const regionNames = await getRegionDirectoryNames(entries, directoryPath);
+    for (const regionName of regionNames) {
+        targets.push(...(await collectRegionValidationTargets(path.join(directoryPath, regionName))));
+    }
+
+    return { targets, failures };
+}
+
+async function collectValidationTargets(directoryPath: string): Promise<ValidationCollection> {
+    if (shouldSkipDirectory(directoryPath)) {
+        return { targets: [], failures: [] };
+    }
+
+    const entries = await readdir(directoryPath, { withFileTypes: true });
+    const seriesCatalogEntry = findYamlFileName(entries, '_series');
+    if (seriesCatalogEntry) {
+        return {
+            targets: await collectRegionValidationTargets(directoryPath),
+            failures: [],
+        };
+    }
+
+    const regionDirectoryNames = await getRegionDirectoryNames(entries, directoryPath);
+    const isCollectibleTypeDirectory =
+        findYamlFileName(entries, '_type') !== undefined || entries.some(entry => entry.isFile() && entry.name === 'icon.webp') || regionDirectoryNames.length > 0;
+
+    if (isCollectibleTypeDirectory) {
+        return collectCollectibleTypeValidation(directoryPath);
+    }
+
+    const targets: ValidationTarget[] = [];
+    const failures: ValidationFailure[] = [];
+
+    for (const entry of entries) {
+        if (!entry.isDirectory() || entry.name.startsWith('.')) {
+            continue;
+        }
+
+        const nested = await collectValidationTargets(path.join(directoryPath, entry.name));
+        targets.push(...nested.targets);
+        failures.push(...nested.failures);
+    }
+
+    return { targets, failures };
 }
 
 function formatZodError(error: ZodError): string[] {
@@ -195,6 +311,29 @@ function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
     return failures;
 }
 
+async function collectCollectibleTypeRegionIssues(filePath: string, parsed: unknown): Promise<string[]> {
+    if (!isRecord(parsed) || !isRecord(parsed.regions)) {
+        return [];
+    }
+
+    const entries = await readdir(path.dirname(filePath), { withFileTypes: true });
+    const actualRegionNames = await getRegionDirectoryNames(entries, path.dirname(filePath));
+    const declaredRegionNames = Object.keys(parsed.regions).sort((left, right) => left.localeCompare(right));
+    const failures: string[] = [];
+    const missingRegionNames = actualRegionNames.filter(regionName => !declaredRegionNames.includes(regionName));
+    const unknownRegionNames = declaredRegionNames.filter(regionName => !actualRegionNames.includes(regionName));
+
+    if (missingRegionNames.length > 0) {
+        failures.push(`regions: missing entries for directories: ${missingRegionNames.join(', ')}`);
+    }
+
+    if (unknownRegionNames.length > 0) {
+        failures.push(`regions: contains entries with no matching directory: ${unknownRegionNames.join(', ')}`);
+    }
+
+    return failures;
+}
+
 async function validateFile(target: ValidationTarget): Promise<ValidationResult> {
     const source = await readFile(target.filePath, 'utf8');
     const document = parseDocument(source, {
@@ -241,7 +380,10 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
     const result = target.schema.safeParse(parsed);
 
     if (result.success) {
-        const semanticFailures = collectInvalidItemIntegrationEditionKeys(parsed).map(message => ({
+        const semanticFailures = [
+            ...(target.kind === 'collectible-type' ? await collectCollectibleTypeRegionIssues(target.filePath, parsed) : []),
+            ...(target.kind === 'series-items' ? collectInvalidItemIntegrationEditionKeys(parsed) : []),
+        ].map(message => ({
             filePath: target.filePath,
             message,
         }));
@@ -285,8 +427,9 @@ function printGroupedMessages(
 }
 
 async function main(): Promise<void> {
-    const targets = await collectValidationTargets(rootPath);
-    const failures: ValidationFailure[] = [];
+    const collection = await collectValidationTargets(rootPath);
+    const targets = collection.targets;
+    const failures: ValidationFailure[] = [...collection.failures];
     const warnings: ValidationWarning[] = [];
 
     for (const target of targets) {

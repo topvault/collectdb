@@ -57,6 +57,16 @@ const GenerationSchema = z
     })
     .strict();
 
+export const CollectibleTypeSchema = z
+    .object({
+        name: z.string().min(1),
+        support: z.enum(['full', 'in-progress', 'none']),
+        releaseDate: z.union([z.string(), z.date()]).optional(),
+        description: z.string().optional(),
+        regions: z.record(z.string(), z.string().min(1)),
+    })
+    .strict();
+
 const VariantDescriptor = z.object({
     name: z.string(),
     description: z.string().optional(),
@@ -217,6 +227,7 @@ export const SeriesItemsSchema = z
     .strict();
 
 export type SeriesItems = z.infer<typeof SeriesItemsSchema>;
+export type CollectibleType = z.infer<typeof CollectibleTypeSchema>;
 export type Generation = z.infer<typeof GenerationSchema>;
 export type SeriesDescriptor = z.infer<typeof SeriesSchema>;
 export type Variant = z.infer<typeof VariantSchema>;
