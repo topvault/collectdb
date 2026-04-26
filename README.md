@@ -15,7 +15,13 @@ Unlike flat card lists, collectdb models how collectibles are actually published
 - every edition-specific item identity is represented by a stable, opaque identifier
 - external cataloging systems can be connected through labeled integrations
 
+This is the open source database that powers [TopVault](https://vault.top).
+Adding to collectdb will make collectibles available for tracking in the TopVault app.
+
 ### View using Sheets
+
+collectdb automatically sychronizes data to view-only sheets.
+Please make copies of these templates if you would like to manage your own data.
 
 <!-- google-sheets-links:start -->
 - [Dragon Ball Cards](https://docs.google.com/spreadsheets/d/1peAlf56kChT4OUbtKQ2MbFpeCyELjaNqmLRWGTdd0Hw/edit)
@@ -23,8 +29,6 @@ Unlike flat card lists, collectdb models how collectibles are actually published
 - [Pokémon Cards](https://docs.google.com/spreadsheets/d/1ivDMhlcRWSiy9kPMLprjWX7-uSK-0CVOGWhDgc__FJk/edit)
 - [Sports Cards](https://docs.google.com/spreadsheets/d/1z0JGSjqkQwwlwfgVJCc0AI6LOFrcf5GwUj44A0eVQ88/edit)
 <!-- google-sheets-links:end -->
-
-These sheets are kept in-sync with collectdb's data.
 
 ## Why collectdb
 
@@ -196,6 +200,7 @@ That makes collectdb suitable as a durable source of truth for downstream applic
 ### Integrations
 
 Integrations connect collectdb records to other cataloging systems through labeled keys.
+These are best effort label-only documented linkages.
 
 Examples currently modeled in the schema include:
 
@@ -270,8 +275,6 @@ npm run sheets-sync -- --create-missing
 
 This command creates one spreadsheet per collectible type, keeps one tab per language or region, and writes the tracked spreadsheet IDs to `.sheets.yaml`.
 
-For local runs, you can put the required values in `.env`. Set `GOOGLE_SERVICE_ACCOUNT_JSON`. If you want the spreadsheets stored inside a shared Google Drive folder, also set `GOOGLE_SHEETS_PARENT_FOLDER_ID` and share that folder with the service account as an editor. You can also set `GOOGLE_SHARED_DRIVE_ID` to make the sync verify shared drive membership before it creates or updates sheets.
-
 The GitHub Actions workflow runs the same sync after successful pushes to `main`, updates the spreadsheet content, and commits refreshed README links or newly created spreadsheet IDs when needed.
 
 ## Design Principles
@@ -283,9 +286,15 @@ The GitHub Actions workflow runs the same sync after successful pushes to `main`
 - integration-friendly: external cataloging systems can be attached explicitly
 - human-editable: YAML remains practical to read, review, and contribute to
 
-## Contributing
+## Collaboration
 
-Contributions are welcome, especially in these areas:
+You can help collectdb by opening an issue or a pull request.
+
+- suggest a missing item or variant through the [missing item form](https://github.com/topvault/collectdb/issues/new?template=missing-collectible.yml)
+- suggest a new collectible type through the [new collectible type form](https://github.com/topvault/collectdb/issues/new?template=new-collectible-type.yml)
+- open a pull request directly when you already know the data changes to make
+
+Contributions are especially useful in these areas:
 
 - adding new collectible types
 - expanding existing series coverage
@@ -293,10 +302,24 @@ Contributions are welcome, especially in these areas:
 - tightening schema rules and validation
 - documenting edge cases and modeling decisions
 
+Before opening a pull request, run:
+
+```sh
+npm run pr:prepare
+```
+
+This formats YAML, fills missing opaque IDs, normalizes `referenceOf` and `variantOf` links, and runs schema validation.
+
+If you want to run the same command sequence used for pull request checks without writing changes, run:
+
+```sh
+npm run pr:check
+```
+
 When contributing data:
 
 1. update the relevant files under [data](data)
-2. run `npm run validate:data`
+2. run `npm run pr:prepare`
 3. make sure new records preserve stable opaque identifiers where applicable
 
 ## Status

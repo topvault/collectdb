@@ -32,7 +32,7 @@ body:
       options:
         - Dragon Ball Card (dragon-ball-card)
         - MTG Card (mtg-card)
-        - Pokemon Card (pokemon-card)
+        - Pokémon Card (pokemon-card)
         - Sports Card (sports-card)
     validations:
       required: true
@@ -41,10 +41,8 @@ body:
     id: region
     attributes:
       label: Region
-      description: Choose the region or language directory.
-      options:
-        - English (english)
-        - Japanese (japanese)
+      description: What region or language.
+      placeholder: english
     validations:
       required: true
 
@@ -66,6 +64,7 @@ body:
         - Main item list (items)
         - Sealed product list (products)
         - Promo, subset, or other grouped section (additional)
+        - Not a variant (standalone item)
     validations:
       required: true
 
@@ -127,7 +126,7 @@ body:
       label: Edition or print labels
       description: List the edition key or keys that this applies to. If it should match the existing item, say that explicitly.
       placeholder: |
-        unlimited
+        normal, reverse holo, master ball, etc.
 
         or
 

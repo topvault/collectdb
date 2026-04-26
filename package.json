@@ -6,6 +6,8 @@
         "build": "tsc -p tsconfig.json",
         "format": "prettier --write \"data/**/*.yaml\"",
         "format:check": "prettier --cache --check \"data/**/*.yaml\"",
+        "pr:prepare": "npm run format && npm run snag && npm run reference-of && npm run validate:data",
+        "pr:check": "npm run format:check && npm run snag -- --check && npm run reference-of -- --check && npm run validate:data",
         "sheets-sync": "tsx scripts/sync-sheets.ts",
         "validate:data": "tsx scripts/validate-data.ts",
         "snag": "tsx scripts/snag.ts",

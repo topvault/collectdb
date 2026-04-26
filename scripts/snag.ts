@@ -18,16 +18,14 @@ import type {
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
-    .command('* <collectibleType> <region> [seriesId]', '')
+    .command('* [collectibleType] [region] [seriesId]', '')
     .positional('collectibleType', {
         describe: 'Collectible type directory under data, for example pokemon-card',
         type: 'string',
-        demandOption: true,
     })
     .positional('region', {
         describe: 'Region directory under the collectible type, for example english',
         type: 'string',
-        demandOption: true,
     })
     .positional('seriesId', {
         describe: 'Optional generation and series key to limit processing, for example base:base-set',
@@ -114,8 +112,70 @@ interface ReadYamlFileResult {
     idsAdded: number;
 }
 
+interface ProcessingTarget {
+    collectibleType: string;
+    region: string;
+}
+
+const skippedDirectoryNames = new Set(['test-source']);
+
 function getSeriesFilePath(collectibleType: string, region: string): string {
     return path.resolve('data', collectibleType, region, '_series.yaml');
+}
+
+function hasSeriesCatalog(regionPath: string): boolean {
+    return fs.existsSync(path.join(regionPath, '_series.yaml')) || fs.existsSync(path.join(regionPath, '_series.yml'));
+}
+
+function getProcessingTargets(collectibleType?: string, region?: string): ProcessingTarget[] {
+    if (region && !collectibleType) {
+        throw new Error('A region requires a collectible type.');
+    }
+
+    if (collectibleType && region) {
+        return [{ collectibleType, region }];
+    }
+
+    const dataRoot = path.resolve('data');
+
+    if (collectibleType) {
+        const collectibleTypePath = path.join(dataRoot, collectibleType);
+        if (!fs.existsSync(collectibleTypePath) || !fs.statSync(collectibleTypePath).isDirectory()) {
+            throw new Error(`Cannot find collectible type directory: ${collectibleTypePath}`);
+        }
+
+        return fs
+            .readdirSync(collectibleTypePath)
+            .filter(entry => {
+                const fullPath = path.join(collectibleTypePath, entry);
+                return fs.statSync(fullPath).isDirectory() && !entry.startsWith('.') && hasSeriesCatalog(fullPath);
+            })
+            .sort((left, right) => left.localeCompare(right))
+            .map(regionName => ({ collectibleType, region: regionName }));
+    }
+
+    return fs
+        .readdirSync(dataRoot)
+        .filter(entry => {
+            const fullPath = path.join(dataRoot, entry);
+            return fs.statSync(fullPath).isDirectory() && !entry.startsWith('.') && !skippedDirectoryNames.has(entry);
+        })
+        .sort((left, right) => left.localeCompare(right))
+        .flatMap(collectibleTypeName => {
+            const collectibleTypePath = path.join(dataRoot, collectibleTypeName);
+
+            return fs
+                .readdirSync(collectibleTypePath)
+                .filter(entry => {
+                    const fullPath = path.join(collectibleTypePath, entry);
+                    return fs.statSync(fullPath).isDirectory() && !entry.startsWith('.') && hasSeriesCatalog(fullPath);
+                })
+                .sort((left, right) => left.localeCompare(right))
+                .map(regionName => ({
+                    collectibleType: collectibleTypeName,
+                    region: regionName,
+                }));
+        });
 }
 
 function addVariantIds(
@@ -388,36 +448,63 @@ async function recurseDir(
 
 async function main(): Promise<void> {
     const { check: checkOnly, collectibleType, region, seriesId: singleSeriesId } = argv;
-    const seriesFile = getSeriesFilePath(collectibleType, region);
 
-    if (!fs.existsSync(seriesFile)) {
-        throw new Error(`Cannot find series catalog: ${seriesFile}`);
+    if (singleSeriesId && (!collectibleType || !region)) {
+        throw new Error('A seriesId requires both collectibleType and region.');
     }
 
-    const seriesData = fs.readFileSync(seriesFile, 'utf8');
-    const seriesDoc = parseDocument(seriesData);
-    const seriesYaml = seriesDoc.toJS() as GenerationMap;
+    const targets = getProcessingTargets(collectibleType, region);
+    if (targets.length === 0) {
+        throw new Error('No collectible type regions found to process.');
+    }
 
-    const getSeries: GetSeriesFunc = seriesId => {
-        const [generationKey, seriesKey] = seriesId.split(':');
-        if (!(generationKey in seriesYaml)) {
-            return null;
-        }
-
-        const generation = seriesYaml[generationKey];
-        if (!(seriesKey in generation.series)) {
-            return null;
-        }
-
-        if (singleSeriesId && seriesId !== singleSeriesId) {
-            return null;
-        }
-
-        return generation.series[seriesKey];
+    const totals: ReadYamlFileResult = {
+        seriesObserved: 0,
+        idsObserved: 0,
+        idsAdded: 0,
     };
 
-    const fileDir = path.dirname(seriesFile);
-    const totals = await recurseDir(fileDir, getSeries, checkOnly, singleSeriesId);
+    for (const target of targets) {
+        observedIds.clear();
+
+        const seriesFile = getSeriesFilePath(target.collectibleType, target.region);
+        if (!fs.existsSync(seriesFile)) {
+            throw new Error(`Cannot find series catalog: ${seriesFile}`);
+        }
+
+        if (targets.length > 1) {
+            console.log(`Checking ${target.collectibleType}/${target.region}`);
+        }
+
+        const seriesData = fs.readFileSync(seriesFile, 'utf8');
+        const seriesDoc = parseDocument(seriesData);
+        const seriesYaml = seriesDoc.toJS() as GenerationMap;
+
+        const getSeries: GetSeriesFunc = seriesId => {
+            const [generationKey, seriesKey] = seriesId.split(':');
+            if (!(generationKey in seriesYaml)) {
+                return null;
+            }
+
+            const generation = seriesYaml[generationKey];
+            if (!(seriesKey in generation.series)) {
+                return null;
+            }
+
+            if (singleSeriesId && seriesId !== singleSeriesId) {
+                return null;
+            }
+
+            return generation.series[seriesKey];
+        };
+
+        const fileDir = path.dirname(seriesFile);
+        const targetTotals = await recurseDir(fileDir, getSeries, checkOnly, singleSeriesId);
+        totals.seriesObserved += targetTotals.seriesObserved;
+        totals.idsObserved += targetTotals.idsObserved;
+        totals.idsAdded += targetTotals.idsAdded;
+    }
+
     console.log(`Checked ${totals.seriesObserved} series and ${totals.idsObserved} IDs.`);
 }
 

@@ -17,16 +17,14 @@ import type {
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
-    .command('* <collectibleType> <region>', '')
+    .command('* [collectibleType] [region]', '')
     .positional('collectibleType', {
         describe: 'Collectible type directory under data, for example pokemon-card',
         type: 'string',
-        demandOption: true,
     })
     .positional('region', {
         describe: 'Region directory under the collectible type, for example english',
         type: 'string',
-        demandOption: true,
     })
     .option('check', {
         describe: 'Check for reference normalization changes without writing updates',
@@ -61,6 +59,12 @@ type IdIndexEntry = {
 const generations: Record<string, Record<string, SeriesItemsInput>> = {};
 const idIndex: Partial<Record<string, IdIndexEntry>> = {};
 const loadedFiles: Record<string, Document> = {};
+const skippedDirectoryNames = new Set(['test-source']);
+
+interface ProcessingTarget {
+    collectibleType: string;
+    region: string;
+}
 
 function isReferenceItem(item: SeriesItemInput | AdditionalEntryInput): item is ReferenceItemInput {
     return 'referenceOf' in item;
@@ -355,6 +359,75 @@ function getSeriesFilePath(collectibleTypeValue: string, regionValue: string): s
     return path.resolve('data', collectibleTypeValue, regionValue, '_series.yaml');
 }
 
+function hasSeriesCatalog(regionPath: string): boolean {
+    return fs.existsSync(path.join(regionPath, '_series.yaml')) || fs.existsSync(path.join(regionPath, '_series.yml'));
+}
+
+function getProcessingTargets(collectibleTypeValue?: string, regionValue?: string): ProcessingTarget[] {
+    if (regionValue && !collectibleTypeValue) {
+        throw new Error('A region requires a collectible type.');
+    }
+
+    if (collectibleTypeValue && regionValue) {
+        return [{ collectibleType: collectibleTypeValue, region: regionValue }];
+    }
+
+    const dataRoot = path.resolve('data');
+
+    if (collectibleTypeValue) {
+        const collectibleTypePath = path.join(dataRoot, collectibleTypeValue);
+        if (!fs.existsSync(collectibleTypePath) || !fs.statSync(collectibleTypePath).isDirectory()) {
+            throw new Error(`Cannot find collectible type directory: ${collectibleTypePath}`);
+        }
+
+        return fs
+            .readdirSync(collectibleTypePath)
+            .filter(entry => {
+                const fullPath = path.join(collectibleTypePath, entry);
+                return fs.statSync(fullPath).isDirectory() && !entry.startsWith('.') && hasSeriesCatalog(fullPath);
+            })
+            .sort((left, right) => left.localeCompare(right))
+            .map(regionName => ({ collectibleType: collectibleTypeValue, region: regionName }));
+    }
+
+    return fs
+        .readdirSync(dataRoot)
+        .filter(entry => {
+            const fullPath = path.join(dataRoot, entry);
+            return fs.statSync(fullPath).isDirectory() && !entry.startsWith('.') && !skippedDirectoryNames.has(entry);
+        })
+        .sort((left, right) => left.localeCompare(right))
+        .flatMap(collectibleTypeName => {
+            const collectibleTypePath = path.join(dataRoot, collectibleTypeName);
+
+            return fs
+                .readdirSync(collectibleTypePath)
+                .filter(entry => {
+                    const fullPath = path.join(collectibleTypePath, entry);
+                    return fs.statSync(fullPath).isDirectory() && !entry.startsWith('.') && hasSeriesCatalog(fullPath);
+                })
+                .sort((left, right) => left.localeCompare(right))
+                .map(regionName => ({
+                    collectibleType: collectibleTypeName,
+                    region: regionName,
+                }));
+        });
+}
+
+function resetState(): void {
+    for (const key of Object.keys(generations)) {
+        delete generations[key];
+    }
+
+    for (const key of Object.keys(idIndex)) {
+        delete idIndex[key];
+    }
+
+    for (const key of Object.keys(loadedFiles)) {
+        delete loadedFiles[key];
+    }
+}
+
 async function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): Promise<ReadSeriesFilesResult> {
     const entries = fs.readdirSync(dirPath);
     let filesChecked = 0;
@@ -404,20 +477,37 @@ async function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): Promise
 }
 
 async function main(): Promise<void> {
-    const seriesFile = getSeriesFilePath(collectibleType, region);
-    if (!fs.existsSync(seriesFile)) {
-        throw new Error(`Cannot find series catalog: ${seriesFile}`);
+    const targets = getProcessingTargets(collectibleType, region);
+    if (targets.length === 0) {
+        throw new Error('No collectible type regions found to process.');
     }
 
-    const fileDir = path.dirname(seriesFile);
-    const stats = fs.statSync(fileDir);
-    if (!stats.isDirectory()) {
-        throw new Error('Cannot find directory of series files');
+    let filesNeedingUpdate = 0;
+
+    for (const target of targets) {
+        resetState();
+
+        const seriesFile = getSeriesFilePath(target.collectibleType, target.region);
+        if (!fs.existsSync(seriesFile)) {
+            throw new Error(`Cannot find series catalog: ${seriesFile}`);
+        }
+
+        if (targets.length > 1) {
+            console.log(`Checking ${target.collectibleType}/${target.region}`);
+        }
+
+        const fileDir = path.dirname(seriesFile);
+        const stats = fs.statSync(fileDir);
+        if (!stats.isDirectory()) {
+            throw new Error('Cannot find directory of series files');
+        }
+
+        const result = await readSeriesFiles(fileDir, checkOnly);
+        filesNeedingUpdate += result.filesNeedingUpdate;
     }
 
-    const result = await readSeriesFiles(fileDir, checkOnly);
-    if (checkOnly && result.filesNeedingUpdate > 0) {
-        console.error(`${result.filesNeedingUpdate} files would be updated.`);
+    if (checkOnly && filesNeedingUpdate > 0) {
+        console.error(`${filesNeedingUpdate} files would be updated.`);
         process.exitCode = 1;
     }
 }

@@ -14,8 +14,8 @@ body:
   - type: input
     id: proposed_name
     attributes:
-      label: Proposed collectible category
-      description: What should this category be called in collectdb?
+      label: Proposed collectible type name
+      description: What should this type be called in collectdb?
       placeholder: One Piece Card
     validations:
       required: true
@@ -23,7 +23,7 @@ body:
   - type: textarea
     id: what_is_collected
     attributes:
-      label: What do people collect in this category?
+      label: What do people collect?
       description: Describe the main collectible objects, how people talk about them, and what usually counts as part of the hobby.
       placeholder: |
         Example:
@@ -34,7 +34,7 @@ body:
   - type: textarea
     id: documentation_sources
     attributes:
-      label: Where is this category documented today?
+      label: Where is this type of collectible documented today?
       description: Link existing databases, official sites, checklist projects, wiki pages, price guides, collector spreadsheets, or other references.
       placeholder: |
         - Official product page: https://...
@@ -94,17 +94,6 @@ body:
         - Base Set
         - Promo Pack 1
         - Championship Decks 2024
-    validations:
-      required: true
-
-  - type: textarea
-    id: fit_for_collectdb
-    attributes:
-      label: Why is this a good fit for collectdb?
-      description: Explain why this category benefits from stable IDs, structured series data, variant handling, product catalogs, or cross-reference support.
-      placeholder: |
-        Example:
-        The hobby has many promos, sealed products, and parallel variants, and existing catalogs are inconsistent across printings.
     validations:
       required: true
 
