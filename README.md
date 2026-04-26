@@ -15,6 +15,17 @@ Unlike flat card lists, collectdb models how collectibles are actually published
 - every edition-specific item identity is represented by a stable, opaque identifier
 - external cataloging systems can be connected through labeled integrations
 
+### View using Sheets
+
+<!-- google-sheets-links:start -->
+- [Dragon Ball Cards](https://docs.google.com/spreadsheets/d/1peAlf56kChT4OUbtKQ2MbFpeCyELjaNqmLRWGTdd0Hw/edit)
+- [MTG Cards](https://docs.google.com/spreadsheets/d/1YC2JOMRXd7N-c8A002c1JljG4hX4JSQ5CoVlxRKNfEo/edit)
+- [Pokémon Cards](https://docs.google.com/spreadsheets/d/1ivDMhlcRWSiy9kPMLprjWX7-uSK-0CVOGWhDgc__FJk/edit)
+- [Sports Cards](https://docs.google.com/spreadsheets/d/1z0JGSjqkQwwlwfgVJCc0AI6LOFrcf5GwUj44A0eVQ88/edit)
+<!-- google-sheets-links:end -->
+
+These sheets are kept in-sync with collectdb's data.
+
 ## Why collectdb
 
 Most collectible datasets handle the easy part well: a name, a number, and a set.
@@ -37,15 +48,21 @@ The repository is organized around collectible type and a second directory level
 ```text
 data/
   pokemon-card/
+    _type.yaml
+    icon.webp
     english/
       _series.yaml
       base:base-set.yaml
       sv:151.yaml
   mtg-card/
+    _type.yaml
+    icon.webp
     english/
       _series.yaml
       mtg-1993:limited-edition-alpha.yaml
   sports-card/
+    _type.yaml
+    icon.webp
     english/
       _series.yaml
 schema/
@@ -55,6 +72,26 @@ scripts/
 ```
 
 ## Data Model
+
+### Collectible Types
+
+Each collectible type directory can define shared metadata in `_type.yaml`.
+
+This file is used for the collectible type's display name, optional release date and description, and the friendly labels for the region directories it exposes.
+
+```yaml
+name: Pokemon Card
+support: full
+releaseDate: '1996-10-20'
+description: Catalogs Pokemon trading cards and related collectible card releases across supported regions.
+regions:
+  english: English
+  japanese: Japanese
+```
+
+`support` is required and currently accepts `full`, `in-progress`, or `none`.
+
+Each collectible type directory is also expected to include an `icon.webp`.
 
 ### Generations
 
@@ -191,6 +228,8 @@ npm run validate:data -- data/pokemon-card/english
 
 The validator walks the data tree, parses YAML, and checks:
 
+- `_type.yaml` files against the collectible type schema
+- each collectible type directory for a required `icon.webp`
 - `_series.yaml` files against the generation map schema
 - series files against the series items schema
 
@@ -234,17 +273,6 @@ This command creates one spreadsheet per collectible type, keeps one tab per lan
 For local runs, you can put the required values in `.env`. Set `GOOGLE_SERVICE_ACCOUNT_JSON`. If you want the spreadsheets stored inside a shared Google Drive folder, also set `GOOGLE_SHEETS_PARENT_FOLDER_ID` and share that folder with the service account as an editor. You can also set `GOOGLE_SHARED_DRIVE_ID` to make the sync verify shared drive membership before it creates or updates sheets.
 
 The GitHub Actions workflow runs the same sync after successful pushes to `main`, updates the spreadsheet content, and commits refreshed README links or newly created spreadsheet IDs when needed.
-
-## Sheets Sync
-
-These spreadsheets are public point-in-time mirrors of the database. Readers can open them directly or make their own copies.
-
-<!-- google-sheets-links:start -->
-- [Dragon Ball Card](https://docs.google.com/spreadsheets/d/1peAlf56kChT4OUbtKQ2MbFpeCyELjaNqmLRWGTdd0Hw/edit)
-- [MTG Card](https://docs.google.com/spreadsheets/d/1YC2JOMRXd7N-c8A002c1JljG4hX4JSQ5CoVlxRKNfEo/edit)
-- [Pokemon Card](https://docs.google.com/spreadsheets/d/1ivDMhlcRWSiy9kPMLprjWX7-uSK-0CVOGWhDgc__FJk/edit)
-- [Sports Card](https://docs.google.com/spreadsheets/d/1z0JGSjqkQwwlwfgVJCc0AI6LOFrcf5GwUj44A0eVQ88/edit)
-<!-- google-sheets-links:end -->
 
 ## Design Principles
 
