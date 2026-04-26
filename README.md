@@ -223,6 +223,29 @@ To normalize `referenceOf` and `variantOf` objects from shorthand IDs or partial
 npm run reference-of -- pokemon-card english
 ```
 
+To create or update the public Google Sheets mirrors:
+
+```sh
+npm run sheets-sync -- --create-missing
+```
+
+This command creates one spreadsheet per collectible type, keeps one tab per language or region, and writes the tracked spreadsheet IDs to `.sheets.yaml`.
+
+For local runs, you can put the required values in `.env`. Set `GOOGLE_SERVICE_ACCOUNT_JSON`. If you want the spreadsheets stored inside a shared Google Drive folder, also set `GOOGLE_SHEETS_PARENT_FOLDER_ID` and share that folder with the service account as an editor. You can also set `GOOGLE_SHARED_DRIVE_ID` to make the sync verify shared drive membership before it creates or updates sheets.
+
+The GitHub Actions workflow runs the same sync after successful pushes to `main`, updates the spreadsheet content, and commits refreshed README links or newly created spreadsheet IDs when needed.
+
+## Sheets Sync
+
+These spreadsheets are public point-in-time mirrors of the database. Readers can open them directly or make their own copies.
+
+<!-- google-sheets-links:start -->
+- [Dragon Ball Card](https://docs.google.com/spreadsheets/d/1peAlf56kChT4OUbtKQ2MbFpeCyELjaNqmLRWGTdd0Hw/edit)
+- [MTG Card](https://docs.google.com/spreadsheets/d/1YC2JOMRXd7N-c8A002c1JljG4hX4JSQ5CoVlxRKNfEo/edit)
+- [Pokemon Card](https://docs.google.com/spreadsheets/d/1ivDMhlcRWSiy9kPMLprjWX7-uSK-0CVOGWhDgc__FJk/edit)
+- [Sports Card](https://docs.google.com/spreadsheets/d/1z0JGSjqkQwwlwfgVJCc0AI6LOFrcf5GwUj44A0eVQ88/edit)
+<!-- google-sheets-links:end -->
+
 ## Design Principles
 
 - schema-first: the schema defines the contract

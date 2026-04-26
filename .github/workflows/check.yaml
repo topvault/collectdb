@@ -1,5 +1,8 @@
 name: Check
 
+permissions:
+  contents: write
+
 on:
   pull_request:
     paths:
@@ -134,3 +137,45 @@ jobs:
 
       - name: Validate data
         run: npm run validate:data
+
+  sync-sheets:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs:
+      - prettier
+      - snag
+      - reference-of
+      - validate-data
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      GOOGLE_SHEETS_PARENT_FOLDER_ID: ${{ secrets.GOOGLE_SHEETS_PARENT_FOLDER_ID }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sheets Sync
+        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
+        run: npm run sheets-sync -- --create-missing
+
+      - name: Commit sheets sync registry updates
+        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
+        run: |
+          if git diff --quiet -- README.md .sheets.yaml; then
+            exit 0
+          fi
+
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md .sheets.yaml
+          git commit -m "chore: update Sheets sync registry"
+          git push

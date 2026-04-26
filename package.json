@@ -6,11 +6,14 @@
         "build": "tsc -p tsconfig.json",
         "format": "prettier --write \"data/**/*.yaml\"",
         "format:check": "prettier --cache --check \"data/**/*.yaml\"",
+        "sheets-sync": "tsx scripts/sync-sheets.ts",
         "validate:data": "tsx scripts/validate-data.ts",
         "snag": "tsx scripts/snag.ts",
         "reference-of": "tsx scripts/reference-of.ts"
     },
     "dependencies": {
+        "dotenv": "^16.6.1",
+        "googleapis": "^150.0.1",
         "uuid": "^13.0.0",
         "yaml": "^2.8.1",
         "yargs": "^18.0.0",
