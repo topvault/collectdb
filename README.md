@@ -1,8 +1,16 @@
-# collectdb
+<h1 align="center">collectdb</h1>
 
-collectdb is an open source, schema-first database for popular collectible types.
+<p align="center">
+    An open source, schema-first database for popular collectible types.
+</p>
 
-Its goal is to provide a canonical, expressive, and stable catalog for collectibles such as trading cards, sports cards, and similar item-heavy domains where series structure, editions, product packaging, and variations matter.
+<p align="center">
+    <a href="LICENSE">
+        <img src="https://img.shields.io/badge/license-ODbL-blue.svg" alt="License: ODbL" />
+    </a>
+</p>
+
+collectdb's goal is to provide a canonical, expressive, and stable catalog for collectibles such as trading cards, sports cards, and similar item-heavy domains where series structure, editions, product packaging, and variations matter.
 
 Unlike flat card lists, collectdb models how collectibles are actually published and collected:
 
