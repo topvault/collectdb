@@ -74,12 +74,13 @@ items:
     editions:
       1st-edition: 53dd84d0-9670-4466-8a8a-cd7b516f7bc6
       unlimited: e5a7ce73-8343-4b01-a647-506ec659fa81
-    # variants:
-    #   1st-edition-cigar-error:
-    #     name: 1st Edition Cigar Error
-    #     edition: 1st-edition
-    #     description: This card has a printing error.
-    #     id: 90c59411-e043-4ae3-828b-4c2382cdc256
+    variants:
+      cigar-error:
+        name: 1st Edition Cigar Error
+        edition: 1st-edition
+        remark: recurring-obstruction
+        description: This card has a printing error.
+        id: 90c59411-e043-4ae3-828b-4c2382cdc256
     details:
       illustrator: Ken Sugimori
       rarity: Rare
@@ -556,11 +557,12 @@ items:
       1999-2000: f80a6916-c81c-4f6e-aebf-e7d79529fe71
   krabby-51:
     name: Krabby
-    # variants:
-    #   error:
-    #     name: Partial Stamp Error
-    #     description: The Fossil stamp ink is partially missing.
-    #     id: 286bfaff-17f5-44ae-885e-39c19b04c67b
+    variants:
+      stamp-slash-error:
+        name: Stamp Slash Error
+        remark: recurring-obstruction
+        description: The Fossil stamp ink is partially missing (appearing like it was slashed).
+        id: 286bfaff-17f5-44ae-885e-39c19b04c67b
     details:
       illustrator: Mitsuhiro Arita
       rarity: Common
