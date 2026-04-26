@@ -27,7 +27,6 @@ Please make copies of these templates if you would like to manage your own data.
 - [Dragon Ball Cards](https://docs.google.com/spreadsheets/d/1peAlf56kChT4OUbtKQ2MbFpeCyELjaNqmLRWGTdd0Hw/edit)
 - [MTG Cards](https://docs.google.com/spreadsheets/d/1YC2JOMRXd7N-c8A002c1JljG4hX4JSQ5CoVlxRKNfEo/edit)
 - [Pokémon Cards](https://docs.google.com/spreadsheets/d/1ivDMhlcRWSiy9kPMLprjWX7-uSK-0CVOGWhDgc__FJk/edit)
-- [Sports Cards](https://docs.google.com/spreadsheets/d/1z0JGSjqkQwwlwfgVJCc0AI6LOFrcf5GwUj44A0eVQ88/edit)
 <!-- google-sheets-links:end -->
 
 ## Why collectdb
@@ -327,3 +326,9 @@ When contributing data:
 collectdb is intended to become a long-lived canonical database for collectible domains where structure and variation matter as much as names and numbers.
 
 If you are building tools for pricing, collection tracking, checklisting, grading, or catalog exploration, collectdb is designed to be a dependable source of structured identity and hierarchy.
+
+## Disclaimer
+
+The names of collectible types and their content are the copyright of their respective copyright holders.
+
+TopVault and collectdb are not produced by, endorsed by, supported by, or affiliated with The Pokemon Company, Pokemon, Nintendo, Game Freak, or Wizards of the Coast.

@@ -884,13 +884,18 @@ async function updateReadme(readmePath: string, config: SheetsConfig, collectibl
         throw new Error(`README markers ${README_LINKS_START} and ${README_LINKS_END} were not found in ${toRelativePath(readmePath)}.`);
     }
 
-    const lines = sortEntries(config.collectibleTypes).map(([collectibleType, entry]) => {
-        const label = collectibleTypeMetadata[collectibleType]?.name ?? titleCaseFromKey(collectibleType);
-        if (!entry.spreadsheetId) {
-            return `- ${label}: pending initial sheet bootstrap`;
+    const lines = sortEntries(config.collectibleTypes).flatMap(([collectibleType, entry]) => {
+        const metadata = collectibleTypeMetadata[collectibleType];
+        if (metadata?.support === 'none') {
+            return [];
         }
 
-        return `- [${label}](${getSpreadsheetUrl(entry.spreadsheetId)})`;
+        const label = metadata?.name ?? titleCaseFromKey(collectibleType);
+        if (!entry.spreadsheetId) {
+            return [`- ${label}: pending initial sheet bootstrap`];
+        }
+
+        return [`- [${label}](${getSpreadsheetUrl(entry.spreadsheetId)})`];
     });
 
     const replacement = `${README_LINKS_START}\n${lines.join('\n')}\n${README_LINKS_END}`;
