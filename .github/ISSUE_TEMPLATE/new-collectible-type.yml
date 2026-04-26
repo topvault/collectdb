@@ -1,0 +1,125 @@
+name: New collectible category
+description: Suggest a completely new collectible category for collectdb.
+title: "[New collectible type]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest a completely new collectible category for collectdb.
+
+        This form is intentionally open ended. The goal is to understand whether the category is well documented, how collectors organize it, and whether it fits collectdb's structure.
+
+        If there are existing checklists, databases, release calendars, official product pages, or collector references, link them.
+
+  - type: input
+    id: proposed_name
+    attributes:
+      label: Proposed collectible category
+      description: What should this category be called in collectdb?
+      placeholder: One Piece Card
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_is_collected
+    attributes:
+      label: What do people collect in this category?
+      description: Describe the main collectible objects, how people talk about them, and what usually counts as part of the hobby.
+      placeholder: |
+        Example:
+        People collect individual cards, promos, deck exclusives, sealed booster products, and tournament releases.
+    validations:
+      required: true
+
+  - type: textarea
+    id: documentation_sources
+    attributes:
+      label: Where is this category documented today?
+      description: Link existing databases, official sites, checklist projects, wiki pages, price guides, collector spreadsheets, or other references.
+      placeholder: |
+        - Official product page: https://...
+        - Collector checklist: https://...
+        - Existing database: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: release_structure
+    attributes:
+      label: How do collectors organize releases?
+      description: Explain the real-world structure using the terms collectors actually use. If it maps to ideas like generations, series, sets, editions, promos, subsets, or products, describe that too.
+      placeholder: |
+        Example:
+        Collectors usually talk about eras, then sets within each era. Some sets have 1st edition and unlimited printings. Promos are tracked separately from main sets.
+    validations:
+      required: true
+
+  - type: textarea
+    id: naming_numbering
+    attributes:
+      label: How are items named or numbered?
+      description: Describe card numbers, checklist numbers, release codes, parallel naming, promo naming, or any other common identity system.
+      placeholder: |
+        Example:
+        Main set items are numbered 1-165. Secret rares use alternate numbering. Promo cards use a separate PR series.
+    validations:
+      required: true
+
+  - type: textarea
+    id: variations
+    attributes:
+      label: What kinds of variations matter to collectors?
+      description: Describe foils, parallels, print runs, stamped versions, packaging exclusives, regional differences, or anything else that should likely be modeled.
+      placeholder: |
+        Example:
+        Reverse holos, stamped league promos, alternate art prints, and box topper exclusives are all treated as distinct by collectors.
+    validations:
+      required: true
+
+  - type: textarea
+    id: regions_languages
+    attributes:
+      label: Regions or languages
+      description: If this category exists across multiple regions or languages, explain how collectors separate or combine them.
+      placeholder: |
+        Example:
+        Japanese and English releases are usually tracked separately. Some promos exist only in one language.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example releases or representative sets
+      description: List a few concrete examples that would help someone understand the scope.
+      placeholder: |
+        - Base Set
+        - Promo Pack 1
+        - Championship Decks 2024
+    validations:
+      required: true
+
+  - type: textarea
+    id: fit_for_collectdb
+    attributes:
+      label: Why is this a good fit for collectdb?
+      description: Explain why this category benefits from stable IDs, structured series data, variant handling, product catalogs, or cross-reference support.
+      placeholder: |
+        Example:
+        The hobby has many promos, sealed products, and parallel variants, and existing catalogs are inconsistent across printings.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else we should know?
+      description: Add context about community size, maintenance concerns, licensing concerns, or anything unusual about the category.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I included at least one real source or catalog reference.
+          required: true
+        - label: I explained how collectors organize releases in this category.
+          required: true

@@ -1,0 +1,164 @@
+name: Missing item or variant
+description: Suggest a missing collectible item, with the form optimized for variant additions.
+title: "[Missing collectible]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest a missing collectible item.
+
+        This form is biased toward variant submissions because that is the most common case. If you are suggesting a brand new standalone item, sealed product, or promo or subset entry, fill in the variant-related fields only when they apply.
+
+        Please be as exact as possible about the collectible type, region, set or series, and the existing entry this should attach to.
+
+  - type: dropdown
+    id: addition_shape
+    attributes:
+      label: What is missing?
+      description: Pick the closest match. If you are unsure, choose the first option.
+      options:
+        - Missing variant of an existing card or item
+        - Missing standalone card or item
+        - Missing sealed product
+        - Missing promo, subset, or other grouped item
+    validations:
+      required: true
+
+  - type: dropdown
+    id: collectible_type
+    attributes:
+      label: Collectible category
+      description: Choose the dataset where the addition belongs.
+      options:
+        - Dragon Ball Card (dragon-ball-card)
+        - MTG Card (mtg-card)
+        - Pokemon Card (pokemon-card)
+        - Sports Card (sports-card)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      description: Choose the region or language directory.
+      options:
+        - English (english)
+        - Japanese (japanese)
+    validations:
+      required: true
+
+  - type: input
+    id: series_key
+    attributes:
+      label: Set or series key
+      description: Use the exact set or series key, such as `base:base-set` or `sv:151`.
+      placeholder: sv:151
+    validations:
+      required: true
+
+  - type: dropdown
+    id: base_section
+    attributes:
+      label: Where does the existing entry live?
+      description: For variant suggestions, choose the part of the set file that already contains the base entry.
+      options:
+        - Main item list (items)
+        - Sealed product list (products)
+        - Promo, subset, or other grouped section (additional)
+    validations:
+      required: true
+
+  - type: input
+    id: additional_group_key
+    attributes:
+      label: Group key
+      description: Required only if the existing entry is in a promo, subset, or other grouped section.
+      placeholder: promos
+
+  - type: input
+    id: base_record_key
+    attributes:
+      label: Existing entry key
+      description: For variant suggestions, use the exact existing card, item, or product key from the set file.
+      placeholder: pikachu-58
+
+  - type: input
+    id: suggested_name
+    attributes:
+      label: Missing item name
+      description: Use the display name that should appear in the catalog.
+      placeholder: Pikachu
+    validations:
+      required: true
+
+  - type: input
+    id: suggested_key_or_number
+    attributes:
+      label: Card number or likely key
+      description: If you know the item number or likely internal key, put it here.
+      placeholder: pikachu-58
+
+  - type: input
+    id: variant_label
+    attributes:
+      label: Variant label
+      description: For variant suggestions, give the distinguishing label, such as Holo, Reverse Holo, stamped, or alternate art.
+      placeholder: Reverse Holo
+
+  - type: textarea
+    id: distinguishing_details
+    attributes:
+      label: What makes it different?
+      description: Describe what makes this different from the existing entry, or explain why it should be a standalone item instead.
+      placeholder: |
+        Example variant details:
+        - Cosmos foil version from a blister pack
+        - League stamp on the art box
+        - Different release-only numbering
+
+        If this is not a variant, explain the reason it should be cataloged as its own record.
+    validations:
+      required: true
+
+  - type: textarea
+    id: edition_keys
+    attributes:
+      label: Edition or print labels
+      description: List the edition key or keys that this applies to. If it should match the existing item, say that explicitly.
+      placeholder: |
+        unlimited
+
+        or
+
+        same as base item
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_links
+    attributes:
+      label: Source links
+      description: Include at least one reliable source link, scan, checklist, or product page.
+      placeholder: |
+        - https://...
+        - https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add any extra context that would help with cataloging, numbering, or release placement.
+      placeholder: Mention print run context, packaging details, references to the Sheets mirror, or uncertainty.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked the relevant series file or Sheets mirror first.
+          required: true
+        - label: I included enough detail for someone else to identify the missing item.
+          required: true
