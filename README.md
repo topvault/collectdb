@@ -122,6 +122,7 @@ base:
         unlimited: Unlimited
         1st-edition:
           name: 1st Edition
+          releaseDate: '1999-01-09'
       integrations:
         priceCharting: pokemon-base-set
 ```
@@ -140,6 +141,7 @@ Within a series you can define:
 items:
   pikachu-58:
     name: Pikachu
+    index: 58
     editions:
       unlimited: 7b61cc57-0ee8-4d6a-b77a-0a0d6da8afc8
       1st-edition: 5d15d96d-5fc2-44dc-8e47-8f4f7f5f52ff
@@ -186,14 +188,17 @@ An item can:
 
 - define a display variant label
 - define additional variants with their own opaque identifiers
-- point at another base item through `variantOf`
+- point at another base item in another series through `variantOf`
 - act as a reference to an item defined elsewhere through `referenceOf`
 
 This allows the data model to express print, finish, packaging, and cross-series relationships without losing stable identity.
 
+A variant is a discretely and distinctly different item to collect.
+A reference is a placeholder, it is the same printed item but included in multiple sets.
+
 ### Stable Opaque Identifiers
 
-Every edition-specific item identity is represented by a stable, opaque identifier.
+Every item identity is represented by a stable, opaque identifier.
 
 Those identifiers are intentionally not semantic. They are meant to remain stable even if:
 
@@ -201,6 +206,7 @@ Those identifiers are intentionally not semantic. They are meant to remain stabl
 - descriptions improve
 - integrations are remapped
 - hierarchy or grouping becomes more precise
+- placement mistakes are later corrected
 
 That makes collectdb suitable as a durable source of truth for downstream applications.
 
