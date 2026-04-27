@@ -106,7 +106,7 @@ jobs:
       - name: Validate data
         run: npm run validate:data
 
-  sync-sheets:
+  sheets-sync:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs:
       - prettier

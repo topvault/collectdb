@@ -80,6 +80,7 @@ const VariantSchema = VariantDescriptor.extend({
     id: z.string(),
     name: z.string(),
     description: z.string().optional(),
+    index: z.union([z.string(), z.number()]).optional(),
     links: z.record(z.string(), z.string()).optional(),
     remark: VariantRemarkSchema.optional(),
     // Edge case to consider, an edition should not be named "products" or "additional".
@@ -133,6 +134,7 @@ const DiscreteItemSchema = z
         // However, the 'snag' tool can take a list of editions and create ids.
         editions: z.record(z.string(), z.string()),
         description: z.string().optional(),
+        index: z.union([z.string(), z.number()]).optional(),
         links: z.record(z.string(), z.string()).optional(),
         releaseDate: z.union([z.string(), z.date()]).optional(), // Usually applied to products.
         authenticators: z

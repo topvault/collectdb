@@ -260,12 +260,24 @@ The GitHub Actions workflow runs `npm run format:check` on pull requests and pus
 
 ## Maintenance Scripts
 
-collectdb also includes data-specific maintenance scripts for ID assignment and reference normalization.
+collectdb also includes data-specific maintenance scripts for ID assignment, explicit index creation, and reference normalization.
 
 To assign missing opaque IDs for items, products, additional items, and variants:
 
 ```sh
 npm run snag -- pokemon-card english
+```
+
+To add missing explicit `index` values for records whose item key ends with a numeric suffix:
+
+```sh
+npm run index -- pokemon-card english
+```
+
+To check that all expected explicit indexes are present and match the item-key suffix without writing changes:
+
+```sh
+npm run index -- --check
 ```
 
 To normalize `referenceOf` and `variantOf` objects from shorthand IDs or partial objects:
@@ -315,7 +327,7 @@ Before opening a pull request, run:
 npm run pr:prepare
 ```
 
-This formats YAML, fills missing opaque IDs, normalizes `referenceOf` and `variantOf` links, and runs schema validation.
+This formats YAML, fills missing opaque IDs, adds missing explicit indexes, normalizes `referenceOf` and `variantOf` links, and runs schema validation.
 
 If you want to run the same command sequence used for pull request checks without writing changes, run:
 
