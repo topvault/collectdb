@@ -48,6 +48,7 @@ original:
       releaseDate: '1998-04-26'
       integrations:
         tcgCollector: sets/12116/hanada-city-gym-deck
+        pokeData: Hanada+City+Gym+Misty
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -56,6 +57,7 @@ original:
       releaseDate: '1998-04-26'
       integrations:
         tcgCollector: sets/12115/nivi-city-gym-deck
+        pokeData: Nivi+City+Gym+Brock
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -64,6 +66,7 @@ original:
       releaseDate: '1998-07-25'
       integrations:
         tcgCollector: sets/12118/kuchiba-city-gym-deck
+        pokeData: Kuchiba+City+Gym+Lt.+Surge
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -72,6 +75,7 @@ original:
       releaseDate: '1998-07-25'
       integrations:
         tcgCollector: sets/12117/tamamushi-city-gym-deck
+        pokeData: Tamamushi+City+Gym+Erika
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -80,6 +84,7 @@ original:
       releaseDate: '1998-10-24'
       integrations:
         tcgCollector: sets/11242/leaders-stadium
+        pokeData: Leaders'+Stadium
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -111,6 +116,7 @@ original:
       releaseDate: '1999-02-26'
       integrations:
         tcgCollector: sets/12120/yamabuki-city-gym-deck
+        pokeData: Yamabuki+City+Gym+Sabrina
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -119,14 +125,23 @@ original:
       releaseDate: '1999-06-25'
       integrations:
         tcgCollector: sets/11302/challenge-from-the-darkness
+        pokeData: Challenge+from+the+Darkness
       editions:
         no-rarity: No Rarity Symbol
+        unlimited: Normal
+    southern-islands:
+      name: Southern Islands
+      releaseDate: '1999-07-17'
+      integrations:
+        tcgCollector: sets/11187/southern-islands
+      editions:
         unlimited: Normal
     intro-pack-bulbasaur:
       name: Intro Pack (Bulbasaur)
       releaseDate: '1999-07-30'
       integrations:
         tcgCollector: sets/11331/intro-pack-bulbasaur
+        pokeData: Intro+Pack+(Bulbasaur)
       editions:
         unlimited: Normal
     intro-pack-squirtle:
@@ -134,9 +149,9 @@ original:
       releaseDate: '1999-07-30'
       integrations:
         tcgCollector: sets/11332/intro-pack-squirtle
+        pokeData: Intro+Pack+(Squirtle)
       editions:
         unlimited: Normal
-
 
 vm:
   name: Vending Machine Series
@@ -233,6 +248,45 @@ neo:
       editions:
         unlimited: Normal
 
+vs:
+  name: VS Era
+  series:
+    leaders-pokemon-movie-limited-edition:
+      name: 'Leaders'' Pokémon: Movie Limited Edition'
+      releaseDate: '2001-07-07'
+      integrations:
+        tcgCollector: sets/12127/leaders-pokemon-movie-limited-edition
+      editions:
+        1st-edition: 1st Edition
+    pokemon-vs:
+      name: Pokémon VS
+      releaseDate: '2001-08-19'
+      integrations:
+        tcgCollector: sets/11283/pokemon-vs
+      editions:
+        1st-edition: 1st Edition
+        unlimited: Normal
+    tropical-mega-battle:
+      name: Tropical Mega Battle
+      releaseDate: '2001-08-26'
+      integrations:
+        tcgCollector: sets/12128/tropical-mega-battle
+      editions:
+        1st-edition: 1st Edition
+        unlimited: Normal
+
+web:
+  name: Web Era
+  series:
+    pokemon-web:
+      name: Pokémon Web
+      releaseDate: '2001-10-20'
+      integrations:
+        tcgCollector: sets/11168/pokemon-web
+      editions:
+        1st-edition: 1st Edition
+        unlimited: Normal
+
 ecard:
   name: e-Card Era
   series:
@@ -250,6 +304,13 @@ ecard:
         tcgCollector: sets/11478/j-promos
       editions:
         unlimited: Normal
+    t-promos:
+      name: T Promos
+      releaseDate: '2002-01-01'
+      integrations:
+        tcgCollector: sets/11479/t-promos
+      editions:
+        unlimited: Normal
     base-expansion-pack:
       name: Base Expansion Pack
       releaseDate: '2001-12-01'
@@ -265,6 +326,13 @@ ecard:
         tcgCollector: sets/11520/pokemon-e-starter-deck
       editions:
         1st-edition: 1st Edition
+        unlimited: Normal
+    mcdonalds-pokemon-e-minimum-pack:
+      name: McDonald's Pokémon-e Minimum Pack
+      releaseDate: '2002-01-26'
+      integrations:
+        tcgCollector: sets/11238/mcdonalds-pokemon-e-minimum-pack
+      editions:
         unlimited: Normal
     the-town-on-no-map:
       name: The Town on No Map
@@ -299,38 +367,7 @@ ecard:
         1st-edition: 1st Edition
         unlimited: Normal
 
-vs:
-  name: VS Era
-  series:
-    leaders-pokemon-movie-limited-edition:
-      name: 'Leaders'' Pokémon: Movie Limited Edition'
-      releaseDate: '2001-07-07'
-      integrations:
-        tcgCollector: sets/12127/leaders-pokemon-movie-limited-edition
-      editions:
-        1st-edition: 1st Edition
-    pokemon-vs:
-      name: Pokémon VS
-      releaseDate: '2001-08-19'
-      integrations:
-        tcgCollector: sets/11283/pokemon-vs
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-
-web:
-  name: Web Era
-  series:
-    pokemon-web:
-      name: Pokémon Web
-      releaseDate: '2001-10-20'
-      integrations:
-        tcgCollector: sets/11168/pokemon-web
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-
-movie:
+movies:
   name: Movie Commemorations
   series:
     theater-limited-vs-pack:
@@ -679,6 +716,20 @@ pcg:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
+    pokepark-blue:
+      name: PokéPark Blue
+      releaseDate: '2005-03-18'
+      integrations:
+        tcgCollector: sets/11287/pokepark-blue
+      editions:
+        unlimited: Normal
+    pokepark-forest:
+      name: PokéPark Forest
+      releaseDate: '2005-03-18'
+      integrations:
+        tcgCollector: sets/11192/pokepark-forest
+      editions:
+        unlimited: Normal
     golden-sky-silvery-ocean:
       name: Golden Sky, Silvery Ocean
       releaseDate: '2005-04-08'
@@ -885,6 +936,13 @@ dp:
       releaseDate: '2006-12-01'
       integrations:
         tcgCollector: sets/11234/diamond-and-pearl-promos
+      editions:
+        unlimited: Normal
+    ppp-promos:
+      name: PPP Promos
+      releaseDate: '2007-05-01'
+      integrations:
+        tcgCollector: sets/11264/ppp-promos
       editions:
         unlimited: Normal
     bastiodon-the-defender-and-rampardos-the-attacker-constructed-half-decks:
@@ -1252,6 +1310,13 @@ pl:
         tcgCollector: sets/11365/arceus-lv-x-deck-lightning-and-psychic
       editions:
         1st-edition: 1st Edition
+        unlimited: Normal
+    melee-pokemon-scramble:
+      name: Melee! Pokémon Scramble
+      releaseDate: '2009-07-10'
+      integrations:
+        tcgCollector: sets/11240/melee-pokemon-scramble
+      editions:
         unlimited: Normal
 
 legend:
@@ -3325,35 +3390,6 @@ other:
         tcgCollector: sets/11410/miscellaneous-promos
       editions:
         unlimited: Normal
-    southern-islands:
-      name: Southern Islands
-      releaseDate: '1999-07-17'
-      integrations:
-        tcgCollector: sets/11187/southern-islands
-      editions:
-        unlimited: Normal
-    tropical-mega-battle:
-      name: Tropical Mega Battle
-      releaseDate: '2001-08-26'
-      integrations:
-        tcgCollector: sets/12128/tropical-mega-battle
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    t-promos:
-      name: T Promos
-      releaseDate: '2002-01-01'
-      integrations:
-        tcgCollector: sets/11479/t-promos
-      editions:
-        unlimited: Normal
-    mcdonalds-pokemon-e-minimum-pack:
-      name: McDonald's Pokémon-e Minimum Pack
-      releaseDate: '2002-01-26'
-      integrations:
-        tcgCollector: sets/11238/mcdonalds-pokemon-e-minimum-pack
-      editions:
-        unlimited: Normal
     play-promos:
       name: PLAY Promos
       releaseDate: '2003-01-01'
@@ -3361,36 +3397,8 @@ other:
         tcgCollector: sets/11270/play-promos
       editions:
         unlimited: Normal
-    pokepark-blue:
-      name: PokéPark Blue
-      releaseDate: '2005-03-18'
-      integrations:
-        tcgCollector: sets/11287/pokepark-blue
-      editions:
-        unlimited: Normal
-    pokepark-forest:
-      name: PokéPark Forest
-      releaseDate: '2005-03-18'
-      integrations:
-        tcgCollector: sets/11192/pokepark-forest
-      editions:
-        unlimited: Normal
-    ppp-promos:
-      name: PPP Promos
-      releaseDate: '2007-05-01'
-      integrations:
-        tcgCollector: sets/11264/ppp-promos
-      editions:
-        unlimited: Normal
-    melee-pokemon-scramble:
-      name: Melee! Pokémon Scramble
-      releaseDate: '2009-07-10'
-      integrations:
-        tcgCollector: sets/11240/melee-pokemon-scramble
-      editions:
-        unlimited: Normal
-    pikachu-world-collection:
-      name: Pikachu World Collection
-      releaseDate: '2010-07-08'
-      integrations:
-        tcgCollector: sets/11618/pikachu-world-collection
+    # pikachu-world-collection:
+    #   name: Pikachu World Collection
+    #   releaseDate: '2010-07-08'
+    #   integrations:
+    #     tcgCollector: sets/11618/pikachu-world-collection
