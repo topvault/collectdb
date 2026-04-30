@@ -43,62 +43,12 @@ original:
         Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Team_Rocket_(TCG)
       editions:
         unlimited: Unlimited
-    kuchiba-city-gym-deck:
-      name: Kuchiba City Gym Deck
-      releaseDate: '1998-07-25'
-      integrations:
-        tcgCollector: sets/12118/kuchiba-city-gym-deck
-        pokeData: Kuchiba+City+Gym+Lt.+Surge
-      editions:
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    tamamushi-city-gym-deck:
-      name: Tamamushi City Gym Deck
-      releaseDate: '1998-07-25'
-      integrations:
-        tcgCollector: sets/12117/tamamushi-city-gym-deck
-        pokeData: Tamamushi+City+Gym+Erika
-      editions:
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
     leaders-stadium:
       name: Leaders' Stadium
       releaseDate: '1998-10-24'
       integrations:
         tcgCollector: sets/11242/leaders-stadium
         pokeData: Leaders'+Stadium
-      editions:
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    quick-starter-gift-set-green:
-      name: Quick Starter Gift Set (Green)
-      releaseDate: '1998-12-04'
-      integrations:
-        tcgCollector: sets/12124/quick-starter-gift-set-green
-      editions:
-        no-rarity: No Rarity Symbol
-    quick-starter-gift-set-red:
-      name: Quick Starter Gift Set (Red)
-      releaseDate: '1998-12-04'
-      integrations:
-        tcgCollector: sets/12123/quick-starter-gift-set-red
-      editions:
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    guren-town-gym-deck:
-      name: Guren Town Gym Deck
-      releaseDate: '1999-02-26'
-      integrations:
-        tcgCollector: sets/12119/guren-town-gym-deck
-      editions:
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    yamabuki-city-gym-deck:
-      name: Yamabuki City Gym Deck
-      releaseDate: '1999-02-26'
-      integrations:
-        tcgCollector: sets/12120/yamabuki-city-gym-deck
-        pokeData: Yamabuki+City+Gym+Sabrina
       editions:
         no-rarity: No Rarity Symbol
         unlimited: Normal
@@ -121,6 +71,9 @@ original:
     intro-pack:
       name: Intro Pack
       releaseDate: '1999-07-30'
+    quick-starter-gift-set:
+      name: Quick Starter Gift Set
+      releaseDate: '1998-12-04'
 
 vm:
   name: Vending Machine Series
@@ -160,25 +113,11 @@ neo:
         tcgCollector: sets/11290/gold-silver-to-a-new-world
       editions:
         unlimited: Normal
-    neo-premium-file-1:
-      name: Neo Premium File 1
-      releaseDate: '1999-12-10'
-      integrations:
-        tcgCollector: sets/11571/neo-premium-file-1
-      editions:
-        unlimited: Normal
     crossing-the-ruins:
       name: Crossing the Ruins...
       releaseDate: '2000-07-07'
       integrations:
         tcgCollector: sets/11266/crossing-the-ruins
-      editions:
-        unlimited: Normal
-    neo-premium-file-2:
-      name: Neo Premium File 2
-      releaseDate: '2000-07-07'
-      integrations:
-        tcgCollector: sets/11572/neo-premium-file-2
       editions:
         unlimited: Normal
     awakening-legends:
@@ -188,13 +127,6 @@ neo:
         tcgCollector: sets/11173/awakening-legends
       editions:
         unlimited: Normal
-    neo-premium-file-3:
-      name: Neo Premium File 3
-      releaseDate: '2000-11-23'
-      integrations:
-        tcgCollector: sets/11573/neo-premium-file-3
-      editions:
-        unlimited: Normal
     darkness-and-to-light:
       name: Darkness, and to Light...
       releaseDate: '2001-03-09'
@@ -202,20 +134,9 @@ neo:
         tcgCollector: sets/11252/darkness-and-to-light
       editions:
         unlimited: Normal
-    intro-pack-neo-chikorita:
-      name: Intro Pack Neo (Chikorita)
+    intro-pack-neo:
+      name: Intro Pack Neo
       releaseDate: '2001-04-06'
-      integrations:
-        tcgCollector: sets/11333/intro-pack-neo-chikorita
-      editions:
-        unlimited: Normal
-    intro-pack-neo-totodile:
-      name: Intro Pack Neo (Totodile)
-      releaseDate: '2001-04-06'
-      integrations:
-        tcgCollector: sets/11334/intro-pack-neo-totodile
-      editions:
-        unlimited: Normal
 
 vs:
   name: VS Era
@@ -259,40 +180,11 @@ web:
 ecard:
   name: e-Card Era
   series:
-    p-promos:
-      name: P Promos
-      releaseDate: '2001-07-01'
-      integrations:
-        tcgCollector: sets/11198/p-promos
-      editions:
-        unlimited: Normal
-    j-promos:
-      name: J Promos
-      releaseDate: '2001-08-01'
-      integrations:
-        tcgCollector: sets/11478/j-promos
-      editions:
-        unlimited: Normal
-    t-promos:
-      name: T Promos
-      releaseDate: '2002-01-01'
-      integrations:
-        tcgCollector: sets/11479/t-promos
-      editions:
-        unlimited: Normal
     base-expansion-pack:
       name: Base Expansion Pack
       releaseDate: '2001-12-01'
       integrations:
         tcgCollector: sets/11205/base-expansion-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    pokemon-e-starter-deck:
-      name: Pokémon-e Starter Deck
-      releaseDate: '2001-12-01'
-      integrations:
-        tcgCollector: sets/11520/pokemon-e-starter-deck
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -335,6 +227,9 @@ ecard:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
+    promos:
+      name: E-Card Promos
+      releaseDate: '2001-07-01'
 
 movies:
   name: Movie Commemorations
@@ -414,43 +309,11 @@ adv:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    mudkip-constructed-starter-deck:
-      name: Mudkip Constructed Starter Deck
-      releaseDate: '2003-01-31'
-      integrations:
-        tcgCollector: sets/11523/mudkip-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    torchic-constructed-starter-deck:
-      name: Torchic Constructed Starter Deck
-      releaseDate: '2003-01-31'
-      integrations:
-        tcgCollector: sets/11522/torchic-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    treecko-constructed-starter-deck:
-      name: Treecko Constructed Starter Deck
-      releaseDate: '2003-01-31'
-      integrations:
-        tcgCollector: sets/11521/treecko-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     miracle-of-the-desert:
       name: Miracle of the Desert
       releaseDate: '2003-04-18'
       integrations:
         tcgCollector: sets/11222/miracle-of-the-desert
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    flygon-constructed-starter-deck:
-      name: Flygon Constructed Starter Deck
-      releaseDate: '2003-06-25'
-      integrations:
-        tcgCollector: sets/11524/flygon-constructed-starter-deck
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -462,57 +325,11 @@ adv:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    salamence-constructed-starter-deck:
-      name: Salamence Constructed Starter Deck
-      releaseDate: '2003-06-25'
-      integrations:
-        tcgCollector: sets/11525/salamence-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    aqua-deck-kit:
-      name: Aqua Deck Kit
-      releaseDate: '2003-10-24'
-      integrations:
-        tcgCollector: sets/11530/aqua-deck-kit
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    magma-deck-kit:
-      name: Magma Deck Kit
-      releaseDate: '2003-10-24'
-      integrations:
-        tcgCollector: sets/11529/magma-deck-kit
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     magma-vs-aqua-two-ambitions:
       name: 'Magma vs Aqua: Two Ambitions'
       releaseDate: '2003-10-24'
       integrations:
         tcgCollector: sets/11233/magma-vs-aqua-two-ambitions
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    gift-box-latias:
-      name: Gift Box (Latias)
-      releaseDate: '2003-11-17'
-      integrations:
-        tcgCollector: sets/11528/gift-box-latias
-      editions:
-        unlimited: Normal
-    gift-box-latios:
-      name: Gift Box (Latios)
-      releaseDate: '2003-11-17'
-      integrations:
-        tcgCollector: sets/11527/gift-box-latios
-      editions:
-        unlimited: Normal
-    metagross-constructed-starter-deck:
-      name: Metagross Constructed Starter Deck
-      releaseDate: '2004-01-16'
-      integrations:
-        tcgCollector: sets/11526/metagross-constructed-starter-deck
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -524,6 +341,15 @@ adv:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
+    expansion-pack-starter-decks:
+      name: ADV Expansion Pack Starter Decks
+      releaseDate: '2003-01-31'
+    rulers-starter-decks:
+      name: Rulers of the Heavens Starter Decks
+      releaseDate: '2003-06-25'
+    gift-box:
+      name: Gift Box
+      releaseDate: '2003-11-17'
 
 pcg:
   name: PCG Era
@@ -559,38 +385,6 @@ pcg:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    deoxys-constructed-starter-deck:
-      name: Deoxys Constructed Starter Deck
-      releaseDate: '2004-07-01'
-      integrations:
-        tcgCollector: sets/11532/deoxys-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    rayquaza-constructed-starter-deck:
-      name: Rayquaza Constructed Starter Deck
-      releaseDate: '2004-07-01'
-      integrations:
-        tcgCollector: sets/11533/rayquaza-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    black-deck-kit:
-      name: Black Deck Kit
-      releaseDate: '2004-10-15'
-      integrations:
-        tcgCollector: sets/11438/black-deck-kit
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    silver-deck-kit:
-      name: Silver Deck Kit
-      releaseDate: '2004-10-15'
-      integrations:
-        tcgCollector: sets/11534/silver-deck-kit
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     team-rocket-strikes-back:
       name: Team Rocket Strikes Back
       releaseDate: '2004-10-15'
@@ -598,106 +392,6 @@ pcg:
         tcgCollector: sets/11179/team-rocket-strikes-back
       editions:
         1st-edition: 1st Edition
-        unlimited: Normal
-    emerald-gift-box-deoxys:
-      name: Emerald Gift Box (Deoxys)
-      releaseDate: '2004-11-19'
-      integrations:
-        tcgCollector: sets/11536/emerald-gift-box-deoxys
-      editions:
-        unlimited: Normal
-    emerald-gift-box-rayquaza:
-      name: Emerald Gift Box (Rayquaza)
-      releaseDate: '2004-11-19'
-      integrations:
-        tcgCollector: sets/11535/emerald-gift-box-rayquaza
-      editions:
-        unlimited: Normal
-    fighting-quick-construction-pack:
-      name: Fighting Quick Construction Pack
-      releaseDate: '2005-01-16'
-      integrations:
-        tcgCollector: sets/11542/fighting-quick-construction-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    fire-quick-construction-pack:
-      name: Fire Quick Construction Pack
-      releaseDate: '2005-01-16'
-      integrations:
-        tcgCollector: sets/11538/fire-quick-construction-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    grass-quick-construction-pack:
-      name: Grass Quick Construction Pack
-      releaseDate: '2005-01-16'
-      integrations:
-        tcgCollector: sets/11537/grass-quick-construction-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    lightning-quick-construction-pack:
-      name: Lightning Quick Construction Pack
-      releaseDate: '2005-01-16'
-      integrations:
-        tcgCollector: sets/11540/lightning-quick-construction-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    psychic-quick-construction-pack:
-      name: Psychic Quick Construction Pack
-      releaseDate: '2005-01-16'
-      integrations:
-        tcgCollector: sets/11541/psychic-quick-construction-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    water-quick-construction-pack:
-      name: Water Quick Construction Pack
-      releaseDate: '2005-01-16'
-      integrations:
-        tcgCollector: sets/11539/water-quick-construction-pack
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    feraligatr-constructed-starter-deck:
-      name: Feraligatr Constructed Starter Deck
-      releaseDate: '2005-03-05'
-      integrations:
-        tcgCollector: sets/11545/feraligatr-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    meganium-constructed-starter-deck:
-      name: Meganium Constructed Starter Deck
-      releaseDate: '2005-03-05'
-      integrations:
-        tcgCollector: sets/11543/meganium-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    typhlosion-constructed-starter-deck:
-      name: Typhlosion Constructed Starter Deck
-      releaseDate: '2005-03-05'
-      integrations:
-        tcgCollector: sets/11544/typhlosion-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    pokepark-blue:
-      name: PokéPark Blue
-      releaseDate: '2005-03-18'
-      integrations:
-        tcgCollector: sets/11287/pokepark-blue
-      editions:
-        unlimited: Normal
-    pokepark-forest:
-      name: PokéPark Forest
-      releaseDate: '2005-03-18'
-      integrations:
-        tcgCollector: sets/11192/pokepark-forest
-      editions:
         unlimited: Normal
     golden-sky-silvery-ocean:
       name: Golden Sky, Silvery Ocean
@@ -715,62 +409,6 @@ pcg:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    mirages-mew-constructed-starter-deck:
-      name: Mirage's Mew Constructed Starter Deck
-      releaseDate: '2005-06-30'
-      integrations:
-        tcgCollector: sets/11418/mirages-mew-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    master-kit-bulbasaur:
-      name: Master Kit (Bulbasaur)
-      releaseDate: '2005-07-15'
-      integrations:
-        tcgCollector: sets/11546/master-kit-bulbasaur
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    master-kit-side-deck:
-      name: Master Kit (Side Deck)
-      releaseDate: '2005-07-15'
-      integrations:
-        tcgCollector: sets/11548/master-kit-side-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    master-kit-torchic:
-      name: Master Kit (Torchic)
-      releaseDate: '2005-07-15'
-      integrations:
-        tcgCollector: sets/11547/master-kit-torchic
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    holon-research-tower-fire-quarter-deck:
-      name: Holon Research Tower Fire Quarter Deck
-      releaseDate: '2005-09-30'
-      integrations:
-        tcgCollector: sets/11433/holon-research-tower-fire-quarter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    holon-research-tower-lightning-quarter-deck:
-      name: Holon Research Tower Lightning Quarter Deck
-      releaseDate: '2005-09-30'
-      integrations:
-        tcgCollector: sets/11550/holon-research-tower-lightning-quarter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    holon-research-tower-water-quarter-deck:
-      name: Holon Research Tower Water Quarter Deck
-      releaseDate: '2005-09-30'
-      integrations:
-        tcgCollector: sets/11549/holon-research-tower-water-quarter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     holon-research-tower:
       name: Holon Research Tower
       releaseDate: '2005-10-28'
@@ -779,62 +417,11 @@ pcg:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    mew-o-lucario-gift-box-crawdaunt:
-      name: Mew • Lucario Gift Box (Crawdaunt)
-      releaseDate: '2005-11-16'
-      integrations:
-        tcgCollector: sets/11553/mew-o-lucario-gift-box-crawdaunt
-      editions:
-        unlimited: Normal
-    mew-o-lucario-gift-box-lucario:
-      name: Mew • Lucario Gift Box (Lucario)
-      releaseDate: '2005-11-16'
-      integrations:
-        tcgCollector: sets/11552/mew-o-lucario-gift-box-lucario
-      editions:
-        unlimited: Normal
-    mew-o-lucario-gift-box-mew:
-      name: Mew • Lucario Gift Box (Mew)
-      releaseDate: '2005-11-16'
-      integrations:
-        tcgCollector: sets/11551/mew-o-lucario-gift-box-mew
-      editions:
-        unlimited: Normal
-    mew-o-lucario-gift-box-mightyena:
-      name: Mew • Lucario Gift Box (Mightyena)
-      releaseDate: '2005-11-16'
-      integrations:
-        tcgCollector: sets/11554/mew-o-lucario-gift-box-mightyena
-      editions:
-        unlimited: Normal
-    mew-o-lucario-gift-box-pokemon-star:
-      name: Mew • Lucario Gift Box (Pokémon ☆)
-      releaseDate: '2005-11-16'
-      integrations:
-        tcgCollector: sets/11555/mew-o-lucario-gift-box-pokemon-star
-      editions:
-        unlimited: Normal
     holon-phantom:
       name: Holon Phantom
       releaseDate: '2006-01-27'
       integrations:
         tcgCollector: sets/11299/holon-phantom
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    earths-groudon-ex-constructed-starter-deck:
-      name: Earth's Groudon ex Constructed Starter Deck
-      releaseDate: '2006-03-03'
-      integrations:
-        tcgCollector: sets/11556/earths-groudon-ex-constructed-starter-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    oceans-kyogre-ex-constructed-starter-deck:
-      name: Ocean's Kyogre ex Constructed Starter Deck
-      releaseDate: '2006-03-03'
-      integrations:
-        tcgCollector: sets/11557/oceans-kyogre-ex-constructed-starter-deck
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -846,27 +433,11 @@ pcg:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    imprison-gardevoir-ex-constructed-standard-deck:
-      name: Imprison! Gardevoir ex Constructed Standard Deck
-      releaseDate: '2006-06-29'
-      integrations:
-        tcgCollector: sets/11559/imprison-gardevoir-ex-constructed-standard-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     offense-and-defense-of-the-furthest-ends:
       name: Offense and Defense of the Furthest Ends
       releaseDate: '2006-06-29'
       integrations:
         tcgCollector: sets/11295/offense-and-defense-of-the-furthest-ends
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    shockwave-tyranitar-ex-constructed-standard-deck:
-      name: Shockwave! Tyranitar ex Constructed Standard Deck
-      releaseDate: '2006-06-29'
-      integrations:
-        tcgCollector: sets/11558/shockwave-tyranitar-ex-constructed-standard-deck
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -878,6 +449,21 @@ pcg:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
+    pokepark:
+      name: Pokèpark Premium Files
+      releaseDate: '2005-03-18'
+    gift-box:
+      name: Gift Box
+      releaseDate: '2004-11-19'
+    quick-construction-packs:
+      name: Quick Construction Packs
+      releaseDate: '2005-01-16'
+    master-kit:
+      name: Master Kit
+      releaseDate: '2005-07-15'
+    mew-o-lucario-gift-box:
+      name: Mew O Lucario Gift Box
+      releaseDate: '2005-11-16'
 
 dp:
   name: Diamond & Pearl Era
@@ -922,26 +508,6 @@ dp:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    bastiodon-the-defender-constructed-half-deck:
-      name: Bastiodon the Defender Constructed Half Deck
-      releaseDate: '2007-03-02'
-      integrations:
-        tcgCollector: sets/12132/bastiodon-the-defender-constructed-half-deck
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    rampardos-the-attacker-constructed-half-deck:
-      name: Rampardos the Attacker Constructed Half Deck
-      releaseDate: '2007-03-02'
-      integrations:
-        tcgCollector: sets/12133/rampardos-the-attacker-constructed-half-deck
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
     secret-of-the-lakes:
       name: Secret of the Lakes
       releaseDate: '2007-03-02'
@@ -959,26 +525,6 @@ dp:
         tcgCollector: sets/11681/dialga-and-palkia-lv-x-constructed-standard-decks
       editions:
         1st-edition: 1st Edition
-        unlimited: Normal
-    dialga-lv-x-constructed-standard-deck:
-      name: Dialga LV.X Constructed Standard Deck
-      releaseDate: '2007-07-05'
-      integrations:
-        tcgCollector: sets/12130/dialga-lv-x-constructed-standard-deck
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    palkia-lv-x-constructed-standard-deck:
-      name: Palkia LV.X Constructed Standard Deck
-      releaseDate: '2007-07-05'
-      integrations:
-        tcgCollector: sets/12131/palkia-lv-x-constructed-standard-deck
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
         unlimited: Normal
     shining-darkness:
       name: Shining Darkness
@@ -1005,26 +551,6 @@ dp:
         tcgCollector: sets/11609/magmortar-vs-electivire-deck-kit
       editions:
         1st-edition: 1st Edition
-        unlimited: Normal
-    magmortar-vs-electivire-deck-kit-electivire:
-      name: Magmortar vs Electivire Deck Kit (Electivire)
-      releaseDate: '2007-10-26'
-      integrations:
-        tcgCollector: sets/12135/magmortar-vs-electivire-deck-kit-electivire
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    magmortar-vs-electivire-deck-kit-magmortar:
-      name: Magmortar vs Electivire Deck Kit (Magmortar)
-      releaseDate: '2007-10-26'
-      integrations:
-        tcgCollector: sets/12134/magmortar-vs-electivire-deck-kit-magmortar
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
         unlimited: Normal
     moonlit-pursuit:
       name: Moonlit Pursuit
@@ -1062,26 +588,6 @@ dp:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    heatran-vs-regigigas-deck-kit-heatran:
-      name: Heatran vs Regigigas Deck Kit (Heatran)
-      releaseDate: '2008-03-14'
-      integrations:
-        tcgCollector: sets/12136/heatran-vs-regigigas-deck-kit-heatran
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
-    heatran-vs-regigigas-deck-kit-regigigas:
-      name: Heatran vs Regigigas Deck Kit (Regigigas)
-      releaseDate: '2008-03-14'
-      integrations:
-        tcgCollector: sets/12137/heatran-vs-regigigas-deck-kit-regigigas
-      editions:
-        1st-edition: 1st Edition
-        1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
-        no-rarity: No Rarity Symbol
-        unlimited: Normal
     temple-of-anger:
       name: Temple of Anger
       releaseDate: '2008-03-14'
@@ -1092,22 +598,6 @@ dp:
         1st-edition-no-rarity: 1st Edition (No Rarity Symbol)
         no-rarity: No Rarity Symbol
         unlimited: Normal
-    giratina-vs-dialga-deck-kit-dialga:
-      name: Giratina vs Dialga Deck Kit (Dialga)
-      releaseDate: '2008-07-10'
-      integrations:
-        tcgCollector: sets/11607/giratina-vs-dialga-deck-kit-dialga
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    giratina-vs-dialga-deck-kit-giratina:
-      name: Giratina vs Dialga Deck Kit (Giratina)
-      releaseDate: '2008-07-10'
-      integrations:
-        tcgCollector: sets/11606/giratina-vs-dialga-deck-kit-giratina
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     intense-fight-in-the-destroyed-sky:
       name: Intense Fight in the Destroyed Sky
       releaseDate: '2008-07-10'
@@ -1116,6 +606,9 @@ dp:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
+    giratina-vs-dialga-deck-kit:
+      name: Giratina Vs Dialga Deck Kit
+      releaseDate: '2008-07-10'
 
 pl:
   name: Platinum Era
@@ -1127,30 +620,6 @@ pl:
         tcgCollector: sets/11189/platinum-promos
       editions:
         unlimited: Normal
-    dpt-entry-pack-dialga:
-      name: DPt Entry Pack (Dialga)
-      releaseDate: '2008-10-10'
-      integrations:
-        tcgCollector: sets/11562/dpt-entry-pack-dialga
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    dpt-entry-pack-giratina:
-      name: DPt Entry Pack (Giratina)
-      releaseDate: '2008-10-10'
-      integrations:
-        tcgCollector: sets/11561/dpt-entry-pack-giratina
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    dpt-entry-pack-palkia:
-      name: DPt Entry Pack (Palkia)
-      releaseDate: '2008-10-10'
-      integrations:
-        tcgCollector: sets/11563/dpt-entry-pack-palkia
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
     galactics-conquest:
       name: Galactic's Conquest
       releaseDate: '2008-10-10'
@@ -1159,55 +628,11 @@ pl:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    dpt-gift-box-chimchar:
-      name: DPt Gift Box (Chimchar)
-      releaseDate: '2008-11-20'
-      integrations:
-        tcgCollector: sets/11445/dpt-gift-box-chimchar
-      editions:
-        unlimited: Normal
-    dpt-gift-box-pikachu:
-      name: DPt Gift Box (Pikachu)
-      releaseDate: '2008-11-20'
-      integrations:
-        tcgCollector: sets/11448/dpt-gift-box-pikachu
-      editions:
-        unlimited: Normal
-    dpt-gift-box-piplup:
-      name: DPt Gift Box (Piplup)
-      releaseDate: '2008-11-20'
-      integrations:
-        tcgCollector: sets/11447/dpt-gift-box-piplup
-      editions:
-        unlimited: Normal
-    dpt-gift-box-turtwig:
-      name: DPt Gift Box (Turtwig)
-      releaseDate: '2008-11-20'
-      integrations:
-        tcgCollector: sets/11446/dpt-gift-box-turtwig
-      editions:
-        unlimited: Normal
     bonds-to-the-end-of-time:
       name: Bonds to the End of Time
       releaseDate: '2008-12-26'
       integrations:
         tcgCollector: sets/11261/bonds-to-the-end-of-time
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    infernape-vs-gallade-sp-deck-kit-gallade:
-      name: Infernape vs Gallade SP Deck Kit (Gallade)
-      releaseDate: '2008-12-26'
-      integrations:
-        tcgCollector: sets/11420/infernape-vs-gallade-sp-deck-kit-gallade
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    infernape-vs-gallade-sp-deck-kit-infernape:
-      name: Infernape vs Gallade SP Deck Kit (Infernape)
-      releaseDate: '2008-12-26'
-      integrations:
-        tcgCollector: sets/11419/infernape-vs-gallade-sp-deck-kit-infernape
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -1219,64 +644,11 @@ pl:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    garchomp-vs-charizard-sp-deck-kit-charizard:
-      name: Garchomp vs Charizard SP Deck Kit (Charizard)
-      releaseDate: '2009-03-06'
-      integrations:
-        tcgCollector: sets/11565/garchomp-vs-charizard-sp-deck-kit-charizard
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    garchomp-vs-charizard-sp-deck-kit-garchomp:
-      name: Garchomp vs Charizard SP Deck Kit (Garchomp)
-      releaseDate: '2009-03-06'
-      integrations:
-        tcgCollector: sets/11564/garchomp-vs-charizard-sp-deck-kit-garchomp
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    mewtwo-lv-x-collection-pack:
-      name: Mewtwo LV.X Collection Pack
-      releaseDate: '2009-04-18'
-      integrations:
-        tcgCollector: sets/11329/mewtwo-lv-x-collection-pack
-      editions:
-        unlimited: Normal
-    regigigas-lv-x-collection-pack:
-      name: Regigigas LV.X Collection Pack
-      releaseDate: '2009-04-18'
-      integrations:
-        tcgCollector: sets/11330/regigigas-lv-x-collection-pack
-      editions:
-        unlimited: Normal
-    shaymin-lv-x-collection-pack:
-      name: Shaymin LV.X Collection Pack
-      releaseDate: '2009-04-18'
-      integrations:
-        tcgCollector: sets/11324/shaymin-lv-x-collection-pack
-      editions:
-        unlimited: Normal
     advent-of-arceus:
       name: Advent of Arceus
       releaseDate: '2009-07-08'
       integrations:
         tcgCollector: sets/11196/advent-of-arceus
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    arceus-lv-x-deck-grass-and-fire:
-      name: 'Arceus LV.X Deck: Grass & Fire'
-      releaseDate: '2009-07-08'
-      integrations:
-        tcgCollector: sets/11366/arceus-lv-x-deck-grass-and-fire
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    arceus-lv-x-deck-lightning-and-psychic:
-      name: 'Arceus LV.X Deck: Lightning & Psychic'
-      releaseDate: '2009-07-08'
-      integrations:
-        tcgCollector: sets/11365/arceus-lv-x-deck-lightning-and-psychic
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
@@ -1287,6 +659,24 @@ pl:
         tcgCollector: sets/11240/melee-pokemon-scramble
       editions:
         unlimited: Normal
+    dpt-entry-pack:
+      name: Dpt Entry Pack
+      releaseDate: '2008-10-10'
+    dpt-gift-box:
+      name: Dpt Gift Box
+      releaseDate: '2008-11-20'
+    infernape-vs-gallade-sp-deck-kit:
+      name: Infernape Vs Gallade Sp Deck Kit
+      releaseDate: '2008-12-26'
+    garchomp-vs-charizard-sp-deck-kit:
+      name: Garchomp Vs Charizard Sp Deck Kit
+      releaseDate: '2009-03-06'
+    lv-x-collection-pack:
+      name: Lv X Collection Pack
+      releaseDate: '2009-04-18'
+    arceus-lv-x-deck:
+      name: Arceus Lv X Deck
+      releaseDate: '2009-07-08'
 
 legend:
   name: LEGEND Era
@@ -1316,48 +706,6 @@ legend:
         1st-edition: 1st Edition
         1st-edition-reverse-holo: 1st Edition (Reverse Holo)
         unlimited: Normal
-    battle-starter-deck-blastoise:
-      name: Battle Starter Deck (Blastoise)
-      releaseDate: '2009-11-20'
-      integrations:
-        tcgCollector: sets/11415/battle-starter-deck-blastoise
-      editions:
-        unlimited: Normal
-    battle-starter-deck-magmortar:
-      name: Battle Starter Deck (Magmortar)
-      releaseDate: '2009-11-20'
-      integrations:
-        tcgCollector: sets/11414/battle-starter-deck-magmortar
-      editions:
-        unlimited: Normal
-    battle-starter-deck-raichu:
-      name: Battle Starter Deck (Raichu)
-      releaseDate: '2009-11-20'
-      integrations:
-        tcgCollector: sets/11416/battle-starter-deck-raichu
-      editions:
-        unlimited: Normal
-    battle-starter-deck-torterra:
-      name: Battle Starter Deck (Torterra)
-      releaseDate: '2009-11-20'
-      integrations:
-        tcgCollector: sets/11413/battle-starter-deck-torterra
-      editions:
-        unlimited: Normal
-    leafeon-vs-metagross-expert-deck-leafeon:
-      name: Leafeon vs Metagross Expert Deck (Leafeon)
-      releaseDate: '2009-11-20'
-      integrations:
-        tcgCollector: sets/11620/leafeon-vs-metagross-expert-deck-leafeon
-      editions:
-        unlimited: Normal
-    leafeon-vs-metagross-expert-deck-metagross:
-      name: Leafeon vs Metagross Expert Deck (Metagross)
-      releaseDate: '2009-11-20'
-      integrations:
-        tcgCollector: sets/11621/leafeon-vs-metagross-expert-deck-metagross
-      editions:
-        unlimited: Normal
     reviving-legends:
       name: Reviving Legends
       releaseDate: '2010-02-11'
@@ -1367,22 +715,6 @@ legend:
         1st-edition: 1st Edition
         1st-edition-reverse-holo: 1st Edition (Reverse Holo)
         reverse-holo: Reverse Holo
-        unlimited: Normal
-    steelix-constructed-standard-deck:
-      name: Steelix Constructed Standard Deck
-      releaseDate: '2010-02-11'
-      integrations:
-        tcgCollector: sets/11417/steelix-constructed-standard-deck
-      editions:
-        1st-edition: 1st Edition
-        unlimited: Normal
-    tyranitar-constructed-standard-deck:
-      name: Tyranitar Constructed Standard Deck
-      releaseDate: '2010-02-11'
-      integrations:
-        tcgCollector: sets/11619/tyranitar-constructed-standard-deck
-      editions:
-        1st-edition: 1st Edition
         unlimited: Normal
     lost-link:
       name: Lost Link
@@ -1401,6 +733,12 @@ legend:
         1st-edition-reverse-holo: 1st Edition (Reverse Holo)
         reverse-holo: Reverse Holo
         unlimited: Normal
+    battle-starter-decks:
+      name: Battle Starter Decks
+      releaseDate: '2009-11-20'
+    leafeon-vs-metagross-expert-deck:
+      name: Leafeon Vs Metagross Expert Deck
+      releaseDate: '2009-11-20'
 
 energy:
   name: Unnumbered Energies
@@ -1430,13 +768,6 @@ bw:
         tcgCollector: sets/11275/journey-partners
       editions:
         unlimited: Normal
-    beginning-set:
-      name: Beginning Set
-      releaseDate: '2010-10-29'
-      integrations:
-        tcgCollector: sets/11399/beginning-set
-      editions:
-        unlimited: Unlimited
     black-and-white-promos:
       name: Black & White Promos
       releaseDate: '2010-12-01'
@@ -1460,27 +791,6 @@ bw:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    cobalion-battle-strength-deck:
-      name: Cobalion Battle Strength Deck
-      releaseDate: '2011-03-18'
-      integrations:
-        tcgCollector: sets/11343/cobalion-battle-strength-deck
-      editions:
-        unlimited: Normal
-    terrakion-battle-strength-deck:
-      name: Terrakion Battle Strength Deck
-      releaseDate: '2011-03-18'
-      integrations:
-        tcgCollector: sets/11342/terrakion-battle-strength-deck
-      editions:
-        unlimited: Normal
-    virizion-battle-strength-deck:
-      name: Virizion Battle Strength Deck
-      releaseDate: '2011-03-18'
-      integrations:
-        tcgCollector: sets/11341/virizion-battle-strength-deck
-      editions:
-        unlimited: Normal
     victini-battle-theme-deck:
       name: Victini Battle Theme Deck
       releaseDate: '2011-06-17'
@@ -1495,13 +805,6 @@ bw:
         tcgCollector: sets/11166/red-collection
       editions:
         1st-edition: 1st Edition
-    beginning-set-plus:
-      name: Beginning Set +
-      releaseDate: '2011-08-05'
-      integrations:
-        tcgCollector: sets/11403/beginning-set-plus
-      editions:
-        unlimited: Unlimited
     hail-blizzard:
       name: Hail Blizzard
       releaseDate: '2011-09-16'
@@ -1518,27 +821,6 @@ bw:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    reshiram-ex-battle-strength-deck:
-      name: Reshiram-EX Battle Strength Deck
-      releaseDate: '2011-10-21'
-      integrations:
-        tcgCollector: sets/11356/reshiram-ex-battle-strength-deck
-      editions:
-        unlimited: Normal
-    zekrom-ex-battle-strength-deck:
-      name: Zekrom-EX Battle Strength Deck
-      releaseDate: '2011-10-21'
-      integrations:
-        tcgCollector: sets/11357/zekrom-ex-battle-strength-deck
-      editions:
-        unlimited: Normal
-    beginning-set-pikachu:
-      name: Beginning Set Pikachu
-      releaseDate: '2011-11-18'
-      integrations:
-        tcgCollector: sets/11406/beginning-set-pikachu
-      editions:
-        unlimited: Unlimited
     thundurus-vs-tornadus-battle-gift-set:
       name: Thundurus vs Tornadus Battle Gift Set
       releaseDate: '2011-11-18'
@@ -1576,34 +858,6 @@ bw:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    garchomp-half-deck:
-      name: Garchomp Half Deck
-      releaseDate: '2012-03-16'
-      integrations:
-        tcgCollector: sets/11322/garchomp-half-deck
-      editions:
-        unlimited: Normal
-    hydreigon-half-deck:
-      name: Hydreigon Half Deck
-      releaseDate: '2012-03-16'
-      integrations:
-        tcgCollector: sets/11323/hydreigon-half-deck
-      editions:
-        unlimited: Normal
-    keldeo-battle-strength-deck:
-      name: Keldeo Battle Strength Deck
-      releaseDate: '2012-04-20'
-      integrations:
-        tcgCollector: sets/11321/keldeo-battle-strength-deck
-      editions:
-        unlimited: Normal
-    national-beginning-set:
-      name: National Beginning Set
-      releaseDate: '2012-04-20'
-      integrations:
-        tcgCollector: sets/11658/national-beginning-set
-      editions:
-        unlimited: Unlimited
     cold-flare:
       name: Cold Flare
       releaseDate: '2012-07-13'
@@ -1634,27 +888,6 @@ bw:
         tcgCollector: sets/11207/plasma-gale
       editions:
         1st-edition: 1st Edition
-        unlimited: Normal
-    team-plasma-powered-half-deck:
-      name: Team Plasma Powered Half Deck
-      releaseDate: '2012-09-14'
-      integrations:
-        tcgCollector: sets/11368/team-plasma-powered-half-deck
-      editions:
-        unlimited: Normal
-    black-kyurem-ex-battle-strength-deck:
-      name: Black Kyurem-EX Battle Strength Deck
-      releaseDate: '2012-10-19'
-      integrations:
-        tcgCollector: sets/11351/black-kyurem-ex-battle-strength-deck
-      editions:
-        unlimited: Normal
-    white-kyurem-ex-battle-strength-deck:
-      name: White Kyurem-EX Battle Strength Deck
-      releaseDate: '2012-10-19'
-      integrations:
-        tcgCollector: sets/11352/white-kyurem-ex-battle-strength-deck
-      editions:
         unlimited: Normal
     everyones-exciting-battle:
       name: Everyone's Exciting Battle
@@ -1717,20 +950,21 @@ bw:
         1st-edition-reverse-holo: 1st Edition (Reverse Holo)
         reverse-holo: Reverse Holo
         unlimited: Normal
-    mewtwo-vs-genesect-deck-kit-genesect:
-      name: Mewtwo vs Genesect Deck Kit (Genesect)
+    beginning-sets:
+      name: Beginning Sets
+      releaseDate: '2010-10-29'
+    swords-of-justice-battle-strength-decks:
+      name: Swords Of Justice Battle Strength Decks
+      releaseDate: '2011-03-18'
+    ex-battle-strength-decks:
+      name: Ex Battle Strength Decks
+      releaseDate: '2011-10-21'
+    dragon-half-decks:
+      name: Dragon Half Decks
+      releaseDate: '2012-03-16'
+    mewtwo-vs-genesect-deck-kit:
+      name: Mewtwo Vs Genesect Deck Kit
       releaseDate: '2013-07-13'
-      integrations:
-        tcgCollector: sets/11318/mewtwo-vs-genesect-deck-kit-genesect
-      editions:
-        unlimited: Normal
-    mewtwo-vs-genesect-deck-kit-mewtwo:
-      name: Mewtwo vs Genesect Deck Kit (Mewtwo)
-      releaseDate: '2013-07-13'
-      integrations:
-        tcgCollector: sets/11317/mewtwo-vs-genesect-deck-kit-mewtwo
-      editions:
-        unlimited: Normal
 
 xy:
   name: XY Era
@@ -1765,27 +999,6 @@ xy:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    xerneas-half-deck:
-      name: Xerneas Half Deck
-      releaseDate: '2014-01-31'
-      integrations:
-        tcgCollector: sets/11315/xerneas-half-deck
-      editions:
-        unlimited: Normal
-    yveltal-half-deck:
-      name: Yveltal Half Deck
-      releaseDate: '2014-01-31'
-      integrations:
-        tcgCollector: sets/11316/yveltal-half-deck
-      editions:
-        unlimited: Normal
-    m-charizard-ex-mega-battle-deck:
-      name: M Charizard-EX Mega Battle Deck
-      releaseDate: '2014-03-15'
-      integrations:
-        tcgCollector: sets/11326/m-charizard-ex-mega-battle-deck
-      editions:
-        unlimited: Normal
     wild-blaze:
       name: Wild Blaze
       releaseDate: '2014-03-15'
@@ -1801,13 +1014,6 @@ xy:
         tcgCollector: sets/11208/rising-fist
       editions:
         1st-edition: 1st Edition
-        unlimited: Normal
-    dialga-ex-and-aegislash-ex-hyper-metal-chain-deck:
-      name: Dialga-EX + Aegislash-EX Hyper Metal Chain Deck
-      releaseDate: '2014-09-13'
-      integrations:
-        tcgCollector: sets/11360/dialga-ex-and-aegislash-ex-hyper-metal-chain-deck
-      editions:
         unlimited: Normal
     phantom-gate:
       name: Phantom Gate
@@ -1855,13 +1061,6 @@ xy:
       editions:
         1st-edition: 1st Edition
         unlimited: Normal
-    m-rayquaza-ex-mega-battle-deck:
-      name: M Rayquaza-EX Mega Battle Deck
-      releaseDate: '2015-03-14'
-      integrations:
-        tcgCollector: sets/11325/m-rayquaza-ex-mega-battle-deck
-      editions:
-        unlimited: Normal
     bandit-ring:
       name: Bandit Ring
       releaseDate: '2015-06-20'
@@ -1884,20 +1083,6 @@ xy:
         tcgCollector: sets/11286/legendary-shine-collection
       editions:
         1st-edition: 1st Edition
-    m-master-deck-build-box-power-style:
-      name: M Master Deck Build Box Power Style
-      releaseDate: '2015-08-07'
-      integrations:
-        tcgCollector: sets/11346/m-master-deck-build-box-power-style
-      editions:
-        unlimited: Normal
-    m-master-deck-build-box-speed-style:
-      name: M Master Deck Build Box Speed Style
-      releaseDate: '2015-08-07'
-      integrations:
-        tcgCollector: sets/11344/m-master-deck-build-box-speed-style
-      editions:
-        unlimited: Normal
     blue-shock:
       name: Blue Shock
       releaseDate: '2015-09-26'
@@ -1905,20 +1090,6 @@ xy:
         tcgCollector: sets/11236/blue-shock
       editions:
         1st-edition: 1st Edition
-        unlimited: Normal
-    noivern-break-evolution-pack:
-      name: Noivern BREAK Evolution Pack
-      releaseDate: '2015-09-26'
-      integrations:
-        tcgCollector: sets/11363/noivern-break-evolution-pack
-      editions:
-        unlimited: Normal
-    raichu-break-evolution-pack:
-      name: Raichu BREAK Evolution Pack
-      releaseDate: '2015-09-26'
-      integrations:
-        tcgCollector: sets/11364/raichu-break-evolution-pack
-      editions:
         unlimited: Normal
     red-flash:
       name: Red Flash
@@ -2024,6 +1195,15 @@ xy:
       editions:
         reverse-holo: Reverse Holo
         unlimited: Normal
+    kalos-half-decks:
+      name: Kalos Half Decks
+      releaseDate: '2014-01-31'
+    m-master-deck-build-box:
+      name: M Master Deck Build Box
+      releaseDate: '2015-08-07'
+    break-evolution-packs:
+      name: Break Evolution Packs
+      releaseDate: '2015-09-26'
 
 sm:
   name: Sun & Moon Era
@@ -2418,46 +1598,6 @@ swsh:
         tcgCollector: sets/11373/sword-and-shield-promos
       editions:
         unlimited: Normal
-    fighting-starter-set-v:
-      name: Fighting Starter Set V
-      releaseDate: '2019-11-29'
-      integrations:
-        tcgCollector: sets/11398/fighting-starter-set-v
-      editions:
-        reverse-holo: Reverse Holo
-        unlimited: Normal
-    fire-starter-set-v:
-      name: Fire Starter Set V
-      releaseDate: '2019-11-29'
-      integrations:
-        tcgCollector: sets/11395/fire-starter-set-v
-      editions:
-        reverse-holo: Reverse Holo
-        unlimited: Normal
-    grass-starter-set-v:
-      name: Grass Starter Set V
-      releaseDate: '2019-11-29'
-      integrations:
-        tcgCollector: sets/11394/grass-starter-set-v
-      editions:
-        reverse-holo: Reverse Holo
-        unlimited: Normal
-    lightning-starter-set-v:
-      name: Lightning Starter Set V
-      releaseDate: '2019-11-29'
-      integrations:
-        tcgCollector: sets/11397/lightning-starter-set-v
-      editions:
-        reverse-holo: Reverse Holo
-        unlimited: Normal
-    water-starter-set-v:
-      name: Water Starter Set V
-      releaseDate: '2019-11-29'
-      integrations:
-        tcgCollector: sets/11396/water-starter-set-v
-      editions:
-        reverse-holo: Reverse Holo
-        unlimited: Normal
     shield:
       name: Shield
       releaseDate: '2019-12-06'
@@ -2764,20 +1904,6 @@ swsh:
         tcgCollector: sets/11456/battle-region
       editions:
         unlimited: Normal
-    darkrai-starter-set-vstar:
-      name: Darkrai Starter Set VSTAR
-      releaseDate: '2022-02-25'
-      integrations:
-        tcgCollector: sets/11458/darkrai-starter-set-vstar
-      editions:
-        unlimited: Normal
-    lucario-starter-set-vstar:
-      name: Lucario Starter Set VSTAR
-      releaseDate: '2022-02-25'
-      integrations:
-        tcgCollector: sets/11457/lucario-starter-set-vstar
-      editions:
-        unlimited: Normal
     start-deck-100-corocoro-comic-version:
       name: Start Deck 100 CoroCoro Comic Version
       releaseDate: '2022-03-01'
@@ -2813,25 +1939,11 @@ swsh:
         tcgCollector: sets/11481/pokemon-go
       editions:
         unlimited: Normal
-    deoxys-vstar-and-vmax-high-class-deck:
-      name: Deoxys VSTAR & VMAX High-Class Deck
-      releaseDate: '2022-07-15'
-      integrations:
-        tcgCollector: sets/11486/deoxys-vstar-and-vmax-high-class-deck
-      editions:
-        unlimited: Normal
     lost-abyss:
       name: Lost Abyss
       releaseDate: '2022-07-15'
       integrations:
         tcgCollector: sets/11484/lost-abyss
-      editions:
-        unlimited: Normal
-    zeraora-vstar-and-vmax-high-class-deck:
-      name: Zeraora VSTAR & VMAX High-Class Deck
-      releaseDate: '2022-07-15'
-      integrations:
-        tcgCollector: sets/11485/zeraora-vstar-and-vmax-high-class-deck
       editions:
         unlimited: Normal
     vstar-special-set:
@@ -2869,6 +1981,15 @@ swsh:
         tcgCollector: sets/11503/vstar-universe
       editions:
         unlimited: Normal
+    starter-set-v:
+      name: Starter Set V
+      releaseDate: '2019-11-29'
+    starter-set-vstar:
+      name: Starter Set Vstar
+      releaseDate: '2022-02-25'
+    vstar-and-vmax-high-class-decks:
+      name: Vstar And Vmax High Class Decks
+      releaseDate: '2022-07-15'
 
 sv:
   name: Scarlet & Violet Era
@@ -2887,32 +2008,11 @@ sv:
         tcgCollector: sets/11512/ex-premium-trainer-box
       editions:
         unlimited: Normal
-    fuecoco-and-ampharos-ex-starter-set-ex:
-      name: Fuecoco & Ampharos ex Starter Set ex
-      releaseDate: '2023-01-20'
-      integrations:
-        tcgCollector: sets/11510/fuecoco-and-ampharos-ex-starter-set-ex
-      editions:
-        unlimited: Normal
-    quaxly-and-mimikyu-ex-starter-set-ex:
-      name: Quaxly & Mimikyu ex Starter Set ex
-      releaseDate: '2023-01-20'
-      integrations:
-        tcgCollector: sets/11511/quaxly-and-mimikyu-ex-starter-set-ex
-      editions:
-        unlimited: Normal
     scarlet-ex:
       name: Scarlet ex
       releaseDate: '2023-01-20'
       integrations:
         tcgCollector: sets/11505/scarlet-ex
-      editions:
-        unlimited: Normal
-    sprigatito-and-lucario-ex-starter-set-ex:
-      name: Sprigatito & Lucario ex Starter Set ex
-      releaseDate: '2023-01-20'
-      integrations:
-        tcgCollector: sets/11509/sprigatito-and-lucario-ex-starter-set-ex
       editions:
         unlimited: Normal
     violet-ex:
@@ -2994,25 +2094,11 @@ sv:
         tcgCollector: sets/11580/world-championships-2023-yokohama-deck-pikachu
       editions:
         unlimited: Normal
-    mewtwo-ex-starter-set-terastal:
-      name: Mewtwo ex Starter Set Terastal
-      releaseDate: '2023-09-22'
-      integrations:
-        tcgCollector: sets/11585/mewtwo-ex-starter-set-terastal
-      editions:
-        unlimited: Normal
     raging-surf:
       name: Raging Surf
       releaseDate: '2023-09-22'
       integrations:
         tcgCollector: sets/11583/raging-surf
-      editions:
-        unlimited: Normal
-    skeledirge-ex-starter-set-terastal:
-      name: Skeledirge ex Starter Set Terastal
-      releaseDate: '2023-09-22'
-      integrations:
-        tcgCollector: sets/11586/skeledirge-ex-starter-set-terastal
       editions:
         unlimited: Normal
     ancient-roar:
@@ -3029,27 +2115,6 @@ sv:
         tcgCollector: sets/11593/future-flash
       editions:
         unlimited: Normal
-    pokemon-tcg-classic-blastoise:
-      name: Pokémon TCG Classic (Blastoise)
-      releaseDate: '2023-10-31'
-      integrations:
-        tcgCollector: sets/11600/pokemon-tcg-classic-blastoise
-      editions:
-        unlimited: Normal
-    pokemon-tcg-classic-charizard:
-      name: Pokémon TCG Classic (Charizard)
-      releaseDate: '2023-10-31'
-      integrations:
-        tcgCollector: sets/11599/pokemon-tcg-classic-charizard
-      editions:
-        unlimited: Normal
-    pokemon-tcg-classic-venusaur:
-      name: Pokémon TCG Classic (Venusaur)
-      releaseDate: '2023-10-31'
-      integrations:
-        tcgCollector: sets/11598/pokemon-tcg-classic-venusaur
-      editions:
-        unlimited: Normal
     venusaur-charizard-and-blastoise-special-deck-set-ex:
       name: Venusaur, Charizard & Blastoise Special Deck Set ex
       releaseDate: '2023-11-10'
@@ -3064,25 +2129,11 @@ sv:
         tcgCollector: sets/11602/shiny-treasure-ex
       editions:
         unlimited: Normal
-    ancient-koraidon-ex-starter-deck-and-build-set:
-      name: Ancient Koraidon ex Starter Deck & Build Set
-      releaseDate: '2024-01-26'
-      integrations:
-        tcgCollector: sets/11616/ancient-koraidon-ex-starter-deck-and-build-set
-      editions:
-        unlimited: Normal
     cyber-judge:
       name: Cyber Judge
       releaseDate: '2024-01-26'
       integrations:
         tcgCollector: sets/11604/cyber-judge
-      editions:
-        unlimited: Normal
-    future-miraidon-ex-starter-deck-and-build-set:
-      name: Future Miraidon ex Starter Deck & Build Set
-      releaseDate: '2024-01-26'
-      integrations:
-        tcgCollector: sets/11617/future-miraidon-ex-starter-deck-and-build-set
       editions:
         unlimited: Normal
     wild-force:
@@ -3113,20 +2164,6 @@ sv:
         tcgCollector: sets/11624/mask-of-change
       editions:
         unlimited: Normal
-    chien-pao-ex-battle-master-deck:
-      name: Chien-Pao ex Battle Master Deck
-      releaseDate: '2024-05-17'
-      integrations:
-        tcgCollector: sets/11627/chien-pao-ex-battle-master-deck
-      editions:
-        unlimited: Normal
-    terastal-charizard-ex-battle-master-deck:
-      name: Terastal Charizard ex Battle Master Deck
-      releaseDate: '2024-05-17'
-      integrations:
-        tcgCollector: sets/11628/terastal-charizard-ex-battle-master-deck
-      editions:
-        unlimited: Normal
     night-wanderer:
       name: Night Wanderer
       releaseDate: '2024-06-07'
@@ -3146,20 +2183,6 @@ sv:
       releaseDate: '2024-07-19'
       integrations:
         tcgCollector: sets/11630/stellar-miracle-deck-build-box
-      editions:
-        unlimited: Normal
-    ceruledge-ex-starter-set-tera-type-stellar:
-      name: 'Ceruledge ex Starter Set Tera Type: Stellar'
-      releaseDate: '2024-08-30'
-      integrations:
-        tcgCollector: sets/11634/ceruledge-ex-starter-set-tera-type-stellar
-      editions:
-        unlimited: Normal
-    sylveon-ex-starter-set-tera-type-stellar:
-      name: 'Sylveon ex Starter Set Tera Type: Stellar'
-      releaseDate: '2024-08-30'
-      integrations:
-        tcgCollector: sets/11633/sylveon-ex-starter-set-tera-type-stellar
       editions:
         unlimited: Normal
     paradise-dragona:
@@ -3205,20 +2228,6 @@ sv:
         tcgCollector: sets/11644/battle-partners-deck-build-box
       editions:
         unlimited: Normal
-    marnies-morpeko-and-grimmsnarl-ex-starter-set-ex:
-      name: Marnie's Morpeko & Grimmsnarl ex Starter Set ex
-      releaseDate: '2025-02-21'
-      integrations:
-        tcgCollector: sets/11647/marnies-morpeko-and-grimmsnarl-ex-starter-set-ex
-      editions:
-        unlimited: Normal
-    stevens-beldum-and-metagross-ex-starter-set-ex:
-      name: Steven's Beldum & Metagross ex Starter Set ex
-      releaseDate: '2025-02-21'
-      integrations:
-        tcgCollector: sets/11646/stevens-beldum-and-metagross-ex-starter-set-ex
-      editions:
-        unlimited: Normal
     hot-air-arena:
       name: Hot Air Arena
       releaseDate: '2025-03-14'
@@ -3247,6 +2256,27 @@ sv:
         tcgCollector: sets/11653/white-flare
       editions:
         unlimited: Normal
+    starter-set-ex:
+      name: Starter Set Ex
+      releaseDate: '2023-01-20'
+    starter-set-terastal:
+      name: Starter Set Terastal
+      releaseDate: '2023-09-22'
+    pokemon-tcg-classic:
+      name: Pokemon Tcg Classic
+      releaseDate: '2023-10-31'
+    starter-deck-and-build-set:
+      name: Starter Deck And Build Set
+      releaseDate: '2024-01-26'
+    battle-master-decks:
+      name: Battle Master Decks
+      releaseDate: '2024-05-17'
+    starter-set-tera-type-stellar:
+      name: Starter Set Tera Type Stellar
+      releaseDate: '2024-08-30'
+    character-starter-set-ex:
+      name: Character Starter Set Ex
+      releaseDate: '2025-02-21'
 
 mega:
   name: Mega Evolution Era
@@ -3277,20 +2307,6 @@ mega:
       releaseDate: '2025-08-01'
       integrations:
         tcgCollector: sets/11661/mega-symphonia
-      editions:
-        unlimited: Normal
-    mega-diancie-ex-starter-set-mega:
-      name: Mega Diancie ex Starter Set MEGA
-      releaseDate: '2025-09-05'
-      integrations:
-        tcgCollector: sets/11671/mega-diancie-ex-starter-set-mega
-      editions:
-        unlimited: Normal
-    mega-gengar-ex-starter-set-mega:
-      name: Mega Gengar ex Starter Set MEGA
-      releaseDate: '2025-09-05'
-      integrations:
-        tcgCollector: sets/11670/mega-gengar-ex-starter-set-mega
       editions:
         unlimited: Normal
     inferno-x:
@@ -3340,6 +2356,9 @@ mega:
       releaseDate: '2026-05-22'
       integrations:
         tcgCollector: sets/11810/abyss-eye
+    starter-set-mega:
+      name: Starter Set Mega
+      releaseDate: '2025-09-05'
 
 other:
   name: Other
