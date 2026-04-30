@@ -42,7 +42,7 @@ type EditionIdMap = Record<string, string | null>;
 type SnagVariant = Omit<Variant, 'id'> & { id?: string };
 type SnagDiscreteItem = Omit<DiscreteItem, 'editions' | 'variants'> & {
     id?: string;
-    editions?: string[] | EditionIdMap;
+    editions?: EditionIdMap;
     variants?: Record<string, SnagVariant>;
 };
 type SnagItem = SnagDiscreteItem | ReferenceItem;
@@ -89,9 +89,9 @@ function isReferenceItem(item: SnagItem | SnagAdditionalEntry): item is Referenc
     return 'referenceOf' in item;
 }
 
-function normalizeEditionMap(editions: string[] | EditionIdMap, defaults: string[]): EditionIdMap {
-    if (Array.isArray(editions)) {
-        return editions.reduce<EditionIdMap>((acc, editionKey) => {
+function normalizeEditionMap(editions: EditionIdMap | undefined, defaults: string[]): EditionIdMap {
+    if (!editions) {
+        return defaults.reduce<EditionIdMap>((acc, editionKey) => {
             acc[editionKey] = null;
             return acc;
         }, {});
@@ -244,7 +244,14 @@ function processEditionEntries(
         }
 
         const locationPrefix = `${sectionKey}.${entryKey}`;
-        const normalizedEditions = normalizeEditionMap(entry.editions ?? editions, editions);
+        if (Array.isArray(entry.editions)) {
+            console.error(
+                `Legacy editions array found at ${seriesRef} ${locationPrefix}.editions. Use an object map with empty-string values instead.`
+            );
+            process.exit(1);
+        }
+
+        const normalizedEditions = normalizeEditionMap(entry.editions, editions);
         let updatedEditions = false;
 
         for (const editionKey of Object.keys(normalizedEditions)) {

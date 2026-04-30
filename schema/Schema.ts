@@ -130,8 +130,8 @@ const ReferenceItemSchema = z
 const DiscreteItemSchema = z
     .object({
         name: z.string(),
-        // An edition-key (set in the series) mapped to "id" must exist.
-        // However, the 'snag' tool can take a list of editions and create ids.
+        // An edition-key (set in the series) mapped to an item id.
+        // Before snag runs, an edition may temporarily use an empty string placeholder.
         editions: z.record(z.string(), z.string()),
         description: z.string().optional(),
         index: z.union([z.string(), z.number()]).optional(),
