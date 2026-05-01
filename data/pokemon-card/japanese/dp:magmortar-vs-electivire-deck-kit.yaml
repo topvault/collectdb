@@ -313,16 +313,12 @@ additional:
             edition: 1st-edition
             id: bbcc97c0-30ae-435a-af11-e262ad5b9546
       energy-switch-magmortar-vs-electivire-deck-kit-no-018:
-        name: Energy Switch (Magmortar vs Electivire Deck Kit No. 018)
-        index: '018'
-        id: 4e6673ef-7f89-499d-9022-a405d26596c2
-        integrations:
-          tcgCollector: cards/52357/energy-switch-magmortar-vs-electivire-deck-kit-no-018
-        variants:
-          1st-edition:
-            name: 1st Edition
-            edition: 1st-edition
-            id: eb65020d-67db-447a-9aec-bc20bcc2a059
+        referenceOf:
+          id: 2140257b-e8ea-4359-9e30-bc11017125aa
+          item: energy-switch-magmortar-vs-electivire-deck-kit-no-018
+          group: magmortar-vs-electivire-deck-kit-electivire
+          generation: dp
+          series: magmortar-vs-electivire-deck-kit
       pluspower-magmortar-vs-electivire-deck-kit-no-020:
         name: PlusPower (Magmortar vs Electivire Deck Kit No. 020)
         index: '020'
@@ -335,16 +331,12 @@ additional:
             edition: 1st-edition
             id: 3239e823-7381-45d6-ac24-657ce8159f9c
       poke-ball-magmortar-vs-electivire-deck-kit-no-021:
-        name: Poké Ball (Magmortar vs Electivire Deck Kit No. 021)
-        index: '021'
-        id: 3e1973e0-f611-42f4-ae0a-3f4cc874172f
-        integrations:
-          tcgCollector: cards/52364/poke-ball-magmortar-vs-electivire-deck-kit-no-021
-        variants:
-          1st-edition:
-            name: 1st Edition
-            edition: 1st-edition
-            id: 46d53241-1671-454a-a753-d27f033a1952
+        referenceOf:
+          id: f7f3c91a-f1dc-41a3-876f-79c9277a2cfa
+          item: poke-ball-magmortar-vs-electivire-deck-kit-no-021
+          group: magmortar-vs-electivire-deck-kit-electivire
+          generation: dp
+          series: magmortar-vs-electivire-deck-kit
       warp-point-magmortar-vs-electivire-deck-kit-no-024:
         name: Warp Point (Magmortar vs Electivire Deck Kit No. 024)
         index: '024'
@@ -357,31 +349,19 @@ additional:
             edition: 1st-edition
             id: 9480a34f-9695-479d-983b-99ef4b5aee8a
       professor-oaks-visit-magmortar-vs-electivire-deck-kit-no-025:
-        name: Professor Oak's Visit (Magmortar vs Electivire Deck Kit No. 025)
-        index: '025'
-        id: 5b77c1c2-441f-4578-abe7-c10dae197890
-        integrations:
-          tcgCollector: cards/52361/professor-oaks-visit-magmortar-vs-electivire-deck-kit-no-025
-        variants:
-          1st-edition:
-            name: 1st Edition
-            edition: 1st-edition
-            id: 0acf98bf-96fc-4a36-af64-482985a2ac44
+        referenceOf:
+          id: 50621d75-fae8-469c-a715-cf266a6bc6c7
+          item: professor-oaks-visit-magmortar-vs-electivire-deck-kit-no-025
+          group: magmortar-vs-electivire-deck-kit-electivire
+          generation: dp
+          series: magmortar-vs-electivire-deck-kit
       recover-energy-moonlit-pursuit-no-070:
-        name: Recover Energy (Moonlit Pursuit No. 070)
-        index: '070'
-        details:
-          rarity: Uncommon
-        id: 5bae1a58-edbd-4230-a894-332cfefc4a1d
-        integrations:
-          tcgCollector: cards/27149/recover-energy-moonlit-pursuit-no-070
-        variant:
-          name: 1st Edition (No Rarity Symbol)
-        variants:
-          no-rarity:
-            name: No Rarity Symbol
-            edition: no-rarity
-            id: 52c7108f-cded-4211-bceb-7ca43ad87a2f
+        referenceOf:
+          id: 40ab0aa1-14f9-47ba-99c2-394c4de9c32d
+          item: recover-energy-moonlit-pursuit-no-070
+          group: magmortar-vs-electivire-deck-kit-electivire
+          generation: dp
+          series: magmortar-vs-electivire-deck-kit
   magmortar-vs-electivire-deck-kit-electivire:
     name: Electivire
     releaseDate: '2007-10-26'
