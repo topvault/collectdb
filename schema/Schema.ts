@@ -27,44 +27,30 @@ const SeriesEditionSchema = z.object({
 // Single or per-edition refers to labeling an entire item or labeling each edition individually.
 const SingleOrPerEdition = z.union([z.string(), z.record(z.string(), z.string())]);
 const RarityScoreSchema = z.number().min(0).max(11);
-// const RarityScoreSingleOrPerEdition = z.union([RarityScoreSchema, z.record(z.string(), RarityScoreSchema)]);
-
-const SeriesSchema = z
-    .object({
-        name: z.string(),
-        editions: z.record(z.string(), z.union([SeriesEditionSchema, z.string()])).optional(),
-        integrations: z
-            .object({
-                priceCharting: SingleOrPerEdition.optional(),
-                tcgCollector: SingleOrPerEdition.optional(),
-                tcgPlayer: SingleOrPerEdition.optional(),
-                scryfall: SingleOrPerEdition.optional(),
-                pokeData: SingleOrPerEdition.optional(),
-            })
-            .or(z.null())
-            .optional(),
-        authenticators: z.unknown().optional(), // SeriesAuthenticators type.
-        releaseDate: z.union([z.string(), z.date()]),
-        region: z.string().optional(),
-        description: z.string().optional(),
-        links: z.record(z.string(), z.string()).optional(),
-    })
-    .strict();
 
 const GenerationSchema = z
     .object({
         name: z.string(),
-        series: z.record(z.string(), SeriesSchema),
+        description: z.string().optional(),
+        links: z.record(z.string(), z.string()).optional(),
+        series: z.array(z.string()).optional(),
     })
     .strict();
 
+const RegionSchema = z.object({
+    name: z.string().min(3),
+    description: z.string().optional(),
+    links: z.record(z.string(), z.string()).optional(),
+    generations: z.record(z.string(), GenerationSchema).optional(),
+});
+
 export const CollectibleTypeSchema = z
     .object({
-        name: z.string().min(1),
+        name: z.string().min(3),
         support: z.enum(['full', 'in-progress', 'none']),
         releaseDate: z.union([z.string(), z.date()]).optional(),
         description: z.string().optional(),
-        regions: z.record(z.string(), z.string().min(1)),
+        regions: z.array(z.string()).min(1),
     })
     .strict();
 
@@ -192,7 +178,6 @@ const AdditionalItemSchema = DiscreteItemSchema.omit({ editions: true, integrati
     .strict();
 
 const ItemKey = z.string();
-const GenerationKey = z.string();
 
 const ItemMapSchema = z.record(ItemKey, ItemSchema);
 const AdditionalItemMapSchema = z.record(ItemKey, ReferenceItemSchema.or(AdditionalItemSchema));
@@ -224,27 +209,43 @@ const AdditionalGroupSchema = z
     })
     .strict();
 
-// Each series file within its directory, contains a list of items, products, and additional groupings.
-export const SeriesItemsSchema = z
+const SeriesSchema = z
     .object({
+        name: z.string(),
+        editions: z.record(z.string(), z.union([SeriesEditionSchema, z.string()])).optional(),
+        integrations: z
+            .object({
+                priceCharting: SingleOrPerEdition.optional(),
+                tcgCollector: SingleOrPerEdition.optional(),
+                tcgPlayer: SingleOrPerEdition.optional(),
+                scryfall: SingleOrPerEdition.optional(),
+                pokeData: SingleOrPerEdition.optional(),
+            })
+            .or(z.null())
+            .optional(),
+        authenticators: z.unknown().optional(), // SeriesAuthenticators type.
+        releaseDate: z.union([z.string(), z.date()]),
+        region: z.string().optional(),
+        description: z.string().optional(),
+        links: z.record(z.string(), z.string()).optional(),
+
         items: ItemMapSchema,
         products: ItemMapSchema.optional(),
         additional: z.record(z.string(), AdditionalGroupSchema).optional(),
     })
     .strict();
 
-export type SeriesItems = z.infer<typeof SeriesItemsSchema>;
+// The _region.yaml file.
+export type RegionDescriptor = z.infer<typeof RegionSchema>;
+// Each <generation>:<series>.yaml file.
+export type SeriesDescriptor = z.infer<typeof SeriesSchema>;
+
 export type CollectibleType = z.infer<typeof CollectibleTypeSchema>;
 export type Generation = z.infer<typeof GenerationSchema>;
-export type SeriesDescriptor = z.infer<typeof SeriesSchema>;
 export type Variant = z.infer<typeof VariantSchema>;
 export type DiscreteItem = z.infer<typeof DiscreteItemSchema>;
 export type ReferenceItem = z.infer<typeof ReferenceItemSchema>;
 export type AdditionalItem = z.infer<typeof AdditionalItemSchema>;
 export type AdditionalGroup = z.infer<typeof AdditionalGroupSchema>;
-
-// The whole _series.yaml file.
-export const GenerationMapSchema = z.record(GenerationKey, GenerationSchema);
-export type GenerationMap = z.infer<typeof GenerationMapSchema>;
 export type ReferenceOf = z.infer<typeof ReferenceOfSchema>;
 export type SingleOrPerEdition = z.infer<typeof SingleOrPerEdition>;
