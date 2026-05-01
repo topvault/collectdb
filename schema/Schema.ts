@@ -37,7 +37,7 @@ const GenerationSchema = z
     })
     .strict();
 
-const RegionSchema = z.object({
+export const RegionSchema = z.object({
     name: z.string().min(3),
     description: z.string().optional(),
     links: z.record(z.string(), z.string()).optional(),
@@ -209,7 +209,7 @@ const AdditionalGroupSchema = z
     })
     .strict();
 
-const SeriesSchema = z
+export const SeriesSchema = z
     .object({
         name: z.string(),
         editions: z.record(z.string(), z.union([SeriesEditionSchema, z.string()])).optional(),

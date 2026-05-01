@@ -6,7 +6,7 @@ import { parseDocument } from 'yaml';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
-import type { GenerationMap, SeriesItems } from '../schema/Schema.js';
+import type { RegionDescriptor, SeriesDescriptor } from '../schema/Schema.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
@@ -86,7 +86,38 @@ function parseYamlFile<T>(filePath: string): { yamlDoc: Document; parsed: T } {
 }
 
 function hasSeriesCatalog(regionPath: string): boolean {
-    return fs.existsSync(path.join(regionPath, '_series.yaml')) || fs.existsSync(path.join(regionPath, '_series.yml'));
+    return fs.existsSync(path.join(regionPath, '_region.yaml')) || fs.existsSync(path.join(regionPath, '_region.yml'));
+}
+
+function getListedSeriesIds(regionData: RegionDescriptor): Set<string> {
+    const listedSeriesIds = new Set<string>();
+
+    if (!regionData.generations || !isRecord(regionData.generations)) {
+        return listedSeriesIds;
+    }
+
+    for (const [generationKey, generation] of Object.entries(regionData.generations)) {
+        if (!generation.series) {
+            continue;
+        }
+
+        if (Array.isArray(generation.series)) {
+            for (const seriesKey of generation.series) {
+                listedSeriesIds.add(`${generationKey}:${seriesKey}`);
+            }
+            continue;
+        }
+
+        if (!isRecord(generation.series)) {
+            continue;
+        }
+
+        for (const seriesKey of Object.keys(generation.series)) {
+            listedSeriesIds.add(`${generationKey}:${seriesKey}`);
+        }
+    }
+
+    return listedSeriesIds;
 }
 
 function getProcessingTargets(targetCollectibleType?: string, targetRegion?: string): ProcessingTarget[] {
@@ -167,15 +198,9 @@ function toYamlIndexValue(indexValue: string): number | string {
     return indexValue;
 }
 
-function validateExistingIndex(itemKey: string, indexValue: string, location: string): void {
+function validateExistingIndex(indexValue: string, location: string): void {
     if (indexValue === '') {
         throw new Error(`${location}: index must not be empty.`);
-    }
-
-    const inferredIndex = inferIndexFromItemKey(itemKey);
-    if (inferredIndex !== indexValue) {
-        const suffixLabel = inferredIndex === '' ? 'no numeric suffix' : `suffix "${inferredIndex}"`;
-        throw new Error(`${location}: index must match the item key ${suffixLabel}.`);
     }
 }
 
@@ -201,7 +226,7 @@ function backfillEntries(
         const explicitIndex = normalizeIndexValue(itemValue.index);
 
         if (explicitIndex !== undefined) {
-            validateExistingIndex(itemKey, explicitIndex, location);
+            validateExistingIndex(explicitIndex, location);
             continue;
         }
 
@@ -226,7 +251,7 @@ function backfillEntries(
 }
 
 async function processSeriesFile(seriesFilePath: string, seriesRef: string): Promise<ProcessingSummary> {
-    const { yamlDoc, parsed } = parseYamlFile<SeriesItems>(seriesFilePath);
+    const { yamlDoc, parsed } = parseYamlFile<SeriesDescriptor>(seriesFilePath);
     const missingIndexes: string[] = [];
     let updated = false;
     let indexesAdded = 0;
@@ -294,23 +319,25 @@ async function main(): Promise<void> {
 
     for (const target of targets) {
         const regionPath = path.resolve('data', target.collectibleType, target.region);
-        const seriesCatalogPath = resolveYamlFile(regionPath, '_series');
-        const { parsed: generationMap } = parseYamlFile<GenerationMap>(seriesCatalogPath);
+        const regionCatalogPath = resolveYamlFile(regionPath, '_region');
+        const { parsed: regionData } = parseYamlFile<RegionDescriptor>(regionCatalogPath);
+        const listedSeriesIds = [...getListedSeriesIds(regionData)].sort((left, right) => left.localeCompare(right));
 
-        for (const [generationKey, generationValue] of Object.entries(generationMap)) {
-            for (const seriesKey of Object.keys(generationValue.series)) {
-                const currentSeriesId = `${generationKey}:${seriesKey}`;
-                if (requestedSeriesId && currentSeriesId !== requestedSeriesId) {
-                    continue;
-                }
+        if (requestedSeriesId && !listedSeriesIds.includes(requestedSeriesId)) {
+            throw new Error(`Series '${requestedSeriesId}' is not listed in ${regionCatalogPath}`);
+        }
 
-                const seriesFilePath = resolveYamlFile(regionPath, currentSeriesId);
-                const result = await processSeriesFile(seriesFilePath, `${target.collectibleType}/${target.region}/${currentSeriesId}`);
-                summary.filesUpdated += result.filesUpdated;
-                summary.indexesAdded += result.indexesAdded;
-                summary.missingIndexes += result.missingIndexes;
-                summary.recordsChecked += result.recordsChecked;
+        for (const currentSeriesId of listedSeriesIds) {
+            if (requestedSeriesId && currentSeriesId !== requestedSeriesId) {
+                continue;
             }
+
+            const seriesFilePath = resolveYamlFile(regionPath, currentSeriesId);
+            const result = await processSeriesFile(seriesFilePath, `${target.collectibleType}/${target.region}/${currentSeriesId}`);
+            summary.filesUpdated += result.filesUpdated;
+            summary.indexesAdded += result.indexesAdded;
+            summary.missingIndexes += result.missingIndexes;
+            summary.recordsChecked += result.recordsChecked;
         }
     }
 

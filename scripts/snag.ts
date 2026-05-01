@@ -10,7 +10,7 @@ import { hideBin } from 'yargs/helpers';
 import type {
     AdditionalItem,
     DiscreteItem,
-    GenerationMap,
+    RegionDescriptor,
     ReferenceItem,
     SeriesDescriptor,
     Variant,
@@ -53,12 +53,11 @@ type SnagAdditionalItem = Omit<AdditionalItem, 'id' | 'variants'> & {
 type SnagAdditionalEntry = SnagAdditionalItem | ReferenceItem;
 
 interface SnagYamlData {
+    editions?: SeriesDescriptor['editions'];
     items?: Record<string, SnagItem>;
     products?: Record<string, SnagItem>;
     additional?: Record<string, { items: Record<string, SnagAdditionalEntry> }>;
 }
-
-type GetSeriesFunc = (seriesId: string) => SeriesDescriptor | null;
 
 const observedIds = new Set<string>();
 
@@ -119,12 +118,47 @@ interface ProcessingTarget {
 
 const skippedDirectoryNames = new Set(['test-source']);
 
-function getSeriesFilePath(collectibleType: string, region: string): string {
-    return path.resolve('data', collectibleType, region, '_series.yaml');
+function isRecord(value: unknown): value is Record<string, unknown> {
+    return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function getRegionFilePath(collectibleType: string, region: string): string {
+    return path.resolve('data', collectibleType, region, '_region.yaml');
 }
 
 function hasSeriesCatalog(regionPath: string): boolean {
-    return fs.existsSync(path.join(regionPath, '_series.yaml')) || fs.existsSync(path.join(regionPath, '_series.yml'));
+    return fs.existsSync(path.join(regionPath, '_region.yaml')) || fs.existsSync(path.join(regionPath, '_region.yml'));
+}
+
+function getListedSeriesIds(regionData: RegionDescriptor): Set<string> {
+    const listedSeriesIds = new Set<string>();
+
+    if (!regionData.generations || !isRecord(regionData.generations)) {
+        return listedSeriesIds;
+    }
+
+    for (const [generationKey, generation] of Object.entries(regionData.generations)) {
+        if (!generation.series) {
+            continue;
+        }
+
+        if (Array.isArray(generation.series)) {
+            for (const seriesKey of generation.series) {
+                listedSeriesIds.add(`${generationKey}:${seriesKey}`);
+            }
+            continue;
+        }
+
+        if (!isRecord(generation.series)) {
+            continue;
+        }
+
+        for (const seriesKey of Object.keys(generation.series)) {
+            listedSeriesIds.add(`${generationKey}:${seriesKey}`);
+        }
+    }
+
+    return listedSeriesIds;
 }
 
 function getProcessingTargets(collectibleType?: string, region?: string): ProcessingTarget[] {
@@ -218,7 +252,6 @@ function processEditionEntries(
     entries: Record<string, SnagItem>,
     sectionKey: 'items' | 'products',
     seriesRef: string,
-    series: SeriesDescriptor,
     editions: string[],
     checkOnly: boolean
 ): { updated: boolean; idsObserved: number; idsAdded: number } {
@@ -299,7 +332,6 @@ function processAdditionalEntries(
     yamlDoc: Document,
     groups: NonNullable<SnagYamlData['additional']>,
     seriesRef: string,
-    series: SeriesDescriptor,
     checkOnly: boolean
 ): { updated: boolean; idsObserved: number; idsAdded: number } {
     let updated = false;
@@ -352,30 +384,30 @@ function processAdditionalEntries(
     return { updated, idsObserved, idsAdded };
 }
 
-function addIds(yamlDoc: Document, seriesRef: string, series: SeriesDescriptor, checkOnly: boolean): AddIdsResult {
+function addIds(yamlDoc: Document, seriesRef: string, seriesEditions: SeriesDescriptor['editions'] | undefined, checkOnly: boolean): AddIdsResult {
     let updated = false;
     let idsObserved = 0;
     let idsAdded = 0;
 
     const yamlData = yamlDoc.toJS() as SnagYamlData;
-    const editions = series.editions ? Object.keys(series.editions) : ['unlimited'];
+    const editions = seriesEditions ? Object.keys(seriesEditions) : ['unlimited'];
 
     if (yamlData.items) {
-        const itemResult = processEditionEntries(yamlDoc, yamlData.items, 'items', seriesRef, series, editions, checkOnly);
+        const itemResult = processEditionEntries(yamlDoc, yamlData.items, 'items', seriesRef, editions, checkOnly);
         updated = itemResult.updated || updated;
         idsObserved += itemResult.idsObserved;
         idsAdded += itemResult.idsAdded;
     }
 
     if (yamlData.products) {
-        const productResult = processEditionEntries(yamlDoc, yamlData.products, 'products', seriesRef, series, editions, checkOnly);
+        const productResult = processEditionEntries(yamlDoc, yamlData.products, 'products', seriesRef, editions, checkOnly);
         updated = productResult.updated || updated;
         idsObserved += productResult.idsObserved;
         idsAdded += productResult.idsAdded;
     }
 
     if (yamlData.additional) {
-        const additionalResult = processAdditionalEntries(yamlDoc, yamlData.additional, seriesRef, series, checkOnly);
+        const additionalResult = processAdditionalEntries(yamlDoc, yamlData.additional, seriesRef, checkOnly);
         updated = additionalResult.updated || updated;
         idsObserved += additionalResult.idsObserved;
         idsAdded += additionalResult.idsAdded;
@@ -384,17 +416,13 @@ function addIds(yamlDoc: Document, seriesRef: string, series: SeriesDescriptor, 
     return { updated, idsObserved, idsAdded };
 }
 
-async function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnly: boolean): Promise<ReadYamlFileResult> {
+async function readYamlFile(filePath: string, checkOnly: boolean): Promise<ReadYamlFileResult> {
     const leaf = path.basename(filePath, '.yaml');
-    const series = getSeries(leaf);
-    if (!series) {
-        console.error(`Series not found for ${leaf}.`);
-        return { seriesObserved: 0, idsObserved: 0, idsAdded: 0 };
-    }
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const yamlDoc = parseDocument(fileContent);
-    const result = addIds(yamlDoc, leaf, series, checkOnly);
+    const yamlData = yamlDoc.toJS() as SnagYamlData;
+    const result = addIds(yamlDoc, leaf, yamlData.editions, checkOnly);
     if (result.updated) {
         await writeFormattedYaml(filePath, yamlDoc);
         console.log(`Updated ${leaf}: added ${result.idsAdded} IDs.`);
@@ -409,7 +437,7 @@ async function readYamlFile(filePath: string, getSeries: GetSeriesFunc, checkOnl
 
 async function recurseDir(
     dirPath: string,
-    getSeries: GetSeriesFunc,
+    listedSeriesIds: Set<string>,
     checkOnly: boolean,
     singleSeriesId?: string
 ): Promise<ReadYamlFileResult> {
@@ -429,7 +457,7 @@ async function recurseDir(
         const stats = fs.statSync(fullPath);
 
         if (stats.isDirectory()) {
-            const nested = await recurseDir(fullPath, getSeries, checkOnly);
+            const nested = await recurseDir(fullPath, listedSeriesIds, checkOnly, singleSeriesId);
             totals.seriesObserved += nested.seriesObserved;
             totals.idsObserved += nested.idsObserved;
             totals.idsAdded += nested.idsAdded;
@@ -444,7 +472,11 @@ async function recurseDir(
             continue;
         }
 
-        const result = await readYamlFile(fullPath, getSeries, checkOnly);
+        if (!listedSeriesIds.has(path.basename(fullPath, '.yaml'))) {
+            continue;
+        }
+
+        const result = await readYamlFile(fullPath, checkOnly);
         totals.seriesObserved += result.seriesObserved;
         totals.idsObserved += result.idsObserved;
         totals.idsAdded += result.idsAdded;
@@ -474,39 +506,25 @@ async function main(): Promise<void> {
     for (const target of targets) {
         observedIds.clear();
 
-        const seriesFile = getSeriesFilePath(target.collectibleType, target.region);
-        if (!fs.existsSync(seriesFile)) {
-            throw new Error(`Cannot find series catalog: ${seriesFile}`);
+        const regionFile = getRegionFilePath(target.collectibleType, target.region);
+        if (!fs.existsSync(regionFile)) {
+            throw new Error(`Cannot find series catalog: ${regionFile}`);
         }
 
         if (targets.length > 1) {
             console.log(`Checking ${target.collectibleType}/${target.region}`);
         }
 
-        const seriesData = fs.readFileSync(seriesFile, 'utf8');
-        const seriesDoc = parseDocument(seriesData);
-        const seriesYaml = seriesDoc.toJS() as GenerationMap;
+        const regionData = fs.readFileSync(regionFile, 'utf8');
+        const regionDoc = parseDocument(regionData);
+        const listedSeriesIds = getListedSeriesIds(regionDoc.toJS() as RegionDescriptor);
 
-        const getSeries: GetSeriesFunc = seriesId => {
-            const [generationKey, seriesKey] = seriesId.split(':');
-            if (!(generationKey in seriesYaml)) {
-                return null;
-            }
+        if (singleSeriesId && !listedSeriesIds.has(singleSeriesId)) {
+            throw new Error(`Series '${singleSeriesId}' is not listed in ${regionFile}`);
+        }
 
-            const generation = seriesYaml[generationKey];
-            if (!(seriesKey in generation.series)) {
-                return null;
-            }
-
-            if (singleSeriesId && seriesId !== singleSeriesId) {
-                return null;
-            }
-
-            return generation.series[seriesKey];
-        };
-
-        const fileDir = path.dirname(seriesFile);
-        const targetTotals = await recurseDir(fileDir, getSeries, checkOnly, singleSeriesId);
+        const fileDir = path.dirname(regionFile);
+        const targetTotals = await recurseDir(fileDir, listedSeriesIds, checkOnly, singleSeriesId);
         totals.seriesObserved += targetTotals.seriesObserved;
         totals.idsObserved += targetTotals.idsObserved;
         totals.idsAdded += targetTotals.idsAdded;

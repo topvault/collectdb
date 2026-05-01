@@ -10,9 +10,10 @@ import type {
     AdditionalGroup,
     AdditionalItem,
     DiscreteItem,
+    RegionDescriptor,
     ReferenceItem,
     ReferenceOf,
-    SeriesItems,
+    SeriesDescriptor,
 } from '../schema/Schema.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
@@ -42,7 +43,7 @@ type SeriesItemInput = DiscreteItemInput | ReferenceItemInput;
 type AdditionalItemInput = Omit<AdditionalItem, 'variantOf'> & { variantOf?: ReferenceInput };
 type AdditionalEntryInput = AdditionalItemInput | ReferenceItemInput;
 type AdditionalGroupInput = Omit<AdditionalGroup, 'items'> & { items: Record<string, AdditionalEntryInput> };
-type SeriesItemsInput = Omit<SeriesItems, 'items' | 'products' | 'additional'> & {
+type SeriesItemsInput = Omit<SeriesDescriptor, 'items' | 'products' | 'additional'> & {
     items: Record<string, SeriesItemInput>;
     products?: Record<string, SeriesItemInput>;
     additional?: Record<string, AdditionalGroupInput>;
@@ -64,6 +65,10 @@ const skippedDirectoryNames = new Set(['test-source']);
 interface ProcessingTarget {
     collectibleType: string;
     region: string;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+    return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
 function isReferenceItem(item: SeriesItemInput | AdditionalEntryInput): item is ReferenceItemInput {
@@ -345,7 +350,7 @@ function readYamlFile(filePath: string): Document {
 }
 
 function getKeys(filePath: string): { generationKey: string; seriesKey: string } {
-    const leaf = path.basename(filePath, '.yaml');
+    const leaf = path.basename(filePath).replace(/\.(yaml|yml)$/u, '');
     const [generationKey, seriesKey] = leaf.split(':');
     return { generationKey, seriesKey };
 }
@@ -355,12 +360,43 @@ interface ReadSeriesFilesResult {
     filesNeedingUpdate: number;
 }
 
-function getSeriesFilePath(collectibleTypeValue: string, regionValue: string): string {
-    return path.resolve('data', collectibleTypeValue, regionValue, '_series.yaml');
+function getRegionFilePath(collectibleTypeValue: string, regionValue: string): string {
+    return path.resolve('data', collectibleTypeValue, regionValue, '_region.yaml');
 }
 
 function hasSeriesCatalog(regionPath: string): boolean {
-    return fs.existsSync(path.join(regionPath, '_series.yaml')) || fs.existsSync(path.join(regionPath, '_series.yml'));
+    return fs.existsSync(path.join(regionPath, '_region.yaml')) || fs.existsSync(path.join(regionPath, '_region.yml'));
+}
+
+function getListedSeriesIds(regionData: RegionDescriptor): Set<string> {
+    const listedSeriesIds = new Set<string>();
+
+    if (!regionData.generations || !isRecord(regionData.generations)) {
+        return listedSeriesIds;
+    }
+
+    for (const [generationKey, generation] of Object.entries(regionData.generations)) {
+        if (!generation.series) {
+            continue;
+        }
+
+        if (Array.isArray(generation.series)) {
+            for (const seriesKey of generation.series) {
+                listedSeriesIds.add(`${generationKey}:${seriesKey}`);
+            }
+            continue;
+        }
+
+        if (!isRecord(generation.series)) {
+            continue;
+        }
+
+        for (const seriesKey of Object.keys(generation.series)) {
+            listedSeriesIds.add(`${generationKey}:${seriesKey}`);
+        }
+    }
+
+    return listedSeriesIds;
 }
 
 function getProcessingTargets(collectibleTypeValue?: string, regionValue?: string): ProcessingTarget[] {
@@ -414,6 +450,20 @@ function getProcessingTargets(collectibleTypeValue?: string, regionValue?: strin
         });
 }
 
+function resolveYamlFile(directoryPath: string, baseName: string): string {
+    const yamlPath = path.join(directoryPath, `${baseName}.yaml`);
+    if (fs.existsSync(yamlPath)) {
+        return yamlPath;
+    }
+
+    const ymlPath = path.join(directoryPath, `${baseName}.yml`);
+    if (fs.existsSync(ymlPath)) {
+        return ymlPath;
+    }
+
+    throw new Error(`Could not find ${baseName}.yaml under ${directoryPath}`);
+}
+
 function resetState(): void {
     for (const key of Object.keys(generations)) {
         delete generations[key];
@@ -428,7 +478,7 @@ function resetState(): void {
     }
 }
 
-async function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): Promise<ReadSeriesFilesResult> {
+async function readSeriesFiles(dirPath: string, listedSeriesIds: Set<string>, checkOnlyMode: boolean): Promise<ReadSeriesFilesResult> {
     const entries = fs.readdirSync(dirPath);
     let filesChecked = 0;
     let filesNeedingUpdate = 0;
@@ -439,7 +489,12 @@ async function readSeriesFiles(dirPath: string, checkOnlyMode: boolean): Promise
         }
 
         const fullPath = path.join(dirPath, entry);
-        if (path.extname(fullPath) !== '.yaml') {
+        if (!['.yaml', '.yml'].includes(path.extname(fullPath))) {
+            continue;
+        }
+
+        const seriesId = path.basename(fullPath).replace(/\.(yaml|yml)$/u, '');
+        if (!listedSeriesIds.has(seriesId)) {
             continue;
         }
 
@@ -487,22 +542,25 @@ async function main(): Promise<void> {
     for (const target of targets) {
         resetState();
 
-        const seriesFile = getSeriesFilePath(target.collectibleType, target.region);
-        if (!fs.existsSync(seriesFile)) {
-            throw new Error(`Cannot find series catalog: ${seriesFile}`);
+        const regionFile = getRegionFilePath(target.collectibleType, target.region);
+        if (!fs.existsSync(regionFile)) {
+            throw new Error(`Cannot find series catalog: ${regionFile}`);
         }
 
         if (targets.length > 1) {
             console.log(`Checking ${target.collectibleType}/${target.region}`);
         }
 
-        const fileDir = path.dirname(seriesFile);
+        const regionDoc = readYamlFile(resolveYamlFile(path.dirname(regionFile), '_region'));
+        const listedSeriesIds = getListedSeriesIds(regionDoc.toJS() as RegionDescriptor);
+
+        const fileDir = path.dirname(regionFile);
         const stats = fs.statSync(fileDir);
         if (!stats.isDirectory()) {
             throw new Error('Cannot find directory of series files');
         }
 
-        const result = await readSeriesFiles(fileDir, checkOnly);
+        const result = await readSeriesFiles(fileDir, listedSeriesIds, checkOnly);
         filesNeedingUpdate += result.filesNeedingUpdate;
     }
 

@@ -5,11 +5,11 @@ import process from 'node:process';
 import { ZodError, type ZodTypeAny } from 'zod';
 import { parseDocument } from 'yaml';
 
-import { CollectibleTypeSchema, GenerationMapSchema, SeriesItemsSchema } from '../schema/Schema.js';
+import { CollectibleTypeSchema, RegionSchema, SeriesSchema } from '../schema/Schema.js';
 
 type ValidationTarget = {
     filePath: string;
-    kind: 'collectible-type' | 'generation-map' | 'series-items';
+    kind: 'collectible-type' | 'region' | 'series-items';
     schema?: ZodTypeAny;
     isOrphan: boolean;
 };
@@ -85,14 +85,31 @@ async function collectReferencedSeries(directoryPath: string, fileName: string):
     }
 
     const referencedSeries = new Set<string>();
+    const generations = (parsed as { generations?: unknown }).generations;
+    if (!generations || typeof generations !== 'object') {
+        return referencedSeries;
+    }
 
-    for (const [generationKey, generation] of Object.entries(parsed as Record<string, unknown>)) {
+    for (const [generationKey, generation] of Object.entries(generations as Record<string, unknown>)) {
         if (!generation || typeof generation !== 'object') {
             continue;
         }
 
         const series = (generation as { series?: unknown }).series;
-        if (!series || typeof series !== 'object') {
+        if (!series) {
+            continue;
+        }
+
+        if (Array.isArray(series)) {
+            for (const seriesKey of series) {
+                if (typeof seriesKey === 'string' && seriesKey.length > 0) {
+                    referencedSeries.add(`${generationKey}:${seriesKey}`);
+                }
+            }
+            continue;
+        }
+
+        if (typeof series !== 'object') {
             continue;
         }
 
@@ -105,7 +122,7 @@ async function collectReferencedSeries(directoryPath: string, fileName: string):
 }
 
 async function isRegionDirectory(directoryPath: string): Promise<boolean> {
-    return (await fileExists(path.join(directoryPath, '_series.yaml'))) || (await fileExists(path.join(directoryPath, '_series.yml')));
+    return (await fileExists(path.join(directoryPath, '_region.yaml'))) || (await fileExists(path.join(directoryPath, '_region.yml')));
 }
 
 async function getRegionDirectoryNames(entries: Dirent<string>[], directoryPath: string): Promise<string[]> {
@@ -132,8 +149,8 @@ async function collectRegionValidationTargets(directoryPath: string): Promise<Va
 
     const entries = await readdir(directoryPath, { withFileTypes: true });
     const targets: ValidationTarget[] = [];
-    const seriesCatalogEntry = entries.find(entry => entry.isFile() && (entry.name === '_series.yaml' || entry.name === '_series.yml'));
-    const referencedSeries = seriesCatalogEntry ? await collectReferencedSeries(directoryPath, seriesCatalogEntry.name) : null;
+    const regionCatalogEntry = entries.find(entry => entry.isFile() && (entry.name === '_region.yaml' || entry.name === '_region.yml'));
+    const referencedSeries = regionCatalogEntry ? await collectReferencedSeries(directoryPath, regionCatalogEntry.name) : null;
 
     for (const entry of entries) {
         if (entry.name.startsWith('.')) {
@@ -160,8 +177,8 @@ async function collectRegionValidationTargets(directoryPath: string): Promise<Va
             continue;
         }
 
-        if (entry.name === '_series.yaml' || entry.name === '_series.yml') {
-            targets.push({ filePath: entryPath, kind: 'generation-map', schema: GenerationMapSchema, isOrphan: false });
+        if (entry.name === '_region.yaml' || entry.name === '_region.yml') {
+            targets.push({ filePath: entryPath, kind: 'region', schema: RegionSchema, isOrphan: false });
             continue;
         }
 
@@ -174,7 +191,7 @@ async function collectRegionValidationTargets(directoryPath: string): Promise<Va
         targets.push({
             filePath: entryPath,
             kind: 'series-items',
-            schema: isReferenced ? SeriesItemsSchema : undefined,
+            schema: isReferenced ? SeriesSchema : undefined,
             isOrphan: !isReferenced,
         });
     }
@@ -223,8 +240,8 @@ async function collectValidationTargets(directoryPath: string): Promise<Validati
     }
 
     const entries = await readdir(directoryPath, { withFileTypes: true });
-    const seriesCatalogEntry = findYamlFileName(entries, '_series');
-    if (seriesCatalogEntry) {
+    const regionCatalogEntry = findYamlFileName(entries, '_region');
+    if (regionCatalogEntry) {
         return {
             targets: await collectRegionValidationTargets(directoryPath),
             failures: [],
@@ -312,13 +329,15 @@ function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
 }
 
 async function collectCollectibleTypeRegionIssues(filePath: string, parsed: unknown): Promise<string[]> {
-    if (!isRecord(parsed) || !isRecord(parsed.regions)) {
+    if (!isRecord(parsed) || !Array.isArray(parsed.regions)) {
         return [];
     }
 
     const entries = await readdir(path.dirname(filePath), { withFileTypes: true });
     const actualRegionNames = await getRegionDirectoryNames(entries, path.dirname(filePath));
-    const declaredRegionNames = Object.keys(parsed.regions).sort((left, right) => left.localeCompare(right));
+    const declaredRegionNames = parsed.regions
+        .filter((regionName): regionName is string => typeof regionName === 'string')
+        .sort((left, right) => left.localeCompare(right));
     const failures: string[] = [];
     const missingRegionNames = actualRegionNames.filter(regionName => !declaredRegionNames.includes(regionName));
     const unknownRegionNames = declaredRegionNames.filter(regionName => !actualRegionNames.includes(regionName));
@@ -354,7 +373,7 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
                 warnings: [
                     {
                         filePath: target.filePath,
-                        message: 'Orphaned YAML file is not referenced by _series.yaml.',
+                        message: 'Orphaned YAML file is not referenced by _region.yaml.',
                     },
                     ...messages,
                 ],
@@ -370,7 +389,7 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
             warnings: [
                 {
                     filePath: target.filePath,
-                    message: 'Orphaned YAML file is not referenced by _series.yaml; skipping schema validation.',
+                    message: 'Orphaned YAML file is not referenced by _region.yaml; skipping schema validation.',
                 },
             ],
         };
