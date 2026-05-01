@@ -36,6 +36,7 @@ const SeriesSchema = z
         integrations: z
             .object({
                 priceCharting: SingleOrPerEdition.optional(),
+                tcgCollector: SingleOrPerEdition.optional(),
                 tcgPlayer: SingleOrPerEdition.optional(),
                 scryfall: SingleOrPerEdition.optional(),
                 pokeData: SingleOrPerEdition.optional(),
@@ -93,6 +94,7 @@ const VariantSchema = VariantDescriptor.extend({
     integrations: z
         .object({
             priceCharting: z.union([z.string(), z.number()]).optional(),
+            tcgCollector: z.string().optional(),
             tcgPlayer: z.string().optional(),
             scryfall: z.string().optional(),
             pokeData: z.string().optional(),
@@ -147,6 +149,7 @@ const DiscreteItemSchema = z
             .object({
                 // The item URI key, otherwise determined by the item key.
                 priceCharting: SingleOrPerEdition.optional(),
+                tcgCollector: SingleOrPerEdition.optional(),
                 tcgPlayer: SingleOrPerEdition.optional(),
                 scryfall: SingleOrPerEdition.optional(),
                 pokeData: SingleOrPerEdition.optional(),
@@ -178,6 +181,7 @@ const AdditionalItemSchema = DiscreteItemSchema.omit({ editions: true, integrati
         integrations: z
             .object({
                 priceCharting: z.union([z.string(), z.number()]).optional(),
+                tcgCollector: z.string().optional(),
                 tcgPlayer: z.string().optional(),
                 scryfall: z.string().optional(),
                 pokeData: z.string().optional(),
@@ -208,6 +212,7 @@ const AdditionalGroupSchema = z
         integrations: z
             .object({
                 priceCharting: z.union([z.string(), z.number()]).optional(),
+                tcgCollector: z.string().optional(),
                 tcgPlayer: z.string().optional(),
                 scryfall: z.string().optional(),
                 pokeData: z.string().optional(),
