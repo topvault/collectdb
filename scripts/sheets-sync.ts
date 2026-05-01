@@ -8,7 +8,7 @@ import { Document, parseDocument } from 'yaml';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
-import type { CollectibleType as CollectibleTypeMetadata, GenerationMap, SeriesDescriptor, SeriesItems, SingleOrPerEdition } from '../schema/Schema.js';
+import type { CollectibleType as CollectibleTypeMetadata, RegionDescriptor, SeriesDescriptor } from '../schema/Schema.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 type SheetConfigEntry = {
@@ -272,6 +272,20 @@ async function resolveCollectibleTypeFile(collectiblePath: string): Promise<stri
     }
 
     throw new Error(`Collectible type metadata file not found under ${toRelativePath(collectiblePath)}.`);
+}
+
+async function resolveRegionDescriptorFile(regionPath: string): Promise<string> {
+    const yamlPath = path.join(regionPath, '_region.yaml');
+    if (await fileExists(yamlPath)) {
+        return yamlPath;
+    }
+
+    const ymlPath = path.join(regionPath, '_region.yml');
+    if (await fileExists(ymlPath)) {
+        return ymlPath;
+    }
+
+    throw new Error(`Region metadata file not found under ${toRelativePath(regionPath)}.`);
 }
 
 async function parseYamlFile<T>(filePath: string): Promise<T> {
@@ -709,7 +723,7 @@ function collectAdditionalRows(
     rows: ExportRow[],
     context: RecordContext,
     series: SeriesDescriptor,
-    additional: NonNullable<SeriesItems['additional']>
+    additional: NonNullable<SeriesDescriptor['additional']>
 ): void {
     for (const [groupKey, groupValue] of sortEntries(additional)) {
         for (const [itemKey, itemValue] of sortEntries(groupValue.items)) {
@@ -758,19 +772,17 @@ function collectAdditionalRows(
     }
 }
 
-async function buildRegionSheets(regionPath: string, region: string): Promise<RegionSheet[]> {
-    const seriesCatalogPath = path.join(regionPath, '_series.yaml');
-    const generationMap = await parseYamlFile<GenerationMap>(seriesCatalogPath);
+async function buildRegionSheets(regionPath: string, region: RegionDescriptor): Promise<RegionSheet[]> {
     const itemRows: ExportRow[] = [];
     const productRows: ExportRow[] = [];
     const seriesReleaseDates = new Map<string, string>();
     const generationReleaseDates = new Map<string, string>();
 
-    for (const [generationKey, generationValue] of sortEntries(generationMap)) {
-        for (const [seriesKey, seriesValue] of sortEntries(generationValue.series)) {
+    for (const [generationKey, generationValue] of sortEntries(region.generations ?? {})) {
+        for (const seriesKey of generationValue.series ?? []) {
             const seriesFilePath = await resolveSeriesFile(regionPath, generationKey, seriesKey);
-            const seriesItems = await parseYamlFile<SeriesItems>(seriesFilePath);
-            const seriesReleaseDate = stringifyDateCell(seriesValue.releaseDate);
+            const seriesData = await parseYamlFile<SeriesDescriptor>(seriesFilePath);
+            const seriesReleaseDate = stringifyDateCell(seriesData.releaseDate);
             const seriesMapKey = `${generationKey}:${seriesKey}`;
             seriesReleaseDates.set(seriesMapKey, seriesReleaseDate);
             generationReleaseDates.set(generationKey, pickEarlierDate(generationReleaseDates.get(generationKey) ?? '', seriesReleaseDate));
@@ -778,31 +790,31 @@ async function buildRegionSheets(regionPath: string, region: string): Promise<Re
                 generationKey,
                 generationName: generationValue.name,
                 seriesKey,
-                seriesName: seriesValue.name,
+                seriesName: seriesData.name,
             };
 
-            collectSectionRows(itemRows, context, 'items', seriesItems.items, seriesValue);
+            collectSectionRows(itemRows, context, 'items', seriesData.items, seriesData);
 
-            if (seriesItems.products) {
-                collectSectionRows(productRows, context, 'products', seriesItems.products, seriesValue);
+            if (seriesData.products) {
+                collectSectionRows(productRows, context, 'products', seriesData.products, seriesData);
             }
 
-            if (seriesItems.additional) {
-                collectAdditionalRows(itemRows, context, seriesValue, seriesItems.additional);
+            if (seriesData.additional) {
+                collectAdditionalRows(itemRows, context, seriesData, seriesData.additional);
             }
         }
     }
 
     const regionSheets: RegionSheet[] = [
         {
-            title: region,
+            title: region.name,
             rows: [Array.from(SHEET_HEADERS), ...sortExportRows(itemRows, seriesReleaseDates, generationReleaseDates)],
         },
     ];
 
     if (productRows.length > 0) {
         regionSheets.push({
-            title: `${region} (products)`,
+            title: `${region.name} (products)`,
             rows: [Array.from(SHEET_HEADERS), ...sortExportRows(productRows, seriesReleaseDates, generationReleaseDates)],
         });
     }
@@ -854,12 +866,14 @@ async function buildDatasets(
             }
 
             const regionPath = path.join(collectiblePath, entry.name);
-            const seriesCatalogPath = path.join(regionPath, '_series.yaml');
-            if (!(await fileExists(seriesCatalogPath))) {
+            const hasRegionDescriptor = (await fileExists(path.join(regionPath, '_region.yaml'))) || (await fileExists(path.join(regionPath, '_region.yml')));
+            if (!hasRegionDescriptor) {
                 continue;
             }
 
-            regions.push(...(await buildRegionSheets(regionPath, metadata.regions[entry.name] ?? entry.name)));
+            const regionDescriptorPath = await resolveRegionDescriptorFile(regionPath);
+            const regionDescriptor = await parseYamlFile<RegionDescriptor>(regionDescriptorPath);
+            regions.push(...(await buildRegionSheets(regionPath, regionDescriptor)));
         }
 
         datasets.push({
