@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+// RarityScore is a collectdb-specific rating system intended to be agnostic of collectible type rarities.
+// This rarity scoring factors in both the known/assumed population as well as market price.
 type RarityScore =
     | 0 // No score so the modifier is 0.
     | 1 // Rated a common, price < 10c
@@ -12,11 +14,14 @@ type RarityScore =
     | 8 // Test, employee-only, variant, price < $100,000, usually < 1000 total population
     | 9 // price $100-250k, usually < 100 population
     | 10 // prices > 250k, or priceless, usually less than 10 population
-    | 11; // prices > 1M, or pricessless, usually one of a kind
+    | 11; // prices > 1M, or priceless, usually one of a kind
 
+// An authenticator match is a common string on authenticator labels that indicates the series.
 type AuthenticatorMatchSet = string[] | string[][];
 type ItemAuthenticators = Record<string, AuthenticatorMatchSet>;
 
+// A Series Edition is a well-known variation of the collectible for a known "edition".
+// Editions tend to occur in sequence, and the default edition placeholder is "unlimited", or "Normal".
 const SeriesEditionSchema = z.object({
     name: z.string(),
     releaseDate: z.union([z.string(), z.date()]).optional(),
@@ -28,6 +33,9 @@ const SeriesEditionSchema = z.object({
 const SingleOrPerEdition = z.union([z.string(), z.record(z.string(), z.string())]);
 const RarityScoreSchema = z.number().min(0).max(11);
 
+// A Generation is a group of series within a collectible type.
+// The series "keys" must be listed explicitly.
+// These keys map to file names that will be read in the form "<generation-key>:<series-key>.yaml".
 const GenerationSchema = z
     .object({
         name: z.string(),
@@ -37,6 +45,8 @@ const GenerationSchema = z
     })
     .strict();
 
+// A region or language within a collectible type is made up of one or more generations.
+// For collectible types that have no explicit generation then "base" may be used.
 export const RegionSchema = z.object({
     name: z.string().min(3),
     description: z.string().optional(),
@@ -44,6 +54,9 @@ export const RegionSchema = z.object({
     generations: z.record(z.string(), GenerationSchema).optional(),
 });
 
+// A collectible type is the top-level category for collectibles.
+// It is made up of one or more regions (or languages) and they must be explicitly listed.
+// Each region maps to a directory containing a valid RegionSchema defined in _region.yaml.
 export const CollectibleTypeSchema = z
     .object({
         name: z.string().min(3),
@@ -93,6 +106,9 @@ const VariantSchema = VariantDescriptor.extend({
     rarityScore: RarityScoreSchema.transform(val => val as RarityScore).optional(),
 }).strict();
 
+// A Reference Of is a mapping to another item.
+// There is a short-hand version only requiring an item key and ID when referencing another item in the same series.
+// If the item is in another series then the correct metadata must be repeated in the reference of for that ID.
 const ReferenceOfSchema = z
     .object({
         id: z.string(),
@@ -239,8 +255,10 @@ export const SeriesSchema = z
 export type RegionDescriptor = z.infer<typeof RegionSchema>;
 // Each <generation>:<series>.yaml file.
 export type SeriesDescriptor = z.infer<typeof SeriesSchema>;
-
+// A _type.yaml file for a collectible type.
 export type CollectibleType = z.infer<typeof CollectibleTypeSchema>;
+
+
 export type Generation = z.infer<typeof GenerationSchema>;
 export type Variant = z.infer<typeof VariantSchema>;
 export type DiscreteItem = z.infer<typeof DiscreteItemSchema>;
