@@ -79,15 +79,12 @@ additional:
         integrations:
           tcgCollector: cards/32710/celebi-p-promos-007-p
       tropical-breeze:
-        name: Tropical Breeze
-        index: '008'
-        details:
-          rarity: Promo
-        variant:
-          name: Promo
-        id: 02fa2f9c-63d1-4902-8a90-593badbe0255
-        integrations:
-          tcgCollector: cards/32711/tropical-breeze-p-promos-008-p
+        referenceOf:
+          id: a8286c07-7d35-4d91-8662-83b59abe6b8e
+          item: tropical-breeze-p-promos-008-p
+          edition: unlimited
+          generation: vs
+          series: tropical-mega-battle
       bill:
         name: Bill
         index: '009'
