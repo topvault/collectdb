@@ -93,10 +93,10 @@ const SHEET_HEADERS = [
     'Name',
     'Index',
     'Variant',
-    'ID',
-    'Key',
     'Release Date',
     'Description',
+    'ID',
+    'Key',
 ] as const;
 
 function sortEntries<T>(record: Record<string, T>): [string, T][] {
@@ -607,10 +607,10 @@ function buildRow(
             name,
             recordIndex,
             variantName,
-            id,
-            recordKey,
             releaseDate,
             description,
+            id,
+            recordKey,
         ],
     };
 }
