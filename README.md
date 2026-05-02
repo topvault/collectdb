@@ -14,7 +14,8 @@ collectdb's goal is to provide a canonical, expressive, and stable catalog for c
 
 Unlike flat card lists, collectdb models how collectibles are actually published and collected:
 
-- collectible types contain generations
+- collectible types contain regions or languages
+- regions contain generations
 - generations contain series
 - series can define editions
 - series can catalog discrete items and sealed products
@@ -62,20 +63,23 @@ data/
     _type.yaml
     icon.webp
     english/
-      _series.yaml
+      _region.yaml
       base:base-set.yaml
+      sv:151.yaml
+    japanese/
+      _region.yaml
       sv:151.yaml
   mtg-card/
     _type.yaml
     icon.webp
     english/
-      _series.yaml
+      _region.yaml
       mtg-1993:limited-edition-alpha.yaml
   sports-card/
     _type.yaml
     icon.webp
     english/
-      _series.yaml
+      _region.yaml
 schema/
   Schema.ts
 scripts/
@@ -88,48 +92,48 @@ scripts/
 
 Each collectible type directory can define shared metadata in `_type.yaml`.
 
-This file is used for the collectible type's display name, optional release date and description, and the friendly labels for the region directories it exposes.
+This file is used for the collectible type's display name, support level, optional release date and description, and the explicit list of region directories it exposes.
 
 ```yaml
-name: Pokemon Card
+name: Pokémon Cards
 support: full
 releaseDate: '1996-10-20'
-description: Catalogs Pokemon trading cards and related collectible card releases across supported regions.
+description: Catalogs Pokémon trading cards and related collectible card releases across supported regions.
 regions:
-  english: English
-  japanese: Japanese
+  - english
+  - japanese
 ```
 
 `support` is required and currently accepts `full`, `in-progress`, or `none`.
 
 Each collectible type directory is also expected to include an `icon.webp`.
 
-### Generations
+### Regions and Generations
 
-The `_series.yaml` file is the catalog of generations and series metadata.
+Each region or language directory defines its own metadata in `_region.yaml`.
 
-Each generation groups related series together.
+This file names the region and lists the generations it exposes. Each generation then enumerates the series files that belong to it.
 
 ```yaml
-base:
-  name: Base Era
-  series:
-    base-set:
-      name: Base Set
-      releaseDate: '1999-01-09'
-      region: international
-      editions:
-        unlimited: Unlimited
-        1st-edition:
-          name: 1st Edition
-          releaseDate: '1999-01-09'
-      integrations:
-        priceCharting: pokemon-base-set
+name: English
+description: English-language releases.
+generations:
+  base:
+    name: Base
+    series:
+      - base-set
+      - jungle
+      - fossil
+  sv:
+    name: Scarlet & Violet
+    series:
+      - base-set
+      - 151
 ```
 
 ### Series
 
-Each series file contains the catalog for one series.
+Each series file contains the catalog for one series. Shared metadata for the release lives in the series file itself rather than in `_region.yaml`.
 
 Within a series you can define:
 
@@ -138,6 +142,15 @@ Within a series you can define:
 - `additional`: special grouped catalogs such as promos, subsets, or test releases
 
 ```yaml
+name: Base Set
+releaseDate: '1999-01-09'
+editions:
+  unlimited: Unlimited
+  1st-edition:
+    name: 1st Edition
+    releaseDate: '1999-01-09'
+integrations:
+  priceCharting: pokemon-base-set
 items:
   pikachu-58:
     name: Pikachu
@@ -248,8 +261,9 @@ The validator walks the data tree, parses YAML, and checks:
 
 - `_type.yaml` files against the collectible type schema
 - each collectible type directory for a required `icon.webp`
-- `_series.yaml` files against the generation map schema
-- series files against the series items schema
+- `_region.yaml` files against the region schema
+- referenced series files against the series schema
+- orphan series files that are not referenced by `_region.yaml`
 
 ## Formatting
 
