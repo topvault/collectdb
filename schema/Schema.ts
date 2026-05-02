@@ -36,7 +36,7 @@ const RarityScoreSchema = z.number().min(0).max(11);
 // A Generation is a group of series within a collectible type.
 // The series "keys" must be listed explicitly.
 // These keys map to file names that will be read in the form "<generation-key>:<series-key>.yaml".
-const GenerationSchema = z
+export const GenerationSchema = z
     .object({
         name: z.string(),
         description: z.string().optional(),
