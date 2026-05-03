@@ -6,6 +6,7 @@ import { ZodError, type ZodTypeAny } from 'zod';
 import { parseDocument } from 'yaml';
 
 import { CollectibleTypeSchema, RegionSchema, SeriesSchema } from '../schema/Schema.js';
+import { getSeriesIdFromFilePath } from './lib/series-path.js';
 
 type ValidationTarget = {
     filePath: string;
@@ -142,7 +143,11 @@ async function getRegionDirectoryNames(entries: Dirent<string>[], directoryPath:
     return regionNames.sort((left, right) => left.localeCompare(right));
 }
 
-async function collectRegionValidationTargets(directoryPath: string): Promise<ValidationTarget[]> {
+async function collectRegionValidationTargets(
+    directoryPath: string,
+    regionPath = directoryPath,
+    referencedSeries?: Set<string> | null
+): Promise<ValidationTarget[]> {
     if (shouldSkipDirectory(directoryPath)) {
         return [];
     }
@@ -150,7 +155,8 @@ async function collectRegionValidationTargets(directoryPath: string): Promise<Va
     const entries = await readdir(directoryPath, { withFileTypes: true });
     const targets: ValidationTarget[] = [];
     const regionCatalogEntry = entries.find(entry => entry.isFile() && (entry.name === '_region.yaml' || entry.name === '_region.yml'));
-    const referencedSeries = regionCatalogEntry ? await collectReferencedSeries(directoryPath, regionCatalogEntry.name) : null;
+    const nextReferencedSeries =
+        referencedSeries ?? (regionCatalogEntry ? await collectReferencedSeries(directoryPath, regionCatalogEntry.name) : null);
 
     for (const entry of entries) {
         if (entry.name.startsWith('.')) {
@@ -164,8 +170,8 @@ async function collectRegionValidationTargets(directoryPath: string): Promise<Va
                 continue;
             }
 
-            const nested = await collectValidationTargets(entryPath);
-            targets.push(...nested.targets);
+            const nested = await collectRegionValidationTargets(entryPath, regionPath, nextReferencedSeries);
+            targets.push(...nested);
             continue;
         }
 
@@ -186,7 +192,8 @@ async function collectRegionValidationTargets(directoryPath: string): Promise<Va
             continue;
         }
 
-        const isReferenced = referencedSeries ? referencedSeries.has(getBaseName(entry.name)) : true;
+        const seriesId = getSeriesIdFromFilePath(regionPath, entryPath);
+        const isReferenced = seriesId ? (nextReferencedSeries ? nextReferencedSeries.has(seriesId) : true) : true;
 
         targets.push({
             filePath: entryPath,

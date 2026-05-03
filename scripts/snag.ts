@@ -15,6 +15,7 @@ import type {
     SeriesDescriptor,
     Variant,
 } from '../schema/Schema.js';
+import { getSeriesIdFromFilePath } from './lib/series-path.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
@@ -437,6 +438,7 @@ async function readYamlFile(filePath: string, checkOnly: boolean): Promise<ReadY
 
 async function recurseDir(
     dirPath: string,
+    regionPath: string,
     listedSeriesIds: Set<string>,
     checkOnly: boolean,
     singleSeriesId?: string
@@ -457,7 +459,7 @@ async function recurseDir(
         const stats = fs.statSync(fullPath);
 
         if (stats.isDirectory()) {
-            const nested = await recurseDir(fullPath, listedSeriesIds, checkOnly, singleSeriesId);
+            const nested = await recurseDir(fullPath, regionPath, listedSeriesIds, checkOnly, singleSeriesId);
             totals.seriesObserved += nested.seriesObserved;
             totals.idsObserved += nested.idsObserved;
             totals.idsAdded += nested.idsAdded;
@@ -468,11 +470,16 @@ async function recurseDir(
             continue;
         }
 
-        if (singleSeriesId && path.basename(fullPath, '.yaml') !== singleSeriesId) {
+        const currentSeriesId = getSeriesIdFromFilePath(regionPath, fullPath);
+        if (!currentSeriesId) {
             continue;
         }
 
-        if (!listedSeriesIds.has(path.basename(fullPath, '.yaml'))) {
+        if (singleSeriesId && currentSeriesId !== singleSeriesId) {
+            continue;
+        }
+
+        if (!listedSeriesIds.has(currentSeriesId)) {
             continue;
         }
 
@@ -524,7 +531,7 @@ async function main(): Promise<void> {
         }
 
         const fileDir = path.dirname(regionFile);
-        const targetTotals = await recurseDir(fileDir, listedSeriesIds, checkOnly, singleSeriesId);
+        const targetTotals = await recurseDir(fileDir, fileDir, listedSeriesIds, checkOnly, singleSeriesId);
         totals.seriesObserved += targetTotals.seriesObserved;
         totals.idsObserved += targetTotals.idsObserved;
         totals.idsAdded += targetTotals.idsAdded;

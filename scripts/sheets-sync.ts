@@ -9,6 +9,7 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
 import type { CollectibleType as CollectibleTypeMetadata, RegionDescriptor, SeriesDescriptor } from '../schema/Schema.js';
+import { getSeriesFileCandidates, getSeriesId } from './lib/series-path.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 type SheetConfigEntry = {
@@ -247,14 +248,10 @@ async function fileExists(filePath: string): Promise<boolean> {
 }
 
 async function resolveSeriesFile(regionPath: string, generationKey: string, seriesKey: string): Promise<string> {
-    const yamlPath = path.join(regionPath, `${generationKey}:${seriesKey}.yaml`);
-    if (await fileExists(yamlPath)) {
-        return yamlPath;
-    }
-
-    const ymlPath = path.join(regionPath, `${generationKey}:${seriesKey}.yml`);
-    if (await fileExists(ymlPath)) {
-        return ymlPath;
+    for (const candidate of getSeriesFileCandidates(regionPath, getSeriesId(generationKey, seriesKey))) {
+        if (await fileExists(candidate)) {
+            return candidate;
+        }
     }
 
     throw new Error(`Series file not found for ${generationKey}:${seriesKey} under ${toRelativePath(regionPath)}.`);

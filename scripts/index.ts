@@ -7,6 +7,7 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
 import type { RegionDescriptor, SeriesDescriptor } from '../schema/Schema.js';
+import { getSeriesFileCandidates } from './lib/series-path.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
@@ -65,6 +66,16 @@ function resolveYamlFile(directoryPath: string, baseName: string): string {
     }
 
     throw new Error(`Could not find ${baseName}.yaml under ${directoryPath}`);
+}
+
+function resolveSeriesFile(regionPath: string, seriesId: string): string {
+    for (const candidate of getSeriesFileCandidates(regionPath, seriesId)) {
+        if (fs.existsSync(candidate)) {
+            return candidate;
+        }
+    }
+
+    throw new Error(`Could not find series file for ${seriesId} under ${regionPath}`);
 }
 
 function parseYamlFile<T>(filePath: string): { yamlDoc: Document; parsed: T } {
@@ -332,7 +343,7 @@ async function main(): Promise<void> {
                 continue;
             }
 
-            const seriesFilePath = resolveYamlFile(regionPath, currentSeriesId);
+            const seriesFilePath = resolveSeriesFile(regionPath, currentSeriesId);
             const result = await processSeriesFile(seriesFilePath, `${target.collectibleType}/${target.region}/${currentSeriesId}`);
             summary.filesUpdated += result.filesUpdated;
             summary.indexesAdded += result.indexesAdded;

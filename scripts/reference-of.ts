@@ -15,6 +15,7 @@ import type {
     ReferenceOf,
     SeriesDescriptor,
 } from '../schema/Schema.js';
+import { getSeriesIdFromFilePath, parseSeriesId } from './lib/series-path.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
 const argv = await yargs(hideBin(process.argv))
@@ -349,10 +350,13 @@ function readYamlFile(filePath: string): Document {
     return parseDocument(fileContent);
 }
 
-function getKeys(filePath: string): { generationKey: string; seriesKey: string } {
-    const leaf = path.basename(filePath).replace(/\.(yaml|yml)$/u, '');
-    const [generationKey, seriesKey] = leaf.split(':');
-    return { generationKey, seriesKey };
+function getKeys(regionPath: string, filePath: string): { generationKey: string; seriesKey: string } {
+    const seriesId = getSeriesIdFromFilePath(regionPath, filePath);
+    if (!seriesId) {
+        throw new Error(`Could not determine series id for ${filePath}`);
+    }
+
+    return parseSeriesId(seriesId);
 }
 
 interface ReadSeriesFilesResult {
@@ -478,7 +482,12 @@ function resetState(): void {
     }
 }
 
-async function readSeriesFiles(dirPath: string, listedSeriesIds: Set<string>, checkOnlyMode: boolean): Promise<ReadSeriesFilesResult> {
+async function readSeriesFiles(
+    regionPath: string,
+    dirPath: string,
+    listedSeriesIds: Set<string>,
+    checkOnlyMode: boolean
+): Promise<ReadSeriesFilesResult> {
     const entries = fs.readdirSync(dirPath);
     let filesChecked = 0;
     let filesNeedingUpdate = 0;
@@ -489,17 +498,29 @@ async function readSeriesFiles(dirPath: string, listedSeriesIds: Set<string>, ch
         }
 
         const fullPath = path.join(dirPath, entry);
+        const stat = fs.statSync(fullPath);
+        if (stat.isDirectory()) {
+            const nested = await readSeriesFiles(regionPath, fullPath, listedSeriesIds, checkOnlyMode);
+            filesChecked += nested.filesChecked;
+            filesNeedingUpdate += nested.filesNeedingUpdate;
+            continue;
+        }
+
         if (!['.yaml', '.yml'].includes(path.extname(fullPath))) {
             continue;
         }
 
-        const seriesId = path.basename(fullPath).replace(/\.(yaml|yml)$/u, '');
+        const seriesId = getSeriesIdFromFilePath(regionPath, fullPath);
+        if (!seriesId) {
+            continue;
+        }
+
         if (!listedSeriesIds.has(seriesId)) {
             continue;
         }
 
         const yamlDoc = readYamlFile(fullPath);
-        const { generationKey, seriesKey } = getKeys(fullPath);
+    const { generationKey, seriesKey } = getKeys(regionPath, fullPath);
         const yamlData = yamlDoc.toJS() as SeriesItemsInput;
 
         if (!yamlData) {
@@ -515,7 +536,7 @@ async function readSeriesFiles(dirPath: string, listedSeriesIds: Set<string>, ch
 
     for (const [fullPath, yamlDoc] of Object.entries(loadedFiles)) {
         filesChecked += 1;
-        const { generationKey, seriesKey } = getKeys(fullPath);
+        const { generationKey, seriesKey } = getKeys(regionPath, fullPath);
 
         if (!setIds(yamlDoc, generationKey, seriesKey)) {
             continue;
@@ -560,7 +581,7 @@ async function main(): Promise<void> {
             throw new Error('Cannot find directory of series files');
         }
 
-        const result = await readSeriesFiles(fileDir, listedSeriesIds, checkOnly);
+        const result = await readSeriesFiles(fileDir, fileDir, listedSeriesIds, checkOnly);
         filesNeedingUpdate += result.filesNeedingUpdate;
     }
 
