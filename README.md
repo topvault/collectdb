@@ -61,23 +61,24 @@ The repository is organized around collectible type and a second directory level
 data/
   pokemon-card/
     _type.yaml
-    icon.webp
     english/
       _region.yaml
-      base:base-set.yaml
-      sv:151.yaml
+      base/
+        base-set.yaml
+      sv/
+        151.yaml
     japanese/
       _region.yaml
-      sv:151.yaml
+      sv/
+        151.yaml
   mtg-card/
     _type.yaml
-    icon.webp
     english/
       _region.yaml
-      mtg-1993:limited-edition-alpha.yaml
+      mtg-1993/
+        limited-edition-alpha.yaml
   sports-card/
     _type.yaml
-    icon.webp
     english/
       _region.yaml
 schema/
@@ -105,8 +106,6 @@ regions:
 ```
 
 `support` is required and currently accepts `full`, `in-progress`, or `none`.
-
-Each collectible type directory is also expected to include an `icon.webp`.
 
 ### Regions and Generations
 
@@ -260,7 +259,6 @@ npm run validate:data -- data/pokemon-card/english
 The validator walks the data tree, parses YAML, and checks:
 
 - `_type.yaml` files against the collectible type schema
-- each collectible type directory for a required `icon.webp`
 - `_region.yaml` files against the region schema
 - referenced series files against the series schema
 - orphan series files that are not referenced by `_region.yaml`

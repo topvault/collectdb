@@ -226,13 +226,6 @@ async function collectCollectibleTypeValidation(directoryPath: string): Promise<
         });
     }
 
-    if (!entries.some(entry => entry.isFile() && entry.name === 'icon.webp')) {
-        failures.push({
-            filePath: path.join(directoryPath, 'icon.webp'),
-            message: 'Missing collectible type icon.',
-        });
-    }
-
     const regionNames = await getRegionDirectoryNames(entries, directoryPath);
     for (const regionName of regionNames) {
         targets.push(...(await collectRegionValidationTargets(path.join(directoryPath, regionName))));
@@ -256,8 +249,7 @@ async function collectValidationTargets(directoryPath: string): Promise<Validati
     }
 
     const regionDirectoryNames = await getRegionDirectoryNames(entries, directoryPath);
-    const isCollectibleTypeDirectory =
-        findYamlFileName(entries, '_type') !== undefined || entries.some(entry => entry.isFile() && entry.name === 'icon.webp') || regionDirectoryNames.length > 0;
+    const isCollectibleTypeDirectory = findYamlFileName(entries, '_type') !== undefined || regionDirectoryNames.length > 0;
 
     if (isCollectibleTypeDirectory) {
         return collectCollectibleTypeValidation(directoryPath);
