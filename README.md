@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/collectdb-logo.svg" alt="collectdb logo" width="160" />
+</p>
+
 <h1 align="center">collectdb</h1>
 
 <p align="center">
