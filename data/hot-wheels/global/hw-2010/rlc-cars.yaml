@@ -1,0 +1,86 @@
+name: Hot Wheels RLC Cars
+releaseDate: 2010-01-01
+editions:
+  unlimited: Normal
+items:
+  blown-delivery-toy:
+    name: Blown Delivery
+    editions:
+      unlimited: a4788509-d0be-4ec7-8158-7a2b00cd319c
+    index: "1"
+    integrations:
+      hwcn: 0e8ea694-e01c-4b3d-8529-67e1bc219147
+      hdbid: "145552"
+    variant:
+      name: "A1: Red"
+    details:
+      castingName: Blown Delivery
+      toolNumber: "Toy # —"
+  custom-amc-amx-r8384:
+    name: Custom AMC AMX
+    editions:
+      unlimited: 71a71952-a277-49d2-8b7b-a1390530b030
+    index: "2"
+    integrations:
+      hwcn: dec8f5b0-f1a1-4fe1-abc1-802238701cc0
+    variant:
+      name: "A1: Chrome - Club car"
+    details:
+      castingName: Custom AMC AMX
+      toolNumber: R8384
+  custom-amc-amx-r8385:
+    name: Custom AMC AMX
+    editions:
+      unlimited: 3d4e0f5a-7fde-43af-bf41-789522e2f6fd
+    index: "3"
+    integrations:
+      hwcn: abdbcafb-7ebf-46bf-9a83-4813785b60db
+    variantOf:
+      id: 71a71952-a277-49d2-8b7b-a1390530b030
+      item: custom-amc-amx-r8384
+      edition: unlimited
+      generation: hw-2010
+      series: rlc-cars
+    variant:
+      name: "A2: Red - Club car"
+    details:
+      castingName: Custom AMC AMX
+      toolNumber: R8385
+    variants:
+      a3-purple-club-car:
+        id: 9be87bc6-8f06-4b52-a194-4dcfd6714667
+        name: "A3: Purple - Club car"
+        integrations:
+          hwcn: 7062ae57-f1a3-4ad3-b7cd-204493fb8972
+  hiway-hauler-r8419:
+    name: Hiway Hauler
+    editions:
+      unlimited: 420f2d25-691d-4b37-bd20-b7058517aafa
+    index: "4"
+    integrations:
+      hwcn: 1e61a376-d12d-4396-9a4c-4376737b09a0
+    variantOf:
+      id: 98d9c8db-9059-4159-b589-ce3c4ac51503
+      item: hiway-hauler-1174
+      edition: unlimited
+      generation: hw-1980
+      series: other
+    variant:
+      name: "BF1: Green - Holiday Car"
+    details:
+      castingName: Hiway Hauler
+      toolNumber: R8419
+  honky-tonk-hot-rod-r8404:
+    name: Honky Tonk Hot Rod
+    editions:
+      unlimited: 19c4288c-1e2e-48a4-b25e-5400fbe6f25c
+    index: "5"
+    integrations:
+      hwcn: f7dce7c4-e1ff-4011-a513-61a12da9f0d1
+    variant:
+      name: "A1: Olive"
+    details:
+      castingName: Honky Tonk Hot Rod
+      toolNumber: R8404
+integrations:
+  hwcn: "30"

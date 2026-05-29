@@ -1,0 +1,45 @@
+name: Hot Wheels ID - Moving Forward
+releaseDate: 2020-01-01
+editions:
+  unlimited: Normal
+items:
+  bmw-i8-roadster-fxb49:
+    name: BMW I8 Roadster
+    editions:
+      unlimited: 97d6733e-9e48-482a-9229-55ee86f601d4
+    index: "2"
+    integrations:
+      hwcn: 2501f65f-3a45-411e-a461-508dceb0668a
+    variant:
+      name: "A1: Orange"
+    details:
+      castingName: BMW I8 Roadster
+      toolNumber: FXB49
+  hw50-concept-fxb45:
+    name: HW50 Concept
+    editions:
+      unlimited: f76ca8c8-9860-4842-9fde-db7d383ebb42
+    index: "1"
+    integrations:
+      hwcn: 6ec0c4b2-c459-4c33-b31a-ffd63460cf47
+    variantOf:
+      id: bb8104cc-aaab-4810-8ba1-61fba67db46b
+      item: hw50-concept-fw02
+      edition: unlimited
+      generation: hw-2018
+      series: new-model
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: HW50 Concept
+      toolNumber: FXB45
+  mach-speeder-fxb48:
+    edition: unlimited
+    referenceOf:
+      id: 42cfb0dd-9a21-46ac-8776-bad1cf77290d
+      item: mach-speeder-fxb48
+      edition: unlimited
+      generation: hw-2020
+      series: hot-whees-id-series-1
+integrations:
+  hwcn: "1179"

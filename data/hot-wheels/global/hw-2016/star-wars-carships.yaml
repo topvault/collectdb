@@ -1,0 +1,91 @@
+name: Hot Wheels Star Wars Carships
+releaseDate: 2016-01-01
+editions:
+  unlimited: Normal
+items:
+  boba-fett-s-slave-i-dpv28:
+    name: Boba Fett's Slave I
+    editions:
+      unlimited: 9dba61b2-fd03-4e47-bb9e-f0bd071ec9ac
+    index: "1"
+    integrations:
+      hwcn: 512a7412-4cc9-4a5d-9133-25016e47c90f
+    variant:
+      name: "A1: Gray"
+    details:
+      castingName: Boba Fett's Slave I
+      toolNumber: DPV28
+  millennium-falcon-dpv25:
+    name: Millennium Falcon
+    editions:
+      unlimited: 504d7c09-eb78-450a-8ff1-53642adbfa81
+    index: "2"
+    integrations:
+      hwcn: 74f8ce06-2425-4d61-8954-301b7923d909
+    variantOf:
+      id: 2b405d30-8c0d-48d2-99a4-076a68b9c01e
+      item: millennium-falcon-cgw56
+      edition: unlimited
+      generation: hw-2015
+      series: star-wars-space-ships
+    variant:
+      name: "A1: Off white"
+    details:
+      castingName: Millennium Falcon
+      toolNumber: DPV25
+  tie-fighter-dpv27:
+    name: Tie Fighter
+    editions:
+      unlimited: 45dc2449-1543-4aab-8b2e-bcd8d97e2c75
+    index: "3"
+    integrations:
+      hwcn: 768befff-ec7a-4827-9ad4-cf35a98f8a7d
+    variantOf:
+      id: 2961f4e9-d46f-4c05-9adf-c5614a18ea0c
+      item: tie-fighter-cgw53
+      edition: unlimited
+      generation: hw-2015
+      series: star-wars-space-ships
+    variant:
+      name: "A1: Gray"
+    details:
+      castingName: Tie Fighter
+      toolNumber: DPV27
+    variants:
+      a2-gray:
+        id: 5250ef8e-1635-4c37-8220-92b879dfef61
+        name: "A2: Gray"
+        integrations:
+          hwcn: 4497e7cd-83a2-4141-ba90-383d31013906
+  vader-s-tie-figher-dpv29:
+    name: Vader's Tie Figher
+    editions:
+      unlimited: 03aa7493-c3e8-467b-a9db-d43dd79b1d5a
+    index: "4"
+    integrations:
+      hwcn: 75158c07-5778-40d1-a383-1653fe762dca
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: Vader's Tie Figher
+      toolNumber: DPV29
+  x-wing-carships-dpv26:
+    name: X-Wing (Carships)
+    editions:
+      unlimited: 7213ec08-6a70-4049-9cae-cd6e5503bec7
+    index: "5"
+    integrations:
+      hwcn: 552a5666-e8ad-43e7-9886-2f1d8ba61682
+    variant:
+      name: "A1: White"
+    details:
+      castingName: X-Wing (Carships)
+      toolNumber: DPV26
+    variants:
+      a2-white:
+        id: 4a1ad77c-5f2c-4b62-90d8-4aa39157e26b
+        name: "A2: White"
+        integrations:
+          hwcn: 50fabd07-59d5-410a-91f1-a8edb8b958bb
+integrations:
+  hwcn: "174"

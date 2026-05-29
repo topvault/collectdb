@@ -1,0 +1,37 @@
+name: "Hot Wheels HW Showroom: Muscle Mania"
+releaseDate: 2013-01-01
+editions:
+  unlimited: Normal
+items:
+  68-plymouth-barracuda-formula-s-x1626:
+    name: "'68 Plymouth Barracuda Formula S"
+    editions:
+      unlimited: ec74aac1-d9cd-4403-9cd9-f53330a5d5d8
+    index: "1"
+    integrations:
+      hwcn: bf5a58cf-bfac-485b-b51c-3f00c59e5acc
+    variant:
+      name: "A1: Purple"
+    details:
+      castingName: "'68 Plymouth Barracuda Formula S"
+      toolNumber: X1626
+  71-hemi-cuda-x2043:
+    name: "'71 Hemi Cuda"
+    editions:
+      unlimited: 54d205cb-65b7-4258-a7d3-f049b83f4fd8
+    index: "2"
+    integrations:
+      hwcn: cd415bf3-3fba-4f76-807c-2434f57596a5
+    variantOf:
+      id: 72b3393c-091d-4d43-aad8-585c6c5c6824
+      item: 71-hemi-cuda-v5336
+      edition: unlimited
+      generation: hw-2012
+      series: new-models
+    variant:
+      name: "B1: Zamac"
+    details:
+      castingName: "'71 Hemi Cuda"
+      toolNumber: X2043
+integrations:
+  hwcn: "2020"

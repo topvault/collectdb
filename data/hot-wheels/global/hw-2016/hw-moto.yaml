@@ -1,0 +1,82 @@
+name: Hot Wheels - HW Moto
+releaseDate: 2016-01-01
+editions:
+  unlimited: Normal
+items:
+  bad-bagger-retool-dhr40:
+    name: Bad Bagger (retool)
+    editions:
+      unlimited: ad1ee615-45d6-49b0-92e0-bc4e859a1538
+    index: "3"
+    integrations:
+      hwcn: a52c51a5-e2ce-44d0-9c47-2ea013b54cfc
+      hdbid: "315308"
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: Bad Bagger (retool)
+      toolNumber: DHR40
+  ducati-1199-superleggera-dhr38:
+    name: Ducati 1199 Superleggera
+    editions:
+      unlimited: 410d223a-f318-4b36-ad3f-3a39854b4d83
+    index: "1"
+    integrations:
+      hwcn: 096ce4ae-d299-46e7-949f-3df449c41e47
+      hdbid: "315306"
+    variant:
+      name: "A1: Orange"
+    details:
+      castingName: Ducati 1199 Superleggera
+      toolNumber: DHR38
+  ducati-diavel-dhr39:
+    name: Ducati Diavel
+    editions:
+      unlimited: 4857eb37-570b-4709-89d1-40c1d1a73934
+    index: "2"
+    integrations:
+      hwcn: 31715be4-b0ad-4002-8829-892ed39108ab
+      hdbid: "315307"
+    variantOf:
+      id: 70495eca-81b0-4833-bc85-7090a167ad30
+      item: ducati-diavel-x1641
+      edition: unlimited
+      generation: hw-2013
+      series: other
+    variant:
+      name: "C1: Black"
+    details:
+      castingName: Ducati Diavel
+      toolNumber: DHR39
+  honda-monkey-z50-dhp16:
+    name: Honda Monkey Z50
+    editions:
+      unlimited: b4b600f9-76b2-405a-a356-da759e90b1d6
+    index: "4"
+    integrations:
+      hwcn: f90c1b55-c18a-4a5c-b062-e3fc2b3cf3cd
+    variant:
+      name: "A1: Red"
+    details:
+      castingName: Honda Monkey Z50
+      toolNumber: DHP16
+  honda-monkey-z50-dhx42:
+    name: Honda Monkey Z50
+    editions:
+      unlimited: 479a58c5-6b02-484a-a7fa-868d165c4a6a
+    index: "5"
+    integrations:
+      hwcn: dc234526-e1a3-4e8b-8553-7fbbe3dfe49c
+    variantOf:
+      id: b4b600f9-76b2-405a-a356-da759e90b1d6
+      item: honda-monkey-z50-dhp16
+      edition: unlimited
+      generation: hw-2016
+      series: hw-moto
+    variant:
+      name: "B1: Yellow"
+    details:
+      castingName: Honda Monkey Z50
+      toolNumber: DHX42
+integrations:
+  hwcn: "217"

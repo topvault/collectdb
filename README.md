@@ -53,7 +53,7 @@ collectdb is built for the harder cases:
 - variants that belong to another base item
 - subsets, promos, and special groups within a series
 - stable identifiers that do not change when labels or metadata evolve
-- explicit links to outside systems such as `priceCharting`, `tcgPlayer`, `scryfall`, and `pokeData`
+- explicit links to outside systems such as `priceCharting`, `tcgPlayer`, `scryfall`, `pokeData`, and `hwcn`
 
 The project is designed so that the schema is the contract. Data shape is not defined by convention or scattered scripts. It is defined and validated centrally.
 
@@ -237,6 +237,7 @@ Examples currently modeled in the schema include:
 - `tcgPlayer`
 - `scryfall`
 - `pokeData`
+- `hwcn`
 
 Integrations can be attached at the series, item, variant, or group level depending on what is being mapped.
 

@@ -1,0 +1,98 @@
+name: Hot Wheels HW Green Speed
+releaseDate: 2019-01-01
+editions:
+  unlimited: Normal
+items:
+  electro-silhouette-fyb52:
+    edition: unlimited
+    referenceOf:
+      id: 335f33b0-c120-4c19-b50e-0dad16279663
+      item: electro-silhouette-fyb52
+      edition: unlimited
+      generation: hw-2019
+      series: new-models
+  electro-silhouette-fyg51:
+    edition: unlimited
+    referenceOf:
+      id: 6a405723-0b97-45dd-ab57-6f55aa8ec2f4
+      item: electro-silhouette-fyg51
+      edition: unlimited
+      generation: hw-2019
+      series: new-models
+  porsche-panamera-turbo-s-i-hybrid-sport-turismo-fyb51:
+    edition: unlimited
+    referenceOf:
+      id: ed048e37-4322-434f-9636-bb32f715727c
+      item: porsche-panamera-turbo-s-i-hybrid-sport-turismo-fyb51
+      edition: unlimited
+      generation: hw-2019
+      series: new-models
+  tesla-model-3-fyb50:
+    name: Tesla Model 3
+    editions:
+      unlimited: ef01c090-e3d7-45d6-9171-cb74a36a1ecb
+    index: "1"
+    integrations:
+      hwcn: c1e5c9fa-8737-490d-ba3a-890b7e745b7e
+    variant:
+      name: "A1: White"
+    details:
+      castingName: Tesla Model 3
+      toolNumber: FYB50
+  tesla-model-3-fyd88:
+    name: Tesla Model 3
+    editions:
+      unlimited: 09859a30-9dac-4b72-a812-faa6231d96ef
+    index: "2"
+    integrations:
+      hwcn: 7ab73e73-3f4a-480f-80d3-3f380e236cf1
+    variantOf:
+      id: ef01c090-e3d7-45d6-9171-cb74a36a1ecb
+      item: tesla-model-3-fyb50
+      edition: unlimited
+      generation: hw-2019
+      series: hw-green-speed
+    variant:
+      name: "B1: Red"
+    details:
+      castingName: Tesla Model 3
+      toolNumber: FYD88
+  tesla-model-s-fyc48:
+    name: Tesla Model S
+    editions:
+      unlimited: bd266255-238d-413a-8fd7-49b0f5323153
+    index: "3"
+    integrations:
+      hwcn: dfeb9162-d823-4119-ae74-faf47b585784
+    variantOf:
+      id: cec35522-c162-4ca5-a456-5792190f0ef7
+      item: tesla-model-s-cfh03
+      edition: unlimited
+      generation: hw-2015
+      series: other
+    variant:
+      name: "H1: Blue"
+    details:
+      castingName: Tesla Model S
+      toolNumber: FYC48
+  tesla-model-s-fyg08:
+    name: Tesla Model S
+    editions:
+      unlimited: 6a782f13-4e29-4a4e-a501-c9e0c896313b
+    index: "4"
+    integrations:
+      hwcn: a0f56e18-32c6-4c22-9620-8d1de6ed0bfc
+      hdbid: "525611"
+    variantOf:
+      id: cec35522-c162-4ca5-a456-5792190f0ef7
+      item: tesla-model-s-cfh03
+      edition: unlimited
+      generation: hw-2015
+      series: other
+    variant:
+      name: "H2: Blue - Super Treasure Hunt"
+    details:
+      castingName: Tesla Model S
+      toolNumber: FYG08
+integrations:
+  hwcn: "1031"

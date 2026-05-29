@@ -1,0 +1,120 @@
+name: Hot Wheels Steering Rigs
+releaseDate: 1982-01-01
+editions:
+  unlimited: Normal
+items:
+  ford-ltl-cattle-trailer-3430:
+    name: Ford LTL Cattle Trailer
+    editions:
+      unlimited: ff6c7cb3-8a84-4238-86cc-5536ac04df08
+    index: "1"
+    integrations:
+      hwcn: ffefa934-7810-4bfb-9939-abc622fc9ed8
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: Ford LTL Cattle Trailer
+      toolNumber: "3430"
+    variants:
+      a2-blue-france:
+        id: 084d45a7-891c-4195-8af8-5839a7d29d07
+        name: "A2: Blue - France"
+        integrations:
+          hwcn: 6041cebe-3ae6-4f09-ba03-1603dda8d25a
+      a3-blue-france-tan-interior:
+        id: 0e9d2431-baec-4904-9d06-ba7ef7fa2d9c
+        name: "A3: Blue - France, Tan interior"
+        integrations:
+          hwcn: 058174ea-0a09-4f0b-ac97-53c1c0d2bd5b
+  ford-ltl-moving-van-3433:
+    name: Ford LTL Moving Van
+    editions:
+      unlimited: 9366b8a9-a1a3-478a-9f85-7a66eb72c0a7
+    index: "4"
+    integrations:
+      hwcn: eda39c98-372c-4b55-8936-26a24e3a31a7
+    variant:
+      name: "A1: Yellow"
+    details:
+      castingName: Ford LTL Moving Van
+      toolNumber: "3433"
+    variants:
+      a2-yellow-france:
+        id: 9edffe2c-b911-48c4-a157-78465471e4dc
+        name: "A2: Yellow - France"
+        integrations:
+          hwcn: 4f8a92e7-8b56-41d9-89a7-99addf70dd3b
+  mack-grain-trailer-3434:
+    name: Mack Grain Trailer
+    editions:
+      unlimited: 5d6a1f00-79ac-4547-863c-d44597ea132e
+    index: "5"
+    integrations:
+      hwcn: cc280fba-cab5-4774-b541-c67f915e0c4b
+    variant:
+      name: "A1: Blue - France"
+    details:
+      castingName: Mack Grain Trailer
+      toolNumber: "3434"
+    variants:
+      a2-blue:
+        id: c8a4576a-9961-44ac-927a-2d27bd727f44
+        name: "A2: Blue"
+        integrations:
+          hwcn: dff09d69-6586-4203-b729-7b3312f34af2
+  mack-moving-van-3431:
+    name: Mack Moving Van
+    editions:
+      unlimited: 53e67d2e-6d9e-47cd-8ead-438574671e1c
+    index: "2"
+    integrations:
+      hwcn: 0c59fd40-0d39-421d-a5bd-8dc85722ac26
+    variantOf:
+      id: ffc7bab3-b6ef-46d6-b33d-785e9fc35ff3
+      item: mack-moving-van-3431
+      edition: unlimited
+      generation: hw-1981
+      series: steering-rigs
+    variant:
+      name: "B1: Red - France"
+    details:
+      castingName: Mack Moving Van
+      toolNumber: "3431"
+  white-cattle-trailer-3435:
+    name: White Cattle Trailer
+    editions:
+      unlimited: 1dca208f-1bf4-4bdd-bd61-088573222f96
+    index: "6"
+    integrations:
+      hwcn: d833c080-1cc6-4664-a6e7-e73043e04900
+    variant:
+      name: "A1: Red"
+    details:
+      castingName: White Cattle Trailer
+      toolNumber: "3435"
+    variants:
+      a2-red-france:
+        id: 0318f4fd-0f6e-4315-adf2-b085c9071a70
+        name: "A2: Red - France"
+        integrations:
+          hwcn: 5c605782-a5b0-416e-b444-9681b935d538
+  white-grain-trailer-3432:
+    name: White Grain Trailer
+    editions:
+      unlimited: 902b593f-ae53-4791-a204-fabe4732d068
+    index: "3"
+    integrations:
+      hwcn: 9fd940ba-1054-4060-9e63-884bd71a242d
+    variant:
+      name: "A1: White - France"
+    details:
+      castingName: White Grain Trailer
+      toolNumber: "3432"
+    variants:
+      a2-white:
+        id: 924d276f-8b1d-4fbd-aa9a-b95edcfb0829
+        name: "A2: White"
+        integrations:
+          hwcn: 49d4b1a9-a9ce-427a-88d1-995858aacf58
+integrations:
+  hwcn: "89"

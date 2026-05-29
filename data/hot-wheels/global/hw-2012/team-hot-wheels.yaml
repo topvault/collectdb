@@ -1,0 +1,47 @@
+name: Hot Wheels Team Hot Wheels
+releaseDate: 2012-01-01
+editions:
+  unlimited: Normal
+items:
+  lamborghini-gallardo-lp-570-4-superleggera-v5429:
+    edition: unlimited
+    referenceOf:
+      id: eab9f114-bce2-441b-8e06-c27f16d64c2e
+      item: lamborghini-gallardo-lp-570-4-superleggera-v5429
+      edition: unlimited
+      generation: hw-2012
+      series: all-stars
+  super-blitzen-y8827:
+    name: Super Blitzen
+    editions:
+      unlimited: 657582db-35d5-41ce-8405-4aa04ef21611
+    index: "1"
+    integrations:
+      hwcn: 839b70a4-8c79-4ad6-945d-401714670014
+      hdbid: "185893"
+    variant:
+      name: "A1: White"
+    details:
+      castingName: Super Blitzen
+      toolNumber: Y8827
+  super-blitzen-y8828:
+    name: Super Blitzen
+    editions:
+      unlimited: 762a0de2-afe3-4943-882c-090382056dfa
+    index: "2"
+    integrations:
+      hwcn: 1d47ed54-dc01-4cfb-975f-89bc4addc0c9
+      hdbid: "75226"
+    variantOf:
+      id: 657582db-35d5-41ce-8405-4aa04ef21611
+      item: super-blitzen-y8827
+      edition: unlimited
+      generation: hw-2012
+      series: team-hot-wheels
+    variant:
+      name: "A2: Black"
+    details:
+      castingName: Super Blitzen
+      toolNumber: Y8828
+integrations:
+  hwcn: "608"

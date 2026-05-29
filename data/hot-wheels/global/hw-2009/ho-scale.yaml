@@ -1,0 +1,85 @@
+name: Hot Wheels HO scale
+releaseDate: 2009-01-01
+editions:
+  unlimited: Normal
+items:
+  55-chevy-panel-87-p1724:
+    name: "'55 Chevy Panel (87)"
+    editions:
+      unlimited: ff2d3dd0-2c55-47f6-b252-6e78ce686035
+    index: "1"
+    integrations:
+      hwcn: cc32a51a-959e-48f1-b272-8018dbd03436
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: "'55 Chevy Panel (87)"
+      toolNumber: P1724
+  55-chevy-panel-87-p1728:
+    name: "'55 Chevy Panel (87)"
+    editions:
+      unlimited: 0ceb4a27-fc81-43db-a5a7-05c4693d2ef4
+    index: "2"
+    integrations:
+      hwcn: 7d7e8690-dd29-4e1c-8c28-fb0426079635
+    variantOf:
+      id: ff2d3dd0-2c55-47f6-b252-6e78ce686035
+      item: 55-chevy-panel-87-p1724
+      edition: unlimited
+      generation: hw-2009
+      series: ho-scale
+    variant:
+      name: "B1: Orange"
+    details:
+      castingName: "'55 Chevy Panel (87)"
+      toolNumber: P1728
+  custom-67-mustang-87-p1725:
+    name: Custom '67 Mustang (87)
+    editions:
+      unlimited: 1dc0f6e1-cc9b-470c-a384-fc4072995814
+    index: "3"
+    integrations:
+      hwcn: 3809fee6-c2e3-4f2c-b138-410e69f52583
+    variantOf:
+      id: 04e6db1d-92fd-4078-866a-961a3130fe2c
+      item: custom-67-mustang-87-toy
+      edition: unlimited
+      generation: hw-2007
+      series: other
+    variant:
+      name: "B1: Orange"
+    details:
+      castingName: Custom '67 Mustang (87)
+      toolNumber: P1725
+  shelby-cobra-daytona-coupe-87-p1730:
+    name: Shelby Cobra Daytona Coupe (87)
+    editions:
+      unlimited: 84513fbf-95a4-4f36-a357-6736c4f900b7
+    index: "4"
+    integrations:
+      hwcn: 9b2d62e3-409d-4451-b9eb-9c784b76ff2e
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: Shelby Cobra Daytona Coupe (87)
+      toolNumber: P1730
+  shelby-cobra-daytona-coupe-87-p1734:
+    name: Shelby Cobra Daytona Coupe (87)
+    editions:
+      unlimited: 298fc9e5-f529-4e93-ac31-abab514c0a46
+    index: "5"
+    integrations:
+      hwcn: a979df1f-9f79-4f8c-b07e-da2bde7d690b
+    variantOf:
+      id: 84513fbf-95a4-4f36-a357-6736c4f900b7
+      item: shelby-cobra-daytona-coupe-87-p1730
+      edition: unlimited
+      generation: hw-2009
+      series: ho-scale
+    variant:
+      name: "B1: Silver"
+    details:
+      castingName: Shelby Cobra Daytona Coupe (87)
+      toolNumber: P1734
+integrations:
+  hwcn: "706"

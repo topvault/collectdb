@@ -1,0 +1,142 @@
+name: Hot Wheels - HW Ride-Ons
+releaseDate: 2017-01-01
+editions:
+  unlimited: Normal
+items:
+  aisle-driver-dvc11:
+    name: Aisle Driver
+    editions:
+      unlimited: 0a16d26a-a8f5-4dd5-978e-1d0440a796f0
+    index: "3"
+    integrations:
+      hwcn: c4fbf935-5a00-436e-b767-c15b487b80dd
+      hdbid: "373173"
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: Aisle Driver
+      toolNumber: DVC11
+  boom-car-dtx11:
+    name: Boom Car
+    editions:
+      unlimited: 2360d785-d1d9-4c08-b702-0e9651da31d0
+    index: "1"
+    integrations:
+      hwcn: 86f7b770-9819-4ad1-aadf-fc69671cbedf
+    variant:
+      name: "A1: Red"
+    details:
+      castingName: Boom Car
+      toolNumber: DTX11
+  boom-car-dvc10:
+    name: Boom Car
+    editions:
+      unlimited: a43d19d3-f050-4723-bd86-31917e677d5b
+    index: "2"
+    integrations:
+      hwcn: ea4b5640-a277-47d4-b35c-7c7825dea940
+      hdbid: "310780"
+    variantOf:
+      id: 2360d785-d1d9-4c08-b702-0e9651da31d0
+      item: boom-car-dtx11
+      edition: unlimited
+      generation: hw-2017
+      series: hw-ride-ons
+    variant:
+      name: "B1: Green"
+    details:
+      castingName: Boom Car
+      toolNumber: DVC10
+  grass-chomper-dty39:
+    name: Grass Chomper
+    editions:
+      unlimited: 87ced7b4-d8f4-46da-b19d-4fe17f742b42
+    index: "4"
+    integrations:
+      hwcn: f58e81b4-507b-495e-ba8b-ccf7b3f7ff34
+    variantOf:
+      id: e562b26d-8388-485f-b064-38e089ea8e34
+      item: grass-chomper-dhp25
+      edition: unlimited
+      generation: hw-2016
+      series: hw-ride-ons
+    variant:
+      name: "C1: Green"
+    details:
+      castingName: Grass Chomper
+      toolNumber: DTY39
+  grass-chomper-fbj00:
+    name: Grass Chomper
+    editions:
+      unlimited: 2ccf3664-5aa2-41a7-a47e-896d1827312c
+    index: "5"
+    integrations:
+      hwcn: d17fdda6-e421-45c7-b547-e6e04d117320
+    variantOf:
+      id: e562b26d-8388-485f-b064-38e089ea8e34
+      item: grass-chomper-dhp25
+      edition: unlimited
+      generation: hw-2016
+      series: hw-ride-ons
+    variant:
+      name: "D1: Blue"
+    details:
+      castingName: Grass Chomper
+      toolNumber: FBJ00
+  pedal-driver-dvc28:
+    name: Pedal Driver
+    editions:
+      unlimited: d4cd89ae-cfa9-479b-a6e4-fef037a572ba
+    index: "7"
+    integrations:
+      hwcn: a86e419d-bce1-4128-aae9-12a68d5873fc
+    variantOf:
+      id: 1907c492-2886-407c-bbad-b10e9ade3bfb
+      item: pedal-driver-cfg87
+      edition: unlimited
+      generation: hw-2015
+      series: other
+    variant:
+      name: "F1: Green"
+    details:
+      castingName: Pedal Driver
+      toolNumber: DVC28
+  pedal-driver-dvd09:
+    name: Pedal Driver
+    editions:
+      unlimited: 454bcdc8-9db9-4581-a311-ce6a30266348
+    index: "8"
+    integrations:
+      hwcn: 800247e5-50c9-47de-ba6e-a1988ffe6898
+    variantOf:
+      id: 1907c492-2886-407c-bbad-b10e9ade3bfb
+      item: pedal-driver-cfg87
+      edition: unlimited
+      generation: hw-2015
+      series: other
+    variant:
+      name: "E1: Blue - TH"
+    details:
+      castingName: Pedal Driver
+      toolNumber: DVD09
+  tanknator-dty40:
+    name: Tanknator
+    editions:
+      unlimited: a323fddb-7ec8-45d1-9cde-f40a32973ca7
+    index: "6"
+    integrations:
+      hwcn: 622786c6-6faf-4d9a-b8c8-0c0ce8ad29b4
+      hdbid: "356436"
+    variantOf:
+      id: 0a8af584-00db-4cf4-98be-7bbbab288471
+      item: tanknator-dhw91
+      edition: unlimited
+      generation: hw-2016
+      series: hw-daredevils
+    variant:
+      name: "C1: Gray"
+    details:
+      castingName: Tanknator
+      toolNumber: DTY40
+integrations:
+  hwcn: "267"

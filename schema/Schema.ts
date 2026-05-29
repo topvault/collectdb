@@ -76,6 +76,34 @@ const VariantDescriptor = z.object({
 
 const VariantRemarkSchema = z.enum(['recurring-obstruction']);
 
+const ScalarIntegrationsSchema = z
+    .object({
+        // General multi-collection-type databases.
+        priceCharting: z.union([z.string(), z.number()]).optional(),
+        tcgPlayer: z.string().optional(),
+        pokeData: z.string().optional(),
+        // Pokemon-card specific databases.
+        tcgCollector: z.string().optional(),
+        // MtG-card specific databases.
+        scryfall: z.string().optional(),
+        // Hot Wheels specific databases.
+        hwcn: z.string().optional(),
+        hdbid: z.string().optional(),
+    })
+    .strict();
+
+const SingleOrPerEditionIntegrationsSchema = z
+    .object({
+        priceCharting: SingleOrPerEdition.optional(),
+        tcgCollector: SingleOrPerEdition.optional(),
+        tcgPlayer: SingleOrPerEdition.optional(),
+        scryfall: SingleOrPerEdition.optional(),
+        pokeData: SingleOrPerEdition.optional(),
+        hwcn: SingleOrPerEdition.optional(),
+        hdbid: SingleOrPerEdition.optional(),
+    })
+    .strict();
+
 const VariantSchema = VariantDescriptor.extend({
     id: z.string(),
     name: z.string(),
@@ -90,16 +118,8 @@ const VariantSchema = VariantDescriptor.extend({
         .transform(val => val as ItemAuthenticators)
         .optional(), // ItemAuthenticatorsType
     photos: z.array(z.string()).optional(), // Names of the images, expect a corresponding webp file ("front" is always checked).
-    integrations: z
-        .object({
-            priceCharting: z.union([z.string(), z.number()]).optional(),
-            tcgCollector: z.string().optional(),
-            tcgPlayer: z.string().optional(),
-            scryfall: z.string().optional(),
-            pokeData: z.string().optional(),
-        })
-        .strict()
-        .optional(),
+    integrations: ScalarIntegrationsSchema.optional(),
+    details: z.record(z.string(), z.unknown()).optional(),
     // This overrides the rarity score for the variant.
     // It is a common case that the base item has a static rarity and the variant is much rarer.
     // The rarity of the variant does not have a different static indicator, but we directly set the score.
@@ -147,17 +167,7 @@ const DiscreteItemSchema = z
             .optional(), // ItemAuthenticators type
         photos: z.array(z.string()).optional(), // Names of the images, expect a corresponding webp file ("front" is always checked).
         // Allow integrations to be set per-edition.
-        integrations: z
-            .object({
-                // The item URI key, otherwise determined by the item key.
-                priceCharting: SingleOrPerEdition.optional(),
-                tcgCollector: SingleOrPerEdition.optional(),
-                tcgPlayer: SingleOrPerEdition.optional(),
-                scryfall: SingleOrPerEdition.optional(),
-                pokeData: SingleOrPerEdition.optional(),
-            })
-            .strict()
-            .optional(),
+        integrations: SingleOrPerEditionIntegrationsSchema.optional(),
         // If not provided then the details:rarity static value is used.
         // If there is no rarity found then a default low value is used.
         rarityScore: RarityScoreSchema.transform(val => val as RarityScore).optional(),
@@ -180,16 +190,7 @@ const AdditionalItemSchema = DiscreteItemSchema.omit({ editions: true, integrati
         // If this is defined then the base item's key data will be used as details/defaults.
         variantOf: z.string().or(ReferenceOfSchema).optional(),
         // Since there are no editions, expect only a value-integration for the item, not per-edition.
-        integrations: z
-            .object({
-                priceCharting: z.union([z.string(), z.number()]).optional(),
-                tcgCollector: z.string().optional(),
-                tcgPlayer: z.string().optional(),
-                scryfall: z.string().optional(),
-                pokeData: z.string().optional(),
-            })
-            .strict()
-            .optional(),
+        integrations: ScalarIntegrationsSchema.optional(),
     })
     .strict();
 
@@ -210,16 +211,7 @@ const AdditionalGroupSchema = z
         description: z.string().optional(),
         links: z.record(z.string(), z.string()).optional(),
         releaseDate: z.union([z.string(), z.date()]).optional(),
-        integrations: z
-            .object({
-                priceCharting: z.union([z.string(), z.number()]).optional(),
-                tcgCollector: z.string().optional(),
-                tcgPlayer: z.string().optional(),
-                scryfall: z.string().optional(),
-                pokeData: z.string().optional(),
-            })
-            .strict()
-            .optional(),
+        integrations: ScalarIntegrationsSchema.optional(),
         rarityScore: RarityScoreSchema.transform(val => val as RarityScore).optional(),
         items: AdditionalItemMapSchema,
     })
@@ -229,16 +221,7 @@ export const SeriesSchema = z
     .object({
         name: z.string(),
         editions: z.record(z.string(), z.union([SeriesEditionSchema, z.string()])).optional(),
-        integrations: z
-            .object({
-                priceCharting: SingleOrPerEdition.optional(),
-                tcgCollector: SingleOrPerEdition.optional(),
-                tcgPlayer: SingleOrPerEdition.optional(),
-                scryfall: SingleOrPerEdition.optional(),
-                pokeData: SingleOrPerEdition.optional(),
-            })
-            .or(z.null())
-            .optional(),
+        integrations: SingleOrPerEditionIntegrationsSchema.or(z.null()).optional(),
         authenticators: z.unknown().optional(), // SeriesAuthenticators type.
         releaseDate: z.union([z.string(), z.date()]),
         region: z.string().optional(),

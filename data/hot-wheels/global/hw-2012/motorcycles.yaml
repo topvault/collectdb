@@ -1,0 +1,74 @@
+name: Hot Wheels Motorcycles
+releaseDate: 2012-01-01
+editions:
+  unlimited: Normal
+items:
+  bat-pod-x2082:
+    name: Bat-Pod
+    editions:
+      unlimited: 3c7581f5-9dd9-4b63-868e-bc6d3afd7ef0
+    index: "1"
+    integrations:
+      hwcn: 9d732190-20e1-4364-9370-f17344ad5165
+    variant:
+      name: "A1: Black"
+    details:
+      castingName: Bat-Pod
+      toolNumber: X2082
+  ducati-1098r-x6569:
+    name: Ducati 1098R
+    editions:
+      unlimited: 940c5bd4-90c0-42f4-8ceb-c42375138b3b
+    index: "2"
+    integrations:
+      hwcn: fbad2975-6996-4b6d-a2a9-54a886e87527
+    variantOf:
+      id: 0574a909-c805-4c38-8f16-54a16aa10346
+      item: ducati-1098r-r0933
+      edition: unlimited
+      generation: hw-2010
+      series: new-models
+    variant:
+      name: "A2: Red"
+    details:
+      castingName: Ducati 1098R
+      toolNumber: X6569
+  hw450f-w5407:
+    name: HW450F
+    editions:
+      unlimited: 249665f8-1bcc-4b58-8180-a147afb461b7
+    index: "3"
+    integrations:
+      hwcn: a8aa073f-ce4c-4c43-bbd1-0ebab9387043
+    variantOf:
+      id: 9c0acd75-a5d6-42b9-b6fa-90f11df0c624
+      item: hw450f-m6918
+      edition: unlimited
+      generation: hw-2008
+      series: all-stars
+    variant:
+      name: "F1: Green"
+    details:
+      castingName: HW450F
+      toolNumber: W5407
+  occ-splitback-w5411:
+    name: OCC Splitback
+    editions:
+      unlimited: 0d7b08de-6a66-4339-8099-4bb08547455a
+    index: "4"
+    integrations:
+      hwcn: b2dabf7c-0a5a-43fd-999d-7b55f56452e2
+      hdbid: "157086"
+    variantOf:
+      id: 275a6fec-259f-4ff0-925f-6b51a3dbd646
+      item: occ-splitback-n4012
+      edition: unlimited
+      generation: hw-2009
+      series: first-editions
+    variant:
+      name: "F1: Orange"
+    details:
+      castingName: OCC Splitback
+      toolNumber: W5411
+integrations:
+  hwcn: "612"

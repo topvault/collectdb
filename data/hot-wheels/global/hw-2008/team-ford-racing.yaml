@@ -1,0 +1,55 @@
+name: "Hot Wheels Team: Ford Racing"
+releaseDate: 2008-01-01
+editions:
+  unlimited: Normal
+items:
+  1997-ford-f-150-m6876:
+    name: 1997 Ford F-150
+    editions:
+      unlimited: ad68719c-e116-422c-8aff-aa4d73e65389
+    index: "2"
+    integrations:
+      hwcn: 575f3822-fe83-4302-b89b-ecf4d9469fda
+    variant:
+      name: "A1: Blue"
+    details:
+      castingName: 1997 Ford F-150
+      toolNumber: M6876
+  deuce-roadster-m6878:
+    name: Deuce Roadster
+    editions:
+      unlimited: 3f5afd66-3a31-4fc8-b770-bad3c44e5c8e
+    index: "3"
+    integrations:
+      hwcn: 4d2c98f7-6322-4aa3-9b64-40f430e39eaa
+    variantOf:
+      id: add0964b-f9be-4267-8f29-22aa1a09ebd1
+      item: deuce-roadster-28014
+      edition: unlimited
+      generation: hw-2000
+      series: editor-s-choice-series-1
+    variant:
+      name: "U1: Gray"
+    details:
+      castingName: Deuce Roadster
+      toolNumber: M6878
+  ford-gtx1-m6875:
+    name: Ford GTX1
+    editions:
+      unlimited: 4507e4a1-e24d-4afd-b626-3ff248deea01
+    index: "1"
+    integrations:
+      hwcn: 2774cc29-8554-46d3-bfdb-7d40b71f2ebc
+    variantOf:
+      id: a5afd6e6-9707-4d5f-a24d-77b5c2f7bacc
+      item: ford-gtx1-k6149
+      edition: unlimited
+      generation: hw-2007
+      series: first-editions
+    variant:
+      name: "D1: Black"
+    details:
+      castingName: Ford GTX1
+      toolNumber: M6875
+integrations:
+  hwcn: "501"

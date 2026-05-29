@@ -1,0 +1,152 @@
+name: Hot Wheels Special Delivery
+releaseDate: 2004-01-01
+editions:
+  unlimited: Normal
+items:
+  32-ford-sedan-c2644:
+    name: 32 Ford Sedan
+    editions:
+      unlimited: 28b494ea-b170-4200-bd37-bc1c85d46a0f
+    index: "3"
+    integrations:
+      hwcn: d55f24e4-e79a-46f3-899a-949dbe9ddcc2
+    variant:
+      name: "A1: Grey - Special Delivery"
+    details:
+      castingName: 32 Ford Sedan
+      toolNumber: C2644
+  32-ford-sedan-g7796:
+    name: 32 Ford Sedan
+    editions:
+      unlimited: e0150def-b1a3-499f-aa02-8bab3e6157e7
+    index: "4"
+    integrations:
+      hwcn: a9e3c45c-9b98-48f4-87a8-9f69294f0393
+    variantOf:
+      id: 28b494ea-b170-4200-bd37-bc1c85d46a0f
+      item: 32-ford-sedan-c2644
+      edition: unlimited
+      generation: hw-2004
+      series: special-delivery
+    variant:
+      name: "B1: MF Blue - Special Delivery"
+    details:
+      castingName: 32 Ford Sedan
+      toolNumber: G7796
+  34-ford-delivery-c2653:
+    name: "'34 Ford Delivery"
+    editions:
+      unlimited: 3a63a326-3d1f-44c6-bf4f-63abb8718bcc
+    index: "7"
+    integrations:
+      hwcn: 00ed3100-bc21-4e34-a6a6-b33da4180bef
+    variantOf:
+      id: 445d8410-4c47-428c-a381-2ada029328f5
+      item: 34-ford-delivery-5508
+      edition: unlimited
+      generation: hw-2004
+      series: other
+    variant:
+      name: "A1: Gold - Special Delivery"
+    details:
+      castingName: "'34 Ford Delivery"
+      toolNumber: C2653
+    variants:
+      b1-blue-special-delivery:
+        id: c74c96cb-244c-41ce-9f99-f6c85906558a
+        name: "B1: Blue - Special Delivery"
+        integrations:
+          hwcn: bdf44df3-6ddd-49c2-96e3-746dafc458a4
+  34-ford-delivery-g7799:
+    name: "'34 Ford Delivery"
+    editions:
+      unlimited: 447fc16b-e83b-4def-9a25-488062903bf0
+    index: "8"
+    integrations:
+      hwcn: 14a2bdb6-b879-4f99-9526-b599f4172e24
+      hdbid: "152415"
+    variantOf:
+      id: 445d8410-4c47-428c-a381-2ada029328f5
+      item: 34-ford-delivery-5508
+      edition: unlimited
+      generation: hw-2004
+      series: other
+    variant:
+      name: "C1: Blue - Special Delivery"
+    details:
+      castingName: "'34 Ford Delivery"
+      toolNumber: G7799
+  8-crate-c2650:
+    name: 8 Crate
+    editions:
+      unlimited: 2f581a0d-d26d-4bb1-b1e1-76132b5173bf
+    index: "5"
+    integrations:
+      hwcn: 047c7ab0-4e36-4cdf-b498-8ebf89508f00
+    variantOf:
+      id: 46847fcf-ee99-42e0-84d4-99c5b442251e
+      item: 8-crate-56363
+      edition: unlimited
+      generation: hw-2003
+      series: first-edition
+    variant:
+      name: "C1: Grey - Special Delivery"
+    details:
+      castingName: 8 Crate
+      toolNumber: C2650
+  8-crate-g7795:
+    name: 8 Crate
+    editions:
+      unlimited: 17f40629-35f8-4ae3-a328-c8a6f28c65ab
+    index: "6"
+    integrations:
+      hwcn: 6021f55a-3432-48b1-9011-ba55cb0b414b
+    variantOf:
+      id: 46847fcf-ee99-42e0-84d4-99c5b442251e
+      item: 8-crate-56363
+      edition: unlimited
+      generation: hw-2003
+      series: first-edition
+    variant:
+      name: "D1: MF Red / White - Special Delivery"
+    details:
+      castingName: 8 Crate
+      toolNumber: G7795
+  dairy-delivery-c2635:
+    name: Dairy Delivery
+    editions:
+      unlimited: 73516869-3aac-441d-aa25-dbb9fad6b8ab
+    index: "1"
+    integrations:
+      hwcn: 4835754b-9a94-4298-892b-a38b3fd7a0ee
+    variantOf:
+      id: 351be045-2a93-4c56-bf02-6d42002ccce2
+      item: dairy-delivery-20651
+      edition: unlimited
+      generation: hw-1998
+      series: convention-cars-charity
+    variant:
+      name: "V1: Yellow / White - Special Delivery"
+    details:
+      castingName: Dairy Delivery
+      toolNumber: C2635
+  dairy-delivery-g7800:
+    name: Dairy Delivery
+    editions:
+      unlimited: b737ba8e-9846-41e1-b04b-a5a5aa5eb524
+    index: "2"
+    integrations:
+      hwcn: da041801-709b-450c-b36a-a5ec6a5d4984
+    variantOf:
+      id: 351be045-2a93-4c56-bf02-6d42002ccce2
+      item: dairy-delivery-20651
+      edition: unlimited
+      generation: hw-1998
+      series: convention-cars-charity
+    variant:
+      name: "W1: White / Yellow - Special Delivery"
+    details:
+      castingName: Dairy Delivery
+      toolNumber: G7800
+integrations:
+  hwcn: "120"

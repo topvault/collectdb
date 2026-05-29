@@ -1,0 +1,55 @@
+name: Hot Wheels Heat Fleet Series
+releaseDate: 1997-01-01
+editions:
+  unlimited: Normal
+items:
+  police-cruiser-holden-16910:
+    name: Police Cruiser (Holden)
+    editions:
+      unlimited: ac590e41-63e2-4ba0-aa42-3a45dd5212cd
+    index: "1"
+    integrations:
+      hwcn: 45c7fff6-2bd3-4640-8272-467d895249a0
+    variant:
+      name: "B1: Green"
+    details:
+      castingName: Police Cruiser (Holden)
+      toolNumber: "16910"
+  rig-wrecker-16913:
+    name: Rig Wrecker
+    editions:
+      unlimited: de6987c6-296f-4594-b808-d95fc9814ec6
+    index: "3"
+    integrations:
+      hwcn: ba2156ef-fee1-45fb-a156-f82732cebf0d
+    variantOf:
+      id: 3e2149b0-df49-4fae-b970-90b46dc7ce9d
+      item: rig-wrecker-3916
+      edition: unlimited
+      generation: hw-1990
+      series: other
+    variant:
+      name: "C1: Black - Ramblin' Wrecker"
+    details:
+      castingName: Rig Wrecker
+      toolNumber: "16913"
+  school-bus-16911:
+    name: School Bus
+    editions:
+      unlimited: 2310931b-7eb1-498b-9101-7b38ce194e87
+    index: "2"
+    integrations:
+      hwcn: c4b8503f-7395-4664-b28d-3ce46297ae9e
+    variantOf:
+      id: 3c6f8a0e-ecf7-424d-9532-137410e0c7cd
+      item: school-bus-toy
+      edition: unlimited
+      generation: hw-1989
+      series: other
+    variant:
+      name: "E1: Green"
+    details:
+      castingName: School Bus
+      toolNumber: "16911"
+integrations:
+  hwcn: "191"

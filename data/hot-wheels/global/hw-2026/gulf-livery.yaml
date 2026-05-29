@@ -1,0 +1,82 @@
+name: Hot Wheels Gulf Livery
+releaseDate: 2026-01-01
+editions:
+  unlimited: Normal
+items:
+  1997-mclaren-f1-gtr-jhw43:
+    name: 1997 McLaren F1 GTR
+    editions:
+      unlimited: 3336ed0c-e6b5-4322-b551-d1f52669db0e
+    index: "1"
+    integrations:
+      hwcn: 3d153c71-d42f-462e-b96c-e93422208f29
+      hdbid: "2135041"
+    variant:
+      name: "A1: MF Blue - Gulf Diorama"
+    details:
+      castingName: 1997 McLaren F1 GTR
+      toolNumber: JHW43
+  fleet-street-jhw43:
+    name: Fleet Street
+    editions:
+      unlimited: 36c91ab1-ce4c-4e36-999f-2ebe19924512
+    index: "2"
+    integrations:
+      hwcn: f5e788e2-6981-49dd-bbd2-e57de4dce560
+    variantOf:
+      id: 17380b14-d39f-4a42-a1b9-b6c3c4144088
+      item: fleet-street-toy
+      edition: unlimited
+      generation: hw-2022
+      series: other
+    variant:
+      name: "M1: Blue - Gulf Diorama"
+    details:
+      castingName: Fleet Street
+      toolNumber: JHW43
+  ford-gt40-jhw43:
+    name: Ford GT40
+    editions:
+      unlimited: 831abc99-36b9-4f48-9427-85745ea621af
+    index: "3"
+    integrations:
+      hwcn: 74dbb338-8bee-4937-a2a9-6f921ee31356
+    variantOf:
+      id: e85fdb77-0bda-43db-a95c-0748819b7107
+      item: ford-gt40-21068
+      edition: unlimited
+      generation: hw-1999
+      series: first-editions
+    variant:
+      name: "AS1: Light Blue - Gulf Diorama"
+    details:
+      castingName: Ford GT40
+      toolNumber: JHW43
+  ford-rs200-jjm43:
+    edition: unlimited
+    referenceOf:
+      id: 49b69699-789a-44a7-9aa9-3988ce5bbc7c
+      item: ford-rs200-jjm43
+      edition: unlimited
+      generation: hw-2026
+      series: case-b
+  ford-transit-super-van-jhw43:
+    name: Ford Transit Super Van
+    editions:
+      unlimited: 4154cee5-cb82-4f95-8d70-712afa4472f9
+    index: "4"
+    integrations:
+      hwcn: 9109c137-5c9a-44ff-b18e-af535c522bea
+    variantOf:
+      id: da912f32-b73f-4c5c-9098-0c06766d30ed
+      item: ford-transit-super-van-cfn60
+      edition: unlimited
+      generation: hw-2015
+      series: heritage-series-real-rider
+    variant:
+      name: "O1: Blue - Gulf Diorama"
+    details:
+      castingName: Ford Transit Super Van
+      toolNumber: JHW43
+integrations:
+  hwcn: "1835"

@@ -1,0 +1,41 @@
+name: Hot Wheels HWC Spoilers
+releaseDate: 2017-01-01
+editions:
+  unlimited: Normal
+items:
+  boss-hoss-retooled-dmh88:
+    edition: unlimited
+    referenceOf:
+      id: 91c47b19-6654-403d-b6d8-14c162e31802
+      item: boss-hoss-retooled-dmh88
+      edition: unlimited
+      generation: hw-2017
+      series: rlc-cars
+  heavy-chevy-retool-dmh96:
+    name: Heavy Chevy (retool)
+    editions:
+      unlimited: 18afc951-3be5-469f-acfb-bd919cdbbf85
+    index: "1"
+    integrations:
+      hwcn: fa3ae58e-5571-4fd0-8393-57a26c1e3bb6
+    variantOf:
+      id: 1dc90eff-80c1-4ab5-8fbe-f31588696736
+      item: heavy-chevy-retool-19322
+      edition: unlimited
+      generation: hw-1998
+      series: other
+    variant:
+      name: "A1: Red"
+    details:
+      castingName: Heavy Chevy (retool)
+      toolNumber: DMH96
+  king-kuda-retool-dmh99:
+    edition: unlimited
+    referenceOf:
+      id: 5485d709-4e48-41ae-b704-877b73bc72ad
+      item: king-kuda-retool-dmh99
+      edition: unlimited
+      generation: hw-2017
+      series: rlc-cars
+integrations:
+  hwcn: "312"

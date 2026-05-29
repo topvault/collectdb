@@ -1,0 +1,113 @@
+name: Hot Wheels HW Haulers
+releaseDate: 2023-01-01
+editions:
+  unlimited: Normal
+items:
+  baja-hauler-open-container-hck25:
+    name: Baja Hauler (Open Container)
+    editions:
+      unlimited: 51174a6f-875b-400f-8417-fc62b76d3240
+    index: "1"
+    integrations:
+      hwcn: 7f9970ae-46e1-4ecb-9213-bccba13bc5ab
+    variant:
+      name: "A1: Dark olive"
+    details:
+      castingName: Baja Hauler (Open Container)
+      toolNumber: HCK25
+  baja-hauler-open-container-hkj98:
+    name: Baja Hauler (Open Container)
+    editions:
+      unlimited: a445995b-f220-4b1a-a0e0-bd074fca676e
+    index: "2"
+    integrations:
+      hwcn: a0142c14-8c9d-4ac9-b705-628779a83c99
+    variantOf:
+      id: 51174a6f-875b-400f-8417-fc62b76d3240
+      item: baja-hauler-open-container-hck25
+      edition: unlimited
+      generation: hw-2023
+      series: hw-haulers
+    variant:
+      name: "B1: Gold"
+    details:
+      castingName: Baja Hauler (Open Container)
+      toolNumber: HKJ98
+  fast-bed-hauler-hkh24:
+    edition: unlimited
+    referenceOf:
+      id: 6b83b8c4-906b-4ff5-8bd0-2ee8bfd40229
+      item: fast-bed-hauler-hkh24
+      edition: unlimited
+      generation: hw-2023
+      series: case-a
+  fast-bed-hauler-hkj97:
+    edition: unlimited
+    referenceOf:
+      id: c65f84f3-a887-451c-94d2-fb863141a8a4
+      item: fast-bed-hauler-hkj97
+      edition: unlimited
+      generation: hw-2023
+      series: case-n
+  hiway-hauler-2-hkh27:
+    edition: unlimited
+    referenceOf:
+      id: 911bc99b-2196-47cb-8b9a-6c199d952a33
+      item: hiway-hauler-2-hkh27
+      edition: unlimited
+      generation: hw-2023
+      series: case-f
+  hiway-hauler-2-hkk00:
+    edition: unlimited
+    referenceOf:
+      id: ed9e5ce4-8464-4ce8-93d0-4acdd57048ad
+      item: hiway-hauler-2-hkk00
+      edition: unlimited
+      generation: hw-2023
+      series: case-m
+  mercedes-benz-unimog-1300-hkh26:
+    name: Mercedes Benz Unimog 1300
+    editions:
+      unlimited: 4e9510ca-d672-4b1e-9849-105300131d13
+    index: "3"
+    integrations:
+      hwcn: 8de386a7-c875-45fb-bd0a-5449237ff4e1
+    variantOf:
+      id: 87b6ae3b-c864-4696-b953-7ae4e3d3afdf
+      item: mercedes-benz-unimog-1300-fyb55
+      edition: unlimited
+      generation: hw-2019
+      series: hw-hot-trucks
+    variant:
+      name: "G1: Brown"
+    details:
+      castingName: Mercedes Benz Unimog 1300
+      toolNumber: HKH26
+  mercedes-benz-unimog-1300-hkj99:
+    name: Mercedes Benz Unimog 1300
+    editions:
+      unlimited: 33b96f09-c58b-4149-9e0f-0fde6e7e84c5
+    index: "4"
+    integrations:
+      hwcn: 507728c0-0591-4bda-8452-cca0d5e73b39
+    variantOf:
+      id: 87b6ae3b-c864-4696-b953-7ae4e3d3afdf
+      item: mercedes-benz-unimog-1300-fyb55
+      edition: unlimited
+      generation: hw-2019
+      series: hw-hot-trucks
+    variant:
+      name: "H1: Blue"
+    details:
+      castingName: Mercedes Benz Unimog 1300
+      toolNumber: HKJ99
+  raijan-express-hkk98:
+    edition: unlimited
+    referenceOf:
+      id: 26f3c5cf-cef8-4cbc-82c3-45bba6c31705
+      item: raijan-express-hkk98
+      edition: unlimited
+      generation: hw-2023
+      series: case-a
+integrations:
+  hwcn: "1538"

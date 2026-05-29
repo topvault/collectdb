@@ -1,0 +1,105 @@
+name: Hot Wheels HW Robots
+releaseDate: 2018-01-01
+editions:
+  unlimited: Normal
+items:
+  bot-wheels-fjw01:
+    name: Bot Wheels
+    editions:
+      unlimited: c8de99a1-6978-484e-ad3d-d8adf6b8a188
+    index: "6"
+    integrations:
+      hwcn: 0b32fad8-08c6-4365-8d4b-f896934baea0
+    variant:
+      name: "A1: Silver"
+    details:
+      castingName: Bot Wheels
+      toolNumber: FJW01
+  spector-fjx29:
+    name: Spector
+    editions:
+      unlimited: 4700e2e6-5636-4f3a-81de-1224ed39c519
+    index: "3"
+    integrations:
+      hwcn: 67dcefdd-d8dc-431b-85ce-49661a89d633
+    variantOf:
+      id: a6c08e13-21a4-4398-b7fe-d2ac4ccc1b00
+      item: spector-l9917
+      edition: unlimited
+      generation: hw-2008
+      series: first-editions
+    variant:
+      name: "D1: Purple"
+    details:
+      castingName: Spector
+      toolNumber: FJX29
+  track-hammer-fjx27:
+    name: Track Hammer
+    editions:
+      unlimited: d19ec93d-d1f2-47b9-8a2d-0a90a88af3af
+    index: "1"
+    integrations:
+      hwcn: 96e5abda-19ba-4e72-ab99-5cda95312bd8
+    variantOf:
+      id: bcf714cd-48b7-4461-bc96-3aa84ec3f0ff
+      item: track-hammer-dvc07
+      edition: unlimited
+      generation: hw-2017
+      series: hw-glow-wheels
+    variant:
+      name: "B1: black"
+    details:
+      castingName: Track Hammer
+      toolNumber: FJX27
+  turbot-fjx28:
+    name: Turbot
+    editions:
+      unlimited: 21ec3e21-1651-4fe4-bd1e-7fa88e8caef9
+    index: "2"
+    integrations:
+      hwcn: a42a50d5-2aa2-46b3-8890-6b4596e98fa9
+      hdbid: "380290"
+    variantOf:
+      id: c3af9c4c-a888-46df-9aa3-ca803515e9ae
+      item: turbot-dhp31
+      edition: unlimited
+      generation: hw-2016
+      series: street-beasts
+    variant:
+      name: "E1: Orange"
+    details:
+      castingName: Turbot
+      toolNumber: FJX28
+  zombot-retool-fjx30:
+    name: Zombot (retool)
+    editions:
+      unlimited: 03069989-bc14-472f-b07b-80687b8f2552
+    index: "4"
+    integrations:
+      hwcn: d20d32f7-5132-4787-9fff-6fad679f5b4b
+      hdbid: "369301"
+    variant:
+      name: "B1: Blue"
+    details:
+      castingName: Zombot (retool)
+      toolNumber: FJX30
+  zombot-retool-fkb32:
+    name: Zombot (retool)
+    editions:
+      unlimited: ef1fc3dc-4ac9-425d-a141-591c2675df9f
+    index: "5"
+    integrations:
+      hwcn: f0d5bcfc-71e5-4d4c-b5f7-d3d42c150be9
+    variantOf:
+      id: 03069989-bc14-472f-b07b-80687b8f2552
+      item: zombot-retool-fjx30
+      edition: unlimited
+      generation: hw-2018
+      series: hw-robots
+    variant:
+      name: "A1: Red - Treasure Hunt"
+    details:
+      castingName: Zombot (retool)
+      toolNumber: FKB32
+integrations:
+  hwcn: "751"

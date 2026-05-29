@@ -1,0 +1,101 @@
+name: Hot Wheels Jay Leno's Garage
+releaseDate: 2022-01-01
+editions:
+  unlimited: Normal
+items:
+  66-chevrolet-corvair-yenko-stinger-hcj84:
+    name: "'66 Chevrolet Corvair Yenko Stinger"
+    editions:
+      unlimited: a01b256c-dbfd-421a-9222-c04a5a08cb5b
+    index: "3"
+    integrations:
+      hwcn: a1385f20-72f6-4c60-9c74-78f2b4f97c09
+      hdbid: "827383"
+    variant:
+      name: "A1: White - Jay Leno's Garage"
+    details:
+      castingName: "'66 Chevrolet Corvair Yenko Stinger"
+      toolNumber: HCJ84
+  jay-leno-tank-car-hcj85:
+    name: Jay Leno Tank Car
+    editions:
+      unlimited: cf05f94c-ded0-47f7-98b4-e35984a73ab9
+    index: "5"
+    integrations:
+      hwcn: 7b21021e-8416-41f8-ac1b-e604d612a518
+      hdbid: "827384"
+    variant:
+      name: "A1: Zamac - Jay Leno's Garage"
+    details:
+      castingName: Jay Leno Tank Car
+      toolNumber: HCJ85
+  lamborghini-countach-lp-5000-qv-hck09:
+    name: Lamborghini Countach LP 5000 QV
+    editions:
+      unlimited: 367fcd2c-24a7-433e-bb0d-9c266a4b8449
+    index: "4"
+    integrations:
+      hwcn: 76899d59-3758-4faf-b4fc-091049269d6a
+      hdbid: "827385"
+    variant:
+      name: "A1: Red - Jay Leno's Garage"
+    details:
+      castingName: Lamborghini Countach LP 5000 QV
+      toolNumber: HCK09
+  lamborghini-countach-lp-5000-qv-hck10:
+    name: Lamborghini Countach LP 5000 QV
+    editions:
+      unlimited: f3d2d931-9e05-463a-82bb-9b87b9ea9e87
+    index: "6"
+    integrations:
+      hwcn: 547fddb6-2dc7-41dd-8d32-fe00606ca19b
+    variantOf:
+      id: 367fcd2c-24a7-433e-bb0d-9c266a4b8449
+      item: lamborghini-countach-lp-5000-qv-hck09
+      edition: unlimited
+      generation: hw-2022
+      series: jay-leno-s-garage
+    variant:
+      name: "B1: Black - Jay Leno's Garage, Chase"
+    details:
+      castingName: Lamborghini Countach LP 5000 QV
+      toolNumber: HCK10
+  mclaren-f1-hck08:
+    name: McLaren F1
+    editions:
+      unlimited: da8350a6-0c3a-4344-9ec5-5e11724877c5
+    index: "2"
+    integrations:
+      hwcn: 65792445-dbf1-43e5-aa40-21e973138654
+    variantOf:
+      id: 30e51643-60c2-44d0-b8fa-d07e631547eb
+      item: mclaren-f1-grx57
+      edition: unlimited
+      generation: hw-2021
+      series: new-models
+    variant:
+      name: "D1: Black - Jay Leno's Garage"
+    details:
+      castingName: McLaren F1
+      toolNumber: HCK08
+  mercedes-benz-300-sl-hck07:
+    name: Mercedes Benz 300 SL
+    editions:
+      unlimited: e28180de-df82-465b-9387-6a01ddea2001
+    index: "1"
+    integrations:
+      hwcn: 9191a361-471c-439f-8beb-40c76b9b1dc4
+      hdbid: "792387"
+    variantOf:
+      id: 0d618c99-47e5-4805-81a0-ed0238992c74
+      item: mercedes-benz-300-sl-toy
+      edition: unlimited
+      generation: hw-2020
+      series: other
+    variant:
+      name: "E1: Red - Jay Leno's Garage"
+    details:
+      castingName: Mercedes Benz 300 SL
+      toolNumber: HCK07
+integrations:
+  hwcn: "1505"
