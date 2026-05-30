@@ -38,6 +38,7 @@ Please make copies of these templates if you would like to manage your own data.
 
 <!-- google-sheets-links:start -->
 - [Dragon Ball Cards](https://docs.google.com/spreadsheets/d/1peAlf56kChT4OUbtKQ2MbFpeCyELjaNqmLRWGTdd0Hw/edit)
+- [Hot Wheels](https://docs.google.com/spreadsheets/d/10KLSyVGs3cvzCM2eWyXVqChl1p0PzzHWdXjO95HiAqc/edit)
 - [MTG Cards](https://docs.google.com/spreadsheets/d/1YC2JOMRXd7N-c8A002c1JljG4hX4JSQ5CoVlxRKNfEo/edit)
 - [Pokémon Cards](https://docs.google.com/spreadsheets/d/1ivDMhlcRWSiy9kPMLprjWX7-uSK-0CVOGWhDgc__FJk/edit)
 <!-- google-sheets-links:end -->
