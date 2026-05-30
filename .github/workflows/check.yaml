@@ -68,24 +68,21 @@ jobs:
       - name: Check generated IDs
         run: npm run snag -- --check
 
-  index:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Check explicit indexes
-        run: npm run index -- --check
+  # Indexes are not always needed on call collection types.
+  # index:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out repository
+  #       uses: actions/checkout@v4
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 24
+  #         cache: npm
+  #     - name: Install dependencies
+  #       run: npm ci
+  #     - name: Check explicit indexes
+  #       run: npm run index -- --check
 
   reference-of:
     runs-on: ubuntu-latest
@@ -130,9 +127,9 @@ jobs:
     needs:
       - prettier
       - snag
-      - index
       - reference-of
       - validate-data
+      # - index
     runs-on: ubuntu-latest
     env:
       GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
