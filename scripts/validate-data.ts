@@ -28,6 +28,35 @@ type ValidationWarning = {
 type ValidationResult = {
     failures: ValidationFailure[];
     warnings: ValidationWarning[];
+    seriesSemanticData?: SeriesSemanticData;
+};
+
+type IndexedItemId = {
+    id: string;
+    filePath: string;
+    location: string;
+    generation: string;
+    series: string;
+    item: string;
+    group?: string;
+    edition?: string;
+};
+
+type CollectedReference = {
+    id: string;
+    filePath: string;
+    location: string;
+    kind: 'referenceOf' | 'variantOf';
+    generation?: string;
+    series?: string;
+    item?: string;
+    group?: string;
+    edition?: string;
+};
+
+type SeriesSemanticData = {
+    itemIds: IndexedItemId[];
+    references: CollectedReference[];
 };
 
 type ValidationCollection = {
@@ -327,6 +356,263 @@ function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
     return failures;
 }
 
+function getOptionalString(record: Record<string, unknown>, key: string): string | undefined {
+    const value = record[key];
+    return typeof value === 'string' && value.length > 0 ? value : undefined;
+}
+
+function getSeriesKeysFromFilePath(filePath: string): { generation: string; series: string } {
+    const seriesKey = getBaseName(path.basename(filePath));
+
+    if (seriesKey.includes(':')) {
+        const separatorIndex = seriesKey.indexOf(':');
+        return {
+            generation: seriesKey.slice(0, separatorIndex),
+            series: seriesKey.slice(separatorIndex + 1),
+        };
+    }
+
+    return {
+        generation: path.basename(path.dirname(filePath)),
+        series: seriesKey,
+    };
+}
+
+function getReferenceValue(value: unknown): Omit<CollectedReference, 'filePath' | 'location' | 'kind'> | null {
+    if (!isRecord(value)) {
+        return null;
+    }
+
+    const id = getOptionalString(value, 'id');
+    if (!id) {
+        return null;
+    }
+
+    return {
+        id,
+        generation: getOptionalString(value, 'generation'),
+        series: getOptionalString(value, 'series'),
+        item: getOptionalString(value, 'item'),
+        group: getOptionalString(value, 'group'),
+        edition: getOptionalString(value, 'edition'),
+    };
+}
+
+function collectItemSemanticData(
+    filePath: string,
+    itemPath: string,
+    itemKey: string,
+    itemValue: unknown,
+    generation: string,
+    series: string,
+    itemIds: IndexedItemId[],
+    references: CollectedReference[],
+    group?: string
+): void {
+    if (!isRecord(itemValue)) {
+        return;
+    }
+
+    const editions = itemValue.editions;
+    if (isRecord(editions)) {
+        for (const [editionKey, editionId] of Object.entries(editions)) {
+            if (typeof editionId !== 'string' || editionId.length === 0) {
+                continue;
+            }
+
+            itemIds.push({
+                id: editionId,
+                filePath,
+                location: `${itemPath}.editions.${editionKey}`,
+                generation,
+                series,
+                item: itemKey,
+                ...(group ? { group } : {}),
+                edition: editionKey,
+            });
+        }
+    }
+
+    const itemId = getOptionalString(itemValue, 'id');
+    if (itemId) {
+        itemIds.push({
+            id: itemId,
+            filePath,
+            location: `${itemPath}.id`,
+            generation,
+            series,
+            item: itemKey,
+            ...(group ? { group } : {}),
+        });
+    }
+
+    const referenceOf = getReferenceValue(itemValue.referenceOf);
+    if (referenceOf) {
+        references.push({
+            ...referenceOf,
+            filePath,
+            location: `${itemPath}.referenceOf`,
+            kind: 'referenceOf',
+        });
+    }
+
+    const variantOf = getReferenceValue(itemValue.variantOf);
+    if (variantOf) {
+        references.push({
+            ...variantOf,
+            filePath,
+            location: `${itemPath}.variantOf`,
+            kind: 'variantOf',
+        });
+    }
+}
+
+function collectSeriesSemanticData(filePath: string, parsed: unknown): SeriesSemanticData {
+    if (!isRecord(parsed)) {
+        return { itemIds: [], references: [] };
+    }
+
+    const { generation, series } = getSeriesKeysFromFilePath(filePath);
+    const itemIds: IndexedItemId[] = [];
+    const references: CollectedReference[] = [];
+
+    const sections = [
+        ['items', parsed.items],
+        ['products', parsed.products],
+    ] as const;
+
+    for (const [sectionName, sectionValue] of sections) {
+        if (!isRecord(sectionValue)) {
+            continue;
+        }
+
+        for (const [itemKey, itemValue] of Object.entries(sectionValue)) {
+            collectItemSemanticData(filePath, `${sectionName}.${itemKey}`, itemKey, itemValue, generation, series, itemIds, references);
+        }
+    }
+
+    if (isRecord(parsed.additional)) {
+        for (const [groupKey, groupValue] of Object.entries(parsed.additional)) {
+            if (!isRecord(groupValue) || !isRecord(groupValue.items)) {
+                continue;
+            }
+
+            for (const [itemKey, itemValue] of Object.entries(groupValue.items)) {
+                collectItemSemanticData(
+                    filePath,
+                    `additional.${groupKey}.items.${itemKey}`,
+                    itemKey,
+                    itemValue,
+                    generation,
+                    series,
+                    itemIds,
+                    references,
+                    groupKey
+                );
+            }
+        }
+    }
+
+    return { itemIds, references };
+}
+
+function formatIndexedItemId(definition: IndexedItemId): string {
+    const parts = [`${definition.generation}:${definition.series}`, `item ${definition.item}`];
+
+    if (definition.group) {
+        parts.push(`group ${definition.group}`);
+    }
+
+    if (definition.edition) {
+        parts.push(`edition ${definition.edition}`);
+    }
+
+    parts.push(`${path.relative(process.cwd(), definition.filePath)}:${definition.location}`);
+
+    return parts.join(', ');
+}
+
+function collectGlobalSeriesSemanticFailures(seriesEntries: SeriesSemanticData[]): ValidationFailure[] {
+    const failures: ValidationFailure[] = [];
+    const definitionsById = new Map<string, IndexedItemId[]>();
+
+    for (const entry of seriesEntries) {
+        for (const itemId of entry.itemIds) {
+            const definitions = definitionsById.get(itemId.id) ?? [];
+            definitions.push(itemId);
+            definitionsById.set(itemId.id, definitions);
+        }
+    }
+
+    for (const [itemId, definitions] of definitionsById) {
+        if (definitions.length <= 1) {
+            continue;
+        }
+
+        const locations = definitions.map(formatIndexedItemId).join('; ');
+        for (const definition of definitions) {
+            failures.push({
+                filePath: definition.filePath,
+                message: `${definition.location}: item id '${itemId}' is defined multiple times: ${locations}`,
+            });
+        }
+    }
+
+    for (const entry of seriesEntries) {
+        for (const reference of entry.references) {
+            const definitions = definitionsById.get(reference.id);
+
+            if (!definitions || definitions.length === 0) {
+                failures.push({
+                    filePath: reference.filePath,
+                    message: `${reference.location}: ${reference.kind} references unknown item id '${reference.id}'.`,
+                });
+                continue;
+            }
+
+            if (definitions.length > 1) {
+                failures.push({
+                    filePath: reference.filePath,
+                    message: `${reference.location}: ${reference.kind} references ambiguous item id '${reference.id}': ${definitions
+                        .map(formatIndexedItemId)
+                        .join('; ')}`,
+                });
+                continue;
+            }
+
+            const [definition] = definitions;
+            const mismatches = [
+                reference.generation && reference.generation !== definition.generation
+                    ? `generation expected '${definition.generation}' but found '${reference.generation}'`
+                    : null,
+                reference.series && reference.series !== definition.series
+                    ? `series expected '${definition.series}' but found '${reference.series}'`
+                    : null,
+                reference.item && reference.item !== definition.item
+                    ? `item expected '${definition.item}' but found '${reference.item}'`
+                    : null,
+                reference.group && reference.group !== definition.group
+                    ? `group expected '${definition.group ?? '<none>'}' but found '${reference.group}'`
+                    : null,
+                reference.edition && reference.edition !== definition.edition
+                    ? `edition expected '${definition.edition ?? '<none>'}' but found '${reference.edition}'`
+                    : null,
+            ].filter((value): value is string => value !== null);
+
+            if (mismatches.length === 0) {
+                continue;
+            }
+
+            failures.push({
+                filePath: reference.filePath,
+                message: `${reference.location}: ${reference.kind} metadata does not match item id '${reference.id}' (${formatIndexedItemId(definition)}): ${mismatches.join(', ')}`,
+            });
+        }
+    }
+
+    return failures;
+}
+
 async function collectCollectibleTypeRegionIssues(filePath: string, parsed: unknown): Promise<string[]> {
     if (!isRecord(parsed) || !Array.isArray(parsed.regions)) {
         return [];
@@ -396,6 +682,7 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
 
     const parsed = document.toJS();
     const result = target.schema.safeParse(parsed);
+    const seriesSemanticData = target.kind === 'series-items' ? collectSeriesSemanticData(target.filePath, parsed) : undefined;
 
     if (result.success) {
         const semanticFailures = [
@@ -407,10 +694,10 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
         }));
 
         if (semanticFailures.length === 0) {
-            return { failures: [], warnings: [] };
+            return { failures: [], warnings: [], ...(seriesSemanticData ? { seriesSemanticData } : {}) };
         }
 
-        return { failures: semanticFailures, warnings: [] };
+        return { failures: semanticFailures, warnings: [], ...(seriesSemanticData ? { seriesSemanticData } : {}) };
     }
 
     return {
@@ -449,12 +736,19 @@ async function main(): Promise<void> {
     const targets = collection.targets;
     const failures: ValidationFailure[] = [...collection.failures];
     const warnings: ValidationWarning[] = [];
+    const seriesEntries: SeriesSemanticData[] = [];
 
     for (const target of targets) {
         const result = await validateFile(target);
         failures.push(...result.failures);
         warnings.push(...result.warnings);
+
+        if (result.seriesSemanticData) {
+            seriesEntries.push(result.seriesSemanticData);
+        }
     }
+
+    failures.push(...collectGlobalSeriesSemanticFailures(seriesEntries));
 
     if (warnings.length > 0) {
         printGroupedMessages(warnings, message => console.warn(message));
