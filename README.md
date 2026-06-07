@@ -213,6 +213,13 @@ This allows the data model to express print, finish, packaging, and cross-series
 A variant is a discretely and distinctly different item to collect.
 A reference is a placeholder, it is the same printed item but included in multiple sets.
 
+An item or variant can also carry an optional `remark` that flags it as a notable,
+searchable category rather than an ordinary color, finish, or treatment variation.
+Remark slugs follow a category-prefix convention where the segment before the first
+`-` is the category (`error`, `test`, or `promo`), so a search for `error` matches
+every error remark while the full slug narrows it (for example `error-tampo`). The
+full vocabulary is defined by `RemarkSchema` in `schema/Schema.ts`.
+
 ### Stable Opaque Identifiers
 
 Every item identity is represented by a stable, opaque identifier.

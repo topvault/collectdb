@@ -74,7 +74,30 @@ const VariantDescriptor = z.object({
     edition: z.string().optional(), // If the variant is limited to a specific edition.
 });
 
-const VariantRemarkSchema = z.enum(['recurring-obstruction']);
+// A Remark flags an item or variant as a notable, searchable category of
+// collectible (errors, pre-production artifacts, promotional distributions).
+// Values follow a category-prefix convention: the segment before the first "-" is
+// the category. A substring search for the category (e.g. "error") matches every
+// remark in that family, while the full slug narrows it (e.g. "error-tampo").
+// When extending this list, keep the first segment to one of: error, test, promo.
+const RemarkSchema = z.enum([
+    // error-* — unintended production defects.
+    'error-recurring-obstruction', // Consistent obstruction/ink mark across the run (cigar, stamp-slash, dot).
+    'error-text', // Wrong/missing/misspelled text, HP/stage/Pokédex number, copyright.
+    'error-holo', // Holo applied incorrectly: non-holo error, texture error, disco holo, artwork holo error.
+    'error-tampo', // (Hot Wheels) Missing/wrong tampo, colors reversed.
+    'error-casting', // (Hot Wheels) Wheel/vent/assembly/casting defects.
+    'error-cut', // Miscut / off-center.
+    'error-orientation', // Upside-down / inverted / wrong-back.
+    'error-other', // Generic, unspecified error.
+    // test-* — pre-production / non-retail artifacts.
+    'test-prototype', // Prototypes / pre-production.
+    'test-print', // Test prints / test sheets.
+    'test-proof', // Proofs (e.g. "Victory Proof").
+    'test-sample', // Production samples / sample sets.
+    // promo-* — promotional distribution.
+    'promo-prerelease', // Prerelease / staff stamps.
+]);
 
 const ScalarIntegrationsSchema = z
     .object({
@@ -110,7 +133,7 @@ const VariantSchema = VariantDescriptor.extend({
     description: z.string().optional(),
     index: z.union([z.string(), z.number()]).optional(),
     links: z.record(z.string(), z.string()).optional(),
-    remark: VariantRemarkSchema.optional(),
+    remark: RemarkSchema.optional(),
     // Edge case to consider, an edition should not be named "products" or "additional".
     // For "short hand" an edition can be a name of the editionId to name.
     authenticators: z
@@ -172,6 +195,7 @@ const DiscreteItemSchema = z
         // If there is no rarity found then a default low value is used.
         rarityScore: RarityScoreSchema.transform(val => val as RarityScore).optional(),
         variant: VariantDescriptor.optional(), // If this item should have a variant-label.
+        remark: RemarkSchema.optional(), // Flags a notable category (error/test/promo) for bare and additional items.
         variantOf: ReferenceOfSchema.optional(), // If this item is a variant of another item.
         variants: z.record(z.string(), VariantSchema).optional(), // Define additional variants.
         details: z.record(z.string(), z.unknown()).optional(),
