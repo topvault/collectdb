@@ -30,6 +30,7 @@ items:
             https://www.elitefourum.com/t/guide-to-understanding-fossil-aerodactyl-1-62-variants/30832
         edition: 1st-edition
         id: 06530329-fa2b-46e6-bc2f-64406479816e
+        remark: promo-prerelease
       prerelease-gold:
         name: Prerelease (UK Gold Stamp)
         description: >-
@@ -40,6 +41,7 @@ items:
         edition: 1st-edition
         rarityScore: 5
         id: d1aab003-dd09-4347-8af8-d8cfb5a405af
+        remark: promo-prerelease
     editions:
       1st-edition: 5178cb65-430e-4c83-9b1f-a1f5feaf60db
       unlimited: cfc09088-bc13-477e-9c3e-34c9ed1a91e6
@@ -132,7 +134,7 @@ items:
       cigar-error:
         name: 1st Edition Cigar Error
         edition: 1st-edition
-        remark: recurring-obstruction
+        remark: error-print-obstruction
         description: This card has a printing error.
         id: 90c59411-e043-4ae3-828b-4c2382cdc256
     details:
@@ -161,6 +163,7 @@ items:
           "Don t" with a space instead of an apostrophe. It likely comes from an
           early print run from the UK in mid-2000.
         id: fdee549e-c937-4e12-9443-c79056ddca2b
+        remark: error-design
     details:
       illustrator: Ken Sugimori
       rarity: Rare
@@ -298,6 +301,9 @@ items:
       The Fossil Unlimited edition commonly has an error where the evolution box
       outline does not contain holofoil. All Zapdos 1st Edition cards have the
       error.
+    variant:
+      Name: Evolution Box Error
+    remark: error-design
     editions:
       1st-edition: eb31c1cc-34e1-4182-992f-b9b7d087d2a3
       unlimited: e3168d92-5e8a-4c50-af23-06489c517642
@@ -973,7 +979,7 @@ items:
     variants:
       stamp-slash-error:
         name: Stamp Slash Error
-        remark: recurring-obstruction
+        remark: error-print-obstruction
         description: The Fossil stamp ink is partially missing (appearing like it was
           slashed).
         id: 286bfaff-17f5-44ae-885e-39c19b04c67b

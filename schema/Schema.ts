@@ -54,6 +54,13 @@ export const RegionSchema = z.object({
     generations: z.record(z.string(), GenerationSchema).optional(),
 });
 
+export const RemarkSchema = z
+    .object({
+        name: z.string().min(3),
+        description: z.string(),
+    })
+    .strict();
+
 // A collectible type is the top-level category for collectibles.
 // It is made up of one or more regions (or languages) and they must be explicitly listed.
 // Each region maps to a directory containing a valid RegionSchema defined in _region.yaml.
@@ -64,6 +71,11 @@ export const CollectibleTypeSchema = z
         releaseDate: z.union([z.string(), z.date()]).optional(),
         description: z.string().optional(),
         regions: z.array(z.string()).min(1),
+
+        // The remarks this collectible type recognizes: each remark slug mapped to a
+        // friendly name and description. The data validator asserts every remark used
+        // by an item or variant in this type is declared here. See RemarkSchema below.
+        remarks: z.record(z.string(), RemarkSchema).optional(),
     })
     .strict();
 
@@ -73,31 +85,6 @@ const VariantDescriptor = z.object({
     links: z.record(z.string(), z.string()).optional(),
     edition: z.string().optional(), // If the variant is limited to a specific edition.
 });
-
-// A Remark flags an item or variant as a notable, searchable category of
-// collectible (errors, pre-production artifacts, promotional distributions).
-// Values follow a category-prefix convention: the segment before the first "-" is
-// the category. A substring search for the category (e.g. "error") matches every
-// remark in that family, while the full slug narrows it (e.g. "error-tampo").
-// When extending this list, keep the first segment to one of: error, test, promo.
-const RemarkSchema = z.enum([
-    // error-* — unintended production defects.
-    'error-recurring-obstruction', // Consistent obstruction/ink mark across the run (cigar, stamp-slash, dot).
-    'error-text', // Wrong/missing/misspelled text, HP/stage/Pokédex number, copyright.
-    'error-holo', // Holo applied incorrectly: non-holo error, texture error, disco holo, artwork holo error.
-    'error-tampo', // (Hot Wheels) Missing/wrong tampo, colors reversed.
-    'error-casting', // (Hot Wheels) Wheel/vent/assembly/casting defects.
-    'error-cut', // Miscut / off-center.
-    'error-orientation', // Upside-down / inverted / wrong-back.
-    'error-other', // Generic, unspecified error.
-    // test-* — pre-production / non-retail artifacts.
-    'test-prototype', // Prototypes / pre-production.
-    'test-print', // Test prints / test sheets.
-    'test-proof', // Proofs (e.g. "Victory Proof").
-    'test-sample', // Production samples / sample sets.
-    // promo-* — promotional distribution.
-    'promo-prerelease', // Prerelease / staff stamps.
-]);
 
 const ScalarIntegrationsSchema = z
     .object({
@@ -133,7 +120,7 @@ const VariantSchema = VariantDescriptor.extend({
     description: z.string().optional(),
     index: z.union([z.string(), z.number()]).optional(),
     links: z.record(z.string(), z.string()).optional(),
-    remark: RemarkSchema.optional(),
+    remark: z.string().optional(), // A remark 'slug' defined by the collectible type.
     // Edge case to consider, an edition should not be named "products" or "additional".
     // For "short hand" an edition can be a name of the editionId to name.
     authenticators: z
@@ -195,7 +182,7 @@ const DiscreteItemSchema = z
         // If there is no rarity found then a default low value is used.
         rarityScore: RarityScoreSchema.transform(val => val as RarityScore).optional(),
         variant: VariantDescriptor.optional(), // If this item should have a variant-label.
-        remark: RemarkSchema.optional(), // Flags a notable category (error/test/promo) for bare and additional items.
+        remark: z.string().optional(), // A remark 'slug' defined by the collectible type.
         variantOf: ReferenceOfSchema.optional(), // If this item is a variant of another item.
         variants: z.record(z.string(), VariantSchema).optional(), // Define additional variants.
         details: z.record(z.string(), z.unknown()).optional(),

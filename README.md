@@ -217,8 +217,27 @@ An item or variant can also carry an optional `remark` that flags it as a notabl
 searchable category rather than an ordinary color, finish, or treatment variation.
 Remark slugs follow a category-prefix convention where the segment before the first
 `-` is the category (`error`, `test`, or `promo`), so a search for `error` matches
-every error remark while the full slug narrows it (for example `error-tampo`). The
-full vocabulary is defined by `RemarkSchema` in `schema/Schema.ts`.
+every error remark while the full slug narrows it (for example `error-tampo`).
+
+Each collectible type declares the remarks it recognizes in its `_type.yaml` under a
+`remarks` map, pairing every slug with a friendly `name` and a `description`:
+
+```yaml
+remarks:
+  error-tampo:
+    name: Tampo Error
+    description: Missing, wrong, or reversed tampo (printed paint or decal).
+  test-prototype:
+    name: Prototype
+    description: Prototype or pre-production piece not released at retail.
+```
+
+**Adding a new remark type.** Add the slug with its `name` and `description` to the
+`remarks` map in the relevant `_type.yaml`, keeping the first segment to one of `error`,
+`test`, or `promo`, then apply the slug to items or variants. The `remark` field itself
+is a plain string in the schema; `npm run validate:data` asserts that every remark used
+in a type's items is declared in that type's `remarks` map, so an undeclared remark fails
+validation.
 
 ### Stable Opaque Identifiers
 
@@ -276,6 +295,7 @@ The validator walks the data tree, parses YAML, and checks:
 - `_region.yaml` files against the region schema
 - referenced series files against the series schema
 - orphan series files that are not referenced by `_region.yaml`
+- that every `remark` used by an item or variant is declared in its collectible type's `remarks` map
 
 ## Formatting
 
