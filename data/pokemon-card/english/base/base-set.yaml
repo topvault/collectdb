@@ -37,6 +37,55 @@ integrations:
 links:
   Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Base_Set_(TCG)
 releaseDate: '1999-01-09'
+remarks:
+  alpha-print:
+    name: Alpha Print
+    editions: [ 1st-edition ]
+    description: >-
+      The "first" 1st edition base set print.
+      Identified with a thicker "1" for the edition stamp and a Magenta matrix at a -15 degree horizontal offset.
+  beta-print:
+    name: Beta Print
+    editions: [ 1st-edition ]
+    description: >-
+      The second print run of the 1st edition base set print.
+      These have a thin "1" in the edition stamp and use a Magenta matrix at a +15 degree horizontal offset.
+  usa1-print:
+    name: USA1 Print
+    editions: [ 1999-2000 ]
+    description: >-
+      The print run for the 1999-2000 copyright cards.
+      This uses a semi-gloss finish, front border with an orange hue, and is non-reactive to UV light.
+  usa2-print:
+    name: USA2 Print
+    editions: [ 1999-2000 ]
+    description: >-
+      A print run for the 1999-2000 copyright cards.
+      This uses a normal front gloss finish and adds a singe-dot cyan border around the "HP".
+  usa3-print:
+    name: USA3 Print
+    editions: [ 1999-2000, shadowless ]
+    description: >-
+      A print run for the shadowless and 1999-2000 copyright cards.
+      This uses a normal gloss finish, enhances the yellow on the card back to be brighter, and adds a single-dot cyan border around the "HP".
+  uk1-print:
+    name: UK1 Print
+    editions: [ 1999-2000 ]
+    description:
+      A print run for the 1999-2000 copyright cards.
+      This uses a normal gloss finish, a tan hue for the front border, and lighter hues in the artwork.
+  uk2-print:
+    name: UK2 Print
+    editions: [ unlimited ]
+  aus1-print:
+    name: Australia-1 Print
+    editions: [ 1999-2000 ]
+  aus2-print:
+    name: Australia-2 Print
+    editions: [ 1999-2000 ]
+  blue-core:
+    name: Blue Core
+    editions: [ unlimited ]
 items:
   alakazam-1:
     name: Alakazam
@@ -212,12 +261,14 @@ items:
   machamp-8:
     name: Machamp
     editions:
+      1st-edition: e8c41dd9-962f-4410-9428-59920b6d5ebb
       shadowless: be4c4f34-5018-4f37-a76d-fc440e029599
       unlimited: d0121a28-31b9-4309-a544-40274c77e9a3
       1999-2000: 3f11ea74-d25e-4dec-a798-194f2d557116
     description: >
-      There is no differentiation between 1st Edition and Shadowless editions.
-      The Unlimited and 1999-2000 editions also include a 1st stamp.
+      There is subtle differentiation between 1st Edition and Shadowless editions.
+      It can be considered that the "Alpha print" with a thicker "1" in the edition stamp is a _real_ 1st edition.
+      The Unlimited and 1999-2000 editions also include a 1st Edition stamp.
     integrations:
       priceCharting:
         unlimited: machamp-1st-edition-8

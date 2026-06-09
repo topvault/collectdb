@@ -57,6 +57,7 @@ export const RegionSchema = z.object({
 export const RemarkSchema = z
     .object({
         name: z.string().min(3),
+        editions: z.array(z.string()).optional(),
         description: z.string(),
     })
     .strict();
@@ -238,6 +239,9 @@ export const SeriesSchema = z
         region: z.string().optional(),
         description: z.string().optional(),
         links: z.record(z.string(), z.string()).optional(),
+
+        // A series may add specific remarks.
+        remarks: z.record(z.string(), RemarkSchema).optional(),
 
         items: ItemMapSchema,
         products: ItemMapSchema.optional(),
