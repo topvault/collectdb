@@ -13,63 +13,42 @@ remarks:
   error-print-obstruction:
     name: Recurring Obstruction
     description: Debris, hair, or dried ink on a plate creating a recurring ink void, stain, or hickey across the run (cigar, highlighter, dot).
-  error-print-scarring:
-    name: Plate Scarring
-    description: A gouged or scratched metal plate stamping a permanent recurring mark (scratch, score line) onto every card.
-  error-print-doubling:
-    name: Press Doubling
-    description: Press cylinder shudder producing a double-impression of a layer, such as blurry doubled text or offset double frames.
-  error-print-starvation:
-    name: Ink Starvation
+  error-print-mechanical:
+    name: Mechanical Print Error
+    description: Plate physically damaged or the press slipping, such as a plate scratch or gouge stamping a recurring mark, or a doubled impression from press shudder.
+  error-ink-starvation:
+    name: Recurring Ink Starvation
     description: An ink fountain or feed line running low, leaving faded, washed-out, or miscolored print (low black/yellow ink, gray print).
-  error-print-holoshift:
-    name: Holoshift / Mask Trap
-    description: White underprint mask shifted or mis-trapped, causing holo bleed, dual-image shadows, or hollow non-holo cutouts.
+  error-ink-additional:
+    name: Additional Ink Error
+    description: Other ink-layer fault not covered by starvation, such as a shifted or mis-trapped white underprint mask (holoshift, holo bleed) or stray ink coverage.
   # Foil substrate & lamination faults.
-  error-foil-substrate:
-    name: Foil Substrate Swap
-    description: Wrong foil backing stock fed into the laminator, such as Cosmos foil on a Starlight holo run.
-  error-foil-shift:
-    name: Foil Lamination Shift
-    description: Foil film glued out of position before printing, leaving a raw unprinted cardboard edge (white line border).
-  error-foil-tunnel:
-    name: Lamination Tunnelling
-    description: Adhesive failure trapping air between foil and core, producing non-tactile parallel ridges (channeling) across the face.
+  error-foil-fault:
+    name: Foil / Lamination Error
+    description: Foil stock or lamination fault such as a wrong foil substrate swap, a pre-ink shift leaving a raw edge, or lamination tunnelling.
   # Final coats, stamping, and texture faults.
-  error-finish-coat:
-    name: Finish Coat Anomaly
-    description: Defect in a final coat or finish layer such as gloss varnish pooling, opaque white spill, or screen / double-star / missing-star holo finishes.
-  error-finish-stamp:
-    name: Hot-Stamp Die Error
-    description: Secondary foil hot-stamp (Prerelease, Staff, set logo) applied inverted, missing, or doubled.
-  error-finish-texture:
-    name: Texture / Engraving Fault
-    description: CNC laser texture pass misaligned, missing, or swapped on a modern Ultra Rare.
+  error-finishing-pass:
+    name: Finishing Error
+    description: Finishing-pass fault such as a gloss or varnish coat anomaly, a hot-stamp die failure, or a CNC texture/engraving fault.
   # Macro sheet handling & cutting faults.
-  error-sheet-alignment:
-    name: Sheet Misalignment
-    description: 'Macro sheet fed wrong or skipping a station: missing set symbol, red-line tracking streaks, stained backs, or inverted backs.'
-  error-sheet-foldover:
-    name: Sheet Fold-Over
-    description: Raw stock folded over before or during printing, leaving an unprinted void with artwork stamped onto the back flap.
-  error-sheet-cut:
-    name: Cut / Die Error
-    description: 'Sheet-cutting fault: miscut, square (unrounded) corners, or a rotated diamond cut.'
+  error-sheet-handling:
+    name: Sheet Handling Error
+    description: Macro sheet handling or cutting fault such as misalignment, a missing set symbol, a fold-over, or a miscut.
   # Packaging faults.
-  error-pack-crimp:
-    name: Packaging Crimp
-    description: Booster-pack sealing damage such as a factory crimp embedding a grid into the border, or wrapper folds and tears.
+  error-packaging:
+    name: Packaging Error
+    description: Booster-pack assembly damage such as a factory crimp embedding a grid into the border, or wrapper folds and tears.
   # Pre-production / non-retail artifacts.
   test-print:
     name: Test Print
     description: Test print or test sheet released ahead of or outside the normal production run.
   test-proof:
-    name: Proof
+    name: Test Proof
     description: Proof card such as a Victory Proof.
   test-sample:
     name: Sample
     description: Production sample or sample set.
   # Promotional distribution.
   promo-prerelease:
-    name: Prerelease
+    name: Promo Prerelease
     description: Prerelease or staff-stamped promotional distribution.
