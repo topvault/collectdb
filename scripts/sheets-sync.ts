@@ -879,6 +879,23 @@ async function buildDatasets(
             regions.push(...(await buildRegionSheets(regionPath, regionDescriptor)));
         }
 
+        // Show the remark's friendly name (declared in _type.yaml) in the Remark column
+        // instead of the raw slug. Only cells matching a declared slug are replaced, so
+        // header rows and empty cells are left untouched.
+        const remarkNames = metadata.remarks ?? {};
+        const remarkColumnIndex = SHEET_HEADERS.indexOf('Remark');
+        if (remarkColumnIndex >= 0) {
+            for (const region of regions) {
+                for (const row of region.rows) {
+                    const slug = row[remarkColumnIndex];
+                    const definition = remarkNames[slug];
+                    if (definition) {
+                        row[remarkColumnIndex] = definition.name;
+                    }
+                }
+            }
+        }
+
         datasets.push({
             collectibleType,
             collectibleName: metadata.name,
