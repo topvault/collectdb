@@ -58,7 +58,7 @@ export const RemarkSchema = z
     .object({
         name: z.string().min(3),
         editions: z.array(z.string()).optional(),
-        description: z.string(),
+        description: z.string().optional(),
     })
     .strict();
 
