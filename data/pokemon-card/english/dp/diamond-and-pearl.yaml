@@ -86,11 +86,11 @@ items:
   lucario-6:
     name: Lucario
     variants:
-      stamped:
-        name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
+      reverse-holo-stamp:
         edition: reverse-holo
         id: 3d3578ea-0065-49b4-a5d3-0d48eab5b16b
+        name: Diamond & Pearl Stamped
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Rare Holo
@@ -140,11 +140,11 @@ items:
   manaphy-9:
     name: Manaphy
     variants:
-      stamped:
+      reverse-holo-stamp:
         name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
         edition: reverse-holo
         id: d91afa35-9694-4f5c-8a00-a13634dd168a
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Nakaoka
       rarity: Rare Holo
@@ -484,11 +484,11 @@ items:
   pachirisu-35:
     name: Pachirisu
     variants:
-      stamped:
+      reverse-holo-stamp:
         name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
         edition: reverse-holo
         id: 371eb74a-3b7a-4df5-b5a7-6f171ceec3fe
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Rare
@@ -672,11 +672,11 @@ items:
   grotle-49:
     name: Grotle
     variants:
-      stamped:
+      reverse-holo-stamp:
         name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
         edition: reverse-holo
         id: 8ea449cf-59ec-47d5-a899-832cb6310050
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Uncommon
@@ -717,23 +717,23 @@ items:
   luxio-52:
     name: Luxio
     variants:
-      pre-release:
+      prerelease:
         name: Prerelease
-        description: Prerelease.
+        description: '"Prerelease" stamp Prerelease promo'
         id: d070c2da-0af4-4e3e-a41d-ad2622399808
         remark: promo-prerelease
-      pre-release-staff:
+      prerelease-staff:
         name: Prerelease (Staff)
-        description: Prerelease Staff.
+        description: Staff "Prerelease" stamp Prerelease promo
         id: e40ce640-f6f3-487e-a7ca-a8c331371d09
         remark: promo-prerelease
-      state-championships:
-        name: State Championships
+      states-championships:
+        name: States Championships
         description: State/Province/Territory Championships 2007-2008 promo
         id: d3def62e-cadf-4ee4-86a0-135c39e8f3a0
-      state-championships-staff:
-        name: State Championships (Staff)
-        description: State/Province/Territory Championships Staff 2007-2008 promo
+      states-championships-staff:
+        name: States Championships (Staff)
+        description: Staff State/Province/Territory Championships 2007-2008 promo
         id: 4580b654-6111-483a-b48c-5a6eb51e7bda
     details:
       illustrator: Ken Sugimori
@@ -788,9 +788,9 @@ items:
   monferno-56:
     name: Monferno
     variants:
-      stamped:
+      reverse-holo-stamp:
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
         name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
         edition: reverse-holo
         id: 0b9d0053-0a02-41fd-953a-870c4095ccfc
     details:
@@ -820,9 +820,9 @@ items:
   prinplup-58:
     name: Prinplup
     variants:
-      stamped:
+      reverse-holo-stamp:
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
         name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
         edition: reverse-holo
         integrations:
           priceCharting: prinplup-diamond-&-pearl-stamp-58
@@ -1067,11 +1067,6 @@ items:
   chimchar-76:
     name: Chimchar
     variants:
-      stamped:
-        name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
-        edition: reverse-holo
-        id: 087cabfd-1e64-43fe-9421-c7f6cd25c9bb
       pokemon-day:
         name: Italian Pokemon Day
         description: Italian Pokemon 2008 Day.
@@ -1080,6 +1075,11 @@ items:
         name: Cosmos Holo
         description: Cosmos Holofoil North American 2007 Spring Collector's tins.
         id: 6d2dda9a-b5a3-478d-a963-3b0c8be31f30
+      reverse-holo-stamp:
+        name: Diamond & Pearl Stamped
+        edition: reverse-holo
+        id: 087cabfd-1e64-43fe-9421-c7f6cd25c9bb
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Common
@@ -1307,11 +1307,6 @@ items:
   piplup-93:
     name: Piplup
     variants:
-      stamped:
-        name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
-        edition: reverse-holo
-        id: 82765f71-169a-4cb4-9503-44200e5685e6
       cosmos-holo:
         name: Cosmos Holo
         description: Cosmos Holofoil North American 2007 Spring Collector's tins.
@@ -1324,6 +1319,11 @@ items:
         name: Italian Pokemon Day
         description: Italian Pokemon 2008 Day.
         id: 4a7a0801-f5c9-4260-8698-be4b7dba2dea
+      reverse-holo-stamp:
+        name: Diamond & Pearl Stamped
+        edition: reverse-holo
+        id: 82765f71-169a-4cb4-9503-44200e5685e6
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Common
@@ -1390,11 +1390,6 @@ items:
   shinx-98:
     name: Shinx
     variants:
-      stamped:
-        name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
-        edition: reverse-holo
-        id: c801ba36-dd84-4289-b9ee-f5ff5c516a6a
       city-championships:
         name: City Championships
         description: City Championships 2007-2008.
@@ -1403,6 +1398,11 @@ items:
         name: City Championships (Staff)
         description: City Championships 2007-2008.
         id: 9ea5050e-302c-4f8d-a016-947945b8b9a2
+      reverse-holo-stamp:
+        name: Diamond & Pearl Stamped
+        edition: reverse-holo
+        id: c801ba36-dd84-4289-b9ee-f5ff5c516a6a
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Common
@@ -1479,11 +1479,6 @@ items:
   turtwig-103:
     name: Turtwig
     variants:
-      stamped:
-        name: Diamond & Pearl Stamped
-        description: Diamond & Pearl stamped Burger King Collection 2008.
-        edition: reverse-holo
-        id: 379aa752-5816-450f-aa6f-2c2431ab4341
       cosmos-holo:
         name: Cosmos Holo
         description: Cosmos Holofoil North American 2007 Spring Collector's tins.
@@ -1496,6 +1491,11 @@ items:
         name: Italian Pokemon Day
         description: Italian Pokemon 2008 Day.
         id: 15b05e9e-5437-475b-b53a-242eab69fb2a
+      reverse-holo-stamp:
+        name: Diamond & Pearl Stamped
+        edition: reverse-holo
+        id: 379aa752-5816-450f-aa6f-2c2431ab4341
+        description: Reverse Holo "Diamond & Pearl" stamp Burger King Collection 2008
     details:
       illustrator: Ken Sugimori
       rarity: Common
