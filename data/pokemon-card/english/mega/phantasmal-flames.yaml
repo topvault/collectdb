@@ -120,16 +120,16 @@ items:
       unlimited: 2c569889-8f25-44b6-9180-589ea40785d7
       reverse-holo: f7fd0a98-5e44-41fa-ad33-cc52e1416578
     variants:
-      unknown-holo:
-        name: Unknown Holo
-        integrations:
-          priceCharting: genesect-stamped-8
-        description: >-
-          Unknown Holo "Phantasmal Flames" Stamped gift with purchase exclusive
-          (USA)
-        id: d823bcb8-b7b9-4c95-a421-9f9a908c1120
+      # unknown-holo:
+      #   name: Unknown Holo
+      #   description: >-
+      #     Unknown Holo "Phantasmal Flames" Stamped gift with purchase exclusive
+      #     (USA)
+      #   id: d823bcb8-b7b9-4c95-a421-9f9a908c1120
       pixel-cosmos-holo:
         name: Pixel Cosmos Holo
+        integrations:
+          priceCharting: genesect-stamped-8
         description: >-
           Pixel Cosmos Holofoil "Phantasmal Flames" Stamped gift with purchase
           exclusive (USA)
@@ -211,7 +211,7 @@ items:
       reverse-holo: 8aaf0aa5-0a48-4569-8ac0-c70660b14bf7
     integrations:
       priceCharting:
-        unlimited: 'moltres-holo-14'
+        unlimited: moltres-holo-14
       tcgPlayer: '662201'
       pokeData:
         unlimited: '80751'
@@ -258,20 +258,24 @@ items:
       unlimited: 2ed20f11-6943-44c7-af97-1b201b7f01ed
       reverse-holo: fb4221e3-e117-4ca3-bb5f-52b285199b82
     variants:
-      unknown-holo:
-        name: Unknown Holo
-        integrations:
-          priceCharting: reshiram-stamped-17
-        description: >-
-          Unknown Holo “Phantasmal Flames” stamped Barnes & Noble/Hot Topic gift
-          with purchase exclusive
-        id: 70956121-f818-4c7b-aebe-da75115ee2fe
+      # unknown-holo:
+      #   name: Unknown Holo
+      #   description: >-
+      #     Unknown Holo “Phantasmal Flames” stamped Barnes & Noble/Hot Topic gift
+      #     with purchase exclusive
+      #   id: 70956121-f818-4c7b-aebe-da75115ee2fe
       pixel-cosmos-holo:
         name: Pixel Cosmos Holo
+        integrations:
+          priceCharting: reshiram-stamped-17
         description: >-
           Pixel Cosmos Holofoil “Phantasmal Flames” stamped Barnes & Noble/Hot
           Topic gift with purchase exclusive
         id: 8a2af250-a9fd-4263-8f57-0db36d4861f2
+      cosmos-holo:
+        name: Cosmos Holo
+        description: Cosmos Holo Chaos Rising Checklane Blister exclusive
+        id: c5b391c7-ea01-4f90-a320-a9a539252a35
     integrations:
       tcgPlayer: '662219'
       pokeData:
@@ -387,18 +391,20 @@ items:
       unlimited: fc02d577-c922-4e14-ba89-97c48fa5aa35
       reverse-holo: 7412fc6c-4f33-411d-85c8-2f91a86f56de
     variants:
-      gamestop:
-        name: Gamestop Stamp
-        description: “GameStop” Stamped gift with purchase exclusive
-        id: bf39e02e-65f0-4899-a54c-9793c6471e16
-      eb-games:
-        name: EBGames Stamp
-        description: '"EBGames" Stamped gift with purchase exclusive (Australia/NZ)'
-        id: 0590759a-1e31-4164-afba-e4149a282097
       cosmos-holo:
         name: Cosmos Holo
         description: Cosmos Holofoil Suicune Knockout Collection exclusive
         id: 7ca7e328-7da5-4fb3-9654-4252d8aec86e
+      pixel-holo-gamestop:
+        name: Pixel Holo (Gamestop)
+        description: Pixel Cosmos Holofoil “GameStop” Stamped gift with purchase exclusive
+        id: bf39e02e-65f0-4899-a54c-9793c6471e16
+      pixel-holo-eb-games:
+        name: Pixel Holo (EB Games)
+        id: 0590759a-1e31-4164-afba-e4149a282097
+        description: >-
+          Pixel Cosmos Holofoil "EBGames" Stamped gift with purchase exclusive
+          (Australia/NZ)
     integrations:
       tcgPlayer: '662229'
       pokeData:
@@ -506,9 +512,9 @@ items:
         unlimited: '80771'
         reverse-holo: '80940'
     variants:
-      unknown-holo:
-        name: Unknown Holo
-        description: Unknown Holo Chaos Rising Premium Checklane Blister exclusive
+      cosmos-holo:
+        name: Cosmos Holo
+        description: Cosmos Holo Chaos Rising Premium Checklane Blister exclusive
         id: de10ff24-cf5b-49ff-828d-64fa4bf781bf
     index: 34
   misdreavus-35:
@@ -635,10 +641,10 @@ items:
         unlimited: '80781'
         reverse-holo: '80869'
     variants:
-      unknown-holo:
-        name: Unknown Holo
-        description: Unknown Holo Chaos Rising Checklane Blister exclusive
+      cosmos-holo:
+        name: Cosmos Holo
         id: 84d4af9c-21ec-4e2e-94ea-2c3c25d546c0
+        description: Cosmos Holo Chaos Rising Checklane Blister exclusive
     index: 44
   zacian-45:
     name: Zacian
@@ -649,7 +655,7 @@ items:
       reverse-holo: e44d7e10-8506-4f53-85d0-92191be71d09
     integrations:
       priceCharting:
-        unlimited: 'zacian-holo-45'
+        unlimited: zacian-holo-45
       tcgPlayer: '662244'
       pokeData:
         unlimited: '80782'
@@ -764,7 +770,7 @@ items:
       reverse-holo: 54547de4-550b-45e6-a966-3b6c20176a9e
     integrations:
       priceCharting:
-        unlimited: 'flygon-holo-53'
+        unlimited: flygon-holo-53
       tcgPlayer: '662159'
       pokeData:
         unlimited: '80790'
@@ -776,10 +782,10 @@ items:
           priceCharting: flygon-53
         description: Non-Holofoil Phantasmal Flames Build & Battle Box exclusive
         id: 189daf5b-718f-4674-8e1d-740972024c9a
-      unknown-holo:
-        name: Unknown Holo
-        description: Unknown Holo Chaos Rising Premium Checklane Blister exclusive
+      cosmos-holo:
+        name: Cosmos Holo
         id: c54a7423-f132-4c58-9edf-e8b3087d4148
+        description: Cosmos Holo Chaos Rising Premium Checklane Blister exclusive
     index: 53
   gastly-54:
     name: Gastly
@@ -966,7 +972,7 @@ items:
       reverse-holo: 28aa0c5e-6855-40be-9df2-6f0e6a00f59e
     integrations:
       priceCharting:
-        unlimited: 'toxtricity-holo-68'
+        unlimited: toxtricity-holo-68
       tcgPlayer: '660409'
       pokeData:
         unlimited: '80805'
@@ -1222,6 +1228,19 @@ items:
         unlimited: '80824'
         reverse-holo: '80879'
     index: 87
+    variants:
+      cosmos-holo:
+        name: Cosmos Holo
+        description: >-
+          Cosmos Holo 2025-26 Ultra Ball League Season 3 participation prize
+          (Malaysia, the Philippines, Singapore)
+        id: 5ba441e1-fa22-42e6-a79f-3104f49dd32c
+      ultra-ball-league:
+        name: Ultra Ball League
+        description: >-
+          Cosmos Holo 2025-26 Ultra Ball League Season 3 participation prize
+          (Malaysia, the Philippines, Singapore)
+        id: 47b2d356-3d1b-4797-af2f-720a8808f29c
   dizzying-valley-88:
     name: Dizzying Valley
     details:
@@ -1256,7 +1275,7 @@ items:
       unlimited: b200f82a-b164-44c1-81fb-fad39be0afc4
       reverse-holo: c70e1396-8697-4659-9d22-d12cf586f32a
     integrations:
-      priceCharting: "grimsley's-move"
+      priceCharting: grimsley's-move
       tcgPlayer: '660418'
       pokeData:
         unlimited: '80827'
@@ -1571,7 +1590,7 @@ items:
     editions:
       unlimited: 8760579e-37b9-421d-80c3-7e7a94fda166
     integrations:
-      priceCharting: "grimsley's-move"
+      priceCharting: grimsley's-move
       tcgPlayer: '662167'
       pokeData: '80857'
     index: 120
