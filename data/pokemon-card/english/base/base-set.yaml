@@ -50,6 +50,12 @@ remarks:
     description: >-
       The second print run of the 1st edition base set print.
       These have a thin "1" in the edition stamp and use a Magenta matrix at a +15 degree horizontal offset.
+  grey-stamp:
+    name: Grey Stamp
+    editions: [1st-edition]
+    description: >-
+      An ink starvation error occurred when printing 1st-edition sheets.
+      Not enought blank ink was printed, making the "1st edition" stamp appear lighter.
   usa1-print:
     name: USA1 Print
     editions: [1999-2000]
@@ -1540,13 +1546,6 @@ items:
         1st-edition: '107057'
   rattata-61:
     name: Rattata
-    variants:
-      1st-edition-gray-stamp:
-        name: Gray Stamp
-        edition: 1st-edition
-        description: Rattata with gray 1st edition stamp.
-        id: c5a920e7-8948-4134-8ebc-40f5f42ef80e
-        remark: error-ink-starvation
     details:
       illustrator: Mitsuhiro Arita
       rarity: Common
