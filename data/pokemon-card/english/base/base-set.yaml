@@ -40,61 +40,73 @@ releaseDate: '1999-01-09'
 remarks:
   alpha-print:
     name: Alpha Print
-    editions: [1st-edition]
+    editions:
+      - 1st-edition
     description: >-
       The "first" 1st edition base set print. Identified with a thicker "1" for
       the edition stamp and a Magenta matrix at a -15 degree horizontal offset.
   beta-print:
     name: Beta Print
-    editions: [1st-edition]
+    editions:
+      - 1st-edition
     description: >-
       The second print run of the 1st edition base set print. These have a thin
       "1" in the edition stamp and use a Magenta matrix at a +15 degree
       horizontal offset.
   grey-stamp:
     name: Grey Stamp
-    editions: [1st-edition]
+    editions:
+      - 1st-edition
     description: >-
       An ink starvation error occurred when printing 1st-edition sheets. Not
       enought blank ink was printed, making the "1st edition" stamp appear
       lighter.
   usa1-print:
     name: USA1 Print
-    editions: [1999-2000]
+    editions:
+      - 1999-2000
     description: >-
       The print run for the 1999-2000 copyright cards. This uses a semi-gloss
       finish, front border with an orange hue, and is non-reactive to UV light.
   usa2-print:
     name: USA2 Print
-    editions: [1999-2000]
+    editions:
+      - 1999-2000
     description: >-
       A print run for the 1999-2000 copyright cards. This uses a normal front
       gloss finish and adds a singe-dot cyan border around the "HP".
   usa3-print:
     name: USA3 Print
-    editions: [1999-2000, shadowless]
+    editions:
+      - 1999-2000
+      - shadowless
     description: >-
       A print run for the shadowless and 1999-2000 copyright cards. This uses a
       normal gloss finish, enhances the yellow on the card back to be brighter,
       and adds a single-dot cyan border around the "HP".
   uk1-print:
     name: UK1 Print
-    editions: [1999-2000]
+    editions:
+      - 1999-2000
     description: >-
       A print run for the 1999-2000 copyright cards. This uses a normal gloss
       finish, a tan hue for the front border, and lighter hues in the artwork.
   uk2-print:
     name: UK2 Print
-    editions: [unlimited]
+    editions:
+      - unlimited
   aus1-print:
     name: Australia-1 Print
-    editions: [1999-2000]
+    editions:
+      - 1999-2000
   aus2-print:
     name: Australia-2 Print
-    editions: [1999-2000]
+    editions:
+      - 1999-2000
   blue-core:
     name: Blue Core
-    editions: [unlimited]
+    editions:
+      - unlimited
 items:
   alakazam-1:
     name: Alakazam
@@ -281,9 +293,9 @@ items:
       editions also include a 1st Edition stamp.
     integrations:
       priceCharting:
-        unlimited: 'machamp-1st-edition-8'
-        shadowless: 'machamp-shadowless-8'
-        1999-2000: 'machamp-1999-2000-8'
+        unlimited: machamp-1st-edition-8
+        shadowless: machamp-shadowless-8
+        1999-2000: machamp-1999-2000-8
       pokeData:
         1st-edition: '3734'
     variants:
@@ -349,6 +361,16 @@ items:
         unlimited: '3439'
         shadowless: '3641'
         1st-edition: '3540'
+    variants:
+      black-rays:
+        name: Black Rays
+        edition: unlimited
+        description: >-
+          A late-print (maybe a "5th print") of Unlimited used the
+          shadowless-style artwork design for Zapdos, Mewtwo, and Ninetales. For
+          the Mewtwo card, the "rays" are solid black and the magenta layer is
+          more saturated.
+        id: 5f834d3b-7832-4445-ad8d-b3f95bde3ae6
   nidoking-11:
     name: Nidoking
     details:
@@ -508,6 +530,16 @@ items:
         unlimited: '3445'
         shadowless: '3647'
         1st-edition: '3546'
+    variants:
+      black-rays:
+        name: Black Rays
+        edition: unlimited
+        description: >-
+          A late-print (maybe a "5th print") of Unlimited used the
+          shadowless-style artwork design for Zapdos, Mewtwo, and Ninetales. For
+          the Zapdos card, the "rays" are solid black and the magenta layer is
+          more saturated.
+        id: b9193481-1753-450e-8705-2bbd0d873ef1
   beedrill-17:
     name: Beedrill
     variants:
@@ -739,7 +771,7 @@ items:
   farfetchd-27:
     name: Farfetch'd
     integrations:
-      priceCharting: "farfetch'd"
+      priceCharting: farfetch'd
       tcgPlayer:
         unlimited: '42368'
         shadowless: '107024'
@@ -1362,7 +1394,7 @@ items:
   nidoran-male-55:
     name: Nidoran♂
     integrations:
-      priceCharting: 'nidoran'
+      priceCharting: nidoran
       tcgPlayer:
         unlimited: '42399'
         shadowless: '107052'
@@ -1805,7 +1837,7 @@ items:
   impostor-professor-oak-73:
     name: Impostor Professor Oak
     integrations:
-      priceCharting: 'imposter-professor-oak'
+      priceCharting: imposter-professor-oak
       tcgPlayer:
         unlimited: '86271'
         shadowless: '107070'
