@@ -95,6 +95,7 @@ const ScalarIntegrationsSchema = z
         pokeData: z.string().optional(),
         // Pokemon-card specific databases.
         tcgCollector: z.string().optional(),
+        pokumon: z.string().optional(), // A card slug on pokumon.com, e.g. finalist-tropical-wind-026-nintendo-black-star-english-promo.
         // MtG-card specific databases.
         scryfall: z.string().optional(),
         // Hot Wheels specific databases.
@@ -107,6 +108,7 @@ const SingleOrPerEditionIntegrationsSchema = z
     .object({
         priceCharting: SingleOrPerEdition.optional(),
         tcgCollector: SingleOrPerEdition.optional(),
+        pokumon: SingleOrPerEdition.optional(),
         tcgPlayer: SingleOrPerEdition.optional(),
         scryfall: SingleOrPerEdition.optional(),
         pokeData: SingleOrPerEdition.optional(),
