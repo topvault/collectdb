@@ -219,9 +219,12 @@ items:
         name: Pokémon Center
         description: Scarlet & Violet Pokémon Center Elite Trainer Box (Miraidon)
         id: a3459575-b014-4d93-b409-8b49e50003f2
+        integrations:
+          pokumon: pokemon-center-stamp-miraidon-ex-svp013-english-promo
     integrations:
       pokeData: '60443'
       tcgPlayer: '490719'
+      pokumon: miraidon-ex-svp013-english-promo
     index: 13
   koraidon-14:
     name: Koraidon
@@ -236,9 +239,12 @@ items:
         name: Pokémon Center
         description: Scarlet & Violet Pokémon Center Elite Trainer Box (Koraidon)
         id: 3f9b85a4-cd05-4356-9962-06a2ad03ff93
+        integrations:
+          pokumon: pokemon-center-stamp-koraidon-ex-svp014-english-promo
     integrations:
       pokeData: '60440'
       tcgPlayer: '490721'
+      pokumon: koraidon-ex-svp014-english-promo
     index: 14
   flaaffy-15:
     name: Flaaffy
@@ -1131,6 +1137,7 @@ items:
     integrations:
       pokeData: '66116'
       tcgPlayer: '527878'
+      pokumon: roaring-moon-svp067-english-promo
     index: 67
   iron-valiant-ex-68:
     name: Iron Valiant ex
@@ -1148,6 +1155,7 @@ items:
     integrations:
       pokeData: '66050'
       tcgPlayer: '527879'
+      pokumon: iron-valiant-svp068-english-promo
     index: 68
   fidough-69:
     name: Fidough
@@ -1199,6 +1207,7 @@ items:
     integrations:
       pokeData: '63344'
       tcgPlayer: '538684'
+      pokumon: great-tusk-svp072-english-promo
     index: 72
   iron-treads-ex-73:
     name: Iron Treads ex
@@ -1211,6 +1220,7 @@ items:
     integrations:
       pokeData: '67526'
       tcgPlayer: '538686'
+      pokumon: iron-treads-svp073-english-promo
     index: 73
   charizard-ex-74:
     name: Charizard ex
@@ -1223,6 +1233,7 @@ items:
     integrations:
       pokeData: '63332'
       tcgPlayer: '538687'
+      pokumon: charizard-svp074-english-promo
     index: 74
   mimikyu-75:
     name: Mimikyu
@@ -1418,6 +1429,7 @@ items:
     integrations:
       pokeData: '68531'
       tcgPlayer: '542468'
+      pokumon: sprigatito-svp087-english-promo
     index: 87
   pikachu-88:
     name: Pikachu
@@ -1690,6 +1702,7 @@ items:
     integrations:
       pokeData: '63347'
       tcgPlayer: '546754'
+      pokumon: houndoom-svp103-english-promo
     index: 103
   melmetal-ex-104:
     name: Melmetal ex
@@ -2758,6 +2771,7 @@ items:
     integrations:
       pokeData: '77349'
       tcgPlayer: '632083'
+      pokumon: eevee-svp174-english-promo
     index: 174
   espeon-ex-175:
     name: Espeon ex
@@ -2765,6 +2779,7 @@ items:
       unlimited: 1454ee56-58f0-4e1e-9330-1fcadda34035
     integrations:
       tcgPlayer: '655095'
+      pokumon: espeon-svp175-english-promo
     index: 175
   umbreon-ex-176:
     name: Umbreon ex
@@ -2772,6 +2787,7 @@ items:
       unlimited: f57b8f34-4c99-4a5c-b204-e77c546c083c
     integrations:
       tcgPlayer: '655094'
+      pokumon: umbreon-svp176-english-promo
     index: 176
   bloodmoon-ursaluna-ex-177:
     name: Bloodmoon Ursaluna ex
@@ -3144,6 +3160,7 @@ items:
       priceCharting: marnie's-morpeko
       pokeData: '77155'
       tcgPlayer: '635456'
+      pokumon: marnies-morpeko-svp206-english-promo
     editions:
       unlimited: e28786a4-d04d-4a5e-a09b-dfe1d6d30d04
     index: 206
@@ -3308,9 +3325,17 @@ items:
       priceCharting: professor's-research-professor-birch
       pokeData: '81997'
       tcgPlayer: '664829'
+      pokumon: professors-research-svp221-english-promo
     editions:
       unlimited: d546b7f2-15eb-4851-9b55-120fd18f5a7b
     index: 221
+    variants:
+      professor-program:
+        name: Professor Program
+        description: '“Professor Program” Stamped Professor Program Promos 2026'
+        id: 32b8b9cc-0c90-4200-9edd-c84f3c9321b4
+        integrations:
+          pokumon: professor-program-professors-research-svp221-english-promo
   professors-research-222:
     name: Professor's Research [Professor Kukui]
     description: Trainer's Toolkit 2025 exclusive.
@@ -3318,9 +3343,17 @@ items:
       priceCharting: professor's-research-professor-kukui
       pokeData: '82488'
       tcgPlayer: '664827'
+      pokumon: professors-research-svp222-english-promo
     editions:
       unlimited: ea8245e2-2c0f-479e-a597-7ae5c3e8b3e0
     index: 222
+    variants:
+      professor-program:
+        name: Professor Program
+        description: '“Professor Program” Stamped Professor Program Promos 2026'
+        id: f420515c-f288-401c-9264-57cba2d1e1e7
+        integrations:
+          pokumon: professor-program-professors-research-svp222-english-promo
   professors-research-223:
     name: Professor's Research [Professor Magnolia]
     description: Trainer's Toolkit 2025 exclusive.
@@ -3328,6 +3361,7 @@ items:
       priceCharting: professor's-research-professor-magnolia
       pokeData: '81998'
       tcgPlayer: '664828'
+      pokumon: professors-research-svp223-english-promo
     editions:
       unlimited: 6afa3c5f-71b7-4044-be53-800da1cf5061
     index: 223
@@ -3404,34 +3438,50 @@ additional:
         name: No.1 Trainer (2023)
         rarityScore: 11
         id: fc208594-beb9-4c7c-a229-b875113355c6
+        integrations:
+          pokumon: no-1-trainer-world-championships-2023-unnumbered
       2023-2-trainer:
         name: No.2 Trainer (2023)
         rarityScore: 11
         id: 1cc18eb2-b425-450b-b3a9-01e282e3e581
+        integrations:
+          pokumon: no-2-trainer-world-championships-2023-unnumbered
       2023-3-trainer:
         name: No.3 Trainer (2023)
         rarityScore: 11
         id: a5ae7f93-e25f-4838-bae1-b75b0df94d0b
+        integrations:
+          pokumon: no-3-trainer-world-championships-2023-unnumbered
       2023-4-trainer:
         name: No.4 Trainer (2023)
         rarityScore: 11
         id: 0ba57b24-f5f8-425a-be5c-64bcdfeae468
+        integrations:
+          pokumon: no-4-trainer-world-championships-2023-unnumbered
       2024-1-trainer:
         name: No.1 Trainer (2024)
         rarityScore: 11
         id: 77a0d5a1-0fd4-4290-93c5-72915efd6c26
+        integrations:
+          pokumon: no-1-trainer-world-championships-2024-unnumbered
       2024-2-trainer:
         name: No.2 Trainer (2024)
         rarityScore: 11
         id: 3d39bd81-6973-4dd3-a675-7db4d6665648
+        integrations:
+          pokumon: no-2-trainer-world-championships-2024-unnumbered
       2024-3-trainer:
         name: No.3 Trainer (2024)
         rarityScore: 11
         id: 603822c1-4025-41b1-a36b-118c56dcf724
+        integrations:
+          pokumon: no-3-trainer-world-championships-2024-unnumbered
       2024-4-trainer:
         name: No.4 Trainer (2024)
         rarityScore: 11
         id: c96084e2-eb8a-41b9-98ee-19d5b88e7e0c
+        integrations:
+          pokumon: no-4-trainer-world-championships-2024-unnumbered
       2025-1-trainer:
         name: No.1 Trainer (2025)
         rarityScore: 11
