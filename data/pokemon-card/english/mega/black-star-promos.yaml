@@ -96,8 +96,8 @@ items:
       tcgPlayer: '656255'
       pokeData: '80588'
     index: 5
-  driftblim-6:
-    name: Driftblim
+  drifblim-6:
+    name: Drifblim
     description: Mega Evolution Single Pack Blister
     editions:
       unlimited: 57c77078-a11b-469f-9538-c2ca5d1100a8
@@ -373,11 +373,14 @@ items:
         name: Jumbo
         description: Mega Kangaskhan ex Box
         id: a4c42073-d975-4bc6-89df-65fda796db87
+        integrations:
+          pokumon: jumbo-mega-kangaskhan-mep025-english-promo
     editions:
       unlimited: 67bec630-db24-4c05-bd81-d1d553d5541d
     integrations:
       tcgPlayer: '668509'
       pokeData: '81263'
+      pokumon: mega-kangaskhan-mep025-english-promo
     index: 25
   meloetta-26:
     name: Meloetta
@@ -415,6 +418,7 @@ items:
     integrations:
       tcgPlayer: '681244'
       pokeData: '490397'
+      pokumon: ace-trainer-stamped-celebratory-fanfare-mep028-english-promo
     index: 28
   mega-charizard-x-ex-29:
     name: Mega Charizard X ex
@@ -423,6 +427,7 @@ items:
     integrations:
       tcgPlayer: '680639'
       pokeData: '490395'
+      pokumon: mega-charizard-xex-mep029-english-promo
     index: 29
   mega-charizard-y-ex-30:
     name: Mega Charizard Y ex
@@ -431,6 +436,7 @@ items:
     integrations:
       tcgPlayer: '680640'
       pokeData: '490396'
+      pokumon: mega-charizard-yex-mep030-english-promo
     index: 30
   ns-zekrom-31:
     name: N's Zekrom
@@ -440,11 +446,13 @@ items:
         id: 8e0dbdb3-6f6d-4366-897f-81bbef5cf699
         integrations:
           tcgPlayer: '680481'
+          pokumon: pokemon-center-stamp-ns-zekrom-mep031-english-promo
     editions:
       unlimited: 00b2fd0d-ff08-44a0-9d00-f4b8196bcab3
     integrations:
       tcgPlayer: '680480'
       pokeData: '490393'
+      pokumon: ns-zekrom-mep031-english-promo
     index: 31
   mega-gardevoir-ex-32:
     name: Mega Gardevoir ex
@@ -468,6 +476,12 @@ items:
     name: Mega Meganium ex
     editions:
       unlimited: 79040fae-1346-4a93-a8ec-e61b55d0e606
+    variants:
+      jumbo:
+        name: Jumbo
+        integrations:
+          pokumon: jumbo-mega-meganium-ex-mep034-english-promo
+        id: 559acde3-92d0-4529-ba08-e12e88e07daf
     integrations:
       pokumon: mega-meganium-ex-mep034-english-promo
       tcgPlayer: '692120'
@@ -477,6 +491,12 @@ items:
     name: Mega Emboar ex
     editions:
       unlimited: 51470822-32c6-4f66-b3c2-86662793b329
+    variants:
+      jumbo:
+        name: Jumbo
+        integrations:
+          pokumon: jumbo-mega-emboar-ex-mep035-english-promo
+        id: 3fbeb697-df9b-4644-9d4d-c079bdd38758
     integrations:
       pokumon: mega-emboar-ex-mep035-english-promo
       tcgPlayer: '692119'
@@ -486,6 +506,12 @@ items:
     name: Mega Feraligatr ex
     editions:
       unlimited: 0380a4ae-af98-4e25-a2fe-466377090893
+    variants:
+      jumbo:
+        name: Jumbo
+        integrations:
+          pokumon: jumbo-mega-feraligatr-ex-mep036-english-promo
+        id: 26e005f3-d742-4f31-a04c-35273ea0fee7
     integrations:
       pokumon: mega-feraligatr-ex-mep036-english-promo
       tcgPlayer: '692118'
@@ -840,6 +866,13 @@ items:
     name: Mega Zygarde ex
     editions:
       unlimited: 683d8e38-0758-44b7-98b6-6100d2f1bc16
+    variants:
+      jumbo:
+        name: Jumbo
+        description: Mega Zygarde ex Premium Collection
+        integrations:
+          pokumon: jumbo-mega-zygarde-ex-mep071-english-promo
+        id: 67ae3787-a646-445a-a1a5-b52f017e5a66
     integrations:
       pokumon: mega-zygarde-ex-mep071-english-promo
       tcgPlayer: '695311'
@@ -969,6 +1002,13 @@ items:
     name: Mega Greninja ex
     editions:
       unlimited: 93733cd4-c0d9-42f3-adbd-4e9bc168bfce
+    variants:
+      jumbo:
+        name: Jumbo
+        description: Mega Greninja ex Premium Collection
+        integrations:
+          pokumon: jumbo-mega-greninja-ex-mep081-english-promo
+        id: 111cb66e-5417-4619-b2d7-f6ef4de348aa
     integrations:
       pokumon: mega-greninja-ex-mep081-english-promo
       tcgPlayer: '704879'
@@ -1076,3 +1116,195 @@ items:
       tcgPlayer: '706193'
       pokeData: '522458'
     index: 88
+  mega-zeraora-ex-89:
+    name: Mega Zeraora ex
+    description: Mega Forces Tins
+    editions:
+      unlimited: 8930311d-1446-4b04-8436-a1207ea90283
+    index: 89
+  mega-darkrai-ex-90:
+    name: Mega Darkrai ex
+    description: Mega Forces Tins
+    editions:
+      unlimited: ec8b167f-2845-48a2-a9e3-7d93f7ff295d
+    index: 90
+  mega-dragonite-ex-91:
+    name: Mega Dragonite ex
+    description: Mega Forces Tins
+    editions:
+      unlimited: de43d784-135a-4a6a-866d-d690d81e7c07
+    index: 91
+  paradise-resort-92:
+    name: Paradise Resort
+    description: 2026 Pokémon World Championships
+    variants:
+      staff-stamp:
+        name: Staff
+        description: 2026 Pokémon World Championships
+        id: d63c50c2-4359-4013-b276-2fd13f5f3f9e
+    editions:
+      unlimited: b1a688d0-8931-418b-ac4d-dd1eb0845688
+    index: 92
+  pikachu-93:
+    name: Pikachu
+    variant:
+      name: World Championships
+      description: Play! Pokémon 2026 Worlds Celebration events attendance reward
+    variants:
+      winner-stamp:
+        name: Winner
+        description: Play! Pokémon 2026 Worlds Celebration events winner reward
+        id: 4a294b46-0cc7-4f78-930a-cd73131659e7
+      game-on:
+        name: Pokémon Game On!
+        description: Pokémon Game On! events participation reward (Malaysia, the
+          Philippines, Singapore)
+        id: bdfb4a05-ebd8-448b-8266-ffbb6c480307
+    editions:
+      unlimited: af96d2bf-ca5b-4582-a253-87bfa30ed6b7
+    index: 93
+  alolan-exeggutor-94:
+    name: Alolan Exeggutor
+    description: 30th Celebration Tech Sticker Collection
+    editions:
+      unlimited: 7c318cf6-5dc0-4097-9c46-d2a628ce471b
+    index: 94
+  lucario-95:
+    name: Lucario
+    description: 30th Celebration Tech Sticker Collection
+    editions:
+      unlimited: 7fc0ef67-ef82-4126-a73d-8cf6577c0f9e
+    index: 95
+  moltres-96:
+    name: Moltres
+    description: 30th Celebration Poster Collection
+    editions:
+      unlimited: 3e75e5ff-5cb1-451e-8650-57269213edf2
+    index: 96
+  articuno-97:
+    name: Articuno
+    description: 30th Celebration Poster Collection
+    editions:
+      unlimited: e236e56d-7266-4265-8504-672c7b5cbae0
+    index: 97
+  zapdos-98:
+    name: Zapdos
+    description: 30th Celebration Poster Collection
+    editions:
+      unlimited: e342e3cb-7fc1-41ca-b89e-c396ec9e9058
+    index: 98
+  greninja-ex-99:
+    name: Greninja ex
+    description: 30th Celebration Pokémon ex Box — Greninja ex / 30th Celebration
+      Greninja ex Tin
+    variants:
+      jumbo:
+        name: Jumbo
+        id: 8dcb6890-5577-491a-a110-ee9e76dcad2e
+    editions:
+      unlimited: 944c663c-060e-4db9-8230-3f92da3fb850
+    index: 99
+  sylveon-ex-100:
+    name: Sylveon ex
+    description: 30th Celebration Pokémon ex Box — Sylveon ex / 30th Celebration
+      Sylveon ex Tin
+    variants:
+      jumbo:
+        name: Jumbo
+        id: 6d438d05-014a-4213-ada5-b36fb16d8ee1
+    editions:
+      unlimited: 1b821672-4cb3-4004-b2e4-3c07c1508f84
+    index: 100
+  nidorina-101:
+    name: Nidorina
+    description: 30th Celebration Elite Trainer Box
+    variants:
+      pokemon-center:
+        name: Pokémon Center
+        description: 30th Celebration Pokémon Center Elite Trainer Box
+        id: c11142c1-efa7-4c9f-afc4-aa5364a23e33
+    editions:
+      unlimited: 74d38644-9cc0-4520-8b0b-dacc0795601d
+    index: 101
+  victini-102:
+    name: Victini
+    description: Espeon ex 30th Celebration Battle Deck
+    editions:
+      unlimited: 8cebc904-4526-4c6c-8578-75837144124a
+    index: 102
+  zeraora-103:
+    name: Zeraora
+    description: Umbreon ex 30th Celebration Battle Deck
+    editions:
+      unlimited: 20499ec8-a681-4b77-b6f2-218d2c52bab5
+    index: 103
+  mewtwo-104:
+    name: Mewtwo
+    description: 30th Celebration Figure Collection — Mewtwo
+    variants:
+      jumbo:
+        name: Jumbo
+        description: 30th Celebration Figure Collection — Mewtwo
+        id: e958bb3a-e555-4679-8e63-023641c90f12
+    editions:
+      unlimited: b5c85d2f-44f7-490a-869d-8e94546d8713
+    index: 104
+  mew-105:
+    name: Mew
+    description: 30th Celebration Figure Collection — Mew
+    variants:
+      jumbo:
+        name: Jumbo
+        description: 30th Celebration Figure Collection — Mew
+        id: a10db2f7-8c56-49bd-bf13-5371e42d3f12
+    editions:
+      unlimited: a6308fbe-f558-4c76-abf7-3a8d4e511099
+    index: 105
+  ditto-106:
+    name: Ditto
+    description: 30th Celebration Ditto Premium Collection
+    editions:
+      unlimited: dd9cc236-de66-4ae5-9aee-90ac2ca5d537
+    index: 106
+  pikachu-ex-107:
+    name: Pikachu ex
+    description: 30th Celebration Ultra-Premium Collection — Day
+    editions:
+      unlimited: 14bb81fb-d4f0-4f32-9f37-a08dffc2c692
+    index: 107
+  espeon-ex-108:
+    name: Espeon ex
+    description: 30th Celebration Ultra-Premium Collection — Day
+    editions:
+      unlimited: 035c6452-8107-4522-bd07-3e02b18a7913
+    index: 108
+  pikachu-ex-109:
+    name: Pikachu ex
+    description: 30th Celebration Ultra-Premium Collection — Night
+    editions:
+      unlimited: 83765665-f37c-4e50-8fe4-a043ede3046c
+    index: 109
+  umbreon-ex-110:
+    name: Umbreon ex
+    description: 30th Celebration Ultra-Premium Collection — Night
+    editions:
+      unlimited: 7f8b67c2-a290-43ec-9365-a74f8bcdc96f
+    index: 110
+  celebratory-fanfare-120:
+    name: Celebratory Fanfare
+    description: Ace Trainer Stamped 2026 Championship Reward Scheme Promo
+    variants:
+      game-on:
+        name: Pokémon Game On!
+        description: Pokémon Game On! Stamped 2025-2026 Asia exclusive
+        id: 1bcf0afb-c6e2-43d6-8fec-bf931e309664
+    editions:
+      unlimited: 22c81ab3-4c02-41b6-81c7-300372dfb1a2
+    index: 120
+  pokemon-run-pikachu-131:
+    name: Pokémon RUN Pikachu
+    description: 'Pokémon RUN 30: The Philippines (October 3-4, 2026), Singapore
+      (November 7-8, 2026), Malaysia (November 21-22, 2026)'
+    editions:
+      unlimited: 36ec8290-41a4-4a44-8b79-56cbceca90ce
+    index: 131

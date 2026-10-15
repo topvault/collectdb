@@ -6,36 +6,64 @@ links:
   Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Play!_Pok%C3%A9mon_Prize_Pack_Series_Two_(TCG)
 releaseDate: '2023-01-19'
 items:
-  galarian-rapidash-SWSH111:
-    name: Galarian Rapidash
-    editions:
-      standard-set-foil: 591d1715-6247-4687-ae69-767ceecc8bf1
-    index: 'SWSH111'
-  flareon-SWSH149:
-    name: Flareon
-    editions:
-      standard-set-foil: b97f6729-9632-4b1f-8065-e1b4214118dd
-    index: 'SWSH149'
-  vaporeon-SWSH150:
-    name: Vaporeon
-    editions:
-      standard-set-foil: 36c899a8-5a4f-4322-ada1-22000ec6e699
-    index: 'SWSH150'
-  jolteon-SWSH151:
-    name: Jolteon
-    editions:
-      standard-set-foil: e6dacf44-15c0-4426-8163-359f84ddb139
-    index: 'SWSH151'
-  leafeon-SWSH195:
-    name: Leafeon
+  galarian-rapidash-v-SWSH111:
+    edition: standard-set-foil
+    referenceOf:
+      item: galarian-rapidash-v-SWSH111
+      edition: standard-set-foil
+      generation: play
+      series: play-prize-pack-one
+      id: 6c2dfbbd-0f4a-4ca1-ab91-daf9b332c4b0
+  flareon-v-SWSH149:
+    edition: standard-set-foil
+    referenceOf:
+      item: flareon-v-SWSH149
+      edition: standard-set-foil
+      generation: play
+      series: play-prize-pack-one
+      id: 03e8a13b-29cd-48aa-85e7-58dfda7ad544
+  vaporeon-v-SWSH150:
+    edition: standard-set-foil
+    referenceOf:
+      item: vaporeon-v-SWSH150
+      edition: standard-set-foil
+      generation: play
+      series: play-prize-pack-one
+      id: a7898e4f-ff7d-4b68-8627-8b9519109178
+  jolteon-v-SWSH151:
+    edition: standard-set-foil
+    referenceOf:
+      item: jolteon-v-SWSH151
+      edition: standard-set-foil
+      generation: play
+      series: play-prize-pack-one
+      id: c330c835-de89-4d3d-90f8-c736e211b115
+  leafeon-vstar-SWSH195:
+    name: Leafeon VSTAR
+    variantOf:
+      id: 9328e194-68ed-45ab-91c4-c23931bd81a5
+      item: leafeon-vstar-SWSH195
+      edition: unlimited
+      generation: swsh
+      series: swsh-black-star-promos
     editions:
       standard-set-foil: 4153cb14-1c8b-47fe-adc0-8467435c5dac
     index: 'SWSH195'
-  glaceon-SWSH197:
-    name: Glaceon
+    integrations:
+      pokumon: holofoil-play-pokemon-leafeon-vstar-swsh195-english-promo
+  glaceon-vstar-SWSH197:
+    name: Glaceon VSTAR
+    variantOf:
+      id: 3eed5029-f369-457e-8c4e-3861675abb01
+      item: glaceon-vstar-SWSH197
+      edition: unlimited
+      generation: swsh
+      series: swsh-black-star-promos
     editions:
       standard-set-foil: d348e325-b460-4d33-b6bb-8ca1c90ce7dc
     index: 'SWSH197'
+    integrations:
+      pokumon: holofoil-play-pokemon-glaceon-vstar-swsh197-english-promo
   ludicolo-34:
     name: Ludicolo
     editions:
@@ -60,6 +88,8 @@ items:
       edition: unlimited
       item: medicham-v-83
     index: 83
+    integrations:
+      pokumon: holofoil-play-pokemon-medicham-v-083-203-play-pokemon-prize-pack-series-2-special-print
   oricorio-42:
     name: Oricorio
     editions:
@@ -71,6 +101,8 @@ items:
       edition: unlimited
       item: oricorio-42
     index: 42
+    integrations:
+      pokumon: play-pokemon-oricorio-042-264-play-pokemon-prize-pack-series-2-special-print
   inteleon-v-78:
     name: Inteleon V
     editions:
@@ -82,6 +114,8 @@ items:
       edition: unlimited
       item: inteleon-v-78
     index: 78
+    integrations:
+      pokumon: holofoil-play-pokemon-inteleon-v-078-264-play-pokemon-prize-pack-series-2-special-print
   inteleon-vmax-79:
     name: Inteleon VMAX
     editions:
@@ -93,6 +127,8 @@ items:
       edition: unlimited
       item: inteleon-vmax-79
     index: 79
+    integrations:
+      pokumon: holofoil-play-pokemon-inteleon-vmax-079-264-play-pokemon-prize-pack-series-2-special-print
   boltund-v-103:
     name: Boltund V
     editions:
@@ -104,6 +140,8 @@ items:
       edition: unlimited
       item: boltund-v-103
     index: 103
+    integrations:
+      pokumon: holofoil-play-pokemon-boltund-v-103-264-play-pokemon-prize-pack-series-2-special-print
   boltund-vmax-104:
     name: Boltund VMAX
     editions:
@@ -115,6 +153,8 @@ items:
       edition: unlimited
       item: boltund-vmax-104
     index: 104
+    integrations:
+      pokumon: holofoil-play-pokemon-boltund-vmax-104-264-play-pokemon-prize-pack-series-2-special-print
   mew-v-113:
     name: Mew V
     editions:
@@ -126,6 +166,8 @@ items:
       edition: unlimited
       item: mew-v-113
     index: 113
+    integrations:
+      pokumon: holofoil-play-pokemon-mew-v-113-264-play-pokemon-prize-pack-series-2-special-print
   mew-vmax-114:
     name: Mew VMAX
     editions:
@@ -137,6 +179,8 @@ items:
       edition: unlimited
       item: mew-vmax-114
     index: 114
+    integrations:
+      pokumon: holofoil-play-pokemon-mew-vmax-114-264-play-pokemon-prize-pack-series-2-special-print
   meloetta-124:
     name: Meloetta
     editions:
@@ -149,6 +193,10 @@ items:
       edition: unlimited
       item: meloetta-124
     index: 124
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-meloetta-124-264-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-meloetta-124-264-play-pokemon-prize-pack-series-2-special-print
   gengar-v-156:
     name: Gengar V
     editions:
@@ -160,6 +208,8 @@ items:
       edition: unlimited
       item: gengar-v-156
     index: 156
+    integrations:
+      pokumon: holofoil-play-pokemon-gengar-v-156-264-play-pokemon-prize-pack-series-2-special-print
   gengar-vmax-157:
     name: Gengar VMAX
     editions:
@@ -171,6 +221,8 @@ items:
       edition: unlimited
       item: gengar-vmax-157
     index: 157
+    integrations:
+      pokumon: holofoil-play-pokemon-gengar-vmax-157-264-play-pokemon-prize-pack-series-2-special-print
   genesect-v-185:
     name: Genesect V
     editions:
@@ -182,6 +234,8 @@ items:
       edition: unlimited
       item: genesect-v-185
     index: 185
+    integrations:
+      pokumon: holofoil-play-pokemon-genesect-v-185-264-play-pokemon-prize-pack-series-2-special-print
   latias-193:
     name: Latias
     editions:
@@ -193,6 +247,8 @@ items:
       edition: unlimited
       item: latias-193
     index: 193
+    integrations:
+      pokumon: play-pokemon-latias-193-264-play-pokemon-prize-pack-series-2-special-print
   latios-194:
     name: Latios
     editions:
@@ -204,6 +260,8 @@ items:
       edition: unlimited
       item: latios-194
     index: 194
+    integrations:
+      pokumon: play-pokemon-latios-194-264-play-pokemon-prize-pack-series-2-special-print
   dunsparce-207:
     name: Dunsparce
     editions:
@@ -215,6 +273,8 @@ items:
       edition: unlimited
       item: dunsparce-207
     index: 207
+    integrations:
+      pokumon: play-pokemon-dunsparce-207-264-play-pokemon-prize-pack-series-2-special-print
   adventurers-discovery-224:
     name: Adventurer's Discovery
     editions:
@@ -226,6 +286,8 @@ items:
       edition: unlimited
       item: adventurers-discovery-224
     index: 224
+    integrations:
+      pokumon: play-pokemon-adventurers-discovery-224-264-play-pokemon-prize-pack-series-2-special-print
   battle-vip-pass-225:
     name: Battle VIP Pass
     editions:
@@ -238,6 +300,10 @@ items:
       edition: unlimited
       item: battle-vip-pass-225
     index: 225
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-battle-vip-pass-225-264-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-battle-vip-pass-225-264-play-pokemon-prize-pack-series-2-special-print
   cram-o-matic-229:
     name: Cram-o-matic
     editions:
@@ -250,6 +316,10 @@ items:
       edition: unlimited
       item: cram-o-matic-229
     index: 229
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-cram-o-matic-229-264-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-cram-o-matic-229-264-play-pokemon-prize-pack-series-2-special-print
   elesas-sparkle-233:
     name: Elesa's Sparkle
     editions:
@@ -262,6 +332,10 @@ items:
       edition: unlimited
       item: elesas-sparkle-233
     index: 233
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-elesas-sparkle-233-264-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-elesas-sparkle-233-264-play-pokemon-prize-pack-series-2-special-print
   power-tablet-236:
     name: Power Tablet
     editions:
@@ -274,6 +348,10 @@ items:
       edition: unlimited
       item: power-tablet-236
     index: 236
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-power-tablet-236-264-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-power-tablet-236-264-play-pokemon-prize-pack-series-2-special-print
   fusion-strike-energy-244:
     name: Fusion Strike Energy
     editions:
@@ -286,6 +364,10 @@ items:
       edition: unlimited
       item: fusion-strike-energy-244
     index: 244
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-fusion-strike-energy-244-264-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-fusion-strike-energy-244-264-play-pokemon-prize-pack-series-2-special-print
   grotle-7:
     name: Grotle
     editions:
@@ -297,6 +379,8 @@ items:
       edition: unlimited
       item: grotle-7
     index: 7
+    integrations:
+      pokumon: play-pokemon-grotle-007-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   torterra-8:
     name: Torterra
     editions:
@@ -312,6 +396,7 @@ items:
     integrations:
       pokumon:
         standard-set-foil: holofoil-play-pokemon-torterra-008-172-play-pokemon-prize-pack-series-2-special-print
+        standard-set: play-pokemon-torterra-008-172-play-pokemon-prize-pack-series-2-special-print
   wormadam-10:
     name: Wormadam
     editions:
@@ -323,6 +408,8 @@ items:
       edition: unlimited
       item: wormadam-10
     index: 10
+    integrations:
+      pokumon: play-pokemon-wormadam-010-172-play-pokemon-prize-pack-series-2-special-print
   shaymin-v-13:
     name: Shaymin V
     editions:
@@ -334,6 +421,8 @@ items:
       edition: unlimited
       item: shaymin-v-13
     index: 13
+    integrations:
+      pokumon: holofoil-play-pokemon-shaymin-v-013-172-play-pokemon-prize-pack-series-2-special-print
   shaymin-vstar-14:
     name: Shaymin VSTAR
     editions:
@@ -345,6 +434,8 @@ items:
       edition: unlimited
       item: shaymin-vstar-14
     index: 14
+    integrations:
+      pokumon: holofoil-play-pokemon-shaymin-vstar-014-172-play-pokemon-prize-pack-series-2-special-print
   charizard-v-17:
     name: Charizard V
     editions:
@@ -356,6 +447,8 @@ items:
       edition: unlimited
       item: charizard-v-17
     index: 17
+    integrations:
+      pokumon: holofoil-play-pokemon-charizard-v-017-172-play-pokemon-prize-pack-series-2-special-print
   charizard-vstar-18:
     name: Charizard VSTAR
     editions:
@@ -367,6 +460,8 @@ items:
       edition: unlimited
       item: charizard-vstar-18
     index: 18
+    integrations:
+      pokumon: holofoil-play-pokemon-charizard-vstar-018-172-play-pokemon-prize-pack-series-2-special-print
   moltres-21:
     name: Moltres
     editions:
@@ -378,6 +473,8 @@ items:
       edition: unlimited
       item: moltres-21
     index: 21
+    integrations:
+      pokumon: play-pokemon-moltres-021-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   entei-v-22:
     name: Entei V
     editions:
@@ -389,6 +486,8 @@ items:
       edition: unlimited
       item: entei-v-22
     index: 22
+    integrations:
+      pokumon: holofoil-play-pokemon-entei-v-022-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   lumineon-v-40:
     name: Lumineon V
     editions:
@@ -400,6 +499,8 @@ items:
       edition: unlimited
       item: lumineon-v-40
     index: 40
+    integrations:
+      pokumon: holofoil-play-pokemon-lumineon-v-040-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   manaphy-41:
     name: Manaphy
     editions:
@@ -412,6 +513,10 @@ items:
       edition: unlimited
       item: manaphy-41
     index: 41
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-manaphy-041-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
+        standard-set-foil: holofoil-play-pokemon-manaphy-041-172-play-pokemon-prize-pack-series-2-special-print
   eiscue-44:
     name: Eiscue
     editions:
@@ -423,6 +528,8 @@ items:
       edition: unlimited
       item: eiscue-44
     index: 44
+    integrations:
+      pokumon: play-pokemon-eiscue-044-172-play-pokemon-prize-pack-series-2-special-print
   raikou-v-48:
     name: Raikou V
     editions:
@@ -434,6 +541,8 @@ items:
       edition: unlimited
       item: raikou-v-48
     index: 48
+    integrations:
+      pokumon: holofoil-play-pokemon-raikou-v-048-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   pachirisu-52:
     name: Pachirisu
     editions:
@@ -445,6 +554,8 @@ items:
       edition: unlimited
       item: pachirisu-52
     index: 52
+    integrations:
+      pokumon: play-pokemon-pachirisu-052-172-play-pokemon-prize-pack-series-2-special-print
   dusknoir-62:
     name: Dusknoir
     editions:
@@ -456,6 +567,8 @@ items:
       edition: unlimited
       item: dusknoir-62
     index: 62
+    integrations:
+      pokumon: play-pokemon-dusknoir-062-172-play-pokemon-prize-pack-series-2-special-print
   whimsicott-v-64:
     name: Whimsicott V
     editions:
@@ -467,6 +580,8 @@ items:
       edition: unlimited
       item: whimsicott-v-64
     index: 64
+    integrations:
+      pokumon: holofoil-play-pokemon-whimsicott-v-064-172-play-pokemon-prize-pack-series-2-special-print
   whimsicott-vstar-65:
     name: Whimsicott VSTAR
     editions:
@@ -478,6 +593,8 @@ items:
       edition: unlimited
       item: whimsicott-vstar-65
     index: 65
+    integrations:
+      pokumon: holofoil-play-pokemon-whimsicott-vstar-065-172-play-pokemon-prize-pack-series-2-special-print
   wormadam-77:
     name: Wormadam
     editions:
@@ -489,6 +606,8 @@ items:
       edition: unlimited
       item: wormadam-77
     index: 77
+    integrations:
+      pokumon: play-pokemon-wormadam-077-172-play-pokemon-prize-pack-series-2-special-print
   lucario-79:
     name: Lucario
     editions:
@@ -500,6 +619,8 @@ items:
       edition: unlimited
       item: lucario-79
     index: 79
+    integrations:
+      pokumon: play-pokemon-lucario-079-172-play-pokemon-prize-pack-series-2-special-print
   honchkrow-v-88:
     name: Honchkrow V
     editions:
@@ -511,6 +632,8 @@ items:
       edition: unlimited
       item: honchkrow-v-88
     index: 88
+    integrations:
+      pokumon: holofoil-play-pokemon-honchkrow-v-088-172-play-pokemon-prize-pack-series-2-special-print
   liepard-91:
     name: Liepard
     editions:
@@ -535,6 +658,8 @@ items:
       edition: unlimited
       item: wormadam-98
     index: 98
+    integrations:
+      pokumon: play-pokemon-wormadam-098-172-play-pokemon-prize-pack-series-2-special-print
   zamazenta-v-105:
     name: Zamazenta V
     editions:
@@ -546,6 +671,8 @@ items:
       edition: unlimited
       item: zamazenta-v-105
     index: 105
+    integrations:
+      pokumon: holofoil-play-pokemon-zamazenta-v-105-172-play-pokemon-prize-pack-series-2-special-print
   garchomp-109:
     name: Garchomp
     editions:
@@ -557,6 +684,8 @@ items:
       edition: unlimited
       item: garchomp-109
     index: 109
+    integrations:
+      pokumon: play-pokemon-garchomp-109-172-play-pokemon-prize-pack-series-2-special-print
   bibarel-121:
     name: Bibarel
     editions:
@@ -584,6 +713,8 @@ items:
       edition: unlimited
       item: arceus-v-122
     index: 122
+    integrations:
+      pokumon: holofoil-play-pokemon-arceus-v-122-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   arceus-vstar-123:
     name: Arceus VSTAR
     editions:
@@ -595,6 +726,8 @@ items:
       edition: unlimited
       item: arceus-vstar-123
     index: 123
+    integrations:
+      pokumon: holofoil-play-pokemon-arceus-vstar-123-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   tornadus-126:
     name: Tornadus
     editions:
@@ -606,6 +739,8 @@ items:
       edition: unlimited
       item: tornadus-126
     index: 126
+    integrations:
+      pokumon: play-pokemon-tornadus-126-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   bosss-orders-132:
     name: Boss's Orders
     editions:
@@ -618,6 +753,10 @@ items:
       edition: unlimited
       item: bosss-orders-132
     index: 132
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-bosss-orders-132-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
+        standard-set-foil: holofoil-play-pokemon-bosss-orders-132-172-play-pokemon-prize-pack-series-2-special-print
   cherens-care-134:
     name: Cheren's Care
     editions:
@@ -629,6 +768,8 @@ items:
       edition: unlimited
       item: cherens-care-134
     index: 134
+    integrations:
+      pokumon: play-pokemon-cherens-care-134-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   choice-belt-135:
     name: Choice Belt
     editions:
@@ -641,6 +782,10 @@ items:
       edition: unlimited
       item: choice-belt-135
     index: 135
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-choice-belt-135-172-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-choice-belt-135-172-play-pokemon-prize-pack-series-2-special-print
   collapsed-stadium-137:
     name: Collapsed Stadium
     editions:
@@ -652,6 +797,8 @@ items:
       edition: unlimited
       item: collapsed-stadium-137
     index: 137
+    integrations:
+      pokumon: play-pokemon-collapsed-stadium-137-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   cynthias-ambition-138:
     name: Cynthia's Ambition
     editions:
@@ -663,6 +810,8 @@ items:
       edition: unlimited
       item: cynthias-ambition-138
     index: 138
+    integrations:
+      pokumon: play-pokemon-cynthias-ambition-138-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   gloria-141:
     name: Gloria
     editions:
@@ -675,6 +824,10 @@ items:
       edition: unlimited
       item: gloria-141
     index: 141
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-gloria-141-172-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-gloria-141-172-play-pokemon-prize-pack-series-2-special-print
   kindler-143:
     name: Kindler
     editions:
@@ -686,6 +839,8 @@ items:
       edition: unlimited
       item: kindler-143
     index: 143
+    integrations:
+      pokumon: play-pokemon-kindler-143-172-play-pokemon-prize-pack-series-2-special-print
   magma-basin-144:
     name: Magma Basin
     editions:
@@ -698,6 +853,10 @@ items:
       edition: unlimited
       item: magma-basin-144
     index: 144
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-magma-basin-144-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
+        standard-set-foil: holofoil-play-pokemon-magma-basin-144-172-play-pokemon-prize-pack-series-2-special-print
   professors-research-147:
     name: Professor's Research
     editions:
@@ -710,6 +869,10 @@ items:
       edition: unlimited
       item: professors-research-147
     index: 147
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-professors-research-147-172-play-pokemon-prize-pack-series-2-special-print
+        standard-set-foil: holofoil-play-pokemon-professors-research-147-172-play-pokemon-prize-pack-series-2-special-print
   roseannes-backup-148:
     name: Roseanne's Backup
     editions:
@@ -721,6 +884,8 @@ items:
       edition: unlimited
       item: roseannes-backup-148
     index: 148
+    integrations:
+      pokumon: play-pokemon-roseannes-backup-148-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
   team-yells-cheer-149:
     name: Team Yell's Cheer
     editions:
@@ -732,6 +897,8 @@ items:
       edition: unlimited
       item: team-yells-cheer-149
     index: 149
+    integrations:
+      pokumon: play-pokemon-team-yells-cheer-149-172-play-pokemon-prize-pack-series-2-special-print
   ultra-ball-150:
     name: Ultra Ball
     editions:
@@ -744,6 +911,10 @@ items:
       edition: unlimited
       item: ultra-ball-150
     index: 150
+    integrations:
+      pokumon:
+        standard-set-foil: holofoil-play-pokemon-ultra-ball-146-159-play-pokemon-prize-pack-series-3play-pokemon-prize-pack-series-4-special-print
+        standard-set: play-pokemon-ultra-ball-150-172-play-pokemon-prize-pack-series-2-special-print
   double-turbo-energy-151:
     name: Double Turbo Energy
     editions:
@@ -756,6 +927,10 @@ items:
       edition: unlimited
       item: double-turbo-energy-151
     index: 151
+    integrations:
+      pokumon:
+        standard-set: play-pokemon-double-turbo-energy-151-172-play-pokemon-prize-pack-series-2play-pokemon-prize-pack-series-3-special-print
+        standard-set-foil: holofoil-play-pokemon-double-turbo-energy-151-172-play-pokemon-prize-pack-series-2-special-print
   basic-grass-energy:
     name: Basic Grass Energy
     editions:

@@ -16,6 +16,10 @@ items:
       category: Pokemon
     editions:
       unlimited: f73e45b7-bd77-4cd7-bee8-8b57f7825e26
+    variants:
+      jumbo:
+        name: Jumbo
+        id: c066569b-cfde-4048-bfa3-1b9fa15d1bd2
     integrations:
       tcgPlayer: '200300'
       pokeData: '8269'
@@ -29,6 +33,10 @@ items:
       category: Pokemon
     editions:
       unlimited: 1230b396-8c8a-41de-b346-219805e67504
+    variants:
+      jumbo:
+        name: Jumbo
+        id: 0d385ed9-adc7-4401-9a36-975eb81fd9b3
     integrations:
       tcgPlayer: '200301'
       pokeData: '8270'
@@ -42,6 +50,10 @@ items:
       category: Pokemon
     editions:
       unlimited: b98dfbbf-a0bc-455f-ab64-a995ef7c4674
+    variants:
+      jumbo:
+        name: Jumbo
+        id: 0cf2d221-8b78-4381-abd6-08a3c6bebe7f
     integrations:
       tcgPlayer: '200302'
       pokeData: '8271'
@@ -179,6 +191,8 @@ items:
         name: 25th Anniversary
         description: General Mills 25th Anniversary Mini Packs
         id: 1853fc70-94b1-4997-a4e5-3c2fe1def54b
+        integrations:
+          pokumon: sequin-holo-gossifleur-swsh010-english-promo
     integrations:
       tcgPlayer: '206429'
       pokeData: '8278'
@@ -197,6 +211,8 @@ items:
         name: 25th Anniversary
         description: General Mills 25th Anniversary Mini Packs
         id: ac4aca33-6a7d-4e3d-bea8-41c88a8924e9
+        integrations:
+          pokumon: sequin-holo-wooloo-swsh011-english-promo
     integrations:
       tcgPlayer: '206427'
       pokeData: '8279'
@@ -233,6 +249,8 @@ items:
         name: 25th Anniversary
         description: General Mills 25th Anniversary Mini Packs
         id: f91d100b-c35f-497b-bda8-16c454d7d177
+        integrations:
+          pokumon: sequin-holo-galarian-ponyta-swsh013-english-promo
     integrations:
       tcgPlayer: '206430'
       pokeData: '8281'
@@ -695,6 +713,8 @@ items:
         name: 25th Anniversary
         description: General Mills 25th Anniversary Mini Packs
         id: e466cff9-658f-42b3-8161-9f481bf39439
+        integrations:
+          pokumon: sequin-holo-pikachu-swsh039-english-promo
     integrations:
       tcgPlayer: '220268'
       pokeData: '8307'
@@ -713,6 +733,8 @@ items:
         name: 25th Anniversary
         description: General Mills 25th Anniversary Mini Packs
         id: 60502e2d-2fa4-47b0-8df4-1e9fbee6965a
+        integrations:
+          pokumon: sequin-holo-hatenna-swsh040-english-promo
     integrations:
       tcgPlayer: '220269'
       pokeData: '8308'
@@ -1717,7 +1739,11 @@ items:
       category: Pokemon
     editions:
       unlimited: 2e49f453-63c2-4ae6-b2d8-1b43891eff25
-    variants: {}
+    variants:
+      jumbo:
+        name: Jumbo
+        description: Rapid Strike Urshifu V Box
+        id: 351395e2-e983-4e06-85ae-3e810a4a2df2
     integrations:
       tcgPlayer: '234297'
       pokeData: '8373'
@@ -2074,7 +2100,11 @@ items:
       category: Pokemon
     editions:
       unlimited: 673ad5f7-ca5f-447f-a0aa-28fb94a20030
-    variants: {}
+    variants:
+      jumbo:
+        name: Jumbo
+        description: Ice Rider Calyrex V Box
+        id: de7ef6ca-0721-41a2-b0b9-efef8789b7f1
     integrations:
       tcgPlayer: '245868'
       pokeData: '8396'
@@ -2121,6 +2151,7 @@ items:
     integrations:
       tcgPlayer: '251089'
       pokeData: '40469'
+      pokumon: lances-charizard-v-swsh133-english-promo
     index: 'SWSH133'
   dark-sylveon-v-SWSH134:
     name: Dark Sylveon V
@@ -2564,7 +2595,7 @@ items:
     integrations:
       tcgPlayer: '247299'
       pokeData: '40457'
-      pokumon: stamped-professor-burnet-swsh167-english-promo
+      pokumon: professor-burnet-swsh167-english-promo
     index: 'SWSH167'
   oricorio-SWSH168:
     name: Oricorio
@@ -3699,7 +3730,11 @@ items:
     index: 'SWSH267'
   deoxys-vstar-SWSH268:
     name: Deoxys VSTAR
-    variants: {}
+    variants:
+      jumbo:
+        name: Jumbo
+        description: Deoxys VMAX & VSTAR Battle Box
+        id: d0d8046f-6d69-4b0f-bf87-dc674d06a0a3
     editions:
       unlimited: 31e6682b-5bea-40a8-ac3b-5fd1c4a10662
     integrations:
