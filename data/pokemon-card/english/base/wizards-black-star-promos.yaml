@@ -64,6 +64,13 @@ items:
       pokeData: '22548'
       tcgPlayer: '85107'
       pokumon: electabuzz-2-wizards-black-star-english-promo
+    variants:
+      no-stamp:
+        name: No Stamp
+        description: Mewtwo Strikes Back theatrical release. Card sheet was never stamped
+        id: 2fdd745d-d794-4db8-8377-66e2a30f95d2
+        integrations:
+          pokumon: no-stamp-electabuzz-2-wizards-black-star-english-promo
   mewtwo-3:
     name: Mewtwo
     variants:
@@ -87,6 +94,12 @@ items:
         id: 7b74e3f7-cafc-4110-b944-fd584b0f659d
         integrations:
           pokumon: japanese-print-mewtwo-3-wizards-black-star-english-promo
+      no-stamp:
+        name: No Stamp
+        description: Mewtwo Strikes Back theatrical release. Card sheet was never stamped
+        id: e86b3f2a-17af-4e8e-a9ce-45b0e51b4fd9
+        integrations:
+          pokumon: no-stamp-mewtwo-3-wizards-black-star-english-promo
     details:
       illustrator: Ken Sugimori
       rarity: Common
@@ -111,6 +124,13 @@ items:
       pokeData: '22577'
       tcgPlayer: '88066'
       pokumon: pikachu-4-wizards-black-star-english-promo
+    variants:
+      no-stamp:
+        name: No Stamp
+        description: Mewtwo Strikes Back theatrical release. Card sheet was never stamped
+        id: e5b8c764-77d9-414a-b349-45ccf84c396e
+        integrations:
+          pokumon: no-stamp-pikachu-4-wizards-black-star-english-promo
   dragonite-5:
     name: Dragonite
     details:
@@ -124,6 +144,13 @@ items:
       pokeData: '22545'
       tcgPlayer: '84909'
       pokumon: dragonite-5-wizards-black-star-english-promo
+    variants:
+      no-stamp:
+        name: No Stamp
+        description: Mewtwo Strikes Back theatrical release. Card sheet was never stamped
+        id: 66aaa426-c6dc-4a44-bdaa-89deadd72ccf
+        integrations:
+          pokumon: no-stamp-dragonite-5-wizards-black-star-english-promo
   arcanine-6:
     name: Arcanine
     details:
@@ -416,8 +443,8 @@ items:
     variant:
       name: Incorrect Illustrator
       description: >-
-        The Illustrator is incorrectly written as Toshinao Aoki.
-        This error print is more common than the corrected version.
+        The Illustrator is incorrectly written as Toshinao Aoki. This error
+        print is more common than the corrected version.
     remark: error-design
     editions:
       unlimited: 21886037-4b33-4bab-9d8b-2a09c45c5f3d
@@ -445,8 +472,8 @@ items:
     variant:
       name: Incorrect Illustrator
       description: >-
-        The Illustrator is incorrectly written as Toshinao Aoki.
-        This error print is more common than the corrected version.
+        The Illustrator is incorrectly written as Toshinao Aoki. This error
+        print is more common than the corrected version.
     remark: error-design
     editions:
       unlimited: 47650311-3469-418c-9991-76a9247d5ef6
@@ -474,8 +501,8 @@ items:
     variant:
       name: Incorrect Illustrator
       description: >-
-        The Illustrator is incorrectly written as Toshinao Aoki.
-        This error print is more common than the corrected version.
+        The Illustrator is incorrectly written as Toshinao Aoki. This error
+        print is more common than the corrected version.
     remark: error-design
     editions:
       unlimited: 802060b3-a156-486d-a893-b951ca8e736e
@@ -924,21 +951,29 @@ additional:
         links:
           'CGC Article': https://www.cgccards.com/news/article/8744/pokemon-test-print-blastoise/
         description: >-
-          A test print (Prototype) of a Pokémon card on Magic: The Gathering card stock. The
-          card was printed as a test by Wizards of the Coast during the early
-          stages of Pokémon card production. It features the artwork of
-          Blastoise from the Japanese promo, but is printed on the thicker
-          cardstock used for Magic: The Gathering cards.
+          A test print (Prototype) of a Pokémon card on Magic: The Gathering
+          card stock. The card was printed as a test by Wizards of the Coast
+          during the early stages of Pokémon card production. It features the
+          artwork of Blastoise from the Japanese promo, but is printed on the
+          thicker cardstock used for Magic: The Gathering cards.
         variants:
           galaxy-foil:
             name: Galaxy Foil
             description: >-
-              A variant of the Test Print (Prototype) Blastoise with a unique galaxy foil
-              pattern on the card's surface.
+              A variant of the Test Print (Prototype) Blastoise with a unique
+              galaxy foil pattern on the card's surface.
             id: 62fb6826-6c49-4863-baa2-22fb495f14ff
             remark: test-print
             integrations:
               pokumon: white-back-starlight-holofoil-blastoise-2-102-wotc-unofficial-release-special-print
+          gold-border:
+            name: Gold Border
+            description: A variant of the Test Print (Prototype) Blastoise with a gold
+              border.
+            id: '82a6989b-0338-4d6c-a2e3-0aeb48ebb280'
+            remark: test-print
+            integrations:
+              pokumon: mtg-back-gold-border-blastoise-2-102-wotc-unofficial-release-special-print
         id: 07bf741c-7cd9-44f6-a82e-60598e22dafb
         remark: test-print
         integrations:
