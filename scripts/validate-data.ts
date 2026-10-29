@@ -328,6 +328,11 @@ function formatYamlError(error: unknown): string {
     return String(error);
 }
 
+// Integrations whose item map may also be keyed by one of the item's variants. TopVault reads a
+// variant's value from the item's map when the variant has none of its own, so
+// `priceCharting: { unlimited: raichu-holo-36, non-holo: raichu-36 }` prices both printings.
+const VARIANT_KEYED_INTEGRATIONS = new Set(['priceCharting', 'pokeData']);
+
 function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
     if (!isRecord(parsed) || !isRecord(parsed.items)) {
         return [];
@@ -348,20 +353,24 @@ function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
 
         const editionKeys = Object.keys(editions);
         const editionKeySet = new Set(editionKeys);
+        const variantKeys = isRecord(itemValue.variants) ? Object.keys(itemValue.variants) : [];
 
         for (const [integrationKey, integrationValue] of Object.entries(integrations)) {
             if (!isRecord(integrationValue)) {
                 continue;
             }
 
-            const invalidKeys = Object.keys(integrationValue).filter(key => !editionKeySet.has(key));
+            const variantKeyed = VARIANT_KEYED_INTEGRATIONS.has(integrationKey);
+            const allowedKeys = variantKeyed ? new Set([...editionKeys, ...variantKeys]) : editionKeySet;
+            const invalidKeys = Object.keys(integrationValue).filter(key => !allowedKeys.has(key));
             if (invalidKeys.length === 0) {
                 continue;
             }
 
             const editionsLabel = editionKeys.length > 0 ? editionKeys.join(', ') : '<none>';
+            const definedIn = variantKeyed ? 'editions or variants' : 'editions';
             failures.push(
-                `items.${itemKey}.integrations.${integrationKey}: contains keys not defined in editions: ${invalidKeys.join(', ')} (editions: ${editionsLabel})`
+                `items.${itemKey}.integrations.${integrationKey}: contains keys not defined in ${definedIn}: ${invalidKeys.join(', ')} (editions: ${editionsLabel})`
             );
         }
     }
