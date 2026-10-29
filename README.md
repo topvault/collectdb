@@ -269,6 +269,8 @@ Examples currently modeled in the schema include:
 
 Integrations can be attached at the series, item, variant, or group level depending on what is being mapped.
 
+An item's integration can be a single value or a map keyed by edition. For `priceCharting` and `pokeData`, the map may also be keyed by one of the item's variants, which then takes that value unless it sets its own.
+
 ## Schema and Validation
 
 The schema is the ground truth for how collectdb data is formed.
