@@ -246,15 +246,17 @@ such as a star for a Pokémon Rare or a gold set symbol for a Magic rare. A card
 `details.finish` names a holofoil or foil finish. A card without one is non-holo (or nonfoil).
 A variant may carry its own `details.rarity` or `details.finish` when it differs from its item.
 A series edition may carry a `finish` that every printing in it shares, such as Magic's `foil`
-edition. A printing's finish is its variant's, else its edition's, else its item's. A variant
-without its own finish does not take its item's when its name says it is non-holo or nonfoil,
-such as the "Non-holo" deck printing of a holo card. No `non-holo` value is stored.
+edition. A printing's finish is its variant's, else its edition's, else its item's. A variant or
+edition without its own finish does not take its item's when its name says it is non-holo or
+nonfoil, such as the "Non-holo" deck printing of a holo card. No `non-holo` value is stored, so
+a non-foil printing of a foil card says so in its name ("Limited Pack 02, Non-Foil").
 
 Every card in a Pokémon black star promo set has the rarity `Promo`, since the promo mark is
 printed in place of a rarity.
 
 Each card type declares the values it recognizes in its `_type.yaml`, under `rarities` and
-`finishes`. Each value is keyed by a slug and gives the `name` that items write:
+`finishes`. Rarities are listed from the lowest to the highest, and a rarity sort uses that
+order. Each value is keyed by a slug and gives the `name` that items write:
 
 ```yaml
 rarities:
@@ -265,6 +267,30 @@ finishes:
   holo:
     name: Holo
 ```
+
+A rarity may list `symbols` that say how its mark is drawn. The first entry that matches a
+card is used. An entry can be limited to a `region`, to series released on or after a `since`
+date, or to `generations` (a trailing `*` matches a prefix, as in `dbs-*`), and it gives an
+`image`, a printed `code`, a `color`, or an image with a code beside it:
+
+```yaml
+ultra-rare:
+  name: Ultra Rare
+  symbols:
+    - region: english
+      since: '2023-03-31'
+      image: ultra-rare # two silver stars, from Scarlet & Violet
+    - region: english
+      image: white-star
+    - region: japanese
+      since: '2010-09-18'
+      code: UR
+```
+
+An `image` is a webp in collectdb-assets at `assets/<type>/_rarities/<image>.webp`. The Pokémon
+marks are drawn as SVGs and rendered by `illustrator/rarity-marks/build.sh` in the TopVault repo. A Magic `color`
+tints the series symbol, since Magic marks rarity by the symbol's colour. A rarity with no
+matching entry has no mark to show.
 
 Finishes are kept coarse: a pattern such as Cosmos or Cracked Ice belongs in the variant name,
 and its finish is still `Holo`. A source that folds a finish or mechanic into its rarity

@@ -6,8 +6,12 @@ integrations:
   priceCharting: pokemon-japanese-reviving-legends
 editions:
   1st-edition: 1st Edition
-  1st-edition-reverse-holo: 1st Edition (Reverse Holo)
-  reverse-holo: Reverse Holo
+  1st-edition-reverse-holo:
+    name: 1st Edition (Reverse Holo)
+    finish: Reverse Holo
+  reverse-holo:
+    name: Reverse Holo
+    finish: Reverse Holo
   unlimited: Normal
 items:
   oddish:
@@ -209,6 +213,7 @@ items:
     index: '013'
     details:
       rarity: Common
+      finish: Holo
     editions:
       1st-edition: 66f7c673-e6a5-4b94-9818-7436d0fc2e68
       unlimited: a15f18b2-bd7d-4d2c-a6b1-0f39d0dc4fc6
@@ -241,6 +246,7 @@ items:
     index: '015'
     details:
       rarity: Rare
+      finish: Holo
     editions:
       1st-edition: d87d4667-e4b8-44df-b2db-d7f94d91d9ed
       unlimited: 1b465863-53c3-4291-ba75-6da911bf915a
@@ -321,6 +327,7 @@ items:
     index: '020'
     details:
       rarity: Rare
+      finish: Holo
     editions:
       1st-edition: 19b8cbbd-f17d-4511-8ceb-0b10e034c3e3
       unlimited: ed0e20af-a2c7-4484-bde4-25132c39b878
@@ -709,6 +716,7 @@ items:
     index: '044'
     details:
       rarity: Rare
+      finish: Holo
     editions:
       1st-edition: 8b08773e-8d09-43d8-a089-76000c5ecee5
       unlimited: cf65054d-52e8-49b5-849c-4175f7fb0581
@@ -758,6 +766,7 @@ items:
     index: '047'
     details:
       rarity: Rare
+      finish: Holo
     editions:
       1st-edition: 4cb90c79-5f3e-407e-a8fa-8bc679b4aee7
       unlimited: 3c17f1c1-a3e9-41e3-ad98-95defcd45a59
@@ -1286,6 +1295,8 @@ items:
       tcgCollector: cards/26145/alph-lithograph-reviving-legends-081-080
       pokeData: '51053'
       tcgPlayer: '608875'
+    details:
+      finish: Holo
 additional:
   steelix-constructed-standard-deck:
     name: Steelix Constructed Standard Deck
