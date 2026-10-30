@@ -216,7 +216,7 @@ A reference is a placeholder, it is the same printed item but included in multip
 An item or variant can also carry an optional `remark` that flags it as a notable,
 searchable category rather than an ordinary color, finish, or treatment variation.
 Remark slugs follow a category-prefix convention where the segment before the first
-`-` is the category (`error`, `test`, or `promo`), so a search for `error` matches
+`-` is the category (`error`, `test`, `promo`, or `reprint`), so a search for `error` matches
 every error remark while the full slug narrows it (for example `error-tampo`).
 
 Each collectible type declares the remarks it recognizes in its `_type.yaml` under a
@@ -234,10 +234,44 @@ remarks:
 
 **Adding a new remark type.** Add the slug with its `name` and `description` to the
 `remarks` map in the relevant `_type.yaml`, keeping the first segment to one of `error`,
-`test`, or `promo`, then apply the slug to items or variants. The `remark` field itself
+`test`, `promo`, or `reprint`, then apply the slug to items or variants. The `remark` field itself
 is a plain string in the schema; `npm run validate:data` asserts that every remark used
 in a type's items is declared in that type's `remarks` map, so an undeclared remark fails
 validation.
+
+### Rarities and Finishes
+
+A card's `details.rarity` is its printed rarity: the rarity mark the publisher prints on it,
+such as a star for a Pokémon Rare or a gold set symbol for a Magic rare. A card's
+`details.finish` names a holofoil or foil finish. A card without one is non-holo (or nonfoil).
+A variant may carry its own `details.rarity` or `details.finish` when it differs from its item.
+A series edition may carry a `finish` that every printing in it shares, such as Magic's `foil`
+edition. A printing's finish is its variant's, else its edition's, else its item's. A variant
+without its own finish does not take its item's when its name says it is non-holo or nonfoil,
+such as the "Non-holo" deck printing of a holo card. No `non-holo` value is stored.
+
+Every card in a Pokémon black star promo set has the rarity `Promo`, since the promo mark is
+printed in place of a rarity.
+
+Each card type declares the values it recognizes in its `_type.yaml`, under `rarities` and
+`finishes`. Each value is keyed by a slug and gives the `name` that items write:
+
+```yaml
+rarities:
+  double-rare:
+    name: Double Rare
+    description: Two black stars; RR in Japanese.
+finishes:
+  holo:
+    name: Holo
+```
+
+Finishes are kept coarse: a pattern such as Cosmos or Cracked Ice belongs in the variant name,
+and its finish is still `Holo`. A source that folds a finish or mechanic into its rarity
+("Rare Holo", "Holo Rare VMAX", "Rare Holo LV.X") is written as `rarity: Rare` with
+`finish: Holo`, since the printed mark is the plain rare star. When a type declares
+`rarities` or `finishes`, `npm run validate:data` asserts that every value used in its items
+and variants is declared.
 
 ### Stable Opaque Identifiers
 
@@ -298,6 +332,7 @@ The validator walks the data tree, parses YAML, and checks:
 - referenced series files against the series schema
 - orphan series files that are not referenced by `_region.yaml`
 - that every `remark` used by an item or variant is declared in its collectible type's `remarks` map
+- that every `details.rarity` and `details.finish` is declared in its collectible type's `rarities` and `finishes` maps, when the type declares them
 
 ## Formatting
 

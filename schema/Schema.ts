@@ -27,6 +27,9 @@ const SeriesEditionSchema = z.object({
     releaseDate: z.union([z.string(), z.date()]).optional(),
     description: z.string().optional(),
     links: z.record(z.string(), z.string()).optional(),
+    // The finish of every printing in this edition, such as Foil or Reverse Holo, by a name the
+    // collectible type declares in `finishes`. It takes the place of the item's own finish.
+    finish: z.string().optional(),
 });
 
 // Single or per-edition refers to labeling an entire item or labeling each edition individually.
@@ -62,6 +65,15 @@ export const RemarkSchema = z
     })
     .strict();
 
+// A printed rarity or finish a collectible type recognizes. Items and variants write its `name`
+// in `details.rarity` or `details.finish`; the slug it is keyed by names its asset files.
+export const DetailValueSchema = z
+    .object({
+        name: z.string().min(1),
+        description: z.string().optional(),
+    })
+    .strict();
+
 // A collectible type is the top-level category for collectibles.
 // It is made up of one or more regions (or languages) and they must be explicitly listed.
 // Each region maps to a directory containing a valid RegionSchema defined in _region.yaml.
@@ -77,6 +89,13 @@ export const CollectibleTypeSchema = z
         // friendly name and description. The data validator asserts every remark used
         // by an item or variant in this type is declared here. See RemarkSchema below.
         remarks: z.record(z.string(), RemarkSchema).optional(),
+
+        // The printed rarities (the rarity mark the publisher prints on a card) and the finishes
+        // this collectible type recognizes. When a type declares them, the data validator asserts
+        // every `details.rarity` and `details.finish` of an item or variant names one. A card with
+        // no `details.finish` is non-holo (or nonfoil).
+        rarities: z.record(z.string(), DetailValueSchema).optional(),
+        finishes: z.record(z.string(), DetailValueSchema).optional(),
     })
     .strict();
 

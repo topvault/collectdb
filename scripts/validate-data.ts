@@ -41,6 +41,20 @@ type RemarkUsage = {
 type DeclaredRemarks = {
     typeDir: string;
     slugs: Set<string>;
+    // The declared names of each details field, or null when the type declares none.
+    details: Record<DetailField, Set<string> | null>;
+};
+
+// A details field whose values a collectible type may declare in its `_type.yaml`.
+type DetailField = 'rarity' | 'finish';
+
+const DETAIL_FIELDS: Record<DetailField, string> = { rarity: 'rarities', finish: 'finishes' };
+
+type DetailUsage = {
+    field: DetailField;
+    value: string;
+    filePath: string;
+    location: string;
 };
 
 type IndexedItemId = {
@@ -70,6 +84,7 @@ type SeriesSemanticData = {
     itemIds: IndexedItemId[];
     references: CollectedReference[];
     remarks: RemarkUsage[];
+    details: DetailUsage[];
 };
 
 type ValidationCollection = {
@@ -430,6 +445,7 @@ function collectItemSemanticData(
     itemIds: IndexedItemId[],
     references: CollectedReference[],
     remarks: RemarkUsage[],
+    details: DetailUsage[],
     group?: string
 ): void {
     if (!isRecord(itemValue)) {
@@ -439,11 +455,15 @@ function collectItemSemanticData(
     if (typeof itemValue.remark === 'string') {
         remarks.push({ slug: itemValue.remark, filePath, location: `${itemPath}.remark` });
     }
+    collectDetailUsages(filePath, itemPath, itemValue, details);
 
     if (isRecord(itemValue.variants)) {
         for (const [variantKey, variantValue] of Object.entries(itemValue.variants)) {
             if (isRecord(variantValue) && typeof variantValue.remark === 'string') {
                 remarks.push({ slug: variantValue.remark, filePath, location: `${itemPath}.variants.${variantKey}.remark` });
+            }
+            if (isRecord(variantValue)) {
+                collectDetailUsages(filePath, `${itemPath}.variants.${variantKey}`, variantValue, details);
             }
         }
     }
@@ -502,15 +522,37 @@ function collectItemSemanticData(
     }
 }
 
+function collectDetailUsages(filePath: string, valuePath: string, value: Record<string, unknown>, details: DetailUsage[]): void {
+    if (!isRecord(value.details)) {
+        return;
+    }
+
+    for (const field of Object.keys(DETAIL_FIELDS) as DetailField[]) {
+        const fieldValue = value.details[field];
+        if (fieldValue !== undefined) {
+            details.push({ field, value: String(fieldValue), filePath, location: `${valuePath}.details.${field}` });
+        }
+    }
+}
+
 function collectSeriesSemanticData(filePath: string, parsed: unknown): SeriesSemanticData {
     if (!isRecord(parsed)) {
-        return { itemIds: [], references: [], remarks: [] };
+        return { itemIds: [], references: [], remarks: [], details: [] };
     }
 
     const { generation, series } = getSeriesKeysFromFilePath(filePath);
     const itemIds: IndexedItemId[] = [];
     const references: CollectedReference[] = [];
     const remarks: RemarkUsage[] = [];
+    const details: DetailUsage[] = [];
+
+    if (isRecord(parsed.editions)) {
+        for (const [editionKey, edition] of Object.entries(parsed.editions)) {
+            if (isRecord(edition) && edition.finish !== undefined) {
+                details.push({ field: 'finish', value: String(edition.finish), filePath, location: `editions.${editionKey}.finish` });
+            }
+        }
+    }
 
     const sections = [
         ['items', parsed.items],
@@ -523,7 +565,18 @@ function collectSeriesSemanticData(filePath: string, parsed: unknown): SeriesSem
         }
 
         for (const [itemKey, itemValue] of Object.entries(sectionValue)) {
-            collectItemSemanticData(filePath, `${sectionName}.${itemKey}`, itemKey, itemValue, generation, series, itemIds, references, remarks);
+            collectItemSemanticData(
+                filePath,
+                `${sectionName}.${itemKey}`,
+                itemKey,
+                itemValue,
+                generation,
+                series,
+                itemIds,
+                references,
+                remarks,
+                details
+            );
         }
     }
 
@@ -544,13 +597,14 @@ function collectSeriesSemanticData(filePath: string, parsed: unknown): SeriesSem
                     itemIds,
                     references,
                     remarks,
+                    details,
                     groupKey
                 );
             }
         }
     }
 
-    return { itemIds, references, remarks };
+    return { itemIds, references, remarks, details };
 }
 
 function formatIndexedItemId(definition: IndexedItemId): string {
@@ -653,7 +707,42 @@ function collectGlobalSeriesSemanticFailures(seriesEntries: SeriesSemanticData[]
 function collectDeclaredRemarks(filePath: string, parsed: unknown): DeclaredRemarks {
     const typeDir = path.dirname(filePath);
     const remarks = isRecord(parsed) && isRecord(parsed.remarks) ? Object.keys(parsed.remarks) : [];
-    return { typeDir, slugs: new Set(remarks) };
+    const declaredNames = (key: string): Set<string> | null => {
+        const declared = isRecord(parsed) ? parsed[key] : undefined;
+        if (!isRecord(declared)) {
+            return null;
+        }
+        return new Set(Object.values(declared).flatMap(value => (isRecord(value) && typeof value.name === 'string' ? [value.name] : [])));
+    };
+    return {
+        typeDir,
+        slugs: new Set(remarks),
+        details: { rarity: declaredNames(DETAIL_FIELDS.rarity), finish: declaredNames(DETAIL_FIELDS.finish) },
+    };
+}
+
+// Asserts that every `details.rarity` and `details.finish` names a value declared in the owning
+// collectible type's `_type.yaml` `rarities` or `finishes` map. A type that declares no such map
+// is not checked for that field.
+function collectUndeclaredDetailFailures(declaredRemarks: DeclaredRemarks[], usages: DetailUsage[]): ValidationFailure[] {
+    const typeDirsByLength = [...declaredRemarks].sort((left, right) => right.typeDir.length - left.typeDir.length);
+    const failures: ValidationFailure[] = [];
+
+    for (const usage of usages) {
+        const owner = typeDirsByLength.find(declared => usage.filePath.startsWith(declared.typeDir + path.sep));
+        const declared = owner?.details[usage.field];
+        if (!owner || !declared || declared.has(usage.value)) {
+            continue;
+        }
+
+        const typeLabel = path.relative(process.cwd(), owner.typeDir) || owner.typeDir;
+        failures.push({
+            filePath: usage.filePath,
+            message: `${usage.location}: ${usage.field} '${usage.value}' is not declared in ${typeLabel}/_type.yaml ${DETAIL_FIELDS[usage.field]}.`,
+        });
+    }
+
+    return failures;
 }
 
 // Asserts that every remark used by an item or variant is declared in the owning
@@ -827,6 +916,7 @@ async function main(): Promise<void> {
 
     failures.push(...collectGlobalSeriesSemanticFailures(seriesEntries));
     failures.push(...collectUndefinedRemarkFailures(declaredRemarks, seriesEntries.flatMap(entry => entry.remarks)));
+    failures.push(...collectUndeclaredDetailFailures(declaredRemarks, seriesEntries.flatMap(entry => entry.details)));
 
     if (warnings.length > 0) {
         printGroupedMessages(warnings, message => console.warn(message));
