@@ -62,3 +62,101 @@ remarks:
   reprint-championship-deck:
     name: Championship Deck
     description: A World Championship Deck, sold at retail as a reprint of a deck played at the World Championships.
+rarities:
+  # The rarity mark printed on the card, written by name in details.rarity.
+  common:
+    name: Common
+    description: A circle.
+  uncommon:
+    name: Uncommon
+    description: A diamond.
+  rare:
+    name: Rare
+    description: A star, holo or not. Includes cards that sources name for their mechanic, such as V, ex, LV.X, Prime, BREAK and LEGEND.
+  double-rare:
+    name: Double Rare
+    description: Two black stars; RR in Japanese.
+  triple-rare:
+    name: Triple Rare
+    description: RRR in Japanese.
+  ultra-rare:
+    name: Ultra Rare
+    description: In English, a full-art card (two silver stars from Scarlet & Violet on); UR in Japanese, usually a gold card.
+  super-rare:
+    name: Super Rare
+    description: SR in Japanese.
+  secret-rare:
+    name: Secret Rare
+    description: Numbered past the set's printed total.
+  hyper-rare:
+    name: Hyper Rare
+    description: Three gold stars; HR in Japanese.
+  art-rare:
+    name: Art Rare
+    description: AR in Japanese.
+  special-art-rare:
+    name: Special Art Rare
+    description: SAR in Japanese.
+  illustration-rare:
+    name: Illustration Rare
+    description: One gold star.
+  special-illustration-rare:
+    name: Special Illustration Rare
+    description: Two gold stars.
+  character-rare:
+    name: Character Rare
+    description: CHR in Japanese.
+  character-super-rare:
+    name: Character Super Rare
+    description: CSR in Japanese.
+  trainer-rare:
+    name: Trainer Rare
+    description: TR in Japanese.
+  shiny-rare:
+    name: Shiny Rare
+    description: S in Japanese.
+  shiny-super-rare:
+    name: Shiny Super Rare
+    description: SSR in Japanese.
+  shiny-ultra-rare:
+    name: Shiny Ultra Rare
+  ace-spec-rare:
+    name: ACE SPEC Rare
+  amazing-rare:
+    name: Amazing Rare
+    description: A in Japanese.
+  radiant-rare:
+    name: Radiant Rare
+    description: K in Japanese.
+  prism-rare:
+    name: Prism Rare
+  classic-collection:
+    name: Classic Collection
+  black-white-rare:
+    name: Black White Rare
+    description: BWR.
+  mega-attack-rare:
+    name: Mega Attack Rare
+  mega-ultra-rare:
+    name: Mega Ultra Rare
+    description: MUR in Japanese.
+  mega-hyper-rare:
+    name: Mega Hyper Rare
+  futuristic-rare:
+    name: Futuristic Rare
+  rgb-rare:
+    name: RGB Rare
+  promo:
+    name: Promo
+    description: The PROMO mark of a promo card, printed in place of a rarity.
+  none:
+    name: None
+    description: Printed with no rarity mark, as in McDonald's collections and trainer kits.
+finishes:
+  # Written by name in details.finish; a card without one is non-holo (or nonfoil).
+  holo:
+    name: Holo
+    description: Holofoil in the art box or across the card, in any pattern such as Cosmos or Cracked Ice.
+  reverse-holo:
+    name: Reverse Holo
+    description: Holofoil everywhere except the art box.

@@ -18,3 +18,30 @@ remarks:
   reprint-championship-deck:
     name: Championship Deck
     description: A World Championship Deck or Pro Tour Collector Set deck, sold at retail as a reprint of a tournament player's deck.
+rarities:
+  # The rarity mark printed on the card, written by name in details.rarity.
+  common:
+    name: Common
+    description: A black set symbol.
+  uncommon:
+    name: Uncommon
+    description: A silver set symbol.
+  rare:
+    name: Rare
+    description: A gold set symbol.
+  mythic-rare:
+    name: Mythic Rare
+    description: An orange-red set symbol.
+  special:
+    name: Special
+    description: A purple set symbol, such as Time Spiral's timeshifted cards.
+  bonus:
+    name: Bonus
+    description: Scryfall's rarity for a set's bonus-sheet cards.
+finishes:
+  # Written by name in details.finish; a card without one is non-holo (or nonfoil).
+  foil:
+    name: Foil
+  etched:
+    name: Etched
+    description: Foil-etched, with a metallic etched pattern.
