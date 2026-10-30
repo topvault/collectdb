@@ -63,95 +63,229 @@ remarks:
     name: Championship Deck
     description: A World Championship Deck, sold at retail as a reprint of a deck played at the World Championships.
 rarities:
-  # The rarity mark printed on the card, written by name in details.rarity.
-  common:
-    name: Common
-    description: A circle.
-  uncommon:
-    name: Uncommon
-    description: A diamond.
-  rare:
-    name: Rare
-    description: A star, holo or not. Includes cards that sources name for their mechanic, such as V, ex, LV.X, Prime, BREAK and LEGEND.
-  double-rare:
-    name: Double Rare
-    description: Two black stars; RR in Japanese.
-  triple-rare:
-    name: Triple Rare
-    description: RRR in Japanese.
-  ultra-rare:
-    name: Ultra Rare
-    description: In English, a full-art card (two silver stars from Scarlet & Violet on); UR in Japanese, usually a gold card.
-  super-rare:
-    name: Super Rare
-    description: SR in Japanese.
-  secret-rare:
-    name: Secret Rare
-    description: Numbered past the set's printed total.
-  hyper-rare:
-    name: Hyper Rare
-    description: Three gold stars; HR in Japanese.
-  art-rare:
-    name: Art Rare
-    description: AR in Japanese.
-  special-art-rare:
-    name: Special Art Rare
-    description: SAR in Japanese.
-  illustration-rare:
-    name: Illustration Rare
-    description: One gold star.
-  special-illustration-rare:
-    name: Special Illustration Rare
-    description: Two gold stars.
-  character-rare:
-    name: Character Rare
-    description: CHR in Japanese.
-  character-super-rare:
-    name: Character Super Rare
-    description: CSR in Japanese.
-  trainer-rare:
-    name: Trainer Rare
-    description: TR in Japanese.
-  shiny-rare:
-    name: Shiny Rare
-    description: S in Japanese.
-  shiny-super-rare:
-    name: Shiny Super Rare
-    description: SSR in Japanese.
-  shiny-ultra-rare:
-    name: Shiny Ultra Rare
-  ace-spec-rare:
-    name: ACE SPEC Rare
-  amazing-rare:
-    name: Amazing Rare
-    description: A in Japanese.
-  radiant-rare:
-    name: Radiant Rare
-    description: K in Japanese.
-  prism-rare:
-    name: Prism Rare
-  classic-collection:
-    name: Classic Collection
-  black-white-rare:
-    name: Black White Rare
-    description: BWR.
-  mega-attack-rare:
-    name: Mega Attack Rare
-  mega-ultra-rare:
-    name: Mega Ultra Rare
-    description: MUR in Japanese.
-  mega-hyper-rare:
-    name: Mega Hyper Rare
-  futuristic-rare:
-    name: Futuristic Rare
-  rgb-rare:
-    name: RGB Rare
-  promo:
-    name: Promo
-    description: The PROMO mark of a promo card, printed in place of a rarity.
+  # The rarity mark printed on the card, written by name in details.rarity. Listed from the
+  # lowest rarity to the highest, which is the order a rarity sort uses.
   none:
     name: None
     description: Printed with no rarity mark, as in McDonald's collections and trainer kits.
+  promo:
+    name: Promo
+    description: The PROMO mark of a promo card, printed in place of a rarity.
+  common:
+    name: Common
+    description: A circle.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: C
+      - image: common
+  uncommon:
+    name: Uncommon
+    description: A diamond.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: U
+      - image: uncommon
+  rare:
+    name: Rare
+    description: A star, holo or not. Includes cards that sources name for their mechanic, such as V, ex, LV.X, Prime, BREAK and LEGEND.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: R
+      - image: rare
+  classic-collection:
+    name: Classic Collection
+    symbols:
+      - region: english
+        image: rare
+        code: C
+  double-rare:
+    name: Double Rare
+    description: Two black stars; RR in Japanese.
+    symbols:
+      - region: english
+        image: double-rare
+      - region: japanese
+        since: '2010-09-18'
+        code: RR
+  triple-rare:
+    name: Triple Rare
+    description: RRR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: RRR
+  radiant-rare:
+    name: Radiant Rare
+    description: K in Japanese.
+    symbols:
+      - region: english
+        image: white-star
+        code: RAD
+      - region: japanese
+        since: '2010-09-18'
+        code: K
+  amazing-rare:
+    name: Amazing Rare
+    description: A in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: A
+  prism-rare:
+    name: Prism Rare
+  ace-spec-rare:
+    name: ACE SPEC Rare
+    symbols:
+      - region: english
+        image: ace-spec-rare
+      - region: japanese
+        since: '2010-09-18'
+        code: ACE
+  shiny-rare:
+    name: Shiny Rare
+    description: S in Japanese.
+    symbols:
+      - region: english
+        since: '2024-01-26'
+        image: shiny-rare
+      - region: english
+        image: rare
+        code: SH
+      - region: japanese
+        since: '2010-09-18'
+        code: S
+  character-rare:
+    name: Character Rare
+    description: CHR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: CHR
+  trainer-rare:
+    name: Trainer Rare
+    description: TR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: TR
+  illustration-rare:
+    name: Illustration Rare
+    description: One gold star.
+    symbols:
+      - region: english
+        image: illustration-rare
+  art-rare:
+    name: Art Rare
+    description: AR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: AR
+  ultra-rare:
+    name: Ultra Rare
+    description: In English, a full-art card (two silver stars from Scarlet & Violet on); UR in Japanese, usually a gold card.
+    symbols:
+      - region: english
+        since: '2023-03-31'
+        image: ultra-rare
+      - region: english
+        image: white-star
+      - region: japanese
+        since: '2010-09-18'
+        code: UR
+  super-rare:
+    name: Super Rare
+    description: SR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: SR
+  shiny-ultra-rare:
+    name: Shiny Ultra Rare
+    symbols:
+      - region: english
+        image: shiny-ultra-rare
+  shiny-super-rare:
+    name: Shiny Super Rare
+    description: SSR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: SSR
+  character-super-rare:
+    name: Character Super Rare
+    description: CSR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: CSR
+  special-illustration-rare:
+    name: Special Illustration Rare
+    description: Two gold stars.
+    symbols:
+      - region: english
+        image: special-illustration-rare
+  special-art-rare:
+    name: Special Art Rare
+    description: SAR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: SAR
+  mega-attack-rare:
+    name: Mega Attack Rare
+    symbols:
+      - region: english
+        image: mega-attack-rare
+      - region: japanese
+        since: '2010-09-18'
+        code: MA
+  secret-rare:
+    name: Secret Rare
+    description: Numbered past the set's printed total.
+    symbols:
+      - region: english
+        image: white-star
+  hyper-rare:
+    name: Hyper Rare
+    description: Three gold stars; HR in Japanese.
+    symbols:
+      - region: english
+        image: hyper-rare
+      - region: japanese
+        since: '2010-09-18'
+        code: HR
+  black-white-rare:
+    name: Black White Rare
+    description: BWR.
+    symbols:
+      - region: english
+        image: black-white-rare
+      - region: japanese
+        since: '2010-09-18'
+        code: BWR
+  futuristic-rare:
+    name: Futuristic Rare
+    symbols:
+      - region: english
+        image: futuristic-rare
+  rgb-rare:
+    name: RGB Rare
+  mega-ultra-rare:
+    name: Mega Ultra Rare
+    description: MUR in Japanese.
+    symbols:
+      - region: japanese
+        since: '2010-09-18'
+        code: MUR
+  mega-hyper-rare:
+    name: Mega Hyper Rare
+    symbols:
+      - region: english
+        image: mega-hyper-rare
 finishes:
   # Written by name in details.finish; a card without one is non-holo (or nonfoil).
   holo:

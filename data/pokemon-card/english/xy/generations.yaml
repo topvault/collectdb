@@ -4,7 +4,9 @@ integrations:
   pokeData: Generations
 editions:
   unlimited: Normal
-  reverse-holo: Reverse Holo
+  reverse-holo:
+    name: Reverse Holo
+    finish: Reverse Holo
 links:
   Bulbapedia: https://bulbapedia.bulbagarden.net/wiki/Generations_(TCG)
 releaseDate: '2016-02-22'
@@ -17,6 +19,7 @@ items:
       illustrator: Eske Yoshinob
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113659'
       pokeData: '3852'
@@ -29,6 +32,7 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113660'
       pokeData: '3850'
@@ -69,6 +73,7 @@ items:
       illustrator: miki kudo
       rarity: Rare
       category: Pokemon
+      finish: Holo
     editions:
       unlimited: aaae7698-9fde-45e7-bd17-d1e37d73a6d9
       reverse-holo: 262aba0e-210c-467f-89ff-a865a26d04b2
@@ -157,6 +162,7 @@ items:
       illustrator: Naoki Saito
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113668'
       pokeData: '3845'
@@ -169,6 +175,7 @@ items:
       illustrator: Eske Yoshinob
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113669'
       pokeData: '3842'
@@ -181,6 +188,7 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113670'
       pokeData: '3841'
@@ -193,6 +201,7 @@ items:
       illustrator: Eske Yoshinob
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113671'
       pokeData: '3853'
@@ -261,6 +270,7 @@ items:
       illustrator: Eske Yoshinob
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113675'
       pokeData: '3851'
@@ -273,6 +283,7 @@ items:
       illustrator: 5ban Graphics
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113676'
       pokeData: '3847'
@@ -371,6 +382,7 @@ items:
       illustrator: Naoki Saito
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113682'
       pokeData: '3848'
@@ -383,6 +395,7 @@ items:
       illustrator: Ryo Ueda
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113683'
       pokeData: '3844'
@@ -419,6 +432,7 @@ items:
       illustrator: Mitsuhiro Arita
       rarity: Rare
       category: Pokemon
+      finish: Holo
     editions:
       unlimited: ab1ae831-b02d-4e67-9e7a-c37ec8fb8624
       reverse-holo: d5cbd60c-b037-4449-b709-a3c0455c668f
@@ -436,6 +450,7 @@ items:
       illustrator: Naoki Saito
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     variants:
       yellow-a-alt:
         name: Alternate Art
@@ -456,6 +471,7 @@ items:
       illustrator: Ryo Ueda
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113687'
       pokeData: '3843'
@@ -552,6 +568,7 @@ items:
       illustrator: Saya Tsuruta
       rarity: Rare
       category: Pokemon
+      finish: Holo
     editions:
       unlimited: 6ed9447d-831c-4abf-b78c-c932f1ab9c5a
       reverse-holo: 8df14c20-39ab-495a-bfda-8e3245baf3e9
@@ -584,6 +601,7 @@ items:
       illustrator: Toyste Beach
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113695'
       pokeData: '3854'
@@ -654,6 +672,7 @@ items:
       illustrator: PLANETA
       rarity: Rare
       category: Pokemon
+      finish: Holo
     editions:
       unlimited: 5f2961b8-663b-4ec0-9cfc-e7d277aced7a
       reverse-holo: e2edf038-878c-4559-b50b-088bc9c174ad
@@ -710,6 +729,7 @@ items:
       illustrator: Hasuno
       rarity: Rare
       category: Pokemon
+      finish: Holo
     editions:
       unlimited: 7e848191-82df-4e52-9133-b52334aa8e8e
       reverse-holo: 298b4d03-8889-4f7b-9051-a80824ad55cf
@@ -727,6 +747,7 @@ items:
       illustrator: Toyste Beach
       rarity: Ultra Rare
       category: Pokemon
+      finish: Holo
     integrations:
       tcgPlayer: '113704'
       pokeData: '3855'
@@ -1376,11 +1397,15 @@ additional:
             description: Mirror Foil Elemental Evolution Tin exclusive
             id: 1be0a721-6b5e-4bf1-82b3-ccc562fd97ae
             remark: promo-generic
+            details:
+              finish: Holo
           sheen-holo:
             name: Sheen Holo
             description: Vertical Sheen Holofoil Elemental Evolution Tins exclusive
             id: fe9eb6b2-5e11-4041-965f-cc8b8a87dc1f
             remark: promo-generic
+            details:
+              finish: Holo
         index: RC6
       snorunt-RC7:
         name: Snorunt

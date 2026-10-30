@@ -15,53 +15,90 @@ remarks:
     name: Promo
     description: Promotional distribution other than a prerelease, such as a tournament, judge, event, or stamped prize.
 rarities:
-  # The rarity mark printed on the card, written by name in details.rarity.
-  common:
-    name: Common
-  uncommon:
-    name: Uncommon
-  rare:
-    name: Rare
-  super-rare:
-    name: Super Rare
-  special-rare:
-    name: Special Rare
-  secret-rare:
-    name: Secret Rare
-  ultra-rare:
-    name: Ultra Rare
-  expansion-rare:
-    name: Expansion Rare
-  starter-rare:
-    name: Starter Rare
-  legendary:
-    name: Legendary
-  leader:
-    name: Leader
-  special-leader-rare:
-    name: Special Leader Rare
-  concept-rare:
-    name: Concept Rare
-  dragon-ball-rare:
-    name: Dragon Ball Rare
-  god-rare:
-    name: God Rare
-  iconic-attack-rare:
-    name: Iconic Attack Rare
-  infinite-saiyan-rare:
-    name: Infinite Saiyan Rare
-  son-gohan-rare:
-    name: Son Gohan Rare
-  duo-power-rare:
-    name: Duo Power Rare
-  giant-force-rare:
-    name: Giant Force Rare
+  # The rarity mark printed on the card, written by name in details.rarity. Listed from the
+  # lowest rarity to the highest, which is the order a rarity sort uses.
+  promo:
+    name: Promo
+    symbols:
+      - generations: ['dbs-*']
+        code: PR
   merit:
     name: Merit
   fixed:
     name: Fixed
-  promo:
-    name: Promo
+  common:
+    name: Common
+    symbols:
+      - generations: ['dbs-*']
+        code: C
+  uncommon:
+    name: Uncommon
+    symbols:
+      - generations: ['dbs-*']
+        code: UC
+  rare:
+    name: Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: R
+  starter-rare:
+    name: Starter Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: ST
+  expansion-rare:
+    name: Expansion Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: EX
+  leader:
+    name: Leader
+    symbols:
+      - generations: ['dbs-*']
+        code: L
+  super-rare:
+    name: Super Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: SR
+  special-rare:
+    name: Special Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: SPR
+  ultra-rare:
+    name: Ultra Rare
+  legendary:
+    name: Legendary
+  concept-rare:
+    name: Concept Rare
+  iconic-attack-rare:
+    name: Iconic Attack Rare
+  special-leader-rare:
+    name: Special Leader Rare
+  secret-rare:
+    name: Secret Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: SCR
+  duo-power-rare:
+    name: Duo Power Rare
+  giant-force-rare:
+    name: Giant Force Rare
+  infinite-saiyan-rare:
+    name: Infinite Saiyan Rare
+  son-gohan-rare:
+    name: Son Gohan Rare
+  dragon-ball-rare:
+    name: Dragon Ball Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: DBR
+  god-rare:
+    name: God Rare
+    symbols:
+      - generations: ['dbs-*']
+        code: GDR
 finishes:
   # Written by name in details.finish; a card without one is non-holo (or nonfoil).
   foil:

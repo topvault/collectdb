@@ -74,6 +74,32 @@ export const DetailValueSchema = z
     })
     .strict();
 
+// How a printed rarity is drawn for one kind of card. The first entry of a rarity's `symbols` that
+// matches a card is used: `region` names the region it applies to, `since` the earliest series
+// release date (YYYY-MM-DD), and `generations` the generation keys, where a trailing `*` matches
+// any key with that prefix (`dbs-*`). An entry with none of these matches every card.
+//
+// What it draws is an `image` (a mark at assets/<type>/_rarities/<image>.webp in collectdb-assets),
+// a `code` (the letters printed on the card, shown as text, or beside the image), or a `color` (a
+// tint for the series symbol, which is how Magic marks rarity).
+export const RaritySymbolSchema = z
+    .object({
+        region: z.string().optional(),
+        since: z.string().regex(/^\d{4}-\d{2}-\d{2}$/u).optional(),
+        generations: z.array(z.string()).optional(),
+        image: z.string().optional(),
+        code: z.string().optional(),
+        color: z.string().regex(/^#[0-9a-f]{6}$/iu).optional(),
+    })
+    .strict()
+    .refine(symbol => symbol.image !== undefined || symbol.code !== undefined || symbol.color !== undefined, {
+        message: 'A rarity symbol needs an image, a code or a color.',
+    });
+
+export const RarityValueSchema = DetailValueSchema.extend({
+    symbols: z.array(RaritySymbolSchema).optional(),
+}).strict();
+
 // A collectible type is the top-level category for collectibles.
 // It is made up of one or more regions (or languages) and they must be explicitly listed.
 // Each region maps to a directory containing a valid RegionSchema defined in _region.yaml.
@@ -94,7 +120,7 @@ export const CollectibleTypeSchema = z
         // this collectible type recognizes. When a type declares them, the data validator asserts
         // every `details.rarity` and `details.finish` of an item or variant names one. A card with
         // no `details.finish` is non-holo (or nonfoil).
-        rarities: z.record(z.string(), DetailValueSchema).optional(),
+        rarities: z.record(z.string(), RarityValueSchema).optional(),
         finishes: z.record(z.string(), DetailValueSchema).optional(),
     })
     .strict();

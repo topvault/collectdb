@@ -1,9 +1,15 @@
 name: Black Bolt
 editions:
   unlimited: Normal
-  reverse: Reverse Holo
-  poke-ball: Poké Ball
-  master-ball: Master Ball
+  reverse:
+    name: Reverse Holo
+    finish: Reverse Holo
+  poke-ball:
+    name: Poké Ball
+    finish: Reverse Holo
+  master-ball:
+    name: Master Ball
+    finish: Reverse Holo
 integrations:
   priceCharting: pokemon-black-bolt
   pokeData: Black+Bolt
@@ -23,6 +29,8 @@ items:
         description: Tinsel Holo Black Bolt & White Flare Poster Collection exclusive.
         id: 766b8c96-fd2c-4e64-8605-ebda434f26ce
         remark: promo-generic
+        details:
+          finish: Holo
     editions:
       unlimited: 2e044b3a-96d4-445f-8e7f-d954828196aa
       reverse: 5f568f4b-1fe4-489e-b2db-f4d754b58fd8
@@ -55,6 +63,7 @@ items:
     name: Serperior Ex
     details:
       rarity: Double Rare
+      finish: Holo
     editions:
       unlimited: 710bf80f-97fa-4a87-b2ff-8b128ed6b9a9
     integrations:
@@ -193,6 +202,7 @@ items:
     name: Victini
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: 3c5e69cb-e3d7-4ffd-9b6c-c81643ca0ff0
       reverse: eee5af63-2e0a-4bd1-8a3f-1f42c9916daa
@@ -265,6 +275,7 @@ items:
     name: Volcarona
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: 29d44ce4-730a-4ce1-a11d-ff1ec7ff6d50
       reverse: cb053f73-f81c-468e-af1b-ccd924b92aee
@@ -377,6 +388,7 @@ items:
     name: Carracosta
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: 57089af4-cbe9-4f31-830b-d7ae8bec8e98
       reverse: 15e4479f-079f-4e82-9d2b-bd80479bce86
@@ -425,6 +437,7 @@ items:
     name: Beartic
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: 1802d426-8cd0-4a4e-b2ca-90cf0232c2ff
       reverse: 4fe38072-2c49-45a4-b3b8-06b4699ba1e7
@@ -457,6 +470,7 @@ items:
     name: Kyurem Ex
     details:
       rarity: Double Rare
+      finish: Holo
     editions:
       unlimited: 9e48dc0e-5305-4576-b1a4-2434f4c79039
     variants:
@@ -537,6 +551,7 @@ items:
     name: Thundurus
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: bf2583d1-87af-44f3-a916-a5ea86a7fd55
       reverse: b1760613-1cf8-4d04-8652-8b7fb631af7c
@@ -553,6 +568,7 @@ items:
     name: Zekrom Ex
     details:
       rarity: Double Rare
+      finish: Holo
     editions:
       unlimited: e62b60b1-56ff-4df2-81c6-49bc608cb150
     variants:
@@ -722,6 +738,7 @@ items:
     name: Meloetta Ex
     details:
       rarity: Double Rare
+      finish: Holo
     editions:
       unlimited: d3ea08c9-bda0-4ef9-98b9-afd7b8b0fdfa
     integrations:
@@ -748,6 +765,7 @@ items:
     name: Excadrill Ex
     details:
       rarity: Double Rare
+      finish: Holo
     editions:
       unlimited: 73c425cc-e667-4f4a-b832-59188eb7cf20
     integrations:
@@ -790,6 +808,7 @@ items:
     name: Conkeldurr
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: f39c57ca-4938-4057-8478-32d8fdc5fb48
       reverse: 28391494-5720-40fc-bef4-8611b4a705ad
@@ -854,6 +873,7 @@ items:
     name: Landorus
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: 6192414f-5ec7-4a0c-bdc0-dd9da8c0b484
       reverse: 479e2f22-fd7b-47c2-8b4f-ea6f1e0c47f1
@@ -1014,6 +1034,7 @@ items:
     name: Klinklang
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: db9a8d37-0afa-4aa7-869c-afaa9831e248
       reverse: ffbace23-64b0-4258-9965-394badf57510
@@ -1062,6 +1083,7 @@ items:
     name: Cobalion
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: e19725c7-3cec-4901-a61a-7df9adc520f8
       reverse: d8d2c092-e158-4048-93dd-5f8c8d17d129
@@ -1078,6 +1100,7 @@ items:
     name: Genesect Ex
     details:
       rarity: Double Rare
+      finish: Holo
     editions:
       unlimited: 833cce94-5e1e-4c53-ad4b-f027dcb98fbb
     integrations:
@@ -1120,6 +1143,7 @@ items:
     name: Haxorus
     details:
       rarity: Rare
+      finish: Holo
     editions:
       unlimited: 0d86597c-7d43-4841-8c37-14916fceb1a8
       reverse: 061e08e9-ef36-4bc9-bde8-906721f6f025
@@ -1397,6 +1421,7 @@ items:
     name: Snivy
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 55a9e17c-712b-4b4f-b281-5e20fe365fb8
     integrations:
@@ -1407,6 +1432,7 @@ items:
     name: Servine
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: ae18c676-f6da-4284-a1b8-5d96bf2ee309
     integrations:
@@ -1417,6 +1443,7 @@ items:
     name: Pansage
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 623fb747-ee58-4338-93c7-2b08537dfc76
     integrations:
@@ -1427,6 +1454,7 @@ items:
     name: Simisage
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: f3e3cb76-6774-4816-a517-1e9e03e2a3ad
     integrations:
@@ -1437,6 +1465,7 @@ items:
     name: Petilil
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: e91c807f-14a7-4758-b745-729ea26300e2
     integrations:
@@ -1447,6 +1476,7 @@ items:
     name: Lilligant
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 4fc95c59-de32-4e82-9f32-94c38ba0a61f
     integrations:
@@ -1457,6 +1487,7 @@ items:
     name: Maractus
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 5f7bb6ca-9a3a-47a3-93f3-38bf3b0536b0
     integrations:
@@ -1467,6 +1498,7 @@ items:
     name: Karrablast
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: f1ba678e-1525-49ec-a630-2b5e79f44099
     integrations:
@@ -1477,6 +1509,7 @@ items:
     name: Foongus
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 82ebfe1c-103d-477d-b84e-a916781f2876
     integrations:
@@ -1487,6 +1520,7 @@ items:
     name: Amoonguss
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: a7201239-b640-4ea3-820b-86bbc8c1f455
     integrations:
@@ -1497,6 +1531,7 @@ items:
     name: Darumaka
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: c520901b-04ae-405a-8346-512fadc0ddc0
     integrations:
@@ -1507,6 +1542,7 @@ items:
     name: Darmanitan
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: cf37277d-78e9-4e84-abc9-3e3c84cff984
     integrations:
@@ -1517,6 +1553,7 @@ items:
     name: Larvesta
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: f3008821-e679-4224-9c62-0ac1766ec949
     integrations:
@@ -1527,6 +1564,7 @@ items:
     name: Volcarona
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: b322ef3c-0174-4e79-a3af-a603dbc0b7a7
     integrations:
@@ -1537,6 +1575,7 @@ items:
     name: Panpour
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 2f7d5c29-443e-46d2-bbe3-2e6565daac83
     integrations:
@@ -1547,6 +1586,7 @@ items:
     name: Simipour
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 3ea6206e-28a0-4860-8e92-c3047eef0e30
     integrations:
@@ -1557,6 +1597,7 @@ items:
     name: Tympole
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 7f1d4b91-8609-434a-831f-ee67b8b1855c
     integrations:
@@ -1567,6 +1608,7 @@ items:
     name: Palpitoad
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 27af6b1a-bcc7-4792-b19b-1cb49bbb96fa
     integrations:
@@ -1577,6 +1619,7 @@ items:
     name: Seismitoad
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 013fdb94-2ec2-4caa-9ad9-5675ef5c2f68
     integrations:
@@ -1587,6 +1630,7 @@ items:
     name: Tirtouga
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: a13eceec-fbd0-4855-a970-cd8342cd0501
     integrations:
@@ -1597,6 +1641,7 @@ items:
     name: Carracosta
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 595afe7c-bbfb-440b-bdb5-45078d0b406b
     integrations:
@@ -1607,6 +1652,7 @@ items:
     name: Alomomola
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 03c29cc4-bcdc-4e2d-b5a7-955f6419a02b
     integrations:
@@ -1617,6 +1663,7 @@ items:
     name: Cubchoo
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 6fc596b8-7207-40b5-8450-3a9db4d4431d
     integrations:
@@ -1627,6 +1674,7 @@ items:
     name: Beartic
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 3ae5e0b8-78b4-4436-8fd2-cfbf62c14fdc
     integrations:
@@ -1637,6 +1685,7 @@ items:
     name: Cryogonal
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 1c82f413-a8c7-4524-b7d5-0e4a0e34bcc3
     integrations:
@@ -1647,6 +1696,7 @@ items:
     name: Emolga
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 36cf377b-54c1-4375-80dc-d2e8eb5cde82
     integrations:
@@ -1657,6 +1707,7 @@ items:
     name: Tynamo
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 4d5da13e-45e5-4100-abd3-e8deac9eb996
     integrations:
@@ -1667,6 +1718,7 @@ items:
     name: Eelektrik
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: ac0c38a6-7df3-4bf1-811d-dc303ecd7ac6
     integrations:
@@ -1677,6 +1729,7 @@ items:
     name: Eelektross
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: ef0bdbe2-8ba4-4a14-9990-728a7f6b727f
     integrations:
@@ -1687,6 +1740,7 @@ items:
     name: Munna
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 9ac3b63f-b440-4069-820f-12baab10bdbf
     integrations:
@@ -1697,6 +1751,7 @@ items:
     name: Musharna
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: a3f10f35-0558-4847-a7e9-7e303b41b945
     integrations:
@@ -1707,6 +1762,7 @@ items:
     name: Solosis
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 0c2a7b38-c43a-4354-aaff-58f1a67f2a83
     integrations:
@@ -1717,6 +1773,7 @@ items:
     name: Duosion
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 554a3fc2-e9fc-4d02-8607-ed5b69fdfdad
     integrations:
@@ -1727,6 +1784,7 @@ items:
     name: Elgyem
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: a9e3dc2e-cb7f-492b-b0bb-e4cc6d20a3ca
     integrations:
@@ -1737,6 +1795,7 @@ items:
     name: Beheeyem
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 0c222373-ea19-4479-a01e-bfc645b885fb
     integrations:
@@ -1747,6 +1806,7 @@ items:
     name: Golett
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: f9080a9e-b61b-4f42-adf5-e237119143b0
     integrations:
@@ -1757,6 +1817,7 @@ items:
     name: Golurk
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 671c9c71-1228-44f8-8101-34b95d3b6d10
     integrations:
@@ -1767,6 +1828,7 @@ items:
     name: Drilbur
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 62b2beb3-33e3-424e-a3da-533622904f46
     integrations:
@@ -1777,6 +1839,7 @@ items:
     name: Timburr
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: c8051952-77c1-4b49-87a8-82820f5cbf8d
     integrations:
@@ -1787,6 +1850,7 @@ items:
     name: Gurdurr
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 3039cf58-4bde-4d74-ba93-2dc75fcb0f7c
     integrations:
@@ -1797,6 +1861,7 @@ items:
     name: Conkeldurr
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: aedd9321-3a5f-4c38-b98c-5a48e5ff519c
     integrations:
@@ -1807,6 +1872,7 @@ items:
     name: Throh
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 2bf6d6ed-5e5e-41c8-8e61-a74a11063e3a
     integrations:
@@ -1817,6 +1883,7 @@ items:
     name: Dwebble
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 9df88bbb-58d8-42bf-9611-21130973a5ac
     integrations:
@@ -1827,6 +1894,7 @@ items:
     name: Crustle
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 434550e7-7da2-4b1a-98f8-907c306db494
     integrations:
@@ -1837,6 +1905,7 @@ items:
     name: Landorus
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: c9a25449-a769-473c-bd7b-91941d22553e
     integrations:
@@ -1847,6 +1916,7 @@ items:
     name: Venipede
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 8610b4fa-8da1-4e5e-909f-57b22cc5aadd
     integrations:
@@ -1857,6 +1927,7 @@ items:
     name: Whirlipede
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 67dddefe-5a50-4311-837b-cc1d5dc893f2
     integrations:
@@ -1867,6 +1938,7 @@ items:
     name: Scolipede
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: b4284696-f7e1-4ee9-adf3-4a72aed3fbd2
     integrations:
@@ -1877,6 +1949,7 @@ items:
     name: Sandile
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: b56418c6-5285-4e21-9c66-481ec6dfbbd9
     integrations:
@@ -1887,6 +1960,7 @@ items:
     name: Krokorok
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 64f1b3d3-fa29-4fb2-b9c1-2b50c4a502d6
     integrations:
@@ -1897,6 +1971,7 @@ items:
     name: Krookodile
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 931c3b32-fbb7-4e25-b6de-c44fa1b8041a
     integrations:
@@ -1907,6 +1982,7 @@ items:
     name: Escavalier
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 28d303a1-e8e0-4a52-b8ce-88adb49b3c62
     integrations:
@@ -1917,6 +1993,7 @@ items:
     name: Klink
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 80652b1a-0216-49e5-b9cf-58e95e22a489
     integrations:
@@ -1927,6 +2004,7 @@ items:
     name: Klang
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: a3a8e148-6092-4209-98e7-74fdfe14a0e1
     integrations:
@@ -1937,6 +2015,7 @@ items:
     name: Klinklang
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 9bede683-ad4f-4b66-9b91-ccc4713aa793
     integrations:
@@ -1947,6 +2026,7 @@ items:
     name: Pawniard
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: e133f460-8a26-4d70-a996-05b621f0c2c4
     integrations:
@@ -1957,6 +2037,7 @@ items:
     name: Bisharp
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 87df2c3b-c29b-4a0c-8dbc-10daa22d6692
     integrations:
@@ -1967,6 +2048,7 @@ items:
     name: Cobalion
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 91ce89e3-56bf-417a-8502-ee11b233b7db
     integrations:
@@ -1977,6 +2059,7 @@ items:
     name: Axew
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 0fe1c0ea-9224-4161-a597-9cc11a719f25
     integrations:
@@ -1987,6 +2070,7 @@ items:
     name: Fraxure
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 0af49d3f-c852-47a9-baa4-ad5c1dee9984
     integrations:
@@ -1997,6 +2081,7 @@ items:
     name: Haxorus
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 005f0a9f-881a-4e1d-9b11-f6433250738b
     integrations:
@@ -2007,6 +2092,7 @@ items:
     name: Pidove
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: d94b0ffb-90d4-4a53-95c7-6e899c6f062f
     integrations:
@@ -2017,6 +2103,7 @@ items:
     name: Tranquill
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 91a6072e-6f66-4e86-aeb5-3c62300e2ddd
     integrations:
@@ -2027,6 +2114,7 @@ items:
     name: Unfezant
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 390e08a9-4fe6-46b6-a4e3-286387c00af7
     integrations:
@@ -2037,6 +2125,7 @@ items:
     name: Audino
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 87b253c2-3253-4264-8291-d073199d1115
     integrations:
@@ -2047,6 +2136,7 @@ items:
     name: Minccino
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 4e103595-1ff4-46b6-bd8e-68fb15bdc4ee
     integrations:
@@ -2057,6 +2147,7 @@ items:
     name: Cinccino
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 2195c501-83cc-42bf-91b7-7fc3ca0d8c2b
     integrations:
@@ -2067,6 +2158,7 @@ items:
     name: Rufflet
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 7cedc90d-4070-47fd-a1c2-2d04f3d8ae4f
     integrations:
@@ -2077,6 +2169,7 @@ items:
     name: Braviary
     details:
       rarity: Illustration Rare
+      finish: Holo
     editions:
       unlimited: 2f43cba5-0f09-4427-bec3-75a9c69d7cca
     integrations:
@@ -2087,6 +2180,7 @@ items:
     name: Serperior Ex
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: f818d49c-96e2-4851-a2e5-018e84b5a448
     integrations:
@@ -2097,6 +2191,7 @@ items:
     name: Kyurem Ex
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: 587bf02b-05f1-4a61-a9a1-d1722c44ca7e
     integrations:
@@ -2107,6 +2202,7 @@ items:
     name: Zekrom Ex
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: 08496a5f-077b-4763-85a9-b28bdc6b9ce0
     integrations:
@@ -2117,6 +2213,7 @@ items:
     name: Meloetta Ex
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: af68cdbc-6e83-41e5-ad72-2e01d4a171eb
     integrations:
@@ -2127,6 +2224,7 @@ items:
     name: Excadrill Ex
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: 436d72a8-fe22-4895-ba1f-fe8a88d9e216
     integrations:
@@ -2137,6 +2235,7 @@ items:
     name: Genesect Ex
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: c2384ecc-1d2f-436a-bd7f-d848b3b789b1
     integrations:
@@ -2147,6 +2246,7 @@ items:
     name: Fennel
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: a152b9ab-7759-456e-8d09-f6ffe990e4d8
     integrations:
@@ -2157,6 +2257,7 @@ items:
     name: N's Plan
     details:
       rarity: Ultra Rare
+      finish: Holo
     editions:
       unlimited: bb883522-974f-4870-91b1-838df26eebf7
     integrations:
@@ -2168,6 +2269,7 @@ items:
     name: Serperior Ex
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: 52908606-55e9-4a46-ab42-40c6ec9b35e1
     integrations:
@@ -2178,6 +2280,7 @@ items:
     name: Kyurem Ex
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: fdb4b35d-25c5-498b-9621-feb3923fbf66
     integrations:
@@ -2188,6 +2291,7 @@ items:
     name: Zekrom Ex
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: 48651abf-82ae-4bf2-8307-f2f27d328722
     integrations:
@@ -2198,6 +2302,7 @@ items:
     name: Meloetta Ex
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: 8080d111-e71a-4dfd-a1a8-f64129d11dc5
     integrations:
@@ -2208,6 +2313,7 @@ items:
     name: Excadrill Ex
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: 0d913f81-83bb-470d-b335-7738d067e738
     integrations:
@@ -2218,6 +2324,7 @@ items:
     name: Genesect Ex
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: 1a04aa43-0366-4270-89aa-d88e5ae7d8f7
     integrations:
@@ -2228,6 +2335,7 @@ items:
     name: N's Plan
     details:
       rarity: Special Illustration Rare
+      finish: Holo
     editions:
       unlimited: 166d0fb4-0c0f-438c-a1f0-0fde5417151b
     integrations:
@@ -2239,6 +2347,7 @@ items:
     name: Victini
     details:
       rarity: Black White Rare
+      finish: Holo
     editions:
       unlimited: 0f909aef-29b4-4772-bc69-08308e7ede5e
     integrations:
@@ -2249,6 +2358,7 @@ items:
     name: Zekrom Ex
     details:
       rarity: Black White Rare
+      finish: Holo
     editions:
       unlimited: 5f79a0fb-2d10-4b16-9527-2e65f225bbda
     integrations:
