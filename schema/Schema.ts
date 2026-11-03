@@ -209,6 +209,11 @@ const ReferenceItemSchema = z
     })
     .strict();
 
+// A link is a URL, or the URL for each of the editions it applies to, by edition key. A link that
+// names editions shows only on the items of those editions, so it can sit on an item that has
+// several editions and still apply to one.
+const ItemLinksSchema = z.record(z.string(), z.union([z.string(), z.record(z.string(), z.string())]));
+
 const DiscreteItemSchema = z
     .object({
         name: z.string(),
@@ -217,7 +222,7 @@ const DiscreteItemSchema = z
         editions: z.record(z.string(), z.string()),
         description: z.string().optional(),
         index: z.union([z.string(), z.number()]).optional(),
-        links: z.record(z.string(), z.string()).optional(),
+        links: ItemLinksSchema.optional(),
         releaseDate: z.union([z.string(), z.date()]).optional(), // Usually applied to products.
         authenticators: z
             .unknown()
@@ -306,6 +311,7 @@ export type CollectibleType = z.infer<typeof CollectibleTypeSchema>;
 
 export type Generation = z.infer<typeof GenerationSchema>;
 export type Variant = z.infer<typeof VariantSchema>;
+export type ItemLinks = z.infer<typeof ItemLinksSchema>;
 export type DiscreteItem = z.infer<typeof DiscreteItemSchema>;
 export type ReferenceItem = z.infer<typeof ReferenceItemSchema>;
 export type AdditionalItem = z.infer<typeof AdditionalItemSchema>;

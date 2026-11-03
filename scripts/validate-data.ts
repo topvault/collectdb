@@ -393,6 +393,36 @@ function collectInvalidItemIntegrationEditionKeys(parsed: unknown): string[] {
     return failures;
 }
 
+// A link that names editions can only name editions its item has.
+function collectInvalidItemLinkEditionKeys(parsed: unknown): string[] {
+    if (!isRecord(parsed) || !isRecord(parsed.items)) {
+        return [];
+    }
+
+    const failures: string[] = [];
+
+    for (const [itemKey, itemValue] of Object.entries(parsed.items)) {
+        if (!isRecord(itemValue) || !isRecord(itemValue.editions) || !isRecord(itemValue.links)) {
+            continue;
+        }
+
+        const editionKeys = new Set(Object.keys(itemValue.editions));
+        for (const [title, link] of Object.entries(itemValue.links)) {
+            if (!isRecord(link)) {
+                continue;
+            }
+            const invalidKeys = Object.keys(link).filter(key => !editionKeys.has(key));
+            if (invalidKeys.length > 0) {
+                failures.push(
+                    `items.${itemKey}.links.${title}: names editions the item does not have: ${invalidKeys.join(', ')} (editions: ${[...editionKeys].join(', ')})`
+                );
+            }
+        }
+    }
+
+    return failures;
+}
+
 function getOptionalString(record: Record<string, unknown>, key: string): string | undefined {
     const value = record[key];
     return typeof value === 'string' && value.length > 0 ? value : undefined;
@@ -848,6 +878,7 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
         const semanticFailures = [
             ...(target.kind === 'collectible-type' ? await collectCollectibleTypeRegionIssues(target.filePath, parsed) : []),
             ...(target.kind === 'series-items' ? collectInvalidItemIntegrationEditionKeys(parsed) : []),
+            ...(target.kind === 'series-items' ? collectInvalidItemLinkEditionKeys(parsed) : []),
         ].map(message => ({
             filePath: target.filePath,
             message,
