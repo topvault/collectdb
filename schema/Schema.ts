@@ -263,18 +263,22 @@ const ItemKey = z.string();
 const ItemMapSchema = z.record(ItemKey, ItemSchema);
 const AdditionalItemMapSchema = z.record(ItemKey, ReferenceItemSchema.or(AdditionalItemSchema));
 
+// The total printed on the cards of a series or group, the M in "N/M". A number when the cards print a
+// plain one ("123"), or the text as printed when it carries a prefix ("GG70"). Cards numbered above the
+// total are secrets, and some cards have no number at all.
+export const PrintedTotalSchema = z.union([z.number().int().positive(), z.string().regex(/^[A-Za-z]*[1-9]\d*$/)]);
+
 // Additional categories of items, to organize them into edition-like groups within a series.
 // This can be used for test sets, pre-release sets, etc.
 // Promos can be included here, but if there is a single promo then it can be included in the items list.
 const AdditionalGroupSchema = z
     .object({
         name: z.string(),
-        // The description is for record-keeping, this is not transferred into the database yet.
-        // It could be appended to the description for the series, sort of bullet-pointed details about the
-        // additional groups of items in the series.
+        // The description is returned with the group, and shown when an item is in the group.
         description: z.string().optional(),
         links: z.record(z.string(), z.string()).optional(),
         releaseDate: z.union([z.string(), z.date()]).optional(),
+        printedTotal: PrintedTotalSchema.optional(),
         integrations: ScalarIntegrationsSchema.optional(),
         rarityScore: RarityScoreSchema.transform(val => val as RarityScore).optional(),
         items: AdditionalItemMapSchema,
@@ -288,6 +292,7 @@ export const SeriesSchema = z
         integrations: SingleOrPerEditionIntegrationsSchema.or(z.null()).optional(),
         authenticators: z.unknown().optional(), // SeriesAuthenticators type.
         releaseDate: z.union([z.string(), z.date()]),
+        printedTotal: PrintedTotalSchema.optional(),
         region: z.string().optional(),
         description: z.string().optional(),
         links: z.record(z.string(), z.string()).optional(),
