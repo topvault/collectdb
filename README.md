@@ -425,6 +425,7 @@ The GitHub Actions workflow runs the same sync after successful pushes to `main`
 You can help collectdb by opening an issue or a pull request.
 
 - suggest a missing item or variant through the [missing item form](https://github.com/topvault/collectdb/issues/new?template=missing-collectible.yml)
+- report wrong or inconsistent data through the [incorrect data form](https://github.com/topvault/collectdb/issues/new?template=incorrect-data.yml)
 - suggest a new collectible type through the [new collectible type form](https://github.com/topvault/collectdb/issues/new?template=new-collectible-type.yml)
 - open a pull request directly when you already know the data changes to make
 

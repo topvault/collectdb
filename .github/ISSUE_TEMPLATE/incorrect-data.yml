@@ -1,0 +1,108 @@
+name: Incorrect or inconsistent data
+description: Report a wrong value, a mislabeled variant, or two entries that disagree.
+title: "[Incorrect data]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when something in collectdb is wrong. If an item or variant is missing entirely, use the missing item form instead.
+
+        Please point to the exact entry and say what the correct value should be. A source link lets us cross-check the fix.
+
+  - type: dropdown
+    id: collectible_type
+    attributes:
+      label: Collectible category
+      description: Choose the dataset that contains the problem.
+      options:
+        - Dragon Ball Card (dragon-ball-card)
+        - MTG Card (mtg-card)
+        - Pokémon Card (pokemon-card)
+        - Sports Card (sports-card)
+    validations:
+      required: true
+
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: What region or language.
+      placeholder: english
+    validations:
+      required: true
+
+  - type: input
+    id: series_key
+    attributes:
+      label: Set or series key
+      description: Use the exact set or series key, such as `base:base-set` or `sv:151`.
+      placeholder: sv:151
+    validations:
+      required: true
+
+  - type: input
+    id: record_key
+    attributes:
+      label: Entry key or name
+      description: The card, item, product, or variant that is wrong. Leave blank if the problem is with the set or series itself.
+      placeholder: pikachu-58
+
+  - type: dropdown
+    id: problem_kind
+    attributes:
+      label: What kind of problem is it?
+      description: Pick the closest match.
+      options:
+        - Wrong name, number, or spelling
+        - Wrong rarity, edition, or variant label
+        - Wrong release date, printed total, or set details
+        - Duplicate or conflicting entries
+        - Wrong or mismatched photo
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_is_wrong
+    attributes:
+      label: What is wrong?
+      description: Say what collectdb currently shows.
+      placeholder: The set lists 102 cards, but the printed total is 101.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct_value
+    attributes:
+      label: What should it be?
+      description: Give the corrected value, in your own words.
+      placeholder: The printed total is 101.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_links
+    attributes:
+      label: Source links
+      description: Include at least one reliable source, such as a scan, checklist, or product page. Independent sources help us cross-check.
+      placeholder: |
+        - https://...
+        - https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add anything else that would help, such as where you saw the problem in the app.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked the relevant series file or Sheets mirror first.
+          required: true
+        - label: I wrote the correction in my own words rather than pasting text from another site.
+          required: true
