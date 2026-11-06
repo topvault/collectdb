@@ -1,14 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="collectdb">
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="collectdb">
   <defs>
-    <mask id="collectdb-star-cutout">
-      <rect width="512" height="512" fill="white"/>
-      <path d="M256,170 L285,255 L375,256 L302,310 L329,395 L256,344 L183,395 L210,310 L137,256 L227,255 Z" fill="black"/>
+    <linearGradient id="cdb-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1DA1D6"/>
+      <stop offset="0.55" stop-color="#3D6BF0"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <clipPath id="cdb-clip">
+      <rect x="4" y="4" width="56" height="56" rx="15"/>
+    </clipPath>
+    <mask id="cdb-bands">
+      <rect width="64" height="64" fill="white"/>
+      <path d="M15.5,20.7 A16.5,5.3 0 0 0 48.5,20.7" fill="none" stroke="black" stroke-width="2.6"/>
+      <path d="M15.5,32.7 A16.5,5.3 0 0 0 48.5,32.7" fill="none" stroke="black" stroke-width="2.6"/>
+      <polygon points="32,27.6 33.18,30.78 36.57,30.92 33.9,33.02 34.82,36.28 32,34.4 29.18,36.28 30.1,33.02 27.43,30.92 30.82,30.78" fill="black"/>
     </mask>
   </defs>
-  <g mask="url(#collectdb-star-cutout)">
-    <path d="M56,92 V420 A200,50 0 0 0 456,420 V92 Z" fill="#2563EB"/>
-    <ellipse cx="256" cy="92" rx="200" ry="50" fill="#5a8ff5"/>
-    <path d="M56,200 A200,50 0 0 0 456,200" fill="none" stroke="#1d4ed8" stroke-width="7" stroke-linecap="round"/>
-    <path d="M56,310 A200,50 0 0 0 456,310" fill="none" stroke="#1d4ed8" stroke-width="7" stroke-linecap="round"/>
+  <rect x="4" y="4" width="56" height="56" rx="15" fill="url(#cdb-g)"/>
+  <g clip-path="url(#cdb-clip)">
+    <polygon points="40,0 52,0 18,64 6,64" fill="#FFFFFF" opacity="0.16"/>
+    <polygon points="55,0 59,0 25,64 21,64" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+  <g mask="url(#cdb-bands)" fill="#FFFFFF">
+    <path d="M17,20 V44 A15,5 0 0 0 47,44 V20 Z"/>
+    <ellipse cx="32" cy="20" rx="15" ry="5"/>
   </g>
 </svg>

@@ -14,9 +14,9 @@
     </a>
 </p>
 
-collectdb's goal is to provide a canonical, expressive, and stable catalog for collectibles such as trading cards, sports cards, and similar item-heavy domains where series structure, editions, product packaging, and variations matter.
+collectdb is a catalog for collectibles such as trading cards and sports cards, where series structure, editions, packaging, and variations matter.
 
-Unlike flat card lists, collectdb models how collectibles are actually published and collected:
+Instead of a flat card list, collectdb models how collectibles are published and collected:
 
 - collectible types contain regions or languages
 - regions contain generations
@@ -33,7 +33,7 @@ Adding to collectdb will make collectibles available for tracking in the TopVaul
 
 ### View using Sheets
 
-collectdb automatically sychronizes data to view-only sheets.
+collectdb automatically synchronizes data to view-only sheets.
 Please make copies of these templates if you would like to manage your own data.
 
 <!-- google-sheets-links:start -->
@@ -47,16 +47,16 @@ Please make copies of these templates if you would like to manage your own data.
 
 Most collectible datasets handle the easy part well: a name, a number, and a set.
 
-collectdb is built for the harder cases:
+collectdb handles the harder cases:
 
 - multiple print editions of the same collectible
 - product catalogs alongside the items they contain
 - variants that belong to another base item
 - subsets, promos, and special groups within a series
-- stable identifiers that do not change when labels or metadata evolve
+- stable identifiers that do not change when labels or metadata change
 - explicit links to outside systems
 
-The project is designed so that the schema is the contract. Data shape is not defined by convention or scattered scripts. It is defined and validated centrally.
+The schema defines the shape of the data, and one validator checks it. Nothing depends on convention or scattered scripts.
 
 ## Repository Layout
 
@@ -189,17 +189,17 @@ additional:
 
 ### Editions, Groups, and Products
 
-collectdb treats these as first-class concepts rather than optional notes:
+These are part of the schema itself:
 
-- editions distinguish publication variants inside a series
+- editions distinguish printings inside a series
 - groups organize special item catalogs inside a series
 - products describe packaged objects that contain or distribute items
 
-This is particularly useful in domains like Pokemon, where a booster pack is a collectible product, but the cards inside it are the discrete items.
+In Pokemon, for example, a booster pack is a collectible product and the cards inside it are the items.
 
 ### Variants and References
 
-collectdb specializes in cataloging variations.
+collectdb catalogs variations in detail.
 
 An item can:
 
@@ -208,13 +208,13 @@ An item can:
 - point at another base item in another series through `variantOf`
 - act as a reference to an item defined elsewhere through `referenceOf`
 
-This allows the data model to express print, finish, packaging, and cross-series relationships without losing stable identity.
+Together these cover print, finish, packaging, and cross-series relationships, and every item keeps its identity.
 
-A variant is a discretely and distinctly different item to collect.
-A reference is a placeholder, it is the same printed item but included in multiple sets.
+A variant is a distinct item to collect.
+A reference is a placeholder for the same printed item when it appears in more than one set.
 
 An item or variant can also carry an optional `remark` that flags it as a notable,
-searchable category rather than an ordinary color, finish, or treatment variation.
+searchable category, as opposed to an ordinary color, finish, or treatment variation.
 Remark slugs follow a category-prefix convention where the segment before the first
 `-` is the category (`error`, `test`, `promo`, or `reprint`), so a search for `error` matches
 every error remark while the full slug narrows it (for example `error-tampo`).
@@ -303,20 +303,20 @@ and variants is declared.
 
 Every item identity is represented by a stable, opaque identifier.
 
-Those identifiers are intentionally not semantic. They are meant to remain stable even if:
+Identifiers carry no meaning on purpose. They stay the same even if:
 
 - labels change
 - descriptions improve
 - integrations are remapped
-- hierarchy or grouping becomes more precise
-- placement mistakes are later corrected
+- the hierarchy or grouping changes
+- a placement mistake is corrected
 
-That makes collectdb suitable as a durable source of truth for downstream applications.
+Downstream applications can rely on them.
 
 ### Integrations
 
 Integrations connect collectdb records to other cataloging systems through labeled keys.
-These are best effort label-only documented linkages.
+These links are best effort and only record a label.
 
 Examples currently modeled in the schema include:
 
@@ -333,7 +333,7 @@ An item's integration can be a single value or a map keyed by edition. For `pric
 
 ## Schema and Validation
 
-The schema is the ground truth for how collectdb data is formed.
+The schema defines how collectdb data is formed.
 
 - runtime schema: [schema/Schema.ts](schema/Schema.ts)
 - validator: [scripts/validate-data.ts](scripts/validate-data.ts)
@@ -375,7 +375,7 @@ The GitHub Actions workflow runs `npm run format:check` on pull requests and pus
 
 ## Maintenance Scripts
 
-collectdb also includes data-specific maintenance scripts for ID assignment, explicit index creation, and reference normalization.
+collectdb also includes maintenance scripts for assigning IDs, adding indexes, and normalizing references.
 
 To assign missing opaque IDs for items, products, additional items, and variants:
 
@@ -414,11 +414,11 @@ The GitHub Actions workflow runs the same sync after successful pushes to `main`
 ## Design Principles
 
 - schema-first: the schema defines the contract
-- expressive hierarchy: generations, series, editions, groups, and products all matter
-- stable identity: item identifiers should survive metadata changes
-- variation-aware: variants and references are part of the model, not edge cases
-- integration-friendly: external cataloging systems can be attached explicitly
-- human-editable: YAML remains practical to read, review, and contribute to
+- hierarchy: generations, series, editions, groups, and products are all modeled
+- stable identity: item identifiers survive metadata changes
+- variants and references are part of the model
+- external cataloging systems can be linked explicitly
+- YAML stays easy to read, review, and edit by hand
 
 ## Collaboration
 
@@ -429,13 +429,13 @@ You can help collectdb by opening an issue or a pull request.
 - suggest a new collectible type through the [new collectible type form](https://github.com/topvault/collectdb/issues/new?template=new-collectible-type.yml)
 - open a pull request directly when you already know the data changes to make
 
-Contributions are especially useful in these areas:
+Useful contributions include:
 
-- adding new collectible types
-- expanding existing series coverage
-- improving variant and product catalogs
-- tightening schema rules and validation
-- documenting edge cases and modeling decisions
+- new collectible types
+- more complete series coverage
+- better variant and product catalogs
+- stricter schema rules and validation
+- notes on edge cases and modeling decisions
 
 Before opening a pull request, run:
 
@@ -445,7 +445,7 @@ npm run pr:prepare
 
 This formats YAML, fills missing opaque IDs, adds missing explicit indexes, normalizes `referenceOf` and `variantOf` links, and runs schema validation.
 
-If you want to run the same command sequence used for pull request checks without writing changes, run:
+To run the same checks as a pull request without writing changes, run:
 
 ```sh
 npm run pr:check
@@ -459,9 +459,9 @@ When contributing data:
 
 ## Status
 
-collectdb is intended to become a long-lived canonical database for collectible domains where structure and variation matter as much as names and numbers.
+collectdb aims to be a long-lived catalog for collectibles where structure and variation matter as much as names and numbers.
 
-If you are building tools for pricing, collection tracking, checklisting, grading, or catalog exploration, collectdb is designed to be a dependable source of structured identity and hierarchy.
+If you build tools for pricing, collection tracking, checklisting, grading, or catalog exploration, you can use collectdb for stable identities and hierarchy.
 
 ## Disclaimer
 
