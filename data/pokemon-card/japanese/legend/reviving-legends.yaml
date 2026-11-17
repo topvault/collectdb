@@ -9,7 +9,12 @@ releaseDate: '2010-02-11'
 integrations:
   tcgCollector: sets/11226/reviving-legends
   pokeData: Reviving+Legends
-  priceCharting: pokemon-japanese-reviving-legends
+  priceCharting:
+    unlimited: pokemon-japanese-reviving-legends
+    1st-edition: pokemon-japanese-reviving-legends
+    1st-edition-reverse-holo: pokemon-japanese-reviving-legends
+    reverse-holo: pokemon-japanese-reviving-legends
+    steelix-constructed-standard-deck: pokemon-japanese-steelix-constructed-starter-deck
 editions:
   1st-edition: 1st Edition
   1st-edition-reverse-holo:
@@ -1212,6 +1217,8 @@ items:
         unlimited: '51047'
         reverse-holo: '496948'
       tcgPlayer: '608869'
+      priceCharting:
+        unlimited: sage's-training-75
   team-rockets-trickery:
     name: Team Rocket's Trickery
     index: '076'
@@ -1228,6 +1235,8 @@ items:
         unlimited: '51048'
         reverse-holo: '496950'
       tcgPlayer: '608870'
+      priceCharting:
+        unlimited: team-rocket's-trickery-76
   ruins-of-alph:
     name: Ruins of Alph
     index: '077'
@@ -1310,6 +1319,7 @@ additional:
     releaseDate: '2010-02-11'
     integrations:
       tcgCollector: sets/11417/steelix-constructed-standard-deck
+      priceCharting: ''
     items:
       scyther:
         name: Scyther
