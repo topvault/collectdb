@@ -141,6 +141,9 @@ const ScalarIntegrationsSchema = z
         // Pokemon-card specific databases.
         tcgCollector: z.string().optional(),
         pokumon: z.string().optional(), // A card slug on pokumon.com, e.g. finalist-tropical-wind-026-nintendo-black-star-english-promo.
+        // The official Korean card database, pokemoncard.co.kr: a card's ID (BS2014003001) on an item,
+        // the product name as the site writes it (XY 확장팩 제3탄 「라이징피스트」) on a series.
+        pokemonKorea: z.string().optional(),
         // MtG-card specific databases.
         scryfall: z.string().optional(),
         // Hot Wheels specific databases.
@@ -154,6 +157,7 @@ const SingleOrPerEditionIntegrationsSchema = z
         priceCharting: SingleOrPerEdition.optional(),
         tcgCollector: SingleOrPerEdition.optional(),
         pokumon: SingleOrPerEdition.optional(),
+        pokemonKorea: SingleOrPerEdition.optional(),
         tcgPlayer: SingleOrPerEdition.optional(),
         scryfall: SingleOrPerEdition.optional(),
         pokeData: SingleOrPerEdition.optional(),
