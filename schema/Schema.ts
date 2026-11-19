@@ -144,6 +144,9 @@ const ScalarIntegrationsSchema = z
         // The official Korean card database, pokemoncard.co.kr: a card's ID (BS2014003001) on an item,
         // the product name as the site writes it (XY 확장팩 제3탄 「라이징피스트」) on a series.
         pokemonKorea: z.string().optional(),
+        // The official Asian card database, asia.pokemon-card.com: a card's ID on the site of the
+        // region's language (14661) on an item or variant, the set code (M2a) on a series.
+        pokemonAsia: z.string().optional(),
         // MtG-card specific databases.
         scryfall: z.string().optional(),
         // Hot Wheels specific databases.
@@ -158,6 +161,7 @@ const SingleOrPerEditionIntegrationsSchema = z
         tcgCollector: SingleOrPerEdition.optional(),
         pokumon: SingleOrPerEdition.optional(),
         pokemonKorea: SingleOrPerEdition.optional(),
+        pokemonAsia: SingleOrPerEdition.optional(),
         tcgPlayer: SingleOrPerEdition.optional(),
         scryfall: SingleOrPerEdition.optional(),
         pokeData: SingleOrPerEdition.optional(),
