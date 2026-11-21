@@ -20,12 +20,23 @@ type RarityScore =
 type AuthenticatorMatchSet = string[] | string[][];
 type ItemAuthenticators = Record<string, AuthenticatorMatchSet>;
 
+// Search terms: words collectors use for a printing that its name does not carry, such as
+// "shadowless" or a set code. A search matches each term the way it matches the name beside it.
+// Search does not read descriptions, so a word that should find the item belongs here.
+const TermsSchema = z
+    .array(z.string().trim().min(1))
+    .min(1)
+    .refine(terms => new Set(terms.map(term => term.toLowerCase())).size === terms.length, {
+        message: 'terms must not repeat',
+    });
+
 // A Series Edition is a well-known variation of the collectible for a known "edition".
 // Editions tend to occur in sequence, and the default edition placeholder is "unlimited", or "Normal".
 const SeriesEditionSchema = z.object({
     name: z.string(),
     releaseDate: z.union([z.string(), z.date()]).optional(),
     description: z.string().optional(),
+    terms: TermsSchema.optional(),
     links: z.record(z.string(), z.string()).optional(),
     // The finish of every printing in this edition, such as Foil or Reverse Holo, by a name the
     // collectible type declares in `finishes`. It takes the place of the item's own finish.
@@ -128,6 +139,7 @@ export const CollectibleTypeSchema = z
 const VariantDescriptor = z.object({
     name: z.string(),
     description: z.string().optional(),
+    terms: TermsSchema.optional(),
     links: z.record(z.string(), z.string()).optional(),
     edition: z.string().optional(), // If the variant is limited to a specific edition.
 });
@@ -229,6 +241,7 @@ const DiscreteItemSchema = z
         // Before snag runs, an edition may temporarily use an empty string placeholder.
         editions: z.record(z.string(), z.string()),
         description: z.string().optional(),
+        terms: TermsSchema.optional(),
         index: z.union([z.string(), z.number()]).optional(),
         links: ItemLinksSchema.optional(),
         releaseDate: z.union([z.string(), z.date()]).optional(), // Usually applied to products.
@@ -284,6 +297,8 @@ const AdditionalGroupSchema = z
         name: z.string(),
         // The description is returned with the group, and shown when an item is in the group.
         description: z.string().optional(),
+        // Search terms for every item in the group.
+        terms: TermsSchema.optional(),
         links: z.record(z.string(), z.string()).optional(),
         releaseDate: z.union([z.string(), z.date()]).optional(),
         printedTotal: PrintedTotalSchema.optional(),
@@ -303,6 +318,8 @@ export const SeriesSchema = z
         printedTotal: PrintedTotalSchema.optional(),
         region: z.string().optional(),
         description: z.string().optional(),
+        // Search terms for every item in the series.
+        terms: TermsSchema.optional(),
         links: z.record(z.string(), z.string()).optional(),
 
         // A series may add specific remarks.

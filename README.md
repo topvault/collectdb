@@ -239,6 +239,21 @@ is a plain string in the schema; `npm run validate:data` asserts that every rema
 in a type's items is declared in that type's `remarks` map, so an undeclared remark fails
 validation.
 
+### Search Terms
+
+A series, edition, group, item, or variant can list `terms`: words collectors use for it that its name does not carry, such as a set code or another spelling.
+
+```yaml
+editions:
+  1st-edition:
+    name: 1st Edition
+    terms: [First Edition]
+```
+
+Search matches a term the way it matches the name of what it sits on, so a group's terms find every item in the group.
+Search does not read descriptions, so a word that should find an item belongs in `terms` rather than in its description.
+Each term is one entry, and repeats or empty strings fail validation.
+
 ### Rarities and Finishes
 
 A card's `details.rarity` is its printed rarity: the rarity mark the publisher prints on it,
