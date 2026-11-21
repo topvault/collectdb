@@ -451,6 +451,8 @@ To run the same checks as a pull request without writing changes, run:
 npm run pr:check
 ```
 
+Both keep a cache in `.cache/`, so a run only reads the files that changed since the last one. A first run takes a couple of minutes, and later ones a few seconds. The cache is discarded whenever the check scripts, the schema or the installed packages change. To run without it, set `COLLECTDB_CHECK_CACHE=off`.
+
 When contributing data:
 
 1. update the relevant files under [data](data)

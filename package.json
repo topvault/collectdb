@@ -4,8 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "tsc -p tsconfig.json",
-        "format": "prettier --write \"data/**/*.yaml\"",
-        "format:check": "prettier --cache --check \"data/**/*.yaml\"",
+        "format": "prettier --cache --cache-strategy content --cache-location .cache/prettier.json --write \"data/**/*.yaml\"",
+        "format:check": "prettier --cache --cache-strategy content --cache-location .cache/prettier.json --check \"data/**/*.yaml\"",
         "pr:prepare": "npm run format && npm run snag && npm run reference-of && npm run validate:data",
         "pr:check": "npm run format:check && npm run snag -- --check && npm run reference-of -- --check && npm run validate:data",
         "index": "tsx scripts/index.ts",

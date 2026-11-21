@@ -6,6 +6,7 @@ import { ZodError, type ZodTypeAny } from 'zod';
 import { parseDocument } from 'yaml';
 
 import { CollectibleTypeSchema, RegionSchema, SeriesSchema } from '../schema/Schema.js';
+import { CheckCache } from './lib/check-cache.js';
 import { getSeriesIdFromFilePath } from './lib/series-path.js';
 
 type ValidationTarget = {
@@ -827,8 +828,7 @@ async function collectCollectibleTypeRegionIssues(filePath: string, parsed: unkn
     return failures;
 }
 
-async function validateFile(target: ValidationTarget): Promise<ValidationResult> {
-    const source = await readFile(target.filePath, 'utf8');
+async function validateFile(target: ValidationTarget, source: string): Promise<ValidationResult> {
     const document = parseDocument(source, {
         prettyErrors: false,
         strict: true,
@@ -901,6 +901,110 @@ async function validateFile(target: ValidationTarget): Promise<ValidationResult>
     };
 }
 
+// A file's result in the cache, without the file path every part of it shares and with item IDs as
+// tuples, since a full checkout has over half a million of them. `target` is how the file was
+// validated; a file that becomes an orphan, or stops being one, is validated again.
+type CachedValidation = {
+    target: string;
+    failures: string[];
+    warnings: string[];
+    semantic?: {
+        // [id, section, item, edition, group], with '' where there is none.
+        ids: [string, 'items' | 'products' | 'additional', string, string, string][];
+        references: Omit<CollectedReference, 'filePath'>[];
+        remarks: [string, string][];
+        details: [DetailField, string, string][];
+    };
+};
+
+const cache = new CheckCache<CachedValidation>('validate-data');
+
+function targetLabel(target: ValidationTarget): string {
+    return `${target.kind}:${target.isOrphan ? 'orphan' : 'listed'}`;
+}
+
+function sectionOf(location: string): 'items' | 'products' | 'additional' {
+    return location.startsWith('products.') ? 'products' : location.startsWith('additional.') ? 'additional' : 'items';
+}
+
+function toCached(target: ValidationTarget, result: ValidationResult): CachedValidation {
+    const semantic = result.seriesSemanticData;
+    return {
+        target: targetLabel(target),
+        failures: result.failures.map(failure => failure.message),
+        warnings: result.warnings.map(warning => warning.message),
+        ...(semantic
+            ? {
+                  semantic: {
+                      ids: semantic.itemIds.map(
+                          ({ id, location, item, edition, group }) =>
+                              [id, sectionOf(location), item, edition ?? '', group ?? ''] as [
+                                  string,
+                                  'items' | 'products' | 'additional',
+                                  string,
+                                  string,
+                                  string,
+                              ]
+                      ),
+                      references: semantic.references.map(({ filePath: _filePath, ...reference }) => reference),
+                      remarks: semantic.remarks.map(({ slug, location }) => [slug, location]),
+                      details: semantic.details.map(({ field, value, location }) => [field, value, location]),
+                  },
+              }
+            : {}),
+    };
+}
+
+function fromCached(target: ValidationTarget, cached: CachedValidation): ValidationResult {
+    const { filePath } = target;
+    const result: ValidationResult = {
+        failures: cached.failures.map(message => ({ filePath, message })),
+        warnings: cached.warnings.map(message => ({ filePath, message })),
+    };
+
+    if (cached.semantic) {
+        const { generation, series } = getSeriesKeysFromFilePath(filePath);
+        result.seriesSemanticData = {
+            itemIds: cached.semantic.ids.map(([id, section, item, edition, group]) => {
+                const itemPath = section === 'additional' ? `additional.${group}.items.${item}` : `${section}.${item}`;
+                return {
+                    id,
+                    filePath,
+                    location: edition ? `${itemPath}.editions.${edition}` : `${itemPath}.id`,
+                    generation,
+                    series,
+                    item,
+                    ...(group ? { group } : {}),
+                    ...(edition ? { edition } : {}),
+                };
+            }),
+            references: cached.semantic.references.map(reference => ({ ...reference, filePath })),
+            remarks: cached.semantic.remarks.map(([slug, location]) => ({ slug, filePath, location })),
+            details: cached.semantic.details.map(([field, value, location]) => ({ field, value, filePath, location })),
+        };
+    }
+
+    return result;
+}
+
+// A collectible type's `_type.yaml` is checked against the region directories beside it, so it is
+// always validated afresh; there are only a few.
+async function validateFileWithCache(target: ValidationTarget): Promise<ValidationResult> {
+    const source = await readFile(target.filePath, 'utf8');
+    if (target.kind === 'collectible-type') {
+        return validateFile(target, source);
+    }
+
+    const cached = cache.get(target.filePath, source);
+    if (cached && cached.target === targetLabel(target)) {
+        return fromCached(target, cached);
+    }
+
+    const result = await validateFile(target, source);
+    cache.set(target.filePath, source, toCached(target, result));
+    return result;
+}
+
 function printGroupedMessages(
     issues: Array<ValidationFailure | ValidationWarning>,
     write: (message?: string) => void
@@ -932,7 +1036,7 @@ async function main(): Promise<void> {
     const declaredRemarks: DeclaredRemarks[] = [];
 
     for (const target of targets) {
-        const result = await validateFile(target);
+        const result = await validateFileWithCache(target);
         failures.push(...result.failures);
         warnings.push(...result.warnings);
 
@@ -945,6 +1049,8 @@ async function main(): Promise<void> {
         }
     }
 
+    cache.save();
+
     failures.push(...collectGlobalSeriesSemanticFailures(seriesEntries));
     failures.push(...collectUndefinedRemarkFailures(declaredRemarks, seriesEntries.flatMap(entry => entry.remarks)));
     failures.push(...collectUndeclaredDetailFailures(declaredRemarks, seriesEntries.flatMap(entry => entry.details)));
@@ -955,7 +1061,9 @@ async function main(): Promise<void> {
 
     if (failures.length === 0) {
         const warningSuffix = warnings.length > 0 ? ` with ${warnings.length} warnings` : '';
-        console.log(`Validated ${targets.length} YAML files in ${path.relative(process.cwd(), rootPath) || '.'}${warningSuffix}.`);
+        console.log(
+            `Validated ${targets.length} YAML files in ${path.relative(process.cwd(), rootPath) || '.'}${warningSuffix} (${cache.describe()}).`
+        );
         return;
     }
 

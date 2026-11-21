@@ -15,6 +15,7 @@ import type {
     SeriesDescriptor,
     Variant,
 } from '../schema/Schema.js';
+import { CheckCache } from './lib/check-cache.js';
 import { getSeriesIdFromFilePath } from './lib/series-path.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
@@ -60,7 +61,25 @@ interface SnagYamlData {
     additional?: Record<string, { items: Record<string, SnagAdditionalEntry> }>;
 }
 
-const observedIds = new Set<string>();
+// Each series file's IDs, comma-joined, for files that need no changes. A file in the cache is not
+// parsed again; its IDs only join the collision check.
+const cache = new CheckCache<string>('snag');
+
+/** Where each ID of the region was first seen. */
+const observedIds = new Map<string, string>();
+/** The IDs of the file being read, in the order they were seen. */
+let fileIds: string[] = [];
+
+function addObservedId(id: string, location: string): void {
+    const first = observedIds.get(id);
+    if (first !== undefined) {
+        console.error(`ID collision found for ${id} at ${location} (first seen at ${first}).`);
+        process.exit(1);
+    }
+
+    observedIds.set(id, location);
+    fileIds.push(id);
+}
 
 function recordObservedId(id: string, location: string): void {
     if (!validateUuid(id)) {
@@ -68,12 +87,7 @@ function recordObservedId(id: string, location: string): void {
         process.exit(1);
     }
 
-    if (observedIds.has(id)) {
-        console.error(`ID collision found for ${id} at ${location}.`);
-        process.exit(1);
-    }
-
-    observedIds.add(id);
+    addObservedId(id, location);
 }
 
 function snagId(location: string, checkOnly: boolean): string {
@@ -105,6 +119,9 @@ interface AddIdsResult {
     idsObserved: number;
     idsAdded: number;
 }
+
+/** Set when a check-only run passes over an item-level `id` that a writing run would remove. */
+let leftStaleIds = false;
 
 interface ReadYamlFileResult {
     seriesObserved: number;
@@ -266,7 +283,9 @@ function processEditionEntries(
         const entryNode = yamlDoc.getIn([sectionKey, entryKey], true) as YAMLMap;
 
         if ('id' in entry) {
-            if (!checkOnly) {
+            if (checkOnly) {
+                leftStaleIds = true;
+            } else {
                 delete entry.id;
                 entryNode.delete('id');
                 updated = true;
@@ -421,12 +440,25 @@ async function readYamlFile(filePath: string, checkOnly: boolean): Promise<ReadY
     const leaf = path.basename(filePath, '.yaml');
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
+    const cached = cache.get(filePath, fileContent);
+    if (cached !== undefined) {
+        const ids = cached === '' ? [] : cached.split(',');
+        for (const id of ids) {
+            addObservedId(id, leaf);
+        }
+        return { seriesObserved: 1, idsObserved: ids.length, idsAdded: 0 };
+    }
+
+    fileIds = [];
+    leftStaleIds = false;
     const yamlDoc = parseDocument(fileContent);
     const yamlData = yamlDoc.toJS() as SnagYamlData;
     const result = addIds(yamlDoc, leaf, yamlData.editions, checkOnly);
     if (result.updated) {
         await writeFormattedYaml(filePath, yamlDoc);
         console.log(`Updated ${leaf}: added ${result.idsAdded} IDs.`);
+    } else if (!leftStaleIds) {
+        cache.set(filePath, fileContent, fileIds.join(','));
     }
 
     return {
@@ -537,7 +569,8 @@ async function main(): Promise<void> {
         totals.idsAdded += targetTotals.idsAdded;
     }
 
-    console.log(`Checked ${totals.seriesObserved} series and ${totals.idsObserved} IDs.`);
+    cache.save();
+    console.log(`Checked ${totals.seriesObserved} series and ${totals.idsObserved} IDs (${cache.describe()}).`);
 }
 
 await main();

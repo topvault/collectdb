@@ -15,6 +15,7 @@ import type {
     ReferenceOf,
     SeriesDescriptor,
 } from '../schema/Schema.js';
+import { CheckCache } from './lib/check-cache.js';
 import { getSeriesIdFromFilePath, parseSeriesId } from './lib/series-path.js';
 import { writeFormattedYaml } from './lib/write-formatted-yaml.js';
 
@@ -58,9 +59,26 @@ type IdIndexEntry = {
     edition?: string;
 };
 
-const generations: Record<string, Record<string, SeriesItemsInput>> = {};
+/** An ID a series file defines: [id, item, edition, group], with '' where there is none. */
+type IndexTuple = [string, string, string, string];
+
+// What a series file that needs no changes contributes, so the file is not parsed again: the IDs it
+// defines, and the IDs its references point at that no file defined when it was checked. If one of
+// those IDs turns up later the reference can be filled in, so the file is read again.
+type ReferenceSummary = {
+    index: IndexTuple[];
+    unresolved: string[];
+};
+
+const cache = new CheckCache<ReferenceSummary>('reference-of');
+
+/** The series read so far, by generation and series key. Series are read when first needed. */
+const generations: Record<string, Record<string, SeriesItemsInput | null>> = {};
+/** Every series of the region, by series ID, and the file it is in. */
+const seriesFiles = new Map<string, string>();
 const idIndex: Partial<Record<string, IdIndexEntry>> = {};
-const loadedFiles: Record<string, Document> = {};
+/** IDs of references the file being checked has that no file defines. */
+let unresolvedIds: string[] = [];
 const skippedDirectoryNames = new Set(['test-source']);
 
 interface ProcessingTarget {
@@ -84,69 +102,61 @@ function getVariantOf(item: SeriesItemInput | AdditionalEntryInput): ReferenceIn
     return 'variantOf' in item ? item.variantOf : undefined;
 }
 
-function indexItemEditions(itemData: DiscreteItemInput, generationKey: string, seriesKey: string, itemKey: string, groupKey?: string): void {
-    for (const [editionKey, editionId] of Object.entries(itemData.editions)) {
-        idIndex[editionId] = {
-            generation: generationKey,
-            series: seriesKey,
-            item: itemKey,
-            edition: editionKey,
-            ...(groupKey ? { group: groupKey } : {}),
-        };
-    }
-}
-
-function indexItem(
-    itemKey: string,
-    itemData: SeriesItemInput | AdditionalEntryInput,
-    generationKey: string,
-    seriesKey: string,
-    groupKey?: string
-): void {
-    if (isReferenceItem(itemData)) {
-        return;
-    }
-
-    if ('id' in itemData && itemData.id) {
-        idIndex[itemData.id] = {
-            generation: generationKey,
-            series: seriesKey,
-            item: itemKey,
-            ...(groupKey ? { group: groupKey } : {}),
-        };
-    }
-
-    if ('editions' in itemData) {
-        indexItemEditions(itemData, generationKey, seriesKey, itemKey, groupKey);
-    }
-}
-
-function indexAdditionalGroups(series: SeriesItemsInput, generationKey: string, seriesKey: string): void {
-    if (!series.additional) {
-        return;
-    }
-
-    for (const [groupKey, groupData] of Object.entries(series.additional)) {
-        for (const [itemKey, itemData] of Object.entries(groupData.items)) {
-            indexItem(itemKey, itemData, generationKey, seriesKey, groupKey);
+function collectIndex(series: SeriesItemsInput): IndexTuple[] {
+    const tuples: IndexTuple[] = [];
+    const add = (itemKey: string, itemData: SeriesItemInput | AdditionalEntryInput, groupKey = ''): void => {
+        if (isReferenceItem(itemData)) {
+            return;
         }
-    }
-}
 
-function indexSeries(seriesKey: string, series: SeriesItemsInput, generationKey: string): void {
+        if ('id' in itemData && itemData.id) {
+            tuples.push([itemData.id, itemKey, '', groupKey]);
+        }
+
+        if ('editions' in itemData) {
+            for (const [editionKey, editionId] of Object.entries(itemData.editions)) {
+                tuples.push([editionId, itemKey, editionKey, groupKey]);
+            }
+        }
+    };
+
     for (const [itemKey, itemData] of Object.entries(series.items)) {
-        indexItem(itemKey, itemData, generationKey, seriesKey);
+        add(itemKey, itemData);
     }
 
-    indexAdditionalGroups(series, generationKey, seriesKey);
-}
-
-function buildIdIndex(): void {
-    for (const [generationKey, generation] of Object.entries(generations)) {
-        for (const [seriesKey, series] of Object.entries(generation)) {
-            indexSeries(seriesKey, series, generationKey);
+    for (const [groupKey, groupData] of Object.entries(series.additional ?? {})) {
+        for (const [itemKey, itemData] of Object.entries(groupData.items)) {
+            add(itemKey, itemData, groupKey);
         }
     }
+
+    return tuples;
+}
+
+function addToIndex(tuples: IndexTuple[], generationKey: string, seriesKey: string): void {
+    for (const [id, item, edition, group] of tuples) {
+        idIndex[id] = {
+            generation: generationKey,
+            series: seriesKey,
+            item,
+            ...(edition ? { edition } : {}),
+            ...(group ? { group } : {}),
+        };
+    }
+}
+
+/** A series of the region, read from its file the first time it is asked for. */
+function getSeries(generationKey: string, seriesKey: string): SeriesItemsInput | null {
+    const loaded = generations[generationKey]?.[seriesKey];
+    if (loaded !== undefined) {
+        return loaded;
+    }
+
+    const filePath = seriesFiles.get(`${generationKey}:${seriesKey}`);
+    const series = filePath ? (readYamlFile(filePath).toJS() as SeriesItemsInput | null) : null;
+    generations[generationKey] ??= {};
+    generations[generationKey][seriesKey] = series;
+    return series;
 }
 
 function findReferenceFromId(id: string): ReferenceOf | null {
@@ -170,16 +180,16 @@ function findId(generationKey: string, seriesKey: string, reference: ReferenceOf
     reference.series ??= seriesKey;
     reference.edition ??= 'unlimited';
 
-    if (!(reference.generation in generations)) {
+    const generationPrefix = `${reference.generation}:`;
+    if (![...seriesFiles.keys()].some(seriesId => seriesId.startsWith(generationPrefix))) {
         throw new Error(`Unknown generation: ${reference.generation}`);
     }
 
-    const generation = generations[reference.generation];
-    if (!(reference.series in generation)) {
+    const series = getSeries(reference.generation, reference.series);
+    if (!series) {
         throw new Error(`Unknown series: ${reference.series}`);
     }
 
-    const series = generation[reference.series];
     let item: DiscreteItemInput | AdditionalItemInput;
 
     if (reference.group) {
@@ -238,6 +248,7 @@ function fillReference(
     if (typeof refData === 'string') {
         const fullRef = findReferenceFromId(refData);
         if (!fullRef) {
+            unresolvedIds.push(refData);
             return false;
         }
 
@@ -258,6 +269,7 @@ function fillReference(
 
     const fullRef = findReferenceFromId(refData.id);
     if (!fullRef) {
+        unresolvedIds.push(refData.id);
         return false;
     }
 
@@ -477,32 +489,21 @@ function resetState(): void {
         delete idIndex[key];
     }
 
-    for (const key of Object.keys(loadedFiles)) {
-        delete loadedFiles[key];
-    }
+    seriesFiles.clear();
 }
 
-async function readSeriesFiles(
-    regionPath: string,
-    dirPath: string,
-    listedSeriesIds: Set<string>,
-    checkOnlyMode: boolean
-): Promise<ReadSeriesFilesResult> {
-    const entries = fs.readdirSync(dirPath);
-    let filesChecked = 0;
-    let filesNeedingUpdate = 0;
+/** The listed series files under a directory, in directory order. */
+function listSeriesFiles(regionPath: string, dirPath: string, listedSeriesIds: Set<string>): string[] {
+    const files: string[] = [];
 
-    for (const entry of entries) {
+    for (const entry of fs.readdirSync(dirPath)) {
         if (entry.startsWith('_')) {
             continue;
         }
 
         const fullPath = path.join(dirPath, entry);
-        const stat = fs.statSync(fullPath);
-        if (stat.isDirectory()) {
-            const nested = await readSeriesFiles(regionPath, fullPath, listedSeriesIds, checkOnlyMode);
-            filesChecked += nested.filesChecked;
-            filesNeedingUpdate += nested.filesNeedingUpdate;
+        if (fs.statSync(fullPath).isDirectory()) {
+            files.push(...listSeriesFiles(regionPath, fullPath, listedSeriesIds));
             continue;
         }
 
@@ -511,34 +512,68 @@ async function readSeriesFiles(
         }
 
         const seriesId = getSeriesIdFromFilePath(regionPath, fullPath);
-        if (!seriesId) {
+        if (seriesId && listedSeriesIds.has(seriesId)) {
+            files.push(fullPath);
+        }
+    }
+
+    return files;
+}
+
+interface SeriesFile {
+    fullPath: string;
+    source: string;
+    generationKey: string;
+    seriesKey: string;
+    index: IndexTuple[];
+}
+
+async function readSeriesFiles(regionPath: string, listedSeriesIds: Set<string>, checkOnlyMode: boolean): Promise<ReadSeriesFilesResult> {
+    const toCheck: (SeriesFile & { yamlDoc: Document })[] = [];
+    const fromCache: (SeriesFile & { unresolved: string[] })[] = [];
+
+    // Index every ID of the region first, since a reference can point at any series in it.
+    for (const fullPath of listSeriesFiles(regionPath, regionPath, listedSeriesIds)) {
+        const { generationKey, seriesKey } = getKeys(regionPath, fullPath);
+        seriesFiles.set(`${generationKey}:${seriesKey}`, fullPath);
+
+        const source = fs.readFileSync(fullPath, 'utf8');
+        const summary = cache.get(fullPath, source);
+        if (summary) {
+            addToIndex(summary.index, generationKey, seriesKey);
+            fromCache.push({ fullPath, source, generationKey, seriesKey, ...summary });
             continue;
         }
 
-        if (!listedSeriesIds.has(seriesId)) {
-            continue;
-        }
-
-        const yamlDoc = readYamlFile(fullPath);
-    const { generationKey, seriesKey } = getKeys(regionPath, fullPath);
-        const yamlData = yamlDoc.toJS() as SeriesItemsInput;
-
+        const yamlDoc = parseDocument(source);
+        const yamlData = yamlDoc.toJS() as SeriesItemsInput | null;
+        generations[generationKey] ??= {};
+        generations[generationKey][seriesKey] = yamlData;
         if (!yamlData) {
             continue;
         }
 
-        loadedFiles[fullPath] = yamlDoc;
-        generations[generationKey] ??= {};
-        generations[generationKey][seriesKey] = yamlData;
+        const index = collectIndex(yamlData);
+        addToIndex(index, generationKey, seriesKey);
+        toCheck.push({ fullPath, source, generationKey, seriesKey, index, yamlDoc });
     }
 
-    buildIdIndex();
+    let filesChecked = 0;
+    for (const entry of fromCache) {
+        if (entry.unresolved.some(id => idIndex[id])) {
+            toCheck.push({ ...entry, yamlDoc: parseDocument(entry.source) });
+        } else {
+            filesChecked += 1;
+        }
+    }
 
-    for (const [fullPath, yamlDoc] of Object.entries(loadedFiles)) {
+    let filesNeedingUpdate = 0;
+    for (const { fullPath, source, generationKey, seriesKey, index, yamlDoc } of toCheck) {
         filesChecked += 1;
-        const { generationKey, seriesKey } = getKeys(regionPath, fullPath);
+        unresolvedIds = [];
 
         if (!setIds(yamlDoc, generationKey, seriesKey)) {
+            cache.set(fullPath, source, { index, unresolved: [...new Set(unresolvedIds)] });
             continue;
         }
 
@@ -558,6 +593,7 @@ async function main(): Promise<void> {
         throw new Error('No collectible type regions found to process.');
     }
 
+    let filesChecked = 0;
     let filesNeedingUpdate = 0;
 
     for (const target of targets) {
@@ -581,9 +617,13 @@ async function main(): Promise<void> {
             throw new Error('Cannot find directory of series files');
         }
 
-        const result = await readSeriesFiles(fileDir, fileDir, listedSeriesIds, checkOnly);
+        const result = await readSeriesFiles(fileDir, listedSeriesIds, checkOnly);
+        filesChecked += result.filesChecked;
         filesNeedingUpdate += result.filesNeedingUpdate;
     }
+
+    cache.save();
+    console.log(`Checked ${filesChecked} series files (${cache.describe()}).`);
 
     if (checkOnly && filesNeedingUpdate > 0) {
         console.error(`${filesNeedingUpdate} files would be updated.`);

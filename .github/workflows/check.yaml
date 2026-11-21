@@ -30,7 +30,9 @@ on:
       - 'tsconfig.json'
 
 jobs:
-  prettier:
+  # One job runs every check, so the repository is checked out and installed once. Each check runs
+  # even when an earlier one fails, so a pull request sees every problem at once.
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -44,92 +46,52 @@ jobs:
           cache: npm
 
       - name: Install dependencies
+        id: install
         run: npm ci
+
+      # The checks keep what they learned from each data file in .cache, keyed by the file's
+      # contents, so a run only parses the files that changed. A pull request restores its own last
+      # cache, or else main's. Each cache records the checker code it was written by and is ignored
+      # when that code has changed, so any earlier cache is safe to start from.
+      - name: Restore check caches
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: checks-${{ github.sha }}
+          restore-keys: checks-
 
       - name: Check YAML formatting
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: npm run format:check
 
-  snag:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
       - name: Check generated IDs
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: npm run snag -- --check
 
-  # Indexes are not always needed on call collection types.
-  # index:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Check out repository
-  #       uses: actions/checkout@v4
-  #     - name: Set up Node.js
-  #       uses: actions/setup-node@v4
-  #       with:
-  #         node-version: 24
-  #         cache: npm
-  #     - name: Install dependencies
-  #       run: npm ci
-  #     - name: Check explicit indexes
-  #       run: npm run index -- --check
-
-  reference-of:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
       - name: Check reference normalization
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: npm run reference-of -- --check
 
-  validate-data:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
+      # Indexes are not always needed on all collection types.
+      # - name: Check explicit indexes
+      #   if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+      #   run: npm run index -- --check
 
       - name: Validate data
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: npm run validate:data
+
+      - name: Save check caches
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: checks-${{ github.sha }}
 
   sheets-sync:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs:
-      - prettier
-      - snag
-      - reference-of
-      - validate-data
-      # - index
+      - check
     runs-on: ubuntu-latest
     env:
       GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
