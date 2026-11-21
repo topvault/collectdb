@@ -161,6 +161,23 @@ items:
         rarityScore: 6
         id: fc3c1eab-ee5a-4126-a34d-2db5000cdd3a
         remark: error-ink-starvation
+      red-dot-error:
+        name: Red Dot Error
+        edition: unlimited
+        description: >-
+          A small red dot is printed just above the top-left Water Energy
+          symbol in the Hydro Pump attack cost.
+        remark: error-print-obstruction
+        id: a7a21ee7-817b-4cdd-a202-ae049c6e9c30
+      no-illustrator-error:
+        name: No Illustrator Error
+        edition: unlimited
+        description: >-
+          The "Illus." before "Ken Sugimori" in the bottom-left corner is
+          missing, so the credit reads only "Ken Sugimori". CGC labels it "No
+          Illus. Error".
+        remark: error-print-obstruction
+        id: db42b157-1691-460f-89d1-92e2b69ebeb5
     details:
       illustrator: Ken Sugimori
       rarity: Rare
@@ -246,6 +263,25 @@ items:
         1st-edition: '3535'
   clefairy-5:
     name: Clefairy
+    variants:
+      red-heart-error:
+        name: Red Heart Error
+        edition: unlimited
+        description: >-
+          A small magenta heart is printed at the top of the card, between the
+          name and the HP. On some copies a pale ring surrounds it, like a printer's
+          hickey. CGC labels it "Red Heart" Error.
+        remark: error-print-obstruction
+        id: 9832590f-f73b-477b-816b-cd4ee5ccad39
+      black-dot-error:
+        name: Black Dot Error
+        edition: unlimited
+        description: >-
+          A black blot covers the "no" of "now" in the Sing attack text, so it
+          reads "the Defending Pokémon is ●w Asleep". The blot's size varies
+          from copy to copy.
+        remark: error-print-obstruction
+        id: 9f798c2b-16cf-4e52-8ef9-6c877a7a5ab1
     details:
       illustrator: Ken Sugimori
       rarity: Rare
@@ -347,6 +383,14 @@ items:
         id: a287d267-530e-4f95-ac89-32350ed15f05
         details:
           finish: Holo
+      green-dot-error:
+        name: Green Dot Error
+        edition: unlimited
+        description: >-
+          A blue-green dot sits on top of the "H" in "100 HP". CGC labels these
+          copies "Machamp (With Shadow)".
+        remark: error-print-obstruction
+        id: 80d53313-bd77-4500-83d8-7fd0bceddb86
     details:
       illustrator: Ken Sugimori
       rarity: Rare
@@ -647,6 +691,33 @@ items:
         1st-edition: '3547'
   dragonair-18:
     name: Dragonair
+    variants:
+      rainbow-ink-smear:
+        name: Rainbow Ink Smear
+        edition: 1st-edition
+        description: >-
+          A pale vertical streak runs through the Slam attack text, from "This"
+          down to just below "number", and wipes out most of the "u" in
+          "number". The streak has a faint pink and rainbow sheen. CGC labels it
+          "Rainbow" Ink Smear.
+
+          The same streak appears on 1st Edition and Shadowless copies, so it
+          recurred across both print runs.
+        remark: error-print-obstruction
+        id: d193d0c0-d6f2-454f-8183-e22d3924032e
+      rainbow-ink-smear-shadowless:
+        name: Rainbow Ink Smear
+        edition: shadowless
+        description: >-
+          A pale vertical streak runs through the Slam attack text, from "This"
+          down to just below "number", and wipes out most of the "u" in
+          "number". The streak has a faint pink and rainbow sheen. CGC labels it
+          "Shadowless - "Rainbow" Ink Smear".
+
+          The same streak appears on 1st Edition and Shadowless copies, so it
+          recurred across both print runs.
+        remark: error-print-obstruction
+        id: 4b0f89d9-e043-4d29-978f-43dd21a20bd0
     details:
       illustrator: Mitsuhiro Arita
       rarity: Rare
@@ -1205,6 +1276,18 @@ items:
         1st-edition: '3573'
   bulbasaur-44:
     name: Bulbasaur
+    variants:
+      sunbeam-error:
+        name: Sunbeam Error
+        edition: shadowless
+        description: >-
+          Pale yellow vertical streaks run down through Bulbasaur's bulb from
+          the cloud above it, like beams of sunlight. Their exact positions
+          vary a little between copies. CGC labels it "Sunbeam" Error.
+
+          The three copies checked are also cut with a narrow left border.
+        remark: error-print-obstruction
+        id: 151e51e5-9a0d-4563-ad77-600076ea4364
     details:
       illustrator: Mitsuhiro Arita
       rarity: Common
@@ -1809,6 +1892,27 @@ items:
         1st-edition: '3597'
   vulpix-68:
     name: Vulpix
+    variants:
+      blue-spot-error:
+        name: Blue Spot Error
+        edition: 1st-edition
+        description: >-
+          A small blue spot is printed on Vulpix's hip, where its tails begin.
+
+          The same spot appears on 1st Edition and Shadowless copies, so it
+          recurred across both print runs.
+        remark: error-print-obstruction
+        id: 3c240f3c-7875-406e-9a4c-b973e31670ef
+      blue-spot-error-shadowless:
+        name: Blue Spot Error
+        edition: shadowless
+        description: >-
+          A small blue spot is printed on Vulpix's hip, where its tails begin.
+
+          The same spot appears on 1st Edition and Shadowless copies, so it
+          recurred across both print runs.
+        remark: error-print-obstruction
+        id: 51990dad-cde9-4b3d-a0ab-030fd25672f4
     details:
       illustrator: Ken Sugimori
       rarity: Common
@@ -3393,3 +3497,59 @@ additional:
         remark: test-print
         details:
           finish: Holo
+  matchprint-trainer-deck-a:
+    name: Trainer Deck A Matchprint
+    description: >-
+      Matchprint proofs of Trainer Deck A cards. A Matchprint is a pre-press
+      color proof, made from the printing films to check the colors before the
+      plates are run. They carry the 1999-2000 Wizards copyright and are cut
+      with square corners. CGC labels them "Matchprint - Trainer Deck A".
+    items:
+      dratini-26:
+        name: Dratini
+        variantOf: dratini-26:1999-2000
+        index: 26
+        remark: test-proof
+        id: 2e0d5581-0c9a-4d62-98b1-5193a399d312
+      machoke-34:
+        name: Machoke
+        variantOf: machoke-34:1999-2000
+        index: 34
+        remark: test-proof
+        id: 58e9b454-a78e-4fa5-8585-29175adda246
+      machop-52:
+        name: Machop
+        variantOf: machop-52:1999-2000
+        index: 52
+        remark: test-proof
+        id: 5aa0d400-cfff-4cb6-bf8c-17a6b6890faf
+      rattata-61:
+        name: Rattata
+        variantOf: rattata-61:1999-2000
+        index: 61
+        remark: test-proof
+        id: dc68b550-a642-4113-8af2-c2fecf04922e
+      pokedex-87:
+        name: Pokédex
+        variantOf: pokedex-87:1999-2000
+        index: 87
+        remark: test-proof
+        id: 4e94405a-27f4-41f2-950f-c048ca37fa20
+      energy-removal-92:
+        name: Energy Removal
+        variantOf: energy-removal-92:1999-2000
+        index: 92
+        remark: test-proof
+        id: 9ad32f04-77f0-44c6-9ec0-9c4df99e57ae
+      potion-94:
+        name: Potion
+        variantOf: potion-94:1999-2000
+        index: 94
+        remark: test-proof
+        id: 4e055583-c74f-4e5e-a6ab-d244e9909fab
+      fighting-energy-97:
+        name: Fighting Energy
+        variantOf: fighting-energy-97:1999-2000
+        index: 97
+        remark: test-proof
+        id: 92fdcc1a-f0b6-4fa3-b5f4-d6cdb4e99d5f
